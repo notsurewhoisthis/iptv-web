@@ -1,11 +1,71 @@
 'use client';
 
 import { Moon, Sun, Monitor } from 'lucide-react';
-import { useTheme } from './ThemeProvider';
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, createContext, useContext } from 'react';
+
+// Safe hook that won't throw during SSR
+function useSafeTheme() {
+  const [theme, setThemeState] = useState<'light' | 'dark' | 'system'>('system');
+  const [resolvedTheme, setResolvedTheme] = useState<'light' | 'dark'>('light');
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    // Read from localStorage on mount
+    const stored = localStorage.getItem('theme') as 'light' | 'dark' | 'system' | null;
+    if (stored) {
+      setThemeState(stored);
+    }
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!mounted) return;
+
+    const getSystemTheme = (): 'light' | 'dark' => {
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    };
+
+    const resolved = theme === 'system' ? getSystemTheme() : theme;
+    setResolvedTheme(resolved);
+
+    if (resolved === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [theme, mounted]);
+
+  // Listen for system theme changes
+  useEffect(() => {
+    if (!mounted) return;
+
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleChange = () => {
+      if (theme === 'system') {
+        const resolved = mediaQuery.matches ? 'dark' : 'light';
+        setResolvedTheme(resolved);
+        if (resolved === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      }
+    };
+
+    mediaQuery.addEventListener('change', handleChange);
+    return () => mediaQuery.removeEventListener('change', handleChange);
+  }, [theme, mounted]);
+
+  const setTheme = (newTheme: 'light' | 'dark' | 'system') => {
+    setThemeState(newTheme);
+    localStorage.setItem('theme', newTheme);
+  };
+
+  return { theme, resolvedTheme, setTheme, mounted };
+}
 
 export function ThemeToggle() {
-  const { theme, setTheme, resolvedTheme } = useTheme();
+  const { theme, setTheme, resolvedTheme, mounted } = useSafeTheme();
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
@@ -34,6 +94,15 @@ export function ThemeToggle() {
     { value: 'dark' as const, label: 'Dark', icon: Moon },
     { value: 'system' as const, label: 'System', icon: Monitor },
   ];
+
+  // Show placeholder during SSR
+  if (!mounted) {
+    return (
+      <div className="p-2 w-9 h-9">
+        <div className="h-5 w-5" />
+      </div>
+    );
+  }
 
   return (
     <div className="relative" ref={menuRef}>

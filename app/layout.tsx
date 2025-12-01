@@ -5,6 +5,7 @@ import './globals.css';
 import Link from 'next/link';
 import { MobileNav } from '@/components/MobileNav';
 import { SearchWrapper } from '@/components/SearchWrapper';
+import { ThemeToggle } from '@/components/ThemeToggle';
 import { Rss } from 'lucide-react';
 
 const inter = Inter({
@@ -49,8 +50,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} font-sans antialiased bg-white`}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.variable} font-sans antialiased bg-white dark:bg-gray-950`}>
         {/* Skip to main content - Accessibility */}
         <a
           href="#main-content"
@@ -60,52 +61,53 @@ export default function RootLayout({
         </a>
 
         {/* Navigation */}
-        <nav className="border-b border-gray-200" aria-label="Main navigation">
+        <nav className="border-b border-gray-200 dark:border-gray-800" aria-label="Main navigation">
           <div className="max-w-6xl mx-auto px-4 py-4">
             <div className="flex items-center justify-between">
-              <Link href="/" className="text-xl font-bold text-gray-900">
+              <Link href="/" className="text-xl font-bold text-gray-900 dark:text-white">
                 IPTV Guide
               </Link>
               <div className="hidden md:flex items-center gap-6">
                 <Link
                   href="/players"
-                  className="text-gray-600 hover:text-gray-900 transition-colors"
+                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
                 >
                   Players
                 </Link>
                 <Link
                   href="/devices"
-                  className="text-gray-600 hover:text-gray-900 transition-colors"
+                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
                 >
                   Devices
                 </Link>
                 <Link
                   href="/guides"
-                  className="text-gray-600 hover:text-gray-900 transition-colors"
+                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
                 >
                   Guides
                 </Link>
                 <Link
                   href="/troubleshooting"
-                  className="text-gray-600 hover:text-gray-900 transition-colors"
+                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
                 >
                   Troubleshooting
                 </Link>
                 <Link
                   href="/compare"
-                  className="text-gray-600 hover:text-gray-900 transition-colors"
+                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
                 >
                   Compare
                 </Link>
                 <Link
                   href="/blog"
-                  className="text-gray-600 hover:text-gray-900 transition-colors"
+                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
                 >
                   Blog
                 </Link>
-                <Suspense fallback={<div className="w-24 h-8 bg-gray-100 rounded-lg animate-pulse" />}>
+                <Suspense fallback={<div className="w-24 h-8 bg-gray-100 dark:bg-gray-800 rounded-lg animate-pulse" />}>
                   <SearchWrapper />
                 </Suspense>
+                <ThemeToggle />
               </div>
               {/* Mobile Navigation */}
               <MobileNav />
@@ -117,12 +119,12 @@ export default function RootLayout({
         <main id="main-content">{children}</main>
 
         {/* Footer */}
-        <footer className="border-t border-gray-200 mt-16">
+        <footer className="border-t border-gray-200 dark:border-gray-800 mt-16">
           <div className="max-w-6xl mx-auto px-4 py-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div>
-                <h3 className="font-semibold text-gray-900 mb-3">Players</h3>
-                <ul className="space-y-2 text-sm text-gray-600">
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-3">Players</h3>
+                <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
                   <li>
                     <Link href="/players/tivimate">TiviMate</Link>
                   </li>
@@ -138,8 +140,8 @@ export default function RootLayout({
                 </ul>
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900 mb-3">Devices</h3>
-                <ul className="space-y-2 text-sm text-gray-600">
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-3">Devices</h3>
+                <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
                   <li>
                     <Link href="/devices/firestick">Firestick</Link>
                   </li>
@@ -155,8 +157,8 @@ export default function RootLayout({
                 </ul>
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900 mb-3">Resources</h3>
-                <ul className="space-y-2 text-sm text-gray-600">
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-3">Resources</h3>
+                <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
                   <li>
                     <Link href="/guides">Setup Guides</Link>
                   </li>
@@ -172,8 +174,8 @@ export default function RootLayout({
                 </ul>
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900 mb-3">Legal</h3>
-                <ul className="space-y-2 text-sm text-gray-600">
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-3">Legal</h3>
+                <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
                   <li>
                     <Link href="/privacy">Privacy Policy</Link>
                   </li>
@@ -197,7 +199,7 @@ export default function RootLayout({
                 </ul>
               </div>
             </div>
-            <div className="mt-8 pt-8 border-t border-gray-200 text-center text-sm text-gray-500">
+            <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-800 text-center text-sm text-gray-500 dark:text-gray-400">
               <p>
                 &copy; {new Date().getFullYear()} IPTV Guide. All rights
                 reserved.

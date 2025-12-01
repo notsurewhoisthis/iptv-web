@@ -4,6 +4,7 @@ import { marked } from 'marked';
 marked.setOptions({
   gfm: true,
   breaks: true,
+  async: false, // Force synchronous parsing
 });
 
 export function parseMarkdown(content: string): string {
@@ -12,6 +13,7 @@ export function parseMarkdown(content: string): string {
     return content;
   }
 
-  // Parse markdown to HTML
-  return marked.parse(content) as string;
+  // Parse markdown to HTML synchronously
+  const result = marked.parse(content, { async: false });
+  return result as string;
 }
