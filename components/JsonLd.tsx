@@ -1,0 +1,311 @@
+import { FAQ } from '@/lib/types';
+
+// FAQ Schema
+export function FAQSchema({ faqs }: { faqs: FAQ[] }) {
+  if (!faqs || faqs.length === 0) return null;
+
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// HowTo Schema for setup guides
+export function HowToSchema({
+  name,
+  description,
+  steps,
+  totalTime,
+}: {
+  name: string;
+  description: string;
+  steps: { title: string; description: string }[];
+  totalTime?: string;
+}) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name,
+    description,
+    totalTime: totalTime || 'PT15M',
+    step: steps.map((step, index) => ({
+      '@type': 'HowToStep',
+      position: index + 1,
+      name: step.title,
+      text: step.description,
+    })),
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// Article Schema
+export function ArticleSchema({
+  title,
+  description,
+  url,
+  datePublished,
+  dateModified,
+  author,
+}: {
+  title: string;
+  description: string;
+  url: string;
+  datePublished: string;
+  dateModified: string;
+  author?: string;
+}) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description,
+    url,
+    datePublished,
+    dateModified,
+    author: {
+      '@type': 'Organization',
+      name: author || 'IPTV Guide',
+      url: 'https://iptvweb-635b7ddd06a5.herokuapp.com',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'IPTV Guide',
+      url: 'https://iptvweb-635b7ddd06a5.herokuapp.com',
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// Breadcrumb Schema
+export function BreadcrumbSchema({
+  items,
+}: {
+  items: { name: string; url: string }[];
+}) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      item: item.url,
+    })),
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// Software Application Schema for players
+export function SoftwareApplicationSchema({
+  name,
+  description,
+  rating,
+  ratingCount,
+  price,
+  priceCurrency,
+  operatingSystem,
+  url,
+}: {
+  name: string;
+  description: string;
+  rating: number;
+  ratingCount?: number;
+  price: string;
+  priceCurrency?: string;
+  operatingSystem: string[];
+  url: string;
+}) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name,
+    description,
+    applicationCategory: 'MultimediaApplication',
+    operatingSystem: operatingSystem.join(', '),
+    url,
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: rating,
+      bestRating: 5,
+      worstRating: 1,
+      ratingCount: ratingCount || 100,
+    },
+    offers: {
+      '@type': 'Offer',
+      price: price === 'Free' ? '0' : price.replace(/[^0-9.]/g, ''),
+      priceCurrency: priceCurrency || 'USD',
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// Product Schema for devices
+export function ProductSchema({
+  name,
+  description,
+  brand,
+  price,
+  url,
+}: {
+  name: string;
+  description: string;
+  brand: string;
+  price: string;
+  url: string;
+}) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name,
+    description,
+    brand: {
+      '@type': 'Brand',
+      name: brand,
+    },
+    url,
+    offers: {
+      '@type': 'Offer',
+      price: price.replace(/[^0-9.]/g, '') || '0',
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// Comparison Schema
+export function ComparisonSchema({
+  title,
+  description,
+  item1,
+  item2,
+  url,
+  dateModified,
+}: {
+  title: string;
+  description: string;
+  item1: { name: string; rating?: number };
+  item2: { name: string; rating?: number };
+  url: string;
+  dateModified: string;
+}) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description,
+    url,
+    dateModified,
+    articleSection: 'Comparison',
+    about: [
+      { '@type': 'Thing', name: item1.name },
+      { '@type': 'Thing', name: item2.name },
+    ],
+    author: {
+      '@type': 'Organization',
+      name: 'IPTV Guide',
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// Website Schema for homepage
+export function WebsiteSchema() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'IPTV Guide',
+    url: 'https://iptvweb-635b7ddd06a5.herokuapp.com',
+    description: 'Comprehensive IPTV guides, player reviews, setup tutorials, and troubleshooting for all devices.',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: 'https://iptvweb-635b7ddd06a5.herokuapp.com/search?q={search_term_string}',
+      },
+      'query-input': 'required name=search_term_string',
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// Organization Schema
+export function OrganizationSchema() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'IPTV Guide',
+    url: 'https://iptvweb-635b7ddd06a5.herokuapp.com',
+    logo: 'https://iptvweb-635b7ddd06a5.herokuapp.com/logo.png',
+    sameAs: [],
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'customer support',
+      availableLanguage: 'English',
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}

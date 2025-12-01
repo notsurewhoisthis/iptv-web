@@ -5,19 +5,43 @@ import {
   getPlayerDeviceGuides,
   getBlogPosts,
   getBestPlayerDevice,
+  getPlayerComparisons,
+  getDeviceComparisons,
+  getPlayerTroubleshooting,
+  getDeviceTroubleshooting,
+  getPlayerFeatureGuides,
+  getDeviceFeatureGuides,
   getBaseUrl,
 } from '@/lib/data-loader';
 
 export async function GET() {
   const baseUrl = getBaseUrl();
 
-  // Load all data
-  const [players, devices, guides, posts, bestFor] = await Promise.all([
+  // Load all data in parallel
+  const [
+    players,
+    devices,
+    guides,
+    posts,
+    bestFor,
+    playerComparisons,
+    deviceComparisons,
+    playerTroubleshooting,
+    deviceTroubleshooting,
+    playerFeatureGuides,
+    deviceFeatureGuides,
+  ] = await Promise.all([
     getPlayers(),
     getDevices(),
     getPlayerDeviceGuides(),
     getBlogPosts(),
     getBestPlayerDevice(),
+    getPlayerComparisons(),
+    getDeviceComparisons(),
+    getPlayerTroubleshooting(),
+    getDeviceTroubleshooting(),
+    getPlayerFeatureGuides(),
+    getDeviceFeatureGuides(),
   ]);
 
   const urls: { url: string; priority: number; changefreq: string; lastmod?: string }[] = [];
@@ -30,7 +54,10 @@ export async function GET() {
     { url: '/guides', priority: 0.9, changefreq: 'weekly' },
     { url: '/troubleshooting', priority: 0.9, changefreq: 'weekly' },
     { url: '/compare', priority: 0.9, changefreq: 'weekly' },
+    { url: '/best', priority: 0.9, changefreq: 'weekly' },
     { url: '/blog', priority: 0.85, changefreq: 'daily' },
+    { url: '/glossary', priority: 0.8, changefreq: 'monthly' },
+    { url: '/about', priority: 0.6, changefreq: 'monthly' },
     { url: '/privacy', priority: 0.3, changefreq: 'yearly' },
     { url: '/terms', priority: 0.3, changefreq: 'yearly' },
   ];
@@ -56,7 +83,7 @@ export async function GET() {
     });
   });
 
-  // Setup guides
+  // Setup guides (player + device)
   guides.forEach((guide) => {
     urls.push({
       url: `/guides/${guide.playerId}/setup/${guide.deviceId}`,
@@ -67,12 +94,72 @@ export async function GET() {
   });
 
   // Best for pages
-  (bestFor as Array<{ slug: string; lastUpdated: string }>).forEach((page) => {
+  bestFor.forEach((page) => {
     urls.push({
       url: `/best/${page.slug}`,
       priority: 0.8,
       changefreq: 'monthly',
       lastmod: page.lastUpdated,
+    });
+  });
+
+  // Player comparisons
+  playerComparisons.forEach((comp) => {
+    urls.push({
+      url: `/compare/players/${comp.player1Id}/vs/${comp.player2Id}`,
+      priority: 0.75,
+      changefreq: 'monthly',
+      lastmod: comp.lastUpdated,
+    });
+  });
+
+  // Device comparisons
+  deviceComparisons.forEach((comp) => {
+    urls.push({
+      url: `/compare/devices/${comp.device1Id}/vs/${comp.device2Id}`,
+      priority: 0.75,
+      changefreq: 'monthly',
+      lastmod: comp.lastUpdated,
+    });
+  });
+
+  // Player troubleshooting
+  playerTroubleshooting.forEach((guide) => {
+    urls.push({
+      url: `/troubleshooting/players/${guide.playerId}/${guide.issueId}`,
+      priority: 0.7,
+      changefreq: 'monthly',
+      lastmod: guide.lastUpdated,
+    });
+  });
+
+  // Device troubleshooting
+  deviceTroubleshooting.forEach((guide) => {
+    urls.push({
+      url: `/troubleshooting/devices/${guide.deviceId}/${guide.issueId}`,
+      priority: 0.7,
+      changefreq: 'monthly',
+      lastmod: guide.lastUpdated,
+    });
+  });
+
+  // Player feature guides
+  playerFeatureGuides.forEach((guide) => {
+    urls.push({
+      url: `/guides/${guide.playerId}/features/${guide.featureId}`,
+      priority: 0.7,
+      changefreq: 'monthly',
+      lastmod: guide.lastUpdated,
+    });
+  });
+
+  // Device feature guides
+  deviceFeatureGuides.forEach((guide) => {
+    urls.push({
+      url: `/guides/${guide.deviceId}/features/${guide.featureId}`,
+      priority: 0.7,
+      changefreq: 'monthly',
+      lastmod: guide.lastUpdated,
     });
   });
 

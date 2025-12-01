@@ -2,7 +2,8 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getPlayerDeviceGuides, getPlayerDeviceGuide, getPlayer, getDevice, getBaseUrl } from '@/lib/data-loader';
-import { ChevronRight, Star, Clock, CheckCircle } from 'lucide-react';
+import { ChevronRight, Star, Clock, CheckCircle, Calendar } from 'lucide-react';
+import { HowToSchema, FAQSchema, BreadcrumbSchema } from '@/components/JsonLd';
 
 interface PageProps {
   params: Promise<{ player: string; device: string }>;
@@ -53,8 +54,33 @@ export default async function SetupGuidePage({ params }: PageProps) {
   const playerData = await getPlayer(player);
   const deviceData = await getDevice(device);
 
+  const baseUrl = getBaseUrl();
+
+  // Prepare HowTo steps for schema
+  const howToSteps = guide.content.steps.map((step) => ({
+    title: step.title,
+    description: step.description,
+  }));
+
   return (
     <div className="min-h-screen">
+      {/* JSON-LD Structured Data */}
+      <HowToSchema
+        name={guide.title}
+        description={guide.description}
+        steps={howToSteps}
+        totalTime={`PT${guide.content.steps.length * 2}M`}
+      />
+      <FAQSchema faqs={guide.content.faqs} />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: baseUrl },
+          { name: 'Guides', url: `${baseUrl}/guides` },
+          { name: guide.playerName, url: `${baseUrl}/players/${player}` },
+          { name: guide.deviceShortName, url: `${baseUrl}/guides/${player}/setup/${device}` },
+        ]}
+      />
+
       {/* Breadcrumb */}
       <nav className="bg-gray-50 border-b border-gray-200">
         <div className="max-w-4xl mx-auto px-4 py-3">
@@ -98,9 +124,10 @@ export default async function SetupGuidePage({ params }: PageProps) {
               <Clock className="h-4 w-4" />
               <span>{guide.content.steps.length * 2} min read</span>
             </div>
-            <span>
-              Updated {new Date(guide.lastUpdated).toLocaleDateString()}
-            </span>
+            <div className="flex items-center gap-1">
+              <Calendar className="h-4 w-4" />
+              <span>Updated {new Date(guide.lastUpdated).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+            </div>
           </div>
         </div>
       </header>

@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { getPlayers, getPlayer, getBaseUrl, getPlayerDeviceGuides } from '@/lib/data-loader';
-import { ChevronRight, Star, ExternalLink, Check, X } from 'lucide-react';
+import { getPlayers, getPlayer, getBaseUrl, getPlayerDeviceGuides, getPlayerComparisons } from '@/lib/data-loader';
+import { ChevronRight, Star, ExternalLink, Check, X, Calendar } from 'lucide-react';
+import { SoftwareApplicationSchema, BreadcrumbSchema } from '@/components/JsonLd';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -46,11 +47,36 @@ export default async function PlayerPage({ params }: PageProps) {
     notFound();
   }
 
-  const guides = await getPlayerDeviceGuides();
+  const [guides, comparisons] = await Promise.all([
+    getPlayerDeviceGuides(),
+    getPlayerComparisons(),
+  ]);
   const playerGuides = guides.filter((g) => g.playerId === player.id).slice(0, 6);
+  const playerComparisons = comparisons.filter(
+    (c) => c.player1Id === player.id || c.player2Id === player.id
+  ).slice(0, 4);
+
+  const baseUrl = getBaseUrl();
 
   return (
     <div className="min-h-screen">
+      {/* JSON-LD Structured Data */}
+      <SoftwareApplicationSchema
+        name={player.name}
+        description={player.description}
+        rating={player.rating}
+        ratingCount={150}
+        price={player.pricing.price}
+        operatingSystem={player.platforms}
+        url={`${baseUrl}/players/${player.slug}`}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: baseUrl },
+          { name: 'Players', url: `${baseUrl}/players` },
+          { name: player.name, url: `${baseUrl}/players/${player.slug}` },
+        ]}
+      />
       {/* Breadcrumb */}
       <nav className="bg-gray-50 border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-4 py-3">
@@ -98,16 +124,22 @@ export default async function PlayerPage({ params }: PageProps) {
             ))}
           </div>
 
-          {player.officialUrl && (
-            <a
-              href={player.officialUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800"
-            >
-              Visit Official Website <ExternalLink className="h-4 w-4" />
-            </a>
-          )}
+          <div className="flex items-center gap-4">
+            {player.officialUrl && (
+              <a
+                href={player.officialUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800"
+              >
+                Visit Official Website <ExternalLink className="h-4 w-4" />
+              </a>
+            )}
+            <span className="inline-flex items-center gap-1 text-sm text-gray-500">
+              <Calendar className="h-4 w-4" />
+              Updated {new Date(player.lastUpdated).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+            </span>
+          </div>
         </header>
 
         <div className="grid lg:grid-cols-3 gap-8">
@@ -180,6 +212,38 @@ export default async function PlayerPage({ params }: PageProps) {
                     </Link>
                   ))}
                 </div>
+              </section>
+            )}
+
+            {/* Compare with Other Players */}
+            {playerComparisons.length > 0 && (
+              <section>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">Compare {player.name}</h2>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  {playerComparisons.map((comp) => {
+                    const otherPlayer = comp.player1Id === player.id ? comp.player2Name : comp.player1Name;
+                    return (
+                      <Link
+                        key={comp.slug}
+                        href={`/compare/players/${comp.player1Id}/vs/${comp.player2Id}`}
+                        className="block p-4 border border-gray-200 rounded-lg hover:border-blue-200 hover:bg-blue-50 transition"
+                      >
+                        <h3 className="font-medium text-gray-900">
+                          {player.name} vs {otherPlayer}
+                        </h3>
+                        <p className="text-sm text-gray-500 mt-1">
+                          See detailed comparison
+                        </p>
+                      </Link>
+                    );
+                  })}
+                </div>
+                <Link
+                  href="/compare"
+                  className="inline-block mt-4 text-blue-600 hover:text-blue-800 text-sm"
+                >
+                  View all comparisons →
+                </Link>
               </section>
             )}
           </div>

@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { getDevices, getDevice, getBaseUrl, getPlayerDeviceGuides } from '@/lib/data-loader';
+import { getDevices, getDevice, getBaseUrl, getPlayerDeviceGuides, getDeviceComparisons } from '@/lib/data-loader';
 import { ChevronRight, ExternalLink, Check, X } from 'lucide-react';
+import { ProductSchema, BreadcrumbSchema } from '@/components/JsonLd';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -46,11 +47,35 @@ export default async function DevicePage({ params }: PageProps) {
     notFound();
   }
 
-  const guides = await getPlayerDeviceGuides();
+  const [guides, comparisons] = await Promise.all([
+    getPlayerDeviceGuides(),
+    getDeviceComparisons(),
+  ]);
   const deviceGuides = guides.filter((g) => g.deviceId === device.id).slice(0, 6);
+  const deviceComparisons = comparisons.filter(
+    (c) => c.device1Id === device.id || c.device2Id === device.id
+  ).slice(0, 4);
+
+  const baseUrl = getBaseUrl();
 
   return (
     <div className="min-h-screen">
+      {/* JSON-LD Structured Data */}
+      <ProductSchema
+        name={device.name}
+        description={device.description}
+        brand={device.brand}
+        price={device.pricing}
+        url={`${baseUrl}/devices/${device.slug}`}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: baseUrl },
+          { name: 'Devices', url: `${baseUrl}/devices` },
+          { name: device.name, url: `${baseUrl}/devices/${device.slug}` },
+        ]}
+      />
+
       {/* Breadcrumb */}
       <nav className="bg-gray-50 border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-4 py-3">
@@ -171,6 +196,38 @@ export default async function DevicePage({ params }: PageProps) {
                     </Link>
                   ))}
                 </div>
+              </section>
+            )}
+
+            {/* Compare with Other Devices */}
+            {deviceComparisons.length > 0 && (
+              <section>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">Compare {device.shortName}</h2>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  {deviceComparisons.map((comp) => {
+                    const otherDevice = comp.device1Id === device.id ? comp.device2ShortName : comp.device1ShortName;
+                    return (
+                      <Link
+                        key={comp.slug}
+                        href={`/compare/devices/${comp.device1Id}/vs/${comp.device2Id}`}
+                        className="block p-4 border border-gray-200 rounded-lg hover:border-blue-200 hover:bg-blue-50 transition"
+                      >
+                        <h3 className="font-medium text-gray-900">
+                          {device.shortName} vs {otherDevice}
+                        </h3>
+                        <p className="text-sm text-gray-500 mt-1">
+                          See detailed comparison
+                        </p>
+                      </Link>
+                    );
+                  })}
+                </div>
+                <Link
+                  href="/compare"
+                  className="inline-block mt-4 text-blue-600 hover:text-blue-800 text-sm"
+                >
+                  View all comparisons →
+                </Link>
               </section>
             )}
           </div>
