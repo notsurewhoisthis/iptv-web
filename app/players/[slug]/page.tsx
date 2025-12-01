@@ -2,8 +2,9 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getPlayers, getPlayer, getBaseUrl, getPlayerDeviceGuides, getPlayerComparisons } from '@/lib/data-loader';
-import { ChevronRight, Star, ExternalLink, Check, X, Calendar } from 'lucide-react';
-import { SoftwareApplicationSchema, BreadcrumbSchema } from '@/components/JsonLd';
+import { ChevronRight, Star, ExternalLink, Check, X } from 'lucide-react';
+import { SoftwareApplicationSchema, BreadcrumbSchema, FAQSchema } from '@/components/JsonLd';
+import { QuickAnswer, AuthorBio, LastUpdated } from '@/components/GeoComponents';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -135,12 +136,16 @@ export default async function PlayerPage({ params }: PageProps) {
                 Visit Official Website <ExternalLink className="h-4 w-4" />
               </a>
             )}
-            <span className="inline-flex items-center gap-1 text-sm text-gray-500">
-              <Calendar className="h-4 w-4" />
-              Updated {new Date(player.lastUpdated).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
-            </span>
           </div>
+          <LastUpdated date={player.lastUpdated} />
         </header>
+
+        {/* QuickAnswer for GEO - AI extracts this first */}
+        <QuickAnswer
+          question={`What is ${player.name} and is it worth using?`}
+          answer={`${player.name} is a ${player.category} IPTV player with a ${player.rating}/5 rating. ${player.shortDescription} Best for: ${player.platforms.slice(0, 3).join(', ')} users.`}
+          highlight={player.pricing.model === 'free' ? 'This player is completely free to use.' : `Pricing: ${player.pricing.price}`}
+        />
 
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Main Content */}
@@ -246,6 +251,29 @@ export default async function PlayerPage({ params }: PageProps) {
                 </Link>
               </section>
             )}
+
+            {/* FAQ Section for GEO */}
+            {player.faqs && player.faqs.length > 0 && (
+              <section>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                <FAQSchema faqs={player.faqs} />
+                <div className="space-y-4">
+                  {player.faqs.map((faq, index) => (
+                    <div key={index} className="border border-gray-200 rounded-lg p-4">
+                      <h3 className="font-semibold text-gray-900 mb-2">{faq.question}</h3>
+                      <p className="text-gray-600">{faq.answer}</p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* Author Bio for E-E-A-T */}
+            <AuthorBio
+              name="IPTV Guide Team"
+              expertise="IPTV & Streaming Specialists"
+              bio="Our team tests and reviews IPTV players across all major platforms to help you find the best streaming solution."
+            />
           </div>
 
           {/* Sidebar */}

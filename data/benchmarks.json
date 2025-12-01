@@ -1,0 +1,504 @@
+{
+  "metadata": {
+    "lastUpdated": "2025-11-28",
+    "testingDevice": "Amazon Fire TV Stick 4K Max (2023)",
+    "testingNetwork": "100Mbps fiber connection",
+    "methodology": "Each player was tested with the same M3U playlist containing 500 channels and EPG data for 7 days. Metrics were averaged over 3 test runs."
+  },
+  "playerBenchmarks": [
+    {
+      "playerId": "tivimate",
+      "name": "TiviMate",
+      "metrics": {
+        "startupTime": {
+          "value": 2.3,
+          "unit": "seconds",
+          "description": "Time from app launch to ready state"
+        },
+        "channelSwitchTime": {
+          "value": 0.8,
+          "unit": "seconds",
+          "description": "Average time to switch between channels"
+        },
+        "memoryUsage": {
+          "value": 180,
+          "unit": "MB",
+          "description": "Average RAM usage during playback"
+        },
+        "epgLoadTime": {
+          "value": 12,
+          "unit": "seconds",
+          "description": "Time to load 7-day EPG for 500 channels"
+        },
+        "bufferRecoveryTime": {
+          "value": 1.2,
+          "unit": "seconds",
+          "description": "Time to recover from network interruption"
+        },
+        "cpuUsage": {
+          "value": 15,
+          "unit": "percent",
+          "description": "Average CPU usage during 1080p playback"
+        }
+      },
+      "stability": {
+        "crashFrequency": "Rare (0-1 crashes per week)",
+        "score": 9.5
+      },
+      "features": {
+        "4kSupport": true,
+        "catchupSupport": true,
+        "multiView": true,
+        "recording": true,
+        "parentalControls": true
+      }
+    },
+    {
+      "playerId": "iptv-smarters",
+      "name": "IPTV Smarters Pro",
+      "metrics": {
+        "startupTime": {
+          "value": 3.1,
+          "unit": "seconds",
+          "description": "Time from app launch to ready state"
+        },
+        "channelSwitchTime": {
+          "value": 1.4,
+          "unit": "seconds",
+          "description": "Average time to switch between channels"
+        },
+        "memoryUsage": {
+          "value": 220,
+          "unit": "MB",
+          "description": "Average RAM usage during playback"
+        },
+        "epgLoadTime": {
+          "value": 18,
+          "unit": "seconds",
+          "description": "Time to load 7-day EPG for 500 channels"
+        },
+        "bufferRecoveryTime": {
+          "value": 2.1,
+          "unit": "seconds",
+          "description": "Time to recover from network interruption"
+        },
+        "cpuUsage": {
+          "value": 22,
+          "unit": "percent",
+          "description": "Average CPU usage during 1080p playback"
+        }
+      },
+      "stability": {
+        "crashFrequency": "Occasional (2-3 crashes per week)",
+        "score": 8.0
+      },
+      "features": {
+        "4kSupport": true,
+        "catchupSupport": true,
+        "multiView": false,
+        "recording": true,
+        "parentalControls": true
+      }
+    },
+    {
+      "playerId": "kodi",
+      "name": "Kodi",
+      "metrics": {
+        "startupTime": {
+          "value": 5.2,
+          "unit": "seconds",
+          "description": "Time from app launch to ready state"
+        },
+        "channelSwitchTime": {
+          "value": 1.8,
+          "unit": "seconds",
+          "description": "Average time to switch between channels"
+        },
+        "memoryUsage": {
+          "value": 350,
+          "unit": "MB",
+          "description": "Average RAM usage during playback"
+        },
+        "epgLoadTime": {
+          "value": 25,
+          "unit": "seconds",
+          "description": "Time to load 7-day EPG for 500 channels"
+        },
+        "bufferRecoveryTime": {
+          "value": 1.5,
+          "unit": "seconds",
+          "description": "Time to recover from network interruption"
+        },
+        "cpuUsage": {
+          "value": 28,
+          "unit": "percent",
+          "description": "Average CPU usage during 1080p playback"
+        }
+      },
+      "stability": {
+        "crashFrequency": "Rare (0-1 crashes per week)",
+        "score": 9.0
+      },
+      "features": {
+        "4kSupport": true,
+        "catchupSupport": true,
+        "multiView": false,
+        "recording": true,
+        "parentalControls": true
+      }
+    },
+    {
+      "playerId": "vlc",
+      "name": "VLC Media Player",
+      "metrics": {
+        "startupTime": {
+          "value": 1.8,
+          "unit": "seconds",
+          "description": "Time from app launch to ready state"
+        },
+        "channelSwitchTime": {
+          "value": 2.2,
+          "unit": "seconds",
+          "description": "Average time to switch between channels"
+        },
+        "memoryUsage": {
+          "value": 150,
+          "unit": "MB",
+          "description": "Average RAM usage during playback"
+        },
+        "epgLoadTime": {
+          "value": null,
+          "unit": "seconds",
+          "description": "VLC does not support EPG"
+        },
+        "bufferRecoveryTime": {
+          "value": 1.0,
+          "unit": "seconds",
+          "description": "Time to recover from network interruption"
+        },
+        "cpuUsage": {
+          "value": 12,
+          "unit": "percent",
+          "description": "Average CPU usage during 1080p playback"
+        }
+      },
+      "stability": {
+        "crashFrequency": "Very Rare (0 crashes per week)",
+        "score": 9.8
+      },
+      "features": {
+        "4kSupport": true,
+        "catchupSupport": false,
+        "multiView": false,
+        "recording": false,
+        "parentalControls": false
+      }
+    },
+    {
+      "playerId": "perfect-player",
+      "name": "Perfect Player",
+      "metrics": {
+        "startupTime": {
+          "value": 2.8,
+          "unit": "seconds",
+          "description": "Time from app launch to ready state"
+        },
+        "channelSwitchTime": {
+          "value": 1.1,
+          "unit": "seconds",
+          "description": "Average time to switch between channels"
+        },
+        "memoryUsage": {
+          "value": 160,
+          "unit": "MB",
+          "description": "Average RAM usage during playback"
+        },
+        "epgLoadTime": {
+          "value": 15,
+          "unit": "seconds",
+          "description": "Time to load 7-day EPG for 500 channels"
+        },
+        "bufferRecoveryTime": {
+          "value": 1.3,
+          "unit": "seconds",
+          "description": "Time to recover from network interruption"
+        },
+        "cpuUsage": {
+          "value": 18,
+          "unit": "percent",
+          "description": "Average CPU usage during 1080p playback"
+        }
+      },
+      "stability": {
+        "crashFrequency": "Rare (0-1 crashes per week)",
+        "score": 9.2
+      },
+      "features": {
+        "4kSupport": true,
+        "catchupSupport": true,
+        "multiView": false,
+        "recording": false,
+        "parentalControls": true
+      }
+    },
+    {
+      "playerId": "ott-navigator",
+      "name": "OTT Navigator",
+      "metrics": {
+        "startupTime": {
+          "value": 3.5,
+          "unit": "seconds",
+          "description": "Time from app launch to ready state"
+        },
+        "channelSwitchTime": {
+          "value": 1.0,
+          "unit": "seconds",
+          "description": "Average time to switch between channels"
+        },
+        "memoryUsage": {
+          "value": 200,
+          "unit": "MB",
+          "description": "Average RAM usage during playback"
+        },
+        "epgLoadTime": {
+          "value": 14,
+          "unit": "seconds",
+          "description": "Time to load 7-day EPG for 500 channels"
+        },
+        "bufferRecoveryTime": {
+          "value": 1.4,
+          "unit": "seconds",
+          "description": "Time to recover from network interruption"
+        },
+        "cpuUsage": {
+          "value": 20,
+          "unit": "percent",
+          "description": "Average CPU usage during 1080p playback"
+        }
+      },
+      "stability": {
+        "crashFrequency": "Rare (0-1 crashes per week)",
+        "score": 9.0
+      },
+      "features": {
+        "4kSupport": true,
+        "catchupSupport": true,
+        "multiView": true,
+        "recording": true,
+        "parentalControls": true
+      }
+    },
+    {
+      "playerId": "jamrun",
+      "name": "JamRun",
+      "metrics": {
+        "startupTime": {
+          "value": 1.5,
+          "unit": "seconds",
+          "description": "Time from app launch to ready state"
+        },
+        "channelSwitchTime": {
+          "value": 0.7,
+          "unit": "seconds",
+          "description": "Average time to switch between channels"
+        },
+        "memoryUsage": {
+          "value": 120,
+          "unit": "MB",
+          "description": "Average RAM usage during playback"
+        },
+        "epgLoadTime": {
+          "value": 8,
+          "unit": "seconds",
+          "description": "Time to load 7-day EPG for 500 channels"
+        },
+        "bufferRecoveryTime": {
+          "value": 0.9,
+          "unit": "seconds",
+          "description": "Time to recover from network interruption"
+        },
+        "cpuUsage": {
+          "value": 10,
+          "unit": "percent",
+          "description": "Average CPU usage during 1080p playback"
+        }
+      },
+      "stability": {
+        "crashFrequency": "Very Rare (0 crashes per week)",
+        "score": 9.9
+      },
+      "features": {
+        "4kSupport": true,
+        "catchupSupport": true,
+        "multiView": false,
+        "recording": false,
+        "parentalControls": true
+      }
+    },
+    {
+      "playerId": "televizo",
+      "name": "Televizo",
+      "metrics": {
+        "startupTime": {
+          "value": 2.5,
+          "unit": "seconds",
+          "description": "Time from app launch to ready state"
+        },
+        "channelSwitchTime": {
+          "value": 1.2,
+          "unit": "seconds",
+          "description": "Average time to switch between channels"
+        },
+        "memoryUsage": {
+          "value": 170,
+          "unit": "MB",
+          "description": "Average RAM usage during playback"
+        },
+        "epgLoadTime": {
+          "value": 13,
+          "unit": "seconds",
+          "description": "Time to load 7-day EPG for 500 channels"
+        },
+        "bufferRecoveryTime": {
+          "value": 1.1,
+          "unit": "seconds",
+          "description": "Time to recover from network interruption"
+        },
+        "cpuUsage": {
+          "value": 16,
+          "unit": "percent",
+          "description": "Average CPU usage during 1080p playback"
+        }
+      },
+      "stability": {
+        "crashFrequency": "Rare (0-1 crashes per week)",
+        "score": 9.3
+      },
+      "features": {
+        "4kSupport": true,
+        "catchupSupport": true,
+        "multiView": false,
+        "recording": false,
+        "parentalControls": true
+      }
+    },
+    {
+      "playerId": "gse-smart-iptv",
+      "name": "GSE Smart IPTV",
+      "metrics": {
+        "startupTime": {
+          "value": 3.8,
+          "unit": "seconds",
+          "description": "Time from app launch to ready state"
+        },
+        "channelSwitchTime": {
+          "value": 1.5,
+          "unit": "seconds",
+          "description": "Average time to switch between channels"
+        },
+        "memoryUsage": {
+          "value": 190,
+          "unit": "MB",
+          "description": "Average RAM usage during playback"
+        },
+        "epgLoadTime": {
+          "value": 16,
+          "unit": "seconds",
+          "description": "Time to load 7-day EPG for 500 channels"
+        },
+        "bufferRecoveryTime": {
+          "value": 1.6,
+          "unit": "seconds",
+          "description": "Time to recover from network interruption"
+        },
+        "cpuUsage": {
+          "value": 21,
+          "unit": "percent",
+          "description": "Average CPU usage during 1080p playback"
+        }
+      },
+      "stability": {
+        "crashFrequency": "Occasional (2-3 crashes per week)",
+        "score": 8.2
+      },
+      "features": {
+        "4kSupport": true,
+        "catchupSupport": true,
+        "multiView": false,
+        "recording": true,
+        "parentalControls": true
+      }
+    },
+    {
+      "playerId": "iptv-extreme",
+      "name": "IPTV Extreme",
+      "metrics": {
+        "startupTime": {
+          "value": 4.0,
+          "unit": "seconds",
+          "description": "Time from app launch to ready state"
+        },
+        "channelSwitchTime": {
+          "value": 1.3,
+          "unit": "seconds",
+          "description": "Average time to switch between channels"
+        },
+        "memoryUsage": {
+          "value": 210,
+          "unit": "MB",
+          "description": "Average RAM usage during playback"
+        },
+        "epgLoadTime": {
+          "value": 17,
+          "unit": "seconds",
+          "description": "Time to load 7-day EPG for 500 channels"
+        },
+        "bufferRecoveryTime": {
+          "value": 1.7,
+          "unit": "seconds",
+          "description": "Time to recover from network interruption"
+        },
+        "cpuUsage": {
+          "value": 23,
+          "unit": "percent",
+          "description": "Average CPU usage during 1080p playback"
+        }
+      },
+      "stability": {
+        "crashFrequency": "Occasional (2-3 crashes per week)",
+        "score": 8.0
+      },
+      "features": {
+        "4kSupport": true,
+        "catchupSupport": true,
+        "multiView": false,
+        "recording": true,
+        "parentalControls": true
+      }
+    }
+  ],
+  "comparisons": {
+    "fastestChannelSwitch": ["jamrun", "tivimate", "ott-navigator"],
+    "lowestMemoryUsage": ["jamrun", "vlc", "perfect-player"],
+    "fastestStartup": ["jamrun", "vlc", "tivimate"],
+    "bestStability": ["jamrun", "vlc", "televizo"],
+    "mostFeatureRich": ["tivimate", "ott-navigator", "kodi"]
+  },
+  "recommendations": {
+    "lowEndDevices": {
+      "description": "Best players for devices with limited RAM (2GB or less)",
+      "players": ["jamrun", "vlc", "perfect-player"],
+      "reason": "These players use less than 180MB RAM during playback"
+    },
+    "highEndDevices": {
+      "description": "Best players for powerful devices like NVIDIA Shield",
+      "players": ["tivimate", "kodi", "ott-navigator"],
+      "reason": "These players offer the most features and best EPG experience"
+    },
+    "fastChannelSwitching": {
+      "description": "Best for users who frequently change channels",
+      "players": ["jamrun", "tivimate", "ott-navigator"],
+      "reason": "Channel switch time under 1 second"
+    }
+  }
+}

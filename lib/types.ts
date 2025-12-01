@@ -20,6 +20,7 @@ export interface Player {
   yearLaunched: number;
   developer: string;
   keywords: string[];
+  faqs?: FAQ[];
 }
 
 export interface Device {
@@ -43,6 +44,7 @@ export interface Device {
   description: string;
   shortDescription: string;
   keywords: string[];
+  faqs?: FAQ[];
 }
 
 export interface Feature {
@@ -126,6 +128,7 @@ export interface BlogPost {
   author: {
     name: string;
     bio: string;
+    expertise?: string;
   };
   metrics: {
     readingTime: number;
@@ -371,6 +374,61 @@ export interface UseCasePage {
   author: {
     name: string;
     expertise: string;
+  };
+}
+
+// Benchmark data for IPTV players
+export interface BenchmarkMetric {
+  value: number | null;
+  unit: string;
+  description: string;
+}
+
+export interface PlayerBenchmark {
+  playerId: string;
+  name: string;
+  metrics: {
+    startupTime: BenchmarkMetric;
+    channelSwitchTime: BenchmarkMetric;
+    memoryUsage: BenchmarkMetric;
+    epgLoadTime: BenchmarkMetric;
+    bufferRecoveryTime: BenchmarkMetric;
+    cpuUsage: BenchmarkMetric;
+  };
+  stability: {
+    crashFrequency: string;
+    score: number;
+  };
+  features: {
+    '4kSupport': boolean;
+    catchupSupport: boolean;
+    multiView: boolean;
+    recording: boolean;
+    parentalControls: boolean;
+  };
+}
+
+export interface BenchmarkData {
+  metadata: {
+    lastUpdated: string;
+    testingDevice: string;
+    testingNetwork: string;
+    methodology: string;
+  };
+  playerBenchmarks: PlayerBenchmark[];
+  comparisons: {
+    fastestChannelSwitch: string[];
+    lowestMemoryUsage: string[];
+    fastestStartup: string[];
+    bestStability: string[];
+    mostFeatureRich: string[];
+  };
+  recommendations: {
+    [key: string]: {
+      description: string;
+      players: string[];
+      reason: string;
+    };
   };
 }
 

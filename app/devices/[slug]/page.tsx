@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { getDevices, getDevice, getBaseUrl, getPlayerDeviceGuides, getDeviceComparisons } from '@/lib/data-loader';
-import { ChevronRight, ExternalLink, Check, X } from 'lucide-react';
-import { ProductSchema, BreadcrumbSchema } from '@/components/JsonLd';
+import { getDevices, getDevice, getBaseUrl, getPlayerDeviceGuides, getDeviceComparisons, getPlayers } from '@/lib/data-loader';
+import { ChevronRight, ExternalLink, Check, X, Star } from 'lucide-react';
+import { ProductSchema, BreadcrumbSchema, FAQSchema } from '@/components/JsonLd';
+import { QuickAnswer, AuthorBio, LastUpdated } from '@/components/GeoComponents';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -47,14 +48,23 @@ export default async function DevicePage({ params }: PageProps) {
     notFound();
   }
 
-  const [guides, comparisons] = await Promise.all([
+  const [guides, comparisons, allPlayers] = await Promise.all([
     getPlayerDeviceGuides(),
     getDeviceComparisons(),
+    getPlayers(),
   ]);
   const deviceGuides = guides.filter((g) => g.deviceId === device.id).slice(0, 6);
   const deviceComparisons = comparisons.filter(
     (c) => c.device1Id === device.id || c.device2Id === device.id
   ).slice(0, 4);
+
+  // Get ranked compatible players
+  const compatiblePlayers = allPlayers
+    .filter((p) => device.supportedPlayers.includes(p.id))
+    .sort((a, b) => b.rating - a.rating)
+    .slice(0, 5);
+
+  const topPlayer = compatiblePlayers[0];
 
   const baseUrl = getBaseUrl();
 
@@ -123,7 +133,17 @@ export default async function DevicePage({ params }: PageProps) {
               View on Amazon <ExternalLink className="h-4 w-4" />
             </a>
           )}
+          <LastUpdated date={new Date().toISOString()} />
         </header>
+
+        {/* QuickAnswer for GEO - AI extracts this first */}
+        <QuickAnswer
+          question={`Which IPTV player is best for ${device.name}?`}
+          answer={topPlayer
+            ? `The best IPTV player for ${device.name} is ${topPlayer.name} with a ${topPlayer.rating}/5 rating. ${topPlayer.shortDescription}`
+            : `${device.name} supports ${device.supportedPlayers.length} IPTV players including popular options like TiviMate and Kodi.`}
+          highlight={topPlayer ? `Top Pick: ${topPlayer.name} (${topPlayer.pricing.price})` : undefined}
+        />
 
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Main Content */}
@@ -160,20 +180,54 @@ export default async function DevicePage({ params }: PageProps) {
               </div>
             </section>
 
-            {/* Compatible Players */}
+            {/* Compatible Players - Ranked List */}
             <section>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">Compatible IPTV Players</h2>
-              <div className="flex flex-wrap gap-2">
-                {device.supportedPlayers.map((playerId) => (
-                  <Link
-                    key={playerId}
-                    href={`/players/${playerId}`}
-                    className="px-3 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm hover:bg-gray-200 transition"
-                  >
-                    {playerId.replace(/-/g, ' ')}
-                  </Link>
-                ))}
-              </div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Best IPTV Players for {device.shortName}</h2>
+              {compatiblePlayers.length > 0 ? (
+                <div className="space-y-3">
+                  {compatiblePlayers.map((player, index) => (
+                    <Link
+                      key={player.id}
+                      href={`/players/${player.slug}`}
+                      className="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:border-blue-300 hover:bg-blue-50 transition"
+                    >
+                      <div className="flex items-center gap-4">
+                        <span className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm ${
+                          index === 0 ? 'bg-yellow-100 text-yellow-700' :
+                          index === 1 ? 'bg-gray-200 text-gray-600' :
+                          index === 2 ? 'bg-orange-100 text-orange-700' :
+                          'bg-gray-100 text-gray-500'
+                        }`}>
+                          {index + 1}
+                        </span>
+                        <div>
+                          <h3 className="font-semibold text-gray-900">{player.name}</h3>
+                          <p className="text-sm text-gray-500">{player.shortDescription}</p>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <span className="text-sm text-gray-600">{player.pricing.price}</span>
+                        <div className="flex items-center gap-1">
+                          <Star className="h-4 w-4 text-yellow-500 fill-yellow-500" />
+                          <span className="font-medium">{player.rating}</span>
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              ) : (
+                <div className="flex flex-wrap gap-2">
+                  {device.supportedPlayers.map((playerId) => (
+                    <Link
+                      key={playerId}
+                      href={`/players/${playerId}`}
+                      className="px-3 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm hover:bg-gray-200 transition"
+                    >
+                      {playerId.replace(/-/g, ' ')}
+                    </Link>
+                  ))}
+                </div>
+              )}
             </section>
 
             {/* Setup Guides */}
@@ -230,6 +284,29 @@ export default async function DevicePage({ params }: PageProps) {
                 </Link>
               </section>
             )}
+
+            {/* FAQ Section for GEO */}
+            {device.faqs && device.faqs.length > 0 && (
+              <section>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                <FAQSchema faqs={device.faqs} />
+                <div className="space-y-4">
+                  {device.faqs.map((faq, index) => (
+                    <div key={index} className="border border-gray-200 rounded-lg p-4">
+                      <h3 className="font-semibold text-gray-900 mb-2">{faq.question}</h3>
+                      <p className="text-gray-600">{faq.answer}</p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* Author Bio for E-E-A-T */}
+            <AuthorBio
+              name="IPTV Guide Team"
+              expertise="IPTV & Streaming Device Experts"
+              bio="Our team tests streaming devices and IPTV compatibility to help you find the best setup for your needs."
+            />
           </div>
 
           {/* Sidebar */}

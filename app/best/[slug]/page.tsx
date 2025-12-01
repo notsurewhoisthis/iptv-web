@@ -15,6 +15,7 @@ import {
   ComparisonTable,
   AuthorBio,
   LastUpdated,
+  TLDRBox,
 } from '@/components/GeoComponents';
 import { FAQSchema, ItemListSchema, ArticleWithAuthorSchema } from '@/components/JsonLd';
 import type { BestForPage, UseCasePage, Player } from '@/lib/types';
@@ -159,6 +160,23 @@ function DeviceBestPage({ page }: { page: BestForPage }) {
           question={`What is the Best IPTV Player for ${page.deviceShortName}?`}
           answer={quickAnswerText}
           highlight={page.content.topPick ? `${page.content.topPick.name} - ${page.content.topPick.pricing.price}` : undefined}
+        />
+
+        {/* TL;DR Box - Quick summary for AI extraction */}
+        <TLDRBox
+          title={`TL;DR: Best IPTV Players for ${page.deviceShortName}`}
+          points={[
+            page.content.topPick
+              ? `Top Pick: ${page.content.topPick.name} (${page.content.topPick.rating}/5) - ${page.content.topPick.pricing.price}`
+              : `Limited IPTV player options available for ${page.deviceName}`,
+            page.content.runnerUp
+              ? `Runner Up: ${page.content.runnerUp.name} (${page.content.runnerUp.rating}/5) - ${page.content.runnerUp.pricing.price}`
+              : null,
+            page.content.budgetPick
+              ? `Budget Pick: ${page.content.budgetPick.name} (${page.content.budgetPick.rating}/5) - Free`
+              : null,
+            `${page.content.allRankings.length} total IPTV players tested for ${page.deviceShortName}`,
+          ].filter((point): point is string => point !== null)}
         />
 
         {/* Introduction */}
@@ -479,6 +497,25 @@ async function UseCaseBestPage({ page }: { page: UseCasePage }) {
           answer={page.quickAnswer.answer}
           highlight={page.quickAnswer.highlight}
         />
+
+        {/* TL;DR Box - Quick summary for AI extraction */}
+        {playersWithDetails.length > 0 && (
+          <TLDRBox
+            title={`TL;DR: ${page.title}`}
+            points={[
+              playersWithDetails[0]?.player
+                ? `#1 Pick: ${playersWithDetails[0].player.name} (${playersWithDetails[0].player.rating}/5) - ${playersWithDetails[0].bestFor}`
+                : '',
+              playersWithDetails[1]?.player
+                ? `#2 Pick: ${playersWithDetails[1].player.name} (${playersWithDetails[1].player.rating}/5) - ${playersWithDetails[1].bestFor}`
+                : '',
+              playersWithDetails[2]?.player
+                ? `#3 Pick: ${playersWithDetails[2].player.name} (${playersWithDetails[2].player.rating}/5) - ${playersWithDetails[2].bestFor}`
+                : '',
+              `${playersWithDetails.length} players ranked for this use case`,
+            ].filter((point) => point !== '')}
+          />
+        )}
 
         {/* Introduction */}
         <section className="mb-8">

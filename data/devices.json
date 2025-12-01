@@ -19,7 +19,13 @@
     "cons": ["Amazon ecosystem lock-in", "Ads on home screen", "Limited storage"],
     "description": "The Amazon Fire TV Stick is the most popular streaming device for IPTV, offering easy app installation, 4K support, and Alexa voice control at an affordable price.",
     "shortDescription": "Affordable streaming stick with Alexa",
-    "keywords": ["firestick iptv", "fire tv stick", "firestick 4k", "amazon fire stick iptv"]
+    "keywords": ["firestick iptv", "fire tv stick", "firestick 4k", "amazon fire stick iptv"],
+    "faqs": [
+      {"question": "What is the best IPTV player for Firestick?", "answer": "TiviMate is widely considered the best IPTV player for Firestick due to its excellent EPG support and user-friendly interface."},
+      {"question": "Can I use Firestick for 4K IPTV?", "answer": "Yes, the Firestick 4K and Firestick 4K Max support 4K Ultra HD streaming with HDR."},
+      {"question": "How do I install IPTV apps on Firestick?", "answer": "You can install IPTV apps via the Amazon App Store or sideload them using the Downloader app."},
+      {"question": "Is Firestick good for IPTV?", "answer": "Yes, Firestick is one of the most popular devices for IPTV due to its affordability, ease of use, and wide app support."}
+    ]
   },
   {
     "id": "fire-tv-cube",
@@ -41,7 +47,13 @@
     "cons": ["More expensive", "Overkill for basic streaming", "Still has ads"],
     "description": "The Fire TV Cube is Amazon's most powerful streaming device, featuring hands-free Alexa, faster processing, and built-in ethernet for the best IPTV performance.",
     "shortDescription": "Premium Fire TV with hands-free Alexa",
-    "keywords": ["fire tv cube iptv", "fire tv cube", "amazon cube iptv", "fire tv cube 4k"]
+    "keywords": ["fire tv cube iptv", "fire tv cube", "amazon cube iptv", "fire tv cube 4k"],
+    "faqs": [
+      {"question": "Is Fire TV Cube better than Firestick for IPTV?", "answer": "Yes, Fire TV Cube offers faster performance, more storage, and built-in ethernet for more reliable IPTV streaming."},
+      {"question": "Does Fire TV Cube have ethernet?", "answer": "Yes, Fire TV Cube has a built-in ethernet port for wired internet connection, improving IPTV stability."},
+      {"question": "What IPTV apps work on Fire TV Cube?", "answer": "Fire TV Cube supports all Android-based IPTV apps including TiviMate, Kodi, IPTV Smarters, and more."},
+      {"question": "Is Fire TV Cube worth it for IPTV?", "answer": "Fire TV Cube is worth it if you want the best performance, hands-free Alexa, and built-in ethernet for IPTV."}
+    ]
   },
   {
     "id": "apple-tv",
@@ -63,7 +75,13 @@
     "cons": ["Expensive", "Limited IPTV app options", "No sideloading", "Apple ecosystem required"],
     "description": "Apple TV 4K offers premium streaming with Dolby Vision/Atmos support, but has limited IPTV player options compared to Android-based devices.",
     "shortDescription": "Premium streaming box from Apple",
-    "keywords": ["apple tv iptv", "apple tv 4k iptv", "iptv on apple tv", "apple tv streaming"]
+    "keywords": ["apple tv iptv", "apple tv 4k iptv", "iptv on apple tv", "apple tv streaming"],
+    "faqs": [
+      {"question": "What is the best IPTV app for Apple TV?", "answer": "JamRun and iPlayTV are among the best IPTV apps for Apple TV, offering native tvOS support with EPG and playlist management."},
+      {"question": "Can I use TiviMate on Apple TV?", "answer": "No, TiviMate is an Android-only app and not available on Apple TV. Consider JamRun, iPlayTV, or GSE Smart IPTV instead."},
+      {"question": "Does Apple TV support M3U playlists?", "answer": "Yes, Apple TV supports M3U playlists through apps like JamRun, iPlayTV, VLC, and GSE Smart IPTV."},
+      {"question": "Is Apple TV good for IPTV?", "answer": "Apple TV is excellent for IPTV with premium build quality and Dolby Vision support, though it has fewer IPTV app options than Android devices."}
+    ]
   },
   {
     "id": "android-tv",
@@ -85,7 +103,13 @@
     "cons": ["Quality varies by brand", "Some lack certification", "Can be confusing to choose"],
     "description": "Android TV boxes run Google's Android TV operating system, providing access to the full Play Store and support for virtually all IPTV players.",
     "shortDescription": "Versatile streaming boxes running Android TV",
-    "keywords": ["android tv box iptv", "android tv iptv", "android box iptv", "google tv iptv"]
+    "keywords": ["android tv box iptv", "android tv iptv", "android box iptv", "google tv iptv"],
+    "faqs": [
+      {"question": "What is the best Android TV box for IPTV?", "answer": "The NVIDIA Shield TV is the best Android TV box for IPTV, offering the most powerful hardware and best app compatibility."},
+      {"question": "Can I install any IPTV app on Android TV?", "answer": "Yes, Android TV supports virtually all IPTV players from the Google Play Store, plus sideloading capability for APK files."},
+      {"question": "What is the difference between Android TV and Google TV?", "answer": "Google TV is a newer interface layer built on top of Android TV, offering better content discovery. Both run the same apps."},
+      {"question": "Do I need a certified Android TV box?", "answer": "For best compatibility with streaming apps and Google Play Store, choose a Google-certified Android TV device."}
+    ]
   },
   {
     "id": "chromecast",
@@ -107,7 +131,13 @@
     "cons": ["Limited storage", "No ethernet without adapter", "Performance can lag"],
     "description": "Chromecast with Google TV combines casting capabilities with a full streaming interface, supporting most Android IPTV players from the Play Store.",
     "shortDescription": "Google's streaming device with Google TV",
-    "keywords": ["chromecast iptv", "google tv iptv", "chromecast google tv iptv", "cast iptv"]
+    "keywords": ["chromecast iptv", "google tv iptv", "chromecast google tv iptv", "cast iptv"],
+    "faqs": [
+      {"question": "Can I use IPTV on Chromecast?", "answer": "Yes, Chromecast with Google TV supports IPTV apps like TiviMate, IPTV Smarters, and Kodi from the Google Play Store."},
+      {"question": "What is the best IPTV app for Chromecast?", "answer": "TiviMate is the best IPTV app for Chromecast with Google TV, offering excellent EPG support and a user-friendly interface."},
+      {"question": "Can I cast IPTV to Chromecast?", "answer": "Yes, you can cast IPTV from your phone using apps that support Chromecast, or install IPTV apps directly on Chromecast with Google TV."},
+      {"question": "Is Chromecast good for IPTV?", "answer": "Chromecast with Google TV is good for IPTV due to its affordable price and Play Store access, though limited storage may require app management."}
+    ]
   },
   {
     "id": "nvidia-shield",
@@ -129,7 +159,13 @@
     "cons": ["Expensive", "Overkill for just IPTV", "Large form factor (Pro)"],
     "description": "NVIDIA Shield TV is the most powerful Android TV device, offering AI-enhanced 4K upscaling and superior performance for demanding IPTV setups.",
     "shortDescription": "Most powerful Android TV streaming device",
-    "keywords": ["nvidia shield iptv", "shield tv iptv", "nvidia shield tv iptv", "shield iptv setup"]
+    "keywords": ["nvidia shield iptv", "shield tv iptv", "nvidia shield tv iptv", "shield iptv setup"],
+    "faqs": [
+      {"question": "Is NVIDIA Shield TV worth it for IPTV?", "answer": "Yes, NVIDIA Shield TV is the best device for IPTV if you want the fastest performance, AI upscaling, and can run a Plex server simultaneously."},
+      {"question": "What makes NVIDIA Shield TV better than Firestick for IPTV?", "answer": "NVIDIA Shield TV offers faster processing, AI-enhanced 4K upscaling, gigabit ethernet, and better app performance than Firestick."},
+      {"question": "Does NVIDIA Shield TV support TiviMate?", "answer": "Yes, NVIDIA Shield TV fully supports TiviMate and all other Android IPTV players with the best performance available."},
+      {"question": "Can NVIDIA Shield TV run Kodi for IPTV?", "answer": "Yes, NVIDIA Shield TV runs Kodi with excellent performance and can handle even the most demanding IPTV addons and 4K streams."}
+    ]
   },
   {
     "id": "ios",
@@ -151,7 +187,13 @@
     "cons": ["Limited IPTV options", "No sideloading", "Expensive devices"],
     "description": "iOS devices can stream IPTV through select App Store apps and cast to Apple TV via AirPlay, though options are more limited than Android.",
     "shortDescription": "Apple mobile devices for IPTV streaming",
-    "keywords": ["iptv iphone", "iptv ipad", "ios iptv app", "iptv on iphone"]
+    "keywords": ["iptv iphone", "iptv ipad", "ios iptv app", "iptv on iphone"],
+    "faqs": [
+      {"question": "What is the best IPTV app for iPhone?", "answer": "JamRun and GSE Smart IPTV are the best IPTV apps for iPhone, offering M3U playlist support and EPG functionality."},
+      {"question": "Can I watch IPTV on iPad?", "answer": "Yes, iPad supports IPTV apps like JamRun, iPlayTV, VLC, and GSE Smart IPTV from the App Store."},
+      {"question": "How do I stream IPTV from iPhone to TV?", "answer": "Use AirPlay to stream IPTV from your iPhone to an Apple TV or AirPlay-compatible smart TV."},
+      {"question": "Is there a free IPTV app for iOS?", "answer": "Yes, JamRun is a completely free IPTV app for iOS with no ads, supporting M3U playlists and EPG."}
+    ]
   },
   {
     "id": "windows",
@@ -173,7 +215,13 @@
     "cons": ["Not TV-optimized", "Requires keyboard/mouse", "Power consumption"],
     "description": "Windows PCs offer the most flexibility for IPTV with VLC, Kodi, and dedicated apps, plus the ability to record and manage large media libraries.",
     "shortDescription": "Desktop IPTV with maximum flexibility",
-    "keywords": ["iptv windows", "windows iptv player", "pc iptv", "iptv on computer"]
+    "keywords": ["iptv windows", "windows iptv player", "pc iptv", "iptv on computer"],
+    "faqs": [
+      {"question": "What is the best IPTV player for Windows?", "answer": "VLC Media Player and Kodi are the best free IPTV players for Windows, with VLC being simpler and Kodi offering more features."},
+      {"question": "Can I watch IPTV on Windows 11?", "answer": "Yes, Windows 11 supports IPTV through VLC, Kodi, IPTV Smarters, and various other desktop IPTV applications."},
+      {"question": "How do I play M3U files on Windows?", "answer": "Open M3U files with VLC Media Player by going to Media > Open Network Stream, or drag and drop the file into VLC."},
+      {"question": "Can I record IPTV on Windows?", "answer": "Yes, Windows is the best platform for IPTV recording using VLC, Kodi with PVR addons, or dedicated recording software."}
+    ]
   },
   {
     "id": "mac",
@@ -195,7 +243,13 @@
     "cons": ["Limited IPTV apps", "Expensive", "Not TV-optimized"],
     "description": "Mac computers can run IPTV through VLC and Kodi, with AirPlay capability to stream to Apple TV for big-screen viewing.",
     "shortDescription": "macOS IPTV with AirPlay support",
-    "keywords": ["iptv mac", "mac iptv player", "macos iptv", "iptv on macbook"]
+    "keywords": ["iptv mac", "mac iptv player", "macos iptv", "iptv on macbook"],
+    "faqs": [
+      {"question": "What is the best IPTV player for Mac?", "answer": "JamRun (for Apple Silicon), VLC, and Kodi are the best IPTV players for Mac, with JamRun being the most native experience."},
+      {"question": "Can I watch IPTV on MacBook?", "answer": "Yes, MacBook supports IPTV through VLC, Kodi, IPTV Smarters, and JamRun from the Mac App Store."},
+      {"question": "How do I AirPlay IPTV from Mac to TV?", "answer": "Use AirPlay mirroring from your Mac to stream IPTV to an Apple TV or AirPlay-compatible smart TV."},
+      {"question": "Is there a free IPTV app for Mac?", "answer": "Yes, VLC Media Player, Kodi, and JamRun are all free IPTV players available for macOS."}
+    ]
   },
   {
     "id": "linux",
@@ -217,7 +271,13 @@
     "cons": ["Technical knowledge required", "Limited app support", "No native IPTV apps"],
     "description": "Linux users can enjoy IPTV through VLC and Kodi, with the benefit of running on older hardware and having complete system control.",
     "shortDescription": "Open-source IPTV on Linux systems",
-    "keywords": ["iptv linux", "linux iptv player", "ubuntu iptv", "iptv on linux"]
+    "keywords": ["iptv linux", "linux iptv player", "ubuntu iptv", "iptv on linux"],
+    "faqs": [
+      {"question": "What is the best IPTV player for Linux?", "answer": "VLC and Kodi are the best IPTV players for Linux, both being open-source and well-maintained on all major distributions."},
+      {"question": "Can I watch IPTV on Ubuntu?", "answer": "Yes, Ubuntu supports IPTV through VLC (available via apt) and Kodi, both supporting M3U playlists and EPG."},
+      {"question": "How do I play M3U files on Linux?", "answer": "Use VLC Media Player with Media > Open Network Stream or Kodi with IPTV Simple Client addon for M3U playlist playback."},
+      {"question": "Is there a TiviMate for Linux?", "answer": "No, TiviMate is Android-only. Linux users should use Kodi with IPTV Simple Client or Hypnotix for a similar experience."}
+    ]
   },
   {
     "id": "samsung-tv",
@@ -239,7 +299,13 @@
     "cons": ["Very limited IPTV apps", "Can't sideload easily", "Tizen app restrictions"],
     "description": "Samsung Smart TVs run Tizen OS with limited IPTV options. SS IPTV and Smart IPTV are the main choices for native IPTV playback.",
     "shortDescription": "Samsung Smart TVs with Tizen OS",
-    "keywords": ["samsung tv iptv", "samsung smart tv iptv", "iptv samsung", "tizen iptv"]
+    "keywords": ["samsung tv iptv", "samsung smart tv iptv", "iptv samsung", "tizen iptv"],
+    "faqs": [
+      {"question": "Can I use IPTV on Samsung Smart TV?", "answer": "Yes, Samsung TVs support IPTV through apps like SS IPTV and Smart IPTV available in the Tizen app store."},
+      {"question": "What is the best IPTV app for Samsung TV?", "answer": "SS IPTV and Smart IPTV are the main IPTV apps for Samsung TVs, though options are limited compared to Android-based devices."},
+      {"question": "Can I sideload IPTV apps on Samsung TV?", "answer": "Sideloading on Samsung TVs is difficult. For more IPTV options, consider using a Firestick or Android TV box with your Samsung TV."},
+      {"question": "Does TiviMate work on Samsung TV?", "answer": "No, TiviMate is Android-only and not available on Samsung's Tizen OS. Use SS IPTV or Smart IPTV instead."}
+    ]
   },
   {
     "id": "lg-tv",
@@ -261,7 +327,13 @@
     "cons": ["Limited IPTV apps", "webOS restrictions", "Expensive for OLED"],
     "description": "LG Smart TVs with webOS offer beautiful displays but limited IPTV app options. SS IPTV and Smart IPTV provide basic IPTV functionality.",
     "shortDescription": "LG Smart TVs with webOS",
-    "keywords": ["lg tv iptv", "lg smart tv iptv", "iptv lg", "webos iptv"]
+    "keywords": ["lg tv iptv", "lg smart tv iptv", "iptv lg", "webos iptv"],
+    "faqs": [
+      {"question": "Can I use IPTV on LG Smart TV?", "answer": "Yes, LG TVs support IPTV through SS IPTV and Smart IPTV apps available in the webOS Content Store."},
+      {"question": "What is the best IPTV app for LG TV?", "answer": "SS IPTV is the most popular free IPTV app for LG TVs with webOS, supporting M3U playlists and basic EPG."},
+      {"question": "Does LG TV support M3U playlists?", "answer": "Yes, LG TVs can play M3U playlists through SS IPTV or Smart IPTV apps from the webOS app store."},
+      {"question": "Can I install TiviMate on LG TV?", "answer": "No, TiviMate is Android-only and not available on LG's webOS. For more IPTV options, use an external streaming device."}
+    ]
   },
   {
     "id": "sony-tv",
@@ -283,7 +355,13 @@
     "cons": ["Expensive", "Performance can lag", "Storage limitations"],
     "description": "Sony Smart TVs run Google TV, providing full Play Store access and support for most Android IPTV players directly on the TV.",
     "shortDescription": "Sony Smart TVs with Google TV",
-    "keywords": ["sony tv iptv", "sony smart tv iptv", "iptv sony", "google tv sony iptv"]
+    "keywords": ["sony tv iptv", "sony smart tv iptv", "iptv sony", "google tv sony iptv"],
+    "faqs": [
+      {"question": "Can I use TiviMate on Sony TV?", "answer": "Yes, Sony TVs with Google TV have access to the Play Store and can install TiviMate and other Android IPTV apps."},
+      {"question": "What IPTV apps work on Sony Smart TV?", "answer": "Sony TVs with Google TV support TiviMate, IPTV Smarters, Kodi, VLC, Perfect Player, and most Android IPTV apps."},
+      {"question": "Is Sony TV good for IPTV?", "answer": "Yes, Sony TVs with Google TV are excellent for IPTV because they have full Play Store access, unlike Samsung or LG TVs."},
+      {"question": "How do I install IPTV on Sony TV?", "answer": "Install IPTV apps directly from the Google Play Store on your Sony TV, or sideload APK files for apps not available in the store."}
+    ]
   },
   {
     "id": "roku",
@@ -305,7 +383,13 @@
     "cons": ["No IPTV player support", "Closed ecosystem", "Cannot sideload apps"],
     "description": "Roku devices do not officially support IPTV players due to their closed ecosystem. Users must use workarounds like screen mirroring.",
     "shortDescription": "Streaming device with limited IPTV support",
-    "keywords": ["roku iptv", "iptv on roku", "roku streaming", "roku m3u"]
+    "keywords": ["roku iptv", "iptv on roku", "roku streaming", "roku m3u"],
+    "faqs": [
+      {"question": "Can I use IPTV on Roku?", "answer": "Roku has very limited IPTV support due to its closed ecosystem. Screen mirroring from a phone or using a different device is recommended."},
+      {"question": "Is there an IPTV app for Roku?", "answer": "There are no mainstream IPTV players available on Roku. The platform blocks most third-party IPTV applications."},
+      {"question": "Can I play M3U files on Roku?", "answer": "Roku does not natively support M3U playlists. You would need to use screen mirroring or a different streaming device."},
+      {"question": "Why doesn't Roku support IPTV?", "answer": "Roku has a closed app ecosystem and strict content policies that prevent most IPTV applications from being available."}
+    ]
   },
   {
     "id": "mag-box",
@@ -327,6 +411,12 @@
     "cons": ["Limited to IPTV providers", "No app store", "Requires portal subscription"],
     "description": "MAG boxes are dedicated IPTV set-top boxes designed for use with Stalker portal middleware. They're plug-and-play with IPTV providers.",
     "shortDescription": "Dedicated IPTV set-top box",
-    "keywords": ["mag box iptv", "mag 524", "mag 322", "infomir mag", "stalker portal"]
+    "keywords": ["mag box iptv", "mag 524", "mag 322", "infomir mag", "stalker portal"],
+    "faqs": [
+      {"question": "What is a MAG box?", "answer": "MAG boxes are dedicated IPTV set-top boxes made by Infomir, designed specifically for use with IPTV services using Stalker portal middleware."},
+      {"question": "How do I set up a MAG box for IPTV?", "answer": "Enter your IPTV provider's portal URL in the MAG box settings. The provider will give you the portal address and may need your MAC address for activation."},
+      {"question": "Is MAG box better than Firestick for IPTV?", "answer": "MAG boxes are simpler for portal-based IPTV but less versatile. Firestick offers more app choices and features but requires more setup."},
+      {"question": "What is the latest MAG box model?", "answer": "The MAG 524 and MAG 524w3 are among the latest models, offering 4K support, Linux OS, and improved performance."}
+    ]
   }
 ]

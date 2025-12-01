@@ -67,6 +67,7 @@ export function ArticleSchema({
   datePublished,
   dateModified,
   author,
+  baseUrl,
 }: {
   title: string;
   description: string;
@@ -74,7 +75,9 @@ export function ArticleSchema({
   datePublished: string;
   dateModified: string;
   author?: string;
+  baseUrl?: string;
 }) {
+  const siteUrl = baseUrl || url.split('/').slice(0, 3).join('/');
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -86,12 +89,12 @@ export function ArticleSchema({
     author: {
       '@type': 'Organization',
       name: author || 'IPTV Guide',
-      url: 'https://iptvweb-635b7ddd06a5.herokuapp.com',
+      url: siteUrl,
     },
     publisher: {
       '@type': 'Organization',
       name: 'IPTV Guide',
-      url: 'https://iptvweb-635b7ddd06a5.herokuapp.com',
+      url: siteUrl,
     },
   };
 
@@ -261,18 +264,18 @@ export function ComparisonSchema({
 }
 
 // Website Schema for homepage
-export function WebsiteSchema() {
+export function WebsiteSchema({ baseUrl }: { baseUrl: string }) {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'IPTV Guide',
-    url: 'https://iptvweb-635b7ddd06a5.herokuapp.com',
+    url: baseUrl,
     description: 'Comprehensive IPTV guides, player reviews, setup tutorials, and troubleshooting for all devices.',
     potentialAction: {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://iptvweb-635b7ddd06a5.herokuapp.com/search?q={search_term_string}',
+        urlTemplate: `${baseUrl}/search?q={search_term_string}`,
       },
       'query-input': 'required name=search_term_string',
     },
@@ -287,13 +290,13 @@ export function WebsiteSchema() {
 }
 
 // Organization Schema
-export function OrganizationSchema() {
+export function OrganizationSchema({ baseUrl }: { baseUrl: string }) {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'IPTV Guide',
-    url: 'https://iptvweb-635b7ddd06a5.herokuapp.com',
-    logo: 'https://iptvweb-635b7ddd06a5.herokuapp.com/logo.png',
+    url: baseUrl,
+    logo: `${baseUrl}/logo.png`,
     sameAs: [],
     contactPoint: {
       '@type': 'ContactPoint',
@@ -366,6 +369,7 @@ export function ArticleWithAuthorSchema({
   authorName,
   authorUrl,
   authorExpertise,
+  baseUrl,
 }: {
   title: string;
   description: string;
@@ -375,7 +379,9 @@ export function ArticleWithAuthorSchema({
   authorName: string;
   authorUrl?: string;
   authorExpertise?: string;
+  baseUrl?: string;
 }) {
+  const siteUrl = baseUrl || url.split('/').slice(0, 3).join('/');
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -387,13 +393,13 @@ export function ArticleWithAuthorSchema({
     author: {
       '@type': 'Person',
       name: authorName,
-      url: authorUrl || 'https://iptvweb-635b7ddd06a5.herokuapp.com/about',
+      url: authorUrl || `${siteUrl}/about`,
       ...(authorExpertise && { jobTitle: authorExpertise }),
     },
     publisher: {
       '@type': 'Organization',
       name: 'IPTV Guide',
-      url: 'https://iptvweb-635b7ddd06a5.herokuapp.com',
+      url: siteUrl,
     },
   };
 

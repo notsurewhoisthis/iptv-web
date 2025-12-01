@@ -16,6 +16,8 @@ import type {
   BlogPost,
   UseCasePage,
   TechnicalGuide,
+  BenchmarkData,
+  PlayerBenchmark,
 } from './types';
 
 const DATA_DIR = path.join(process.cwd(), 'data');
@@ -228,6 +230,21 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
   } catch {
     return null;
   }
+}
+
+// Benchmark data loaders
+export async function getBenchmarkData(): Promise<BenchmarkData> {
+  return loadJSON<BenchmarkData>('benchmarks.json');
+}
+
+export async function getPlayerBenchmark(playerId: string): Promise<PlayerBenchmark | null> {
+  const data = await getBenchmarkData();
+  return data.playerBenchmarks.find((b) => b.playerId === playerId) || null;
+}
+
+export async function getPlayerBenchmarks(): Promise<PlayerBenchmark[]> {
+  const data = await getBenchmarkData();
+  return data.playerBenchmarks;
 }
 
 // Utility functions

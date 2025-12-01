@@ -1,16 +1,24 @@
 import Link from 'next/link';
-import { getPlayers, getDevices } from '@/lib/data-loader';
-import { Tv, Smartphone, MonitorPlay, Settings, ArrowRight } from 'lucide-react';
+import { getPlayers, getDevices, getBaseUrl } from '@/lib/data-loader';
+import { Tv, Smartphone, MonitorPlay, Settings, ArrowRight, Star } from 'lucide-react';
+import { WebsiteSchema, OrganizationSchema } from '@/components/JsonLd';
+import { QuickAnswer } from '@/components/GeoComponents';
 
 export default async function Home() {
   const players = await getPlayers();
   const devices = await getDevices();
+  const baseUrl = getBaseUrl();
 
-  const topPlayers = players.slice(0, 6);
+  const topPlayers = players.sort((a, b) => b.rating - a.rating).slice(0, 6);
   const topDevices = devices.slice(0, 6);
+  const topPlayer = topPlayers[0];
 
   return (
     <div className="min-h-screen">
+      {/* Structured Data for GEO */}
+      <WebsiteSchema baseUrl={baseUrl} />
+      <OrganizationSchema baseUrl={baseUrl} />
+
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-gray-50 to-white py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4 text-center">
@@ -38,6 +46,15 @@ export default async function Home() {
             </Link>
           </div>
         </div>
+      </section>
+
+      {/* QuickAnswer for GEO - AI extracts this first */}
+      <section className="max-w-6xl mx-auto px-4 -mt-8 mb-8">
+        <QuickAnswer
+          question="What is IPTV and which player should I use?"
+          answer={`IPTV (Internet Protocol Television) lets you stream live TV over the internet. ${topPlayer ? `The top-rated IPTV player is ${topPlayer.name} with a ${topPlayer.rating}/5 rating. ` : ''}We've reviewed ${players.length} players across ${devices.length} devices to help you find the best option.`}
+          highlight={topPlayer ? `Top Pick: ${topPlayer.name} - ${topPlayer.pricing.price}` : undefined}
+        />
       </section>
 
       {/* Quick Links */}
@@ -88,34 +105,37 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Popular Players */}
+      {/* Popular Players - Ranked for GEO */}
       <section className="py-12">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold text-gray-900">Popular IPTV Players</h2>
+            <h2 className="text-2xl font-bold text-gray-900">Top Rated IPTV Players</h2>
             <Link href="/players" className="text-gray-600 hover:text-gray-900 text-sm">
               View all →
             </Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {topPlayers.map((player) => (
+          <div className="space-y-3">
+            {topPlayers.map((player, index) => (
               <Link
                 key={player.id}
                 href={`/players/${player.slug}`}
-                className="block p-4 border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition"
+                className="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:border-blue-300 hover:bg-blue-50 transition"
               >
-                <div className="flex items-start justify-between">
+                <div className="flex items-center gap-4">
+                  <span className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm ${
+                    index === 0 ? 'bg-yellow-100 text-yellow-700' :
+                    index === 1 ? 'bg-gray-200 text-gray-600' :
+                    index === 2 ? 'bg-orange-100 text-orange-700' :
+                    'bg-gray-100 text-gray-500'
+                  }`}>
+                    {index + 1}
+                  </span>
                   <div>
                     <h3 className="font-semibold text-gray-900">{player.name}</h3>
-                    <p className="text-sm text-gray-500 mt-1">
-                      {player.shortDescription}
-                    </p>
+                    <p className="text-sm text-gray-500">{player.shortDescription}</p>
                   </div>
-                  <span className="text-sm font-medium text-gray-700">
-                    {player.rating}/5
-                  </span>
                 </div>
-                <div className="mt-3 flex items-center gap-2">
+                <div className="flex items-center gap-4">
                   <span
                     className={`text-xs px-2 py-1 rounded ${
                       player.pricing.model === 'free'
@@ -131,9 +151,10 @@ export default async function Home() {
                       ? 'Freemium'
                       : player.pricing.price}
                   </span>
-                  <span className="text-xs text-gray-500">
-                    {player.platforms.length} platforms
-                  </span>
+                  <div className="flex items-center gap-1">
+                    <Star className="h-4 w-4 text-yellow-500 fill-yellow-500" />
+                    <span className="font-medium">{player.rating}</span>
+                  </div>
                 </div>
               </Link>
             ))}

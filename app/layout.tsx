@@ -1,11 +1,16 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { Suspense } from 'react';
 import './globals.css';
 import Link from 'next/link';
+import { MobileNav } from '@/components/MobileNav';
+import { SearchWrapper } from '@/components/SearchWrapper';
+import { Rss } from 'lucide-react';
 
 const inter = Inter({
   variable: '--font-inter',
   subsets: ['latin'],
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -31,6 +36,11 @@ export const metadata: Metadata = {
     locale: 'en_US',
     siteName: 'IPTV Guide',
   },
+  alternates: {
+    types: {
+      'application/rss+xml': '/feed.xml',
+    },
+  },
 };
 
 export default function RootLayout({
@@ -41,8 +51,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} font-sans antialiased bg-white`}>
+        {/* Skip to main content - Accessibility */}
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-blue-600 focus:text-white focus:rounded-lg focus:outline-none"
+        >
+          Skip to main content
+        </a>
+
         {/* Navigation */}
-        <nav className="border-b border-gray-200">
+        <nav className="border-b border-gray-200" aria-label="Main navigation">
           <div className="max-w-6xl mx-auto px-4 py-4">
             <div className="flex items-center justify-between">
               <Link href="/" className="text-xl font-bold text-gray-900">
@@ -51,47 +69,52 @@ export default function RootLayout({
               <div className="hidden md:flex items-center gap-6">
                 <Link
                   href="/players"
-                  className="text-gray-600 hover:text-gray-900"
+                  className="text-gray-600 hover:text-gray-900 transition-colors"
                 >
                   Players
                 </Link>
                 <Link
                   href="/devices"
-                  className="text-gray-600 hover:text-gray-900"
+                  className="text-gray-600 hover:text-gray-900 transition-colors"
                 >
                   Devices
                 </Link>
                 <Link
                   href="/guides"
-                  className="text-gray-600 hover:text-gray-900"
+                  className="text-gray-600 hover:text-gray-900 transition-colors"
                 >
                   Guides
                 </Link>
                 <Link
                   href="/troubleshooting"
-                  className="text-gray-600 hover:text-gray-900"
+                  className="text-gray-600 hover:text-gray-900 transition-colors"
                 >
                   Troubleshooting
                 </Link>
                 <Link
                   href="/compare"
-                  className="text-gray-600 hover:text-gray-900"
+                  className="text-gray-600 hover:text-gray-900 transition-colors"
                 >
                   Compare
                 </Link>
                 <Link
                   href="/blog"
-                  className="text-gray-600 hover:text-gray-900"
+                  className="text-gray-600 hover:text-gray-900 transition-colors"
                 >
                   Blog
                 </Link>
+                <Suspense fallback={<div className="w-24 h-8 bg-gray-100 rounded-lg animate-pulse" />}>
+                  <SearchWrapper />
+                </Suspense>
               </div>
+              {/* Mobile Navigation */}
+              <MobileNav />
             </div>
           </div>
         </nav>
 
         {/* Main Content */}
-        <main>{children}</main>
+        <main id="main-content">{children}</main>
 
         {/* Footer */}
         <footer className="border-t border-gray-200 mt-16">
@@ -156,6 +179,20 @@ export default function RootLayout({
                   </li>
                   <li>
                     <Link href="/terms">Terms of Service</Link>
+                  </li>
+                  <li>
+                    <Link href="/about">About Us</Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/feed.xml"
+                      className="inline-flex items-center gap-1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Rss className="h-3 w-3" />
+                      RSS Feed
+                    </Link>
                   </li>
                 </ul>
               </div>
