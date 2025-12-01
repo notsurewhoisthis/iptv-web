@@ -244,10 +244,10 @@ export default async function PlayerPage({ params }: PageProps) {
                   })}
                 </div>
                 <Link
-                  href="/compare"
-                  className="inline-block mt-4 text-blue-600 hover:text-blue-800 text-sm"
+                  href={`/players/${player.slug}/alternatives`}
+                  className="inline-block mt-4 text-blue-600 hover:text-blue-800 text-sm font-medium"
                 >
-                  View all comparisons →
+                  View all {player.name} alternatives →
                 </Link>
               </section>
             )}

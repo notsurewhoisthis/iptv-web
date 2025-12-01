@@ -15,6 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_URL || 'https://localhost:3000'),
   title: {
     default: 'IPTV Guide - Setup Guides, Player Reviews & Troubleshooting',
     template: '%s | IPTV Guide',
@@ -121,7 +122,7 @@ export default function RootLayout({
         {/* Footer */}
         <footer className="border-t border-gray-200 dark:border-gray-800 mt-16">
           <div className="max-w-6xl mx-auto px-4 py-8">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
               <div>
                 <h3 className="font-semibold text-gray-900 dark:text-white mb-3">Players</h3>
                 <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
@@ -170,6 +171,23 @@ export default function RootLayout({
                   </li>
                   <li>
                     <Link href="/blog">Blog</Link>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-3">Alternatives</h3>
+                <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                  <li>
+                    <Link href="/players/tivimate/alternatives">TiviMate Alternatives</Link>
+                  </li>
+                  <li>
+                    <Link href="/players/vlc/alternatives">VLC Alternatives</Link>
+                  </li>
+                  <li>
+                    <Link href="/players/kodi/alternatives">Kodi Alternatives</Link>
+                  </li>
+                  <li>
+                    <Link href="/players/jamrun/alternatives">JamRun Alternatives</Link>
                   </li>
                 </ul>
               </div>

@@ -198,38 +198,85 @@ export default async function Home() {
         </div>
       </section>
 
+      {/* Find Alternatives Section */}
+      <section className="py-12 border-b border-gray-100 dark:border-gray-800">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="flex items-center justify-between mb-6">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+              Find Alternatives
+            </h2>
+            <Link href="/compare" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm">
+              Compare all →
+            </Link>
+          </div>
+          <p className="text-gray-600 dark:text-gray-400 mb-6 max-w-2xl">
+            Looking for alternatives to your current IPTV player? We compare all major players to help you find the perfect fit.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <Link
+              href="/players/tivimate/alternatives"
+              className="block p-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-blue-300 dark:hover:border-blue-600 hover:shadow-sm transition text-center"
+            >
+              <span className="font-medium text-gray-900 dark:text-white">TiviMate</span>
+              <span className="block text-sm text-gray-500 dark:text-gray-400 mt-1">Android favorite</span>
+            </Link>
+            <Link
+              href="/players/jamrun/alternatives"
+              className="block p-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-blue-300 dark:hover:border-blue-600 hover:shadow-sm transition text-center"
+            >
+              <span className="font-medium text-gray-900 dark:text-white">JamRun</span>
+              <span className="block text-sm text-gray-500 dark:text-gray-400 mt-1">Best for Apple</span>
+            </Link>
+            <Link
+              href="/players/kodi/alternatives"
+              className="block p-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-blue-300 dark:hover:border-blue-600 hover:shadow-sm transition text-center"
+            >
+              <span className="font-medium text-gray-900 dark:text-white">Kodi</span>
+              <span className="block text-sm text-gray-500 dark:text-gray-400 mt-1">Power users</span>
+            </Link>
+            <Link
+              href="/players/vlc/alternatives"
+              className="block p-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-blue-300 dark:hover:border-blue-600 hover:shadow-sm transition text-center"
+            >
+              <span className="font-medium text-gray-900 dark:text-white">VLC</span>
+              <span className="block text-sm text-gray-500 dark:text-gray-400 mt-1">Cross-platform</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Popular Guides CTA */}
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
             Ready to Get Started?
           </h2>
-          <p className="text-gray-600 mb-8 max-w-xl mx-auto">
+          <p className="text-gray-600 dark:text-gray-400 mb-8 max-w-xl mx-auto">
             Check out our most popular setup guides and start streaming in
             minutes.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link
               href="/guides/tivimate/setup/firestick"
-              className="px-4 py-2 bg-gray-100 rounded-full text-sm hover:bg-gray-200 transition"
+              className="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full text-sm hover:bg-gray-200 dark:hover:bg-gray-700 transition"
             >
               TiviMate on Firestick
             </Link>
             <Link
               href="/guides/kodi/setup/firestick"
-              className="px-4 py-2 bg-gray-100 rounded-full text-sm hover:bg-gray-200 transition"
+              className="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full text-sm hover:bg-gray-200 dark:hover:bg-gray-700 transition"
             >
               Kodi on Firestick
             </Link>
             <Link
               href="/guides/iptv-smarters/setup/firestick"
-              className="px-4 py-2 bg-gray-100 rounded-full text-sm hover:bg-gray-200 transition"
+              className="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full text-sm hover:bg-gray-200 dark:hover:bg-gray-700 transition"
             >
               IPTV Smarters on Firestick
             </Link>
             <Link
               href="/best/best-iptv-player-firestick"
-              className="px-4 py-2 bg-gray-100 rounded-full text-sm hover:bg-gray-200 transition"
+              className="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full text-sm hover:bg-gray-200 dark:hover:bg-gray-700 transition"
             >
               Best Player for Firestick
             </Link>

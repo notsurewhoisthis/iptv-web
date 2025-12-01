@@ -6,7 +6,7 @@ import {
   getPlayers,
   getDevices,
 } from '@/lib/data-loader';
-import { ArrowLeftRight, Tv, Smartphone } from 'lucide-react';
+import { ArrowLeftRight, Tv, Smartphone, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'IPTV Comparisons - Players & Devices Head-to-Head',
@@ -26,13 +26,37 @@ export default async function ComparePage() {
   const popularPlayerComparisons = playerComparisons.slice(0, 6);
   const popularDeviceComparisons = deviceComparisons.slice(0, 6);
 
+  // Featured players for alternatives
+  const featuredAlternatives = ['tivimate', 'vlc', 'kodi', 'iptv-smarters', 'jamrun'];
+  const alternativesPlayers = players.filter(p => featuredAlternatives.includes(p.slug));
+
   return (
     <div className="min-h-screen py-8">
       <div className="max-w-6xl mx-auto px-4">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">IPTV Comparisons</h1>
-        <p className="text-gray-600 mb-8">
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">IPTV Comparisons</h1>
+        <p className="text-gray-600 dark:text-gray-400 mb-8">
           Side-by-side comparisons to help you choose the best IPTV player or streaming device.
         </p>
+
+        {/* Find Alternatives Section */}
+        <section className="mb-12 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-xl p-6">
+          <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Looking for Alternatives?</h2>
+          <p className="text-gray-600 dark:text-gray-400 mb-4">
+            Explore all alternatives to popular IPTV players and find the perfect fit for your platform.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            {alternativesPlayers.map((player) => (
+              <Link
+                key={player.id}
+                href={`/players/${player.slug}/alternatives`}
+                className="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg text-sm font-medium hover:border-blue-400 hover:shadow-sm transition"
+              >
+                {player.name} alternatives
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            ))}
+          </div>
+        </section>
 
         {/* Player Comparisons */}
         <section className="mb-12">
