@@ -1,10 +1,9 @@
 import { marked } from 'marked';
 
 // Configure marked for better output
-marked.setOptions({
+marked.use({
   gfm: true,
   breaks: true,
-  async: false, // Force synchronous parsing
 });
 
 export function parseMarkdown(content: string): string {
@@ -13,7 +12,15 @@ export function parseMarkdown(content: string): string {
     return content;
   }
 
-  // Parse markdown to HTML synchronously
-  const result = marked.parse(content, { async: false });
-  return result as string;
+  // Parse markdown to HTML synchronously using parse (v17+ API)
+  // In marked v17, parse() is synchronous by default when not using async extensions
+  const result = marked.parse(content);
+
+  // If result is a Promise (shouldn't happen without async extensions), handle it
+  if (typeof result === 'string') {
+    return result;
+  }
+
+  // Fallback: return content as-is if parsing fails
+  return content;
 }
