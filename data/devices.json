@@ -51,7 +51,7 @@
     "brand": "Apple",
     "category": "streaming-box",
     "os": "tvOS",
-    "supportedPlayers": ["kodi", "vlc", "iptv-smarters", "gse-smart-iptv", "iplaytv"],
+    "supportedPlayers": ["jamrun", "kodi", "vlc", "iptv-smarters", "gse-smart-iptv", "iplaytv"],
     "specs": {
       "resolution": "4K Dolby Vision",
       "storage": "64GB/128GB",
@@ -139,7 +139,7 @@
     "brand": "Apple",
     "category": "mobile",
     "os": "iOS/iPadOS",
-    "supportedPlayers": ["vlc", "iptv-smarters", "gse-smart-iptv", "iplaytv", "kodi"],
+    "supportedPlayers": ["jamrun", "vlc", "iptv-smarters", "gse-smart-iptv", "iplaytv", "kodi"],
     "specs": {
       "resolution": "Varies by device",
       "storage": "64GB-1TB",
@@ -183,7 +183,7 @@
     "brand": "Apple",
     "category": "desktop",
     "os": "macOS",
-    "supportedPlayers": ["vlc", "kodi", "iptv-smarters"],
+    "supportedPlayers": ["jamrun", "vlc", "kodi", "iptv-smarters"],
     "specs": {
       "resolution": "Up to 6K",
       "storage": "256GB-8TB",

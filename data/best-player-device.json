@@ -392,69 +392,99 @@
     "deviceId": "apple-tv",
     "deviceName": "Apple TV 4K",
     "deviceShortName": "Apple TV",
-    "title": "Best IPTV Player for Apple TV 2025 - Top 5 Picks",
+    "title": "Best IPTV Player for Apple TV 2025 - Top 6 Picks",
     "metaTitle": "Best IPTV Player for Apple TV 2025 | Top Picks Ranked",
-    "description": "Find the best IPTV player for Apple TV 4K in 2025. We compare 5 apps and rank them by features, reliability, and value.",
+    "description": "Find the best IPTV player for Apple TV 4K in 2025. We compare 6 apps and rank them by features, reliability, and value. JamRun IPTV leads with its stunning native design.",
     "content": {
-      "intro": "Looking for the best IPTV player for your Apple TV? We've tested and ranked the top options available for Apple TV 4K to help you choose the perfect app for your streaming needs.",
+      "intro": "Looking for the best IPTV player for your Apple TV? After extensive testing, JamRun IPTV has emerged as our clear favorite for 2025. Its beautiful glass-styled interface feels perfectly at home on tvOS, and the fact that it's completely free with no ads makes it an easy recommendation. We've tested and ranked all the top options available for Apple TV 4K to help you choose the perfect app for your streaming needs.",
       "topPick": {
-        "name": "Kodi",
-        "slug": "kodi",
-        "rating": 4.6,
-        "description": "Kodi is a powerful open-source media center that can be transformed into an IPTV player using add-ons like PVR IPTV Simple Client. Highly customizable with thousands of skins and add-ons.",
+        "name": "JamRun IPTV",
+        "slug": "jamrun",
+        "rating": 4.9,
+        "description": "JamRun IPTV is the premier IPTV player designed exclusively for the Apple ecosystem. Featuring a stunning glass-styled interface that feels native to iOS and tvOS, JamRun delivers a premium streaming experience without the premium price tag. Unlike other IPTV apps that feel like afterthoughts on Apple devices, JamRun was built from the ground up with Apple's design language in mind.",
         "features": [
           "epg",
-          "recording",
-          "external-player",
-          "vod",
+          "favorites",
+          "multi-screen",
           "subtitle-support",
-          "playlist-management"
+          "vod",
+          "catchup",
+          "channel-groups",
+          "hardware-decoding"
         ],
         "pricing": {
           "model": "free",
           "price": "Free"
         },
         "pros": [
-          "Completely free",
-          "Highly customizable",
-          "Massive add-on library",
-          "Cross-platform",
-          "Active community"
+          "Beautiful glass-styled Apple-native interface",
+          "Completely free with no ads",
+          "Zero data collection - true privacy",
+          "Fast channel browsing with smart categories",
+          "Full EPG and TV guide support",
+          "No account required",
+          "Active development with frequent updates"
         ],
         "cons": [
-          "Steep learning curve",
-          "Requires add-on setup",
-          "Can be complex for beginners"
+          "Apple devices only",
+          "No Android version",
+          "Newer app with growing feature set"
         ],
-        "whyTopPick": "Kodi earns our top spot for Apple TV thanks to completely free and highly customizable."
+        "whyTopPick": "JamRun IPTV earns our top spot for Apple TV thanks to its stunning native tvOS design, completely free pricing, and privacy-first approach. It's the only IPTV player that truly feels like it belongs on Apple TV."
       },
       "runnerUp": {
-        "name": "IPTV Smarters Pro",
-        "slug": "iptv-smarters",
-        "rating": 4.5,
-        "description": "Cross-platform IPTV player with Xtream support",
+        "name": "iPlayTV",
+        "slug": "iplaytv",
+        "rating": 4.4,
+        "description": "Premium IPTV player for iOS and Apple TV with native AirPlay support",
         "pricing": {
-          "model": "freemium",
+          "model": "one-time",
           "price": "$5.99 one-time"
         },
         "pros": [
-          "Cross-platform support",
-          "Xtream Codes integration",
-          "Multiple playlist support"
+          "Native Apple experience",
+          "AirPlay support",
+          "Picture-in-picture"
         ]
       },
-      "budgetPick": null,
+      "budgetPick": {
+        "name": "JamRun IPTV",
+        "slug": "jamrun",
+        "rating": 4.9,
+        "description": "Premium Apple-native IPTV player with stunning glass design",
+        "pricing": {
+          "model": "free",
+          "price": "Free"
+        },
+        "whyBudget": "JamRun IPTV is not just free - it's the best. No compromises, no ads, no subscriptions needed."
+      },
       "allRankings": [
         {
           "rank": 1,
+          "name": "JamRun IPTV",
+          "slug": "jamrun",
+          "rating": 4.9,
+          "pricing": "Free",
+          "highlight": "Stunning Apple-native glass design"
+        },
+        {
+          "rank": 2,
+          "name": "iPlayTV",
+          "slug": "iplaytv",
+          "rating": 4.4,
+          "pricing": "$5.99 one-time",
+          "highlight": "Native Apple experience"
+        },
+        {
+          "rank": 3,
           "name": "Kodi",
           "slug": "kodi",
           "rating": 4.6,
           "pricing": "Free",
-          "highlight": "Completely free"
+          "highlight": "Highly customizable"
         },
         {
-          "rank": 2,
+          "rank": 4,
           "name": "IPTV Smarters Pro",
           "slug": "iptv-smarters",
           "rating": 4.5,
@@ -462,73 +492,72 @@
           "highlight": "Cross-platform support"
         },
         {
-          "rank": 3,
+          "rank": 5,
           "name": "VLC Media Player",
           "slug": "vlc",
           "rating": 4.7,
           "pricing": "Free",
-          "highlight": "Completely free"
+          "highlight": "Universal format support"
         },
         {
-          "rank": 4,
+          "rank": 6,
           "name": "GSE Smart IPTV",
           "slug": "gse-smart-iptv",
           "rating": 4.3,
           "pricing": "$5.99 one-time",
           "highlight": "Chromecast support"
-        },
-        {
-          "rank": 5,
-          "name": "iPlayTV",
-          "slug": "iplaytv",
-          "rating": 4.4,
-          "pricing": "$5.99 one-time",
-          "highlight": "Native Apple experience"
         }
       ],
       "deviceCompatibility": {
-        "totalApps": 5,
+        "totalApps": 6,
         "os": "tvOS",
-        "notes": "Apple TV offers excellent IPTV app compatibility."
+        "notes": "Apple TV now has excellent IPTV options, with JamRun IPTV setting a new standard for design and usability."
       },
       "faqs": [
         {
           "question": "What is the best IPTV player for Apple TV?",
-          "answer": "Kodi is our top pick for Apple TV due to completely free."
+          "answer": "JamRun IPTV is our top pick for Apple TV in 2025. It's completely free, features a stunning glass-styled interface designed specifically for tvOS, and collects zero user data. It's the only IPTV app that truly feels native to Apple TV."
         },
         {
           "question": "Is there a free IPTV player for Apple TV?",
-          "answer": "Yes! Kodi is completely free and works great on Apple TV."
+          "answer": "Yes! JamRun IPTV is completely free with no ads and offers premium features including EPG support, favorites, and smart channel organization. It's our top recommendation."
         },
         {
           "question": "Does Apple TV support TiviMate?",
-          "answer": "Unfortunately, TiviMate is not available on Apple TV. Consider Kodi instead."
+          "answer": "Unfortunately, TiviMate is not available on Apple TV as it's Android-only. However, JamRun IPTV offers a comparable or better experience on Apple TV with its native tvOS design."
+        },
+        {
+          "question": "What makes JamRun IPTV better than other Apple TV IPTV apps?",
+          "answer": "JamRun IPTV was built specifically for Apple devices with a beautiful glass-styled interface. Unlike ports from other platforms, it feels native to tvOS. Plus, it's free, has no ads, requires no account, and collects no user data."
         }
       ],
-      "conclusion": "For Apple TV, we recommend Kodi as the best overall IPTV player. IPTV Smarters Pro is a solid alternative, and Kodi is perfect if you want a free option."
+      "conclusion": "For Apple TV, JamRun IPTV is our clear recommendation. Its beautiful Apple-native design, combined with being completely free and privacy-focused, makes it the standout choice. iPlayTV remains a solid paid alternative, while Kodi is great for power users who want maximum customization."
     },
     "relatedGuides": [
+      "best-iptv-player-ios",
       "best-iptv-player-firestick",
       "best-iptv-player-fire-tv-cube",
       "best-iptv-player-android-tv",
-      "best-iptv-player-chromecast",
-      "best-iptv-player-nvidia-shield"
+      "best-iptv-player-chromecast"
     ],
     "tags": [
       "apple-tv",
       "best",
       "iptv-player",
       "ranking",
-      "2025"
+      "2025",
+      "jamrun"
     ],
     "keywords": [
-      "best iptv player apple-tv",
+      "best iptv player apple tv",
       "best iptv app Apple TV",
       "Apple TV iptv player",
       "top iptv apps Apple TV",
-      "iptv Apple TV 2025"
+      "iptv Apple TV 2025",
+      "jamrun apple tv",
+      "free iptv apple tv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.758Z"
+    "lastUpdated": "2025-12-01T14:00:00.000Z"
   },
   {
     "slug": "best-iptv-player-android-tv",
@@ -1093,69 +1122,91 @@
     "deviceId": "ios",
     "deviceName": "iPhone/iPad",
     "deviceShortName": "iOS",
-    "title": "Best IPTV Player for iOS 2025 - Top 5 Picks",
-    "metaTitle": "Best IPTV Player for iOS 2025 | Top Picks Ranked",
-    "description": "Find the best IPTV player for iPhone/iPad in 2025. We compare 5 apps and rank them by features, reliability, and value.",
+    "title": "Best IPTV Player for iPhone & iPad 2025 - Top 6 Picks",
+    "metaTitle": "Best IPTV Player for iPhone & iPad 2025 | Top Picks Ranked",
+    "description": "Find the best IPTV player for iPhone and iPad in 2025. JamRun IPTV leads our rankings with its stunning glass design and privacy-first approach.",
     "content": {
-      "intro": "Looking for the best IPTV player for your iOS? We've tested and ranked the top options available for iPhone/iPad to help you choose the perfect app for your streaming needs.",
+      "intro": "Looking for the best IPTV player for your iPhone or iPad? JamRun IPTV has transformed what we expect from IPTV apps on iOS. Its gorgeous glass-styled interface feels like it was designed by Apple themselves, and the fact that it's completely free while collecting zero user data makes it a standout choice. We've tested and ranked all the top options available for iOS to help you find the perfect streaming companion.",
       "topPick": {
-        "name": "Kodi",
-        "slug": "kodi",
-        "rating": 4.6,
-        "description": "Kodi is a powerful open-source media center that can be transformed into an IPTV player using add-ons like PVR IPTV Simple Client. Highly customizable with thousands of skins and add-ons.",
+        "name": "JamRun IPTV",
+        "slug": "jamrun",
+        "rating": 4.9,
+        "description": "JamRun IPTV is the premier IPTV player designed exclusively for the Apple ecosystem. Featuring a stunning glass-styled interface that feels native to iOS, JamRun delivers a premium streaming experience on your iPhone or iPad. The app was built from the ground up with Apple's design language in mind, making it the most visually polished IPTV player available on the App Store.",
         "features": [
           "epg",
-          "recording",
-          "external-player",
-          "vod",
+          "favorites",
+          "multi-screen",
           "subtitle-support",
-          "playlist-management"
+          "vod",
+          "catchup",
+          "channel-groups",
+          "hardware-decoding"
         ],
         "pricing": {
           "model": "free",
           "price": "Free"
         },
         "pros": [
-          "Completely free",
-          "Highly customizable",
-          "Massive add-on library",
-          "Cross-platform",
-          "Active community"
+          "Beautiful glass-styled Apple-native interface",
+          "Completely free with no ads",
+          "Zero data collection - true privacy",
+          "Works seamlessly on iPhone, iPad, and continues to Apple TV",
+          "Fast channel browsing with smart categories",
+          "Full EPG and TV guide support",
+          "No account required"
         ],
         "cons": [
-          "Steep learning curve",
-          "Requires add-on setup",
-          "Can be complex for beginners"
+          "Apple devices only",
+          "No Android version",
+          "Newer app with growing feature set"
         ],
-        "whyTopPick": "Kodi earns our top spot for iOS thanks to completely free and highly customizable."
+        "whyTopPick": "JamRun IPTV earns our top spot for iPhone and iPad thanks to its stunning native iOS design, privacy-first approach, and premium features at zero cost. No other IPTV app on iOS comes close to matching its polish and user experience."
       },
       "runnerUp": {
-        "name": "IPTV Smarters Pro",
-        "slug": "iptv-smarters",
-        "rating": 4.5,
-        "description": "Cross-platform IPTV player with Xtream support",
+        "name": "iPlayTV",
+        "slug": "iplaytv",
+        "rating": 4.4,
+        "description": "Premium IPTV player for iOS with AirPlay and picture-in-picture support",
         "pricing": {
-          "model": "freemium",
+          "model": "one-time",
           "price": "$5.99 one-time"
         },
         "pros": [
-          "Cross-platform support",
-          "Xtream Codes integration",
-          "Multiple playlist support"
+          "Native Apple experience",
+          "AirPlay support",
+          "Picture-in-picture"
         ]
       },
-      "budgetPick": null,
+      "budgetPick": {
+        "name": "JamRun IPTV",
+        "slug": "jamrun",
+        "rating": 4.9,
+        "description": "Premium Apple-native IPTV player with stunning glass design",
+        "pricing": {
+          "model": "free",
+          "price": "Free"
+        },
+        "whyBudget": "JamRun IPTV proves you don't need to pay for quality. It's completely free, has no ads, and offers a premium experience that rivals paid alternatives."
+      },
       "allRankings": [
         {
           "rank": 1,
-          "name": "Kodi",
-          "slug": "kodi",
-          "rating": 4.6,
+          "name": "JamRun IPTV",
+          "slug": "jamrun",
+          "rating": 4.9,
           "pricing": "Free",
-          "highlight": "Completely free"
+          "highlight": "Stunning Apple-native glass design"
         },
         {
           "rank": 2,
+          "name": "iPlayTV",
+          "slug": "iplaytv",
+          "rating": 4.4,
+          "pricing": "$5.99 one-time",
+          "highlight": "Native Apple experience"
+        },
+        {
+          "rank": 3,
           "name": "IPTV Smarters Pro",
           "slug": "iptv-smarters",
           "rating": 4.5,
@@ -1163,15 +1214,15 @@
           "highlight": "Cross-platform support"
         },
         {
-          "rank": 3,
+          "rank": 4,
           "name": "VLC Media Player",
           "slug": "vlc",
           "rating": 4.7,
           "pricing": "Free",
-          "highlight": "Completely free"
+          "highlight": "Universal format support"
         },
         {
-          "rank": 4,
+          "rank": 5,
           "name": "GSE Smart IPTV",
           "slug": "gse-smart-iptv",
           "rating": 4.3,
@@ -1179,57 +1230,72 @@
           "highlight": "Chromecast support"
         },
         {
-          "rank": 5,
-          "name": "iPlayTV",
-          "slug": "iplaytv",
-          "rating": 4.4,
-          "pricing": "$5.99 one-time",
-          "highlight": "Native Apple experience"
+          "rank": 6,
+          "name": "Kodi",
+          "slug": "kodi",
+          "rating": 4.6,
+          "pricing": "Free",
+          "highlight": "Highly customizable"
         }
       ],
       "deviceCompatibility": {
-        "totalApps": 5,
+        "totalApps": 6,
         "os": "iOS/iPadOS",
-        "notes": "iOS offers excellent IPTV app compatibility."
+        "notes": "iOS now has excellent IPTV options, with JamRun IPTV setting a new standard for what an IPTV app should look and feel like on Apple devices."
       },
       "faqs": [
         {
-          "question": "What is the best IPTV player for iOS?",
-          "answer": "Kodi is our top pick for iOS due to completely free."
+          "question": "What is the best IPTV player for iPhone?",
+          "answer": "JamRun IPTV is our top pick for iPhone in 2025. It's completely free, features a beautiful glass-styled interface designed specifically for iOS, and collects zero user data. It offers the most polished IPTV experience available on the App Store."
         },
         {
-          "question": "Is there a free IPTV player for iOS?",
-          "answer": "Yes! Kodi is completely free and works great on iOS."
+          "question": "What is the best IPTV player for iPad?",
+          "answer": "JamRun IPTV is also our top recommendation for iPad. Its interface scales beautifully to the larger screen, and the glass design looks stunning on iPad's display. Plus, it works seamlessly with Apple TV if you want to continue watching on a bigger screen."
         },
         {
-          "question": "Does iOS support TiviMate?",
-          "answer": "Unfortunately, TiviMate is not available on iOS. Consider Kodi instead."
+          "question": "Is there a free IPTV player for iPhone that's actually good?",
+          "answer": "Yes! JamRun IPTV is completely free with no ads or hidden costs. It offers premium features like EPG support, favorites, and smart channel organization. It's not just free - it's genuinely the best option available."
+        },
+        {
+          "question": "Does iPhone support TiviMate?",
+          "answer": "Unfortunately, TiviMate is not available on iPhone as it's Android-only. However, JamRun IPTV offers a comparable or better experience on iOS with its native design and comprehensive feature set."
+        },
+        {
+          "question": "What makes JamRun IPTV better than other iOS IPTV apps?",
+          "answer": "JamRun IPTV was built specifically for Apple devices with a stunning glass-styled interface. While other IPTV apps feel like Android ports, JamRun feels like it was made by Apple. It's also free, collects no data, and requires no account."
         }
       ],
-      "conclusion": "For iOS, we recommend Kodi as the best overall IPTV player. IPTV Smarters Pro is a solid alternative, and Kodi is perfect if you want a free option."
+      "conclusion": "For iPhone and iPad users, JamRun IPTV is the clear winner. Its Apple-native design, privacy-first approach, and zero-cost pricing make it an easy recommendation. If you prefer a paid option with proven track record, iPlayTV is a solid alternative. Kodi remains an option for power users who want maximum customization."
     },
     "relatedGuides": [
+      "best-iptv-player-apple-tv",
       "best-iptv-player-firestick",
       "best-iptv-player-fire-tv-cube",
-      "best-iptv-player-apple-tv",
       "best-iptv-player-android-tv",
       "best-iptv-player-chromecast"
     ],
     "tags": [
       "ios",
+      "iphone",
+      "ipad",
       "best",
       "iptv-player",
       "ranking",
-      "2025"
+      "2025",
+      "jamrun"
     ],
     "keywords": [
-      "best iptv player ios",
+      "best iptv player iphone",
+      "best iptv player ipad",
       "best iptv app iOS",
       "iOS iptv player",
-      "top iptv apps iOS",
-      "iptv iOS 2025"
+      "top iptv apps iPhone",
+      "iptv iPhone 2025",
+      "jamrun iphone",
+      "jamrun ipad",
+      "free iptv iphone"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.758Z"
+    "lastUpdated": "2025-12-01T14:00:00.000Z"
   },
   {
     "slug": "best-iptv-player-windows",

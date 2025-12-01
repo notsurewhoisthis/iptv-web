@@ -1,5 +1,519 @@
 [
   {
+    "slug": "jamrun-vs-iplaytv",
+    "type": "player",
+    "player1Id": "jamrun",
+    "player2Id": "iplaytv",
+    "player1Name": "JamRun IPTV",
+    "player2Name": "iPlayTV",
+    "title": "JamRun IPTV vs iPlayTV - Best Apple TV IPTV Player 2025",
+    "metaTitle": "JamRun IPTV vs iPlayTV Comparison 2025 | Best Apple IPTV Player",
+    "description": "Detailed comparison of JamRun IPTV and iPlayTV for Apple TV, iPhone, and iPad. Features, pricing, and which one you should choose.",
+    "content": {
+      "intro": "Choosing between JamRun IPTV and iPlayTV for your Apple devices? Both are designed for the Apple ecosystem, but JamRun IPTV offers a more modern experience at no cost. This comparison helps you decide which one is right for you.",
+      "comparison": {
+        "rating": {
+          "player1": 4.9,
+          "player2": 4.4,
+          "winner": "JamRun IPTV"
+        },
+        "pricing": {
+          "player1": {
+            "model": "free",
+            "price": "Free"
+          },
+          "player2": {
+            "model": "one-time",
+            "price": "$5.99 one-time"
+          },
+          "winner": "JamRun IPTV"
+        },
+        "features": {
+          "shared": [
+            "epg",
+            "favorites",
+            "subtitle-support"
+          ],
+          "player1Only": [
+            "vod",
+            "catchup",
+            "channel-groups",
+            "hardware-decoding"
+          ],
+          "player2Only": [
+            "airplay",
+            "picture-in-picture"
+          ],
+          "winner": "JamRun IPTV"
+        },
+        "platforms": {
+          "player1": [
+            "ios",
+            "apple-tv",
+            "mac",
+            "vision-pro"
+          ],
+          "player2": [
+            "ios",
+            "apple-tv"
+          ]
+        }
+      },
+      "player1Summary": {
+        "name": "JamRun IPTV",
+        "description": "JamRun IPTV is the premier IPTV player for Apple devices, featuring a stunning glass-styled interface and zero data collection. It's completely free with no ads.",
+        "pros": [
+          "Beautiful glass-styled Apple-native interface",
+          "Completely free with no ads",
+          "Zero data collection - true privacy",
+          "Universal Apple support including Vision Pro",
+          "Fast channel browsing with smart categories",
+          "No account required"
+        ],
+        "cons": [
+          "Apple devices only",
+          "Newer app with growing feature set"
+        ],
+        "bestFor": "Best for users who want a premium, privacy-focused experience at no cost"
+      },
+      "player2Summary": {
+        "name": "iPlayTV",
+        "description": "iPlayTV is a premium IPTV player designed for iOS and Apple TV with AirPlay support and picture-in-picture functionality.",
+        "pros": [
+          "Native Apple experience",
+          "AirPlay support",
+          "Picture-in-picture",
+          "Established app with track record"
+        ],
+        "cons": [
+          "Paid only - no free version",
+          "Less modern interface",
+          "No Mac or Vision Pro support"
+        ],
+        "bestFor": "Best for users who prioritize AirPlay and picture-in-picture features"
+      },
+      "verdict": "JamRun IPTV is our clear recommendation. It offers a more modern, polished interface, more features, and it's completely free. While iPlayTV has been around longer, JamRun IPTV represents the future of IPTV on Apple devices.",
+      "faqs": [
+        {
+          "question": "Is JamRun IPTV better than iPlayTV?",
+          "answer": "Yes, JamRun IPTV offers a more modern interface, more features, and is completely free. It's our top pick for Apple TV and iOS IPTV."
+        },
+        {
+          "question": "Is JamRun IPTV really free?",
+          "answer": "Yes, JamRun IPTV is completely free with no ads, no in-app purchases required for core features, and no subscription needed."
+        }
+      ]
+    },
+    "relatedGuides": [
+      "jamrun-vs-iptv-smarters",
+      "jamrun-vs-gse-smart-iptv",
+      "jamrun-vs-vlc"
+    ],
+    "tags": [
+      "jamrun",
+      "iplaytv",
+      "comparison",
+      "apple-tv",
+      "ios",
+      "2025"
+    ],
+    "keywords": [
+      "jamrun vs iplaytv",
+      "best apple tv iptv",
+      "jamrun iptv review",
+      "iplaytv vs jamrun",
+      "apple tv iptv comparison"
+    ],
+    "lastUpdated": "2025-12-01T14:00:00.000Z"
+  },
+  {
+    "slug": "jamrun-vs-iptv-smarters",
+    "type": "player",
+    "player1Id": "jamrun",
+    "player2Id": "iptv-smarters",
+    "player1Name": "JamRun IPTV",
+    "player2Name": "IPTV Smarters Pro",
+    "title": "JamRun IPTV vs IPTV Smarters Pro - iOS IPTV Comparison 2025",
+    "metaTitle": "JamRun IPTV vs IPTV Smarters Pro 2025 | iOS IPTV Comparison",
+    "description": "Compare JamRun IPTV and IPTV Smarters Pro for iPhone, iPad, and Apple TV. Which IPTV player is better for Apple devices?",
+    "content": {
+      "intro": "Comparing JamRun IPTV and IPTV Smarters Pro for your Apple devices? While IPTV Smarters Pro is available on many platforms, JamRun IPTV was built specifically for Apple devices and shows. This comparison helps you choose.",
+      "comparison": {
+        "rating": {
+          "player1": 4.9,
+          "player2": 4.5,
+          "winner": "JamRun IPTV"
+        },
+        "pricing": {
+          "player1": {
+            "model": "free",
+            "price": "Free"
+          },
+          "player2": {
+            "model": "freemium",
+            "price": "$5.99 one-time"
+          },
+          "winner": "JamRun IPTV"
+        },
+        "features": {
+          "shared": [
+            "epg",
+            "favorites",
+            "vod",
+            "catchup"
+          ],
+          "player1Only": [
+            "channel-groups",
+            "hardware-decoding"
+          ],
+          "player2Only": [
+            "multi-screen",
+            "parental-controls"
+          ],
+          "winner": "Tie"
+        },
+        "platforms": {
+          "player1": [
+            "ios",
+            "apple-tv",
+            "mac",
+            "vision-pro"
+          ],
+          "player2": [
+            "android",
+            "ios",
+            "firestick",
+            "windows",
+            "mac",
+            "smart-tv"
+          ]
+        }
+      },
+      "player1Summary": {
+        "name": "JamRun IPTV",
+        "description": "JamRun IPTV is designed exclusively for Apple devices with a beautiful glass-styled interface that feels native to iOS and tvOS.",
+        "pros": [
+          "Beautiful Apple-native glass design",
+          "Completely free with no ads",
+          "Zero data collection",
+          "Fast and fluid performance",
+          "No account required"
+        ],
+        "cons": [
+          "Apple devices only",
+          "No cross-platform sync"
+        ],
+        "bestFor": "Best for Apple users who want a premium native experience"
+      },
+      "player2Summary": {
+        "name": "IPTV Smarters Pro",
+        "description": "IPTV Smarters Pro is a cross-platform IPTV player with Xtream Codes support, available on nearly every platform.",
+        "pros": [
+          "Cross-platform support",
+          "Xtream Codes integration",
+          "Parental controls",
+          "Multi-screen viewing"
+        ],
+        "cons": [
+          "Interface feels dated on Apple devices",
+          "Paid for full features",
+          "Generic design not optimized for iOS"
+        ],
+        "bestFor": "Best for users who need cross-platform compatibility"
+      },
+      "verdict": "For Apple device users, JamRun IPTV is the better choice. Its native design feels like it belongs on iOS and tvOS, while IPTV Smarters Pro feels like an Android app ported to Apple devices. JamRun is also completely free.",
+      "faqs": [
+        {
+          "question": "Should I use JamRun IPTV or IPTV Smarters on my iPhone?",
+          "answer": "We recommend JamRun IPTV for iPhone. It's designed specifically for iOS with a beautiful native interface, and it's completely free."
+        },
+        {
+          "question": "Does JamRun IPTV support Xtream Codes?",
+          "answer": "JamRun IPTV supports M3U/M3U8 playlists. For Xtream Codes, you can often use the M3U URL format provided by your IPTV service."
+        }
+      ]
+    },
+    "relatedGuides": [
+      "jamrun-vs-iplaytv",
+      "jamrun-vs-gse-smart-iptv",
+      "jamrun-vs-vlc"
+    ],
+    "tags": [
+      "jamrun",
+      "iptv-smarters",
+      "comparison",
+      "ios",
+      "iphone",
+      "2025"
+    ],
+    "keywords": [
+      "jamrun vs iptv smarters",
+      "best iphone iptv",
+      "iptv smarters vs jamrun",
+      "ios iptv comparison",
+      "iphone iptv player"
+    ],
+    "lastUpdated": "2025-12-01T14:00:00.000Z"
+  },
+  {
+    "slug": "jamrun-vs-gse-smart-iptv",
+    "type": "player",
+    "player1Id": "jamrun",
+    "player2Id": "gse-smart-iptv",
+    "player1Name": "JamRun IPTV",
+    "player2Name": "GSE Smart IPTV",
+    "title": "JamRun IPTV vs GSE Smart IPTV - Apple IPTV Comparison 2025",
+    "metaTitle": "JamRun IPTV vs GSE Smart IPTV 2025 | Best iOS IPTV Player",
+    "description": "Compare JamRun IPTV and GSE Smart IPTV for iPhone, iPad, and Apple TV. See which IPTV player offers the best experience.",
+    "content": {
+      "intro": "JamRun IPTV and GSE Smart IPTV are both available for Apple devices, but they offer very different experiences. JamRun brings a modern, Apple-native approach while GSE Smart IPTV is a more traditional option.",
+      "comparison": {
+        "rating": {
+          "player1": 4.9,
+          "player2": 4.3,
+          "winner": "JamRun IPTV"
+        },
+        "pricing": {
+          "player1": {
+            "model": "free",
+            "price": "Free"
+          },
+          "player2": {
+            "model": "freemium",
+            "price": "$5.99 one-time"
+          },
+          "winner": "JamRun IPTV"
+        },
+        "features": {
+          "shared": [
+            "epg",
+            "favorites",
+            "subtitle-support"
+          ],
+          "player1Only": [
+            "vod",
+            "catchup",
+            "channel-groups",
+            "hardware-decoding"
+          ],
+          "player2Only": [
+            "chromecast",
+            "parental-controls"
+          ],
+          "winner": "JamRun IPTV"
+        },
+        "platforms": {
+          "player1": [
+            "ios",
+            "apple-tv",
+            "mac",
+            "vision-pro"
+          ],
+          "player2": [
+            "android",
+            "ios",
+            "apple-tv",
+            "firestick"
+          ]
+        }
+      },
+      "player1Summary": {
+        "name": "JamRun IPTV",
+        "description": "JamRun IPTV offers a stunning glass-styled interface built specifically for Apple devices, with zero data collection and no ads.",
+        "pros": [
+          "Modern glass-styled Apple design",
+          "Completely free with no ads",
+          "Privacy-focused - no data collection",
+          "Vision Pro support",
+          "Fast and responsive"
+        ],
+        "cons": [
+          "Apple devices only",
+          "No Chromecast support"
+        ],
+        "bestFor": "Best for Apple users who value design and privacy"
+      },
+      "player2Summary": {
+        "name": "GSE Smart IPTV",
+        "description": "GSE Smart IPTV is a feature-rich IPTV player with Chromecast support and parental controls, available on multiple platforms.",
+        "pros": [
+          "Chromecast support",
+          "Parental controls",
+          "Cross-platform availability",
+          "Established app"
+        ],
+        "cons": [
+          "Ads in free version",
+          "Dated interface",
+          "Occasional crashes reported",
+          "Less polished on Apple devices"
+        ],
+        "bestFor": "Best for users who need Chromecast support"
+      },
+      "verdict": "JamRun IPTV is the superior choice for Apple device users. Its modern interface, privacy focus, and free pricing make it hard to beat. GSE Smart IPTV is only worth considering if you specifically need Chromecast support.",
+      "faqs": [
+        {
+          "question": "Which is better for Apple TV, JamRun or GSE Smart IPTV?",
+          "answer": "JamRun IPTV is significantly better for Apple TV. Its interface was designed specifically for tvOS and looks stunning on the big screen."
+        },
+        {
+          "question": "Does JamRun IPTV have ads?",
+          "answer": "No, JamRun IPTV is completely ad-free. GSE Smart IPTV shows ads in the free version."
+        }
+      ]
+    },
+    "relatedGuides": [
+      "jamrun-vs-iplaytv",
+      "jamrun-vs-iptv-smarters",
+      "jamrun-vs-vlc"
+    ],
+    "tags": [
+      "jamrun",
+      "gse-smart-iptv",
+      "comparison",
+      "apple-tv",
+      "ios",
+      "2025"
+    ],
+    "keywords": [
+      "jamrun vs gse smart iptv",
+      "gse smart iptv vs jamrun",
+      "best apple tv iptv app",
+      "ios iptv comparison"
+    ],
+    "lastUpdated": "2025-12-01T14:00:00.000Z"
+  },
+  {
+    "slug": "jamrun-vs-vlc",
+    "type": "player",
+    "player1Id": "jamrun",
+    "player2Id": "vlc",
+    "player1Name": "JamRun IPTV",
+    "player2Name": "VLC Media Player",
+    "title": "JamRun IPTV vs VLC - Best Free IPTV Player for iOS 2025",
+    "metaTitle": "JamRun IPTV vs VLC Media Player 2025 | Free iOS IPTV Comparison",
+    "description": "Compare JamRun IPTV and VLC Media Player for iPhone and iPad. Both are free, but which is better for IPTV streaming?",
+    "content": {
+      "intro": "Looking for a free IPTV player for your iPhone or iPad? JamRun IPTV and VLC are both free options, but they serve different purposes. JamRun is purpose-built for IPTV while VLC is a general media player.",
+      "comparison": {
+        "rating": {
+          "player1": 4.9,
+          "player2": 4.7,
+          "winner": "JamRun IPTV"
+        },
+        "pricing": {
+          "player1": {
+            "model": "free",
+            "price": "Free"
+          },
+          "player2": {
+            "model": "free",
+            "price": "Free"
+          },
+          "winner": "Tie"
+        },
+        "features": {
+          "shared": [
+            "subtitle-support"
+          ],
+          "player1Only": [
+            "epg",
+            "favorites",
+            "vod",
+            "catchup",
+            "channel-groups"
+          ],
+          "player2Only": [
+            "external-player",
+            "playlist-management"
+          ],
+          "winner": "JamRun IPTV"
+        },
+        "platforms": {
+          "player1": [
+            "ios",
+            "apple-tv",
+            "mac",
+            "vision-pro"
+          ],
+          "player2": [
+            "android",
+            "ios",
+            "windows",
+            "mac",
+            "linux"
+          ]
+        }
+      },
+      "player1Summary": {
+        "name": "JamRun IPTV",
+        "description": "JamRun IPTV is purpose-built for IPTV streaming with EPG support, channel organization, and a beautiful Apple-native interface.",
+        "pros": [
+          "Built specifically for IPTV",
+          "Full EPG and TV guide support",
+          "Beautiful Apple-native design",
+          "Smart channel organization",
+          "VOD and catchup support",
+          "Zero data collection"
+        ],
+        "cons": [
+          "Apple devices only",
+          "Not a general media player"
+        ],
+        "bestFor": "Best for users who want a dedicated IPTV experience"
+      },
+      "player2Summary": {
+        "name": "VLC Media Player",
+        "description": "VLC is a versatile open-source media player that can play IPTV streams but lacks dedicated IPTV features.",
+        "pros": [
+          "Plays virtually any format",
+          "Cross-platform",
+          "Open source",
+          "General media playback"
+        ],
+        "cons": [
+          "No EPG support",
+          "No channel management",
+          "Basic IPTV features",
+          "Not designed for IPTV"
+        ],
+        "bestFor": "Best for general media playback, not specifically IPTV"
+      },
+      "verdict": "For IPTV streaming, JamRun IPTV is the clear winner. While VLC is an excellent general media player, it lacks essential IPTV features like EPG, favorites, and channel organization that JamRun provides out of the box.",
+      "faqs": [
+        {
+          "question": "Can VLC do everything JamRun IPTV does?",
+          "answer": "No, VLC lacks EPG support, channel organization, favorites, and other IPTV-specific features that JamRun IPTV provides."
+        },
+        {
+          "question": "Should I use VLC or JamRun IPTV for IPTV?",
+          "answer": "Use JamRun IPTV for IPTV streaming. It's designed specifically for this purpose and provides a much better experience than VLC for IPTV content."
+        }
+      ]
+    },
+    "relatedGuides": [
+      "jamrun-vs-iplaytv",
+      "jamrun-vs-iptv-smarters",
+      "jamrun-vs-gse-smart-iptv"
+    ],
+    "tags": [
+      "jamrun",
+      "vlc",
+      "comparison",
+      "free",
+      "ios",
+      "2025"
+    ],
+    "keywords": [
+      "jamrun vs vlc",
+      "vlc iptv",
+      "free iptv player ios",
+      "vlc vs jamrun iptv",
+      "best free iptv iphone"
+    ],
+    "lastUpdated": "2025-12-01T14:00:00.000Z"
+  },
+  {
     "slug": "tivimate-vs-iptv-smarters",
     "type": "player",
     "player1Id": "tivimate",

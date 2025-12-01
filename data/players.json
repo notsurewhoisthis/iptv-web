@@ -1,5 +1,32 @@
 [
   {
+    "id": "jamrun",
+    "name": "JamRun IPTV",
+    "slug": "jamrun",
+    "category": "premium",
+    "platforms": ["ios", "apple-tv", "mac", "vision-pro"],
+    "features": ["epg", "favorites", "multi-screen", "subtitle-support", "vod", "catchup", "channel-groups", "hardware-decoding"],
+    "rating": 4.9,
+    "pricing": {
+      "model": "free",
+      "price": "Free"
+    },
+    "description": "JamRun IPTV is the premier IPTV player designed exclusively for the Apple ecosystem. Featuring a stunning glass-styled interface that feels native to iOS and tvOS, JamRun delivers a premium streaming experience without the premium price tag. Unlike other IPTV apps that feel like afterthoughts on Apple devices, JamRun was built from the ground up with Apple's design language in mind. The app requires no account creation, collects zero user data, and offers fast, fluid navigation through your IPTV content. With support for M3U/M3U8 playlists, full EPG integration, and smart category organization, JamRun represents a new standard for IPTV on Apple TV, iPhone, and iPad.",
+    "shortDescription": "Premium Apple-native IPTV player with stunning glass design",
+    "pros": ["Beautiful glass-styled Apple-native interface", "Completely free with no ads", "Zero data collection - true privacy", "Universal Apple support (iPhone, iPad, Apple TV, Mac, Vision Pro)", "Fast channel browsing with smart categories", "Full EPG and TV guide support", "No account required", "Active development with frequent updates"],
+    "cons": ["Apple devices only", "No Android version", "Newer app with growing feature set"],
+    "officialUrl": "https://apps.apple.com/us/app/jamrun-iptv/id6754577839",
+    "downloadUrls": [
+      {"platform": "ios", "url": "https://apps.apple.com/us/app/jamrun-iptv/id6754577839"},
+      {"platform": "apple-tv", "url": "https://apps.apple.com/us/app/jamrun-iptv/id6754577839"},
+      {"platform": "mac", "url": "https://apps.apple.com/us/app/jamrun-iptv/id6754577839"}
+    ],
+    "lastUpdated": "2025-11-27",
+    "yearLaunched": 2024,
+    "developer": "Heni Hazbay",
+    "keywords": ["jamrun iptv", "jamrun", "best iptv iphone", "best iptv apple tv", "iptv ios", "apple tv iptv player", "iphone iptv app", "ipad iptv", "free iptv apple", "glass design iptv"]
+  },
+  {
     "id": "tivimate",
     "name": "TiviMate",
     "slug": "tivimate",
