@@ -359,6 +359,94 @@ export function ItemListSchema({
   );
 }
 
+// Video Object Schema for embedded videos
+export function VideoObjectSchema({
+  name,
+  description,
+  thumbnailUrl,
+  uploadDate,
+  duration,
+  contentUrl,
+}: {
+  name: string;
+  description: string;
+  thumbnailUrl?: string;
+  uploadDate: string;
+  duration?: string;
+  contentUrl?: string;
+}) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name,
+    description,
+    thumbnailUrl: thumbnailUrl || '/og-image.png',
+    uploadDate,
+    duration: duration || 'PT5M',
+    ...(contentUrl && { contentUrl }),
+    publisher: {
+      '@type': 'Organization',
+      name: 'IPTV Guide',
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// Tech Article Schema with enhanced E-E-A-T
+export function TechArticleSchema({
+  title,
+  description,
+  url,
+  datePublished,
+  dateModified,
+  wordCount,
+  dependencies,
+  proficiencyLevel,
+}: {
+  title: string;
+  description: string;
+  url: string;
+  datePublished: string;
+  dateModified: string;
+  wordCount?: number;
+  dependencies?: string[];
+  proficiencyLevel?: 'Beginner' | 'Intermediate' | 'Expert';
+}) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'TechArticle',
+    headline: title,
+    description,
+    url,
+    datePublished,
+    dateModified,
+    ...(wordCount && { wordCount }),
+    ...(dependencies && { dependencies: dependencies.join(', ') }),
+    ...(proficiencyLevel && { proficiencyLevel }),
+    author: {
+      '@type': 'Organization',
+      name: 'IPTV Guide',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'IPTV Guide',
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
 // Article Schema with Author for GEO E-E-A-T signals
 export function ArticleWithAuthorSchema({
   title,
