@@ -9,6 +9,7 @@ const navLinks = [
   { href: '/players', label: 'Players' },
   { href: '/devices', label: 'Devices' },
   { href: '/guides', label: 'Guides' },
+  { href: '/learn', label: 'Learn IPTV' },
   { href: '/troubleshooting', label: 'Troubleshooting' },
   { href: '/compare', label: 'Compare' },
   { href: '/best', label: 'Best Picks' },

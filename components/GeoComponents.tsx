@@ -174,7 +174,7 @@ export function AuthorBio({
   imageUrl?: string;
 }) {
   return (
-    <div className="border-t border-gray-200 pt-6 mt-8">
+    <div className="border-t border-gray-200 dark:border-gray-700 pt-6 mt-8">
       <div className="flex items-start gap-4">
         <div className="flex-shrink-0">
           {imageUrl ? (
@@ -184,17 +184,132 @@ export function AuthorBio({
               className="w-12 h-12 rounded-full object-cover"
             />
           ) : (
-            <div className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center">
-              <User className="h-6 w-6 text-gray-500" />
+            <div className="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+              <User className="h-6 w-6 text-gray-500 dark:text-gray-400" />
             </div>
           )}
         </div>
         <div>
-          <p className="text-sm text-gray-500">Written by</p>
-          <p className="font-semibold text-gray-900">{name}</p>
-          <p className="text-sm text-blue-600">{expertise}</p>
-          {bio && <p className="text-sm text-gray-600 mt-2">{bio}</p>}
+          <p className="text-sm text-gray-500 dark:text-gray-400">Written by</p>
+          <p className="font-semibold text-gray-900 dark:text-white">{name}</p>
+          <p className="text-sm text-blue-600 dark:text-blue-400">{expertise}</p>
+          {bio && <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">{bio}</p>}
         </div>
+      </div>
+    </div>
+  );
+}
+
+// Enhanced AuthorBio with more E-E-A-T signals
+export function EnhancedAuthorBio({
+  name,
+  title,
+  expertise,
+  bio,
+  credentials,
+  yearsExperience,
+  articlesWritten,
+  socialLinks,
+}: {
+  name: string;
+  title: string;
+  expertise: string[];
+  bio: string;
+  credentials?: string[];
+  yearsExperience?: number;
+  articlesWritten?: number;
+  socialLinks?: { platform: string; url: string }[];
+}) {
+  return (
+    <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 mt-8 bg-gray-50 dark:bg-gray-900">
+      <div className="flex items-start gap-4 mb-4">
+        <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white text-xl font-bold">
+          {name.split(' ').map(n => n[0]).join('')}
+        </div>
+        <div>
+          <p className="font-bold text-lg text-gray-900 dark:text-white">{name}</p>
+          <p className="text-blue-600 dark:text-blue-400 font-medium">{title}</p>
+          <div className="flex items-center gap-3 mt-2 text-sm text-gray-500 dark:text-gray-400">
+            {yearsExperience && (
+              <span>{yearsExperience}+ years experience</span>
+            )}
+            {articlesWritten && (
+              <>
+                <span className="text-gray-300 dark:text-gray-600">|</span>
+                <span>{articlesWritten}+ articles</span>
+              </>
+            )}
+          </div>
+        </div>
+      </div>
+
+      <p className="text-gray-700 dark:text-gray-300 mb-4">{bio}</p>
+
+      <div className="mb-4">
+        <p className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Areas of Expertise:</p>
+        <div className="flex flex-wrap gap-2">
+          {expertise.map((exp) => (
+            <span
+              key={exp}
+              className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 text-sm rounded-full"
+            >
+              {exp}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {credentials && credentials.length > 0 && (
+        <div className="mb-4">
+          <p className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Credentials:</p>
+          <ul className="space-y-1">
+            {credentials.map((cred, i) => (
+              <li key={i} className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
+                <Check className="h-4 w-4 text-green-500" />
+                {cred}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {socialLinks && socialLinks.length > 0 && (
+        <div className="flex items-center gap-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+          <span className="text-sm text-gray-500 dark:text-gray-400">Connect:</span>
+          {socialLinks.map((link) => (
+            <a
+              key={link.platform}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 text-sm"
+            >
+              {link.platform}
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// Editorial review badge for trust signals
+export function EditorialReviewBadge({
+  reviewerName = 'Editorial Team',
+  reviewDate,
+}: {
+  reviewerName?: string;
+  reviewDate: string;
+}) {
+  return (
+    <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg text-sm mb-6">
+      <svg className="h-5 w-5 text-green-600 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20">
+        <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+      </svg>
+      <div>
+        <span className="text-green-700 dark:text-green-400 font-medium">Reviewed by {reviewerName}</span>
+        <span className="text-green-600 dark:text-green-500 mx-2">•</span>
+        <span className="text-green-600 dark:text-green-500">{reviewDate}</span>
       </div>
     </div>
   );

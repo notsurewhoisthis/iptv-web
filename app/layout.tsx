@@ -100,6 +100,12 @@ export default function RootLayout({
                   Compare
                 </Link>
                 <Link
+                  href="/learn"
+                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
+                >
+                  Learn
+                </Link>
+                <Link
                   href="/blog"
                   className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
                 >

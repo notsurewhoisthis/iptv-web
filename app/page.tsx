@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import { getPlayers, getDevices, getBaseUrl } from '@/lib/data-loader';
-import { Tv, Smartphone, MonitorPlay, Settings, ArrowRight, Star } from 'lucide-react';
+import { Tv, Smartphone, MonitorPlay, Settings, ArrowRight, Star, BookOpen } from 'lucide-react';
 import { WebsiteSchema, OrganizationSchema } from '@/components/JsonLd';
 import { QuickAnswer } from '@/components/GeoComponents';
+import { MarketStats } from '@/components/MarketStats';
 
 export default async function Home() {
   const players = await getPlayers();
@@ -58,50 +59,67 @@ export default async function Home() {
       </section>
 
       {/* Quick Links */}
-      <section className="py-12 border-b border-gray-100">
+      <section className="py-12 border-b border-gray-100 dark:border-gray-800">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             <Link
               href="/players"
-              className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition"
+              className="flex items-center gap-3 p-4 bg-gray-50 dark:bg-gray-900 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition"
             >
-              <MonitorPlay className="h-6 w-6 text-gray-700" />
+              <MonitorPlay className="h-6 w-6 text-gray-700 dark:text-gray-300" />
               <div>
-                <div className="font-medium text-gray-900">IPTV Players</div>
-                <div className="text-sm text-gray-500">{players.length} apps</div>
+                <div className="font-medium text-gray-900 dark:text-white">IPTV Players</div>
+                <div className="text-sm text-gray-500 dark:text-gray-400">{players.length} apps</div>
               </div>
             </Link>
             <Link
               href="/devices"
-              className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition"
+              className="flex items-center gap-3 p-4 bg-gray-50 dark:bg-gray-900 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition"
             >
-              <Tv className="h-6 w-6 text-gray-700" />
+              <Tv className="h-6 w-6 text-gray-700 dark:text-gray-300" />
               <div>
-                <div className="font-medium text-gray-900">Devices</div>
-                <div className="text-sm text-gray-500">{devices.length} devices</div>
+                <div className="font-medium text-gray-900 dark:text-white">Devices</div>
+                <div className="text-sm text-gray-500 dark:text-gray-400">{devices.length} devices</div>
+              </div>
+            </Link>
+            <Link
+              href="/learn"
+              className="flex items-center gap-3 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/30 transition"
+            >
+              <BookOpen className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+              <div>
+                <div className="font-medium text-blue-900 dark:text-blue-300">Learn IPTV</div>
+                <div className="text-sm text-blue-600 dark:text-blue-400">Beginners</div>
               </div>
             </Link>
             <Link
               href="/troubleshooting"
-              className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition"
+              className="flex items-center gap-3 p-4 bg-gray-50 dark:bg-gray-900 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition"
             >
-              <Settings className="h-6 w-6 text-gray-700" />
+              <Settings className="h-6 w-6 text-gray-700 dark:text-gray-300" />
               <div>
-                <div className="font-medium text-gray-900">Troubleshooting</div>
-                <div className="text-sm text-gray-500">Fix issues</div>
+                <div className="font-medium text-gray-900 dark:text-white">Troubleshooting</div>
+                <div className="text-sm text-gray-500 dark:text-gray-400">Fix issues</div>
               </div>
             </Link>
             <Link
               href="/compare"
-              className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition"
+              className="flex items-center gap-3 p-4 bg-gray-50 dark:bg-gray-900 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition"
             >
-              <Smartphone className="h-6 w-6 text-gray-700" />
+              <Smartphone className="h-6 w-6 text-gray-700 dark:text-gray-300" />
               <div>
-                <div className="font-medium text-gray-900">Compare</div>
-                <div className="text-sm text-gray-500">Side by side</div>
+                <div className="font-medium text-gray-900 dark:text-white">Compare</div>
+                <div className="text-sm text-gray-500 dark:text-gray-400">Side by side</div>
               </div>
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Market Stats */}
+      <section className="py-12">
+        <div className="max-w-6xl mx-auto px-4">
+          <MarketStats />
         </div>
       </section>
 

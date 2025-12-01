@@ -17,6 +17,7 @@ import {
   getBlogPosts,
   getBaseUrl,
 } from '@/lib/data-loader';
+import learnArticles from '@/data/learn-articles.json';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = getBaseUrl();
@@ -113,6 +114,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: now,
       changeFrequency: 'weekly',
       priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/learn`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/privacy`,
@@ -262,6 +269,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
+  // Learn article pages
+  const learnPages: MetadataRoute.Sitemap = learnArticles.map((article) => ({
+    url: `${baseUrl}/learn/${article.slug}`,
+    lastModified: article.lastUpdated,
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }));
+
   return [
     ...staticPages,
     ...playerPages,
@@ -280,5 +295,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...useCasePages,
     ...technicalGuidePages,
     ...blogPages,
+    ...learnPages,
   ];
 }

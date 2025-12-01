@@ -1,0 +1,386 @@
+[
+  {
+    "slug": "what-is-iptv",
+    "title": "What is IPTV? A Beginner's Complete Guide",
+    "metaTitle": "What is IPTV? How Internet TV Works (2024 Guide)",
+    "description": "Learn what IPTV is, how it works, and why millions are switching from cable. Simple explanation for beginners with no tech jargon.",
+    "category": "basics",
+    "readTime": "8 min",
+    "difficulty": "Beginner",
+    "lastUpdated": "2024-12-01",
+    "sections": [
+      {
+        "id": "introduction",
+        "title": "What Does IPTV Mean?",
+        "content": "IPTV stands for Internet Protocol Television. In simple terms, it's a way to watch TV channels and videos through your internet connection instead of traditional cable or satellite.\n\nThink of it like Netflix or YouTube, but for live TV channels. Instead of signals coming through a cable wire or satellite dish, your TV shows arrive through the same internet connection you use for browsing websites."
+      },
+      {
+        "id": "how-it-works",
+        "title": "How IPTV Works (Simple Explanation)",
+        "content": "Here's how IPTV works in 4 simple steps:\n\n1. **Content is Created**: TV channels broadcast their shows and movies\n2. **Content is Converted**: The video is converted into digital format (like a YouTube video)\n3. **Content is Sent**: The digital video travels through the internet to your home\n4. **You Watch**: Your IPTV app receives and plays the video on your TV or device\n\nUnlike cable TV where everyone in your area receives the same signal, IPTV sends video only when you request it. This is why you can pause, rewind, or watch on-demand content."
+      },
+      {
+        "id": "types-of-iptv",
+        "title": "Types of IPTV Services",
+        "content": "There are three main types of IPTV:\n\n**1. Live TV**\nWatch channels as they broadcast in real-time, just like traditional cable TV. Sports, news, and live events fall into this category.\n\n**2. Video on Demand (VOD)**\nWatch movies and TV shows whenever you want, like Netflix. You choose what to watch from a library of content.\n\n**3. Time-Shifted TV**\nWatch shows that aired earlier - catch up on programs you missed. Some services let you go back 24-72 hours."
+      },
+      {
+        "id": "iptv-vs-cable",
+        "title": "IPTV vs Cable TV: Key Differences",
+        "content": "| Feature | IPTV | Cable TV |\n|---------|------|----------|\n| Delivery Method | Internet | Physical cable |\n| Device Flexibility | Any smart device | TV only |\n| On-Demand Content | Usually included | Often extra cost |\n| Installation | Download an app | Technician visit |\n| Contract | Usually none | Often 1-2 years |\n| Price | $10-30/month typical | $50-150/month |"
+      },
+      {
+        "id": "what-you-need",
+        "title": "What You Need to Use IPTV",
+        "content": "To start watching IPTV, you need:\n\n**1. Internet Connection**\n- Minimum: 10 Mbps for SD quality\n- Recommended: 25+ Mbps for HD\n- Best: 50+ Mbps for 4K\n\n**2. A Device**\n- Smart TV (Samsung, LG, Sony)\n- Streaming device (Firestick, Apple TV, Roku)\n- Smartphone or tablet\n- Computer\n\n**3. An IPTV Player App**\n- Free options: VLC, Kodi\n- Premium options: TiviMate, JamRun\n\n**4. An IPTV Subscription (Optional)**\n- Many free legal options exist\n- Paid services offer more channels"
+      },
+      {
+        "id": "is-iptv-legal",
+        "title": "Is IPTV Legal?",
+        "content": "IPTV technology itself is 100% legal. Many legitimate services use IPTV:\n\n- Netflix, Hulu, Disney+\n- YouTube TV, Sling TV\n- Your cable company's streaming app\n\n**What's NOT legal:**\n- Services offering paid channels for free\n- Pirated movie libraries\n- Unlicensed sports broadcasts\n\n**How to stay safe:**\n- Use reputable, well-known services\n- If it seems too good to be true (500 channels for $5/month), it probably is\n- Stick to official app stores for IPTV players"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Do I need a special TV for IPTV?",
+        "answer": "No, any TV can work with IPTV. If your TV isn't a Smart TV, you can add a streaming device like Amazon Firestick ($30-50) to make it IPTV-compatible."
+      },
+      {
+        "question": "Is IPTV better than cable?",
+        "answer": "For most people, yes. IPTV offers more flexibility, works on multiple devices, usually costs less, and doesn't require long-term contracts. However, cable may still be better if you have poor internet or want guaranteed reliability for live sports."
+      },
+      {
+        "question": "How much internet speed do I need for IPTV?",
+        "answer": "For smooth streaming: 10 Mbps minimum for SD, 25 Mbps for HD, and 50+ Mbps for 4K. If multiple people in your home stream simultaneously, add 10-25 Mbps per additional viewer."
+      }
+    ],
+    "relatedSlugs": ["how-iptv-works", "m3u-playlists-explained", "iptv-legal-guide"]
+  },
+  {
+    "slug": "how-iptv-works",
+    "title": "How IPTV Works: Technical Guide Made Simple",
+    "metaTitle": "How IPTV Works: Complete Technical Breakdown (2024)",
+    "description": "Understand the technology behind IPTV streaming. Learn about protocols, codecs, and delivery methods in plain English.",
+    "category": "technical",
+    "readTime": "10 min",
+    "difficulty": "Intermediate",
+    "lastUpdated": "2024-12-01",
+    "sections": [
+      {
+        "id": "overview",
+        "title": "IPTV Technology Overview",
+        "content": "IPTV uses the same technology that powers websites and video streaming services. When you watch IPTV, here's what happens behind the scenes:\n\n1. Video is captured and encoded\n2. Encoded video is stored on servers\n3. When you request a channel, the server sends video packets\n4. Your player assembles packets into watchable video\n5. Your TV displays the result\n\nThis all happens in fractions of a second, creating the illusion of live TV."
+      },
+      {
+        "id": "protocols",
+        "title": "Streaming Protocols Explained",
+        "content": "IPTV uses several protocols (ways of sending data):\n\n**HLS (HTTP Live Streaming)**\n- Most common protocol\n- Works on all devices\n- Breaks video into small chunks\n- Adapts quality to your connection\n\n**RTMP (Real-Time Messaging Protocol)**\n- Older but still used\n- Very low delay (good for live)\n- Requires specific player support\n\n**MPEG-DASH**\n- Newer standard\n- Very efficient\n- Used by YouTube, Netflix"
+      },
+      {
+        "id": "codecs",
+        "title": "Video Codecs: What They Do",
+        "content": "A codec compresses video so it can travel over the internet efficiently.\n\n**H.264 (AVC)**\n- Most compatible\n- Works everywhere\n- Good quality at medium file size\n\n**H.265 (HEVC)**\n- 50% smaller files than H.264\n- Same quality, less bandwidth\n- Needs newer devices\n\n**AV1**\n- Newest codec\n- Best compression\n- Limited device support currently"
+      },
+      {
+        "id": "buffering",
+        "title": "Why Buffering Happens",
+        "content": "Buffering occurs when video data doesn't arrive fast enough. Common causes:\n\n1. **Slow Internet**: Your connection can't keep up\n2. **Server Overload**: Too many people watching\n3. **Network Congestion**: Peak usage times\n4. **WiFi Issues**: Weak signal or interference\n5. **Device Problems**: Old hardware struggling\n\n**Solutions:**\n- Use wired ethernet instead of WiFi\n- Lower video quality in settings\n- Try a different server/source\n- Restart your router"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's the difference between IPTV and OTT?",
+        "answer": "OTT (Over-The-Top) is a type of IPTV that works over the public internet without a dedicated network. Services like Netflix and YouTube TV are OTT. Traditional IPTV from your ISP uses a managed, dedicated network for better quality."
+      },
+      {
+        "question": "Why does live IPTV have delay?",
+        "answer": "Live IPTV typically has 10-60 seconds delay because the video must be encoded, transmitted, and buffered. The HLS protocol adds delay but improves reliability. Some protocols like RTMP have lower delay but may be less stable."
+      }
+    ],
+    "relatedSlugs": ["what-is-iptv", "buffering-solutions", "video-codecs-basics"]
+  },
+  {
+    "slug": "m3u-playlists-explained",
+    "title": "M3U Playlists Explained: What They Are & How to Use Them",
+    "metaTitle": "M3U Playlist Guide: Format, Setup & Troubleshooting (2024)",
+    "description": "Complete guide to M3U playlists for IPTV. Learn the format, how to add playlists to your player, and fix common issues.",
+    "category": "basics",
+    "readTime": "7 min",
+    "difficulty": "Beginner",
+    "lastUpdated": "2024-12-01",
+    "sections": [
+      {
+        "id": "what-is-m3u",
+        "title": "What is an M3U Playlist?",
+        "content": "An M3U playlist is simply a text file that contains a list of TV channels and their streaming addresses. Think of it like a phone's contact list - but instead of phone numbers, it stores streaming URLs.\n\nWhen you add an M3U playlist to your IPTV player, the app reads this file and shows you all the available channels. Click a channel, and it connects to that channel's streaming URL."
+      },
+      {
+        "id": "m3u-format",
+        "title": "Understanding M3U Format",
+        "content": "An M3U file looks like this:\n\n```\n#EXTM3U\n#EXTINF:-1 tvg-id=\"espn\" tvg-logo=\"logo.png\" group-title=\"Sports\",ESPN\nhttp://example.com/live/espn\n#EXTINF:-1 tvg-id=\"cnn\" group-title=\"News\",CNN\nhttp://example.com/live/cnn\n```\n\n**Breaking it down:**\n- `#EXTM3U` - File header (always first line)\n- `#EXTINF:-1` - Channel info follows\n- `tvg-id` - Channel ID for EPG matching\n- `tvg-logo` - Channel logo image\n- `group-title` - Category (Sports, News, etc.)\n- `Channel Name` - What you see in the player\n- `URL` - Where the stream comes from"
+      },
+      {
+        "id": "m3u-vs-xtream",
+        "title": "M3U vs Xtream Codes",
+        "content": "Most IPTV services offer two connection methods:\n\n**M3U Playlist**\n- Single URL containing all channels\n- Simple to set up\n- Must reload entire playlist to update\n- Works with any player\n\n**Xtream Codes API**\n- Login with username/password/URL\n- Dynamic updates without reloading\n- Better EPG integration\n- Requires player support\n\n**Which to use?**\nXtream Codes is generally better if your player supports it. M3U is the universal fallback that works everywhere."
+      },
+      {
+        "id": "adding-playlist",
+        "title": "How to Add M3U Playlist to Your Player",
+        "content": "The process varies by player, but generally:\n\n1. **Get your M3U URL** from your IPTV provider\n2. **Open your IPTV player** settings\n3. **Find \"Add Playlist\"** or similar option\n4. **Enter the URL** (or upload the .m3u file)\n5. **Wait for channels to load**\n6. **Refresh EPG** if available\n\nMost players also let you name your playlist if you have multiple services."
+      },
+      {
+        "id": "troubleshooting",
+        "title": "Common M3U Problems & Fixes",
+        "content": "**Playlist won't load**\n- Check URL is correct (no spaces)\n- Ensure internet connection works\n- Try in a web browser first\n\n**Channels not playing**\n- Playlist may have expired\n- Server could be down\n- Check if subscription is active\n\n**Missing channels**\n- Reload/refresh playlist\n- Check if provider changed URLs\n- Clear player cache\n\n**No EPG data**\n- EPG requires separate URL usually\n- TVG-IDs must match EPG source\n- Allow time for EPG to download"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I edit an M3U playlist?",
+        "answer": "Yes! Since it's just a text file, you can open it in Notepad (Windows) or TextEdit (Mac) and modify channels, reorder them, or remove unwanted entries. Just save it with the .m3u extension."
+      },
+      {
+        "question": "Why do M3U links expire?",
+        "answer": "Many providers use token-based authentication in their URLs for security. These tokens expire after 24-72 hours to prevent unauthorized sharing. You'll need to get a fresh URL from your provider's portal."
+      },
+      {
+        "question": "What's an M3U8 file?",
+        "answer": "M3U8 is the same as M3U but uses UTF-8 encoding for international characters. Most modern players handle both formats identically. The '8' just indicates the character encoding."
+      }
+    ],
+    "relatedSlugs": ["what-is-iptv", "epg-guide-explained", "buffering-solutions"]
+  },
+  {
+    "slug": "epg-guide-explained",
+    "title": "EPG (TV Guide) Explained: Setup & Configuration",
+    "metaTitle": "IPTV EPG Guide: What It Is & How to Set It Up (2024)",
+    "description": "Learn what EPG is, why you need it for IPTV, and how to configure electronic program guides in any IPTV player.",
+    "category": "basics",
+    "readTime": "6 min",
+    "difficulty": "Beginner",
+    "lastUpdated": "2024-12-01",
+    "sections": [
+      {
+        "id": "what-is-epg",
+        "title": "What is EPG?",
+        "content": "EPG stands for Electronic Program Guide. It's the on-screen TV guide that shows you what's playing now, what's coming up, and program descriptions.\n\nWithout EPG, your IPTV player just shows channel names. With EPG, you get:\n- Current and upcoming show information\n- Show descriptions and ratings\n- Easy channel surfing\n- Recording/reminder scheduling"
+      },
+      {
+        "id": "how-epg-works",
+        "title": "How EPG Works",
+        "content": "EPG data comes from XMLTV files - structured data files containing:\n- Channel IDs\n- Program times\n- Show titles and descriptions\n- Categories and ratings\n\nYour IPTV player matches channels in your playlist to channels in the EPG using the `tvg-id` tag. When there's a match, you see program information."
+      },
+      {
+        "id": "setting-up-epg",
+        "title": "Setting Up EPG",
+        "content": "**Step 1: Get Your EPG URL**\nYour IPTV provider usually gives you an EPG/XMLTV URL. It looks like:\n`http://provider.com/xmltv.php?username=xxx`\n\n**Step 2: Add to Your Player**\n- Go to Settings → EPG\n- Enter the EPG URL\n- Set refresh interval (daily recommended)\n- Save and wait for download\n\n**Step 3: Verify It Works**\n- Open any channel\n- Check if program info appears\n- Browse the TV guide view"
+      },
+      {
+        "id": "epg-troubleshooting",
+        "title": "EPG Not Working? Try This",
+        "content": "**No EPG showing:**\n1. Verify EPG URL works (test in browser)\n2. Wait - EPG can take 5-30 minutes to load\n3. Check tvg-id tags match between playlist and EPG\n\n**Partial EPG (some channels missing):**\n- Channel IDs don't match\n- EPG source missing those channels\n- Try alternative EPG source\n\n**Wrong times:**\n- Check timezone settings in player\n- Verify EPG is for your region\n- Update system time on device"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Do I need EPG for IPTV to work?",
+        "answer": "No, EPG is optional. Your channels will work fine without it - you just won't see program information. Think of it as a nice-to-have feature that improves the experience."
+      },
+      {
+        "question": "Why does EPG load slowly?",
+        "answer": "EPG files can be large (100MB+) as they contain program data for thousands of channels over multiple days. Initial download takes time, but players cache the data so subsequent loads are faster."
+      }
+    ],
+    "relatedSlugs": ["m3u-playlists-explained", "what-is-iptv", "buffering-solutions"]
+  },
+  {
+    "slug": "buffering-solutions",
+    "title": "IPTV Buffering: Causes & Solutions",
+    "metaTitle": "Fix IPTV Buffering: 15 Proven Solutions (2024 Guide)",
+    "description": "Stop IPTV buffering for good. Learn the real causes and proven fixes for smooth streaming on any device.",
+    "category": "troubleshooting",
+    "readTime": "8 min",
+    "difficulty": "Beginner",
+    "lastUpdated": "2024-12-01",
+    "sections": [
+      {
+        "id": "why-buffering-happens",
+        "title": "Why IPTV Buffers",
+        "content": "Buffering happens when video data doesn't arrive fast enough to play smoothly. Your player needs a steady flow of data - when it runs out, it pauses to \"buffer\" (collect more data).\n\n**Common culprits:**\n1. Internet speed too slow\n2. WiFi signal issues\n3. IPTV server overloaded\n4. Device struggling to decode video\n5. ISP throttling streaming"
+      },
+      {
+        "id": "quick-fixes",
+        "title": "Quick Fixes to Try First",
+        "content": "**1. Restart Everything**\n- Turn off your streaming device (wait 30 seconds)\n- Restart your router\n- Turn everything back on\n\n**2. Switch to Wired Connection**\nEthernet > WiFi, always. If possible, run an ethernet cable to your device.\n\n**3. Lower Video Quality**\nMost players let you change quality. Try 720p instead of 1080p.\n\n**4. Close Other Apps**\nBackground apps consume bandwidth and processing power.\n\n**5. Try a Different Channel**\nIf only one channel buffers, it's likely a server issue, not your setup."
+      },
+      {
+        "id": "advanced-solutions",
+        "title": "Advanced Solutions",
+        "content": "**Optimize Router Settings**\n- Enable QoS (Quality of Service) for streaming\n- Use 5GHz WiFi instead of 2.4GHz\n- Update router firmware\n\n**Player Settings**\n- Increase buffer size (if option exists)\n- Enable hardware decoding\n- Change video decoder to auto\n\n**Network Improvements**\n- Use a VPN if ISP is throttling\n- Switch DNS to 1.1.1.1 or 8.8.8.8\n- Check for network congestion at router\n\n**Device Upgrades**\n- Clear cache/storage\n- Factory reset if needed\n- Consider newer, faster hardware"
+      },
+      {
+        "id": "speed-requirements",
+        "title": "Internet Speed Requirements",
+        "content": "**Minimum speeds for smooth streaming:**\n- SD (480p): 3-5 Mbps\n- HD (720p): 5-10 Mbps\n- Full HD (1080p): 10-25 Mbps\n- 4K: 25-50 Mbps\n\n**But wait, there's more...**\nThese are per stream. If someone else is streaming Netflix while you watch IPTV, add those requirements together.\n\n**Test your real speed:**\nRun a speed test from your streaming device, not your phone. WiFi vs. device location matters!"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "My speed test shows 100Mbps but IPTV still buffers. Why?",
+        "answer": "Speed tests measure to a nearby server in ideal conditions. IPTV servers may be far away, your ISP may throttle streaming traffic, or WiFi interference reduces real-world speeds. Test on the actual device you stream on."
+      },
+      {
+        "question": "Does a VPN help with buffering?",
+        "answer": "Sometimes yes! If your ISP throttles streaming traffic, a VPN can bypass this. However, VPNs add overhead and can slow things down if your ISP doesn't throttle. Try both ways and compare."
+      },
+      {
+        "question": "Should I get a new Firestick/device?",
+        "answer": "If your device is 3+ years old and struggles with 1080p content, upgrading helps. Newer devices have better processors and WiFi chips. But first try all the free fixes above."
+      }
+    ],
+    "relatedSlugs": ["how-iptv-works", "vpn-for-iptv", "video-codecs-basics"]
+  },
+  {
+    "slug": "vpn-for-iptv",
+    "title": "VPN for IPTV: Do You Need One?",
+    "metaTitle": "VPN for IPTV: Complete Guide & Best Options (2024)",
+    "description": "Should you use a VPN for IPTV? Learn the benefits, drawbacks, and how to set up a VPN for streaming.",
+    "category": "technical",
+    "readTime": "7 min",
+    "difficulty": "Intermediate",
+    "lastUpdated": "2024-12-01",
+    "sections": [
+      {
+        "id": "what-vpn-does",
+        "title": "What a VPN Does for IPTV",
+        "content": "A VPN (Virtual Private Network) encrypts your internet traffic and routes it through a server elsewhere. For IPTV, this means:\n\n**Privacy**: Your ISP can't see what you're watching\n**Bypass Throttling**: ISPs sometimes slow streaming traffic - VPN hides this\n**Geo-Unblocking**: Access content restricted to other regions\n**Security**: Encrypts connection on public WiFi"
+      },
+      {
+        "id": "when-you-need-vpn",
+        "title": "When You Need a VPN",
+        "content": "**You probably need a VPN if:**\n- Your ISP throttles streaming\n- You want privacy from ISP monitoring\n- You travel and want home content\n- You use public WiFi frequently\n\n**You probably don't need a VPN if:**\n- IPTV works fine without one\n- You have good speeds with legal services\n- You only use home WiFi\n- Adding complexity isn't worth privacy benefit to you"
+      },
+      {
+        "id": "vpn-setup",
+        "title": "Setting Up VPN for IPTV",
+        "content": "**Option 1: VPN App on Device**\n- Download VPN app (ExpressVPN, NordVPN, etc.)\n- Connect to a server\n- Then open IPTV app\n- All traffic goes through VPN\n\n**Option 2: VPN on Router**\n- Configure VPN at router level\n- All devices automatically protected\n- No need for individual apps\n- Requires compatible router\n\n**Option 3: Smart DNS**\n- Lighter than full VPN\n- Only changes DNS requests\n- Faster but less private\n- Good for geo-unblocking only"
+      },
+      {
+        "id": "vpn-tips",
+        "title": "VPN Tips for Best Streaming",
+        "content": "**Choose servers wisely:**\n- Closer servers = faster speeds\n- Choose server location based on content needs\n\n**Use fast protocols:**\n- WireGuard is fastest\n- OpenVPN reliable but slower\n- IKEv2 good balance\n\n**Split tunneling:**\n- Route only IPTV through VPN\n- Keep other apps at full speed\n\n**Kill switch:**\n- Enable this feature\n- Protects if VPN disconnects"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Will a VPN slow down my streaming?",
+        "answer": "Slightly, yes. A good VPN adds 5-15% overhead. However, if your ISP throttles streaming, a VPN may actually improve speeds by bypassing throttling. Test both ways."
+      },
+      {
+        "question": "Are free VPNs okay for IPTV?",
+        "answer": "Not recommended. Free VPNs have slow speeds, data caps, and may log/sell your data. For streaming, invest $3-10/month in a reputable paid VPN."
+      },
+      {
+        "question": "Can my IPTV provider see I'm using a VPN?",
+        "answer": "They can see traffic is encrypted but not what you're watching. Some services block VPN IPs - if this happens, try a different VPN server or 'obfuscated' mode."
+      }
+    ],
+    "relatedSlugs": ["buffering-solutions", "iptv-legal-guide", "how-iptv-works"]
+  },
+  {
+    "slug": "video-codecs-basics",
+    "title": "Video Codecs for IPTV: What You Need to Know",
+    "metaTitle": "IPTV Video Codecs Explained: H.264, H.265, AV1 (2024)",
+    "description": "Understand video codecs and why they matter for IPTV streaming. Learn about H.264, H.265, and what your device supports.",
+    "category": "technical",
+    "readTime": "6 min",
+    "difficulty": "Intermediate",
+    "lastUpdated": "2024-12-01",
+    "sections": [
+      {
+        "id": "what-is-codec",
+        "title": "What is a Video Codec?",
+        "content": "A codec (coder-decoder) compresses video for transmission and decompresses it for viewing. Without compression, a 1-hour HD video would be ~400GB - impossible to stream.\n\nCodecs make streaming possible by shrinking video files while maintaining quality. Your IPTV player needs to support the codec used by your streams."
+      },
+      {
+        "id": "common-codecs",
+        "title": "Common IPTV Codecs",
+        "content": "**H.264 (AVC)**\n- The universal standard\n- Works on virtually all devices\n- Good quality, reasonable file size\n- 90%+ of IPTV uses this\n\n**H.265 (HEVC)**\n- 50% smaller than H.264 at same quality\n- Used for 4K content\n- Requires newer devices (2016+)\n- Growing in popularity\n\n**AV1**\n- Newest codec\n- Best compression\n- Limited device support\n- Used by YouTube, Netflix"
+      },
+      {
+        "id": "codec-compatibility",
+        "title": "Codec Compatibility by Device",
+        "content": "| Device | H.264 | H.265 | AV1 |\n|--------|-------|-------|-----|\n| Firestick 4K | Yes | Yes | No |\n| Apple TV 4K | Yes | Yes | No |\n| Nvidia Shield | Yes | Yes | Yes |\n| Most Smart TVs | Yes | Varies | Rare |\n| Older Phones | Yes | No | No |\n| Modern Phones | Yes | Yes | Some |\n\n**If a codec isn't supported:**\n- Stream won't play or will show errors\n- Player may attempt software decode (slow, choppy)\n- You need different stream source or device"
+      },
+      {
+        "id": "troubleshooting",
+        "title": "Codec Issues & Solutions",
+        "content": "**\"Format not supported\" error:**\n- Stream uses unsupported codec\n- Try external player (VLC, MX Player)\n- Enable software decoding in settings\n- Find H.264 version of stream\n\n**Choppy/stuttering video:**\n- Hardware decoder not working\n- Device too old for codec\n- Check player settings for decoder options\n\n**No audio with video:**\n- Audio codec might be unsupported\n- Try different audio track if available\n- Use external player"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Why don't all streams use H.265 if it's better?",
+        "answer": "Compatibility. H.264 works everywhere while H.265 requires newer hardware. Providers want maximum device support, so many stick with H.264. Also, H.265 encoding requires more processing power."
+      },
+      {
+        "question": "How do I know what codec a stream uses?",
+        "answer": "In VLC, go to Tools → Codec Information during playback. In most players, check stream details or info overlay. The format is usually shown as something like 'AVC1' (H.264) or 'HVC1' (H.265)."
+      }
+    ],
+    "relatedSlugs": ["how-iptv-works", "buffering-solutions", "what-is-iptv"]
+  },
+  {
+    "slug": "iptv-legal-guide",
+    "title": "IPTV Legal Guide: What's Legal & What's Not",
+    "metaTitle": "Is IPTV Legal? Complete Legal Guide (2024)",
+    "description": "Understand the legality of IPTV. Learn what's legal, what's risky, and how to protect yourself while streaming.",
+    "category": "basics",
+    "readTime": "7 min",
+    "difficulty": "Beginner",
+    "lastUpdated": "2024-12-01",
+    "sections": [
+      {
+        "id": "is-iptv-legal",
+        "title": "Is IPTV Legal?",
+        "content": "**Yes, IPTV technology is 100% legal.** Major legitimate services use IPTV:\n\n- Netflix, Hulu, Disney+\n- YouTube TV, Sling TV, fuboTV\n- BBC iPlayer, ITV Hub\n- Your cable company's streaming app\n\n**What can be illegal is the content** accessed through IPTV, not the technology itself."
+      },
+      {
+        "id": "legal-vs-illegal",
+        "title": "Legal vs Illegal IPTV Services",
+        "content": "**Legal IPTV Services:**\n- Licensed by content owners\n- Available in official app stores\n- Reasonable pricing for content offered\n- Transparent company information\n- Examples: YouTube TV ($73/mo), Sling ($40/mo)\n\n**Illegal/Pirate IPTV Services:**\n- No licensing agreements\n- Too good to be true pricing\n- Thousands of channels for $5-15/month\n- Anonymous operators\n- Frequently shut down\n- Payment via cryptocurrency only"
+      },
+      {
+        "id": "risks",
+        "title": "Risks of Illegal IPTV",
+        "content": "**For Users:**\n- Service can disappear overnight\n- No refunds when shut down\n- Potential malware in apps\n- ISP warnings/letters (rare but possible)\n- Extremely rare: legal action (mostly targets sellers)\n\n**What actually happens:**\n- Most enforcement targets sellers, not viewers\n- ISPs may send warning letters\n- No widespread prosecution of individual viewers\n- Main risk is losing money when service disappears"
+      },
+      {
+        "id": "staying-safe",
+        "title": "How to Stay Safe",
+        "content": "**If you want to stay completely legal:**\n1. Use only services from official app stores\n2. Pay market rates (legitimate services aren't $5/month)\n3. Stick to known brands\n4. Use free legal options (Pluto TV, Tubi)\n\n**If you choose gray-area services:**\n1. Use a VPN to hide activity from ISP\n2. Never use debit/credit card - use PayPal or privacy cards\n3. Don't share or redistribute content\n4. Accept that service may disappear\n5. Never download content, only stream"
+      },
+      {
+        "id": "free-legal-options",
+        "title": "Free Legal IPTV Options",
+        "content": "Plenty of free, completely legal IPTV exists:\n\n**Pluto TV** - 250+ channels, movies, shows\n**Tubi** - Huge movie/TV library\n**Peacock (Free tier)** - NBC content\n**The Roku Channel** - Live TV + on-demand\n**Samsung TV Plus** - For Samsung TVs\n**Plex (Free tier)** - Movies, shows, live TV\n**Xumo** - News, sports, entertainment\n\nThese are ad-supported but completely legal."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I go to jail for watching illegal IPTV?",
+        "answer": "Extremely unlikely. Enforcement focuses on sellers and distributors, not viewers. While technically illegal, individual viewers are rarely if ever prosecuted. The main risk is losing money when services are shut down."
+      },
+      {
+        "question": "Will my ISP report me for using IPTV?",
+        "answer": "ISPs don't typically report users. Some may send warning letters if they detect pirate streaming. Using a VPN hides your activity from ISP monitoring. Most ISPs don't actively monitor content - they just provide the connection."
+      },
+      {
+        "question": "Are IPTV apps like TiviMate legal?",
+        "answer": "Yes! IPTV player apps are just software - like VLC or a web browser. They don't host content. The legality depends on what content you access through them, not the app itself."
+      }
+    ],
+    "relatedSlugs": ["what-is-iptv", "vpn-for-iptv", "how-iptv-works"]
+  }
+]
