@@ -1,0 +1,270 @@
+[
+  {
+    "id": "buffering",
+    "name": "Buffering Issues",
+    "slug": "buffering",
+    "category": "playback",
+    "severity": "high",
+    "commonCauses": [
+      "Slow internet connection",
+      "Server overload during peak hours",
+      "ISP throttling",
+      "Wi-Fi interference",
+      "Device performance issues",
+      "VPN server distance"
+    ],
+    "generalSolutions": [
+      "Check your internet speed (minimum 25 Mbps for HD)",
+      "Use ethernet instead of Wi-Fi",
+      "Try a different server/stream",
+      "Use a VPN to bypass ISP throttling",
+      "Close other apps and devices using bandwidth",
+      "Clear app cache and restart",
+      "Adjust buffer size in player settings"
+    ],
+    "affectedPlayers": ["tivimate", "iptv-smarters", "kodi", "vlc", "gse-smart-iptv", "perfect-player", "ott-navigator", "iptv-extreme", "lazy-iptv", "televizo", "iptv-pro", "xciptv"],
+    "affectedDevices": ["firestick", "fire-tv-cube", "apple-tv", "android-tv", "chromecast", "nvidia-shield", "ios", "windows", "mac", "linux", "samsung-tv", "lg-tv", "sony-tv", "roku", "mag-box"],
+    "keywords": ["iptv buffering", "iptv freezing", "stream buffering", "fix buffering", "iptv keeps buffering"],
+    "description": "Buffering is the most common IPTV issue, causing streams to pause and load frequently. Usually related to internet speed or server issues."
+  },
+  {
+    "id": "playback-errors",
+    "name": "Playback Errors",
+    "slug": "playback-errors",
+    "category": "playback",
+    "severity": "high",
+    "commonCauses": [
+      "Expired or invalid playlist",
+      "Stream URL changes",
+      "Codec incompatibility",
+      "DRM protected content",
+      "App version outdated",
+      "Server maintenance"
+    ],
+    "generalSolutions": [
+      "Refresh your playlist",
+      "Update the IPTV player app",
+      "Try a different player",
+      "Check if your subscription is active",
+      "Contact your IPTV provider",
+      "Clear app cache and data",
+      "Try external player for codec issues"
+    ],
+    "affectedPlayers": ["tivimate", "iptv-smarters", "kodi", "vlc", "gse-smart-iptv", "perfect-player", "ott-navigator", "iptv-extreme", "lazy-iptv", "televizo", "iptv-pro", "xciptv"],
+    "affectedDevices": ["firestick", "fire-tv-cube", "apple-tv", "android-tv", "chromecast", "nvidia-shield", "ios", "windows", "mac", "linux", "samsung-tv", "lg-tv", "sony-tv", "mag-box"],
+    "keywords": ["iptv not playing", "playback error", "stream error", "channel not working", "iptv error"],
+    "description": "Playback errors occur when streams fail to load or play. Can be caused by playlist issues, codec problems, or server downtime."
+  },
+  {
+    "id": "epg-not-loading",
+    "name": "EPG Not Loading",
+    "slug": "epg-not-loading",
+    "category": "configuration",
+    "severity": "medium",
+    "commonCauses": [
+      "Wrong EPG URL",
+      "EPG source down",
+      "EPG format incompatibility",
+      "Channel ID mismatch",
+      "Large EPG file timeout",
+      "App cache issues"
+    ],
+    "generalSolutions": [
+      "Verify EPG URL is correct",
+      "Try alternative EPG sources",
+      "Clear EPG cache and reload",
+      "Check EPG update schedule",
+      "Map channels to EPG IDs manually",
+      "Use smaller EPG timeframe (3 days vs 7)"
+    ],
+    "affectedPlayers": ["tivimate", "iptv-smarters", "kodi", "gse-smart-iptv", "perfect-player", "ott-navigator", "iptv-extreme", "televizo", "smart-iptv", "iplaytv", "iptv-pro", "xciptv"],
+    "affectedDevices": ["firestick", "fire-tv-cube", "android-tv", "chromecast", "nvidia-shield", "ios", "samsung-tv", "lg-tv", "sony-tv"],
+    "keywords": ["epg not working", "no tv guide", "epg blank", "program guide missing", "xmltv not loading"],
+    "description": "EPG issues prevent the TV guide from displaying. Usually caused by incorrect EPG URLs or channel ID mapping problems."
+  },
+  {
+    "id": "stream-quality",
+    "name": "Stream Quality Issues",
+    "slug": "stream-quality",
+    "category": "playback",
+    "severity": "medium",
+    "commonCauses": [
+      "Low bandwidth connection",
+      "Source stream quality",
+      "Player transcoding settings",
+      "Device resolution limits",
+      "HDMI cable quality",
+      "Automatic quality adjustment"
+    ],
+    "generalSolutions": [
+      "Select HD/FHD stream option if available",
+      "Check internet speed (50+ Mbps for 4K)",
+      "Disable auto-quality in player",
+      "Use ethernet connection",
+      "Verify TV/device supports resolution",
+      "Try different stream source"
+    ],
+    "affectedPlayers": ["tivimate", "iptv-smarters", "kodi", "vlc", "gse-smart-iptv", "perfect-player", "ott-navigator", "televizo", "iptv-pro"],
+    "affectedDevices": ["firestick", "fire-tv-cube", "apple-tv", "android-tv", "chromecast", "nvidia-shield", "samsung-tv", "lg-tv", "sony-tv"],
+    "keywords": ["iptv quality", "blurry stream", "low quality iptv", "pixelated", "stream resolution"],
+    "description": "Poor stream quality results in blurry, pixelated, or low-resolution video. Can be improved with faster internet or better stream sources."
+  },
+  {
+    "id": "audio-sync",
+    "name": "Audio Sync Issues",
+    "slug": "audio-sync",
+    "category": "playback",
+    "severity": "medium",
+    "commonCauses": [
+      "Stream encoding issues",
+      "Device processing delay",
+      "Bluetooth audio latency",
+      "Player decoding problems",
+      "Hardware acceleration settings"
+    ],
+    "generalSolutions": [
+      "Adjust audio delay in player settings",
+      "Disable/enable hardware acceleration",
+      "Use wired audio instead of Bluetooth",
+      "Try external player",
+      "Restart stream or app",
+      "Update player to latest version"
+    ],
+    "affectedPlayers": ["tivimate", "iptv-smarters", "kodi", "vlc", "gse-smart-iptv", "perfect-player", "ott-navigator", "televizo"],
+    "affectedDevices": ["firestick", "fire-tv-cube", "apple-tv", "android-tv", "chromecast", "nvidia-shield", "windows", "mac"],
+    "keywords": ["audio out of sync", "audio delay iptv", "lip sync", "audio lag", "sound delay"],
+    "description": "Audio sync issues cause sound to be out of sync with video. Most players have audio delay settings to compensate."
+  },
+  {
+    "id": "channel-loading",
+    "name": "Slow Channel Loading",
+    "slug": "channel-loading",
+    "category": "playback",
+    "severity": "medium",
+    "commonCauses": [
+      "Large playlist size",
+      "Slow server response",
+      "Device performance",
+      "Network latency",
+      "Too many channels loading at once"
+    ],
+    "generalSolutions": [
+      "Use Xtream Codes instead of M3U",
+      "Split large playlists",
+      "Close background apps",
+      "Use faster DNS servers",
+      "Upgrade device if underpowered",
+      "Enable channel caching"
+    ],
+    "affectedPlayers": ["tivimate", "iptv-smarters", "kodi", "gse-smart-iptv", "perfect-player", "ott-navigator", "lazy-iptv", "televizo"],
+    "affectedDevices": ["firestick", "android-tv", "chromecast", "samsung-tv", "lg-tv"],
+    "keywords": ["slow channel switch", "channel loading slow", "iptv slow", "takes long to load"],
+    "description": "Slow channel loading makes switching between channels frustrating. Often improved by using Xtream API instead of large M3U files."
+  },
+  {
+    "id": "playlist-expired",
+    "name": "Playlist Expired/Invalid",
+    "slug": "playlist-expired",
+    "category": "configuration",
+    "severity": "high",
+    "commonCauses": [
+      "Subscription expired",
+      "Playlist URL changed",
+      "Provider shut down",
+      "Authentication failed",
+      "MAC address changed"
+    ],
+    "generalSolutions": [
+      "Renew your IPTV subscription",
+      "Get new playlist from provider",
+      "Check for provider announcements",
+      "Verify login credentials",
+      "Contact IPTV provider support"
+    ],
+    "affectedPlayers": ["tivimate", "iptv-smarters", "kodi", "vlc", "gse-smart-iptv", "perfect-player", "ott-navigator", "iptv-extreme", "lazy-iptv", "ss-iptv", "smart-iptv", "televizo", "iplaytv", "iptv-pro", "xciptv"],
+    "affectedDevices": ["firestick", "fire-tv-cube", "apple-tv", "android-tv", "chromecast", "nvidia-shield", "ios", "windows", "mac", "linux", "samsung-tv", "lg-tv", "sony-tv", "mag-box"],
+    "keywords": ["playlist expired", "playlist not working", "invalid playlist", "subscription expired", "m3u not loading"],
+    "description": "Expired playlists stop working entirely. Usually means your subscription has ended or the provider changed the playlist URL."
+  },
+  {
+    "id": "connection-timeout",
+    "name": "Connection Timeout",
+    "slug": "connection-timeout",
+    "category": "connection",
+    "severity": "high",
+    "commonCauses": [
+      "Server unreachable",
+      "Firewall blocking",
+      "ISP blocking IPTV",
+      "VPN connection issues",
+      "DNS problems",
+      "Network configuration"
+    ],
+    "generalSolutions": [
+      "Use a VPN service",
+      "Change DNS to Google (8.8.8.8) or Cloudflare (1.1.1.1)",
+      "Check firewall settings",
+      "Try different network",
+      "Contact ISP about blocking",
+      "Increase timeout settings in player"
+    ],
+    "affectedPlayers": ["tivimate", "iptv-smarters", "kodi", "vlc", "gse-smart-iptv", "perfect-player", "ott-navigator", "iptv-extreme", "lazy-iptv", "televizo", "iptv-pro", "xciptv"],
+    "affectedDevices": ["firestick", "fire-tv-cube", "apple-tv", "android-tv", "chromecast", "nvidia-shield", "ios", "windows", "mac", "linux", "samsung-tv", "lg-tv", "sony-tv", "mag-box"],
+    "keywords": ["connection timeout", "cannot connect", "server unreachable", "connection failed", "iptv blocked"],
+    "description": "Connection timeouts prevent any channels from loading. Often caused by ISP blocking or firewall issues. VPN usually helps."
+  },
+  {
+    "id": "codec-issues",
+    "name": "Codec/Format Issues",
+    "slug": "codec-issues",
+    "category": "compatibility",
+    "severity": "medium",
+    "commonCauses": [
+      "Unsupported video codec (HEVC/H.265)",
+      "Missing audio codec",
+      "Hardware decoding not supported",
+      "Outdated player version",
+      "Device limitations"
+    ],
+    "generalSolutions": [
+      "Use external player (VLC, MX Player)",
+      "Enable/disable hardware acceleration",
+      "Update IPTV player app",
+      "Use software decoding",
+      "Try SD stream instead of HD",
+      "Upgrade to newer device"
+    ],
+    "affectedPlayers": ["tivimate", "iptv-smarters", "kodi", "vlc", "gse-smart-iptv", "perfect-player", "ott-navigator", "lazy-iptv", "televizo"],
+    "affectedDevices": ["firestick", "android-tv", "chromecast", "samsung-tv", "lg-tv"],
+    "keywords": ["codec not supported", "video format error", "hevc not playing", "audio codec missing", "format unsupported"],
+    "description": "Codec issues occur when the device or player can't decode the video/audio format. Using external players usually solves this."
+  },
+  {
+    "id": "app-crash",
+    "name": "App Crashes/Freezes",
+    "slug": "app-crash",
+    "category": "compatibility",
+    "severity": "high",
+    "commonCauses": [
+      "Memory issues",
+      "App bugs",
+      "Large playlist overload",
+      "Device overheating",
+      "Corrupted cache",
+      "Incompatible app version"
+    ],
+    "generalSolutions": [
+      "Clear app cache and data",
+      "Reinstall the app",
+      "Free up device storage",
+      "Restart device",
+      "Update to latest app version",
+      "Use smaller playlist",
+      "Disable background apps"
+    ],
+    "affectedPlayers": ["tivimate", "iptv-smarters", "kodi", "gse-smart-iptv", "perfect-player", "ott-navigator", "iptv-extreme", "lazy-iptv", "televizo", "iptv-pro", "xciptv"],
+    "affectedDevices": ["firestick", "fire-tv-cube", "android-tv", "chromecast", "nvidia-shield", "ios", "samsung-tv", "lg-tv"],
+    "keywords": ["app crashing", "iptv freezing", "app keeps closing", "force close", "app not responding"],
+    "description": "App crashes and freezes are often caused by memory issues or corrupted cache. Clearing cache and reinstalling usually fixes it."
+  }
+]

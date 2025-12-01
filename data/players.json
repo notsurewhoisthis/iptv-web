@@ -1,0 +1,385 @@
+[
+  {
+    "id": "tivimate",
+    "name": "TiviMate",
+    "slug": "tivimate",
+    "category": "premium",
+    "platforms": ["android", "firestick", "android-tv", "nvidia-shield"],
+    "features": ["epg", "recording", "multi-screen", "favorites", "catchup", "parental-controls", "external-player"],
+    "rating": 4.8,
+    "pricing": {
+      "model": "freemium",
+      "price": "$9.99/year"
+    },
+    "description": "TiviMate is the most popular premium IPTV player for Android devices, known for its sleek interface, reliable EPG support, and extensive customization options. It offers both free and premium versions.",
+    "shortDescription": "Premium IPTV player with EPG and recording",
+    "pros": ["Excellent EPG integration", "Multi-playlist support", "Recording functionality", "Beautiful interface", "Regular updates"],
+    "cons": ["Premium features require subscription", "Android only", "No iOS version"],
+    "officialUrl": "https://tivimate.com",
+    "downloadUrls": [
+      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=ar.tvplayer.tv"},
+      {"platform": "firestick", "url": "https://www.amazon.com/dp/B07J2HHNL2"}
+    ],
+    "lastUpdated": "2025-01-15",
+    "yearLaunched": 2018,
+    "developer": "AR Mobile Dev",
+    "keywords": ["tivimate", "tivimate premium", "tivimate iptv", "best iptv player android", "tivimate apk"]
+  },
+  {
+    "id": "iptv-smarters",
+    "name": "IPTV Smarters Pro",
+    "slug": "iptv-smarters",
+    "category": "premium",
+    "platforms": ["android", "ios", "firestick", "windows", "mac", "smart-tv"],
+    "features": ["epg", "multi-screen", "favorites", "parental-controls", "vod", "catchup"],
+    "rating": 4.5,
+    "pricing": {
+      "model": "freemium",
+      "price": "$5.99 one-time"
+    },
+    "description": "IPTV Smarters Pro is a versatile cross-platform IPTV player supporting Xtream Codes API, M3U playlists, and multiple connections. Available on virtually all platforms.",
+    "shortDescription": "Cross-platform IPTV player with Xtream support",
+    "pros": ["Cross-platform support", "Xtream Codes integration", "Multiple playlist support", "Affordable one-time purchase"],
+    "cons": ["Interface can be cluttered", "Occasional stability issues", "No recording on all platforms"],
+    "officialUrl": "https://www.iptvsmarters.com",
+    "downloadUrls": [
+      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=com.nst.iptvsmarterstvbox"},
+      {"platform": "ios", "url": "https://apps.apple.com/app/iptv-smarters-pro/id1383614816"}
+    ],
+    "lastUpdated": "2025-01-10",
+    "yearLaunched": 2018,
+    "developer": "WHMCS Smarters",
+    "keywords": ["iptv smarters", "iptv smarters pro", "smarters iptv", "xtream iptv player"]
+  },
+  {
+    "id": "kodi",
+    "name": "Kodi",
+    "slug": "kodi",
+    "category": "open-source",
+    "platforms": ["android", "ios", "windows", "mac", "linux", "firestick", "android-tv", "apple-tv"],
+    "features": ["epg", "recording", "external-player", "vod", "subtitle-support", "playlist-management"],
+    "rating": 4.6,
+    "pricing": {
+      "model": "free",
+      "price": "Free"
+    },
+    "description": "Kodi is a powerful open-source media center that can be transformed into an IPTV player using add-ons like PVR IPTV Simple Client. Highly customizable with thousands of skins and add-ons.",
+    "shortDescription": "Open-source media center with IPTV add-ons",
+    "pros": ["Completely free", "Highly customizable", "Massive add-on library", "Cross-platform", "Active community"],
+    "cons": ["Steep learning curve", "Requires add-on setup", "Can be complex for beginners"],
+    "officialUrl": "https://kodi.tv",
+    "downloadUrls": [
+      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=org.xbmc.kodi"},
+      {"platform": "windows", "url": "https://kodi.tv/download/windows"}
+    ],
+    "lastUpdated": "2025-01-20",
+    "yearLaunched": 2002,
+    "developer": "XBMC Foundation",
+    "keywords": ["kodi iptv", "kodi pvr", "kodi m3u", "kodi streaming", "xbmc iptv"]
+  },
+  {
+    "id": "vlc",
+    "name": "VLC Media Player",
+    "slug": "vlc",
+    "category": "free",
+    "platforms": ["android", "ios", "windows", "mac", "linux"],
+    "features": ["subtitle-support", "external-player", "playlist-management"],
+    "rating": 4.7,
+    "pricing": {
+      "model": "free",
+      "price": "Free"
+    },
+    "description": "VLC is a free, open-source media player that supports IPTV streaming via M3U playlists. Simple to use but lacks advanced IPTV features like EPG.",
+    "shortDescription": "Free media player with basic IPTV support",
+    "pros": ["Completely free", "Supports all formats", "Cross-platform", "Lightweight", "No ads"],
+    "cons": ["No EPG support", "Basic IPTV features", "No recording", "No channel management"],
+    "officialUrl": "https://www.videolan.org/vlc/",
+    "downloadUrls": [
+      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=org.videolan.vlc"},
+      {"platform": "ios", "url": "https://apps.apple.com/app/vlc-media-player/id650377962"}
+    ],
+    "lastUpdated": "2025-01-18",
+    "yearLaunched": 2001,
+    "developer": "VideoLAN",
+    "keywords": ["vlc iptv", "vlc m3u", "vlc streaming", "vlc media player iptv"]
+  },
+  {
+    "id": "gse-smart-iptv",
+    "name": "GSE Smart IPTV",
+    "slug": "gse-smart-iptv",
+    "category": "freemium",
+    "platforms": ["android", "ios", "apple-tv", "firestick"],
+    "features": ["epg", "favorites", "parental-controls", "chromecast", "subtitle-support"],
+    "rating": 4.3,
+    "pricing": {
+      "model": "freemium",
+      "price": "$5.99 one-time"
+    },
+    "description": "GSE Smart IPTV is a feature-rich IPTV player available on iOS and Android with support for Chromecast, EPG, and multiple playlist formats.",
+    "shortDescription": "Feature-rich IPTV player with Chromecast support",
+    "pros": ["Chromecast support", "iOS and Android", "EPG integration", "Multiple playlist formats"],
+    "cons": ["Ads in free version", "Occasional crashes", "Interface could be better"],
+    "officialUrl": "https://gsesmartiptv.com",
+    "downloadUrls": [
+      {"platform": "ios", "url": "https://apps.apple.com/app/gse-smart-iptv/id1028734023"},
+      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=com.gsetech.smartiptv"}
+    ],
+    "lastUpdated": "2025-01-05",
+    "yearLaunched": 2015,
+    "developer": "droidvision",
+    "keywords": ["gse smart iptv", "gse iptv", "gse iptv ios", "gse smart iptv chromecast"]
+  },
+  {
+    "id": "perfect-player",
+    "name": "Perfect Player",
+    "slug": "perfect-player",
+    "category": "free",
+    "platforms": ["android", "firestick", "android-tv"],
+    "features": ["epg", "favorites", "channel-sorting", "playlist-management"],
+    "rating": 4.4,
+    "pricing": {
+      "model": "free",
+      "price": "Free"
+    },
+    "description": "Perfect Player is a set-top box style IPTV player for Android with a clean interface, EPG support, and efficient channel management.",
+    "shortDescription": "Set-top box style IPTV player for Android",
+    "pros": ["Clean interface", "Good EPG support", "Free to use", "Channel grouping"],
+    "cons": ["Android only", "Limited customization", "No recording", "Development slowed"],
+    "officialUrl": "https://perfectplayer.iptv.app",
+    "downloadUrls": [
+      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=com.niklabs.pp"}
+    ],
+    "lastUpdated": "2024-12-01",
+    "yearLaunched": 2014,
+    "developer": "Niklabs",
+    "keywords": ["perfect player", "perfect player iptv", "perfect player apk", "perfect player firestick"]
+  },
+  {
+    "id": "ott-navigator",
+    "name": "OTT Navigator",
+    "slug": "ott-navigator",
+    "category": "freemium",
+    "platforms": ["android", "firestick", "android-tv"],
+    "features": ["epg", "recording", "multi-screen", "favorites", "catchup", "vod"],
+    "rating": 4.6,
+    "pricing": {
+      "model": "freemium",
+      "price": "$4.99/year"
+    },
+    "description": "OTT Navigator is a powerful IPTV/OTT player with support for Stalker, Xtream, and M3U playlists. Known for its reliability and feature set.",
+    "shortDescription": "Powerful IPTV player with Stalker and Xtream support",
+    "pros": ["Stalker portal support", "Reliable performance", "Good EPG", "Recording feature"],
+    "cons": ["Android only", "Can be complex", "Premium for full features"],
+    "officialUrl": "https://www.ottnavigator.com",
+    "downloadUrls": [
+      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=studio.scillarium.ottnavigator"}
+    ],
+    "lastUpdated": "2025-01-12",
+    "yearLaunched": 2019,
+    "developer": "Scillarium Studio",
+    "keywords": ["ott navigator", "ott navigator iptv", "ott navigator stalker", "ott navigator apk"]
+  },
+  {
+    "id": "iptv-extreme",
+    "name": "IPTV Extreme",
+    "slug": "iptv-extreme",
+    "category": "freemium",
+    "platforms": ["android", "firestick", "android-tv"],
+    "features": ["epg", "recording", "favorites", "parental-controls", "auto-update"],
+    "rating": 4.2,
+    "pricing": {
+      "model": "freemium",
+      "price": "$4.99 one-time"
+    },
+    "description": "IPTV Extreme is an Android IPTV player with recording capabilities, EPG support, and auto-updating playlists.",
+    "shortDescription": "Android IPTV player with recording and auto-update",
+    "pros": ["Recording feature", "Auto-update playlists", "EPG support", "Affordable"],
+    "cons": ["Android only", "Ads in free version", "Interface dated"],
+    "officialUrl": "https://iptvextreme.app",
+    "downloadUrls": [
+      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=com.pecana.iptvextremepro"}
+    ],
+    "lastUpdated": "2024-11-20",
+    "yearLaunched": 2016,
+    "developer": "Paolo Turatti",
+    "keywords": ["iptv extreme", "iptv extreme pro", "iptv extreme apk", "iptv extreme recording"]
+  },
+  {
+    "id": "lazy-iptv",
+    "name": "Lazy IPTV",
+    "slug": "lazy-iptv",
+    "category": "free",
+    "platforms": ["android", "firestick", "android-tv"],
+    "features": ["favorites", "channel-sorting", "playlist-management"],
+    "rating": 4.0,
+    "pricing": {
+      "model": "free",
+      "price": "Free"
+    },
+    "description": "Lazy IPTV is a simple, lightweight IPTV player for Android devices. Basic but reliable for playing M3U playlists.",
+    "shortDescription": "Simple and lightweight IPTV player",
+    "pros": ["Lightweight", "Simple to use", "Free", "Quick loading"],
+    "cons": ["No EPG", "Basic features", "No recording", "Limited updates"],
+    "officialUrl": "https://lazyiptv.app",
+    "downloadUrls": [
+      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=com.lazycoder.lazyiptvdeluxe"}
+    ],
+    "lastUpdated": "2024-10-15",
+    "yearLaunched": 2017,
+    "developer": "LazyCoder",
+    "keywords": ["lazy iptv", "lazy iptv deluxe", "lazy iptv apk", "simple iptv player"]
+  },
+  {
+    "id": "ss-iptv",
+    "name": "SS IPTV",
+    "slug": "ss-iptv",
+    "category": "free",
+    "platforms": ["smart-tv", "samsung-tv", "lg-tv"],
+    "features": ["favorites", "playlist-management"],
+    "rating": 4.1,
+    "pricing": {
+      "model": "free",
+      "price": "Free"
+    },
+    "description": "SS IPTV is an IPTV player designed specifically for Smart TVs, particularly Samsung and LG models. Simple playlist loading via web interface.",
+    "shortDescription": "IPTV player for Samsung and LG Smart TVs",
+    "pros": ["Native Smart TV app", "Easy playlist upload", "Free to use", "Simple interface"],
+    "cons": ["Limited features", "No EPG", "Smart TV only", "Requires web upload"],
+    "officialUrl": "https://ss-iptv.com",
+    "downloadUrls": [
+      {"platform": "samsung-tv", "url": "https://ss-iptv.com/en/users/documents/download"},
+      {"platform": "lg-tv", "url": "https://ss-iptv.com/en/users/documents/download"}
+    ],
+    "lastUpdated": "2024-09-01",
+    "yearLaunched": 2013,
+    "developer": "SS-IPTV Team",
+    "keywords": ["ss iptv", "ss iptv samsung", "ss iptv lg", "smart tv iptv player"]
+  },
+  {
+    "id": "smart-iptv",
+    "name": "Smart IPTV",
+    "slug": "smart-iptv",
+    "category": "paid",
+    "platforms": ["smart-tv", "samsung-tv", "lg-tv", "firestick"],
+    "features": ["favorites", "epg", "playlist-management"],
+    "rating": 4.0,
+    "pricing": {
+      "model": "one-time",
+      "price": "$5.49 one-time"
+    },
+    "description": "Smart IPTV (SIPTV) is a popular IPTV app for Smart TVs with EPG support and playlist upload via MAC address.",
+    "shortDescription": "Popular IPTV app for Smart TVs",
+    "pros": ["Smart TV native", "EPG support", "MAC-based upload", "Reliable"],
+    "cons": ["Paid only", "Basic interface", "No recording", "Limited platforms"],
+    "officialUrl": "https://siptv.app",
+    "downloadUrls": [
+      {"platform": "samsung-tv", "url": "https://siptv.app/howto/samsung/"},
+      {"platform": "lg-tv", "url": "https://siptv.app/howto/lg/"}
+    ],
+    "lastUpdated": "2024-12-10",
+    "yearLaunched": 2014,
+    "developer": "Smart IPTV",
+    "keywords": ["smart iptv", "siptv", "smart iptv samsung", "smart iptv lg", "siptv app"]
+  },
+  {
+    "id": "televizo",
+    "name": "Televizo",
+    "slug": "televizo",
+    "category": "freemium",
+    "platforms": ["android", "firestick", "android-tv"],
+    "features": ["epg", "favorites", "multi-screen", "channel-sorting", "subtitle-support"],
+    "rating": 4.5,
+    "pricing": {
+      "model": "freemium",
+      "price": "$4.99 one-time"
+    },
+    "description": "Televizo is a modern IPTV player for Android with a clean Material Design interface, EPG support, and multi-screen viewing.",
+    "shortDescription": "Modern IPTV player with Material Design",
+    "pros": ["Modern interface", "Good EPG", "Multi-screen", "Active development"],
+    "cons": ["Android only", "Some features paid", "Relatively new"],
+    "officialUrl": "https://televizo.net",
+    "downloadUrls": [
+      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=com.ottplay.ottplay"}
+    ],
+    "lastUpdated": "2025-01-08",
+    "yearLaunched": 2020,
+    "developer": "Televizo",
+    "keywords": ["televizo", "televizo iptv", "televizo apk", "televizo player"]
+  },
+  {
+    "id": "iplaytv",
+    "name": "iPlayTV",
+    "slug": "iplaytv",
+    "category": "paid",
+    "platforms": ["ios", "apple-tv"],
+    "features": ["epg", "favorites", "airplay", "picture-in-picture"],
+    "rating": 4.4,
+    "pricing": {
+      "model": "one-time",
+      "price": "$5.99 one-time"
+    },
+    "description": "iPlayTV is a premium IPTV player designed exclusively for iOS and Apple TV with native AirPlay support and picture-in-picture.",
+    "shortDescription": "Premium IPTV player for iOS and Apple TV",
+    "pros": ["Native Apple experience", "AirPlay support", "Picture-in-picture", "Good EPG"],
+    "cons": ["Apple devices only", "Paid only", "No free version"],
+    "officialUrl": "https://iplaytv.app",
+    "downloadUrls": [
+      {"platform": "ios", "url": "https://apps.apple.com/app/iplaytv/id1072226801"},
+      {"platform": "apple-tv", "url": "https://apps.apple.com/app/iplaytv/id1072226801"}
+    ],
+    "lastUpdated": "2025-01-03",
+    "yearLaunched": 2016,
+    "developer": "Flavor",
+    "keywords": ["iplaytv", "iplaytv ios", "iplaytv apple tv", "iptv apple tv"]
+  },
+  {
+    "id": "iptv-pro",
+    "name": "IPTV Pro",
+    "slug": "iptv-pro",
+    "category": "paid",
+    "platforms": ["android", "firestick", "android-tv"],
+    "features": ["epg", "favorites", "auto-update", "channel-sorting"],
+    "rating": 4.3,
+    "pricing": {
+      "model": "one-time",
+      "price": "$3.99 one-time"
+    },
+    "description": "IPTV Pro is a simple yet effective IPTV player for Android with EPG support and auto-reconnect features.",
+    "shortDescription": "Simple IPTV player with EPG support",
+    "pros": ["Affordable", "Simple interface", "EPG support", "Auto-reconnect"],
+    "cons": ["Basic features", "No recording", "Limited customization"],
+    "officialUrl": "https://iptvpro.app",
+    "downloadUrls": [
+      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=ru.iptvremote.android.iptv.pro"}
+    ],
+    "lastUpdated": "2024-11-15",
+    "yearLaunched": 2015,
+    "developer": "Alexander Sofronov",
+    "keywords": ["iptv pro", "iptv pro apk", "iptv pro android", "simple iptv player"]
+  },
+  {
+    "id": "xtream-iptv",
+    "name": "Xciptv Player",
+    "slug": "xciptv",
+    "category": "free",
+    "platforms": ["android", "firestick", "android-tv"],
+    "features": ["epg", "favorites", "vod", "catchup"],
+    "rating": 4.2,
+    "pricing": {
+      "model": "free",
+      "price": "Free"
+    },
+    "description": "Xciptv (formerly Xtream IPTV Player) is a free player specifically designed for Xtream Codes API with EPG, VOD, and catchup support.",
+    "shortDescription": "Free Xtream Codes API player",
+    "pros": ["Free", "Xtream Codes native", "VOD support", "Catchup TV"],
+    "cons": ["Xtream only", "No M3U support", "Ads"],
+    "officialUrl": "https://xciptv.net",
+    "downloadUrls": [
+      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=com.flavoursoft.xciptv_player"}
+    ],
+    "lastUpdated": "2024-12-20",
+    "yearLaunched": 2019,
+    "developer": "Flavour Soft",
+    "keywords": ["xciptv", "xtream iptv player", "xtream codes player", "xciptv player"]
+  }
+]

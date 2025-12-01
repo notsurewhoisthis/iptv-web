@@ -1,0 +1,214 @@
+import fs from 'fs/promises';
+import path from 'path';
+import type {
+  Player,
+  Device,
+  Feature,
+  Issue,
+  PlayerDeviceGuide,
+  PlayerFeatureGuide,
+  DeviceFeatureGuide,
+  PlayerTroubleshootingGuide,
+  DeviceTroubleshootingGuide,
+  PlayerComparison,
+  DeviceComparison,
+  BestForPage,
+  BlogPost,
+} from './types';
+
+const DATA_DIR = path.join(process.cwd(), 'data');
+const BLOG_DIR = path.join(process.cwd(), 'public', 'blog-data');
+
+// Cache for data to avoid repeated file reads
+const cache: Record<string, unknown> = {};
+
+async function loadJSON<T>(filename: string): Promise<T> {
+  const cacheKey = filename;
+  if (cache[cacheKey]) {
+    return cache[cacheKey] as T;
+  }
+
+  const filePath = path.join(DATA_DIR, filename);
+  const content = await fs.readFile(filePath, 'utf-8');
+  const data = JSON.parse(content) as T;
+  cache[cacheKey] = data;
+  return data;
+}
+
+// Master data loaders
+export async function getPlayers(): Promise<Player[]> {
+  return loadJSON<Player[]>('players.json');
+}
+
+export async function getDevices(): Promise<Device[]> {
+  return loadJSON<Device[]>('devices.json');
+}
+
+export async function getFeatures(): Promise<Feature[]> {
+  return loadJSON<Feature[]>('features.json');
+}
+
+export async function getIssues(): Promise<Issue[]> {
+  return loadJSON<Issue[]>('issues.json');
+}
+
+// Individual item loaders
+export async function getPlayer(id: string): Promise<Player | null> {
+  const players = await getPlayers();
+  return players.find((p) => p.id === id || p.slug === id) || null;
+}
+
+export async function getDevice(id: string): Promise<Device | null> {
+  const devices = await getDevices();
+  return devices.find((d) => d.id === id || d.slug === id) || null;
+}
+
+export async function getFeature(id: string): Promise<Feature | null> {
+  const features = await getFeatures();
+  return features.find((f) => f.id === id || f.slug === id) || null;
+}
+
+export async function getIssue(id: string): Promise<Issue | null> {
+  const issues = await getIssues();
+  return issues.find((i) => i.id === id || i.slug === id) || null;
+}
+
+// Generated data loaders
+export async function getPlayerDeviceGuides(): Promise<PlayerDeviceGuide[]> {
+  return loadJSON<PlayerDeviceGuide[]>('player-device-guides.json');
+}
+
+export async function getPlayerDeviceGuide(
+  player: string,
+  device: string
+): Promise<PlayerDeviceGuide | null> {
+  const guides = await getPlayerDeviceGuides();
+  return (
+    guides.find((g) => g.playerId === player && g.deviceId === device) || null
+  );
+}
+
+export async function getPlayerFeatureGuides(): Promise<PlayerFeatureGuide[]> {
+  return loadJSON<PlayerFeatureGuide[]>('player-feature-guides.json');
+}
+
+export async function getPlayerFeatureGuide(
+  player: string,
+  feature: string
+): Promise<PlayerFeatureGuide | null> {
+  const guides = await getPlayerFeatureGuides();
+  return guides.find((g) => g.playerId === player && g.featureId === feature) || null;
+}
+
+export async function getDeviceFeatureGuides(): Promise<DeviceFeatureGuide[]> {
+  return loadJSON<DeviceFeatureGuide[]>('device-feature-guides.json');
+}
+
+export async function getDeviceFeatureGuide(
+  device: string,
+  feature: string
+): Promise<DeviceFeatureGuide | null> {
+  const guides = await getDeviceFeatureGuides();
+  return guides.find((g) => g.deviceId === device && g.featureId === feature) || null;
+}
+
+export async function getPlayerTroubleshooting(): Promise<PlayerTroubleshootingGuide[]> {
+  return loadJSON<PlayerTroubleshootingGuide[]>('player-troubleshooting.json');
+}
+
+export async function getDeviceTroubleshooting(): Promise<DeviceTroubleshootingGuide[]> {
+  return loadJSON<DeviceTroubleshootingGuide[]>('device-troubleshooting.json');
+}
+
+export async function getPlayerTroubleshootingGuide(
+  playerId: string,
+  issueId: string
+): Promise<PlayerTroubleshootingGuide | null> {
+  const guides = await getPlayerTroubleshooting();
+  return guides.find((g) => g.playerId === playerId && g.issueId === issueId) || null;
+}
+
+export async function getDeviceTroubleshootingGuide(
+  deviceId: string,
+  issueId: string
+): Promise<DeviceTroubleshootingGuide | null> {
+  const guides = await getDeviceTroubleshooting();
+  return guides.find((g) => g.deviceId === deviceId && g.issueId === issueId) || null;
+}
+
+export async function getPlayerComparisons(): Promise<PlayerComparison[]> {
+  return loadJSON<PlayerComparison[]>('player-comparisons.json');
+}
+
+export async function getDeviceComparisons(): Promise<DeviceComparison[]> {
+  return loadJSON<DeviceComparison[]>('device-comparisons.json');
+}
+
+export async function getPlayerComparison(
+  player1Id: string,
+  player2Id: string
+): Promise<PlayerComparison | null> {
+  const comparisons = await getPlayerComparisons();
+  return comparisons.find(
+    (c) => (c.player1Id === player1Id && c.player2Id === player2Id) ||
+           (c.player1Id === player2Id && c.player2Id === player1Id)
+  ) || null;
+}
+
+export async function getDeviceComparison(
+  device1Id: string,
+  device2Id: string
+): Promise<DeviceComparison | null> {
+  const comparisons = await getDeviceComparisons();
+  return comparisons.find(
+    (c) => (c.device1Id === device1Id && c.device2Id === device2Id) ||
+           (c.device1Id === device2Id && c.device2Id === device1Id)
+  ) || null;
+}
+
+export async function getBestPlayerDevice(): Promise<BestForPage[]> {
+  return loadJSON<BestForPage[]>('best-player-device.json');
+}
+
+export async function getBestForPage(slug: string): Promise<BestForPage | null> {
+  const pages = await getBestPlayerDevice();
+  return pages.find((p) => p.slug === slug) || null;
+}
+
+// Blog data loaders
+export async function getBlogPosts(): Promise<BlogPost[]> {
+  try {
+    const files = await fs.readdir(BLOG_DIR);
+    const jsonFiles = files.filter((f) => f.endsWith('.json'));
+
+    const posts = await Promise.all(
+      jsonFiles.map(async (file) => {
+        const content = await fs.readFile(path.join(BLOG_DIR, file), 'utf-8');
+        return JSON.parse(content) as BlogPost;
+      })
+    );
+
+    // Sort by date, newest first
+    return posts.sort(
+      (a, b) =>
+        new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+    );
+  } catch {
+    return [];
+  }
+}
+
+export async function getBlogPost(slug: string): Promise<BlogPost | null> {
+  try {
+    const filePath = path.join(BLOG_DIR, `${slug}.json`);
+    const content = await fs.readFile(filePath, 'utf-8');
+    return JSON.parse(content) as BlogPost;
+  } catch {
+    return null;
+  }
+}
+
+// Utility functions
+export function getBaseUrl(): string {
+  return process.env.NEXT_PUBLIC_URL || 'https://localhost:3000';
+}
