@@ -14,6 +14,7 @@ import type {
   DeviceComparison,
   BestForPage,
   BlogPost,
+  UseCasePage,
 } from './types';
 
 const DATA_DIR = path.join(process.cwd(), 'data');
@@ -172,6 +173,16 @@ export async function getBestPlayerDevice(): Promise<BestForPage[]> {
 
 export async function getBestForPage(slug: string): Promise<BestForPage | null> {
   const pages = await getBestPlayerDevice();
+  return pages.find((p) => p.slug === slug) || null;
+}
+
+// Use-case pages (GEO-optimized)
+export async function getUseCases(): Promise<UseCasePage[]> {
+  return loadJSON<UseCasePage[]>('use-cases.json');
+}
+
+export async function getUseCase(slug: string): Promise<UseCasePage | null> {
+  const pages = await getUseCases();
   return pages.find((p) => p.slug === slug) || null;
 }
 

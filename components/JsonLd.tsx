@@ -309,3 +309,98 @@ export function OrganizationSchema() {
     />
   );
 }
+
+// ItemList Schema for "Best of" pages - helps AI systems understand rankings
+export function ItemListSchema({
+  name,
+  description,
+  items,
+  url,
+}: {
+  name: string;
+  description: string;
+  items: { name: string; position: number; url: string; rating?: number }[];
+  url: string;
+}) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name,
+    description,
+    url,
+    numberOfItems: items.length,
+    itemListElement: items.map((item) => ({
+      '@type': 'ListItem',
+      position: item.position,
+      name: item.name,
+      url: item.url,
+      ...(item.rating && {
+        item: {
+          '@type': 'SoftwareApplication',
+          name: item.name,
+          aggregateRating: {
+            '@type': 'AggregateRating',
+            ratingValue: item.rating,
+            bestRating: 5,
+          },
+        },
+      }),
+    })),
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// Article Schema with Author for GEO E-E-A-T signals
+export function ArticleWithAuthorSchema({
+  title,
+  description,
+  url,
+  datePublished,
+  dateModified,
+  authorName,
+  authorUrl,
+  authorExpertise,
+}: {
+  title: string;
+  description: string;
+  url: string;
+  datePublished: string;
+  dateModified: string;
+  authorName: string;
+  authorUrl?: string;
+  authorExpertise?: string;
+}) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description,
+    url,
+    datePublished,
+    dateModified,
+    author: {
+      '@type': 'Person',
+      name: authorName,
+      url: authorUrl || 'https://iptvweb-635b7ddd06a5.herokuapp.com/about',
+      ...(authorExpertise && { jobTitle: authorExpertise }),
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'IPTV Guide',
+      url: 'https://iptvweb-635b7ddd06a5.herokuapp.com',
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}

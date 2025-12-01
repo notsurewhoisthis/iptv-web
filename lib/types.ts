@@ -343,3 +343,33 @@ export interface BestForPage {
   keywords: string[];
   lastUpdated: string;
 }
+
+// GEO-optimized Use-Case Pages (e.g., "best free iptv players", "best iptv for sports")
+export interface UseCasePage {
+  slug: string;
+  title: string;
+  metaTitle: string;
+  description: string;
+  quickAnswer: {
+    question: string;
+    answer: string;
+    highlight?: string;
+  };
+  content: {
+    intro: string;
+    whyItMatters: string;
+  };
+  rankings: {
+    rank: number;
+    playerId: string;
+    whyRanked: string;
+    bestFor: string;
+  }[];
+  faqs: FAQ[];
+  keywords: string[];
+  lastUpdated: string;
+  author: {
+    name: string;
+    expertise: string;
+  };
+}
