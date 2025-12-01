@@ -373,3 +373,40 @@ export interface UseCasePage {
     expertise: string;
   };
 }
+
+// Technical Guides (troubleshooting, setup guides)
+export interface TechnicalGuideStep {
+  title: string;
+  description: string;
+}
+
+export interface TechnicalGuideSection {
+  title: string;
+  content?: string;
+  steps?: TechnicalGuideStep[];
+}
+
+export interface TechnicalGuide {
+  slug: string;
+  title: string;
+  metaTitle: string;
+  description: string;
+  category: 'troubleshooting' | 'setup' | 'optimization';
+  quickAnswer: {
+    question: string;
+    answer: string;
+    highlight?: string;
+  };
+  content: {
+    intro: string;
+    sections: TechnicalGuideSection[];
+  };
+  faqs: FAQ[];
+  keywords: string[];
+  lastUpdated: string;
+  author: {
+    name: string;
+    expertise: string;
+  };
+  relatedGuides?: string[];
+}

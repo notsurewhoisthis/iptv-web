@@ -15,6 +15,7 @@ import type {
   BestForPage,
   BlogPost,
   UseCasePage,
+  TechnicalGuide,
 } from './types';
 
 const DATA_DIR = path.join(process.cwd(), 'data');
@@ -184,6 +185,16 @@ export async function getUseCases(): Promise<UseCasePage[]> {
 export async function getUseCase(slug: string): Promise<UseCasePage | null> {
   const pages = await getUseCases();
   return pages.find((p) => p.slug === slug) || null;
+}
+
+// Technical guides (troubleshooting, setup)
+export async function getTechnicalGuides(): Promise<TechnicalGuide[]> {
+  return loadJSON<TechnicalGuide[]>('technical-guides.json');
+}
+
+export async function getTechnicalGuide(slug: string): Promise<TechnicalGuide | null> {
+  const guides = await getTechnicalGuides();
+  return guides.find((g) => g.slug === slug) || null;
 }
 
 // Blog data loaders

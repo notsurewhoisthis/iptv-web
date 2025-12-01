@@ -1,37 +1,90 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getPlayerDeviceGuides, getPlayers, getDevices } from '@/lib/data-loader';
+import { getPlayerDeviceGuides, getPlayers, getDevices, getTechnicalGuides } from '@/lib/data-loader';
+import { BookOpen, Wrench, AlertTriangle, Settings } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'IPTV Setup Guides - Complete Installation Instructions',
+  title: 'IPTV Guides - Setup, Troubleshooting & Technical Tutorials',
   description:
-    'Step-by-step IPTV player setup guides for all devices. Learn how to install and configure TiviMate, Kodi, VLC, and more on Firestick, Apple TV, Android, and other devices.',
+    'Complete IPTV guides including setup tutorials, troubleshooting fixes, and technical how-tos. Learn to fix buffering, setup EPG, configure M3U playlists, and more.',
+  keywords: 'iptv guide, iptv setup, fix iptv buffering, epg setup, m3u playlist, iptv troubleshooting',
 };
 
 export default async function GuidesPage() {
-  const [guides, players, devices] = await Promise.all([
+  const [setupGuides, players, devices, technicalGuides] = await Promise.all([
     getPlayerDeviceGuides(),
     getPlayers(),
     getDevices(),
+    getTechnicalGuides(),
   ]);
 
-  // Group guides by player
+  // Group setup guides by player
   const guidesByPlayer = players.map((player) => ({
     player,
-    guides: guides.filter((g) => g.playerId === player.id),
+    guides: setupGuides.filter((g) => g.playerId === player.id),
   })).filter((group) => group.guides.length > 0);
+
+  // Separate technical guides by category
+  const troubleshootingGuides = technicalGuides.filter((g) => g.category === 'troubleshooting');
+  const setupTechnicalGuides = technicalGuides.filter((g) => g.category === 'setup');
 
   return (
     <div className="min-h-screen py-8">
       <div className="max-w-6xl mx-auto px-4">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">IPTV Setup Guides</h1>
+        <div className="flex items-center gap-3 mb-2">
+          <BookOpen className="h-8 w-8 text-blue-500" />
+          <h1 className="text-3xl font-bold text-gray-900">IPTV Guides</h1>
+        </div>
         <p className="text-gray-600 mb-8">
-          Complete installation and setup instructions for every IPTV player on every device.
+          Complete guides for IPTV setup, troubleshooting, and optimization. From fixing buffering to setting up EPG.
         </p>
 
+        {/* Technical Guides - Featured Section */}
+        <section className="mb-12">
+          <div className="flex items-center gap-2 mb-6">
+            <Wrench className="h-6 w-6 text-orange-500" />
+            <h2 className="text-2xl font-bold text-gray-900">Technical Guides</h2>
+          </div>
+          <p className="text-gray-600 mb-6">
+            In-depth tutorials for common IPTV issues and setups. These guides help you fix problems and optimize your streaming.
+          </p>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            {technicalGuides.map((guide) => (
+              <Link
+                key={guide.slug}
+                href={`/guides/technical/${guide.slug}`}
+                className="block p-6 border border-gray-200 rounded-lg hover:border-blue-300 hover:shadow-md transition group"
+              >
+                <div className="flex items-center gap-2 mb-3">
+                  {guide.category === 'troubleshooting' ? (
+                    <AlertTriangle className="h-5 w-5 text-red-500" />
+                  ) : (
+                    <Settings className="h-5 w-5 text-blue-500" />
+                  )}
+                  <span className={`text-xs font-medium px-2 py-0.5 rounded ${
+                    guide.category === 'troubleshooting'
+                      ? 'bg-red-100 text-red-700'
+                      : 'bg-blue-100 text-blue-700'
+                  }`}>
+                    {guide.category}
+                  </span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition mb-2">
+                  {guide.title}
+                </h3>
+                <p className="text-gray-600 text-sm line-clamp-2 mb-3">{guide.description}</p>
+                <div className="bg-blue-50 border border-blue-100 rounded p-2 text-sm text-blue-800">
+                  <strong>Quick Answer:</strong> {guide.quickAnswer.answer.split('.')[0]}...
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         {/* Quick Device Filter */}
-        <div className="mb-8">
-          <h2 className="text-lg font-semibold text-gray-900 mb-3">Browse by Device</h2>
+        <section className="mb-8">
+          <h2 className="text-lg font-semibold text-gray-900 mb-3">Browse Setup Guides by Device</h2>
           <div className="flex flex-wrap gap-2">
             {devices.slice(0, 8).map((device) => (
               <Link
@@ -43,46 +96,53 @@ export default async function GuidesPage() {
               </Link>
             ))}
           </div>
-        </div>
+        </section>
 
-        {/* Guides by Player */}
-        <div className="space-y-12">
-          {guidesByPlayer.map(({ player, guides: playerGuides }) => (
-            <section key={player.id}>
-              <div className="flex items-center justify-between mb-4">
-                <h2 className="text-2xl font-bold text-gray-900">{player.name}</h2>
-                <Link
-                  href={`/players/${player.slug}`}
-                  className="text-sm text-blue-600 hover:text-blue-800"
-                >
-                  View Player Details →
-                </Link>
-              </div>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {playerGuides.map((guide) => (
+        {/* Setup Guides by Player */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Setup Guides by Player</h2>
+          <div className="space-y-12">
+            {guidesByPlayer.slice(0, 6).map(({ player, guides: playerGuides }) => (
+              <div key={player.id}>
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-xl font-bold text-gray-900">{player.name}</h3>
                   <Link
-                    key={guide.slug}
-                    href={`/guides/${guide.playerId}/setup/${guide.deviceId}`}
-                    className="block p-4 border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition"
+                    href={`/players/${player.slug}`}
+                    className="text-sm text-blue-600 hover:text-blue-800"
                   >
-                    <h3 className="font-medium text-gray-900 mb-1">
-                      {guide.deviceShortName}
-                    </h3>
-                    <p className="text-sm text-gray-500">
-                      {guide.content.steps.length} steps • {guide.content.faqs.length} FAQs
-                    </p>
+                    View Player Details →
                   </Link>
-                ))}
+                </div>
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {playerGuides.slice(0, 6).map((guide) => (
+                    <Link
+                      key={guide.slug}
+                      href={`/guides/${guide.playerId}/setup/${guide.deviceId}`}
+                      className="block p-4 border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition"
+                    >
+                      <h4 className="font-medium text-gray-900 mb-1">
+                        {guide.deviceShortName}
+                      </h4>
+                      <p className="text-sm text-gray-500">
+                        {guide.content.steps.length} steps
+                      </p>
+                    </Link>
+                  ))}
+                </div>
               </div>
-            </section>
-          ))}
-        </div>
+            ))}
+          </div>
+        </section>
 
         {/* Stats */}
-        <div className="mt-12 p-6 bg-gray-50 rounded-lg">
-          <div className="grid grid-cols-3 gap-4 text-center">
+        <div className="p-6 bg-gray-50 rounded-lg">
+          <div className="grid grid-cols-4 gap-4 text-center">
             <div>
-              <div className="text-3xl font-bold text-gray-900">{guides.length}</div>
+              <div className="text-3xl font-bold text-gray-900">{technicalGuides.length}</div>
+              <div className="text-sm text-gray-500">Technical Guides</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-gray-900">{setupGuides.length}</div>
               <div className="text-sm text-gray-500">Setup Guides</div>
             </div>
             <div>
