@@ -52,8 +52,8 @@ export default async function BlogPostPage({ params }: PageProps) {
     notFound();
   }
 
-  // Parse markdown content to HTML
-  const htmlContent = parseMarkdown(post.content);
+  // Parse markdown content to HTML (async in marked v17)
+  const htmlContent = await parseMarkdown(post.content);
 
   // Format dates
   const publishedDate = new Date(post.publishedAt).toLocaleDateString('en-US', {
