@@ -80,14 +80,14 @@ export function Chat({ fullScreen = false }: ChatProps) {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  // Only scroll when message count changes (new message added), not during streaming
-  const prevMessageCount = useRef(messages.length);
+  // Only scroll when a new message is added AND user has interacted
+  const prevMessageCount = useRef(0);
   useEffect(() => {
-    if (messages.length !== prevMessageCount.current) {
+    if (hasInteracted && messages.length > prevMessageCount.current) {
       scrollToBottom();
-      prevMessageCount.current = messages.length;
     }
-  }, [messages.length]);
+    prevMessageCount.current = messages.length;
+  }, [messages.length, hasInteracted]);
 
   // Focus input on mount
   useEffect(() => {
