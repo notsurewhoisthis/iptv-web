@@ -89,10 +89,10 @@ export function Chat({ fullScreen = false }: ChatProps) {
     prevMessageCount.current = messages.length;
   }, [messages.length, hasInteracted]);
 
-  // Focus input on mount
+  // Focus input on mount - use preventScroll to avoid page jumping
   useEffect(() => {
     if (fullScreen) {
-      inputRef.current?.focus();
+      inputRef.current?.focus({ preventScroll: true });
     }
   }, [fullScreen]);
 
