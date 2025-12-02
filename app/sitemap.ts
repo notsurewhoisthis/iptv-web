@@ -15,12 +15,14 @@ import {
   getUseCases,
   getTechnicalGuides,
   getBlogPosts,
-  getBaseUrl,
 } from '@/lib/data-loader';
 import learnArticles from '@/data/learn-articles.json';
 
+// Force dynamic rendering so env vars are read at runtime
+export const dynamic = 'force-dynamic';
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = getBaseUrl();
+  const baseUrl = process.env.NEXT_PUBLIC_URL || 'https://localhost:3000';
 
   // Load all data in parallel
   const [
