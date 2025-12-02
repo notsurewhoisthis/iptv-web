@@ -249,5 +249,7 @@ export async function getPlayerBenchmarks(): Promise<PlayerBenchmark[]> {
 
 // Utility functions
 export function getBaseUrl(): string {
-  return process.env.NEXT_PUBLIC_URL || 'https://localhost:3000';
+  // SITE_URL is for server-side routes (read at runtime)
+  // NEXT_PUBLIC_URL is for client-side (baked in at build time)
+  return process.env.SITE_URL || process.env.NEXT_PUBLIC_URL || 'https://localhost:3000';
 }

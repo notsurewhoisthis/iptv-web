@@ -2,6 +2,8 @@ import { NextResponse } from 'next/server';
 import {
   getPlayers,
   getDevices,
+  getFeatures,
+  getIssues,
   getPlayerDeviceGuides,
   getBlogPosts,
   getBestPlayerDevice,
@@ -11,8 +13,11 @@ import {
   getDeviceTroubleshooting,
   getPlayerFeatureGuides,
   getDeviceFeatureGuides,
+  getUseCases,
+  getTechnicalGuides,
   getBaseUrl,
 } from '@/lib/data-loader';
+import learnArticles from '@/data/learn-articles.json';
 
 export async function GET() {
   const baseUrl = getBaseUrl();
@@ -21,6 +26,8 @@ export async function GET() {
   const [
     players,
     devices,
+    features,
+    issues,
     guides,
     posts,
     bestFor,
@@ -30,9 +37,13 @@ export async function GET() {
     deviceTroubleshooting,
     playerFeatureGuides,
     deviceFeatureGuides,
+    useCases,
+    technicalGuides,
   ] = await Promise.all([
     getPlayers(),
     getDevices(),
+    getFeatures(),
+    getIssues(),
     getPlayerDeviceGuides(),
     getBlogPosts(),
     getBestPlayerDevice(),
@@ -42,6 +53,8 @@ export async function GET() {
     getDeviceTroubleshooting(),
     getPlayerFeatureGuides(),
     getDeviceFeatureGuides(),
+    getUseCases(),
+    getTechnicalGuides(),
   ]);
 
   const urls: { url: string; priority: number; changefreq: string; lastmod?: string }[] = [];
@@ -52,9 +65,11 @@ export async function GET() {
     { url: '/players', priority: 0.9, changefreq: 'weekly' },
     { url: '/devices', priority: 0.9, changefreq: 'weekly' },
     { url: '/guides', priority: 0.9, changefreq: 'weekly' },
+    { url: '/learn', priority: 0.9, changefreq: 'weekly' },
     { url: '/troubleshooting', priority: 0.9, changefreq: 'weekly' },
     { url: '/compare', priority: 0.9, changefreq: 'weekly' },
     { url: '/best', priority: 0.9, changefreq: 'weekly' },
+    { url: '/use-cases', priority: 0.8, changefreq: 'weekly' },
     { url: '/blog', priority: 0.85, changefreq: 'daily' },
     { url: '/glossary', priority: 0.8, changefreq: 'monthly' },
     { url: '/about', priority: 0.6, changefreq: 'monthly' },
@@ -71,6 +86,15 @@ export async function GET() {
       priority: 0.8,
       changefreq: 'monthly',
       lastmod: player.lastUpdated,
+    });
+  });
+
+  // Player alternatives pages
+  players.forEach((player) => {
+    urls.push({
+      url: `/players/${player.slug}/alternatives`,
+      priority: 0.7,
+      changefreq: 'monthly',
     });
   });
 
@@ -170,6 +194,52 @@ export async function GET() {
       priority: 0.7,
       changefreq: 'monthly',
       lastmod: post.updatedAt,
+    });
+  });
+
+  // Feature pages
+  features.forEach((feature) => {
+    urls.push({
+      url: `/features/${feature.slug}`,
+      priority: 0.6,
+      changefreq: 'monthly',
+    });
+  });
+
+  // Issue pages
+  issues.forEach((issue) => {
+    urls.push({
+      url: `/issues/${issue.slug}`,
+      priority: 0.6,
+      changefreq: 'monthly',
+    });
+  });
+
+  // Learn articles
+  learnArticles.forEach((article) => {
+    urls.push({
+      url: `/learn/${article.slug}`,
+      priority: 0.8,
+      changefreq: 'monthly',
+      lastmod: article.lastUpdated,
+    });
+  });
+
+  // Use case pages
+  useCases.forEach((useCase) => {
+    urls.push({
+      url: `/use-cases/${useCase.slug}`,
+      priority: 0.7,
+      changefreq: 'monthly',
+    });
+  });
+
+  // Technical guides
+  technicalGuides.forEach((guide) => {
+    urls.push({
+      url: `/technical/${guide.slug}`,
+      priority: 0.6,
+      changefreq: 'monthly',
     });
   });
 

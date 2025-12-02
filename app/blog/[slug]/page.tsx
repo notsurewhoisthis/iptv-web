@@ -10,6 +10,9 @@ interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
+// Allow new blog posts created after build (e.g., via n8n) to be rendered on-demand
+export const dynamicParams = true;
+
 export async function generateStaticParams() {
   const posts = await getBlogPosts();
   return posts.map((post) => ({ slug: post.slug }));
