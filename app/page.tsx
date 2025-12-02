@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { getPlayers, getDevices, getBaseUrl } from '@/lib/data-loader';
-import { Tv, Smartphone, MonitorPlay, Settings, ArrowRight, Star, BookOpen } from 'lucide-react';
+import { Tv, Smartphone, MonitorPlay, Settings, ArrowRight, Star, BookOpen, MessageCircle } from 'lucide-react';
 import { WebsiteSchema, OrganizationSchema } from '@/components/JsonLd';
 import { QuickAnswer } from '@/components/GeoComponents';
 import { MarketStats } from '@/components/MarketStats';
@@ -32,6 +32,13 @@ export default async function Home() {
             covered.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/ask"
+              className="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition shadow-lg shadow-blue-600/25"
+            >
+              <MessageCircle className="mr-2 h-5 w-5" />
+              Ask Live to an Expert
+            </Link>
             <Link
               href="/guides"
               className="inline-flex items-center justify-center px-6 py-3 bg-gray-900 text-white rounded-lg font-medium hover:bg-gray-800 transition"
