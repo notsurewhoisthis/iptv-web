@@ -1,4 +1,8 @@
 import { NextResponse } from 'next/server';
+
+// Force dynamic rendering so env vars are read at runtime
+export const dynamic = 'force-dynamic';
+
 import {
   getPlayers,
   getDevices,

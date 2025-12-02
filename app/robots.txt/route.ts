@@ -1,6 +1,9 @@
 import { NextResponse } from 'next/server';
 import { getBaseUrl } from '@/lib/data-loader';
 
+// Force dynamic rendering so env vars are read at runtime
+export const dynamic = 'force-dynamic';
+
 export async function GET() {
   const baseUrl = getBaseUrl();
 
