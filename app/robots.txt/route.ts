@@ -53,7 +53,7 @@ Disallow: /
   return new NextResponse(robots, {
     headers: {
       'Content-Type': 'text/plain',
-      'Cache-Control': 'public, max-age=86400',
+      'Cache-Control': 'public, max-age=3600, s-maxage=3600',
     },
   });
 }
