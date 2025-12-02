@@ -22,7 +22,7 @@ import learnArticles from '@/data/learn-articles.json';
 export const dynamic = 'force-dynamic';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.NEXT_PUBLIC_URL || 'https://localhost:3000';
+  const baseUrl = process.env.SITE_URL || process.env.NEXT_PUBLIC_URL || 'https://localhost:3000';
 
   // Load all data in parallel
   const [
