@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { MobileNav } from '@/components/MobileNav';
 import { SearchWrapper } from '@/components/SearchWrapper';
 import { ThemeToggle } from '@/components/ThemeToggle';
+import { ChatWidget } from '@/components/ChatWidget';
 import { Rss } from 'lucide-react';
 
 const inter = Inter({
@@ -231,6 +232,9 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
+
+        {/* AI Chat Widget */}
+        <ChatWidget />
       </body>
     </html>
   );

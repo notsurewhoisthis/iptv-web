@@ -5,6 +5,7 @@ import { getBlogPosts, getBlogPost, getBaseUrl } from '@/lib/data-loader';
 import { parseMarkdown } from '@/lib/markdown';
 import { ChevronRight, Clock, Calendar, User, ArrowLeft, Tag } from 'lucide-react';
 import { ArticleWithAuthorSchema, BreadcrumbSchema } from '@/components/JsonLd';
+import { QuickAnswer } from '@/components/GeoComponents';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -156,14 +157,13 @@ export default async function BlogPostPage({ params }: PageProps) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Article Content */}
           <article className="lg:col-span-8">
-            {/* Quick Summary Card */}
-            <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-6 mb-8 shadow-sm">
-              <h2 className="text-sm font-semibold text-blue-800 uppercase tracking-wide mb-2">
-                Quick Summary
-              </h2>
-              <p className="text-gray-700 leading-relaxed">
-                {post.description}
-              </p>
+            {/* QuickAnswer for AI/GEO - Structured for AI extraction */}
+            <div className="mb-8">
+              <QuickAnswer
+                question={`What does this article cover: ${post.title}?`}
+                answer={post.description}
+                highlight={post.category ? `Category: ${post.category}` : undefined}
+              />
             </div>
 
             {/* Article Body */}
