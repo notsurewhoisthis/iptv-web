@@ -211,6 +211,9 @@ export default function RootLayout({
                     <Link href="/about">About Us</Link>
                   </li>
                   <li>
+                    <Link href="/contact">Contact Us</Link>
+                  </li>
+                  <li>
                     <Link
                       href="/feed.xml"
                       className="inline-flex items-center gap-1"
