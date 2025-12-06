@@ -77,7 +77,7 @@
       "fix buffering",
       "iptv keeps buffering"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.160Z"
+    "lastUpdated": "2025-12-06T22:03:30.516Z"
   },
   {
     "slug": "firestick-playback-errors",
@@ -157,7 +157,7 @@
       "channel not working",
       "iptv error"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.160Z"
+    "lastUpdated": "2025-12-06T22:03:30.516Z"
   },
   {
     "slug": "firestick-epg-not-loading",
@@ -236,7 +236,7 @@
       "program guide missing",
       "xmltv not loading"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.160Z"
+    "lastUpdated": "2025-12-06T22:03:30.516Z"
   },
   {
     "slug": "firestick-stream-quality",
@@ -315,7 +315,7 @@
       "pixelated",
       "stream resolution"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.160Z"
+    "lastUpdated": "2025-12-06T22:03:30.516Z"
   },
   {
     "slug": "firestick-audio-sync",
@@ -393,7 +393,7 @@
       "audio lag",
       "sound delay"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.160Z"
+    "lastUpdated": "2025-12-06T22:03:30.516Z"
   },
   {
     "slug": "firestick-channel-loading",
@@ -470,7 +470,7 @@
       "iptv slow",
       "takes long to load"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.160Z"
+    "lastUpdated": "2025-12-06T22:03:30.516Z"
   },
   {
     "slug": "firestick-playlist-expired",
@@ -547,7 +547,7 @@
       "subscription expired",
       "m3u not loading"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.160Z"
+    "lastUpdated": "2025-12-06T22:03:30.516Z"
   },
   {
     "slug": "firestick-connection-timeout",
@@ -626,7 +626,7 @@
       "connection failed",
       "iptv blocked"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.160Z"
+    "lastUpdated": "2025-12-06T22:03:30.516Z"
   },
   {
     "slug": "firestick-codec-issues",
@@ -704,7 +704,7 @@
       "audio codec missing",
       "format unsupported"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.160Z"
+    "lastUpdated": "2025-12-06T22:03:30.516Z"
   },
   {
     "slug": "firestick-app-crash",
@@ -784,7 +784,7 @@
       "force close",
       "app not responding"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.160Z"
+    "lastUpdated": "2025-12-06T22:03:30.516Z"
   },
   {
     "slug": "firestick-internal-server-error",
@@ -870,7 +870,7 @@
       "xtream server error",
       "portal error iptv"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.160Z"
+    "lastUpdated": "2025-12-06T22:03:30.516Z"
   },
   {
     "slug": "firestick-no-audio",
@@ -951,7 +951,7 @@
       "sound not working",
       "audio missing iptv"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.160Z"
+    "lastUpdated": "2025-12-06T22:03:30.516Z"
   },
   {
     "slug": "fire-tv-cube-buffering",
@@ -1031,7 +1031,7 @@
       "fix buffering",
       "iptv keeps buffering"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.160Z"
+    "lastUpdated": "2025-12-06T22:03:30.516Z"
   },
   {
     "slug": "fire-tv-cube-playback-errors",
@@ -1111,7 +1111,7 @@
       "channel not working",
       "iptv error"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.160Z"
+    "lastUpdated": "2025-12-06T22:03:30.516Z"
   },
   {
     "slug": "fire-tv-cube-epg-not-loading",
@@ -1190,7 +1190,7 @@
       "program guide missing",
       "xmltv not loading"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.160Z"
+    "lastUpdated": "2025-12-06T22:03:30.516Z"
   },
   {
     "slug": "fire-tv-cube-stream-quality",
@@ -1269,7 +1269,7 @@
       "pixelated",
       "stream resolution"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.160Z"
+    "lastUpdated": "2025-12-06T22:03:30.516Z"
   },
   {
     "slug": "fire-tv-cube-audio-sync",
@@ -1347,7 +1347,7 @@
       "audio lag",
       "sound delay"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.160Z"
+    "lastUpdated": "2025-12-06T22:03:30.516Z"
   },
   {
     "slug": "fire-tv-cube-playlist-expired",
@@ -1424,7 +1424,7 @@
       "subscription expired",
       "m3u not loading"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.160Z"
+    "lastUpdated": "2025-12-06T22:03:30.516Z"
   },
   {
     "slug": "fire-tv-cube-connection-timeout",
@@ -1503,7 +1503,7 @@
       "connection failed",
       "iptv blocked"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.160Z"
+    "lastUpdated": "2025-12-06T22:03:30.516Z"
   },
   {
     "slug": "fire-tv-cube-app-crash",
@@ -1583,7 +1583,7 @@
       "force close",
       "app not responding"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.160Z"
+    "lastUpdated": "2025-12-06T22:03:30.516Z"
   },
   {
     "slug": "fire-tv-cube-internal-server-error",
@@ -1669,7 +1669,7 @@
       "xtream server error",
       "portal error iptv"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.160Z"
+    "lastUpdated": "2025-12-06T22:03:30.516Z"
   },
   {
     "slug": "fire-tv-cube-no-audio",
@@ -1750,7 +1750,7 @@
       "sound not working",
       "audio missing iptv"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.160Z"
+    "lastUpdated": "2025-12-06T22:03:30.516Z"
   },
   {
     "slug": "apple-tv-buffering",
@@ -1828,7 +1828,7 @@
       "fix buffering",
       "iptv keeps buffering"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.160Z"
+    "lastUpdated": "2025-12-06T22:03:30.516Z"
   },
   {
     "slug": "apple-tv-playback-errors",
@@ -1906,7 +1906,7 @@
       "channel not working",
       "iptv error"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.160Z"
+    "lastUpdated": "2025-12-06T22:03:30.516Z"
   },
   {
     "slug": "apple-tv-stream-quality",
@@ -1983,7 +1983,7 @@
       "pixelated",
       "stream resolution"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.160Z"
+    "lastUpdated": "2025-12-06T22:03:30.516Z"
   },
   {
     "slug": "apple-tv-audio-sync",
@@ -2059,7 +2059,7 @@
       "audio lag",
       "sound delay"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "apple-tv-playlist-expired",
@@ -2134,7 +2134,7 @@
       "subscription expired",
       "m3u not loading"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "apple-tv-connection-timeout",
@@ -2211,7 +2211,7 @@
       "connection failed",
       "iptv blocked"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "apple-tv-internal-server-error",
@@ -2295,7 +2295,7 @@
       "xtream server error",
       "portal error iptv"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "apple-tv-no-audio",
@@ -2374,7 +2374,7 @@
       "sound not working",
       "audio missing iptv"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "android-tv-buffering",
@@ -2454,7 +2454,7 @@
       "fix buffering",
       "iptv keeps buffering"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "android-tv-playback-errors",
@@ -2534,7 +2534,7 @@
       "channel not working",
       "iptv error"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "android-tv-epg-not-loading",
@@ -2613,7 +2613,7 @@
       "program guide missing",
       "xmltv not loading"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "android-tv-stream-quality",
@@ -2692,7 +2692,7 @@
       "pixelated",
       "stream resolution"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "android-tv-audio-sync",
@@ -2770,7 +2770,7 @@
       "audio lag",
       "sound delay"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "android-tv-channel-loading",
@@ -2847,7 +2847,7 @@
       "iptv slow",
       "takes long to load"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "android-tv-playlist-expired",
@@ -2924,7 +2924,7 @@
       "subscription expired",
       "m3u not loading"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "android-tv-connection-timeout",
@@ -3003,7 +3003,7 @@
       "connection failed",
       "iptv blocked"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "android-tv-codec-issues",
@@ -3081,7 +3081,7 @@
       "audio codec missing",
       "format unsupported"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "android-tv-app-crash",
@@ -3161,7 +3161,7 @@
       "force close",
       "app not responding"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "android-tv-internal-server-error",
@@ -3247,7 +3247,7 @@
       "xtream server error",
       "portal error iptv"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "android-tv-no-audio",
@@ -3328,7 +3328,7 @@
       "sound not working",
       "audio missing iptv"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "chromecast-buffering",
@@ -3406,7 +3406,7 @@
       "fix buffering",
       "iptv keeps buffering"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "chromecast-playback-errors",
@@ -3484,7 +3484,7 @@
       "channel not working",
       "iptv error"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "chromecast-epg-not-loading",
@@ -3561,7 +3561,7 @@
       "program guide missing",
       "xmltv not loading"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "chromecast-stream-quality",
@@ -3638,7 +3638,7 @@
       "pixelated",
       "stream resolution"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "chromecast-audio-sync",
@@ -3714,7 +3714,7 @@
       "audio lag",
       "sound delay"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "chromecast-channel-loading",
@@ -3789,7 +3789,7 @@
       "iptv slow",
       "takes long to load"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "chromecast-playlist-expired",
@@ -3864,7 +3864,7 @@
       "subscription expired",
       "m3u not loading"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "chromecast-connection-timeout",
@@ -3941,7 +3941,7 @@
       "connection failed",
       "iptv blocked"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "chromecast-codec-issues",
@@ -4017,7 +4017,7 @@
       "audio codec missing",
       "format unsupported"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "chromecast-app-crash",
@@ -4095,7 +4095,7 @@
       "force close",
       "app not responding"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "chromecast-internal-server-error",
@@ -4179,7 +4179,7 @@
       "xtream server error",
       "portal error iptv"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "chromecast-no-audio",
@@ -4258,7 +4258,7 @@
       "sound not working",
       "audio missing iptv"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "google-tv-internal-server-error",
@@ -4342,7 +4342,7 @@
       "xtream server error",
       "portal error iptv"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "nvidia-shield-buffering",
@@ -4422,7 +4422,7 @@
       "fix buffering",
       "iptv keeps buffering"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "nvidia-shield-playback-errors",
@@ -4502,7 +4502,7 @@
       "channel not working",
       "iptv error"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "nvidia-shield-epg-not-loading",
@@ -4581,7 +4581,7 @@
       "program guide missing",
       "xmltv not loading"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "nvidia-shield-stream-quality",
@@ -4660,7 +4660,7 @@
       "pixelated",
       "stream resolution"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "nvidia-shield-audio-sync",
@@ -4738,7 +4738,7 @@
       "audio lag",
       "sound delay"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "nvidia-shield-playlist-expired",
@@ -4815,7 +4815,7 @@
       "subscription expired",
       "m3u not loading"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "nvidia-shield-connection-timeout",
@@ -4894,7 +4894,7 @@
       "connection failed",
       "iptv blocked"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "nvidia-shield-app-crash",
@@ -4974,7 +4974,7 @@
       "force close",
       "app not responding"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "nvidia-shield-internal-server-error",
@@ -5060,7 +5060,7 @@
       "xtream server error",
       "portal error iptv"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "nvidia-shield-no-audio",
@@ -5141,7 +5141,7 @@
       "sound not working",
       "audio missing iptv"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "ios-buffering",
@@ -5219,7 +5219,7 @@
       "fix buffering",
       "iptv keeps buffering"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "ios-playback-errors",
@@ -5297,7 +5297,7 @@
       "channel not working",
       "iptv error"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "ios-epg-not-loading",
@@ -5374,7 +5374,7 @@
       "program guide missing",
       "xmltv not loading"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "ios-playlist-expired",
@@ -5449,7 +5449,7 @@
       "subscription expired",
       "m3u not loading"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "ios-connection-timeout",
@@ -5526,7 +5526,7 @@
       "connection failed",
       "iptv blocked"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "ios-app-crash",
@@ -5604,7 +5604,7 @@
       "force close",
       "app not responding"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "ios-internal-server-error",
@@ -5688,7 +5688,7 @@
       "xtream server error",
       "portal error iptv"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "windows-buffering",
@@ -5766,7 +5766,7 @@
       "fix buffering",
       "iptv keeps buffering"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "windows-playback-errors",
@@ -5844,7 +5844,7 @@
       "channel not working",
       "iptv error"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "windows-audio-sync",
@@ -5920,7 +5920,7 @@
       "audio lag",
       "sound delay"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "windows-playlist-expired",
@@ -5995,7 +5995,7 @@
       "subscription expired",
       "m3u not loading"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "windows-connection-timeout",
@@ -6072,7 +6072,7 @@
       "connection failed",
       "iptv blocked"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "windows-internal-server-error",
@@ -6156,7 +6156,7 @@
       "xtream server error",
       "portal error iptv"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "windows-no-audio",
@@ -6235,7 +6235,7 @@
       "sound not working",
       "audio missing iptv"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "mac-buffering",
@@ -6313,7 +6313,7 @@
       "fix buffering",
       "iptv keeps buffering"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "mac-playback-errors",
@@ -6391,7 +6391,7 @@
       "channel not working",
       "iptv error"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "mac-audio-sync",
@@ -6467,7 +6467,7 @@
       "audio lag",
       "sound delay"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "mac-playlist-expired",
@@ -6542,7 +6542,7 @@
       "subscription expired",
       "m3u not loading"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "mac-connection-timeout",
@@ -6619,7 +6619,7 @@
       "connection failed",
       "iptv blocked"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "mac-internal-server-error",
@@ -6703,7 +6703,7 @@
       "xtream server error",
       "portal error iptv"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "mac-no-audio",
@@ -6782,7 +6782,7 @@
       "sound not working",
       "audio missing iptv"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "linux-buffering",
@@ -6860,7 +6860,7 @@
       "fix buffering",
       "iptv keeps buffering"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "linux-playback-errors",
@@ -6938,7 +6938,7 @@
       "channel not working",
       "iptv error"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "linux-playlist-expired",
@@ -7013,7 +7013,7 @@
       "subscription expired",
       "m3u not loading"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "linux-connection-timeout",
@@ -7090,7 +7090,7 @@
       "connection failed",
       "iptv blocked"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "linux-internal-server-error",
@@ -7174,7 +7174,7 @@
       "xtream server error",
       "portal error iptv"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "samsung-tv-buffering",
@@ -7253,7 +7253,7 @@
       "fix buffering",
       "iptv keeps buffering"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "samsung-tv-playback-errors",
@@ -7332,7 +7332,7 @@
       "channel not working",
       "iptv error"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "samsung-tv-epg-not-loading",
@@ -7410,7 +7410,7 @@
       "program guide missing",
       "xmltv not loading"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "samsung-tv-stream-quality",
@@ -7488,7 +7488,7 @@
       "pixelated",
       "stream resolution"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "samsung-tv-channel-loading",
@@ -7564,7 +7564,7 @@
       "iptv slow",
       "takes long to load"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "samsung-tv-playlist-expired",
@@ -7640,7 +7640,7 @@
       "subscription expired",
       "m3u not loading"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "samsung-tv-connection-timeout",
@@ -7718,7 +7718,7 @@
       "connection failed",
       "iptv blocked"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.517Z"
   },
   {
     "slug": "samsung-tv-codec-issues",
@@ -7795,7 +7795,7 @@
       "audio codec missing",
       "format unsupported"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   },
   {
     "slug": "samsung-tv-app-crash",
@@ -7874,7 +7874,7 @@
       "force close",
       "app not responding"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   },
   {
     "slug": "samsung-tv-internal-server-error",
@@ -7959,7 +7959,7 @@
       "xtream server error",
       "portal error iptv"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   },
   {
     "slug": "samsung-tv-no-audio",
@@ -8039,7 +8039,7 @@
       "sound not working",
       "audio missing iptv"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.161Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   },
   {
     "slug": "lg-tv-buffering",
@@ -8118,7 +8118,7 @@
       "fix buffering",
       "iptv keeps buffering"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.162Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   },
   {
     "slug": "lg-tv-playback-errors",
@@ -8197,7 +8197,7 @@
       "channel not working",
       "iptv error"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.162Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   },
   {
     "slug": "lg-tv-epg-not-loading",
@@ -8275,7 +8275,7 @@
       "program guide missing",
       "xmltv not loading"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.162Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   },
   {
     "slug": "lg-tv-stream-quality",
@@ -8353,7 +8353,7 @@
       "pixelated",
       "stream resolution"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.162Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   },
   {
     "slug": "lg-tv-channel-loading",
@@ -8429,7 +8429,7 @@
       "iptv slow",
       "takes long to load"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.162Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   },
   {
     "slug": "lg-tv-playlist-expired",
@@ -8505,7 +8505,7 @@
       "subscription expired",
       "m3u not loading"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.162Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   },
   {
     "slug": "lg-tv-connection-timeout",
@@ -8583,7 +8583,7 @@
       "connection failed",
       "iptv blocked"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.162Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   },
   {
     "slug": "lg-tv-codec-issues",
@@ -8660,7 +8660,7 @@
       "audio codec missing",
       "format unsupported"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.162Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   },
   {
     "slug": "lg-tv-app-crash",
@@ -8739,7 +8739,7 @@
       "force close",
       "app not responding"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.162Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   },
   {
     "slug": "lg-tv-internal-server-error",
@@ -8824,7 +8824,7 @@
       "xtream server error",
       "portal error iptv"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.162Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   },
   {
     "slug": "lg-tv-no-audio",
@@ -8904,7 +8904,7 @@
       "sound not working",
       "audio missing iptv"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.162Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   },
   {
     "slug": "sony-tv-buffering",
@@ -8984,7 +8984,7 @@
       "fix buffering",
       "iptv keeps buffering"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.162Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   },
   {
     "slug": "sony-tv-playback-errors",
@@ -9064,7 +9064,7 @@
       "channel not working",
       "iptv error"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.162Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   },
   {
     "slug": "sony-tv-epg-not-loading",
@@ -9143,7 +9143,7 @@
       "program guide missing",
       "xmltv not loading"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.162Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   },
   {
     "slug": "sony-tv-stream-quality",
@@ -9222,7 +9222,7 @@
       "pixelated",
       "stream resolution"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.162Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   },
   {
     "slug": "sony-tv-playlist-expired",
@@ -9299,7 +9299,7 @@
       "subscription expired",
       "m3u not loading"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.162Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   },
   {
     "slug": "sony-tv-connection-timeout",
@@ -9378,7 +9378,7 @@
       "connection failed",
       "iptv blocked"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.162Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   },
   {
     "slug": "sony-tv-internal-server-error",
@@ -9464,7 +9464,7 @@
       "xtream server error",
       "portal error iptv"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.162Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   },
   {
     "slug": "sony-tv-no-audio",
@@ -9545,7 +9545,7 @@
       "sound not working",
       "audio missing iptv"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.162Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   },
   {
     "slug": "roku-buffering",
@@ -9619,7 +9619,7 @@
       "fix buffering",
       "iptv keeps buffering"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.162Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   },
   {
     "slug": "mag-box-buffering",
@@ -9693,7 +9693,7 @@
       "fix buffering",
       "iptv keeps buffering"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.162Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   },
   {
     "slug": "mag-box-playback-errors",
@@ -9767,7 +9767,7 @@
       "channel not working",
       "iptv error"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.162Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   },
   {
     "slug": "mag-box-playlist-expired",
@@ -9838,7 +9838,7 @@
       "subscription expired",
       "m3u not loading"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.162Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   },
   {
     "slug": "mag-box-connection-timeout",
@@ -9911,7 +9911,7 @@
       "connection failed",
       "iptv blocked"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.162Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   },
   {
     "slug": "mag-box-internal-server-error",
@@ -9991,6 +9991,6 @@
       "xtream server error",
       "portal error iptv"
     ],
-    "lastUpdated": "2025-12-06T21:53:29.162Z"
+    "lastUpdated": "2025-12-06T22:03:30.518Z"
   }
 ]

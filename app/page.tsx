@@ -270,6 +270,59 @@ export default async function Home() {
         </div>
       </section>
 
+      {/* Popular Topics Section - For SEO Internal Linking */}
+      <section className="py-12 bg-white dark:bg-gray-950">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+            Popular IPTV Topics
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <Link
+              href="/guides/technical/chromecast-iptv"
+              className="block p-5 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-md transition"
+            >
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Chromecast IPTV</h3>
+              <p className="text-sm text-gray-500 dark:text-gray-400">Complete guide to watching IPTV on Chromecast devices</p>
+            </Link>
+            <Link
+              href="/guides/technical/google-tv-iptv"
+              className="block p-5 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-md transition"
+            >
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Google TV IPTV</h3>
+              <p className="text-sm text-gray-500 dark:text-gray-400">Best apps and setup guide for Google TV streaming</p>
+            </Link>
+            <Link
+              href="/guides/technical/tivimate-chromecast"
+              className="block p-5 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-md transition"
+            >
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-1">TiviMate + Chromecast</h3>
+              <p className="text-sm text-gray-500 dark:text-gray-400">How to watch TiviMate on your Chromecast</p>
+            </Link>
+            <Link
+              href="/learn/tivimate-alternatives"
+              className="block p-5 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-md transition"
+            >
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-1">TiviMate Alternatives</h3>
+              <p className="text-sm text-gray-500 dark:text-gray-400">Best IPTV players compared - free and premium options</p>
+            </Link>
+            <Link
+              href="/guides/technical/best-iptv-player-linux"
+              className="block p-5 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-md transition"
+            >
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-1">IPTV on Linux</h3>
+              <p className="text-sm text-gray-500 dark:text-gray-400">Best IPTV players for Ubuntu, Debian, and Linux Mint</p>
+            </Link>
+            <Link
+              href="/guides/technical/cast-iptv-to-chromecast"
+              className="block p-5 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-md transition"
+            >
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-1">IPTV Casting Guide</h3>
+              <p className="text-sm text-gray-500 dark:text-gray-400">Cast IPTV from phone to TV with Chromecast</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Popular Guides CTA */}
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4 text-center">
@@ -288,16 +341,22 @@ export default async function Home() {
               TiviMate on Firestick
             </Link>
             <Link
-              href="/guides/kodi/setup/firestick"
+              href="/guides/technical/chromecast-iptv"
               className="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full text-sm hover:bg-gray-200 dark:hover:bg-gray-700 transition"
             >
-              Kodi on Firestick
+              Chromecast IPTV
             </Link>
             <Link
-              href="/guides/iptv-smarters/setup/firestick"
+              href="/guides/technical/google-tv-iptv"
               className="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full text-sm hover:bg-gray-200 dark:hover:bg-gray-700 transition"
             >
-              IPTV Smarters on Firestick
+              Google TV IPTV
+            </Link>
+            <Link
+              href="/players/stremio"
+              className="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full text-sm hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+            >
+              Stremio Guide
             </Link>
             <Link
               href="/best/best-iptv-player-firestick"
