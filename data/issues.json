@@ -266,5 +266,66 @@
     "affectedDevices": ["firestick", "fire-tv-cube", "android-tv", "chromecast", "nvidia-shield", "ios", "samsung-tv", "lg-tv"],
     "keywords": ["app crashing", "iptv freezing", "app keeps closing", "force close", "app not responding"],
     "description": "App crashes and freezes are often caused by memory issues or corrupted cache. Clearing cache and reinstalling usually fixes it."
+  },
+  {
+    "id": "internal-server-error",
+    "name": "Internal Server Error",
+    "slug": "internal-server-error",
+    "category": "connection",
+    "severity": "high",
+    "commonCauses": [
+      "IPTV provider server down or overloaded",
+      "Expired subscription or inactive account",
+      "Incorrect server URL or portal address",
+      "Provider maintenance or updates",
+      "Too many simultaneous connections",
+      "Authentication or API errors",
+      "Xtream Codes panel issues",
+      "DNS resolution problems"
+    ],
+    "generalSolutions": [
+      "Wait and try again - server may be temporarily overloaded",
+      "Check your subscription status with provider",
+      "Verify server URL/portal address is correct",
+      "Check provider's social media or support channels for outage announcements",
+      "Try alternative server URL if provider offers multiple",
+      "Contact your IPTV provider's support",
+      "Clear app cache and re-enter credentials",
+      "Check if you've exceeded connection limits",
+      "Try a different DNS (Google 8.8.8.8 or Cloudflare 1.1.1.1)"
+    ],
+    "affectedPlayers": ["tivimate", "iptv-smarters", "kodi", "vlc", "gse-smart-iptv", "perfect-player", "ott-navigator", "iptv-extreme", "lazy-iptv", "televizo", "iplaytv", "iptv-pro", "xciptv", "stremio"],
+    "affectedDevices": ["firestick", "fire-tv-cube", "apple-tv", "android-tv", "chromecast", "nvidia-shield", "ios", "windows", "mac", "linux", "samsung-tv", "lg-tv", "sony-tv", "mag-box", "google-tv"],
+    "keywords": ["iptv internal server error", "500 error iptv", "server error iptv", "iptv server down", "internal error iptv", "xtream server error", "portal error iptv"],
+    "description": "Internal Server Error (HTTP 500) occurs when the IPTV provider's server encounters a problem. This is usually a server-side issue that requires waiting for the provider to fix, or could indicate subscription/authentication problems."
+  },
+  {
+    "id": "no-audio",
+    "name": "No Audio/Sound",
+    "slug": "no-audio",
+    "category": "playback",
+    "severity": "medium",
+    "commonCauses": [
+      "Audio codec not supported (AAC, AC3, EAC3)",
+      "Wrong audio track selected",
+      "Device audio settings incorrect",
+      "Passthrough audio issues",
+      "Bluetooth/HDMI audio routing problems",
+      "Stream has no audio track"
+    ],
+    "generalSolutions": [
+      "Check device volume and mute settings",
+      "Try switching audio tracks in player",
+      "Disable audio passthrough in settings",
+      "Use external player (VLC, MX Player)",
+      "Check HDMI audio settings on TV",
+      "Try a different channel to isolate issue",
+      "Enable software audio decoding",
+      "Restart the app and stream"
+    ],
+    "affectedPlayers": ["tivimate", "iptv-smarters", "kodi", "vlc", "gse-smart-iptv", "perfect-player", "ott-navigator", "televizo", "iplaytv"],
+    "affectedDevices": ["firestick", "fire-tv-cube", "apple-tv", "android-tv", "chromecast", "nvidia-shield", "windows", "mac", "samsung-tv", "lg-tv", "sony-tv"],
+    "keywords": ["iptv no sound", "no audio iptv", "iptv muted", "sound not working", "audio missing iptv"],
+    "description": "No audio issues usually stem from codec support problems or incorrect audio settings. Trying an external player often resolves audio codec issues."
   }
 ]

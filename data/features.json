@@ -166,5 +166,33 @@
     "supportedDevices": ["firestick", "fire-tv-cube", "android-tv", "chromecast", "nvidia-shield"],
     "difficulty": "easy",
     "keywords": ["auto update iptv", "refresh playlist", "update channels", "auto refresh epg"]
+  },
+  {
+    "id": "casting",
+    "name": "Chromecast & Casting",
+    "shortName": "Casting",
+    "slug": "casting",
+    "category": "streaming",
+    "description": "Cast IPTV content from your phone, tablet, or computer to your TV using Chromecast, AirPlay, or screen mirroring. This allows you to watch IPTV on your big screen without installing apps directly on the TV.",
+    "benefits": ["Watch IPTV on any TV with Chromecast", "No app installation needed on TV", "Control playback from your phone", "Multi-room streaming", "Use your TV's speakers"],
+    "requirements": ["Chromecast, Apple TV, or AirPlay-compatible TV", "IPTV app with casting support", "Same Wi-Fi network for all devices"],
+    "supportedPlayers": ["gse-smart-iptv", "iptv-smarters", "vlc", "iplaytv", "stremio"],
+    "supportedDevices": ["ios", "android-tv", "chromecast", "apple-tv", "windows", "mac"],
+    "difficulty": "easy",
+    "keywords": ["chromecast iptv", "cast iptv", "iptv with casting", "airplay iptv", "screen mirror iptv", "tivimate chromecast", "cast iptv to tv", "chromecast tivimate"]
+  },
+  {
+    "id": "hardware-decoding",
+    "name": "Hardware Decoding",
+    "shortName": "HW Decode",
+    "slug": "hardware-decoding",
+    "category": "playback",
+    "description": "Use your device's dedicated video hardware to decode streams, reducing CPU usage and improving playback smoothness for high-quality streams.",
+    "benefits": ["Smoother 4K playback", "Lower CPU usage", "Better battery life on mobile", "Reduced buffering", "Cooler device operation"],
+    "requirements": ["Device with hardware video decoder", "Compatible IPTV player", "Hardware-compatible video codec"],
+    "supportedPlayers": ["tivimate", "kodi", "vlc", "stremio", "ott-navigator", "gse-smart-iptv"],
+    "supportedDevices": ["firestick", "fire-tv-cube", "apple-tv", "android-tv", "chromecast", "nvidia-shield", "ios", "windows", "mac", "linux"],
+    "difficulty": "easy",
+    "keywords": ["hardware decoding iptv", "hw decode", "hardware acceleration", "video decoder", "4k playback"]
   }
 ]

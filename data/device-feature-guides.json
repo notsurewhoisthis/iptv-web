@@ -95,7 +95,7 @@
       "epg setup",
       "xmltv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.119Z",
     "difficulty": "medium"
   },
   {
@@ -189,7 +189,7 @@
       "iptv pvr",
       "pause live tv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.119Z",
     "difficulty": "advanced"
   },
   {
@@ -282,7 +282,7 @@
       "pip iptv",
       "split screen iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.119Z",
     "difficulty": "easy"
   },
   {
@@ -372,7 +372,7 @@
       "pin lock iptv",
       "child safe iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.119Z",
     "difficulty": "easy"
   },
   {
@@ -469,7 +469,7 @@
       "favorite channels",
       "custom channel list"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.119Z",
     "difficulty": "easy"
   },
   {
@@ -562,7 +562,7 @@
       "catch up tv",
       "rewind iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.119Z",
     "difficulty": "easy"
   },
   {
@@ -656,7 +656,7 @@
       "iptv movies",
       "iptv series"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.119Z",
     "difficulty": "easy"
   },
   {
@@ -751,7 +751,7 @@
       "iptv playlist",
       "manage playlists"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.119Z",
     "difficulty": "medium"
   },
   {
@@ -845,7 +845,7 @@
       "hide channels",
       "channel groups"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.119Z",
     "difficulty": "medium"
   },
   {
@@ -937,7 +937,7 @@
       "srt subtitles",
       "subtitle support"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.119Z",
     "difficulty": "easy"
   },
   {
@@ -1028,7 +1028,7 @@
       "mx player iptv",
       "video player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.119Z",
     "difficulty": "medium"
   },
   {
@@ -1120,7 +1120,185 @@
       "update channels",
       "auto refresh epg"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.119Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "firestick-casting",
+    "deviceId": "firestick",
+    "featureId": "casting",
+    "deviceName": "Amazon Fire TV Stick",
+    "deviceShortName": "Firestick",
+    "featureName": "Chromecast & Casting",
+    "featureShortName": "Casting",
+    "isSupported": false,
+    "title": "Can You Use Casting on Firestick?",
+    "metaTitle": "Casting on Firestick Guide 2025 | IPTV Tutorial",
+    "description": "Discover if Amazon Fire TV Stick supports Chromecast & Casting and what alternatives exist.",
+    "content": {
+      "intro": "Amazon Fire TV Stick has limited support for Chromecast & Casting. Let's explore what options are available.",
+      "recommendedPlayers": [
+        "iptv-smarters",
+        "vlc",
+        "stremio"
+      ],
+      "benefits": [
+        "Watch IPTV on any TV with Chromecast",
+        "No app installation needed on TV",
+        "Control playback from your phone",
+        "Multi-room streaming",
+        "Use your TV's speakers"
+      ],
+      "requirements": [
+        "Amazon Fire TV Stick",
+        "Chromecast, Apple TV, or AirPlay-compatible TV",
+        "IPTV app with casting support",
+        "Same Wi-Fi network for all devices",
+        "One of: iptv-smarters, vlc, stremio"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Consider Alternative Devices",
+          "description": "Devices that support Chromecast & Casting include: ios, android-tv, chromecast, apple-tv, windows."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use Casting on Firestick?",
+          "answer": "Firestick has limited support for Chromecast & Casting. Consider using ios instead."
+        },
+        {
+          "question": "What's the best app for Casting on Firestick?",
+          "answer": "For Casting on Firestick, we recommend iptv-smarters. It has excellent Casting support."
+        }
+      ],
+      "conclusion": "While Firestick doesn't fully support Chromecast & Casting, there are alternatives worth considering."
+    },
+    "relatedGuides": [
+      "firestick-epg",
+      "firestick-recording",
+      "firestick-multi-screen",
+      "firestick-parental-controls",
+      "firestick-favorites"
+    ],
+    "tags": [
+      "firestick",
+      "casting",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "casting firestick",
+      "Casting on Firestick",
+      "Firestick Casting",
+      "chromecast iptv",
+      "cast iptv",
+      "iptv with casting",
+      "airplay iptv",
+      "screen mirror iptv",
+      "tivimate chromecast",
+      "cast iptv to tv",
+      "chromecast tivimate"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.119Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "firestick-hardware-decoding",
+    "deviceId": "firestick",
+    "featureId": "hardware-decoding",
+    "deviceName": "Amazon Fire TV Stick",
+    "deviceShortName": "Firestick",
+    "featureName": "Hardware Decoding",
+    "featureShortName": "HW Decode",
+    "isSupported": true,
+    "title": "HW Decode on Firestick - Complete Guide 2025",
+    "metaTitle": "HW Decode on Firestick Guide 2025 | IPTV Tutorial",
+    "description": "Learn how to use Hardware Decoding on your Amazon Fire TV Stick. Best apps and settings for 2025.",
+    "content": {
+      "intro": "Want to use Hardware Decoding on your Firestick? This guide covers the best apps and settings to get HW Decode working perfectly on Amazon Fire TV Stick.",
+      "recommendedPlayers": [
+        "tivimate",
+        "kodi",
+        "vlc",
+        "ott-navigator",
+        "stremio"
+      ],
+      "benefits": [
+        "Smoother 4K playback",
+        "Lower CPU usage",
+        "Better battery life on mobile",
+        "Reduced buffering",
+        "Cooler device operation"
+      ],
+      "requirements": [
+        "Amazon Fire TV Stick",
+        "Device with hardware video decoder",
+        "Compatible IPTV player",
+        "Hardware-compatible video codec",
+        "One of: tivimate, kodi, vlc, ott-navigator, stremio"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Install a Compatible IPTV Player",
+          "description": "For HW Decode on Firestick, we recommend: tivimate, kodi, vlc."
+        },
+        {
+          "stepNumber": 2,
+          "title": "Configure Your IPTV Service",
+          "description": "Add your M3U playlist or Xtream credentials to the player."
+        },
+        {
+          "stepNumber": 3,
+          "title": "Enable HW Decode",
+          "description": "Navigate to the player's settings and look for HW Decode options. Enable and configure as needed."
+        },
+        {
+          "stepNumber": 4,
+          "title": "Test the Feature",
+          "description": "Try using HW Decode to make sure everything is working correctly."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use HW Decode on Firestick?",
+          "answer": "Yes! Firestick supports Hardware Decoding through apps like tivimate."
+        },
+        {
+          "question": "What's the best app for HW Decode on Firestick?",
+          "answer": "For HW Decode on Firestick, we recommend tivimate. It has excellent HW Decode support."
+        }
+      ],
+      "conclusion": "Hardware Decoding works great on Firestick with the right app. Follow our steps above to get started."
+    },
+    "relatedGuides": [
+      "firestick-epg",
+      "firestick-recording",
+      "firestick-multi-screen",
+      "firestick-parental-controls",
+      "firestick-favorites"
+    ],
+    "tags": [
+      "firestick",
+      "hardware-decoding",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "hardware-decoding firestick",
+      "HW Decode on Firestick",
+      "Firestick HW Decode",
+      "hardware decoding iptv",
+      "hw decode",
+      "hardware acceleration",
+      "video decoder",
+      "4k playback"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.119Z",
     "difficulty": "easy"
   },
   {
@@ -1219,7 +1397,7 @@
       "epg setup",
       "xmltv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.119Z",
     "difficulty": "medium"
   },
   {
@@ -1313,7 +1491,7 @@
       "iptv pvr",
       "pause live tv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.119Z",
     "difficulty": "advanced"
   },
   {
@@ -1406,7 +1584,7 @@
       "pip iptv",
       "split screen iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.119Z",
     "difficulty": "easy"
   },
   {
@@ -1496,7 +1674,7 @@
       "pin lock iptv",
       "child safe iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.119Z",
     "difficulty": "easy"
   },
   {
@@ -1593,7 +1771,7 @@
       "favorite channels",
       "custom channel list"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.119Z",
     "difficulty": "easy"
   },
   {
@@ -1686,7 +1864,7 @@
       "catch up tv",
       "rewind iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.119Z",
     "difficulty": "easy"
   },
   {
@@ -1780,7 +1958,7 @@
       "iptv movies",
       "iptv series"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.119Z",
     "difficulty": "easy"
   },
   {
@@ -1875,7 +2053,7 @@
       "iptv playlist",
       "manage playlists"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.119Z",
     "difficulty": "medium"
   },
   {
@@ -1969,7 +2147,7 @@
       "hide channels",
       "channel groups"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.119Z",
     "difficulty": "medium"
   },
   {
@@ -2061,7 +2239,7 @@
       "srt subtitles",
       "subtitle support"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.119Z",
     "difficulty": "easy"
   },
   {
@@ -2152,7 +2330,7 @@
       "mx player iptv",
       "video player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.119Z",
     "difficulty": "medium"
   },
   {
@@ -2244,7 +2422,185 @@
       "update channels",
       "auto refresh epg"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.119Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "fire-tv-cube-casting",
+    "deviceId": "fire-tv-cube",
+    "featureId": "casting",
+    "deviceName": "Amazon Fire TV Cube",
+    "deviceShortName": "Fire TV Cube",
+    "featureName": "Chromecast & Casting",
+    "featureShortName": "Casting",
+    "isSupported": false,
+    "title": "Can You Use Casting on Fire TV Cube?",
+    "metaTitle": "Casting on Fire TV Cube Guide 2025 | IPTV Tutorial",
+    "description": "Discover if Amazon Fire TV Cube supports Chromecast & Casting and what alternatives exist.",
+    "content": {
+      "intro": "Amazon Fire TV Cube has limited support for Chromecast & Casting. Let's explore what options are available.",
+      "recommendedPlayers": [
+        "iptv-smarters",
+        "vlc",
+        "stremio"
+      ],
+      "benefits": [
+        "Watch IPTV on any TV with Chromecast",
+        "No app installation needed on TV",
+        "Control playback from your phone",
+        "Multi-room streaming",
+        "Use your TV's speakers"
+      ],
+      "requirements": [
+        "Amazon Fire TV Cube",
+        "Chromecast, Apple TV, or AirPlay-compatible TV",
+        "IPTV app with casting support",
+        "Same Wi-Fi network for all devices",
+        "One of: iptv-smarters, vlc, stremio"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Consider Alternative Devices",
+          "description": "Devices that support Chromecast & Casting include: ios, android-tv, chromecast, apple-tv, windows."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use Casting on Fire TV Cube?",
+          "answer": "Fire TV Cube has limited support for Chromecast & Casting. Consider using ios instead."
+        },
+        {
+          "question": "What's the best app for Casting on Fire TV Cube?",
+          "answer": "For Casting on Fire TV Cube, we recommend iptv-smarters. It has excellent Casting support."
+        }
+      ],
+      "conclusion": "While Fire TV Cube doesn't fully support Chromecast & Casting, there are alternatives worth considering."
+    },
+    "relatedGuides": [
+      "firestick-casting",
+      "fire-tv-cube-epg",
+      "fire-tv-cube-recording",
+      "fire-tv-cube-multi-screen",
+      "fire-tv-cube-parental-controls"
+    ],
+    "tags": [
+      "fire-tv-cube",
+      "casting",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "casting fire-tv-cube",
+      "Casting on Fire TV Cube",
+      "Fire TV Cube Casting",
+      "chromecast iptv",
+      "cast iptv",
+      "iptv with casting",
+      "airplay iptv",
+      "screen mirror iptv",
+      "tivimate chromecast",
+      "cast iptv to tv",
+      "chromecast tivimate"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.119Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "fire-tv-cube-hardware-decoding",
+    "deviceId": "fire-tv-cube",
+    "featureId": "hardware-decoding",
+    "deviceName": "Amazon Fire TV Cube",
+    "deviceShortName": "Fire TV Cube",
+    "featureName": "Hardware Decoding",
+    "featureShortName": "HW Decode",
+    "isSupported": true,
+    "title": "HW Decode on Fire TV Cube - Complete Guide 2025",
+    "metaTitle": "HW Decode on Fire TV Cube Guide 2025 | IPTV Tutorial",
+    "description": "Learn how to use Hardware Decoding on your Amazon Fire TV Cube. Best apps and settings for 2025.",
+    "content": {
+      "intro": "Want to use Hardware Decoding on your Fire TV Cube? This guide covers the best apps and settings to get HW Decode working perfectly on Amazon Fire TV Cube.",
+      "recommendedPlayers": [
+        "tivimate",
+        "kodi",
+        "vlc",
+        "ott-navigator",
+        "stremio"
+      ],
+      "benefits": [
+        "Smoother 4K playback",
+        "Lower CPU usage",
+        "Better battery life on mobile",
+        "Reduced buffering",
+        "Cooler device operation"
+      ],
+      "requirements": [
+        "Amazon Fire TV Cube",
+        "Device with hardware video decoder",
+        "Compatible IPTV player",
+        "Hardware-compatible video codec",
+        "One of: tivimate, kodi, vlc, ott-navigator, stremio"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Install a Compatible IPTV Player",
+          "description": "For HW Decode on Fire TV Cube, we recommend: tivimate, kodi, vlc."
+        },
+        {
+          "stepNumber": 2,
+          "title": "Configure Your IPTV Service",
+          "description": "Add your M3U playlist or Xtream credentials to the player."
+        },
+        {
+          "stepNumber": 3,
+          "title": "Enable HW Decode",
+          "description": "Navigate to the player's settings and look for HW Decode options. Enable and configure as needed."
+        },
+        {
+          "stepNumber": 4,
+          "title": "Test the Feature",
+          "description": "Try using HW Decode to make sure everything is working correctly."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use HW Decode on Fire TV Cube?",
+          "answer": "Yes! Fire TV Cube supports Hardware Decoding through apps like tivimate."
+        },
+        {
+          "question": "What's the best app for HW Decode on Fire TV Cube?",
+          "answer": "For HW Decode on Fire TV Cube, we recommend tivimate. It has excellent HW Decode support."
+        }
+      ],
+      "conclusion": "Hardware Decoding works great on Fire TV Cube with the right app. Follow our steps above to get started."
+    },
+    "relatedGuides": [
+      "firestick-hardware-decoding",
+      "fire-tv-cube-epg",
+      "fire-tv-cube-recording",
+      "fire-tv-cube-multi-screen",
+      "fire-tv-cube-parental-controls"
+    ],
+    "tags": [
+      "fire-tv-cube",
+      "hardware-decoding",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "hardware-decoding fire-tv-cube",
+      "HW Decode on Fire TV Cube",
+      "Fire TV Cube HW Decode",
+      "hardware decoding iptv",
+      "hw decode",
+      "hardware acceleration",
+      "video decoder",
+      "4k playback"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -2323,7 +2679,7 @@
       "epg setup",
       "xmltv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -2399,7 +2755,7 @@
       "iptv pvr",
       "pause live tv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "advanced"
   },
   {
@@ -2474,7 +2830,7 @@
       "pip iptv",
       "split screen iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -2548,7 +2904,7 @@
       "pin lock iptv",
       "child safe iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -2639,7 +2995,7 @@
       "favorite channels",
       "custom channel list"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -2714,7 +3070,7 @@
       "catch up tv",
       "rewind iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -2790,7 +3146,7 @@
       "iptv movies",
       "iptv series"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -2881,7 +3237,7 @@
       "iptv playlist",
       "manage playlists"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -2954,7 +3310,7 @@
       "hide channels",
       "channel groups"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -3046,7 +3402,7 @@
       "srt subtitles",
       "subtitle support"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -3121,7 +3477,7 @@
       "mx player iptv",
       "video player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -3195,7 +3551,199 @@
       "update channels",
       "auto refresh epg"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "apple-tv-casting",
+    "deviceId": "apple-tv",
+    "featureId": "casting",
+    "deviceName": "Apple TV 4K",
+    "deviceShortName": "Apple TV",
+    "featureName": "Chromecast & Casting",
+    "featureShortName": "Casting",
+    "isSupported": true,
+    "title": "Casting on Apple TV - Complete Guide 2025",
+    "metaTitle": "Casting on Apple TV Guide 2025 | IPTV Tutorial",
+    "description": "Learn how to use Chromecast & Casting on your Apple TV 4K. Best apps and settings for 2025.",
+    "content": {
+      "intro": "Want to use Chromecast & Casting on your Apple TV? This guide covers the best apps and settings to get Casting working perfectly on Apple TV 4K.",
+      "recommendedPlayers": [
+        "vlc",
+        "iptv-smarters",
+        "gse-smart-iptv",
+        "iplaytv"
+      ],
+      "benefits": [
+        "Watch IPTV on any TV with Chromecast",
+        "No app installation needed on TV",
+        "Control playback from your phone",
+        "Multi-room streaming",
+        "Use your TV's speakers"
+      ],
+      "requirements": [
+        "Apple TV 4K",
+        "Chromecast, Apple TV, or AirPlay-compatible TV",
+        "IPTV app with casting support",
+        "Same Wi-Fi network for all devices",
+        "One of: vlc, iptv-smarters, gse-smart-iptv, iplaytv"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Install a Compatible IPTV Player",
+          "description": "For Casting on Apple TV, we recommend: vlc, iptv-smarters, gse-smart-iptv."
+        },
+        {
+          "stepNumber": 2,
+          "title": "Configure Your IPTV Service",
+          "description": "Add your M3U playlist or Xtream credentials to the player."
+        },
+        {
+          "stepNumber": 3,
+          "title": "Enable Casting",
+          "description": "Navigate to the player's settings and look for Casting options. Enable and configure as needed."
+        },
+        {
+          "stepNumber": 4,
+          "title": "Test the Feature",
+          "description": "Try using Casting to make sure everything is working correctly."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use Casting on Apple TV?",
+          "answer": "Yes! Apple TV supports Chromecast & Casting through apps like vlc."
+        },
+        {
+          "question": "What's the best app for Casting on Apple TV?",
+          "answer": "For Casting on Apple TV, we recommend vlc. It has excellent Casting support."
+        }
+      ],
+      "conclusion": "Chromecast & Casting works great on Apple TV with the right app. Follow our steps above to get started."
+    },
+    "relatedGuides": [
+      "firestick-casting",
+      "fire-tv-cube-casting",
+      "apple-tv-epg",
+      "apple-tv-recording",
+      "apple-tv-multi-screen"
+    ],
+    "tags": [
+      "apple-tv",
+      "casting",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "casting apple-tv",
+      "Casting on Apple TV",
+      "Apple TV Casting",
+      "chromecast iptv",
+      "cast iptv",
+      "iptv with casting",
+      "airplay iptv",
+      "screen mirror iptv",
+      "tivimate chromecast",
+      "cast iptv to tv",
+      "chromecast tivimate"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "apple-tv-hardware-decoding",
+    "deviceId": "apple-tv",
+    "featureId": "hardware-decoding",
+    "deviceName": "Apple TV 4K",
+    "deviceShortName": "Apple TV",
+    "featureName": "Hardware Decoding",
+    "featureShortName": "HW Decode",
+    "isSupported": true,
+    "title": "HW Decode on Apple TV - Complete Guide 2025",
+    "metaTitle": "HW Decode on Apple TV Guide 2025 | IPTV Tutorial",
+    "description": "Learn how to use Hardware Decoding on your Apple TV 4K. Best apps and settings for 2025.",
+    "content": {
+      "intro": "Want to use Hardware Decoding on your Apple TV? This guide covers the best apps and settings to get HW Decode working perfectly on Apple TV 4K.",
+      "recommendedPlayers": [
+        "kodi",
+        "vlc",
+        "gse-smart-iptv"
+      ],
+      "benefits": [
+        "Smoother 4K playback",
+        "Lower CPU usage",
+        "Better battery life on mobile",
+        "Reduced buffering",
+        "Cooler device operation"
+      ],
+      "requirements": [
+        "Apple TV 4K",
+        "Device with hardware video decoder",
+        "Compatible IPTV player",
+        "Hardware-compatible video codec",
+        "One of: kodi, vlc, gse-smart-iptv"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Install a Compatible IPTV Player",
+          "description": "For HW Decode on Apple TV, we recommend: kodi, vlc, gse-smart-iptv."
+        },
+        {
+          "stepNumber": 2,
+          "title": "Configure Your IPTV Service",
+          "description": "Add your M3U playlist or Xtream credentials to the player."
+        },
+        {
+          "stepNumber": 3,
+          "title": "Enable HW Decode",
+          "description": "Navigate to the player's settings and look for HW Decode options. Enable and configure as needed."
+        },
+        {
+          "stepNumber": 4,
+          "title": "Test the Feature",
+          "description": "Try using HW Decode to make sure everything is working correctly."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use HW Decode on Apple TV?",
+          "answer": "Yes! Apple TV supports Hardware Decoding through apps like kodi."
+        },
+        {
+          "question": "What's the best app for HW Decode on Apple TV?",
+          "answer": "For HW Decode on Apple TV, we recommend kodi. It has excellent HW Decode support."
+        }
+      ],
+      "conclusion": "Hardware Decoding works great on Apple TV with the right app. Follow our steps above to get started."
+    },
+    "relatedGuides": [
+      "firestick-hardware-decoding",
+      "fire-tv-cube-hardware-decoding",
+      "apple-tv-epg",
+      "apple-tv-recording",
+      "apple-tv-multi-screen"
+    ],
+    "tags": [
+      "apple-tv",
+      "hardware-decoding",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "hardware-decoding apple-tv",
+      "HW Decode on Apple TV",
+      "Apple TV HW Decode",
+      "hardware decoding iptv",
+      "hw decode",
+      "hardware acceleration",
+      "video decoder",
+      "4k playback"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -3295,7 +3843,7 @@
       "epg setup",
       "xmltv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -3389,7 +3937,7 @@
       "iptv pvr",
       "pause live tv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "advanced"
   },
   {
@@ -3482,7 +4030,7 @@
       "pip iptv",
       "split screen iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -3573,7 +4121,7 @@
       "pin lock iptv",
       "child safe iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -3671,7 +4219,7 @@
       "favorite channels",
       "custom channel list"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -3764,7 +4312,7 @@
       "catch up tv",
       "rewind iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -3858,7 +4406,7 @@
       "iptv movies",
       "iptv series"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -3953,7 +4501,7 @@
       "iptv playlist",
       "manage playlists"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -4047,7 +4595,7 @@
       "hide channels",
       "channel groups"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -4140,7 +4688,7 @@
       "srt subtitles",
       "subtitle support"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -4232,7 +4780,7 @@
       "mx player iptv",
       "video player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -4324,7 +4872,200 @@
       "update channels",
       "auto refresh epg"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "android-tv-casting",
+    "deviceId": "android-tv",
+    "featureId": "casting",
+    "deviceName": "Android TV Box",
+    "deviceShortName": "Android TV",
+    "featureName": "Chromecast & Casting",
+    "featureShortName": "Casting",
+    "isSupported": true,
+    "title": "Casting on Android TV - Complete Guide 2025",
+    "metaTitle": "Casting on Android TV Guide 2025 | IPTV Tutorial",
+    "description": "Learn how to use Chromecast & Casting on your Android TV Box. Best apps and settings for 2025.",
+    "content": {
+      "intro": "Want to use Chromecast & Casting on your Android TV? This guide covers the best apps and settings to get Casting working perfectly on Android TV Box.",
+      "recommendedPlayers": [
+        "iptv-smarters",
+        "vlc",
+        "gse-smart-iptv"
+      ],
+      "benefits": [
+        "Watch IPTV on any TV with Chromecast",
+        "No app installation needed on TV",
+        "Control playback from your phone",
+        "Multi-room streaming",
+        "Use your TV's speakers"
+      ],
+      "requirements": [
+        "Android TV Box",
+        "Chromecast, Apple TV, or AirPlay-compatible TV",
+        "IPTV app with casting support",
+        "Same Wi-Fi network for all devices",
+        "One of: iptv-smarters, vlc, gse-smart-iptv"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Install a Compatible IPTV Player",
+          "description": "For Casting on Android TV, we recommend: iptv-smarters, vlc, gse-smart-iptv."
+        },
+        {
+          "stepNumber": 2,
+          "title": "Configure Your IPTV Service",
+          "description": "Add your M3U playlist or Xtream credentials to the player."
+        },
+        {
+          "stepNumber": 3,
+          "title": "Enable Casting",
+          "description": "Navigate to the player's settings and look for Casting options. Enable and configure as needed."
+        },
+        {
+          "stepNumber": 4,
+          "title": "Test the Feature",
+          "description": "Try using Casting to make sure everything is working correctly."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use Casting on Android TV?",
+          "answer": "Yes! Android TV supports Chromecast & Casting through apps like iptv-smarters."
+        },
+        {
+          "question": "What's the best app for Casting on Android TV?",
+          "answer": "For Casting on Android TV, we recommend iptv-smarters. It has excellent Casting support."
+        }
+      ],
+      "conclusion": "Chromecast & Casting works great on Android TV with the right app. Follow our steps above to get started."
+    },
+    "relatedGuides": [
+      "firestick-casting",
+      "fire-tv-cube-casting",
+      "apple-tv-casting",
+      "android-tv-epg",
+      "android-tv-recording"
+    ],
+    "tags": [
+      "android-tv",
+      "casting",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "casting android-tv",
+      "Casting on Android TV",
+      "Android TV Casting",
+      "chromecast iptv",
+      "cast iptv",
+      "iptv with casting",
+      "airplay iptv",
+      "screen mirror iptv",
+      "tivimate chromecast",
+      "cast iptv to tv",
+      "chromecast tivimate"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "android-tv-hardware-decoding",
+    "deviceId": "android-tv",
+    "featureId": "hardware-decoding",
+    "deviceName": "Android TV Box",
+    "deviceShortName": "Android TV",
+    "featureName": "Hardware Decoding",
+    "featureShortName": "HW Decode",
+    "isSupported": true,
+    "title": "HW Decode on Android TV - Complete Guide 2025",
+    "metaTitle": "HW Decode on Android TV Guide 2025 | IPTV Tutorial",
+    "description": "Learn how to use Hardware Decoding on your Android TV Box. Best apps and settings for 2025.",
+    "content": {
+      "intro": "Want to use Hardware Decoding on your Android TV? This guide covers the best apps and settings to get HW Decode working perfectly on Android TV Box.",
+      "recommendedPlayers": [
+        "tivimate",
+        "kodi",
+        "vlc",
+        "ott-navigator",
+        "gse-smart-iptv"
+      ],
+      "benefits": [
+        "Smoother 4K playback",
+        "Lower CPU usage",
+        "Better battery life on mobile",
+        "Reduced buffering",
+        "Cooler device operation"
+      ],
+      "requirements": [
+        "Android TV Box",
+        "Device with hardware video decoder",
+        "Compatible IPTV player",
+        "Hardware-compatible video codec",
+        "One of: tivimate, kodi, vlc, ott-navigator, gse-smart-iptv"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Install a Compatible IPTV Player",
+          "description": "For HW Decode on Android TV, we recommend: tivimate, kodi, vlc."
+        },
+        {
+          "stepNumber": 2,
+          "title": "Configure Your IPTV Service",
+          "description": "Add your M3U playlist or Xtream credentials to the player."
+        },
+        {
+          "stepNumber": 3,
+          "title": "Enable HW Decode",
+          "description": "Navigate to the player's settings and look for HW Decode options. Enable and configure as needed."
+        },
+        {
+          "stepNumber": 4,
+          "title": "Test the Feature",
+          "description": "Try using HW Decode to make sure everything is working correctly."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use HW Decode on Android TV?",
+          "answer": "Yes! Android TV supports Hardware Decoding through apps like tivimate."
+        },
+        {
+          "question": "What's the best app for HW Decode on Android TV?",
+          "answer": "For HW Decode on Android TV, we recommend tivimate. It has excellent HW Decode support."
+        }
+      ],
+      "conclusion": "Hardware Decoding works great on Android TV with the right app. Follow our steps above to get started."
+    },
+    "relatedGuides": [
+      "firestick-hardware-decoding",
+      "fire-tv-cube-hardware-decoding",
+      "apple-tv-hardware-decoding",
+      "android-tv-epg",
+      "android-tv-recording"
+    ],
+    "tags": [
+      "android-tv",
+      "hardware-decoding",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "hardware-decoding android-tv",
+      "HW Decode on Android TV",
+      "Android TV HW Decode",
+      "hardware decoding iptv",
+      "hw decode",
+      "hardware acceleration",
+      "video decoder",
+      "4k playback"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -4420,7 +5161,7 @@
       "epg setup",
       "xmltv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -4497,7 +5238,7 @@
       "iptv pvr",
       "pause live tv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "advanced"
   },
   {
@@ -4574,7 +5315,7 @@
       "pip iptv",
       "split screen iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -4663,7 +5404,7 @@
       "pin lock iptv",
       "child safe iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -4756,7 +5497,7 @@
       "favorite channels",
       "custom channel list"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -4832,7 +5573,7 @@
       "catch up tv",
       "rewind iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -4924,7 +5665,7 @@
       "iptv movies",
       "iptv series"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -5017,7 +5758,7 @@
       "iptv playlist",
       "manage playlists"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -5109,7 +5850,7 @@
       "hide channels",
       "channel groups"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -5201,7 +5942,7 @@
       "srt subtitles",
       "subtitle support"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -5276,7 +6017,7 @@
       "mx player iptv",
       "video player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -5367,7 +6108,1305 @@
       "update channels",
       "auto refresh epg"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "chromecast-casting",
+    "deviceId": "chromecast",
+    "featureId": "casting",
+    "deviceName": "Chromecast with Google TV",
+    "deviceShortName": "Chromecast",
+    "featureName": "Chromecast & Casting",
+    "featureShortName": "Casting",
+    "isSupported": true,
+    "title": "Casting on Chromecast - Complete Guide 2025",
+    "metaTitle": "Casting on Chromecast Guide 2025 | IPTV Tutorial",
+    "description": "Learn how to use Chromecast & Casting on your Chromecast with Google TV. Best apps and settings for 2025.",
+    "content": {
+      "intro": "Want to use Chromecast & Casting on your Chromecast? This guide covers the best apps and settings to get Casting working perfectly on Chromecast with Google TV.",
+      "recommendedPlayers": [
+        "iptv-smarters",
+        "vlc",
+        "stremio"
+      ],
+      "benefits": [
+        "Watch IPTV on any TV with Chromecast",
+        "No app installation needed on TV",
+        "Control playback from your phone",
+        "Multi-room streaming",
+        "Use your TV's speakers"
+      ],
+      "requirements": [
+        "Chromecast with Google TV",
+        "Chromecast, Apple TV, or AirPlay-compatible TV",
+        "IPTV app with casting support",
+        "Same Wi-Fi network for all devices",
+        "One of: iptv-smarters, vlc, stremio"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Install a Compatible IPTV Player",
+          "description": "For Casting on Chromecast, we recommend: iptv-smarters, vlc, stremio."
+        },
+        {
+          "stepNumber": 2,
+          "title": "Configure Your IPTV Service",
+          "description": "Add your M3U playlist or Xtream credentials to the player."
+        },
+        {
+          "stepNumber": 3,
+          "title": "Enable Casting",
+          "description": "Navigate to the player's settings and look for Casting options. Enable and configure as needed."
+        },
+        {
+          "stepNumber": 4,
+          "title": "Test the Feature",
+          "description": "Try using Casting to make sure everything is working correctly."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use Casting on Chromecast?",
+          "answer": "Yes! Chromecast supports Chromecast & Casting through apps like iptv-smarters."
+        },
+        {
+          "question": "What's the best app for Casting on Chromecast?",
+          "answer": "For Casting on Chromecast, we recommend iptv-smarters. It has excellent Casting support."
+        }
+      ],
+      "conclusion": "Chromecast & Casting works great on Chromecast with the right app. Follow our steps above to get started."
+    },
+    "relatedGuides": [
+      "firestick-casting",
+      "fire-tv-cube-casting",
+      "apple-tv-casting",
+      "android-tv-casting",
+      "chromecast-epg"
+    ],
+    "tags": [
+      "chromecast",
+      "casting",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "casting chromecast",
+      "Casting on Chromecast",
+      "Chromecast Casting",
+      "chromecast iptv",
+      "cast iptv",
+      "iptv with casting",
+      "airplay iptv",
+      "screen mirror iptv",
+      "tivimate chromecast",
+      "cast iptv to tv",
+      "chromecast tivimate"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "chromecast-hardware-decoding",
+    "deviceId": "chromecast",
+    "featureId": "hardware-decoding",
+    "deviceName": "Chromecast with Google TV",
+    "deviceShortName": "Chromecast",
+    "featureName": "Hardware Decoding",
+    "featureShortName": "HW Decode",
+    "isSupported": true,
+    "title": "HW Decode on Chromecast - Complete Guide 2025",
+    "metaTitle": "HW Decode on Chromecast Guide 2025 | IPTV Tutorial",
+    "description": "Learn how to use Hardware Decoding on your Chromecast with Google TV. Best apps and settings for 2025.",
+    "content": {
+      "intro": "Want to use Hardware Decoding on your Chromecast? This guide covers the best apps and settings to get HW Decode working perfectly on Chromecast with Google TV.",
+      "recommendedPlayers": [
+        "tivimate",
+        "kodi",
+        "vlc",
+        "stremio"
+      ],
+      "benefits": [
+        "Smoother 4K playback",
+        "Lower CPU usage",
+        "Better battery life on mobile",
+        "Reduced buffering",
+        "Cooler device operation"
+      ],
+      "requirements": [
+        "Chromecast with Google TV",
+        "Device with hardware video decoder",
+        "Compatible IPTV player",
+        "Hardware-compatible video codec",
+        "One of: tivimate, kodi, vlc, stremio"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Install a Compatible IPTV Player",
+          "description": "For HW Decode on Chromecast, we recommend: tivimate, kodi, vlc."
+        },
+        {
+          "stepNumber": 2,
+          "title": "Configure Your IPTV Service",
+          "description": "Add your M3U playlist or Xtream credentials to the player."
+        },
+        {
+          "stepNumber": 3,
+          "title": "Enable HW Decode",
+          "description": "Navigate to the player's settings and look for HW Decode options. Enable and configure as needed."
+        },
+        {
+          "stepNumber": 4,
+          "title": "Test the Feature",
+          "description": "Try using HW Decode to make sure everything is working correctly."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use HW Decode on Chromecast?",
+          "answer": "Yes! Chromecast supports Hardware Decoding through apps like tivimate."
+        },
+        {
+          "question": "What's the best app for HW Decode on Chromecast?",
+          "answer": "For HW Decode on Chromecast, we recommend tivimate. It has excellent HW Decode support."
+        }
+      ],
+      "conclusion": "Hardware Decoding works great on Chromecast with the right app. Follow our steps above to get started."
+    },
+    "relatedGuides": [
+      "firestick-hardware-decoding",
+      "fire-tv-cube-hardware-decoding",
+      "apple-tv-hardware-decoding",
+      "android-tv-hardware-decoding",
+      "chromecast-epg"
+    ],
+    "tags": [
+      "chromecast",
+      "hardware-decoding",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "hardware-decoding chromecast",
+      "HW Decode on Chromecast",
+      "Chromecast HW Decode",
+      "hardware decoding iptv",
+      "hw decode",
+      "hardware acceleration",
+      "video decoder",
+      "4k playback"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "google-tv-epg",
+    "deviceId": "google-tv",
+    "featureId": "epg",
+    "deviceName": "Google TV",
+    "deviceShortName": "Google TV",
+    "featureName": "EPG (Electronic Program Guide)",
+    "featureShortName": "EPG",
+    "isSupported": false,
+    "title": "Can You Use EPG on Google TV?",
+    "metaTitle": "EPG on Google TV Guide 2025 | IPTV Tutorial",
+    "description": "Discover if Google TV supports EPG (Electronic Program Guide) and what alternatives exist.",
+    "content": {
+      "intro": "Google TV has limited support for EPG (Electronic Program Guide). Let's explore what options are available.",
+      "recommendedPlayers": [
+        "tivimate",
+        "iptv-smarters",
+        "kodi",
+        "perfect-player",
+        "ott-navigator",
+        "televizo",
+        "iptv-pro",
+        "xciptv",
+        "gse-smart-iptv"
+      ],
+      "benefits": [
+        "See what's on now and later",
+        "Easy channel browsing",
+        "Program descriptions and info",
+        "Set reminders for shows"
+      ],
+      "requirements": [
+        "Google TV",
+        "EPG URL or built-in EPG",
+        "Compatible IPTV player",
+        "Internet connection",
+        "One of: tivimate, iptv-smarters, kodi, perfect-player, ott-navigator, televizo, iptv-pro, xciptv, gse-smart-iptv"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Consider Alternative Devices",
+          "description": "Devices that support EPG (Electronic Program Guide) include: firestick, fire-tv-cube, android-tv, chromecast, nvidia-shield."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use EPG on Google TV?",
+          "answer": "Google TV has limited support for EPG (Electronic Program Guide). Consider using firestick instead."
+        },
+        {
+          "question": "What's the best app for EPG on Google TV?",
+          "answer": "For EPG on Google TV, we recommend tivimate. It has excellent EPG support."
+        }
+      ],
+      "conclusion": "While Google TV doesn't fully support EPG (Electronic Program Guide), there are alternatives worth considering."
+    },
+    "relatedGuides": [
+      "firestick-epg",
+      "fire-tv-cube-epg",
+      "apple-tv-epg",
+      "android-tv-epg",
+      "chromecast-epg"
+    ],
+    "tags": [
+      "google-tv",
+      "epg",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "epg google-tv",
+      "EPG on Google TV",
+      "Google TV EPG",
+      "iptv epg",
+      "electronic program guide",
+      "tv guide iptv",
+      "epg setup",
+      "xmltv"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "medium"
+  },
+  {
+    "slug": "google-tv-recording",
+    "deviceId": "google-tv",
+    "featureId": "recording",
+    "deviceName": "Google TV",
+    "deviceShortName": "Google TV",
+    "featureName": "Recording/DVR",
+    "featureShortName": "Recording",
+    "isSupported": false,
+    "title": "Can You Use Recording on Google TV?",
+    "metaTitle": "Recording on Google TV Guide 2025 | IPTV Tutorial",
+    "description": "Discover if Google TV supports Recording/DVR and what alternatives exist.",
+    "content": {
+      "intro": "Google TV has limited support for Recording/DVR. Let's explore what options are available.",
+      "recommendedPlayers": [
+        "tivimate",
+        "kodi",
+        "ott-navigator"
+      ],
+      "benefits": [
+        "Watch shows on your schedule",
+        "Never miss a program",
+        "Build a media library",
+        "Pause live TV"
+      ],
+      "requirements": [
+        "Google TV",
+        "Storage space",
+        "Compatible player with recording",
+        "Stable internet connection",
+        "One of: tivimate, kodi, ott-navigator"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Consider Alternative Devices",
+          "description": "Devices that support Recording/DVR include: firestick, fire-tv-cube, android-tv, nvidia-shield, windows."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use Recording on Google TV?",
+          "answer": "Google TV has limited support for Recording/DVR. Consider using firestick instead."
+        },
+        {
+          "question": "What's the best app for Recording on Google TV?",
+          "answer": "For Recording on Google TV, we recommend tivimate. It has excellent Recording support."
+        }
+      ],
+      "conclusion": "While Google TV doesn't fully support Recording/DVR, there are alternatives worth considering."
+    },
+    "relatedGuides": [
+      "firestick-recording",
+      "fire-tv-cube-recording",
+      "apple-tv-recording",
+      "android-tv-recording",
+      "chromecast-recording"
+    ],
+    "tags": [
+      "google-tv",
+      "recording",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "recording google-tv",
+      "Recording on Google TV",
+      "Google TV Recording",
+      "iptv recording",
+      "iptv dvr",
+      "record iptv",
+      "iptv pvr",
+      "pause live tv"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "advanced"
+  },
+  {
+    "slug": "google-tv-multi-screen",
+    "deviceId": "google-tv",
+    "featureId": "multi-screen",
+    "deviceName": "Google TV",
+    "deviceShortName": "Google TV",
+    "featureName": "Multi-Screen/PIP",
+    "featureShortName": "Multi-Screen",
+    "isSupported": false,
+    "title": "Can You Use Multi-Screen on Google TV?",
+    "metaTitle": "Multi-Screen on Google TV Guide 2025 | IPTV Tutorial",
+    "description": "Discover if Google TV supports Multi-Screen/PIP and what alternatives exist.",
+    "content": {
+      "intro": "Google TV has limited support for Multi-Screen/PIP. Let's explore what options are available.",
+      "recommendedPlayers": [
+        "tivimate",
+        "iptv-smarters",
+        "ott-navigator",
+        "televizo"
+      ],
+      "benefits": [
+        "Watch multiple games at once",
+        "Monitor multiple news channels",
+        "Quick channel preview",
+        "Sports multi-view"
+      ],
+      "requirements": [
+        "Google TV",
+        "Powerful device",
+        "Good internet bandwidth",
+        "Compatible IPTV player",
+        "One of: tivimate, iptv-smarters, ott-navigator, televizo"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Consider Alternative Devices",
+          "description": "Devices that support Multi-Screen/PIP include: firestick, fire-tv-cube, android-tv, nvidia-shield, ios."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use Multi-Screen on Google TV?",
+          "answer": "Google TV has limited support for Multi-Screen/PIP. Consider using firestick instead."
+        },
+        {
+          "question": "What's the best app for Multi-Screen on Google TV?",
+          "answer": "For Multi-Screen on Google TV, we recommend tivimate. It has excellent Multi-Screen support."
+        }
+      ],
+      "conclusion": "While Google TV doesn't fully support Multi-Screen/PIP, there are alternatives worth considering."
+    },
+    "relatedGuides": [
+      "firestick-multi-screen",
+      "fire-tv-cube-multi-screen",
+      "apple-tv-multi-screen",
+      "android-tv-multi-screen",
+      "chromecast-multi-screen"
+    ],
+    "tags": [
+      "google-tv",
+      "multi-screen",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "multi-screen google-tv",
+      "Multi-Screen on Google TV",
+      "Google TV Multi-Screen",
+      "iptv multi screen",
+      "picture in picture iptv",
+      "pip iptv",
+      "split screen iptv"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "google-tv-parental-controls",
+    "deviceId": "google-tv",
+    "featureId": "parental-controls",
+    "deviceName": "Google TV",
+    "deviceShortName": "Google TV",
+    "featureName": "Parental Controls",
+    "featureShortName": "Parental",
+    "isSupported": false,
+    "title": "Can You Use Parental on Google TV?",
+    "metaTitle": "Parental on Google TV Guide 2025 | IPTV Tutorial",
+    "description": "Discover if Google TV supports Parental Controls and what alternatives exist.",
+    "content": {
+      "intro": "Google TV has limited support for Parental Controls. Let's explore what options are available.",
+      "recommendedPlayers": [
+        "tivimate",
+        "iptv-smarters",
+        "gse-smart-iptv"
+      ],
+      "benefits": [
+        "Protect children from inappropriate content",
+        "Control viewing access",
+        "Peace of mind for parents"
+      ],
+      "requirements": [
+        "Google TV",
+        "Compatible IPTV player",
+        "PIN code setup",
+        "One of: tivimate, iptv-smarters, gse-smart-iptv"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Consider Alternative Devices",
+          "description": "Devices that support Parental Controls include: firestick, fire-tv-cube, android-tv, chromecast, nvidia-shield."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use Parental on Google TV?",
+          "answer": "Google TV has limited support for Parental Controls. Consider using firestick instead."
+        },
+        {
+          "question": "What's the best app for Parental on Google TV?",
+          "answer": "For Parental on Google TV, we recommend tivimate. It has excellent Parental support."
+        }
+      ],
+      "conclusion": "While Google TV doesn't fully support Parental Controls, there are alternatives worth considering."
+    },
+    "relatedGuides": [
+      "firestick-parental-controls",
+      "fire-tv-cube-parental-controls",
+      "apple-tv-parental-controls",
+      "android-tv-parental-controls",
+      "chromecast-parental-controls"
+    ],
+    "tags": [
+      "google-tv",
+      "parental-controls",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "parental-controls google-tv",
+      "Parental on Google TV",
+      "Google TV Parental",
+      "iptv parental controls",
+      "lock channels iptv",
+      "pin lock iptv",
+      "child safe iptv"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "google-tv-favorites",
+    "deviceId": "google-tv",
+    "featureId": "favorites",
+    "deviceName": "Google TV",
+    "deviceShortName": "Google TV",
+    "featureName": "Favorites/Bookmarks",
+    "featureShortName": "Favorites",
+    "isSupported": false,
+    "title": "Can You Use Favorites on Google TV?",
+    "metaTitle": "Favorites on Google TV Guide 2025 | IPTV Tutorial",
+    "description": "Discover if Google TV supports Favorites/Bookmarks and what alternatives exist.",
+    "content": {
+      "intro": "Google TV has limited support for Favorites/Bookmarks. Let's explore what options are available.",
+      "recommendedPlayers": [
+        "tivimate",
+        "iptv-smarters",
+        "kodi",
+        "perfect-player",
+        "ott-navigator",
+        "televizo",
+        "iptv-pro",
+        "xciptv",
+        "gse-smart-iptv"
+      ],
+      "benefits": [
+        "Quick access to preferred channels",
+        "Organized channel list",
+        "Custom groups",
+        "Faster navigation"
+      ],
+      "requirements": [
+        "Google TV",
+        "Compatible IPTV player",
+        "One of: tivimate, iptv-smarters, kodi, perfect-player, ott-navigator, televizo, iptv-pro, xciptv, gse-smart-iptv"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Consider Alternative Devices",
+          "description": "Devices that support Favorites/Bookmarks include: firestick, fire-tv-cube, apple-tv, android-tv, chromecast."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use Favorites on Google TV?",
+          "answer": "Google TV has limited support for Favorites/Bookmarks. Consider using firestick instead."
+        },
+        {
+          "question": "What's the best app for Favorites on Google TV?",
+          "answer": "For Favorites on Google TV, we recommend tivimate. It has excellent Favorites support."
+        }
+      ],
+      "conclusion": "While Google TV doesn't fully support Favorites/Bookmarks, there are alternatives worth considering."
+    },
+    "relatedGuides": [
+      "firestick-favorites",
+      "fire-tv-cube-favorites",
+      "apple-tv-favorites",
+      "android-tv-favorites",
+      "chromecast-favorites"
+    ],
+    "tags": [
+      "google-tv",
+      "favorites",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "favorites google-tv",
+      "Favorites on Google TV",
+      "Google TV Favorites",
+      "iptv favorites",
+      "bookmark channels",
+      "favorite channels",
+      "custom channel list"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "google-tv-catchup",
+    "deviceId": "google-tv",
+    "featureId": "catchup",
+    "deviceName": "Google TV",
+    "deviceShortName": "Google TV",
+    "featureName": "Catchup TV",
+    "featureShortName": "Catchup",
+    "isSupported": false,
+    "title": "Can You Use Catchup on Google TV?",
+    "metaTitle": "Catchup on Google TV Guide 2025 | IPTV Tutorial",
+    "description": "Discover if Google TV supports Catchup TV and what alternatives exist.",
+    "content": {
+      "intro": "Google TV has limited support for Catchup TV. Let's explore what options are available.",
+      "recommendedPlayers": [
+        "tivimate",
+        "iptv-smarters",
+        "ott-navigator",
+        "xciptv"
+      ],
+      "benefits": [
+        "Watch missed shows",
+        "No need to record",
+        "Instant access to past content",
+        "Rewind live TV"
+      ],
+      "requirements": [
+        "Google TV",
+        "IPTV provider with catchup support",
+        "Compatible player",
+        "Catchup-enabled channels",
+        "One of: tivimate, iptv-smarters, ott-navigator, xciptv"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Consider Alternative Devices",
+          "description": "Devices that support Catchup TV include: firestick, fire-tv-cube, android-tv, nvidia-shield."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use Catchup on Google TV?",
+          "answer": "Google TV has limited support for Catchup TV. Consider using firestick instead."
+        },
+        {
+          "question": "What's the best app for Catchup on Google TV?",
+          "answer": "For Catchup on Google TV, we recommend tivimate. It has excellent Catchup support."
+        }
+      ],
+      "conclusion": "While Google TV doesn't fully support Catchup TV, there are alternatives worth considering."
+    },
+    "relatedGuides": [
+      "firestick-catchup",
+      "fire-tv-cube-catchup",
+      "apple-tv-catchup",
+      "android-tv-catchup",
+      "chromecast-catchup"
+    ],
+    "tags": [
+      "google-tv",
+      "catchup",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "catchup google-tv",
+      "Catchup on Google TV",
+      "Google TV Catchup",
+      "iptv catchup",
+      "timeshift iptv",
+      "catch up tv",
+      "rewind iptv"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "google-tv-vod",
+    "deviceId": "google-tv",
+    "featureId": "vod",
+    "deviceName": "Google TV",
+    "deviceShortName": "Google TV",
+    "featureName": "VOD (Video on Demand)",
+    "featureShortName": "VOD",
+    "isSupported": false,
+    "title": "Can You Use VOD on Google TV?",
+    "metaTitle": "VOD on Google TV Guide 2025 | IPTV Tutorial",
+    "description": "Discover if Google TV supports VOD (Video on Demand) and what alternatives exist.",
+    "content": {
+      "intro": "Google TV has limited support for VOD (Video on Demand). Let's explore what options are available.",
+      "recommendedPlayers": [
+        "tivimate",
+        "iptv-smarters",
+        "kodi",
+        "ott-navigator",
+        "xciptv"
+      ],
+      "benefits": [
+        "Huge movie library",
+        "TV series collections",
+        "Watch anytime",
+        "No scheduling needed"
+      ],
+      "requirements": [
+        "Google TV",
+        "IPTV provider with VOD",
+        "Compatible player",
+        "Sufficient bandwidth",
+        "One of: tivimate, iptv-smarters, kodi, ott-navigator, xciptv"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Consider Alternative Devices",
+          "description": "Devices that support VOD (Video on Demand) include: firestick, fire-tv-cube, android-tv, chromecast, nvidia-shield."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use VOD on Google TV?",
+          "answer": "Google TV has limited support for VOD (Video on Demand). Consider using firestick instead."
+        },
+        {
+          "question": "What's the best app for VOD on Google TV?",
+          "answer": "For VOD on Google TV, we recommend tivimate. It has excellent VOD support."
+        }
+      ],
+      "conclusion": "While Google TV doesn't fully support VOD (Video on Demand), there are alternatives worth considering."
+    },
+    "relatedGuides": [
+      "firestick-vod",
+      "fire-tv-cube-vod",
+      "apple-tv-vod",
+      "android-tv-vod",
+      "chromecast-vod"
+    ],
+    "tags": [
+      "google-tv",
+      "vod",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "vod google-tv",
+      "VOD on Google TV",
+      "Google TV VOD",
+      "iptv vod",
+      "video on demand",
+      "iptv movies",
+      "iptv series"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "google-tv-playlist-management",
+    "deviceId": "google-tv",
+    "featureId": "playlist-management",
+    "deviceName": "Google TV",
+    "deviceShortName": "Google TV",
+    "featureName": "Playlist Management",
+    "featureShortName": "Playlists",
+    "isSupported": false,
+    "title": "Can You Use Playlists on Google TV?",
+    "metaTitle": "Playlists on Google TV Guide 2025 | IPTV Tutorial",
+    "description": "Discover if Google TV supports Playlist Management and what alternatives exist.",
+    "content": {
+      "intro": "Google TV has limited support for Playlist Management. Let's explore what options are available.",
+      "recommendedPlayers": [
+        "tivimate",
+        "iptv-smarters",
+        "kodi",
+        "vlc",
+        "perfect-player",
+        "ott-navigator"
+      ],
+      "benefits": [
+        "Multiple playlist support",
+        "Easy switching between providers",
+        "Organized content",
+        "Backup options"
+      ],
+      "requirements": [
+        "Google TV",
+        "M3U or Xtream codes credentials",
+        "Compatible IPTV player",
+        "One of: tivimate, iptv-smarters, kodi, vlc, perfect-player, ott-navigator"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Consider Alternative Devices",
+          "description": "Devices that support Playlist Management include: firestick, fire-tv-cube, apple-tv, android-tv, chromecast."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use Playlists on Google TV?",
+          "answer": "Google TV has limited support for Playlist Management. Consider using firestick instead."
+        },
+        {
+          "question": "What's the best app for Playlists on Google TV?",
+          "answer": "For Playlists on Google TV, we recommend tivimate. It has excellent Playlists support."
+        }
+      ],
+      "conclusion": "While Google TV doesn't fully support Playlist Management, there are alternatives worth considering."
+    },
+    "relatedGuides": [
+      "firestick-playlist-management",
+      "fire-tv-cube-playlist-management",
+      "apple-tv-playlist-management",
+      "android-tv-playlist-management",
+      "chromecast-playlist-management"
+    ],
+    "tags": [
+      "google-tv",
+      "playlist-management",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "playlist-management google-tv",
+      "Playlists on Google TV",
+      "Google TV Playlists",
+      "m3u playlist",
+      "xtream codes",
+      "iptv playlist",
+      "manage playlists"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "medium"
+  },
+  {
+    "slug": "google-tv-channel-sorting",
+    "deviceId": "google-tv",
+    "featureId": "channel-sorting",
+    "deviceName": "Google TV",
+    "deviceShortName": "Google TV",
+    "featureName": "Channel Sorting & Grouping",
+    "featureShortName": "Sorting",
+    "isSupported": false,
+    "title": "Can You Use Sorting on Google TV?",
+    "metaTitle": "Sorting on Google TV Guide 2025 | IPTV Tutorial",
+    "description": "Discover if Google TV supports Channel Sorting & Grouping and what alternatives exist.",
+    "content": {
+      "intro": "Google TV has limited support for Channel Sorting & Grouping. Let's explore what options are available.",
+      "recommendedPlayers": [
+        "tivimate",
+        "iptv-smarters",
+        "perfect-player",
+        "ott-navigator",
+        "televizo",
+        "iptv-pro"
+      ],
+      "benefits": [
+        "Personalized channel order",
+        "Hide unwanted content",
+        "Custom categories",
+        "Cleaner interface"
+      ],
+      "requirements": [
+        "Google TV",
+        "Compatible IPTV player with channel management",
+        "One of: tivimate, iptv-smarters, perfect-player, ott-navigator, televizo, iptv-pro"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Consider Alternative Devices",
+          "description": "Devices that support Channel Sorting & Grouping include: firestick, fire-tv-cube, android-tv, chromecast, nvidia-shield."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use Sorting on Google TV?",
+          "answer": "Google TV has limited support for Channel Sorting & Grouping. Consider using firestick instead."
+        },
+        {
+          "question": "What's the best app for Sorting on Google TV?",
+          "answer": "For Sorting on Google TV, we recommend tivimate. It has excellent Sorting support."
+        }
+      ],
+      "conclusion": "While Google TV doesn't fully support Channel Sorting & Grouping, there are alternatives worth considering."
+    },
+    "relatedGuides": [
+      "firestick-channel-sorting",
+      "fire-tv-cube-channel-sorting",
+      "apple-tv-channel-sorting",
+      "android-tv-channel-sorting",
+      "chromecast-channel-sorting"
+    ],
+    "tags": [
+      "google-tv",
+      "channel-sorting",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "channel-sorting google-tv",
+      "Sorting on Google TV",
+      "Google TV Sorting",
+      "sort channels iptv",
+      "organize channels",
+      "hide channels",
+      "channel groups"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "medium"
+  },
+  {
+    "slug": "google-tv-subtitle-support",
+    "deviceId": "google-tv",
+    "featureId": "subtitle-support",
+    "deviceName": "Google TV",
+    "deviceShortName": "Google TV",
+    "featureName": "Subtitle Support",
+    "featureShortName": "Subtitles",
+    "isSupported": false,
+    "title": "Can You Use Subtitles on Google TV?",
+    "metaTitle": "Subtitles on Google TV Guide 2025 | IPTV Tutorial",
+    "description": "Discover if Google TV supports Subtitle Support and what alternatives exist.",
+    "content": {
+      "intro": "Google TV has limited support for Subtitle Support. Let's explore what options are available.",
+      "recommendedPlayers": [
+        "kodi",
+        "vlc",
+        "televizo",
+        "gse-smart-iptv"
+      ],
+      "benefits": [
+        "Accessibility",
+        "Watch foreign content",
+        "Understand dialogue",
+        "Multiple language options"
+      ],
+      "requirements": [
+        "Google TV",
+        "Content with subtitles",
+        "Compatible player",
+        "Subtitle source",
+        "One of: kodi, vlc, televizo, gse-smart-iptv"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Consider Alternative Devices",
+          "description": "Devices that support Subtitle Support include: firestick, fire-tv-cube, apple-tv, android-tv, chromecast."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use Subtitles on Google TV?",
+          "answer": "Google TV has limited support for Subtitle Support. Consider using firestick instead."
+        },
+        {
+          "question": "What's the best app for Subtitles on Google TV?",
+          "answer": "For Subtitles on Google TV, we recommend kodi. It has excellent Subtitles support."
+        }
+      ],
+      "conclusion": "While Google TV doesn't fully support Subtitle Support, there are alternatives worth considering."
+    },
+    "relatedGuides": [
+      "firestick-subtitle-support",
+      "fire-tv-cube-subtitle-support",
+      "apple-tv-subtitle-support",
+      "android-tv-subtitle-support",
+      "chromecast-subtitle-support"
+    ],
+    "tags": [
+      "google-tv",
+      "subtitle-support",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "subtitle-support google-tv",
+      "Subtitles on Google TV",
+      "Google TV Subtitles",
+      "iptv subtitles",
+      "closed captions",
+      "srt subtitles",
+      "subtitle support"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "google-tv-external-player",
+    "deviceId": "google-tv",
+    "featureId": "external-player",
+    "deviceName": "Google TV",
+    "deviceShortName": "Google TV",
+    "featureName": "External Player Support",
+    "featureShortName": "Ext Player",
+    "isSupported": false,
+    "title": "Can You Use Ext Player on Google TV?",
+    "metaTitle": "Ext Player on Google TV Guide 2025 | IPTV Tutorial",
+    "description": "Discover if Google TV supports External Player Support and what alternatives exist.",
+    "content": {
+      "intro": "Google TV has limited support for External Player Support. Let's explore what options are available.",
+      "recommendedPlayers": [
+        "tivimate",
+        "kodi",
+        "ott-navigator",
+        "gse-smart-iptv"
+      ],
+      "benefits": [
+        "Better codec support",
+        "Hardware acceleration",
+        "Additional features",
+        "Troubleshooting option"
+      ],
+      "requirements": [
+        "Google TV",
+        "External player installed",
+        "Compatible IPTV app",
+        "One of: tivimate, kodi, ott-navigator, gse-smart-iptv"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Consider Alternative Devices",
+          "description": "Devices that support External Player Support include: firestick, fire-tv-cube, android-tv, nvidia-shield, windows."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use Ext Player on Google TV?",
+          "answer": "Google TV has limited support for External Player Support. Consider using firestick instead."
+        },
+        {
+          "question": "What's the best app for Ext Player on Google TV?",
+          "answer": "For Ext Player on Google TV, we recommend tivimate. It has excellent Ext Player support."
+        }
+      ],
+      "conclusion": "While Google TV doesn't fully support External Player Support, there are alternatives worth considering."
+    },
+    "relatedGuides": [
+      "firestick-external-player",
+      "fire-tv-cube-external-player",
+      "apple-tv-external-player",
+      "android-tv-external-player",
+      "chromecast-external-player"
+    ],
+    "tags": [
+      "google-tv",
+      "external-player",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "external-player google-tv",
+      "Ext Player on Google TV",
+      "Google TV Ext Player",
+      "external player iptv",
+      "vlc iptv",
+      "mx player iptv",
+      "video player"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "medium"
+  },
+  {
+    "slug": "google-tv-auto-update",
+    "deviceId": "google-tv",
+    "featureId": "auto-update",
+    "deviceName": "Google TV",
+    "deviceShortName": "Google TV",
+    "featureName": "Auto-Update Playlists",
+    "featureShortName": "Auto-Update",
+    "isSupported": false,
+    "title": "Can You Use Auto-Update on Google TV?",
+    "metaTitle": "Auto-Update on Google TV Guide 2025 | IPTV Tutorial",
+    "description": "Discover if Google TV supports Auto-Update Playlists and what alternatives exist.",
+    "content": {
+      "intro": "Google TV has limited support for Auto-Update Playlists. Let's explore what options are available.",
+      "recommendedPlayers": [
+        "tivimate",
+        "iptv-smarters",
+        "iptv-pro"
+      ],
+      "benefits": [
+        "Always current channels",
+        "Automatic EPG refresh",
+        "No manual updates",
+        "Set and forget"
+      ],
+      "requirements": [
+        "Google TV",
+        "Compatible IPTV player",
+        "Playlist URL (not file)",
+        "One of: tivimate, iptv-smarters, iptv-pro"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Consider Alternative Devices",
+          "description": "Devices that support Auto-Update Playlists include: firestick, fire-tv-cube, android-tv, chromecast, nvidia-shield."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use Auto-Update on Google TV?",
+          "answer": "Google TV has limited support for Auto-Update Playlists. Consider using firestick instead."
+        },
+        {
+          "question": "What's the best app for Auto-Update on Google TV?",
+          "answer": "For Auto-Update on Google TV, we recommend tivimate. It has excellent Auto-Update support."
+        }
+      ],
+      "conclusion": "While Google TV doesn't fully support Auto-Update Playlists, there are alternatives worth considering."
+    },
+    "relatedGuides": [
+      "firestick-auto-update",
+      "fire-tv-cube-auto-update",
+      "apple-tv-auto-update",
+      "android-tv-auto-update",
+      "chromecast-auto-update"
+    ],
+    "tags": [
+      "google-tv",
+      "auto-update",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "auto-update google-tv",
+      "Auto-Update on Google TV",
+      "Google TV Auto-Update",
+      "auto update iptv",
+      "refresh playlist",
+      "update channels",
+      "auto refresh epg"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "google-tv-casting",
+    "deviceId": "google-tv",
+    "featureId": "casting",
+    "deviceName": "Google TV",
+    "deviceShortName": "Google TV",
+    "featureName": "Chromecast & Casting",
+    "featureShortName": "Casting",
+    "isSupported": false,
+    "title": "Can You Use Casting on Google TV?",
+    "metaTitle": "Casting on Google TV Guide 2025 | IPTV Tutorial",
+    "description": "Discover if Google TV supports Chromecast & Casting and what alternatives exist.",
+    "content": {
+      "intro": "Google TV has limited support for Chromecast & Casting. Let's explore what options are available.",
+      "recommendedPlayers": [
+        "iptv-smarters",
+        "vlc",
+        "stremio",
+        "gse-smart-iptv"
+      ],
+      "benefits": [
+        "Watch IPTV on any TV with Chromecast",
+        "No app installation needed on TV",
+        "Control playback from your phone",
+        "Multi-room streaming",
+        "Use your TV's speakers"
+      ],
+      "requirements": [
+        "Google TV",
+        "Chromecast, Apple TV, or AirPlay-compatible TV",
+        "IPTV app with casting support",
+        "Same Wi-Fi network for all devices",
+        "One of: iptv-smarters, vlc, stremio, gse-smart-iptv"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Consider Alternative Devices",
+          "description": "Devices that support Chromecast & Casting include: ios, android-tv, chromecast, apple-tv, windows."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use Casting on Google TV?",
+          "answer": "Google TV has limited support for Chromecast & Casting. Consider using ios instead."
+        },
+        {
+          "question": "What's the best app for Casting on Google TV?",
+          "answer": "For Casting on Google TV, we recommend iptv-smarters. It has excellent Casting support."
+        }
+      ],
+      "conclusion": "While Google TV doesn't fully support Chromecast & Casting, there are alternatives worth considering."
+    },
+    "relatedGuides": [
+      "firestick-casting",
+      "fire-tv-cube-casting",
+      "apple-tv-casting",
+      "android-tv-casting",
+      "chromecast-casting"
+    ],
+    "tags": [
+      "google-tv",
+      "casting",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "casting google-tv",
+      "Casting on Google TV",
+      "Google TV Casting",
+      "chromecast iptv",
+      "cast iptv",
+      "iptv with casting",
+      "airplay iptv",
+      "screen mirror iptv",
+      "tivimate chromecast",
+      "cast iptv to tv",
+      "chromecast tivimate"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "google-tv-hardware-decoding",
+    "deviceId": "google-tv",
+    "featureId": "hardware-decoding",
+    "deviceName": "Google TV",
+    "deviceShortName": "Google TV",
+    "featureName": "Hardware Decoding",
+    "featureShortName": "HW Decode",
+    "isSupported": false,
+    "title": "Can You Use HW Decode on Google TV?",
+    "metaTitle": "HW Decode on Google TV Guide 2025 | IPTV Tutorial",
+    "description": "Discover if Google TV supports Hardware Decoding and what alternatives exist.",
+    "content": {
+      "intro": "Google TV has limited support for Hardware Decoding. Let's explore what options are available.",
+      "recommendedPlayers": [
+        "tivimate",
+        "kodi",
+        "vlc",
+        "ott-navigator",
+        "stremio",
+        "gse-smart-iptv"
+      ],
+      "benefits": [
+        "Smoother 4K playback",
+        "Lower CPU usage",
+        "Better battery life on mobile",
+        "Reduced buffering",
+        "Cooler device operation"
+      ],
+      "requirements": [
+        "Google TV",
+        "Device with hardware video decoder",
+        "Compatible IPTV player",
+        "Hardware-compatible video codec",
+        "One of: tivimate, kodi, vlc, ott-navigator, stremio, gse-smart-iptv"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Consider Alternative Devices",
+          "description": "Devices that support Hardware Decoding include: firestick, fire-tv-cube, apple-tv, android-tv, chromecast."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use HW Decode on Google TV?",
+          "answer": "Google TV has limited support for Hardware Decoding. Consider using firestick instead."
+        },
+        {
+          "question": "What's the best app for HW Decode on Google TV?",
+          "answer": "For HW Decode on Google TV, we recommend tivimate. It has excellent HW Decode support."
+        }
+      ],
+      "conclusion": "While Google TV doesn't fully support Hardware Decoding, there are alternatives worth considering."
+    },
+    "relatedGuides": [
+      "firestick-hardware-decoding",
+      "fire-tv-cube-hardware-decoding",
+      "apple-tv-hardware-decoding",
+      "android-tv-hardware-decoding",
+      "chromecast-hardware-decoding"
+    ],
+    "tags": [
+      "google-tv",
+      "hardware-decoding",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "hardware-decoding google-tv",
+      "HW Decode on Google TV",
+      "Google TV HW Decode",
+      "hardware decoding iptv",
+      "hw decode",
+      "hardware acceleration",
+      "video decoder",
+      "4k playback"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -5467,7 +7506,7 @@
       "epg setup",
       "xmltv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -5561,7 +7600,7 @@
       "iptv pvr",
       "pause live tv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "advanced"
   },
   {
@@ -5654,7 +7693,7 @@
       "pip iptv",
       "split screen iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -5745,7 +7784,7 @@
       "pin lock iptv",
       "child safe iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -5843,7 +7882,7 @@
       "favorite channels",
       "custom channel list"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -5936,7 +7975,7 @@
       "catch up tv",
       "rewind iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -6030,7 +8069,7 @@
       "iptv movies",
       "iptv series"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -6125,7 +8164,7 @@
       "iptv playlist",
       "manage playlists"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -6219,7 +8258,7 @@
       "hide channels",
       "channel groups"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -6312,7 +8351,7 @@
       "srt subtitles",
       "subtitle support"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -6404,7 +8443,7 @@
       "mx player iptv",
       "video player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -6496,7 +8535,185 @@
       "update channels",
       "auto refresh epg"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "nvidia-shield-casting",
+    "deviceId": "nvidia-shield",
+    "featureId": "casting",
+    "deviceName": "NVIDIA Shield TV",
+    "deviceShortName": "Shield TV",
+    "featureName": "Chromecast & Casting",
+    "featureShortName": "Casting",
+    "isSupported": false,
+    "title": "Can You Use Casting on Shield TV?",
+    "metaTitle": "Casting on Shield TV Guide 2025 | IPTV Tutorial",
+    "description": "Discover if NVIDIA Shield TV supports Chromecast & Casting and what alternatives exist.",
+    "content": {
+      "intro": "NVIDIA Shield TV has limited support for Chromecast & Casting. Let's explore what options are available.",
+      "recommendedPlayers": [
+        "iptv-smarters",
+        "vlc",
+        "gse-smart-iptv"
+      ],
+      "benefits": [
+        "Watch IPTV on any TV with Chromecast",
+        "No app installation needed on TV",
+        "Control playback from your phone",
+        "Multi-room streaming",
+        "Use your TV's speakers"
+      ],
+      "requirements": [
+        "NVIDIA Shield TV",
+        "Chromecast, Apple TV, or AirPlay-compatible TV",
+        "IPTV app with casting support",
+        "Same Wi-Fi network for all devices",
+        "One of: iptv-smarters, vlc, gse-smart-iptv"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Consider Alternative Devices",
+          "description": "Devices that support Chromecast & Casting include: ios, android-tv, chromecast, apple-tv, windows."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use Casting on Shield TV?",
+          "answer": "Shield TV has limited support for Chromecast & Casting. Consider using ios instead."
+        },
+        {
+          "question": "What's the best app for Casting on Shield TV?",
+          "answer": "For Casting on Shield TV, we recommend iptv-smarters. It has excellent Casting support."
+        }
+      ],
+      "conclusion": "While Shield TV doesn't fully support Chromecast & Casting, there are alternatives worth considering."
+    },
+    "relatedGuides": [
+      "firestick-casting",
+      "fire-tv-cube-casting",
+      "apple-tv-casting",
+      "android-tv-casting",
+      "chromecast-casting"
+    ],
+    "tags": [
+      "nvidia-shield",
+      "casting",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "casting nvidia-shield",
+      "Casting on Shield TV",
+      "Shield TV Casting",
+      "chromecast iptv",
+      "cast iptv",
+      "iptv with casting",
+      "airplay iptv",
+      "screen mirror iptv",
+      "tivimate chromecast",
+      "cast iptv to tv",
+      "chromecast tivimate"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "nvidia-shield-hardware-decoding",
+    "deviceId": "nvidia-shield",
+    "featureId": "hardware-decoding",
+    "deviceName": "NVIDIA Shield TV",
+    "deviceShortName": "Shield TV",
+    "featureName": "Hardware Decoding",
+    "featureShortName": "HW Decode",
+    "isSupported": true,
+    "title": "HW Decode on Shield TV - Complete Guide 2025",
+    "metaTitle": "HW Decode on Shield TV Guide 2025 | IPTV Tutorial",
+    "description": "Learn how to use Hardware Decoding on your NVIDIA Shield TV. Best apps and settings for 2025.",
+    "content": {
+      "intro": "Want to use Hardware Decoding on your Shield TV? This guide covers the best apps and settings to get HW Decode working perfectly on NVIDIA Shield TV.",
+      "recommendedPlayers": [
+        "tivimate",
+        "kodi",
+        "vlc",
+        "ott-navigator",
+        "gse-smart-iptv"
+      ],
+      "benefits": [
+        "Smoother 4K playback",
+        "Lower CPU usage",
+        "Better battery life on mobile",
+        "Reduced buffering",
+        "Cooler device operation"
+      ],
+      "requirements": [
+        "NVIDIA Shield TV",
+        "Device with hardware video decoder",
+        "Compatible IPTV player",
+        "Hardware-compatible video codec",
+        "One of: tivimate, kodi, vlc, ott-navigator, gse-smart-iptv"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Install a Compatible IPTV Player",
+          "description": "For HW Decode on Shield TV, we recommend: tivimate, kodi, vlc."
+        },
+        {
+          "stepNumber": 2,
+          "title": "Configure Your IPTV Service",
+          "description": "Add your M3U playlist or Xtream credentials to the player."
+        },
+        {
+          "stepNumber": 3,
+          "title": "Enable HW Decode",
+          "description": "Navigate to the player's settings and look for HW Decode options. Enable and configure as needed."
+        },
+        {
+          "stepNumber": 4,
+          "title": "Test the Feature",
+          "description": "Try using HW Decode to make sure everything is working correctly."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use HW Decode on Shield TV?",
+          "answer": "Yes! Shield TV supports Hardware Decoding through apps like tivimate."
+        },
+        {
+          "question": "What's the best app for HW Decode on Shield TV?",
+          "answer": "For HW Decode on Shield TV, we recommend tivimate. It has excellent HW Decode support."
+        }
+      ],
+      "conclusion": "Hardware Decoding works great on Shield TV with the right app. Follow our steps above to get started."
+    },
+    "relatedGuides": [
+      "firestick-hardware-decoding",
+      "fire-tv-cube-hardware-decoding",
+      "apple-tv-hardware-decoding",
+      "android-tv-hardware-decoding",
+      "chromecast-hardware-decoding"
+    ],
+    "tags": [
+      "nvidia-shield",
+      "hardware-decoding",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "hardware-decoding nvidia-shield",
+      "HW Decode on Shield TV",
+      "Shield TV HW Decode",
+      "hardware decoding iptv",
+      "hw decode",
+      "hardware acceleration",
+      "video decoder",
+      "4k playback"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -6590,7 +8807,7 @@
       "epg setup",
       "xmltv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -6666,7 +8883,7 @@
       "iptv pvr",
       "pause live tv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "advanced"
   },
   {
@@ -6756,7 +8973,7 @@
       "pip iptv",
       "split screen iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -6845,7 +9062,7 @@
       "pin lock iptv",
       "child safe iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -6936,7 +9153,7 @@
       "favorite channels",
       "custom channel list"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -7011,7 +9228,7 @@
       "catch up tv",
       "rewind iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -7102,7 +9319,7 @@
       "iptv movies",
       "iptv series"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -7193,7 +9410,7 @@
       "iptv playlist",
       "manage playlists"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -7266,7 +9483,7 @@
       "hide channels",
       "channel groups"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -7358,7 +9575,7 @@
       "srt subtitles",
       "subtitle support"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -7433,7 +9650,7 @@
       "mx player iptv",
       "video player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -7507,7 +9724,201 @@
       "update channels",
       "auto refresh epg"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "ios-casting",
+    "deviceId": "ios",
+    "featureId": "casting",
+    "deviceName": "iPhone/iPad",
+    "deviceShortName": "iOS",
+    "featureName": "Chromecast & Casting",
+    "featureShortName": "Casting",
+    "isSupported": true,
+    "title": "Casting on iOS - Complete Guide 2025",
+    "metaTitle": "Casting on iOS Guide 2025 | IPTV Tutorial",
+    "description": "Learn how to use Chromecast & Casting on your iPhone/iPad. Best apps and settings for 2025.",
+    "content": {
+      "intro": "Want to use Chromecast & Casting on your iOS? This guide covers the best apps and settings to get Casting working perfectly on iPhone/iPad.",
+      "recommendedPlayers": [
+        "vlc",
+        "iptv-smarters",
+        "gse-smart-iptv",
+        "iplaytv",
+        "stremio"
+      ],
+      "benefits": [
+        "Watch IPTV on any TV with Chromecast",
+        "No app installation needed on TV",
+        "Control playback from your phone",
+        "Multi-room streaming",
+        "Use your TV's speakers"
+      ],
+      "requirements": [
+        "iPhone/iPad",
+        "Chromecast, Apple TV, or AirPlay-compatible TV",
+        "IPTV app with casting support",
+        "Same Wi-Fi network for all devices",
+        "One of: vlc, iptv-smarters, gse-smart-iptv, iplaytv, stremio"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Install a Compatible IPTV Player",
+          "description": "For Casting on iOS, we recommend: vlc, iptv-smarters, gse-smart-iptv."
+        },
+        {
+          "stepNumber": 2,
+          "title": "Configure Your IPTV Service",
+          "description": "Add your M3U playlist or Xtream credentials to the player."
+        },
+        {
+          "stepNumber": 3,
+          "title": "Enable Casting",
+          "description": "Navigate to the player's settings and look for Casting options. Enable and configure as needed."
+        },
+        {
+          "stepNumber": 4,
+          "title": "Test the Feature",
+          "description": "Try using Casting to make sure everything is working correctly."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use Casting on iOS?",
+          "answer": "Yes! iOS supports Chromecast & Casting through apps like vlc."
+        },
+        {
+          "question": "What's the best app for Casting on iOS?",
+          "answer": "For Casting on iOS, we recommend vlc. It has excellent Casting support."
+        }
+      ],
+      "conclusion": "Chromecast & Casting works great on iOS with the right app. Follow our steps above to get started."
+    },
+    "relatedGuides": [
+      "firestick-casting",
+      "fire-tv-cube-casting",
+      "apple-tv-casting",
+      "android-tv-casting",
+      "chromecast-casting"
+    ],
+    "tags": [
+      "ios",
+      "casting",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "casting ios",
+      "Casting on iOS",
+      "iOS Casting",
+      "chromecast iptv",
+      "cast iptv",
+      "iptv with casting",
+      "airplay iptv",
+      "screen mirror iptv",
+      "tivimate chromecast",
+      "cast iptv to tv",
+      "chromecast tivimate"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "ios-hardware-decoding",
+    "deviceId": "ios",
+    "featureId": "hardware-decoding",
+    "deviceName": "iPhone/iPad",
+    "deviceShortName": "iOS",
+    "featureName": "Hardware Decoding",
+    "featureShortName": "HW Decode",
+    "isSupported": true,
+    "title": "HW Decode on iOS - Complete Guide 2025",
+    "metaTitle": "HW Decode on iOS Guide 2025 | IPTV Tutorial",
+    "description": "Learn how to use Hardware Decoding on your iPhone/iPad. Best apps and settings for 2025.",
+    "content": {
+      "intro": "Want to use Hardware Decoding on your iOS? This guide covers the best apps and settings to get HW Decode working perfectly on iPhone/iPad.",
+      "recommendedPlayers": [
+        "vlc",
+        "gse-smart-iptv",
+        "kodi",
+        "stremio"
+      ],
+      "benefits": [
+        "Smoother 4K playback",
+        "Lower CPU usage",
+        "Better battery life on mobile",
+        "Reduced buffering",
+        "Cooler device operation"
+      ],
+      "requirements": [
+        "iPhone/iPad",
+        "Device with hardware video decoder",
+        "Compatible IPTV player",
+        "Hardware-compatible video codec",
+        "One of: vlc, gse-smart-iptv, kodi, stremio"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Install a Compatible IPTV Player",
+          "description": "For HW Decode on iOS, we recommend: vlc, gse-smart-iptv, kodi."
+        },
+        {
+          "stepNumber": 2,
+          "title": "Configure Your IPTV Service",
+          "description": "Add your M3U playlist or Xtream credentials to the player."
+        },
+        {
+          "stepNumber": 3,
+          "title": "Enable HW Decode",
+          "description": "Navigate to the player's settings and look for HW Decode options. Enable and configure as needed."
+        },
+        {
+          "stepNumber": 4,
+          "title": "Test the Feature",
+          "description": "Try using HW Decode to make sure everything is working correctly."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use HW Decode on iOS?",
+          "answer": "Yes! iOS supports Hardware Decoding through apps like vlc."
+        },
+        {
+          "question": "What's the best app for HW Decode on iOS?",
+          "answer": "For HW Decode on iOS, we recommend vlc. It has excellent HW Decode support."
+        }
+      ],
+      "conclusion": "Hardware Decoding works great on iOS with the right app. Follow our steps above to get started."
+    },
+    "relatedGuides": [
+      "firestick-hardware-decoding",
+      "fire-tv-cube-hardware-decoding",
+      "apple-tv-hardware-decoding",
+      "android-tv-hardware-decoding",
+      "chromecast-hardware-decoding"
+    ],
+    "tags": [
+      "ios",
+      "hardware-decoding",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "hardware-decoding ios",
+      "HW Decode on iOS",
+      "iOS HW Decode",
+      "hardware decoding iptv",
+      "hw decode",
+      "hardware acceleration",
+      "video decoder",
+      "4k playback"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -7599,7 +10010,7 @@
       "epg setup",
       "xmltv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -7690,7 +10101,7 @@
       "iptv pvr",
       "pause live tv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "advanced"
   },
   {
@@ -7765,7 +10176,7 @@
       "pip iptv",
       "split screen iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -7838,7 +10249,7 @@
       "pin lock iptv",
       "child safe iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -7927,7 +10338,7 @@
       "favorite channels",
       "custom channel list"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -8002,7 +10413,7 @@
       "catch up tv",
       "rewind iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -8093,7 +10504,7 @@
       "iptv movies",
       "iptv series"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -8184,7 +10595,7 @@
       "iptv playlist",
       "manage playlists"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -8257,7 +10668,7 @@
       "hide channels",
       "channel groups"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -8348,7 +10759,7 @@
       "srt subtitles",
       "subtitle support"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -8437,7 +10848,7 @@
       "mx player iptv",
       "video player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -8511,7 +10922,196 @@
       "update channels",
       "auto refresh epg"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "windows-casting",
+    "deviceId": "windows",
+    "featureId": "casting",
+    "deviceName": "Windows PC",
+    "deviceShortName": "Windows",
+    "featureName": "Chromecast & Casting",
+    "featureShortName": "Casting",
+    "isSupported": true,
+    "title": "Casting on Windows - Complete Guide 2025",
+    "metaTitle": "Casting on Windows Guide 2025 | IPTV Tutorial",
+    "description": "Learn how to use Chromecast & Casting on your Windows PC. Best apps and settings for 2025.",
+    "content": {
+      "intro": "Want to use Chromecast & Casting on your Windows? This guide covers the best apps and settings to get Casting working perfectly on Windows PC.",
+      "recommendedPlayers": [
+        "vlc",
+        "iptv-smarters"
+      ],
+      "benefits": [
+        "Watch IPTV on any TV with Chromecast",
+        "No app installation needed on TV",
+        "Control playback from your phone",
+        "Multi-room streaming",
+        "Use your TV's speakers"
+      ],
+      "requirements": [
+        "Windows PC",
+        "Chromecast, Apple TV, or AirPlay-compatible TV",
+        "IPTV app with casting support",
+        "Same Wi-Fi network for all devices",
+        "One of: vlc, iptv-smarters"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Install a Compatible IPTV Player",
+          "description": "For Casting on Windows, we recommend: vlc, iptv-smarters."
+        },
+        {
+          "stepNumber": 2,
+          "title": "Configure Your IPTV Service",
+          "description": "Add your M3U playlist or Xtream credentials to the player."
+        },
+        {
+          "stepNumber": 3,
+          "title": "Enable Casting",
+          "description": "Navigate to the player's settings and look for Casting options. Enable and configure as needed."
+        },
+        {
+          "stepNumber": 4,
+          "title": "Test the Feature",
+          "description": "Try using Casting to make sure everything is working correctly."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use Casting on Windows?",
+          "answer": "Yes! Windows supports Chromecast & Casting through apps like vlc."
+        },
+        {
+          "question": "What's the best app for Casting on Windows?",
+          "answer": "For Casting on Windows, we recommend vlc. It has excellent Casting support."
+        }
+      ],
+      "conclusion": "Chromecast & Casting works great on Windows with the right app. Follow our steps above to get started."
+    },
+    "relatedGuides": [
+      "firestick-casting",
+      "fire-tv-cube-casting",
+      "apple-tv-casting",
+      "android-tv-casting",
+      "chromecast-casting"
+    ],
+    "tags": [
+      "windows",
+      "casting",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "casting windows",
+      "Casting on Windows",
+      "Windows Casting",
+      "chromecast iptv",
+      "cast iptv",
+      "iptv with casting",
+      "airplay iptv",
+      "screen mirror iptv",
+      "tivimate chromecast",
+      "cast iptv to tv",
+      "chromecast tivimate"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "windows-hardware-decoding",
+    "deviceId": "windows",
+    "featureId": "hardware-decoding",
+    "deviceName": "Windows PC",
+    "deviceShortName": "Windows",
+    "featureName": "Hardware Decoding",
+    "featureShortName": "HW Decode",
+    "isSupported": true,
+    "title": "HW Decode on Windows - Complete Guide 2025",
+    "metaTitle": "HW Decode on Windows Guide 2025 | IPTV Tutorial",
+    "description": "Learn how to use Hardware Decoding on your Windows PC. Best apps and settings for 2025.",
+    "content": {
+      "intro": "Want to use Hardware Decoding on your Windows? This guide covers the best apps and settings to get HW Decode working perfectly on Windows PC.",
+      "recommendedPlayers": [
+        "vlc",
+        "kodi"
+      ],
+      "benefits": [
+        "Smoother 4K playback",
+        "Lower CPU usage",
+        "Better battery life on mobile",
+        "Reduced buffering",
+        "Cooler device operation"
+      ],
+      "requirements": [
+        "Windows PC",
+        "Device with hardware video decoder",
+        "Compatible IPTV player",
+        "Hardware-compatible video codec",
+        "One of: vlc, kodi"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Install a Compatible IPTV Player",
+          "description": "For HW Decode on Windows, we recommend: vlc, kodi."
+        },
+        {
+          "stepNumber": 2,
+          "title": "Configure Your IPTV Service",
+          "description": "Add your M3U playlist or Xtream credentials to the player."
+        },
+        {
+          "stepNumber": 3,
+          "title": "Enable HW Decode",
+          "description": "Navigate to the player's settings and look for HW Decode options. Enable and configure as needed."
+        },
+        {
+          "stepNumber": 4,
+          "title": "Test the Feature",
+          "description": "Try using HW Decode to make sure everything is working correctly."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use HW Decode on Windows?",
+          "answer": "Yes! Windows supports Hardware Decoding through apps like vlc."
+        },
+        {
+          "question": "What's the best app for HW Decode on Windows?",
+          "answer": "For HW Decode on Windows, we recommend vlc. It has excellent HW Decode support."
+        }
+      ],
+      "conclusion": "Hardware Decoding works great on Windows with the right app. Follow our steps above to get started."
+    },
+    "relatedGuides": [
+      "firestick-hardware-decoding",
+      "fire-tv-cube-hardware-decoding",
+      "apple-tv-hardware-decoding",
+      "android-tv-hardware-decoding",
+      "chromecast-hardware-decoding"
+    ],
+    "tags": [
+      "windows",
+      "hardware-decoding",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "hardware-decoding windows",
+      "HW Decode on Windows",
+      "Windows HW Decode",
+      "hardware decoding iptv",
+      "hw decode",
+      "hardware acceleration",
+      "video decoder",
+      "4k playback"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -8603,7 +11203,7 @@
       "epg setup",
       "xmltv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -8679,7 +11279,7 @@
       "iptv pvr",
       "pause live tv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "advanced"
   },
   {
@@ -8754,7 +11354,7 @@
       "pip iptv",
       "split screen iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -8827,7 +11427,7 @@
       "pin lock iptv",
       "child safe iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -8916,7 +11516,7 @@
       "favorite channels",
       "custom channel list"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -8991,7 +11591,7 @@
       "catch up tv",
       "rewind iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -9082,7 +11682,7 @@
       "iptv movies",
       "iptv series"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -9173,7 +11773,7 @@
       "iptv playlist",
       "manage playlists"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -9246,7 +11846,7 @@
       "hide channels",
       "channel groups"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -9337,7 +11937,7 @@
       "srt subtitles",
       "subtitle support"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -9426,7 +12026,7 @@
       "mx player iptv",
       "video player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -9500,7 +12100,196 @@
       "update channels",
       "auto refresh epg"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "mac-casting",
+    "deviceId": "mac",
+    "featureId": "casting",
+    "deviceName": "Mac",
+    "deviceShortName": "Mac",
+    "featureName": "Chromecast & Casting",
+    "featureShortName": "Casting",
+    "isSupported": true,
+    "title": "Casting on Mac - Complete Guide 2025",
+    "metaTitle": "Casting on Mac Guide 2025 | IPTV Tutorial",
+    "description": "Learn how to use Chromecast & Casting on your Mac. Best apps and settings for 2025.",
+    "content": {
+      "intro": "Want to use Chromecast & Casting on your Mac? This guide covers the best apps and settings to get Casting working perfectly on Mac.",
+      "recommendedPlayers": [
+        "vlc",
+        "iptv-smarters"
+      ],
+      "benefits": [
+        "Watch IPTV on any TV with Chromecast",
+        "No app installation needed on TV",
+        "Control playback from your phone",
+        "Multi-room streaming",
+        "Use your TV's speakers"
+      ],
+      "requirements": [
+        "Mac",
+        "Chromecast, Apple TV, or AirPlay-compatible TV",
+        "IPTV app with casting support",
+        "Same Wi-Fi network for all devices",
+        "One of: vlc, iptv-smarters"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Install a Compatible IPTV Player",
+          "description": "For Casting on Mac, we recommend: vlc, iptv-smarters."
+        },
+        {
+          "stepNumber": 2,
+          "title": "Configure Your IPTV Service",
+          "description": "Add your M3U playlist or Xtream credentials to the player."
+        },
+        {
+          "stepNumber": 3,
+          "title": "Enable Casting",
+          "description": "Navigate to the player's settings and look for Casting options. Enable and configure as needed."
+        },
+        {
+          "stepNumber": 4,
+          "title": "Test the Feature",
+          "description": "Try using Casting to make sure everything is working correctly."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use Casting on Mac?",
+          "answer": "Yes! Mac supports Chromecast & Casting through apps like vlc."
+        },
+        {
+          "question": "What's the best app for Casting on Mac?",
+          "answer": "For Casting on Mac, we recommend vlc. It has excellent Casting support."
+        }
+      ],
+      "conclusion": "Chromecast & Casting works great on Mac with the right app. Follow our steps above to get started."
+    },
+    "relatedGuides": [
+      "firestick-casting",
+      "fire-tv-cube-casting",
+      "apple-tv-casting",
+      "android-tv-casting",
+      "chromecast-casting"
+    ],
+    "tags": [
+      "mac",
+      "casting",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "casting mac",
+      "Casting on Mac",
+      "Mac Casting",
+      "chromecast iptv",
+      "cast iptv",
+      "iptv with casting",
+      "airplay iptv",
+      "screen mirror iptv",
+      "tivimate chromecast",
+      "cast iptv to tv",
+      "chromecast tivimate"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "mac-hardware-decoding",
+    "deviceId": "mac",
+    "featureId": "hardware-decoding",
+    "deviceName": "Mac",
+    "deviceShortName": "Mac",
+    "featureName": "Hardware Decoding",
+    "featureShortName": "HW Decode",
+    "isSupported": true,
+    "title": "HW Decode on Mac - Complete Guide 2025",
+    "metaTitle": "HW Decode on Mac Guide 2025 | IPTV Tutorial",
+    "description": "Learn how to use Hardware Decoding on your Mac. Best apps and settings for 2025.",
+    "content": {
+      "intro": "Want to use Hardware Decoding on your Mac? This guide covers the best apps and settings to get HW Decode working perfectly on Mac.",
+      "recommendedPlayers": [
+        "vlc",
+        "kodi"
+      ],
+      "benefits": [
+        "Smoother 4K playback",
+        "Lower CPU usage",
+        "Better battery life on mobile",
+        "Reduced buffering",
+        "Cooler device operation"
+      ],
+      "requirements": [
+        "Mac",
+        "Device with hardware video decoder",
+        "Compatible IPTV player",
+        "Hardware-compatible video codec",
+        "One of: vlc, kodi"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Install a Compatible IPTV Player",
+          "description": "For HW Decode on Mac, we recommend: vlc, kodi."
+        },
+        {
+          "stepNumber": 2,
+          "title": "Configure Your IPTV Service",
+          "description": "Add your M3U playlist or Xtream credentials to the player."
+        },
+        {
+          "stepNumber": 3,
+          "title": "Enable HW Decode",
+          "description": "Navigate to the player's settings and look for HW Decode options. Enable and configure as needed."
+        },
+        {
+          "stepNumber": 4,
+          "title": "Test the Feature",
+          "description": "Try using HW Decode to make sure everything is working correctly."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use HW Decode on Mac?",
+          "answer": "Yes! Mac supports Hardware Decoding through apps like vlc."
+        },
+        {
+          "question": "What's the best app for HW Decode on Mac?",
+          "answer": "For HW Decode on Mac, we recommend vlc. It has excellent HW Decode support."
+        }
+      ],
+      "conclusion": "Hardware Decoding works great on Mac with the right app. Follow our steps above to get started."
+    },
+    "relatedGuides": [
+      "firestick-hardware-decoding",
+      "fire-tv-cube-hardware-decoding",
+      "apple-tv-hardware-decoding",
+      "android-tv-hardware-decoding",
+      "chromecast-hardware-decoding"
+    ],
+    "tags": [
+      "mac",
+      "hardware-decoding",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "hardware-decoding mac",
+      "HW Decode on Mac",
+      "Mac HW Decode",
+      "hardware decoding iptv",
+      "hw decode",
+      "hardware acceleration",
+      "video decoder",
+      "4k playback"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -9576,7 +12365,7 @@
       "epg setup",
       "xmltv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -9652,7 +12441,7 @@
       "iptv pvr",
       "pause live tv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "advanced"
   },
   {
@@ -9724,7 +12513,7 @@
       "pip iptv",
       "split screen iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -9794,7 +12583,7 @@
       "pin lock iptv",
       "child safe iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -9882,7 +12671,7 @@
       "favorite channels",
       "custom channel list"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -9954,7 +12743,7 @@
       "catch up tv",
       "rewind iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -10029,7 +12818,7 @@
       "iptv movies",
       "iptv series"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -10119,7 +12908,7 @@
       "iptv playlist",
       "manage playlists"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -10189,7 +12978,7 @@
       "hide channels",
       "channel groups"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -10280,7 +13069,7 @@
       "srt subtitles",
       "subtitle support"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -10369,7 +13158,7 @@
       "mx player iptv",
       "video player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -10440,7 +13229,182 @@
       "update channels",
       "auto refresh epg"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "linux-casting",
+    "deviceId": "linux",
+    "featureId": "casting",
+    "deviceName": "Linux PC",
+    "deviceShortName": "Linux",
+    "featureName": "Chromecast & Casting",
+    "featureShortName": "Casting",
+    "isSupported": false,
+    "title": "Can You Use Casting on Linux?",
+    "metaTitle": "Casting on Linux Guide 2025 | IPTV Tutorial",
+    "description": "Discover if Linux PC supports Chromecast & Casting and what alternatives exist.",
+    "content": {
+      "intro": "Linux PC has limited support for Chromecast & Casting. Let's explore what options are available.",
+      "recommendedPlayers": [
+        "vlc",
+        "stremio"
+      ],
+      "benefits": [
+        "Watch IPTV on any TV with Chromecast",
+        "No app installation needed on TV",
+        "Control playback from your phone",
+        "Multi-room streaming",
+        "Use your TV's speakers"
+      ],
+      "requirements": [
+        "Linux PC",
+        "Chromecast, Apple TV, or AirPlay-compatible TV",
+        "IPTV app with casting support",
+        "Same Wi-Fi network for all devices",
+        "One of: vlc, stremio"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Consider Alternative Devices",
+          "description": "Devices that support Chromecast & Casting include: ios, android-tv, chromecast, apple-tv, windows."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use Casting on Linux?",
+          "answer": "Linux has limited support for Chromecast & Casting. Consider using ios instead."
+        },
+        {
+          "question": "What's the best app for Casting on Linux?",
+          "answer": "For Casting on Linux, we recommend vlc. It has excellent Casting support."
+        }
+      ],
+      "conclusion": "While Linux doesn't fully support Chromecast & Casting, there are alternatives worth considering."
+    },
+    "relatedGuides": [
+      "firestick-casting",
+      "fire-tv-cube-casting",
+      "apple-tv-casting",
+      "android-tv-casting",
+      "chromecast-casting"
+    ],
+    "tags": [
+      "linux",
+      "casting",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "casting linux",
+      "Casting on Linux",
+      "Linux Casting",
+      "chromecast iptv",
+      "cast iptv",
+      "iptv with casting",
+      "airplay iptv",
+      "screen mirror iptv",
+      "tivimate chromecast",
+      "cast iptv to tv",
+      "chromecast tivimate"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "linux-hardware-decoding",
+    "deviceId": "linux",
+    "featureId": "hardware-decoding",
+    "deviceName": "Linux PC",
+    "deviceShortName": "Linux",
+    "featureName": "Hardware Decoding",
+    "featureShortName": "HW Decode",
+    "isSupported": true,
+    "title": "HW Decode on Linux - Complete Guide 2025",
+    "metaTitle": "HW Decode on Linux Guide 2025 | IPTV Tutorial",
+    "description": "Learn how to use Hardware Decoding on your Linux PC. Best apps and settings for 2025.",
+    "content": {
+      "intro": "Want to use Hardware Decoding on your Linux? This guide covers the best apps and settings to get HW Decode working perfectly on Linux PC.",
+      "recommendedPlayers": [
+        "vlc",
+        "kodi",
+        "stremio"
+      ],
+      "benefits": [
+        "Smoother 4K playback",
+        "Lower CPU usage",
+        "Better battery life on mobile",
+        "Reduced buffering",
+        "Cooler device operation"
+      ],
+      "requirements": [
+        "Linux PC",
+        "Device with hardware video decoder",
+        "Compatible IPTV player",
+        "Hardware-compatible video codec",
+        "One of: vlc, kodi, stremio"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Install a Compatible IPTV Player",
+          "description": "For HW Decode on Linux, we recommend: vlc, kodi, stremio."
+        },
+        {
+          "stepNumber": 2,
+          "title": "Configure Your IPTV Service",
+          "description": "Add your M3U playlist or Xtream credentials to the player."
+        },
+        {
+          "stepNumber": 3,
+          "title": "Enable HW Decode",
+          "description": "Navigate to the player's settings and look for HW Decode options. Enable and configure as needed."
+        },
+        {
+          "stepNumber": 4,
+          "title": "Test the Feature",
+          "description": "Try using HW Decode to make sure everything is working correctly."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use HW Decode on Linux?",
+          "answer": "Yes! Linux supports Hardware Decoding through apps like vlc."
+        },
+        {
+          "question": "What's the best app for HW Decode on Linux?",
+          "answer": "For HW Decode on Linux, we recommend vlc. It has excellent HW Decode support."
+        }
+      ],
+      "conclusion": "Hardware Decoding works great on Linux with the right app. Follow our steps above to get started."
+    },
+    "relatedGuides": [
+      "firestick-hardware-decoding",
+      "fire-tv-cube-hardware-decoding",
+      "apple-tv-hardware-decoding",
+      "android-tv-hardware-decoding",
+      "chromecast-hardware-decoding"
+    ],
+    "tags": [
+      "linux",
+      "hardware-decoding",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "hardware-decoding linux",
+      "HW Decode on Linux",
+      "Linux HW Decode",
+      "hardware decoding iptv",
+      "hw decode",
+      "hardware acceleration",
+      "video decoder",
+      "4k playback"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -10531,7 +13495,7 @@
       "epg setup",
       "xmltv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -10604,7 +13568,7 @@
       "iptv pvr",
       "pause live tv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "advanced"
   },
   {
@@ -10676,7 +13640,7 @@
       "pip iptv",
       "split screen iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -10746,7 +13710,7 @@
       "pin lock iptv",
       "child safe iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -10835,7 +13799,7 @@
       "favorite channels",
       "custom channel list"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -10907,7 +13871,7 @@
       "catch up tv",
       "rewind iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -10979,7 +13943,7 @@
       "iptv movies",
       "iptv series"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -11069,7 +14033,7 @@
       "iptv playlist",
       "manage playlists"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -11139,7 +14103,7 @@
       "hide channels",
       "channel groups"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -11211,7 +14175,7 @@
       "srt subtitles",
       "subtitle support"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -11282,7 +14246,7 @@
       "mx player iptv",
       "video player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -11353,7 +14317,158 @@
       "update channels",
       "auto refresh epg"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "samsung-tv-casting",
+    "deviceId": "samsung-tv",
+    "featureId": "casting",
+    "deviceName": "Samsung Smart TV",
+    "deviceShortName": "Samsung TV",
+    "featureName": "Chromecast & Casting",
+    "featureShortName": "Casting",
+    "isSupported": false,
+    "title": "Can You Use Casting on Samsung TV?",
+    "metaTitle": "Casting on Samsung TV Guide 2025 | IPTV Tutorial",
+    "description": "Discover if Samsung Smart TV supports Chromecast & Casting and what alternatives exist.",
+    "content": {
+      "intro": "Samsung Smart TV has limited support for Chromecast & Casting. Let's explore what options are available.",
+      "recommendedPlayers": [],
+      "benefits": [
+        "Watch IPTV on any TV with Chromecast",
+        "No app installation needed on TV",
+        "Control playback from your phone",
+        "Multi-room streaming",
+        "Use your TV's speakers"
+      ],
+      "requirements": [
+        "Samsung Smart TV",
+        "Chromecast, Apple TV, or AirPlay-compatible TV",
+        "IPTV app with casting support",
+        "Same Wi-Fi network for all devices"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Consider Alternative Devices",
+          "description": "Devices that support Chromecast & Casting include: ios, android-tv, chromecast, apple-tv, windows."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use Casting on Samsung TV?",
+          "answer": "Samsung TV has limited support for Chromecast & Casting. Consider using ios instead."
+        },
+        {
+          "question": "What's the best app for Casting on Samsung TV?",
+          "answer": "Check our player comparison guides to find the best option for your needs."
+        }
+      ],
+      "conclusion": "While Samsung TV doesn't fully support Chromecast & Casting, there are alternatives worth considering."
+    },
+    "relatedGuides": [
+      "firestick-casting",
+      "fire-tv-cube-casting",
+      "apple-tv-casting",
+      "android-tv-casting",
+      "chromecast-casting"
+    ],
+    "tags": [
+      "samsung-tv",
+      "casting",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "casting samsung-tv",
+      "Casting on Samsung TV",
+      "Samsung TV Casting",
+      "chromecast iptv",
+      "cast iptv",
+      "iptv with casting",
+      "airplay iptv",
+      "screen mirror iptv",
+      "tivimate chromecast",
+      "cast iptv to tv",
+      "chromecast tivimate"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "samsung-tv-hardware-decoding",
+    "deviceId": "samsung-tv",
+    "featureId": "hardware-decoding",
+    "deviceName": "Samsung Smart TV",
+    "deviceShortName": "Samsung TV",
+    "featureName": "Hardware Decoding",
+    "featureShortName": "HW Decode",
+    "isSupported": false,
+    "title": "Can You Use HW Decode on Samsung TV?",
+    "metaTitle": "HW Decode on Samsung TV Guide 2025 | IPTV Tutorial",
+    "description": "Discover if Samsung Smart TV supports Hardware Decoding and what alternatives exist.",
+    "content": {
+      "intro": "Samsung Smart TV has limited support for Hardware Decoding. Let's explore what options are available.",
+      "recommendedPlayers": [],
+      "benefits": [
+        "Smoother 4K playback",
+        "Lower CPU usage",
+        "Better battery life on mobile",
+        "Reduced buffering",
+        "Cooler device operation"
+      ],
+      "requirements": [
+        "Samsung Smart TV",
+        "Device with hardware video decoder",
+        "Compatible IPTV player",
+        "Hardware-compatible video codec"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Consider Alternative Devices",
+          "description": "Devices that support Hardware Decoding include: firestick, fire-tv-cube, apple-tv, android-tv, chromecast."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use HW Decode on Samsung TV?",
+          "answer": "Samsung TV has limited support for Hardware Decoding. Consider using firestick instead."
+        },
+        {
+          "question": "What's the best app for HW Decode on Samsung TV?",
+          "answer": "Check our player comparison guides to find the best option for your needs."
+        }
+      ],
+      "conclusion": "While Samsung TV doesn't fully support Hardware Decoding, there are alternatives worth considering."
+    },
+    "relatedGuides": [
+      "firestick-hardware-decoding",
+      "fire-tv-cube-hardware-decoding",
+      "apple-tv-hardware-decoding",
+      "android-tv-hardware-decoding",
+      "chromecast-hardware-decoding"
+    ],
+    "tags": [
+      "samsung-tv",
+      "hardware-decoding",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "hardware-decoding samsung-tv",
+      "HW Decode on Samsung TV",
+      "Samsung TV HW Decode",
+      "hardware decoding iptv",
+      "hw decode",
+      "hardware acceleration",
+      "video decoder",
+      "4k playback"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -11444,7 +14559,7 @@
       "epg setup",
       "xmltv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -11517,7 +14632,7 @@
       "iptv pvr",
       "pause live tv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "advanced"
   },
   {
@@ -11589,7 +14704,7 @@
       "pip iptv",
       "split screen iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -11659,7 +14774,7 @@
       "pin lock iptv",
       "child safe iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -11748,7 +14863,7 @@
       "favorite channels",
       "custom channel list"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -11820,7 +14935,7 @@
       "catch up tv",
       "rewind iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -11892,7 +15007,7 @@
       "iptv movies",
       "iptv series"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -11982,7 +15097,7 @@
       "iptv playlist",
       "manage playlists"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -12052,7 +15167,7 @@
       "hide channels",
       "channel groups"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -12124,7 +15239,7 @@
       "srt subtitles",
       "subtitle support"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -12195,7 +15310,7 @@
       "mx player iptv",
       "video player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -12266,7 +15381,158 @@
       "update channels",
       "auto refresh epg"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "lg-tv-casting",
+    "deviceId": "lg-tv",
+    "featureId": "casting",
+    "deviceName": "LG Smart TV",
+    "deviceShortName": "LG TV",
+    "featureName": "Chromecast & Casting",
+    "featureShortName": "Casting",
+    "isSupported": false,
+    "title": "Can You Use Casting on LG TV?",
+    "metaTitle": "Casting on LG TV Guide 2025 | IPTV Tutorial",
+    "description": "Discover if LG Smart TV supports Chromecast & Casting and what alternatives exist.",
+    "content": {
+      "intro": "LG Smart TV has limited support for Chromecast & Casting. Let's explore what options are available.",
+      "recommendedPlayers": [],
+      "benefits": [
+        "Watch IPTV on any TV with Chromecast",
+        "No app installation needed on TV",
+        "Control playback from your phone",
+        "Multi-room streaming",
+        "Use your TV's speakers"
+      ],
+      "requirements": [
+        "LG Smart TV",
+        "Chromecast, Apple TV, or AirPlay-compatible TV",
+        "IPTV app with casting support",
+        "Same Wi-Fi network for all devices"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Consider Alternative Devices",
+          "description": "Devices that support Chromecast & Casting include: ios, android-tv, chromecast, apple-tv, windows."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use Casting on LG TV?",
+          "answer": "LG TV has limited support for Chromecast & Casting. Consider using ios instead."
+        },
+        {
+          "question": "What's the best app for Casting on LG TV?",
+          "answer": "Check our player comparison guides to find the best option for your needs."
+        }
+      ],
+      "conclusion": "While LG TV doesn't fully support Chromecast & Casting, there are alternatives worth considering."
+    },
+    "relatedGuides": [
+      "firestick-casting",
+      "fire-tv-cube-casting",
+      "apple-tv-casting",
+      "android-tv-casting",
+      "chromecast-casting"
+    ],
+    "tags": [
+      "lg-tv",
+      "casting",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "casting lg-tv",
+      "Casting on LG TV",
+      "LG TV Casting",
+      "chromecast iptv",
+      "cast iptv",
+      "iptv with casting",
+      "airplay iptv",
+      "screen mirror iptv",
+      "tivimate chromecast",
+      "cast iptv to tv",
+      "chromecast tivimate"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "lg-tv-hardware-decoding",
+    "deviceId": "lg-tv",
+    "featureId": "hardware-decoding",
+    "deviceName": "LG Smart TV",
+    "deviceShortName": "LG TV",
+    "featureName": "Hardware Decoding",
+    "featureShortName": "HW Decode",
+    "isSupported": false,
+    "title": "Can You Use HW Decode on LG TV?",
+    "metaTitle": "HW Decode on LG TV Guide 2025 | IPTV Tutorial",
+    "description": "Discover if LG Smart TV supports Hardware Decoding and what alternatives exist.",
+    "content": {
+      "intro": "LG Smart TV has limited support for Hardware Decoding. Let's explore what options are available.",
+      "recommendedPlayers": [],
+      "benefits": [
+        "Smoother 4K playback",
+        "Lower CPU usage",
+        "Better battery life on mobile",
+        "Reduced buffering",
+        "Cooler device operation"
+      ],
+      "requirements": [
+        "LG Smart TV",
+        "Device with hardware video decoder",
+        "Compatible IPTV player",
+        "Hardware-compatible video codec"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Consider Alternative Devices",
+          "description": "Devices that support Hardware Decoding include: firestick, fire-tv-cube, apple-tv, android-tv, chromecast."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use HW Decode on LG TV?",
+          "answer": "LG TV has limited support for Hardware Decoding. Consider using firestick instead."
+        },
+        {
+          "question": "What's the best app for HW Decode on LG TV?",
+          "answer": "Check our player comparison guides to find the best option for your needs."
+        }
+      ],
+      "conclusion": "While LG TV doesn't fully support Hardware Decoding, there are alternatives worth considering."
+    },
+    "relatedGuides": [
+      "firestick-hardware-decoding",
+      "fire-tv-cube-hardware-decoding",
+      "apple-tv-hardware-decoding",
+      "android-tv-hardware-decoding",
+      "chromecast-hardware-decoding"
+    ],
+    "tags": [
+      "lg-tv",
+      "hardware-decoding",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "hardware-decoding lg-tv",
+      "HW Decode on LG TV",
+      "LG TV HW Decode",
+      "hardware decoding iptv",
+      "hw decode",
+      "hardware acceleration",
+      "video decoder",
+      "4k playback"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -12361,7 +15627,7 @@
       "epg setup",
       "xmltv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -12438,7 +15704,7 @@
       "iptv pvr",
       "pause live tv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "advanced"
   },
   {
@@ -12515,7 +15781,7 @@
       "pip iptv",
       "split screen iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -12589,7 +15855,7 @@
       "pin lock iptv",
       "child safe iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -12681,7 +15947,7 @@
       "favorite channels",
       "custom channel list"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -12757,7 +16023,7 @@
       "catch up tv",
       "rewind iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -12834,7 +16100,7 @@
       "iptv movies",
       "iptv series"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -12927,7 +16193,7 @@
       "iptv playlist",
       "manage playlists"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -13003,7 +16269,7 @@
       "hide channels",
       "channel groups"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -13080,7 +16346,7 @@
       "srt subtitles",
       "subtitle support"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -13155,7 +16421,7 @@
       "mx player iptv",
       "video player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -13230,7 +16496,167 @@
       "update channels",
       "auto refresh epg"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "sony-tv-casting",
+    "deviceId": "sony-tv",
+    "featureId": "casting",
+    "deviceName": "Sony Smart TV",
+    "deviceShortName": "Sony TV",
+    "featureName": "Chromecast & Casting",
+    "featureShortName": "Casting",
+    "isSupported": false,
+    "title": "Can You Use Casting on Sony TV?",
+    "metaTitle": "Casting on Sony TV Guide 2025 | IPTV Tutorial",
+    "description": "Discover if Sony Smart TV supports Chromecast & Casting and what alternatives exist.",
+    "content": {
+      "intro": "Sony Smart TV has limited support for Chromecast & Casting. Let's explore what options are available.",
+      "recommendedPlayers": [
+        "iptv-smarters",
+        "vlc"
+      ],
+      "benefits": [
+        "Watch IPTV on any TV with Chromecast",
+        "No app installation needed on TV",
+        "Control playback from your phone",
+        "Multi-room streaming",
+        "Use your TV's speakers"
+      ],
+      "requirements": [
+        "Sony Smart TV",
+        "Chromecast, Apple TV, or AirPlay-compatible TV",
+        "IPTV app with casting support",
+        "Same Wi-Fi network for all devices",
+        "One of: iptv-smarters, vlc"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Consider Alternative Devices",
+          "description": "Devices that support Chromecast & Casting include: ios, android-tv, chromecast, apple-tv, windows."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use Casting on Sony TV?",
+          "answer": "Sony TV has limited support for Chromecast & Casting. Consider using ios instead."
+        },
+        {
+          "question": "What's the best app for Casting on Sony TV?",
+          "answer": "For Casting on Sony TV, we recommend iptv-smarters. It has excellent Casting support."
+        }
+      ],
+      "conclusion": "While Sony TV doesn't fully support Chromecast & Casting, there are alternatives worth considering."
+    },
+    "relatedGuides": [
+      "firestick-casting",
+      "fire-tv-cube-casting",
+      "apple-tv-casting",
+      "android-tv-casting",
+      "chromecast-casting"
+    ],
+    "tags": [
+      "sony-tv",
+      "casting",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "casting sony-tv",
+      "Casting on Sony TV",
+      "Sony TV Casting",
+      "chromecast iptv",
+      "cast iptv",
+      "iptv with casting",
+      "airplay iptv",
+      "screen mirror iptv",
+      "tivimate chromecast",
+      "cast iptv to tv",
+      "chromecast tivimate"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "sony-tv-hardware-decoding",
+    "deviceId": "sony-tv",
+    "featureId": "hardware-decoding",
+    "deviceName": "Sony Smart TV",
+    "deviceShortName": "Sony TV",
+    "featureName": "Hardware Decoding",
+    "featureShortName": "HW Decode",
+    "isSupported": false,
+    "title": "Can You Use HW Decode on Sony TV?",
+    "metaTitle": "HW Decode on Sony TV Guide 2025 | IPTV Tutorial",
+    "description": "Discover if Sony Smart TV supports Hardware Decoding and what alternatives exist.",
+    "content": {
+      "intro": "Sony Smart TV has limited support for Hardware Decoding. Let's explore what options are available.",
+      "recommendedPlayers": [
+        "tivimate",
+        "kodi",
+        "vlc"
+      ],
+      "benefits": [
+        "Smoother 4K playback",
+        "Lower CPU usage",
+        "Better battery life on mobile",
+        "Reduced buffering",
+        "Cooler device operation"
+      ],
+      "requirements": [
+        "Sony Smart TV",
+        "Device with hardware video decoder",
+        "Compatible IPTV player",
+        "Hardware-compatible video codec",
+        "One of: tivimate, kodi, vlc"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Consider Alternative Devices",
+          "description": "Devices that support Hardware Decoding include: firestick, fire-tv-cube, apple-tv, android-tv, chromecast."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use HW Decode on Sony TV?",
+          "answer": "Sony TV has limited support for Hardware Decoding. Consider using firestick instead."
+        },
+        {
+          "question": "What's the best app for HW Decode on Sony TV?",
+          "answer": "For HW Decode on Sony TV, we recommend tivimate. It has excellent HW Decode support."
+        }
+      ],
+      "conclusion": "While Sony TV doesn't fully support Hardware Decoding, there are alternatives worth considering."
+    },
+    "relatedGuides": [
+      "firestick-hardware-decoding",
+      "fire-tv-cube-hardware-decoding",
+      "apple-tv-hardware-decoding",
+      "android-tv-hardware-decoding",
+      "chromecast-hardware-decoding"
+    ],
+    "tags": [
+      "sony-tv",
+      "hardware-decoding",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "hardware-decoding sony-tv",
+      "HW Decode on Sony TV",
+      "Sony TV HW Decode",
+      "hardware decoding iptv",
+      "hw decode",
+      "hardware acceleration",
+      "video decoder",
+      "4k playback"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -13303,7 +16729,7 @@
       "epg setup",
       "xmltv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -13376,7 +16802,7 @@
       "iptv pvr",
       "pause live tv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "advanced"
   },
   {
@@ -13448,7 +16874,7 @@
       "pip iptv",
       "split screen iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -13518,7 +16944,7 @@
       "pin lock iptv",
       "child safe iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -13588,7 +17014,7 @@
       "favorite channels",
       "custom channel list"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -13660,7 +17086,7 @@
       "catch up tv",
       "rewind iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -13732,7 +17158,7 @@
       "iptv movies",
       "iptv series"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -13803,7 +17229,7 @@
       "iptv playlist",
       "manage playlists"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -13873,7 +17299,7 @@
       "hide channels",
       "channel groups"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -13945,7 +17371,7 @@
       "srt subtitles",
       "subtitle support"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -14016,7 +17442,7 @@
       "mx player iptv",
       "video player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -14087,7 +17513,158 @@
       "update channels",
       "auto refresh epg"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "roku-casting",
+    "deviceId": "roku",
+    "featureId": "casting",
+    "deviceName": "Roku",
+    "deviceShortName": "Roku",
+    "featureName": "Chromecast & Casting",
+    "featureShortName": "Casting",
+    "isSupported": false,
+    "title": "Can You Use Casting on Roku?",
+    "metaTitle": "Casting on Roku Guide 2025 | IPTV Tutorial",
+    "description": "Discover if Roku supports Chromecast & Casting and what alternatives exist.",
+    "content": {
+      "intro": "Roku has limited support for Chromecast & Casting. Let's explore what options are available.",
+      "recommendedPlayers": [],
+      "benefits": [
+        "Watch IPTV on any TV with Chromecast",
+        "No app installation needed on TV",
+        "Control playback from your phone",
+        "Multi-room streaming",
+        "Use your TV's speakers"
+      ],
+      "requirements": [
+        "Roku",
+        "Chromecast, Apple TV, or AirPlay-compatible TV",
+        "IPTV app with casting support",
+        "Same Wi-Fi network for all devices"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Consider Alternative Devices",
+          "description": "Devices that support Chromecast & Casting include: ios, android-tv, chromecast, apple-tv, windows."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use Casting on Roku?",
+          "answer": "Roku has limited support for Chromecast & Casting. Consider using ios instead."
+        },
+        {
+          "question": "What's the best app for Casting on Roku?",
+          "answer": "Check our player comparison guides to find the best option for your needs."
+        }
+      ],
+      "conclusion": "While Roku doesn't fully support Chromecast & Casting, there are alternatives worth considering."
+    },
+    "relatedGuides": [
+      "firestick-casting",
+      "fire-tv-cube-casting",
+      "apple-tv-casting",
+      "android-tv-casting",
+      "chromecast-casting"
+    ],
+    "tags": [
+      "roku",
+      "casting",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "casting roku",
+      "Casting on Roku",
+      "Roku Casting",
+      "chromecast iptv",
+      "cast iptv",
+      "iptv with casting",
+      "airplay iptv",
+      "screen mirror iptv",
+      "tivimate chromecast",
+      "cast iptv to tv",
+      "chromecast tivimate"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "roku-hardware-decoding",
+    "deviceId": "roku",
+    "featureId": "hardware-decoding",
+    "deviceName": "Roku",
+    "deviceShortName": "Roku",
+    "featureName": "Hardware Decoding",
+    "featureShortName": "HW Decode",
+    "isSupported": false,
+    "title": "Can You Use HW Decode on Roku?",
+    "metaTitle": "HW Decode on Roku Guide 2025 | IPTV Tutorial",
+    "description": "Discover if Roku supports Hardware Decoding and what alternatives exist.",
+    "content": {
+      "intro": "Roku has limited support for Hardware Decoding. Let's explore what options are available.",
+      "recommendedPlayers": [],
+      "benefits": [
+        "Smoother 4K playback",
+        "Lower CPU usage",
+        "Better battery life on mobile",
+        "Reduced buffering",
+        "Cooler device operation"
+      ],
+      "requirements": [
+        "Roku",
+        "Device with hardware video decoder",
+        "Compatible IPTV player",
+        "Hardware-compatible video codec"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Consider Alternative Devices",
+          "description": "Devices that support Hardware Decoding include: firestick, fire-tv-cube, apple-tv, android-tv, chromecast."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use HW Decode on Roku?",
+          "answer": "Roku has limited support for Hardware Decoding. Consider using firestick instead."
+        },
+        {
+          "question": "What's the best app for HW Decode on Roku?",
+          "answer": "Check our player comparison guides to find the best option for your needs."
+        }
+      ],
+      "conclusion": "While Roku doesn't fully support Hardware Decoding, there are alternatives worth considering."
+    },
+    "relatedGuides": [
+      "firestick-hardware-decoding",
+      "fire-tv-cube-hardware-decoding",
+      "apple-tv-hardware-decoding",
+      "android-tv-hardware-decoding",
+      "chromecast-hardware-decoding"
+    ],
+    "tags": [
+      "roku",
+      "hardware-decoding",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "hardware-decoding roku",
+      "HW Decode on Roku",
+      "Roku HW Decode",
+      "hardware decoding iptv",
+      "hw decode",
+      "hardware acceleration",
+      "video decoder",
+      "4k playback"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -14160,7 +17737,7 @@
       "epg setup",
       "xmltv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -14233,7 +17810,7 @@
       "iptv pvr",
       "pause live tv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "advanced"
   },
   {
@@ -14305,7 +17882,7 @@
       "pip iptv",
       "split screen iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -14375,7 +17952,7 @@
       "pin lock iptv",
       "child safe iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -14445,7 +18022,7 @@
       "favorite channels",
       "custom channel list"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -14517,7 +18094,7 @@
       "catch up tv",
       "rewind iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -14589,7 +18166,7 @@
       "iptv movies",
       "iptv series"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -14660,7 +18237,7 @@
       "iptv playlist",
       "manage playlists"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -14730,7 +18307,7 @@
       "hide channels",
       "channel groups"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.664Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -14802,7 +18379,7 @@
       "srt subtitles",
       "subtitle support"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.665Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   },
   {
@@ -14873,7 +18450,7 @@
       "mx player iptv",
       "video player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.665Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "medium"
   },
   {
@@ -14944,7 +18521,158 @@
       "update channels",
       "auto refresh epg"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.665Z",
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "mag-box-casting",
+    "deviceId": "mag-box",
+    "featureId": "casting",
+    "deviceName": "MAG Box",
+    "deviceShortName": "MAG Box",
+    "featureName": "Chromecast & Casting",
+    "featureShortName": "Casting",
+    "isSupported": false,
+    "title": "Can You Use Casting on MAG Box?",
+    "metaTitle": "Casting on MAG Box Guide 2025 | IPTV Tutorial",
+    "description": "Discover if MAG Box supports Chromecast & Casting and what alternatives exist.",
+    "content": {
+      "intro": "MAG Box has limited support for Chromecast & Casting. Let's explore what options are available.",
+      "recommendedPlayers": [],
+      "benefits": [
+        "Watch IPTV on any TV with Chromecast",
+        "No app installation needed on TV",
+        "Control playback from your phone",
+        "Multi-room streaming",
+        "Use your TV's speakers"
+      ],
+      "requirements": [
+        "MAG Box",
+        "Chromecast, Apple TV, or AirPlay-compatible TV",
+        "IPTV app with casting support",
+        "Same Wi-Fi network for all devices"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Consider Alternative Devices",
+          "description": "Devices that support Chromecast & Casting include: ios, android-tv, chromecast, apple-tv, windows."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use Casting on MAG Box?",
+          "answer": "MAG Box has limited support for Chromecast & Casting. Consider using ios instead."
+        },
+        {
+          "question": "What's the best app for Casting on MAG Box?",
+          "answer": "Check our player comparison guides to find the best option for your needs."
+        }
+      ],
+      "conclusion": "While MAG Box doesn't fully support Chromecast & Casting, there are alternatives worth considering."
+    },
+    "relatedGuides": [
+      "firestick-casting",
+      "fire-tv-cube-casting",
+      "apple-tv-casting",
+      "android-tv-casting",
+      "chromecast-casting"
+    ],
+    "tags": [
+      "mag-box",
+      "casting",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "casting mag-box",
+      "Casting on MAG Box",
+      "MAG Box Casting",
+      "chromecast iptv",
+      "cast iptv",
+      "iptv with casting",
+      "airplay iptv",
+      "screen mirror iptv",
+      "tivimate chromecast",
+      "cast iptv to tv",
+      "chromecast tivimate"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
+    "difficulty": "easy"
+  },
+  {
+    "slug": "mag-box-hardware-decoding",
+    "deviceId": "mag-box",
+    "featureId": "hardware-decoding",
+    "deviceName": "MAG Box",
+    "deviceShortName": "MAG Box",
+    "featureName": "Hardware Decoding",
+    "featureShortName": "HW Decode",
+    "isSupported": false,
+    "title": "Can You Use HW Decode on MAG Box?",
+    "metaTitle": "HW Decode on MAG Box Guide 2025 | IPTV Tutorial",
+    "description": "Discover if MAG Box supports Hardware Decoding and what alternatives exist.",
+    "content": {
+      "intro": "MAG Box has limited support for Hardware Decoding. Let's explore what options are available.",
+      "recommendedPlayers": [],
+      "benefits": [
+        "Smoother 4K playback",
+        "Lower CPU usage",
+        "Better battery life on mobile",
+        "Reduced buffering",
+        "Cooler device operation"
+      ],
+      "requirements": [
+        "MAG Box",
+        "Device with hardware video decoder",
+        "Compatible IPTV player",
+        "Hardware-compatible video codec"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Consider Alternative Devices",
+          "description": "Devices that support Hardware Decoding include: firestick, fire-tv-cube, apple-tv, android-tv, chromecast."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use HW Decode on MAG Box?",
+          "answer": "MAG Box has limited support for Hardware Decoding. Consider using firestick instead."
+        },
+        {
+          "question": "What's the best app for HW Decode on MAG Box?",
+          "answer": "Check our player comparison guides to find the best option for your needs."
+        }
+      ],
+      "conclusion": "While MAG Box doesn't fully support Hardware Decoding, there are alternatives worth considering."
+    },
+    "relatedGuides": [
+      "firestick-hardware-decoding",
+      "fire-tv-cube-hardware-decoding",
+      "apple-tv-hardware-decoding",
+      "android-tv-hardware-decoding",
+      "chromecast-hardware-decoding"
+    ],
+    "tags": [
+      "mag-box",
+      "hardware-decoding",
+      "guide",
+      "iptv",
+      "how-to"
+    ],
+    "keywords": [
+      "hardware-decoding mag-box",
+      "HW Decode on MAG Box",
+      "MAG Box HW Decode",
+      "hardware decoding iptv",
+      "hw decode",
+      "hardware acceleration",
+      "video decoder",
+      "4k playback"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.120Z",
     "difficulty": "easy"
   }
 ]

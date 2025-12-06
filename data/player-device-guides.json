@@ -1,125 +1,127 @@
 [
   {
-    "slug": "jamrun-setup-ios",
+    "slug": "jamrun-setup-apple-tv",
     "playerId": "jamrun",
-    "deviceId": "ios",
+    "deviceId": "apple-tv",
     "playerName": "JamRun IPTV",
-    "deviceName": "iPhone/iPad",
-    "deviceShortName": "iPhone/iPad",
-    "title": "How to Setup JamRun IPTV on iPhone and iPad",
-    "metaTitle": "JamRun IPTV on iPhone & iPad - Setup Guide 2025 | Best Free IPTV App",
-    "description": "Complete guide to install and configure JamRun IPTV on iPhone and iPad. The best free IPTV player for iOS with step-by-step instructions for 2025.",
+    "deviceName": "Apple TV 4K",
+    "deviceShortName": "Apple TV",
+    "title": "How to Setup JamRun IPTV on Apple TV",
+    "metaTitle": "JamRun IPTV on Apple TV - Setup Guide 2025 | Step-by-Step",
+    "description": "Complete guide to install and configure JamRun IPTV on Apple TV 4K. Step-by-step instructions for 2025 with troubleshooting tips.",
     "content": {
-      "intro": "JamRun IPTV is the best free IPTV player for iPhone and iPad, featuring a stunning glass-styled interface that feels perfectly at home on iOS. Unlike other IPTV apps that were designed for Android and ported to iOS, JamRun was built from the ground up for Apple devices. This guide will walk you through the simple setup process to get you streaming in minutes.",
+      "intro": "Looking to set up JamRun IPTV on your Apple TV 4K? This comprehensive guide walks you through the complete installation process, from downloading the app to configuring your first IPTV playlist. JamRun IPTV is premium apple-native iptv player with stunning glass design, and it works great on Apple TV.",
       "requirements": [
-        "iPhone or iPad running iOS 15.0 or later",
-        "Active internet connection (Wi-Fi or cellular)",
-        "IPTV subscription with M3U playlist URL or Xtream Codes credentials",
+        "Apple TV 4K device",
+        "Active internet connection",
+        "IPTV subscription with M3U or Xtream credentials",
         "EPG URL (optional, for TV guide)"
       ],
       "steps": [
         {
           "stepNumber": 1,
-          "title": "Download JamRun IPTV from the App Store",
-          "description": "Open the App Store on your iPhone or iPad and search for \"JamRun IPTV\". Tap \"Get\" to download and install the app. It's completely free with no in-app purchases.",
-          "tips": [
-            "JamRun IPTV is 100% free - no subscriptions or hidden costs",
-            "The app is lightweight and installs quickly"
-          ]
+          "title": "Open App Store",
+          "description": "On your Apple TV, open the App Store application."
         },
         {
           "stepNumber": 2,
-          "title": "Launch JamRun IPTV",
-          "description": "Open JamRun IPTV from your home screen. You'll be greeted by the beautiful glass-styled interface. No account creation is required - you can start adding your playlist immediately.",
-          "tips": [
-            "No registration or account needed",
-            "Your data stays on your device - JamRun collects zero personal information"
-          ]
+          "title": "Search for JamRun IPTV",
+          "description": "Tap the search tab and type \"JamRun IPTV\". Select the correct app from the results."
         },
         {
           "stepNumber": 3,
-          "title": "Add Your IPTV Playlist",
-          "description": "Tap the '+' button or go to Settings to add your playlist. JamRun supports both M3U playlist URLs and Xtream Codes credentials. Simply paste your URL or enter your Xtream login details.",
-          "tips": [
-            "M3U and Xtream Codes formats are both fully supported",
-            "You can add multiple playlists if needed"
-          ]
+          "title": "Download and Install",
+          "description": "Tap \"Get\" to download JamRun IPTV. You may need to authenticate with Face ID, Touch ID, or your Apple ID password."
         },
         {
           "stepNumber": 4,
-          "title": "Configure EPG (TV Guide)",
-          "description": "In the settings, add your EPG URL to enable the TV guide feature. JamRun will automatically fetch and display program information for your channels.",
+          "title": "Add Your IPTV Playlist",
+          "description": "Open JamRun IPTV and navigate to the playlist or settings section. You can add your M3U playlist URL or Xtream Codes credentials here.",
           "tips": [
-            "Your IPTV provider should supply the EPG URL",
-            "EPG data updates automatically to keep your guide current"
+            "Have your M3U URL or Xtream login details ready",
+            "Some players support both M3U and Xtream formats"
           ]
         },
         {
           "stepNumber": 5,
-          "title": "Start Watching",
-          "description": "Browse through your channels using the intuitive category system. Tap any channel to start watching instantly. Use favorites to quickly access your most-watched channels.",
+          "title": "Configure EPG (TV Guide)",
+          "description": "In JamRun IPTV settings, find the EPG section and add your EPG URL. This will show program schedules for your channels.",
           "tips": [
-            "Swipe gestures make navigation fluid and fast",
-            "Add channels to favorites for one-tap access"
+            "EPG URL is usually provided by your IPTV service",
+            "Allow time for EPG data to load (can take several minutes)"
+          ]
+        },
+        {
+          "stepNumber": 6,
+          "title": "Start Watching",
+          "description": "Once your playlist is loaded, browse through the channel categories and start watching your favorite content on JamRun IPTV!",
+          "tips": [
+            "Mark frequently watched channels as favorites",
+            "Explore the settings for more customization options"
           ]
         }
       ],
       "troubleshooting": [
-        "If channels don't load, verify your M3U URL or Xtream credentials are correct",
-        "For playback issues, check your internet connection speed",
-        "If the app crashes, try reinstalling from the App Store",
-        "For buffering, switch to a stronger Wi-Fi connection or use cellular data"
+        "If the app won't install, check your device storage space",
+        "For playback issues, try clearing the app cache",
+        "If channels don't load, verify your playlist URL is correct",
+        "For buffering, use ethernet instead of Wi-Fi when possible"
       ],
       "faqs": [
         {
-          "question": "Is JamRun IPTV really free on iPhone?",
-          "answer": "Yes, JamRun IPTV is completely free with no ads, no in-app purchases, and no subscription required. It's the only premium-quality IPTV player for iOS that's 100% free."
+          "question": "Is JamRun IPTV free on Apple TV?",
+          "answer": "Yes, JamRun IPTV is completely free to use on Apple TV."
         },
         {
-          "question": "Does JamRun IPTV support EPG on iPhone?",
-          "answer": "Yes, JamRun IPTV fully supports EPG (Electronic Program Guide) on iPhone and iPad. Simply add your EPG URL in settings to see program schedules."
+          "question": "Does JamRun IPTV support EPG on Apple TV?",
+          "answer": "Yes, JamRun IPTV fully supports EPG (Electronic Program Guide) on Apple TV. You can add your EPG URL in the settings."
         },
         {
-          "question": "Is JamRun IPTV safe for my privacy?",
-          "answer": "Absolutely. JamRun IPTV collects zero personal data. Your playlists and viewing habits stay entirely on your device. It's the most privacy-respecting IPTV player available."
+          "question": "Can I record with JamRun IPTV on Apple TV?",
+          "answer": "No, JamRun IPTV does not currently support recording on Apple TV."
         },
         {
-          "question": "Can I use JamRun IPTV on both iPhone and iPad?",
-          "answer": "Yes, JamRun IPTV is a universal app optimized for both iPhone and iPad. The interface adapts beautifully to each screen size."
+          "question": "Why is JamRun IPTV buffering on my Apple TV?",
+          "answer": "Buffering on Apple TV is usually caused by slow internet, server issues, or ISP throttling. Try using ethernet instead of Wi-Fi, or use a VPN to bypass throttling."
         }
       ],
-      "conclusion": "You've successfully set up JamRun IPTV on your iPhone or iPad! With its beautiful glass-styled design, zero data collection, and completely free pricing, JamRun offers the best IPTV experience on iOS. Enjoy your streaming!"
+      "conclusion": "You've successfully set up JamRun IPTV on your Apple TV! With 8 key features including epg, favorites, multi-screen, you're ready to enjoy your IPTV content. If you experience any issues, check our troubleshooting section or explore our other guides."
     },
     "relatedGuides": [
-      "jamrun-setup-apple-tv",
+      "jamrun-setup-ios",
       "jamrun-setup-mac",
-      "iplaytv-setup-ios",
-      "gse-smart-iptv-setup-ios",
-      "vlc-setup-ios"
+      "iptv-smarters-setup-apple-tv",
+      "kodi-setup-apple-tv",
+      "vlc-setup-apple-tv"
     ],
     "tags": [
       "jamrun",
-      "iphone",
-      "ipad",
-      "ios",
+      "apple-tv",
       "setup",
       "iptv",
       "guide",
-      "free iptv",
-      "apple"
+      "jamrun iptv",
+      "jamrun",
+      "best iptv iphone"
     ],
     "keywords": [
-      "jamrun iptv iphone",
-      "jamrun iptv ipad",
-      "JamRun IPTV on iPhone",
-      "install JamRun iOS",
-      "JamRun setup guide",
-      "iPhone iptv player",
+      "jamrun apple-tv",
+      "JamRun IPTV on Apple TV",
+      "install JamRun IPTV Apple TV",
+      "JamRun IPTV setup guide",
+      "Apple TV iptv player",
+      "jamrun iptv",
+      "jamrun",
       "best iptv iphone",
-      "free iptv ios",
-      "ipad iptv app"
+      "best iptv apple tv",
+      "iptv ios",
+      "apple tv iptv player",
+      "iphone iptv app",
+      "ipad iptv",
+      "free iptv apple",
+      "glass design iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.9,
     "playerPricing": {
       "model": "free",
@@ -127,134 +129,128 @@
     }
   },
   {
-    "slug": "jamrun-setup-apple-tv",
+    "slug": "jamrun-setup-ios",
     "playerId": "jamrun",
-    "deviceId": "apple-tv",
+    "deviceId": "ios",
     "playerName": "JamRun IPTV",
-    "deviceName": "Apple TV",
-    "deviceShortName": "Apple TV",
-    "title": "How to Setup JamRun IPTV on Apple TV",
-    "metaTitle": "JamRun IPTV on Apple TV - Setup Guide 2025 | Best Free tvOS IPTV Player",
-    "description": "Complete guide to install and configure JamRun IPTV on Apple TV. The best free IPTV player for tvOS with stunning glass design and step-by-step instructions.",
+    "deviceName": "iPhone/iPad",
+    "deviceShortName": "iOS",
+    "title": "How to Setup JamRun IPTV on iOS",
+    "metaTitle": "JamRun IPTV on iOS - Setup Guide 2025 | Step-by-Step",
+    "description": "Complete guide to install and configure JamRun IPTV on iPhone/iPad. Step-by-step instructions for 2025 with troubleshooting tips.",
     "content": {
-      "intro": "JamRun IPTV transforms your Apple TV into the ultimate IPTV streaming device. Unlike competitors that feel like Android ports, JamRun was designed specifically for tvOS with a native glass-styled interface that matches Apple TV's aesthetic perfectly. Best of all, it's completely free. This guide shows you how to set up JamRun on your Apple TV in just minutes.",
+      "intro": "Looking to set up JamRun IPTV on your iPhone/iPad? This comprehensive guide walks you through the complete installation process, from downloading the app to configuring your first IPTV playlist. JamRun IPTV is premium apple-native iptv player with stunning glass design, and it works great on iOS.",
       "requirements": [
-        "Apple TV HD or Apple TV 4K",
-        "tvOS 15.0 or later",
+        "iPhone/iPad device",
         "Active internet connection",
-        "IPTV subscription with M3U playlist URL or Xtream Codes credentials",
+        "IPTV subscription with M3U or Xtream credentials",
         "EPG URL (optional, for TV guide)"
       ],
       "steps": [
         {
           "stepNumber": 1,
-          "title": "Open the App Store on Apple TV",
-          "description": "From your Apple TV home screen, open the App Store. Use the Search tab and search for \"JamRun IPTV\".",
-          "tips": [
-            "You can also use Siri: \"Search for JamRun IPTV\"",
-            "The app is free to download"
-          ]
+          "title": "Open App Store",
+          "description": "On your iOS, open the App Store application."
         },
         {
           "stepNumber": 2,
-          "title": "Download and Install JamRun IPTV",
-          "description": "Select JamRun IPTV from the search results and click \"Get\" to download. The app will install automatically.",
-          "tips": [
-            "No payment required - JamRun is 100% free",
-            "Installation takes just seconds on Apple TV"
-          ]
+          "title": "Search for JamRun IPTV",
+          "description": "Tap the search tab and type \"JamRun IPTV\". Select the correct app from the results."
         },
         {
           "stepNumber": 3,
-          "title": "Launch and Explore the Interface",
-          "description": "Open JamRun IPTV from your Apple TV home screen. The beautiful glass-styled interface loads instantly. No account creation needed - your privacy is respected.",
-          "tips": [
-            "The interface is optimized for the Siri Remote",
-            "Navigate smoothly with swipe and click gestures"
-          ]
+          "title": "Download and Install",
+          "description": "Tap \"Get\" to download JamRun IPTV. You may need to authenticate with Face ID, Touch ID, or your Apple ID password."
         },
         {
           "stepNumber": 4,
           "title": "Add Your IPTV Playlist",
-          "description": "Navigate to Settings and select Add Playlist. Enter your M3U URL or Xtream Codes credentials. JamRun supports both formats seamlessly.",
+          "description": "Open JamRun IPTV and navigate to the playlist or settings section. You can add your M3U playlist URL or Xtream Codes credentials here.",
           "tips": [
-            "Use the Apple TV keyboard or pair a Bluetooth keyboard for faster entry",
-            "You can also use your iPhone as a keyboard via the Remote app"
+            "Have your M3U URL or Xtream login details ready",
+            "Some players support both M3U and Xtream formats"
           ]
         },
         {
           "stepNumber": 5,
-          "title": "Configure EPG for TV Guide",
-          "description": "In Settings, add your EPG URL to enable the full TV guide experience. JamRun displays program information beautifully on the big screen.",
+          "title": "Configure EPG (TV Guide)",
+          "description": "In JamRun IPTV settings, find the EPG section and add your EPG URL. This will show program schedules for your channels.",
           "tips": [
-            "EPG makes browsing channels much easier",
-            "See what's playing now and what's coming up next"
+            "EPG URL is usually provided by your IPTV service",
+            "Allow time for EPG data to load (can take several minutes)"
           ]
         },
         {
           "stepNumber": 6,
-          "title": "Enjoy Your IPTV on the Big Screen",
-          "description": "Browse channels by category, mark favorites, and enjoy crystal-clear streaming. The Siri Remote makes navigation effortless.",
+          "title": "Start Watching",
+          "description": "Once your playlist is loaded, browse through the channel categories and start watching your favorite content on JamRun IPTV!",
           "tips": [
-            "Double-tap the TV button to switch between apps",
-            "Use favorites for quick access to preferred channels"
+            "Mark frequently watched channels as favorites",
+            "Explore the settings for more customization options"
           ]
         }
       ],
       "troubleshooting": [
-        "If the app doesn't appear in search, ensure your Apple TV is running tvOS 15.0 or later",
-        "For playlist loading issues, verify your M3U URL is correct",
-        "If channels buffer, try using ethernet instead of Wi-Fi for more stable streaming",
-        "For playback problems, check that your IPTV service supports your stream format"
+        "If the app won't install, check your device storage space",
+        "For playback issues, try clearing the app cache",
+        "If channels don't load, verify your playlist URL is correct",
+        "For buffering, use ethernet instead of Wi-Fi when possible"
       ],
       "faqs": [
         {
-          "question": "Is JamRun IPTV free on Apple TV?",
-          "answer": "Yes, JamRun IPTV is completely free on Apple TV with no ads, no subscriptions, and no in-app purchases. It offers premium features at zero cost."
+          "question": "Is JamRun IPTV free on iOS?",
+          "answer": "Yes, JamRun IPTV is completely free to use on iOS."
         },
         {
-          "question": "Why is JamRun better than other Apple TV IPTV apps?",
-          "answer": "JamRun was built specifically for Apple TV with a native tvOS interface. Other apps are often Android ports that feel out of place. JamRun's glass-styled design matches Apple TV's aesthetic perfectly."
+          "question": "Does JamRun IPTV support EPG on iOS?",
+          "answer": "Yes, JamRun IPTV fully supports EPG (Electronic Program Guide) on iOS. You can add your EPG URL in the settings."
         },
         {
-          "question": "Does JamRun IPTV support 4K on Apple TV?",
-          "answer": "Yes, JamRun IPTV supports 4K streaming on Apple TV 4K when your IPTV provider offers 4K channels. The app leverages hardware decoding for smooth playback."
+          "question": "Can I record with JamRun IPTV on iOS?",
+          "answer": "No, JamRun IPTV does not currently support recording on iOS."
         },
         {
-          "question": "Can I use JamRun with the Siri Remote?",
-          "answer": "Absolutely. JamRun is optimized for the Siri Remote with intuitive swipe navigation and quick access to all features."
+          "question": "Why is JamRun IPTV buffering on my iOS?",
+          "answer": "Buffering on iOS is usually caused by slow internet, server issues, or ISP throttling. Try using ethernet instead of Wi-Fi, or use a VPN to bypass throttling."
         }
       ],
-      "conclusion": "You've successfully set up JamRun IPTV on your Apple TV! Experience the best IPTV player designed specifically for tvOS, with its stunning glass interface, zero-data-collection privacy, and completely free access. Enjoy your streaming on the big screen!"
+      "conclusion": "You've successfully set up JamRun IPTV on your iOS! With 8 key features including epg, favorites, multi-screen, you're ready to enjoy your IPTV content. If you experience any issues, check our troubleshooting section or explore our other guides."
     },
     "relatedGuides": [
-      "jamrun-setup-ios",
+      "jamrun-setup-apple-tv",
       "jamrun-setup-mac",
-      "iplaytv-setup-apple-tv",
-      "vlc-setup-apple-tv",
-      "kodi-setup-apple-tv"
+      "iptv-smarters-setup-ios",
+      "kodi-setup-ios",
+      "vlc-setup-ios"
     ],
     "tags": [
       "jamrun",
-      "apple tv",
-      "tvos",
+      "ios",
       "setup",
       "iptv",
       "guide",
-      "free iptv",
-      "apple"
+      "jamrun iptv",
+      "jamrun",
+      "best iptv iphone"
     ],
     "keywords": [
-      "jamrun iptv apple tv",
-      "JamRun IPTV on Apple TV",
-      "install JamRun tvOS",
-      "JamRun setup guide",
-      "Apple TV iptv player",
+      "jamrun ios",
+      "JamRun IPTV on iOS",
+      "install JamRun IPTV iOS",
+      "JamRun IPTV setup guide",
+      "iOS iptv player",
+      "jamrun iptv",
+      "jamrun",
+      "best iptv iphone",
       "best iptv apple tv",
-      "free iptv apple tv",
-      "tvos iptv app"
+      "iptv ios",
+      "apple tv iptv player",
+      "iphone iptv app",
+      "ipad iptv",
+      "free iptv apple",
+      "glass design iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.9,
     "playerPricing": {
       "model": "free",
@@ -269,127 +265,124 @@
     "deviceName": "Mac",
     "deviceShortName": "Mac",
     "title": "How to Setup JamRun IPTV on Mac",
-    "metaTitle": "JamRun IPTV on Mac - Setup Guide 2025 | Best Free macOS IPTV Player",
-    "description": "Complete guide to install and configure JamRun IPTV on Mac. The best free IPTV player for macOS with native Apple Silicon support and step-by-step instructions.",
+    "metaTitle": "JamRun IPTV on Mac - Setup Guide 2025 | Step-by-Step",
+    "description": "Complete guide to install and configure JamRun IPTV on Mac. Step-by-step instructions for 2025 with troubleshooting tips.",
     "content": {
-      "intro": "JamRun IPTV brings premium IPTV streaming to your Mac with a beautiful native interface. As a universal Apple app, JamRun runs natively on both Intel and Apple Silicon Macs, delivering excellent performance. With its glass-styled design and zero-data-collection privacy policy, JamRun is the ideal choice for Mac users who want the best IPTV experience.",
+      "intro": "Looking to set up JamRun IPTV on your Mac? This comprehensive guide walks you through the complete installation process, from downloading the app to configuring your first IPTV playlist. JamRun IPTV is premium apple-native iptv player with stunning glass design, and it works great on Mac.",
       "requirements": [
-        "Mac running macOS 12.0 Monterey or later",
-        "Apple Silicon (M1/M2/M3/M4) or Intel Mac",
+        "Mac device",
         "Active internet connection",
-        "IPTV subscription with M3U playlist URL or Xtream Codes credentials",
+        "IPTV subscription with M3U or Xtream credentials",
         "EPG URL (optional, for TV guide)"
       ],
       "steps": [
         {
           "stepNumber": 1,
-          "title": "Open the Mac App Store",
-          "description": "Click the App Store icon in your Dock or find it in Applications. Search for \"JamRun IPTV\" in the search bar.",
+          "title": "Download the Installer",
+          "description": "Visit the official JamRun IPTV website and download the Mac installer.",
           "tips": [
-            "JamRun IPTV is a universal app that runs natively on Apple Silicon",
-            "The app is completely free to download"
+            "Always download from official sources to avoid malware"
           ]
         },
         {
           "stepNumber": 2,
-          "title": "Download and Install",
-          "description": "Click \"Get\" and then \"Install\" to download JamRun IPTV. You may need to authenticate with your Apple ID or Touch ID.",
-          "tips": [
-            "No payment required - JamRun is free",
-            "The app is lightweight and installs quickly"
-          ]
+          "title": "Run the Installer",
+          "description": "Open the downloaded file and follow the installation wizard to install JamRun IPTV."
         },
         {
           "stepNumber": 3,
-          "title": "Launch JamRun IPTV",
-          "description": "Open JamRun from your Applications folder or Launchpad. The app opens with its elegant glass-styled interface. No account or registration needed.",
-          "tips": [
-            "Add JamRun to your Dock for quick access",
-            "Your privacy is protected - no data collection"
-          ]
+          "title": "Launch the Application",
+          "description": "Find JamRun IPTV in your applications folder or start menu and launch it."
         },
         {
           "stepNumber": 4,
           "title": "Add Your IPTV Playlist",
-          "description": "Go to Settings and add your playlist. Paste your M3U URL or enter your Xtream Codes credentials. JamRun supports both formats.",
+          "description": "Open JamRun IPTV and navigate to the playlist or settings section. You can add your M3U playlist URL or Xtream Codes credentials here.",
           "tips": [
-            "Keyboard shortcuts make navigation fast on Mac",
-            "Multiple playlists can be added and managed"
+            "Have your M3U URL or Xtream login details ready",
+            "Some players support both M3U and Xtream formats"
           ]
         },
         {
           "stepNumber": 5,
-          "title": "Set Up EPG (TV Guide)",
-          "description": "In Settings, add your EPG URL to enable the TV guide. This shows program schedules and makes browsing channels easier.",
+          "title": "Configure EPG (TV Guide)",
+          "description": "In JamRun IPTV settings, find the EPG section and add your EPG URL. This will show program schedules for your channels.",
           "tips": [
-            "EPG information updates automatically",
-            "See current and upcoming programs at a glance"
+            "EPG URL is usually provided by your IPTV service",
+            "Allow time for EPG data to load (can take several minutes)"
           ]
         },
         {
           "stepNumber": 6,
-          "title": "Start Streaming",
-          "description": "Browse your channels, organize favorites, and enjoy IPTV on your Mac. The interface works great with both trackpad and mouse.",
+          "title": "Start Watching",
+          "description": "Once your playlist is loaded, browse through the channel categories and start watching your favorite content on JamRun IPTV!",
           "tips": [
-            "Use keyboard shortcuts for efficient navigation",
-            "Picture-in-Picture lets you watch while working"
+            "Mark frequently watched channels as favorites",
+            "Explore the settings for more customization options"
           ]
         }
       ],
       "troubleshooting": [
-        "If the app doesn't install, check that your Mac meets the minimum macOS 12.0 requirement",
-        "For playlist issues, verify your M3U URL or Xtream credentials are correct",
-        "If channels buffer, check your internet connection or try wired ethernet",
-        "For playback issues, ensure the stream format is supported"
+        "If the app won't install, check your device storage space",
+        "For playback issues, try clearing the app cache",
+        "If channels don't load, verify your playlist URL is correct",
+        "For buffering, use ethernet instead of Wi-Fi when possible"
       ],
       "faqs": [
         {
           "question": "Is JamRun IPTV free on Mac?",
-          "answer": "Yes, JamRun IPTV is completely free on Mac with no ads, no subscriptions, and no in-app purchases."
+          "answer": "Yes, JamRun IPTV is completely free to use on Mac."
         },
         {
-          "question": "Does JamRun run natively on Apple Silicon Macs?",
-          "answer": "Yes, JamRun is a universal app that runs natively on Apple Silicon (M1, M2, M3, M4) for optimal performance and efficiency."
+          "question": "Does JamRun IPTV support EPG on Mac?",
+          "answer": "Yes, JamRun IPTV fully supports EPG (Electronic Program Guide) on Mac. You can add your EPG URL in the settings."
         },
         {
-          "question": "Can I use JamRun IPTV on my MacBook?",
-          "answer": "Yes, JamRun works on all Macs including MacBook Air, MacBook Pro, iMac, Mac Mini, Mac Studio, and Mac Pro running macOS 12.0 or later."
+          "question": "Can I record with JamRun IPTV on Mac?",
+          "answer": "No, JamRun IPTV does not currently support recording on Mac."
         },
         {
-          "question": "Does JamRun IPTV support Picture-in-Picture on Mac?",
-          "answer": "Yes, JamRun supports macOS Picture-in-Picture, allowing you to watch IPTV while working in other apps."
+          "question": "Why is JamRun IPTV buffering on my Mac?",
+          "answer": "Buffering on Mac is usually caused by slow internet, server issues, or ISP throttling. Try using ethernet instead of Wi-Fi, or use a VPN to bypass throttling."
         }
       ],
-      "conclusion": "You've successfully set up JamRun IPTV on your Mac! Enjoy the best IPTV experience on macOS with native Apple Silicon performance, beautiful design, and complete privacy. Happy streaming!"
+      "conclusion": "You've successfully set up JamRun IPTV on your Mac! With 8 key features including epg, favorites, multi-screen, you're ready to enjoy your IPTV content. If you experience any issues, check our troubleshooting section or explore our other guides."
     },
     "relatedGuides": [
-      "jamrun-setup-ios",
       "jamrun-setup-apple-tv",
-      "vlc-setup-mac",
+      "jamrun-setup-ios",
+      "iptv-smarters-setup-mac",
       "kodi-setup-mac",
-      "iptv-smarters-setup-mac"
+      "vlc-setup-mac"
     ],
     "tags": [
       "jamrun",
       "mac",
-      "macos",
       "setup",
       "iptv",
       "guide",
-      "free iptv",
-      "apple"
+      "jamrun iptv",
+      "jamrun",
+      "best iptv iphone"
     ],
     "keywords": [
-      "jamrun iptv mac",
+      "jamrun mac",
       "JamRun IPTV on Mac",
-      "install JamRun macOS",
-      "JamRun setup guide",
+      "install JamRun IPTV Mac",
+      "JamRun IPTV setup guide",
       "Mac iptv player",
-      "best iptv mac",
-      "free iptv macos",
-      "macbook iptv app"
+      "jamrun iptv",
+      "jamrun",
+      "best iptv iphone",
+      "best iptv apple tv",
+      "iptv ios",
+      "apple tv iptv player",
+      "iphone iptv app",
+      "ipad iptv",
+      "free iptv apple",
+      "glass design iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.9,
     "playerPricing": {
       "model": "free",
@@ -511,7 +504,7 @@
       "best iptv player android",
       "tivimate apk"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.8,
     "playerPricing": {
       "model": "freemium",
@@ -633,7 +626,7 @@
       "best iptv player android",
       "tivimate apk"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.8,
     "playerPricing": {
       "model": "freemium",
@@ -757,7 +750,7 @@
       "best iptv player android",
       "tivimate apk"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.8,
     "playerPricing": {
       "model": "freemium",
@@ -881,7 +874,116 @@
       "best iptv player android",
       "tivimate apk"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
+    "playerRating": 4.8,
+    "playerPricing": {
+      "model": "freemium",
+      "price": "$9.99/year"
+    }
+  },
+  {
+    "slug": "tivimate-setup-google-tv",
+    "playerId": "tivimate",
+    "deviceId": "google-tv",
+    "playerName": "TiviMate",
+    "deviceName": "Google TV",
+    "deviceShortName": "Google TV",
+    "title": "How to Setup TiviMate on Google TV",
+    "metaTitle": "TiviMate on Google TV - Setup Guide 2025 | Step-by-Step",
+    "description": "Complete guide to install and configure TiviMate on Google TV. Step-by-step instructions for 2025 with troubleshooting tips.",
+    "content": {
+      "intro": "Looking to set up TiviMate on your Google TV? This comprehensive guide walks you through the complete installation process, from downloading the app to configuring your first IPTV playlist. TiviMate is premium iptv player with epg and recording, and it works great on Google TV.",
+      "requirements": [
+        "Google TV device",
+        "Active internet connection",
+        "IPTV subscription with M3U or Xtream credentials",
+        "EPG URL (optional, for TV guide)"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Add Your IPTV Playlist",
+          "description": "Open TiviMate and navigate to the playlist or settings section. You can add your M3U playlist URL or Xtream Codes credentials here.",
+          "tips": [
+            "Have your M3U URL or Xtream login details ready",
+            "Some players support both M3U and Xtream formats"
+          ]
+        },
+        {
+          "stepNumber": 2,
+          "title": "Configure EPG (TV Guide)",
+          "description": "In TiviMate settings, find the EPG section and add your EPG URL. This will show program schedules for your channels.",
+          "tips": [
+            "EPG URL is usually provided by your IPTV service",
+            "Allow time for EPG data to load (can take several minutes)"
+          ]
+        },
+        {
+          "stepNumber": 3,
+          "title": "Start Watching",
+          "description": "Once your playlist is loaded, browse through the channel categories and start watching your favorite content on TiviMate!",
+          "tips": [
+            "Mark frequently watched channels as favorites",
+            "Explore the settings for more customization options"
+          ]
+        }
+      ],
+      "troubleshooting": [
+        "If the app won't install, check your device storage space",
+        "For playback issues, try clearing the app cache",
+        "If channels don't load, verify your playlist URL is correct",
+        "For buffering, use ethernet instead of Wi-Fi when possible"
+      ],
+      "faqs": [
+        {
+          "question": "Is TiviMate free on Google TV?",
+          "answer": "TiviMate offers a free version with basic features. Premium features require a $9.99/year purchase."
+        },
+        {
+          "question": "Does TiviMate support EPG on Google TV?",
+          "answer": "Yes, TiviMate fully supports EPG (Electronic Program Guide) on Google TV. You can add your EPG URL in the settings."
+        },
+        {
+          "question": "Can I record with TiviMate on Google TV?",
+          "answer": "Yes, TiviMate supports recording functionality on Google TV. You'll need sufficient storage space."
+        },
+        {
+          "question": "Why is TiviMate buffering on my Google TV?",
+          "answer": "Buffering on Google TV is usually caused by slow internet, server issues, or ISP throttling. Try using ethernet instead of Wi-Fi, or use a VPN to bypass throttling."
+        }
+      ],
+      "conclusion": "You've successfully set up TiviMate on your Google TV! With 7 key features including epg, recording, multi-screen, you're ready to enjoy your IPTV content. If you experience any issues, check our troubleshooting section or explore our other guides."
+    },
+    "relatedGuides": [
+      "tivimate-setup-firestick",
+      "tivimate-setup-fire-tv-cube",
+      "tivimate-setup-android-tv",
+      "iptv-smarters-setup-google-tv",
+      "kodi-setup-google-tv"
+    ],
+    "tags": [
+      "tivimate",
+      "google-tv",
+      "setup",
+      "iptv",
+      "guide",
+      "tivimate",
+      "tivimate premium",
+      "tivimate iptv"
+    ],
+    "keywords": [
+      "tivimate google-tv",
+      "TiviMate on Google TV",
+      "install TiviMate Google TV",
+      "TiviMate setup guide",
+      "Google TV iptv player",
+      "tivimate",
+      "tivimate premium",
+      "tivimate iptv",
+      "best iptv player android",
+      "tivimate apk"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.8,
     "playerPricing": {
       "model": "freemium",
@@ -1005,7 +1107,7 @@
       "best iptv player android",
       "tivimate apk"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.8,
     "playerPricing": {
       "model": "freemium",
@@ -1129,7 +1231,7 @@
       "best iptv player android",
       "tivimate apk"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.8,
     "playerPricing": {
       "model": "freemium",
@@ -1250,7 +1352,7 @@
       "smarters iptv",
       "xtream iptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.5,
     "playerPricing": {
       "model": "freemium",
@@ -1371,7 +1473,7 @@
       "smarters iptv",
       "xtream iptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.5,
     "playerPricing": {
       "model": "freemium",
@@ -1470,8 +1572,8 @@
       "iptv-smarters-setup-firestick",
       "iptv-smarters-setup-fire-tv-cube",
       "iptv-smarters-setup-android-tv",
-      "kodi-setup-apple-tv",
-      "vlc-setup-apple-tv"
+      "jamrun-setup-apple-tv",
+      "kodi-setup-apple-tv"
     ],
     "tags": [
       "iptv-smarters",
@@ -1494,7 +1596,7 @@
       "smarters iptv",
       "xtream iptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.5,
     "playerPricing": {
       "model": "freemium",
@@ -1617,7 +1719,7 @@
       "smarters iptv",
       "xtream iptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.5,
     "playerPricing": {
       "model": "freemium",
@@ -1740,7 +1842,115 @@
       "smarters iptv",
       "xtream iptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
+    "playerRating": 4.5,
+    "playerPricing": {
+      "model": "freemium",
+      "price": "$5.99 one-time"
+    }
+  },
+  {
+    "slug": "iptv-smarters-setup-google-tv",
+    "playerId": "iptv-smarters",
+    "deviceId": "google-tv",
+    "playerName": "IPTV Smarters Pro",
+    "deviceName": "Google TV",
+    "deviceShortName": "Google TV",
+    "title": "How to Setup IPTV Smarters Pro on Google TV",
+    "metaTitle": "IPTV Smarters Pro on Google TV - Setup Guide 2025 | Step-by-Step",
+    "description": "Complete guide to install and configure IPTV Smarters Pro on Google TV. Step-by-step instructions for 2025 with troubleshooting tips.",
+    "content": {
+      "intro": "Looking to set up IPTV Smarters Pro on your Google TV? This comprehensive guide walks you through the complete installation process, from downloading the app to configuring your first IPTV playlist. IPTV Smarters Pro is cross-platform iptv player with xtream support, and it works great on Google TV.",
+      "requirements": [
+        "Google TV device",
+        "Active internet connection",
+        "IPTV subscription with M3U or Xtream credentials",
+        "EPG URL (optional, for TV guide)"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Add Your IPTV Playlist",
+          "description": "Open IPTV Smarters Pro and navigate to the playlist or settings section. You can add your M3U playlist URL or Xtream Codes credentials here.",
+          "tips": [
+            "Have your M3U URL or Xtream login details ready",
+            "Some players support both M3U and Xtream formats"
+          ]
+        },
+        {
+          "stepNumber": 2,
+          "title": "Configure EPG (TV Guide)",
+          "description": "In IPTV Smarters Pro settings, find the EPG section and add your EPG URL. This will show program schedules for your channels.",
+          "tips": [
+            "EPG URL is usually provided by your IPTV service",
+            "Allow time for EPG data to load (can take several minutes)"
+          ]
+        },
+        {
+          "stepNumber": 3,
+          "title": "Start Watching",
+          "description": "Once your playlist is loaded, browse through the channel categories and start watching your favorite content on IPTV Smarters Pro!",
+          "tips": [
+            "Mark frequently watched channels as favorites",
+            "Explore the settings for more customization options"
+          ]
+        }
+      ],
+      "troubleshooting": [
+        "If the app won't install, check your device storage space",
+        "For playback issues, try clearing the app cache",
+        "If channels don't load, verify your playlist URL is correct",
+        "For buffering, use ethernet instead of Wi-Fi when possible"
+      ],
+      "faqs": [
+        {
+          "question": "Is IPTV Smarters Pro free on Google TV?",
+          "answer": "IPTV Smarters Pro offers a free version with basic features. Premium features require a $5.99 one-time purchase."
+        },
+        {
+          "question": "Does IPTV Smarters Pro support EPG on Google TV?",
+          "answer": "Yes, IPTV Smarters Pro fully supports EPG (Electronic Program Guide) on Google TV. You can add your EPG URL in the settings."
+        },
+        {
+          "question": "Can I record with IPTV Smarters Pro on Google TV?",
+          "answer": "No, IPTV Smarters Pro does not currently support recording on Google TV."
+        },
+        {
+          "question": "Why is IPTV Smarters Pro buffering on my Google TV?",
+          "answer": "Buffering on Google TV is usually caused by slow internet, server issues, or ISP throttling. Try using ethernet instead of Wi-Fi, or use a VPN to bypass throttling."
+        }
+      ],
+      "conclusion": "You've successfully set up IPTV Smarters Pro on your Google TV! With 6 key features including epg, multi-screen, favorites, you're ready to enjoy your IPTV content. If you experience any issues, check our troubleshooting section or explore our other guides."
+    },
+    "relatedGuides": [
+      "iptv-smarters-setup-firestick",
+      "iptv-smarters-setup-fire-tv-cube",
+      "iptv-smarters-setup-apple-tv",
+      "tivimate-setup-google-tv",
+      "kodi-setup-google-tv"
+    ],
+    "tags": [
+      "iptv-smarters",
+      "google-tv",
+      "setup",
+      "iptv",
+      "guide",
+      "iptv smarters",
+      "iptv smarters pro",
+      "smarters iptv"
+    ],
+    "keywords": [
+      "iptv-smarters google-tv",
+      "IPTV Smarters Pro on Google TV",
+      "install IPTV Smarters Pro Google TV",
+      "IPTV Smarters Pro setup guide",
+      "Google TV iptv player",
+      "iptv smarters",
+      "iptv smarters pro",
+      "smarters iptv",
+      "xtream iptv player"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.5,
     "playerPricing": {
       "model": "freemium",
@@ -1863,7 +2073,7 @@
       "smarters iptv",
       "xtream iptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.5,
     "playerPricing": {
       "model": "freemium",
@@ -1962,8 +2172,8 @@
       "iptv-smarters-setup-firestick",
       "iptv-smarters-setup-fire-tv-cube",
       "iptv-smarters-setup-apple-tv",
-      "kodi-setup-ios",
-      "vlc-setup-ios"
+      "jamrun-setup-ios",
+      "kodi-setup-ios"
     ],
     "tags": [
       "iptv-smarters",
@@ -1986,7 +2196,7 @@
       "smarters iptv",
       "xtream iptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.5,
     "playerPricing": {
       "model": "freemium",
@@ -2112,7 +2322,7 @@
       "smarters iptv",
       "xtream iptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.5,
     "playerPricing": {
       "model": "freemium",
@@ -2214,8 +2424,8 @@
       "iptv-smarters-setup-firestick",
       "iptv-smarters-setup-fire-tv-cube",
       "iptv-smarters-setup-apple-tv",
-      "kodi-setup-mac",
-      "vlc-setup-mac"
+      "jamrun-setup-mac",
+      "kodi-setup-mac"
     ],
     "tags": [
       "iptv-smarters",
@@ -2238,7 +2448,7 @@
       "smarters iptv",
       "xtream iptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.5,
     "playerPricing": {
       "model": "freemium",
@@ -2359,7 +2569,7 @@
       "smarters iptv",
       "xtream iptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.5,
     "playerPricing": {
       "model": "freemium",
@@ -2480,7 +2690,7 @@
       "smarters iptv",
       "xtream iptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.5,
     "playerPricing": {
       "model": "freemium",
@@ -2603,7 +2813,7 @@
       "smarters iptv",
       "xtream iptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.5,
     "playerPricing": {
       "model": "freemium",
@@ -2734,7 +2944,7 @@
       "kodi streaming",
       "xbmc iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.6,
     "playerPricing": {
       "model": "free",
@@ -2865,7 +3075,7 @@
       "kodi streaming",
       "xbmc iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.6,
     "playerPricing": {
       "model": "free",
@@ -2964,8 +3174,8 @@
       "kodi-setup-firestick",
       "kodi-setup-fire-tv-cube",
       "kodi-setup-android-tv",
-      "iptv-smarters-setup-apple-tv",
-      "vlc-setup-apple-tv"
+      "jamrun-setup-apple-tv",
+      "iptv-smarters-setup-apple-tv"
     ],
     "tags": [
       "kodi",
@@ -2989,7 +3199,7 @@
       "kodi streaming",
       "xbmc iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.6,
     "playerPricing": {
       "model": "free",
@@ -3113,7 +3323,7 @@
       "kodi streaming",
       "xbmc iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.6,
     "playerPricing": {
       "model": "free",
@@ -3237,7 +3447,116 @@
       "kodi streaming",
       "xbmc iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
+    "playerRating": 4.6,
+    "playerPricing": {
+      "model": "free",
+      "price": "Free"
+    }
+  },
+  {
+    "slug": "kodi-setup-google-tv",
+    "playerId": "kodi",
+    "deviceId": "google-tv",
+    "playerName": "Kodi",
+    "deviceName": "Google TV",
+    "deviceShortName": "Google TV",
+    "title": "How to Setup Kodi on Google TV",
+    "metaTitle": "Kodi on Google TV - Setup Guide 2025 | Step-by-Step",
+    "description": "Complete guide to install and configure Kodi on Google TV. Step-by-step instructions for 2025 with troubleshooting tips.",
+    "content": {
+      "intro": "Looking to set up Kodi on your Google TV? This comprehensive guide walks you through the complete installation process, from downloading the app to configuring your first IPTV playlist. Kodi is open-source media center with iptv add-ons, and it works great on Google TV.",
+      "requirements": [
+        "Google TV device",
+        "Active internet connection",
+        "IPTV subscription with M3U or Xtream credentials",
+        "EPG URL (optional, for TV guide)"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Add Your IPTV Playlist",
+          "description": "Open Kodi and navigate to the playlist or settings section. You can add your M3U playlist URL or Xtream Codes credentials here.",
+          "tips": [
+            "Have your M3U URL or Xtream login details ready",
+            "Some players support both M3U and Xtream formats"
+          ]
+        },
+        {
+          "stepNumber": 2,
+          "title": "Configure EPG (TV Guide)",
+          "description": "In Kodi settings, find the EPG section and add your EPG URL. This will show program schedules for your channels.",
+          "tips": [
+            "EPG URL is usually provided by your IPTV service",
+            "Allow time for EPG data to load (can take several minutes)"
+          ]
+        },
+        {
+          "stepNumber": 3,
+          "title": "Start Watching",
+          "description": "Once your playlist is loaded, browse through the channel categories and start watching your favorite content on Kodi!",
+          "tips": [
+            "Mark frequently watched channels as favorites",
+            "Explore the settings for more customization options"
+          ]
+        }
+      ],
+      "troubleshooting": [
+        "If the app won't install, check your device storage space",
+        "For playback issues, try clearing the app cache",
+        "If channels don't load, verify your playlist URL is correct",
+        "For buffering, use ethernet instead of Wi-Fi when possible"
+      ],
+      "faqs": [
+        {
+          "question": "Is Kodi free on Google TV?",
+          "answer": "Yes, Kodi is completely free to use on Google TV."
+        },
+        {
+          "question": "Does Kodi support EPG on Google TV?",
+          "answer": "Yes, Kodi fully supports EPG (Electronic Program Guide) on Google TV. You can add your EPG URL in the settings."
+        },
+        {
+          "question": "Can I record with Kodi on Google TV?",
+          "answer": "Yes, Kodi supports recording functionality on Google TV. You'll need sufficient storage space."
+        },
+        {
+          "question": "Why is Kodi buffering on my Google TV?",
+          "answer": "Buffering on Google TV is usually caused by slow internet, server issues, or ISP throttling. Try using ethernet instead of Wi-Fi, or use a VPN to bypass throttling."
+        }
+      ],
+      "conclusion": "You've successfully set up Kodi on your Google TV! With 6 key features including epg, recording, external-player, you're ready to enjoy your IPTV content. If you experience any issues, check our troubleshooting section or explore our other guides."
+    },
+    "relatedGuides": [
+      "kodi-setup-firestick",
+      "kodi-setup-fire-tv-cube",
+      "kodi-setup-apple-tv",
+      "tivimate-setup-google-tv",
+      "iptv-smarters-setup-google-tv"
+    ],
+    "tags": [
+      "kodi",
+      "google-tv",
+      "setup",
+      "iptv",
+      "guide",
+      "kodi iptv",
+      "kodi pvr",
+      "kodi m3u"
+    ],
+    "keywords": [
+      "kodi google-tv",
+      "Kodi on Google TV",
+      "install Kodi Google TV",
+      "Kodi setup guide",
+      "Google TV iptv player",
+      "kodi iptv",
+      "kodi pvr",
+      "kodi m3u",
+      "kodi streaming",
+      "xbmc iptv"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.6,
     "playerPricing": {
       "model": "free",
@@ -3361,7 +3680,7 @@
       "kodi streaming",
       "xbmc iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.6,
     "playerPricing": {
       "model": "free",
@@ -3460,8 +3779,8 @@
       "kodi-setup-firestick",
       "kodi-setup-fire-tv-cube",
       "kodi-setup-apple-tv",
-      "iptv-smarters-setup-ios",
-      "vlc-setup-ios"
+      "jamrun-setup-ios",
+      "iptv-smarters-setup-ios"
     ],
     "tags": [
       "kodi",
@@ -3485,7 +3804,7 @@
       "kodi streaming",
       "xbmc iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.6,
     "playerPricing": {
       "model": "free",
@@ -3612,7 +3931,7 @@
       "kodi streaming",
       "xbmc iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.6,
     "playerPricing": {
       "model": "free",
@@ -3714,8 +4033,8 @@
       "kodi-setup-firestick",
       "kodi-setup-fire-tv-cube",
       "kodi-setup-apple-tv",
-      "iptv-smarters-setup-mac",
-      "vlc-setup-mac"
+      "jamrun-setup-mac",
+      "iptv-smarters-setup-mac"
     ],
     "tags": [
       "kodi",
@@ -3739,7 +4058,7 @@
       "kodi streaming",
       "xbmc iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.6,
     "playerPricing": {
       "model": "free",
@@ -3841,7 +4160,8 @@
       "kodi-setup-firestick",
       "kodi-setup-fire-tv-cube",
       "kodi-setup-apple-tv",
-      "vlc-setup-linux"
+      "vlc-setup-linux",
+      "stremio-setup-linux"
     ],
     "tags": [
       "kodi",
@@ -3865,7 +4185,7 @@
       "kodi streaming",
       "xbmc iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.6,
     "playerPricing": {
       "model": "free",
@@ -3989,7 +4309,7 @@
       "kodi streaming",
       "xbmc iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.6,
     "playerPricing": {
       "model": "free",
@@ -4109,7 +4429,7 @@
       "vlc streaming",
       "vlc media player iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.7,
     "playerPricing": {
       "model": "free",
@@ -4229,7 +4549,7 @@
       "vlc streaming",
       "vlc media player iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.7,
     "playerPricing": {
       "model": "free",
@@ -4318,8 +4638,8 @@
       "vlc-setup-firestick",
       "vlc-setup-fire-tv-cube",
       "vlc-setup-android-tv",
-      "iptv-smarters-setup-apple-tv",
-      "kodi-setup-apple-tv"
+      "jamrun-setup-apple-tv",
+      "iptv-smarters-setup-apple-tv"
     ],
     "tags": [
       "vlc",
@@ -4342,7 +4662,7 @@
       "vlc streaming",
       "vlc media player iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.7,
     "playerPricing": {
       "model": "free",
@@ -4455,7 +4775,7 @@
       "vlc streaming",
       "vlc media player iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.7,
     "playerPricing": {
       "model": "free",
@@ -4568,7 +4888,105 @@
       "vlc streaming",
       "vlc media player iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
+    "playerRating": 4.7,
+    "playerPricing": {
+      "model": "free",
+      "price": "Free"
+    }
+  },
+  {
+    "slug": "vlc-setup-google-tv",
+    "playerId": "vlc",
+    "deviceId": "google-tv",
+    "playerName": "VLC Media Player",
+    "deviceName": "Google TV",
+    "deviceShortName": "Google TV",
+    "title": "How to Setup VLC Media Player on Google TV",
+    "metaTitle": "VLC Media Player on Google TV - Setup Guide 2025 | Step-by-Step",
+    "description": "Complete guide to install and configure VLC Media Player on Google TV. Step-by-step instructions for 2025 with troubleshooting tips.",
+    "content": {
+      "intro": "Looking to set up VLC Media Player on your Google TV? This comprehensive guide walks you through the complete installation process, from downloading the app to configuring your first IPTV playlist. VLC Media Player is free media player with basic iptv support, and it works great on Google TV.",
+      "requirements": [
+        "Google TV device",
+        "Active internet connection",
+        "IPTV subscription with M3U or Xtream credentials"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Add Your IPTV Playlist",
+          "description": "Open VLC Media Player and navigate to the playlist or settings section. You can add your M3U playlist URL or Xtream Codes credentials here.",
+          "tips": [
+            "Have your M3U URL or Xtream login details ready",
+            "Some players support both M3U and Xtream formats"
+          ]
+        },
+        {
+          "stepNumber": 2,
+          "title": "Start Watching",
+          "description": "Once your playlist is loaded, browse through the channel categories and start watching your favorite content on VLC Media Player!",
+          "tips": [
+            "Mark frequently watched channels as favorites",
+            "Explore the settings for more customization options"
+          ]
+        }
+      ],
+      "troubleshooting": [
+        "If the app won't install, check your device storage space",
+        "For playback issues, try clearing the app cache",
+        "If channels don't load, verify your playlist URL is correct",
+        "For buffering, use ethernet instead of Wi-Fi when possible"
+      ],
+      "faqs": [
+        {
+          "question": "Is VLC Media Player free on Google TV?",
+          "answer": "Yes, VLC Media Player is completely free to use on Google TV."
+        },
+        {
+          "question": "Does VLC Media Player support EPG on Google TV?",
+          "answer": "Unfortunately, VLC Media Player does not have built-in EPG support."
+        },
+        {
+          "question": "Can I record with VLC Media Player on Google TV?",
+          "answer": "No, VLC Media Player does not currently support recording on Google TV."
+        },
+        {
+          "question": "Why is VLC Media Player buffering on my Google TV?",
+          "answer": "Buffering on Google TV is usually caused by slow internet, server issues, or ISP throttling. Try using ethernet instead of Wi-Fi, or use a VPN to bypass throttling."
+        }
+      ],
+      "conclusion": "You've successfully set up VLC Media Player on your Google TV! With 3 key features including subtitle-support, external-player, playlist-management, you're ready to enjoy your IPTV content. If you experience any issues, check our troubleshooting section or explore our other guides."
+    },
+    "relatedGuides": [
+      "vlc-setup-firestick",
+      "vlc-setup-fire-tv-cube",
+      "vlc-setup-apple-tv",
+      "tivimate-setup-google-tv",
+      "iptv-smarters-setup-google-tv"
+    ],
+    "tags": [
+      "vlc",
+      "google-tv",
+      "setup",
+      "iptv",
+      "guide",
+      "vlc iptv",
+      "vlc m3u",
+      "vlc streaming"
+    ],
+    "keywords": [
+      "vlc google-tv",
+      "VLC Media Player on Google TV",
+      "install VLC Media Player Google TV",
+      "VLC Media Player setup guide",
+      "Google TV iptv player",
+      "vlc iptv",
+      "vlc m3u",
+      "vlc streaming",
+      "vlc media player iptv"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.7,
     "playerPricing": {
       "model": "free",
@@ -4681,7 +5099,7 @@
       "vlc streaming",
       "vlc media player iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.7,
     "playerPricing": {
       "model": "free",
@@ -4770,8 +5188,8 @@
       "vlc-setup-firestick",
       "vlc-setup-fire-tv-cube",
       "vlc-setup-apple-tv",
-      "iptv-smarters-setup-ios",
-      "kodi-setup-ios"
+      "jamrun-setup-ios",
+      "iptv-smarters-setup-ios"
     ],
     "tags": [
       "vlc",
@@ -4794,7 +5212,7 @@
       "vlc streaming",
       "vlc media player iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.7,
     "playerPricing": {
       "model": "free",
@@ -4910,7 +5328,7 @@
       "vlc streaming",
       "vlc media player iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.7,
     "playerPricing": {
       "model": "free",
@@ -5002,8 +5420,8 @@
       "vlc-setup-firestick",
       "vlc-setup-fire-tv-cube",
       "vlc-setup-apple-tv",
-      "iptv-smarters-setup-mac",
-      "kodi-setup-mac"
+      "jamrun-setup-mac",
+      "iptv-smarters-setup-mac"
     ],
     "tags": [
       "vlc",
@@ -5026,7 +5444,7 @@
       "vlc streaming",
       "vlc media player iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.7,
     "playerPricing": {
       "model": "free",
@@ -5118,7 +5536,8 @@
       "vlc-setup-firestick",
       "vlc-setup-fire-tv-cube",
       "vlc-setup-apple-tv",
-      "kodi-setup-linux"
+      "kodi-setup-linux",
+      "stremio-setup-linux"
     ],
     "tags": [
       "vlc",
@@ -5141,7 +5560,7 @@
       "vlc streaming",
       "vlc media player iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.7,
     "playerPricing": {
       "model": "free",
@@ -5254,7 +5673,7 @@
       "vlc streaming",
       "vlc media player iptv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.7,
     "playerPricing": {
       "model": "free",
@@ -5375,7 +5794,7 @@
       "gse iptv ios",
       "gse smart iptv chromecast"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.3,
     "playerPricing": {
       "model": "freemium",
@@ -5496,7 +5915,7 @@
       "gse iptv ios",
       "gse smart iptv chromecast"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.3,
     "playerPricing": {
       "model": "freemium",
@@ -5595,8 +6014,8 @@
       "gse-smart-iptv-setup-firestick",
       "gse-smart-iptv-setup-fire-tv-cube",
       "gse-smart-iptv-setup-android-tv",
-      "iptv-smarters-setup-apple-tv",
-      "kodi-setup-apple-tv"
+      "jamrun-setup-apple-tv",
+      "iptv-smarters-setup-apple-tv"
     ],
     "tags": [
       "gse-smart-iptv",
@@ -5619,7 +6038,7 @@
       "gse iptv ios",
       "gse smart iptv chromecast"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.3,
     "playerPricing": {
       "model": "freemium",
@@ -5742,7 +6161,115 @@
       "gse iptv ios",
       "gse smart iptv chromecast"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
+    "playerRating": 4.3,
+    "playerPricing": {
+      "model": "freemium",
+      "price": "$5.99 one-time"
+    }
+  },
+  {
+    "slug": "gse-smart-iptv-setup-google-tv",
+    "playerId": "gse-smart-iptv",
+    "deviceId": "google-tv",
+    "playerName": "GSE Smart IPTV",
+    "deviceName": "Google TV",
+    "deviceShortName": "Google TV",
+    "title": "How to Setup GSE Smart IPTV on Google TV",
+    "metaTitle": "GSE Smart IPTV on Google TV - Setup Guide 2025 | Step-by-Step",
+    "description": "Complete guide to install and configure GSE Smart IPTV on Google TV. Step-by-step instructions for 2025 with troubleshooting tips.",
+    "content": {
+      "intro": "Looking to set up GSE Smart IPTV on your Google TV? This comprehensive guide walks you through the complete installation process, from downloading the app to configuring your first IPTV playlist. GSE Smart IPTV is feature-rich iptv player with chromecast support, and it works great on Google TV.",
+      "requirements": [
+        "Google TV device",
+        "Active internet connection",
+        "IPTV subscription with M3U or Xtream credentials",
+        "EPG URL (optional, for TV guide)"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Add Your IPTV Playlist",
+          "description": "Open GSE Smart IPTV and navigate to the playlist or settings section. You can add your M3U playlist URL or Xtream Codes credentials here.",
+          "tips": [
+            "Have your M3U URL or Xtream login details ready",
+            "Some players support both M3U and Xtream formats"
+          ]
+        },
+        {
+          "stepNumber": 2,
+          "title": "Configure EPG (TV Guide)",
+          "description": "In GSE Smart IPTV settings, find the EPG section and add your EPG URL. This will show program schedules for your channels.",
+          "tips": [
+            "EPG URL is usually provided by your IPTV service",
+            "Allow time for EPG data to load (can take several minutes)"
+          ]
+        },
+        {
+          "stepNumber": 3,
+          "title": "Start Watching",
+          "description": "Once your playlist is loaded, browse through the channel categories and start watching your favorite content on GSE Smart IPTV!",
+          "tips": [
+            "Mark frequently watched channels as favorites",
+            "Explore the settings for more customization options"
+          ]
+        }
+      ],
+      "troubleshooting": [
+        "If the app won't install, check your device storage space",
+        "For playback issues, try clearing the app cache",
+        "If channels don't load, verify your playlist URL is correct",
+        "For buffering, use ethernet instead of Wi-Fi when possible"
+      ],
+      "faqs": [
+        {
+          "question": "Is GSE Smart IPTV free on Google TV?",
+          "answer": "GSE Smart IPTV offers a free version with basic features. Premium features require a $5.99 one-time purchase."
+        },
+        {
+          "question": "Does GSE Smart IPTV support EPG on Google TV?",
+          "answer": "Yes, GSE Smart IPTV fully supports EPG (Electronic Program Guide) on Google TV. You can add your EPG URL in the settings."
+        },
+        {
+          "question": "Can I record with GSE Smart IPTV on Google TV?",
+          "answer": "No, GSE Smart IPTV does not currently support recording on Google TV."
+        },
+        {
+          "question": "Why is GSE Smart IPTV buffering on my Google TV?",
+          "answer": "Buffering on Google TV is usually caused by slow internet, server issues, or ISP throttling. Try using ethernet instead of Wi-Fi, or use a VPN to bypass throttling."
+        }
+      ],
+      "conclusion": "You've successfully set up GSE Smart IPTV on your Google TV! With 5 key features including epg, favorites, parental-controls, you're ready to enjoy your IPTV content. If you experience any issues, check our troubleshooting section or explore our other guides."
+    },
+    "relatedGuides": [
+      "gse-smart-iptv-setup-firestick",
+      "gse-smart-iptv-setup-fire-tv-cube",
+      "gse-smart-iptv-setup-apple-tv",
+      "tivimate-setup-google-tv",
+      "iptv-smarters-setup-google-tv"
+    ],
+    "tags": [
+      "gse-smart-iptv",
+      "google-tv",
+      "setup",
+      "iptv",
+      "guide",
+      "gse smart iptv",
+      "gse iptv",
+      "gse iptv ios"
+    ],
+    "keywords": [
+      "gse-smart-iptv google-tv",
+      "GSE Smart IPTV on Google TV",
+      "install GSE Smart IPTV Google TV",
+      "GSE Smart IPTV setup guide",
+      "Google TV iptv player",
+      "gse smart iptv",
+      "gse iptv",
+      "gse iptv ios",
+      "gse smart iptv chromecast"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.3,
     "playerPricing": {
       "model": "freemium",
@@ -5865,7 +6392,7 @@
       "gse iptv ios",
       "gse smart iptv chromecast"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.3,
     "playerPricing": {
       "model": "freemium",
@@ -5964,8 +6491,8 @@
       "gse-smart-iptv-setup-firestick",
       "gse-smart-iptv-setup-fire-tv-cube",
       "gse-smart-iptv-setup-apple-tv",
-      "iptv-smarters-setup-ios",
-      "kodi-setup-ios"
+      "jamrun-setup-ios",
+      "iptv-smarters-setup-ios"
     ],
     "tags": [
       "gse-smart-iptv",
@@ -5988,7 +6515,7 @@
       "gse iptv ios",
       "gse smart iptv chromecast"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.3,
     "playerPricing": {
       "model": "freemium",
@@ -6118,7 +6645,7 @@
       "perfect player apk",
       "perfect player firestick"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.4,
     "playerPricing": {
       "model": "free",
@@ -6248,7 +6775,7 @@
       "perfect player apk",
       "perfect player firestick"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.4,
     "playerPricing": {
       "model": "free",
@@ -6371,7 +6898,7 @@
       "perfect player apk",
       "perfect player firestick"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.4,
     "playerPricing": {
       "model": "free",
@@ -6494,7 +7021,115 @@
       "perfect player apk",
       "perfect player firestick"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
+    "playerRating": 4.4,
+    "playerPricing": {
+      "model": "free",
+      "price": "Free"
+    }
+  },
+  {
+    "slug": "perfect-player-setup-google-tv",
+    "playerId": "perfect-player",
+    "deviceId": "google-tv",
+    "playerName": "Perfect Player",
+    "deviceName": "Google TV",
+    "deviceShortName": "Google TV",
+    "title": "How to Setup Perfect Player on Google TV",
+    "metaTitle": "Perfect Player on Google TV - Setup Guide 2025 | Step-by-Step",
+    "description": "Complete guide to install and configure Perfect Player on Google TV. Step-by-step instructions for 2025 with troubleshooting tips.",
+    "content": {
+      "intro": "Looking to set up Perfect Player on your Google TV? This comprehensive guide walks you through the complete installation process, from downloading the app to configuring your first IPTV playlist. Perfect Player is set-top box style iptv player for android, and it works great on Google TV.",
+      "requirements": [
+        "Google TV device",
+        "Active internet connection",
+        "IPTV subscription with M3U or Xtream credentials",
+        "EPG URL (optional, for TV guide)"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Add Your IPTV Playlist",
+          "description": "Open Perfect Player and navigate to the playlist or settings section. You can add your M3U playlist URL or Xtream Codes credentials here.",
+          "tips": [
+            "Have your M3U URL or Xtream login details ready",
+            "Some players support both M3U and Xtream formats"
+          ]
+        },
+        {
+          "stepNumber": 2,
+          "title": "Configure EPG (TV Guide)",
+          "description": "In Perfect Player settings, find the EPG section and add your EPG URL. This will show program schedules for your channels.",
+          "tips": [
+            "EPG URL is usually provided by your IPTV service",
+            "Allow time for EPG data to load (can take several minutes)"
+          ]
+        },
+        {
+          "stepNumber": 3,
+          "title": "Start Watching",
+          "description": "Once your playlist is loaded, browse through the channel categories and start watching your favorite content on Perfect Player!",
+          "tips": [
+            "Mark frequently watched channels as favorites",
+            "Explore the settings for more customization options"
+          ]
+        }
+      ],
+      "troubleshooting": [
+        "If the app won't install, check your device storage space",
+        "For playback issues, try clearing the app cache",
+        "If channels don't load, verify your playlist URL is correct",
+        "For buffering, use ethernet instead of Wi-Fi when possible"
+      ],
+      "faqs": [
+        {
+          "question": "Is Perfect Player free on Google TV?",
+          "answer": "Yes, Perfect Player is completely free to use on Google TV."
+        },
+        {
+          "question": "Does Perfect Player support EPG on Google TV?",
+          "answer": "Yes, Perfect Player fully supports EPG (Electronic Program Guide) on Google TV. You can add your EPG URL in the settings."
+        },
+        {
+          "question": "Can I record with Perfect Player on Google TV?",
+          "answer": "No, Perfect Player does not currently support recording on Google TV."
+        },
+        {
+          "question": "Why is Perfect Player buffering on my Google TV?",
+          "answer": "Buffering on Google TV is usually caused by slow internet, server issues, or ISP throttling. Try using ethernet instead of Wi-Fi, or use a VPN to bypass throttling."
+        }
+      ],
+      "conclusion": "You've successfully set up Perfect Player on your Google TV! With 4 key features including epg, favorites, channel-sorting, you're ready to enjoy your IPTV content. If you experience any issues, check our troubleshooting section or explore our other guides."
+    },
+    "relatedGuides": [
+      "perfect-player-setup-firestick",
+      "perfect-player-setup-fire-tv-cube",
+      "perfect-player-setup-android-tv",
+      "tivimate-setup-google-tv",
+      "iptv-smarters-setup-google-tv"
+    ],
+    "tags": [
+      "perfect-player",
+      "google-tv",
+      "setup",
+      "iptv",
+      "guide",
+      "perfect player",
+      "perfect player iptv",
+      "perfect player apk"
+    ],
+    "keywords": [
+      "perfect-player google-tv",
+      "Perfect Player on Google TV",
+      "install Perfect Player Google TV",
+      "Perfect Player setup guide",
+      "Google TV iptv player",
+      "perfect player",
+      "perfect player iptv",
+      "perfect player apk",
+      "perfect player firestick"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.4,
     "playerPricing": {
       "model": "free",
@@ -6617,7 +7252,7 @@
       "perfect player apk",
       "perfect player firestick"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.4,
     "playerPricing": {
       "model": "free",
@@ -6740,7 +7375,7 @@
       "perfect player apk",
       "perfect player firestick"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.4,
     "playerPricing": {
       "model": "free",
@@ -6861,7 +7496,7 @@
       "ott navigator stalker",
       "ott navigator apk"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.6,
     "playerPricing": {
       "model": "freemium",
@@ -6982,7 +7617,7 @@
       "ott navigator stalker",
       "ott navigator apk"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.6,
     "playerPricing": {
       "model": "freemium",
@@ -7105,7 +7740,7 @@
       "ott navigator stalker",
       "ott navigator apk"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.031Z",
     "playerRating": 4.6,
     "playerPricing": {
       "model": "freemium",
@@ -7228,7 +7863,115 @@
       "ott navigator stalker",
       "ott navigator apk"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
+    "playerRating": 4.6,
+    "playerPricing": {
+      "model": "freemium",
+      "price": "$4.99/year"
+    }
+  },
+  {
+    "slug": "ott-navigator-setup-google-tv",
+    "playerId": "ott-navigator",
+    "deviceId": "google-tv",
+    "playerName": "OTT Navigator",
+    "deviceName": "Google TV",
+    "deviceShortName": "Google TV",
+    "title": "How to Setup OTT Navigator on Google TV",
+    "metaTitle": "OTT Navigator on Google TV - Setup Guide 2025 | Step-by-Step",
+    "description": "Complete guide to install and configure OTT Navigator on Google TV. Step-by-step instructions for 2025 with troubleshooting tips.",
+    "content": {
+      "intro": "Looking to set up OTT Navigator on your Google TV? This comprehensive guide walks you through the complete installation process, from downloading the app to configuring your first IPTV playlist. OTT Navigator is powerful iptv player with stalker and xtream support, and it works great on Google TV.",
+      "requirements": [
+        "Google TV device",
+        "Active internet connection",
+        "IPTV subscription with M3U or Xtream credentials",
+        "EPG URL (optional, for TV guide)"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Add Your IPTV Playlist",
+          "description": "Open OTT Navigator and navigate to the playlist or settings section. You can add your M3U playlist URL or Xtream Codes credentials here.",
+          "tips": [
+            "Have your M3U URL or Xtream login details ready",
+            "Some players support both M3U and Xtream formats"
+          ]
+        },
+        {
+          "stepNumber": 2,
+          "title": "Configure EPG (TV Guide)",
+          "description": "In OTT Navigator settings, find the EPG section and add your EPG URL. This will show program schedules for your channels.",
+          "tips": [
+            "EPG URL is usually provided by your IPTV service",
+            "Allow time for EPG data to load (can take several minutes)"
+          ]
+        },
+        {
+          "stepNumber": 3,
+          "title": "Start Watching",
+          "description": "Once your playlist is loaded, browse through the channel categories and start watching your favorite content on OTT Navigator!",
+          "tips": [
+            "Mark frequently watched channels as favorites",
+            "Explore the settings for more customization options"
+          ]
+        }
+      ],
+      "troubleshooting": [
+        "If the app won't install, check your device storage space",
+        "For playback issues, try clearing the app cache",
+        "If channels don't load, verify your playlist URL is correct",
+        "For buffering, use ethernet instead of Wi-Fi when possible"
+      ],
+      "faqs": [
+        {
+          "question": "Is OTT Navigator free on Google TV?",
+          "answer": "OTT Navigator offers a free version with basic features. Premium features require a $4.99/year purchase."
+        },
+        {
+          "question": "Does OTT Navigator support EPG on Google TV?",
+          "answer": "Yes, OTT Navigator fully supports EPG (Electronic Program Guide) on Google TV. You can add your EPG URL in the settings."
+        },
+        {
+          "question": "Can I record with OTT Navigator on Google TV?",
+          "answer": "Yes, OTT Navigator supports recording functionality on Google TV. You'll need sufficient storage space."
+        },
+        {
+          "question": "Why is OTT Navigator buffering on my Google TV?",
+          "answer": "Buffering on Google TV is usually caused by slow internet, server issues, or ISP throttling. Try using ethernet instead of Wi-Fi, or use a VPN to bypass throttling."
+        }
+      ],
+      "conclusion": "You've successfully set up OTT Navigator on your Google TV! With 6 key features including epg, recording, multi-screen, you're ready to enjoy your IPTV content. If you experience any issues, check our troubleshooting section or explore our other guides."
+    },
+    "relatedGuides": [
+      "ott-navigator-setup-firestick",
+      "ott-navigator-setup-fire-tv-cube",
+      "ott-navigator-setup-android-tv",
+      "tivimate-setup-google-tv",
+      "iptv-smarters-setup-google-tv"
+    ],
+    "tags": [
+      "ott-navigator",
+      "google-tv",
+      "setup",
+      "iptv",
+      "guide",
+      "ott navigator",
+      "ott navigator iptv",
+      "ott navigator stalker"
+    ],
+    "keywords": [
+      "ott-navigator google-tv",
+      "OTT Navigator on Google TV",
+      "install OTT Navigator Google TV",
+      "OTT Navigator setup guide",
+      "Google TV iptv player",
+      "ott navigator",
+      "ott navigator iptv",
+      "ott navigator stalker",
+      "ott navigator apk"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.6,
     "playerPricing": {
       "model": "freemium",
@@ -7351,7 +8094,7 @@
       "ott navigator stalker",
       "ott navigator apk"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.6,
     "playerPricing": {
       "model": "freemium",
@@ -7474,7 +8217,7 @@
       "ott navigator stalker",
       "ott navigator apk"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.6,
     "playerPricing": {
       "model": "freemium",
@@ -7595,7 +8338,7 @@
       "iptv extreme apk",
       "iptv extreme recording"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.2,
     "playerPricing": {
       "model": "freemium",
@@ -7716,7 +8459,7 @@
       "iptv extreme apk",
       "iptv extreme recording"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.2,
     "playerPricing": {
       "model": "freemium",
@@ -7839,7 +8582,7 @@
       "iptv extreme apk",
       "iptv extreme recording"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.2,
     "playerPricing": {
       "model": "freemium",
@@ -7962,7 +8705,7 @@
       "iptv extreme apk",
       "iptv extreme recording"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.2,
     "playerPricing": {
       "model": "freemium",
@@ -8085,7 +8828,7 @@
       "iptv extreme apk",
       "iptv extreme recording"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.2,
     "playerPricing": {
       "model": "freemium",
@@ -8208,7 +8951,7 @@
       "iptv extreme apk",
       "iptv extreme recording"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.2,
     "playerPricing": {
       "model": "freemium",
@@ -8328,7 +9071,7 @@
       "lazy iptv apk",
       "simple iptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4,
     "playerPricing": {
       "model": "free",
@@ -8448,7 +9191,7 @@
       "lazy iptv apk",
       "simple iptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4,
     "playerPricing": {
       "model": "free",
@@ -8561,7 +9304,7 @@
       "lazy iptv apk",
       "simple iptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4,
     "playerPricing": {
       "model": "free",
@@ -8674,7 +9417,7 @@
       "lazy iptv apk",
       "simple iptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4,
     "playerPricing": {
       "model": "free",
@@ -8787,7 +9530,7 @@
       "lazy iptv apk",
       "simple iptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4,
     "playerPricing": {
       "model": "free",
@@ -8900,7 +9643,7 @@
       "lazy iptv apk",
       "simple iptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4,
     "playerPricing": {
       "model": "free",
@@ -9009,7 +9752,7 @@
       "ss iptv lg",
       "smart tv iptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.1,
     "playerPricing": {
       "model": "free",
@@ -9118,7 +9861,7 @@
       "ss iptv lg",
       "smart tv iptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.1,
     "playerPricing": {
       "model": "free",
@@ -9240,7 +9983,7 @@
       "smart iptv lg",
       "siptv app"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4,
     "playerPricing": {
       "model": "one-time",
@@ -9362,7 +10105,7 @@
       "smart iptv lg",
       "siptv app"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4,
     "playerPricing": {
       "model": "one-time",
@@ -9484,7 +10227,7 @@
       "smart iptv lg",
       "siptv app"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4,
     "playerPricing": {
       "model": "one-time",
@@ -9606,7 +10349,7 @@
       "smart iptv lg",
       "siptv app"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4,
     "playerPricing": {
       "model": "one-time",
@@ -9727,7 +10470,7 @@
       "televizo apk",
       "televizo player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.5,
     "playerPricing": {
       "model": "freemium",
@@ -9848,7 +10591,7 @@
       "televizo apk",
       "televizo player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.5,
     "playerPricing": {
       "model": "freemium",
@@ -9971,7 +10714,7 @@
       "televizo apk",
       "televizo player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.5,
     "playerPricing": {
       "model": "freemium",
@@ -10094,7 +10837,115 @@
       "televizo apk",
       "televizo player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
+    "playerRating": 4.5,
+    "playerPricing": {
+      "model": "freemium",
+      "price": "$4.99 one-time"
+    }
+  },
+  {
+    "slug": "televizo-setup-google-tv",
+    "playerId": "televizo",
+    "deviceId": "google-tv",
+    "playerName": "Televizo",
+    "deviceName": "Google TV",
+    "deviceShortName": "Google TV",
+    "title": "How to Setup Televizo on Google TV",
+    "metaTitle": "Televizo on Google TV - Setup Guide 2025 | Step-by-Step",
+    "description": "Complete guide to install and configure Televizo on Google TV. Step-by-step instructions for 2025 with troubleshooting tips.",
+    "content": {
+      "intro": "Looking to set up Televizo on your Google TV? This comprehensive guide walks you through the complete installation process, from downloading the app to configuring your first IPTV playlist. Televizo is modern iptv player with material design, and it works great on Google TV.",
+      "requirements": [
+        "Google TV device",
+        "Active internet connection",
+        "IPTV subscription with M3U or Xtream credentials",
+        "EPG URL (optional, for TV guide)"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Add Your IPTV Playlist",
+          "description": "Open Televizo and navigate to the playlist or settings section. You can add your M3U playlist URL or Xtream Codes credentials here.",
+          "tips": [
+            "Have your M3U URL or Xtream login details ready",
+            "Some players support both M3U and Xtream formats"
+          ]
+        },
+        {
+          "stepNumber": 2,
+          "title": "Configure EPG (TV Guide)",
+          "description": "In Televizo settings, find the EPG section and add your EPG URL. This will show program schedules for your channels.",
+          "tips": [
+            "EPG URL is usually provided by your IPTV service",
+            "Allow time for EPG data to load (can take several minutes)"
+          ]
+        },
+        {
+          "stepNumber": 3,
+          "title": "Start Watching",
+          "description": "Once your playlist is loaded, browse through the channel categories and start watching your favorite content on Televizo!",
+          "tips": [
+            "Mark frequently watched channels as favorites",
+            "Explore the settings for more customization options"
+          ]
+        }
+      ],
+      "troubleshooting": [
+        "If the app won't install, check your device storage space",
+        "For playback issues, try clearing the app cache",
+        "If channels don't load, verify your playlist URL is correct",
+        "For buffering, use ethernet instead of Wi-Fi when possible"
+      ],
+      "faqs": [
+        {
+          "question": "Is Televizo free on Google TV?",
+          "answer": "Televizo offers a free version with basic features. Premium features require a $4.99 one-time purchase."
+        },
+        {
+          "question": "Does Televizo support EPG on Google TV?",
+          "answer": "Yes, Televizo fully supports EPG (Electronic Program Guide) on Google TV. You can add your EPG URL in the settings."
+        },
+        {
+          "question": "Can I record with Televizo on Google TV?",
+          "answer": "No, Televizo does not currently support recording on Google TV."
+        },
+        {
+          "question": "Why is Televizo buffering on my Google TV?",
+          "answer": "Buffering on Google TV is usually caused by slow internet, server issues, or ISP throttling. Try using ethernet instead of Wi-Fi, or use a VPN to bypass throttling."
+        }
+      ],
+      "conclusion": "You've successfully set up Televizo on your Google TV! With 5 key features including epg, favorites, multi-screen, you're ready to enjoy your IPTV content. If you experience any issues, check our troubleshooting section or explore our other guides."
+    },
+    "relatedGuides": [
+      "televizo-setup-firestick",
+      "televizo-setup-fire-tv-cube",
+      "televizo-setup-android-tv",
+      "tivimate-setup-google-tv",
+      "iptv-smarters-setup-google-tv"
+    ],
+    "tags": [
+      "televizo",
+      "google-tv",
+      "setup",
+      "iptv",
+      "guide",
+      "televizo",
+      "televizo iptv",
+      "televizo apk"
+    ],
+    "keywords": [
+      "televizo google-tv",
+      "Televizo on Google TV",
+      "install Televizo Google TV",
+      "Televizo setup guide",
+      "Google TV iptv player",
+      "televizo",
+      "televizo iptv",
+      "televizo apk",
+      "televizo player"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.5,
     "playerPricing": {
       "model": "freemium",
@@ -10217,7 +11068,7 @@
       "televizo apk",
       "televizo player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.5,
     "playerPricing": {
       "model": "freemium",
@@ -10340,7 +11191,7 @@
       "televizo apk",
       "televizo player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.5,
     "playerPricing": {
       "model": "freemium",
@@ -10437,9 +11288,9 @@
     },
     "relatedGuides": [
       "iplaytv-setup-ios",
+      "jamrun-setup-apple-tv",
       "iptv-smarters-setup-apple-tv",
-      "kodi-setup-apple-tv",
-      "vlc-setup-apple-tv"
+      "kodi-setup-apple-tv"
     ],
     "tags": [
       "iplaytv",
@@ -10462,7 +11313,7 @@
       "iplaytv apple tv",
       "iptv apple tv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.4,
     "playerPricing": {
       "model": "one-time",
@@ -10559,9 +11410,9 @@
     },
     "relatedGuides": [
       "iplaytv-setup-apple-tv",
+      "jamrun-setup-ios",
       "iptv-smarters-setup-ios",
-      "kodi-setup-ios",
-      "vlc-setup-ios"
+      "kodi-setup-ios"
     ],
     "tags": [
       "iplaytv",
@@ -10584,7 +11435,7 @@
       "iplaytv apple tv",
       "iptv apple tv"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.4,
     "playerPricing": {
       "model": "one-time",
@@ -10705,7 +11556,7 @@
       "iptv pro android",
       "simple iptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.3,
     "playerPricing": {
       "model": "one-time",
@@ -10826,7 +11677,7 @@
       "iptv pro android",
       "simple iptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.3,
     "playerPricing": {
       "model": "one-time",
@@ -10949,7 +11800,7 @@
       "iptv pro android",
       "simple iptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.3,
     "playerPricing": {
       "model": "one-time",
@@ -11072,7 +11923,115 @@
       "iptv pro android",
       "simple iptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
+    "playerRating": 4.3,
+    "playerPricing": {
+      "model": "one-time",
+      "price": "$3.99 one-time"
+    }
+  },
+  {
+    "slug": "iptv-pro-setup-google-tv",
+    "playerId": "iptv-pro",
+    "deviceId": "google-tv",
+    "playerName": "IPTV Pro",
+    "deviceName": "Google TV",
+    "deviceShortName": "Google TV",
+    "title": "How to Setup IPTV Pro on Google TV",
+    "metaTitle": "IPTV Pro on Google TV - Setup Guide 2025 | Step-by-Step",
+    "description": "Complete guide to install and configure IPTV Pro on Google TV. Step-by-step instructions for 2025 with troubleshooting tips.",
+    "content": {
+      "intro": "Looking to set up IPTV Pro on your Google TV? This comprehensive guide walks you through the complete installation process, from downloading the app to configuring your first IPTV playlist. IPTV Pro is simple iptv player with epg support, and it works great on Google TV.",
+      "requirements": [
+        "Google TV device",
+        "Active internet connection",
+        "IPTV subscription with M3U or Xtream credentials",
+        "EPG URL (optional, for TV guide)"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Add Your IPTV Playlist",
+          "description": "Open IPTV Pro and navigate to the playlist or settings section. You can add your M3U playlist URL or Xtream Codes credentials here.",
+          "tips": [
+            "Have your M3U URL or Xtream login details ready",
+            "Some players support both M3U and Xtream formats"
+          ]
+        },
+        {
+          "stepNumber": 2,
+          "title": "Configure EPG (TV Guide)",
+          "description": "In IPTV Pro settings, find the EPG section and add your EPG URL. This will show program schedules for your channels.",
+          "tips": [
+            "EPG URL is usually provided by your IPTV service",
+            "Allow time for EPG data to load (can take several minutes)"
+          ]
+        },
+        {
+          "stepNumber": 3,
+          "title": "Start Watching",
+          "description": "Once your playlist is loaded, browse through the channel categories and start watching your favorite content on IPTV Pro!",
+          "tips": [
+            "Mark frequently watched channels as favorites",
+            "Explore the settings for more customization options"
+          ]
+        }
+      ],
+      "troubleshooting": [
+        "If the app won't install, check your device storage space",
+        "For playback issues, try clearing the app cache",
+        "If channels don't load, verify your playlist URL is correct",
+        "For buffering, use ethernet instead of Wi-Fi when possible"
+      ],
+      "faqs": [
+        {
+          "question": "Is IPTV Pro free on Google TV?",
+          "answer": "IPTV Pro is a paid app costing $3.99 one-time on Google TV."
+        },
+        {
+          "question": "Does IPTV Pro support EPG on Google TV?",
+          "answer": "Yes, IPTV Pro fully supports EPG (Electronic Program Guide) on Google TV. You can add your EPG URL in the settings."
+        },
+        {
+          "question": "Can I record with IPTV Pro on Google TV?",
+          "answer": "No, IPTV Pro does not currently support recording on Google TV."
+        },
+        {
+          "question": "Why is IPTV Pro buffering on my Google TV?",
+          "answer": "Buffering on Google TV is usually caused by slow internet, server issues, or ISP throttling. Try using ethernet instead of Wi-Fi, or use a VPN to bypass throttling."
+        }
+      ],
+      "conclusion": "You've successfully set up IPTV Pro on your Google TV! With 4 key features including epg, favorites, auto-update, you're ready to enjoy your IPTV content. If you experience any issues, check our troubleshooting section or explore our other guides."
+    },
+    "relatedGuides": [
+      "iptv-pro-setup-firestick",
+      "iptv-pro-setup-fire-tv-cube",
+      "iptv-pro-setup-android-tv",
+      "tivimate-setup-google-tv",
+      "iptv-smarters-setup-google-tv"
+    ],
+    "tags": [
+      "iptv-pro",
+      "google-tv",
+      "setup",
+      "iptv",
+      "guide",
+      "iptv pro",
+      "iptv pro apk",
+      "iptv pro android"
+    ],
+    "keywords": [
+      "iptv-pro google-tv",
+      "IPTV Pro on Google TV",
+      "install IPTV Pro Google TV",
+      "IPTV Pro setup guide",
+      "Google TV iptv player",
+      "iptv pro",
+      "iptv pro apk",
+      "iptv pro android",
+      "simple iptv player"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.3,
     "playerPricing": {
       "model": "one-time",
@@ -11195,7 +12154,7 @@
       "iptv pro android",
       "simple iptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.3,
     "playerPricing": {
       "model": "one-time",
@@ -11318,7 +12277,7 @@
       "iptv pro android",
       "simple iptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.3,
     "playerPricing": {
       "model": "one-time",
@@ -11448,7 +12407,7 @@
       "xtream codes player",
       "xciptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.2,
     "playerPricing": {
       "model": "free",
@@ -11578,7 +12537,7 @@
       "xtream codes player",
       "xciptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.2,
     "playerPricing": {
       "model": "free",
@@ -11701,7 +12660,7 @@
       "xtream codes player",
       "xciptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.2,
     "playerPricing": {
       "model": "free",
@@ -11824,7 +12783,7 @@
       "xtream codes player",
       "xciptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.2,
     "playerPricing": {
       "model": "free",
@@ -11947,7 +12906,7 @@
       "xtream codes player",
       "xciptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.2,
     "playerPricing": {
       "model": "free",
@@ -12070,8 +13029,1336 @@
       "xtream codes player",
       "xciptv player"
     ],
-    "lastUpdated": "2025-12-01T12:53:08.603Z",
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
     "playerRating": 4.2,
+    "playerPricing": {
+      "model": "free",
+      "price": "Free"
+    }
+  },
+  {
+    "slug": "stremio-setup-firestick",
+    "playerId": "stremio",
+    "deviceId": "firestick",
+    "playerName": "Stremio",
+    "deviceName": "Amazon Fire TV Stick",
+    "deviceShortName": "Firestick",
+    "title": "How to Setup Stremio on Firestick",
+    "metaTitle": "Stremio on Firestick - Setup Guide 2025 | Step-by-Step",
+    "description": "Complete guide to install and configure Stremio on Amazon Fire TV Stick. Step-by-step instructions for 2025 with troubleshooting tips.",
+    "content": {
+      "intro": "Looking to set up Stremio on your Amazon Fire TV Stick? This comprehensive guide walks you through the complete installation process, from downloading the app to configuring your first IPTV playlist. Stremio is free media center with addon ecosystem for streaming movies, tv shows, and live channels, and it works great on Firestick.",
+      "requirements": [
+        "Amazon Fire TV Stick device",
+        "Active internet connection",
+        "IPTV subscription with M3U or Xtream credentials"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Enable Apps from Unknown Sources",
+          "description": "Go to Settings > My Fire TV > Developer Options and enable \"Apps from Unknown Sources\" to allow sideloading Stremio.",
+          "tips": [
+            "You may need to enable Developer Options first by clicking on \"About\" 7 times"
+          ]
+        },
+        {
+          "stepNumber": 2,
+          "title": "Install Downloader App",
+          "description": "Search for \"Downloader\" in the Amazon App Store and install it. This app lets you download APK files."
+        },
+        {
+          "stepNumber": 3,
+          "title": "Download Stremio",
+          "description": "Open Downloader and enter the URL for Stremio APK. Download and install the application.",
+          "tips": [
+            "Use a URL shortener for easier typing",
+            "Make sure to download from official sources only"
+          ]
+        },
+        {
+          "stepNumber": 4,
+          "title": "Add Your IPTV Playlist",
+          "description": "Open Stremio and navigate to the playlist or settings section. You can add your M3U playlist URL or Xtream Codes credentials here.",
+          "tips": [
+            "Have your M3U URL or Xtream login details ready",
+            "Some players support both M3U and Xtream formats"
+          ]
+        },
+        {
+          "stepNumber": 5,
+          "title": "Start Watching",
+          "description": "Once your playlist is loaded, browse through the channel categories and start watching your favorite content on Stremio!",
+          "tips": [
+            "Mark frequently watched channels as favorites",
+            "Explore the settings for more customization options"
+          ]
+        }
+      ],
+      "troubleshooting": [
+        "If the app won't install, check your device storage space",
+        "For playback issues, try clearing the app cache",
+        "If channels don't load, verify your playlist URL is correct",
+        "For buffering, use ethernet instead of Wi-Fi when possible"
+      ],
+      "faqs": [
+        {
+          "question": "Is Stremio free on Firestick?",
+          "answer": "Yes, Stremio is completely free to use on Firestick."
+        },
+        {
+          "question": "Does Stremio support EPG on Firestick?",
+          "answer": "Unfortunately, Stremio does not have built-in EPG support."
+        },
+        {
+          "question": "Can I record with Stremio on Firestick?",
+          "answer": "No, Stremio does not currently support recording on Firestick."
+        },
+        {
+          "question": "Why is Stremio buffering on my Firestick?",
+          "answer": "Buffering on Firestick is usually caused by slow internet, server issues, or ISP throttling. Try using ethernet instead of Wi-Fi, or use a VPN to bypass throttling."
+        }
+      ],
+      "conclusion": "You've successfully set up Stremio on your Firestick! With 6 key features including favorites, subtitle-support, external-player, you're ready to enjoy your IPTV content. If you experience any issues, check our troubleshooting section or explore our other guides."
+    },
+    "relatedGuides": [
+      "stremio-setup-fire-tv-cube",
+      "stremio-setup-android-tv",
+      "stremio-setup-chromecast",
+      "tivimate-setup-firestick",
+      "iptv-smarters-setup-firestick"
+    ],
+    "tags": [
+      "stremio",
+      "firestick",
+      "setup",
+      "iptv",
+      "guide",
+      "stremio",
+      "stremio addons",
+      "torrentio"
+    ],
+    "keywords": [
+      "stremio firestick",
+      "Stremio on Firestick",
+      "install Stremio Firestick",
+      "Stremio setup guide",
+      "Firestick iptv player",
+      "stremio",
+      "stremio addons",
+      "torrentio",
+      "stremio android",
+      "stremio ios",
+      "stremio apple tv",
+      "stremio firestick",
+      "real debrid stremio",
+      "stremio streaming",
+      "stremio movies",
+      "stremio tv shows"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
+    "playerRating": 4.6,
+    "playerPricing": {
+      "model": "free",
+      "price": "Free"
+    }
+  },
+  {
+    "slug": "stremio-setup-fire-tv-cube",
+    "playerId": "stremio",
+    "deviceId": "fire-tv-cube",
+    "playerName": "Stremio",
+    "deviceName": "Amazon Fire TV Cube",
+    "deviceShortName": "Fire TV Cube",
+    "title": "How to Setup Stremio on Fire TV Cube",
+    "metaTitle": "Stremio on Fire TV Cube - Setup Guide 2025 | Step-by-Step",
+    "description": "Complete guide to install and configure Stremio on Amazon Fire TV Cube. Step-by-step instructions for 2025 with troubleshooting tips.",
+    "content": {
+      "intro": "Looking to set up Stremio on your Amazon Fire TV Cube? This comprehensive guide walks you through the complete installation process, from downloading the app to configuring your first IPTV playlist. Stremio is free media center with addon ecosystem for streaming movies, tv shows, and live channels, and it works great on Fire TV Cube.",
+      "requirements": [
+        "Amazon Fire TV Cube device",
+        "Active internet connection",
+        "IPTV subscription with M3U or Xtream credentials"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Enable Apps from Unknown Sources",
+          "description": "Go to Settings > My Fire TV > Developer Options and enable \"Apps from Unknown Sources\" to allow sideloading Stremio.",
+          "tips": [
+            "You may need to enable Developer Options first by clicking on \"About\" 7 times"
+          ]
+        },
+        {
+          "stepNumber": 2,
+          "title": "Install Downloader App",
+          "description": "Search for \"Downloader\" in the Amazon App Store and install it. This app lets you download APK files."
+        },
+        {
+          "stepNumber": 3,
+          "title": "Download Stremio",
+          "description": "Open Downloader and enter the URL for Stremio APK. Download and install the application.",
+          "tips": [
+            "Use a URL shortener for easier typing",
+            "Make sure to download from official sources only"
+          ]
+        },
+        {
+          "stepNumber": 4,
+          "title": "Add Your IPTV Playlist",
+          "description": "Open Stremio and navigate to the playlist or settings section. You can add your M3U playlist URL or Xtream Codes credentials here.",
+          "tips": [
+            "Have your M3U URL or Xtream login details ready",
+            "Some players support both M3U and Xtream formats"
+          ]
+        },
+        {
+          "stepNumber": 5,
+          "title": "Start Watching",
+          "description": "Once your playlist is loaded, browse through the channel categories and start watching your favorite content on Stremio!",
+          "tips": [
+            "Mark frequently watched channels as favorites",
+            "Explore the settings for more customization options"
+          ]
+        }
+      ],
+      "troubleshooting": [
+        "If the app won't install, check your device storage space",
+        "For playback issues, try clearing the app cache",
+        "If channels don't load, verify your playlist URL is correct",
+        "For buffering, use ethernet instead of Wi-Fi when possible"
+      ],
+      "faqs": [
+        {
+          "question": "Is Stremio free on Fire TV Cube?",
+          "answer": "Yes, Stremio is completely free to use on Fire TV Cube."
+        },
+        {
+          "question": "Does Stremio support EPG on Fire TV Cube?",
+          "answer": "Unfortunately, Stremio does not have built-in EPG support."
+        },
+        {
+          "question": "Can I record with Stremio on Fire TV Cube?",
+          "answer": "No, Stremio does not currently support recording on Fire TV Cube."
+        },
+        {
+          "question": "Why is Stremio buffering on my Fire TV Cube?",
+          "answer": "Buffering on Fire TV Cube is usually caused by slow internet, server issues, or ISP throttling. Try using ethernet instead of Wi-Fi, or use a VPN to bypass throttling."
+        }
+      ],
+      "conclusion": "You've successfully set up Stremio on your Fire TV Cube! With 6 key features including favorites, subtitle-support, external-player, you're ready to enjoy your IPTV content. If you experience any issues, check our troubleshooting section or explore our other guides."
+    },
+    "relatedGuides": [
+      "stremio-setup-firestick",
+      "stremio-setup-android-tv",
+      "stremio-setup-chromecast",
+      "tivimate-setup-fire-tv-cube",
+      "iptv-smarters-setup-fire-tv-cube"
+    ],
+    "tags": [
+      "stremio",
+      "fire-tv-cube",
+      "setup",
+      "iptv",
+      "guide",
+      "stremio",
+      "stremio addons",
+      "torrentio"
+    ],
+    "keywords": [
+      "stremio fire-tv-cube",
+      "Stremio on Fire TV Cube",
+      "install Stremio Fire TV Cube",
+      "Stremio setup guide",
+      "Fire TV Cube iptv player",
+      "stremio",
+      "stremio addons",
+      "torrentio",
+      "stremio android",
+      "stremio ios",
+      "stremio apple tv",
+      "stremio firestick",
+      "real debrid stremio",
+      "stremio streaming",
+      "stremio movies",
+      "stremio tv shows"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
+    "playerRating": 4.6,
+    "playerPricing": {
+      "model": "free",
+      "price": "Free"
+    }
+  },
+  {
+    "slug": "stremio-setup-android-tv",
+    "playerId": "stremio",
+    "deviceId": "android-tv",
+    "playerName": "Stremio",
+    "deviceName": "Android TV Box",
+    "deviceShortName": "Android TV",
+    "title": "How to Setup Stremio on Android TV",
+    "metaTitle": "Stremio on Android TV - Setup Guide 2025 | Step-by-Step",
+    "description": "Complete guide to install and configure Stremio on Android TV Box. Step-by-step instructions for 2025 with troubleshooting tips.",
+    "content": {
+      "intro": "Looking to set up Stremio on your Android TV Box? This comprehensive guide walks you through the complete installation process, from downloading the app to configuring your first IPTV playlist. Stremio is free media center with addon ecosystem for streaming movies, tv shows, and live channels, and it works great on Android TV.",
+      "requirements": [
+        "Android TV Box device",
+        "Active internet connection",
+        "IPTV subscription with M3U or Xtream credentials"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Open Google Play Store",
+          "description": "On your Android TV, navigate to the Google Play Store from the home screen."
+        },
+        {
+          "stepNumber": 2,
+          "title": "Search for Stremio",
+          "description": "Use the search function to find \"Stremio\" and select it from the results."
+        },
+        {
+          "stepNumber": 3,
+          "title": "Install the App",
+          "description": "Click \"Install\" and wait for the download to complete. Stremio will appear in your apps."
+        },
+        {
+          "stepNumber": 4,
+          "title": "Add Your IPTV Playlist",
+          "description": "Open Stremio and navigate to the playlist or settings section. You can add your M3U playlist URL or Xtream Codes credentials here.",
+          "tips": [
+            "Have your M3U URL or Xtream login details ready",
+            "Some players support both M3U and Xtream formats"
+          ]
+        },
+        {
+          "stepNumber": 5,
+          "title": "Start Watching",
+          "description": "Once your playlist is loaded, browse through the channel categories and start watching your favorite content on Stremio!",
+          "tips": [
+            "Mark frequently watched channels as favorites",
+            "Explore the settings for more customization options"
+          ]
+        }
+      ],
+      "troubleshooting": [
+        "If the app won't install, check your device storage space",
+        "For playback issues, try clearing the app cache",
+        "If channels don't load, verify your playlist URL is correct",
+        "For buffering, use ethernet instead of Wi-Fi when possible"
+      ],
+      "faqs": [
+        {
+          "question": "Is Stremio free on Android TV?",
+          "answer": "Yes, Stremio is completely free to use on Android TV."
+        },
+        {
+          "question": "Does Stremio support EPG on Android TV?",
+          "answer": "Unfortunately, Stremio does not have built-in EPG support."
+        },
+        {
+          "question": "Can I record with Stremio on Android TV?",
+          "answer": "No, Stremio does not currently support recording on Android TV."
+        },
+        {
+          "question": "Why is Stremio buffering on my Android TV?",
+          "answer": "Buffering on Android TV is usually caused by slow internet, server issues, or ISP throttling. Try using ethernet instead of Wi-Fi, or use a VPN to bypass throttling."
+        }
+      ],
+      "conclusion": "You've successfully set up Stremio on your Android TV! With 6 key features including favorites, subtitle-support, external-player, you're ready to enjoy your IPTV content. If you experience any issues, check our troubleshooting section or explore our other guides."
+    },
+    "relatedGuides": [
+      "stremio-setup-firestick",
+      "stremio-setup-fire-tv-cube",
+      "stremio-setup-chromecast",
+      "tivimate-setup-android-tv",
+      "iptv-smarters-setup-android-tv"
+    ],
+    "tags": [
+      "stremio",
+      "android-tv",
+      "setup",
+      "iptv",
+      "guide",
+      "stremio",
+      "stremio addons",
+      "torrentio"
+    ],
+    "keywords": [
+      "stremio android-tv",
+      "Stremio on Android TV",
+      "install Stremio Android TV",
+      "Stremio setup guide",
+      "Android TV iptv player",
+      "stremio",
+      "stremio addons",
+      "torrentio",
+      "stremio android",
+      "stremio ios",
+      "stremio apple tv",
+      "stremio firestick",
+      "real debrid stremio",
+      "stremio streaming",
+      "stremio movies",
+      "stremio tv shows"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
+    "playerRating": 4.6,
+    "playerPricing": {
+      "model": "free",
+      "price": "Free"
+    }
+  },
+  {
+    "slug": "stremio-setup-chromecast",
+    "playerId": "stremio",
+    "deviceId": "chromecast",
+    "playerName": "Stremio",
+    "deviceName": "Chromecast with Google TV",
+    "deviceShortName": "Chromecast",
+    "title": "How to Setup Stremio on Chromecast",
+    "metaTitle": "Stremio on Chromecast - Setup Guide 2025 | Step-by-Step",
+    "description": "Complete guide to install and configure Stremio on Chromecast with Google TV. Step-by-step instructions for 2025 with troubleshooting tips.",
+    "content": {
+      "intro": "Looking to set up Stremio on your Chromecast with Google TV? This comprehensive guide walks you through the complete installation process, from downloading the app to configuring your first IPTV playlist. Stremio is free media center with addon ecosystem for streaming movies, tv shows, and live channels, and it works great on Chromecast.",
+      "requirements": [
+        "Chromecast with Google TV device",
+        "Active internet connection",
+        "IPTV subscription with M3U or Xtream credentials"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Open Google Play Store",
+          "description": "On your Chromecast, navigate to the Google Play Store from the home screen."
+        },
+        {
+          "stepNumber": 2,
+          "title": "Search for Stremio",
+          "description": "Use the search function to find \"Stremio\" and select it from the results."
+        },
+        {
+          "stepNumber": 3,
+          "title": "Install the App",
+          "description": "Click \"Install\" and wait for the download to complete. Stremio will appear in your apps."
+        },
+        {
+          "stepNumber": 4,
+          "title": "Add Your IPTV Playlist",
+          "description": "Open Stremio and navigate to the playlist or settings section. You can add your M3U playlist URL or Xtream Codes credentials here.",
+          "tips": [
+            "Have your M3U URL or Xtream login details ready",
+            "Some players support both M3U and Xtream formats"
+          ]
+        },
+        {
+          "stepNumber": 5,
+          "title": "Start Watching",
+          "description": "Once your playlist is loaded, browse through the channel categories and start watching your favorite content on Stremio!",
+          "tips": [
+            "Mark frequently watched channels as favorites",
+            "Explore the settings for more customization options"
+          ]
+        }
+      ],
+      "troubleshooting": [
+        "If the app won't install, check your device storage space",
+        "For playback issues, try clearing the app cache",
+        "If channels don't load, verify your playlist URL is correct",
+        "For buffering, use ethernet instead of Wi-Fi when possible"
+      ],
+      "faqs": [
+        {
+          "question": "Is Stremio free on Chromecast?",
+          "answer": "Yes, Stremio is completely free to use on Chromecast."
+        },
+        {
+          "question": "Does Stremio support EPG on Chromecast?",
+          "answer": "Unfortunately, Stremio does not have built-in EPG support."
+        },
+        {
+          "question": "Can I record with Stremio on Chromecast?",
+          "answer": "No, Stremio does not currently support recording on Chromecast."
+        },
+        {
+          "question": "Why is Stremio buffering on my Chromecast?",
+          "answer": "Buffering on Chromecast is usually caused by slow internet, server issues, or ISP throttling. Try using ethernet instead of Wi-Fi, or use a VPN to bypass throttling."
+        }
+      ],
+      "conclusion": "You've successfully set up Stremio on your Chromecast! With 6 key features including favorites, subtitle-support, external-player, you're ready to enjoy your IPTV content. If you experience any issues, check our troubleshooting section or explore our other guides."
+    },
+    "relatedGuides": [
+      "stremio-setup-firestick",
+      "stremio-setup-fire-tv-cube",
+      "stremio-setup-android-tv",
+      "tivimate-setup-chromecast",
+      "iptv-smarters-setup-chromecast"
+    ],
+    "tags": [
+      "stremio",
+      "chromecast",
+      "setup",
+      "iptv",
+      "guide",
+      "stremio",
+      "stremio addons",
+      "torrentio"
+    ],
+    "keywords": [
+      "stremio chromecast",
+      "Stremio on Chromecast",
+      "install Stremio Chromecast",
+      "Stremio setup guide",
+      "Chromecast iptv player",
+      "stremio",
+      "stremio addons",
+      "torrentio",
+      "stremio android",
+      "stremio ios",
+      "stremio apple tv",
+      "stremio firestick",
+      "real debrid stremio",
+      "stremio streaming",
+      "stremio movies",
+      "stremio tv shows"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
+    "playerRating": 4.6,
+    "playerPricing": {
+      "model": "free",
+      "price": "Free"
+    }
+  },
+  {
+    "slug": "stremio-setup-google-tv",
+    "playerId": "stremio",
+    "deviceId": "google-tv",
+    "playerName": "Stremio",
+    "deviceName": "Google TV",
+    "deviceShortName": "Google TV",
+    "title": "How to Setup Stremio on Google TV",
+    "metaTitle": "Stremio on Google TV - Setup Guide 2025 | Step-by-Step",
+    "description": "Complete guide to install and configure Stremio on Google TV. Step-by-step instructions for 2025 with troubleshooting tips.",
+    "content": {
+      "intro": "Looking to set up Stremio on your Google TV? This comprehensive guide walks you through the complete installation process, from downloading the app to configuring your first IPTV playlist. Stremio is free media center with addon ecosystem for streaming movies, tv shows, and live channels, and it works great on Google TV.",
+      "requirements": [
+        "Google TV device",
+        "Active internet connection",
+        "IPTV subscription with M3U or Xtream credentials"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Add Your IPTV Playlist",
+          "description": "Open Stremio and navigate to the playlist or settings section. You can add your M3U playlist URL or Xtream Codes credentials here.",
+          "tips": [
+            "Have your M3U URL or Xtream login details ready",
+            "Some players support both M3U and Xtream formats"
+          ]
+        },
+        {
+          "stepNumber": 2,
+          "title": "Start Watching",
+          "description": "Once your playlist is loaded, browse through the channel categories and start watching your favorite content on Stremio!",
+          "tips": [
+            "Mark frequently watched channels as favorites",
+            "Explore the settings for more customization options"
+          ]
+        }
+      ],
+      "troubleshooting": [
+        "If the app won't install, check your device storage space",
+        "For playback issues, try clearing the app cache",
+        "If channels don't load, verify your playlist URL is correct",
+        "For buffering, use ethernet instead of Wi-Fi when possible"
+      ],
+      "faqs": [
+        {
+          "question": "Is Stremio free on Google TV?",
+          "answer": "Yes, Stremio is completely free to use on Google TV."
+        },
+        {
+          "question": "Does Stremio support EPG on Google TV?",
+          "answer": "Unfortunately, Stremio does not have built-in EPG support."
+        },
+        {
+          "question": "Can I record with Stremio on Google TV?",
+          "answer": "No, Stremio does not currently support recording on Google TV."
+        },
+        {
+          "question": "Why is Stremio buffering on my Google TV?",
+          "answer": "Buffering on Google TV is usually caused by slow internet, server issues, or ISP throttling. Try using ethernet instead of Wi-Fi, or use a VPN to bypass throttling."
+        }
+      ],
+      "conclusion": "You've successfully set up Stremio on your Google TV! With 6 key features including favorites, subtitle-support, external-player, you're ready to enjoy your IPTV content. If you experience any issues, check our troubleshooting section or explore our other guides."
+    },
+    "relatedGuides": [
+      "stremio-setup-firestick",
+      "stremio-setup-fire-tv-cube",
+      "stremio-setup-android-tv",
+      "tivimate-setup-google-tv",
+      "iptv-smarters-setup-google-tv"
+    ],
+    "tags": [
+      "stremio",
+      "google-tv",
+      "setup",
+      "iptv",
+      "guide",
+      "stremio",
+      "stremio addons",
+      "torrentio"
+    ],
+    "keywords": [
+      "stremio google-tv",
+      "Stremio on Google TV",
+      "install Stremio Google TV",
+      "Stremio setup guide",
+      "Google TV iptv player",
+      "stremio",
+      "stremio addons",
+      "torrentio",
+      "stremio android",
+      "stremio ios",
+      "stremio apple tv",
+      "stremio firestick",
+      "real debrid stremio",
+      "stremio streaming",
+      "stremio movies",
+      "stremio tv shows"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
+    "playerRating": 4.6,
+    "playerPricing": {
+      "model": "free",
+      "price": "Free"
+    }
+  },
+  {
+    "slug": "stremio-setup-nvidia-shield",
+    "playerId": "stremio",
+    "deviceId": "nvidia-shield",
+    "playerName": "Stremio",
+    "deviceName": "NVIDIA Shield TV",
+    "deviceShortName": "Shield TV",
+    "title": "How to Setup Stremio on Shield TV",
+    "metaTitle": "Stremio on Shield TV - Setup Guide 2025 | Step-by-Step",
+    "description": "Complete guide to install and configure Stremio on NVIDIA Shield TV. Step-by-step instructions for 2025 with troubleshooting tips.",
+    "content": {
+      "intro": "Looking to set up Stremio on your NVIDIA Shield TV? This comprehensive guide walks you through the complete installation process, from downloading the app to configuring your first IPTV playlist. Stremio is free media center with addon ecosystem for streaming movies, tv shows, and live channels, and it works great on Shield TV.",
+      "requirements": [
+        "NVIDIA Shield TV device",
+        "Active internet connection",
+        "IPTV subscription with M3U or Xtream credentials"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Open Google Play Store",
+          "description": "On your Shield TV, navigate to the Google Play Store from the home screen."
+        },
+        {
+          "stepNumber": 2,
+          "title": "Search for Stremio",
+          "description": "Use the search function to find \"Stremio\" and select it from the results."
+        },
+        {
+          "stepNumber": 3,
+          "title": "Install the App",
+          "description": "Click \"Install\" and wait for the download to complete. Stremio will appear in your apps."
+        },
+        {
+          "stepNumber": 4,
+          "title": "Add Your IPTV Playlist",
+          "description": "Open Stremio and navigate to the playlist or settings section. You can add your M3U playlist URL or Xtream Codes credentials here.",
+          "tips": [
+            "Have your M3U URL or Xtream login details ready",
+            "Some players support both M3U and Xtream formats"
+          ]
+        },
+        {
+          "stepNumber": 5,
+          "title": "Start Watching",
+          "description": "Once your playlist is loaded, browse through the channel categories and start watching your favorite content on Stremio!",
+          "tips": [
+            "Mark frequently watched channels as favorites",
+            "Explore the settings for more customization options"
+          ]
+        }
+      ],
+      "troubleshooting": [
+        "If the app won't install, check your device storage space",
+        "For playback issues, try clearing the app cache",
+        "If channels don't load, verify your playlist URL is correct",
+        "For buffering, use ethernet instead of Wi-Fi when possible"
+      ],
+      "faqs": [
+        {
+          "question": "Is Stremio free on Shield TV?",
+          "answer": "Yes, Stremio is completely free to use on Shield TV."
+        },
+        {
+          "question": "Does Stremio support EPG on Shield TV?",
+          "answer": "Unfortunately, Stremio does not have built-in EPG support."
+        },
+        {
+          "question": "Can I record with Stremio on Shield TV?",
+          "answer": "No, Stremio does not currently support recording on Shield TV."
+        },
+        {
+          "question": "Why is Stremio buffering on my Shield TV?",
+          "answer": "Buffering on Shield TV is usually caused by slow internet, server issues, or ISP throttling. Try using ethernet instead of Wi-Fi, or use a VPN to bypass throttling."
+        }
+      ],
+      "conclusion": "You've successfully set up Stremio on your Shield TV! With 6 key features including favorites, subtitle-support, external-player, you're ready to enjoy your IPTV content. If you experience any issues, check our troubleshooting section or explore our other guides."
+    },
+    "relatedGuides": [
+      "stremio-setup-firestick",
+      "stremio-setup-fire-tv-cube",
+      "stremio-setup-android-tv",
+      "tivimate-setup-nvidia-shield",
+      "iptv-smarters-setup-nvidia-shield"
+    ],
+    "tags": [
+      "stremio",
+      "nvidia-shield",
+      "setup",
+      "iptv",
+      "guide",
+      "stremio",
+      "stremio addons",
+      "torrentio"
+    ],
+    "keywords": [
+      "stremio nvidia-shield",
+      "Stremio on Shield TV",
+      "install Stremio Shield TV",
+      "Stremio setup guide",
+      "Shield TV iptv player",
+      "stremio",
+      "stremio addons",
+      "torrentio",
+      "stremio android",
+      "stremio ios",
+      "stremio apple tv",
+      "stremio firestick",
+      "real debrid stremio",
+      "stremio streaming",
+      "stremio movies",
+      "stremio tv shows"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
+    "playerRating": 4.6,
+    "playerPricing": {
+      "model": "free",
+      "price": "Free"
+    }
+  },
+  {
+    "slug": "stremio-setup-ios",
+    "playerId": "stremio",
+    "deviceId": "ios",
+    "playerName": "Stremio",
+    "deviceName": "iPhone/iPad",
+    "deviceShortName": "iOS",
+    "title": "How to Setup Stremio on iOS",
+    "metaTitle": "Stremio on iOS - Setup Guide 2025 | Step-by-Step",
+    "description": "Complete guide to install and configure Stremio on iPhone/iPad. Step-by-step instructions for 2025 with troubleshooting tips.",
+    "content": {
+      "intro": "Looking to set up Stremio on your iPhone/iPad? This comprehensive guide walks you through the complete installation process, from downloading the app to configuring your first IPTV playlist. Stremio is free media center with addon ecosystem for streaming movies, tv shows, and live channels, and it works great on iOS.",
+      "requirements": [
+        "iPhone/iPad device",
+        "Active internet connection",
+        "IPTV subscription with M3U or Xtream credentials"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Open App Store",
+          "description": "On your iOS, open the App Store application."
+        },
+        {
+          "stepNumber": 2,
+          "title": "Search for Stremio",
+          "description": "Tap the search tab and type \"Stremio\". Select the correct app from the results."
+        },
+        {
+          "stepNumber": 3,
+          "title": "Download and Install",
+          "description": "Tap \"Get\" to download Stremio. You may need to authenticate with Face ID, Touch ID, or your Apple ID password."
+        },
+        {
+          "stepNumber": 4,
+          "title": "Add Your IPTV Playlist",
+          "description": "Open Stremio and navigate to the playlist or settings section. You can add your M3U playlist URL or Xtream Codes credentials here.",
+          "tips": [
+            "Have your M3U URL or Xtream login details ready",
+            "Some players support both M3U and Xtream formats"
+          ]
+        },
+        {
+          "stepNumber": 5,
+          "title": "Start Watching",
+          "description": "Once your playlist is loaded, browse through the channel categories and start watching your favorite content on Stremio!",
+          "tips": [
+            "Mark frequently watched channels as favorites",
+            "Explore the settings for more customization options"
+          ]
+        }
+      ],
+      "troubleshooting": [
+        "If the app won't install, check your device storage space",
+        "For playback issues, try clearing the app cache",
+        "If channels don't load, verify your playlist URL is correct",
+        "For buffering, use ethernet instead of Wi-Fi when possible"
+      ],
+      "faqs": [
+        {
+          "question": "Is Stremio free on iOS?",
+          "answer": "Yes, Stremio is completely free to use on iOS."
+        },
+        {
+          "question": "Does Stremio support EPG on iOS?",
+          "answer": "Unfortunately, Stremio does not have built-in EPG support."
+        },
+        {
+          "question": "Can I record with Stremio on iOS?",
+          "answer": "No, Stremio does not currently support recording on iOS."
+        },
+        {
+          "question": "Why is Stremio buffering on my iOS?",
+          "answer": "Buffering on iOS is usually caused by slow internet, server issues, or ISP throttling. Try using ethernet instead of Wi-Fi, or use a VPN to bypass throttling."
+        }
+      ],
+      "conclusion": "You've successfully set up Stremio on your iOS! With 6 key features including favorites, subtitle-support, external-player, you're ready to enjoy your IPTV content. If you experience any issues, check our troubleshooting section or explore our other guides."
+    },
+    "relatedGuides": [
+      "stremio-setup-firestick",
+      "stremio-setup-fire-tv-cube",
+      "stremio-setup-android-tv",
+      "jamrun-setup-ios",
+      "iptv-smarters-setup-ios"
+    ],
+    "tags": [
+      "stremio",
+      "ios",
+      "setup",
+      "iptv",
+      "guide",
+      "stremio",
+      "stremio addons",
+      "torrentio"
+    ],
+    "keywords": [
+      "stremio ios",
+      "Stremio on iOS",
+      "install Stremio iOS",
+      "Stremio setup guide",
+      "iOS iptv player",
+      "stremio",
+      "stremio addons",
+      "torrentio",
+      "stremio android",
+      "stremio ios",
+      "stremio apple tv",
+      "stremio firestick",
+      "real debrid stremio",
+      "stremio streaming",
+      "stremio movies",
+      "stremio tv shows"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
+    "playerRating": 4.6,
+    "playerPricing": {
+      "model": "free",
+      "price": "Free"
+    }
+  },
+  {
+    "slug": "stremio-setup-windows",
+    "playerId": "stremio",
+    "deviceId": "windows",
+    "playerName": "Stremio",
+    "deviceName": "Windows PC",
+    "deviceShortName": "Windows",
+    "title": "How to Setup Stremio on Windows",
+    "metaTitle": "Stremio on Windows - Setup Guide 2025 | Step-by-Step",
+    "description": "Complete guide to install and configure Stremio on Windows PC. Step-by-step instructions for 2025 with troubleshooting tips.",
+    "content": {
+      "intro": "Looking to set up Stremio on your Windows PC? This comprehensive guide walks you through the complete installation process, from downloading the app to configuring your first IPTV playlist. Stremio is free media center with addon ecosystem for streaming movies, tv shows, and live channels, and it works great on Windows.",
+      "requirements": [
+        "Windows PC device",
+        "Active internet connection",
+        "IPTV subscription with M3U or Xtream credentials"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Download the Installer",
+          "description": "Visit the official Stremio website and download the Windows installer.",
+          "tips": [
+            "Always download from official sources to avoid malware"
+          ]
+        },
+        {
+          "stepNumber": 2,
+          "title": "Run the Installer",
+          "description": "Open the downloaded file and follow the installation wizard to install Stremio."
+        },
+        {
+          "stepNumber": 3,
+          "title": "Launch the Application",
+          "description": "Find Stremio in your applications folder or start menu and launch it."
+        },
+        {
+          "stepNumber": 4,
+          "title": "Add Your IPTV Playlist",
+          "description": "Open Stremio and navigate to the playlist or settings section. You can add your M3U playlist URL or Xtream Codes credentials here.",
+          "tips": [
+            "Have your M3U URL or Xtream login details ready",
+            "Some players support both M3U and Xtream formats"
+          ]
+        },
+        {
+          "stepNumber": 5,
+          "title": "Start Watching",
+          "description": "Once your playlist is loaded, browse through the channel categories and start watching your favorite content on Stremio!",
+          "tips": [
+            "Mark frequently watched channels as favorites",
+            "Explore the settings for more customization options"
+          ]
+        }
+      ],
+      "troubleshooting": [
+        "If the app won't install, check your device storage space",
+        "For playback issues, try clearing the app cache",
+        "If channels don't load, verify your playlist URL is correct",
+        "For buffering, use ethernet instead of Wi-Fi when possible"
+      ],
+      "faqs": [
+        {
+          "question": "Is Stremio free on Windows?",
+          "answer": "Yes, Stremio is completely free to use on Windows."
+        },
+        {
+          "question": "Does Stremio support EPG on Windows?",
+          "answer": "Unfortunately, Stremio does not have built-in EPG support."
+        },
+        {
+          "question": "Can I record with Stremio on Windows?",
+          "answer": "No, Stremio does not currently support recording on Windows."
+        },
+        {
+          "question": "Why is Stremio buffering on my Windows?",
+          "answer": "Buffering on Windows is usually caused by slow internet, server issues, or ISP throttling. Try using ethernet instead of Wi-Fi, or use a VPN to bypass throttling."
+        }
+      ],
+      "conclusion": "You've successfully set up Stremio on your Windows! With 6 key features including favorites, subtitle-support, external-player, you're ready to enjoy your IPTV content. If you experience any issues, check our troubleshooting section or explore our other guides."
+    },
+    "relatedGuides": [
+      "stremio-setup-firestick",
+      "stremio-setup-fire-tv-cube",
+      "stremio-setup-android-tv",
+      "iptv-smarters-setup-windows",
+      "kodi-setup-windows"
+    ],
+    "tags": [
+      "stremio",
+      "windows",
+      "setup",
+      "iptv",
+      "guide",
+      "stremio",
+      "stremio addons",
+      "torrentio"
+    ],
+    "keywords": [
+      "stremio windows",
+      "Stremio on Windows",
+      "install Stremio Windows",
+      "Stremio setup guide",
+      "Windows iptv player",
+      "stremio",
+      "stremio addons",
+      "torrentio",
+      "stremio android",
+      "stremio ios",
+      "stremio apple tv",
+      "stremio firestick",
+      "real debrid stremio",
+      "stremio streaming",
+      "stremio movies",
+      "stremio tv shows"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
+    "playerRating": 4.6,
+    "playerPricing": {
+      "model": "free",
+      "price": "Free"
+    }
+  },
+  {
+    "slug": "stremio-setup-mac",
+    "playerId": "stremio",
+    "deviceId": "mac",
+    "playerName": "Stremio",
+    "deviceName": "Mac",
+    "deviceShortName": "Mac",
+    "title": "How to Setup Stremio on Mac",
+    "metaTitle": "Stremio on Mac - Setup Guide 2025 | Step-by-Step",
+    "description": "Complete guide to install and configure Stremio on Mac. Step-by-step instructions for 2025 with troubleshooting tips.",
+    "content": {
+      "intro": "Looking to set up Stremio on your Mac? This comprehensive guide walks you through the complete installation process, from downloading the app to configuring your first IPTV playlist. Stremio is free media center with addon ecosystem for streaming movies, tv shows, and live channels, and it works great on Mac.",
+      "requirements": [
+        "Mac device",
+        "Active internet connection",
+        "IPTV subscription with M3U or Xtream credentials"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Download the Installer",
+          "description": "Visit the official Stremio website and download the Mac installer.",
+          "tips": [
+            "Always download from official sources to avoid malware"
+          ]
+        },
+        {
+          "stepNumber": 2,
+          "title": "Run the Installer",
+          "description": "Open the downloaded file and follow the installation wizard to install Stremio."
+        },
+        {
+          "stepNumber": 3,
+          "title": "Launch the Application",
+          "description": "Find Stremio in your applications folder or start menu and launch it."
+        },
+        {
+          "stepNumber": 4,
+          "title": "Add Your IPTV Playlist",
+          "description": "Open Stremio and navigate to the playlist or settings section. You can add your M3U playlist URL or Xtream Codes credentials here.",
+          "tips": [
+            "Have your M3U URL or Xtream login details ready",
+            "Some players support both M3U and Xtream formats"
+          ]
+        },
+        {
+          "stepNumber": 5,
+          "title": "Start Watching",
+          "description": "Once your playlist is loaded, browse through the channel categories and start watching your favorite content on Stremio!",
+          "tips": [
+            "Mark frequently watched channels as favorites",
+            "Explore the settings for more customization options"
+          ]
+        }
+      ],
+      "troubleshooting": [
+        "If the app won't install, check your device storage space",
+        "For playback issues, try clearing the app cache",
+        "If channels don't load, verify your playlist URL is correct",
+        "For buffering, use ethernet instead of Wi-Fi when possible"
+      ],
+      "faqs": [
+        {
+          "question": "Is Stremio free on Mac?",
+          "answer": "Yes, Stremio is completely free to use on Mac."
+        },
+        {
+          "question": "Does Stremio support EPG on Mac?",
+          "answer": "Unfortunately, Stremio does not have built-in EPG support."
+        },
+        {
+          "question": "Can I record with Stremio on Mac?",
+          "answer": "No, Stremio does not currently support recording on Mac."
+        },
+        {
+          "question": "Why is Stremio buffering on my Mac?",
+          "answer": "Buffering on Mac is usually caused by slow internet, server issues, or ISP throttling. Try using ethernet instead of Wi-Fi, or use a VPN to bypass throttling."
+        }
+      ],
+      "conclusion": "You've successfully set up Stremio on your Mac! With 6 key features including favorites, subtitle-support, external-player, you're ready to enjoy your IPTV content. If you experience any issues, check our troubleshooting section or explore our other guides."
+    },
+    "relatedGuides": [
+      "stremio-setup-firestick",
+      "stremio-setup-fire-tv-cube",
+      "stremio-setup-android-tv",
+      "jamrun-setup-mac",
+      "iptv-smarters-setup-mac"
+    ],
+    "tags": [
+      "stremio",
+      "mac",
+      "setup",
+      "iptv",
+      "guide",
+      "stremio",
+      "stremio addons",
+      "torrentio"
+    ],
+    "keywords": [
+      "stremio mac",
+      "Stremio on Mac",
+      "install Stremio Mac",
+      "Stremio setup guide",
+      "Mac iptv player",
+      "stremio",
+      "stremio addons",
+      "torrentio",
+      "stremio android",
+      "stremio ios",
+      "stremio apple tv",
+      "stremio firestick",
+      "real debrid stremio",
+      "stremio streaming",
+      "stremio movies",
+      "stremio tv shows"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
+    "playerRating": 4.6,
+    "playerPricing": {
+      "model": "free",
+      "price": "Free"
+    }
+  },
+  {
+    "slug": "stremio-setup-linux",
+    "playerId": "stremio",
+    "deviceId": "linux",
+    "playerName": "Stremio",
+    "deviceName": "Linux PC",
+    "deviceShortName": "Linux",
+    "title": "How to Setup Stremio on Linux",
+    "metaTitle": "Stremio on Linux - Setup Guide 2025 | Step-by-Step",
+    "description": "Complete guide to install and configure Stremio on Linux PC. Step-by-step instructions for 2025 with troubleshooting tips.",
+    "content": {
+      "intro": "Looking to set up Stremio on your Linux PC? This comprehensive guide walks you through the complete installation process, from downloading the app to configuring your first IPTV playlist. Stremio is free media center with addon ecosystem for streaming movies, tv shows, and live channels, and it works great on Linux.",
+      "requirements": [
+        "Linux PC device",
+        "Active internet connection",
+        "IPTV subscription with M3U or Xtream credentials"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Download the Installer",
+          "description": "Visit the official Stremio website and download the Linux installer.",
+          "tips": [
+            "Always download from official sources to avoid malware"
+          ]
+        },
+        {
+          "stepNumber": 2,
+          "title": "Run the Installer",
+          "description": "Open the downloaded file and follow the installation wizard to install Stremio."
+        },
+        {
+          "stepNumber": 3,
+          "title": "Launch the Application",
+          "description": "Find Stremio in your applications folder or start menu and launch it."
+        },
+        {
+          "stepNumber": 4,
+          "title": "Add Your IPTV Playlist",
+          "description": "Open Stremio and navigate to the playlist or settings section. You can add your M3U playlist URL or Xtream Codes credentials here.",
+          "tips": [
+            "Have your M3U URL or Xtream login details ready",
+            "Some players support both M3U and Xtream formats"
+          ]
+        },
+        {
+          "stepNumber": 5,
+          "title": "Start Watching",
+          "description": "Once your playlist is loaded, browse through the channel categories and start watching your favorite content on Stremio!",
+          "tips": [
+            "Mark frequently watched channels as favorites",
+            "Explore the settings for more customization options"
+          ]
+        }
+      ],
+      "troubleshooting": [
+        "If the app won't install, check your device storage space",
+        "For playback issues, try clearing the app cache",
+        "If channels don't load, verify your playlist URL is correct",
+        "For buffering, use ethernet instead of Wi-Fi when possible"
+      ],
+      "faqs": [
+        {
+          "question": "Is Stremio free on Linux?",
+          "answer": "Yes, Stremio is completely free to use on Linux."
+        },
+        {
+          "question": "Does Stremio support EPG on Linux?",
+          "answer": "Unfortunately, Stremio does not have built-in EPG support."
+        },
+        {
+          "question": "Can I record with Stremio on Linux?",
+          "answer": "No, Stremio does not currently support recording on Linux."
+        },
+        {
+          "question": "Why is Stremio buffering on my Linux?",
+          "answer": "Buffering on Linux is usually caused by slow internet, server issues, or ISP throttling. Try using ethernet instead of Wi-Fi, or use a VPN to bypass throttling."
+        }
+      ],
+      "conclusion": "You've successfully set up Stremio on your Linux! With 6 key features including favorites, subtitle-support, external-player, you're ready to enjoy your IPTV content. If you experience any issues, check our troubleshooting section or explore our other guides."
+    },
+    "relatedGuides": [
+      "stremio-setup-firestick",
+      "stremio-setup-fire-tv-cube",
+      "stremio-setup-android-tv",
+      "kodi-setup-linux",
+      "vlc-setup-linux"
+    ],
+    "tags": [
+      "stremio",
+      "linux",
+      "setup",
+      "iptv",
+      "guide",
+      "stremio",
+      "stremio addons",
+      "torrentio"
+    ],
+    "keywords": [
+      "stremio linux",
+      "Stremio on Linux",
+      "install Stremio Linux",
+      "Stremio setup guide",
+      "Linux iptv player",
+      "stremio",
+      "stremio addons",
+      "torrentio",
+      "stremio android",
+      "stremio ios",
+      "stremio apple tv",
+      "stremio firestick",
+      "real debrid stremio",
+      "stremio streaming",
+      "stremio movies",
+      "stremio tv shows"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
+    "playerRating": 4.6,
+    "playerPricing": {
+      "model": "free",
+      "price": "Free"
+    }
+  },
+  {
+    "slug": "stremio-setup-sony-tv",
+    "playerId": "stremio",
+    "deviceId": "sony-tv",
+    "playerName": "Stremio",
+    "deviceName": "Sony Smart TV",
+    "deviceShortName": "Sony TV",
+    "title": "How to Setup Stremio on Sony TV",
+    "metaTitle": "Stremio on Sony TV - Setup Guide 2025 | Step-by-Step",
+    "description": "Complete guide to install and configure Stremio on Sony Smart TV. Step-by-step instructions for 2025 with troubleshooting tips.",
+    "content": {
+      "intro": "Looking to set up Stremio on your Sony Smart TV? This comprehensive guide walks you through the complete installation process, from downloading the app to configuring your first IPTV playlist. Stremio is free media center with addon ecosystem for streaming movies, tv shows, and live channels, and it works great on Sony TV.",
+      "requirements": [
+        "Sony Smart TV device",
+        "Active internet connection",
+        "IPTV subscription with M3U or Xtream credentials"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Open Google Play Store",
+          "description": "On your Sony TV, navigate to the Google Play Store from the home screen."
+        },
+        {
+          "stepNumber": 2,
+          "title": "Search for Stremio",
+          "description": "Use the search function to find \"Stremio\" and select it from the results."
+        },
+        {
+          "stepNumber": 3,
+          "title": "Install the App",
+          "description": "Click \"Install\" and wait for the download to complete. Stremio will appear in your apps."
+        },
+        {
+          "stepNumber": 4,
+          "title": "Add Your IPTV Playlist",
+          "description": "Open Stremio and navigate to the playlist or settings section. You can add your M3U playlist URL or Xtream Codes credentials here.",
+          "tips": [
+            "Have your M3U URL or Xtream login details ready",
+            "Some players support both M3U and Xtream formats"
+          ]
+        },
+        {
+          "stepNumber": 5,
+          "title": "Start Watching",
+          "description": "Once your playlist is loaded, browse through the channel categories and start watching your favorite content on Stremio!",
+          "tips": [
+            "Mark frequently watched channels as favorites",
+            "Explore the settings for more customization options"
+          ]
+        }
+      ],
+      "troubleshooting": [
+        "If the app won't install, check your device storage space",
+        "For playback issues, try clearing the app cache",
+        "If channels don't load, verify your playlist URL is correct",
+        "For buffering, use ethernet instead of Wi-Fi when possible"
+      ],
+      "faqs": [
+        {
+          "question": "Is Stremio free on Sony TV?",
+          "answer": "Yes, Stremio is completely free to use on Sony TV."
+        },
+        {
+          "question": "Does Stremio support EPG on Sony TV?",
+          "answer": "Unfortunately, Stremio does not have built-in EPG support."
+        },
+        {
+          "question": "Can I record with Stremio on Sony TV?",
+          "answer": "No, Stremio does not currently support recording on Sony TV."
+        },
+        {
+          "question": "Why is Stremio buffering on my Sony TV?",
+          "answer": "Buffering on Sony TV is usually caused by slow internet, server issues, or ISP throttling. Try using ethernet instead of Wi-Fi, or use a VPN to bypass throttling."
+        }
+      ],
+      "conclusion": "You've successfully set up Stremio on your Sony TV! With 6 key features including favorites, subtitle-support, external-player, you're ready to enjoy your IPTV content. If you experience any issues, check our troubleshooting section or explore our other guides."
+    },
+    "relatedGuides": [
+      "stremio-setup-firestick",
+      "stremio-setup-fire-tv-cube",
+      "stremio-setup-android-tv",
+      "tivimate-setup-sony-tv",
+      "iptv-smarters-setup-sony-tv"
+    ],
+    "tags": [
+      "stremio",
+      "sony-tv",
+      "setup",
+      "iptv",
+      "guide",
+      "stremio",
+      "stremio addons",
+      "torrentio"
+    ],
+    "keywords": [
+      "stremio sony-tv",
+      "Stremio on Sony TV",
+      "install Stremio Sony TV",
+      "Stremio setup guide",
+      "Sony TV iptv player",
+      "stremio",
+      "stremio addons",
+      "torrentio",
+      "stremio android",
+      "stremio ios",
+      "stremio apple tv",
+      "stremio firestick",
+      "real debrid stremio",
+      "stremio streaming",
+      "stremio movies",
+      "stremio tv shows"
+    ],
+    "lastUpdated": "2025-12-06T21:53:29.032Z",
+    "playerRating": 4.6,
     "playerPricing": {
       "model": "free",
       "price": "Free"

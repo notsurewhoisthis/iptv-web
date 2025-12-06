@@ -536,5 +536,801 @@
       "expertise": "IPTV & Streaming Specialists"
     },
     "relatedGuides": ["fix-iptv-buffering", "m3u-playlist-not-working"]
+  },
+  {
+    "slug": "stremio-android-complete-guide",
+    "title": "Stremio on Android - Complete Setup Guide 2025",
+    "metaTitle": "Stremio Android Setup 2025 - Install Addons, Real-Debrid & More",
+    "description": "Complete guide to setting up Stremio on Android. Learn how to install, configure addons like Torrentio, setup Real-Debrid, and optimize your streaming experience.",
+    "category": "setup",
+    "quickAnswer": {
+      "question": "How Do I Setup Stremio on Android?",
+      "answer": "Download Stremio from the Google Play Store, create a free account, then install addons like Torrentio and CinemaHub from the addon catalog. For best quality streams, connect Real-Debrid ($3-4/month) to get cached high-quality links. Stremio syncs your library across all devices.",
+      "highlight": "Stremio is completely free - Real-Debrid is optional but highly recommended for premium streams."
+    },
+    "content": {
+      "intro": "Stremio is a powerful media center that uses addons to stream movies, TV shows, and live content. Unlike traditional IPTV players that use M3U playlists, Stremio's addon system aggregates content from multiple sources. This guide covers everything from installation to advanced configuration on Android devices including phones, tablets, and Android TV.",
+      "sections": [
+        {
+          "title": "Download & Install Stremio on Android",
+          "steps": [
+            {
+              "title": "Install from Google Play Store",
+              "description": "Open the Play Store and search for 'Stremio'. Download the official app by Smart Code Ltd. Alternatively, visit play.google.com/store/apps/details?id=com.stremio.one"
+            },
+            {
+              "title": "For Android TV/Firestick",
+              "description": "Stremio is available directly on Android TV's Play Store. For Firestick, you'll need to sideload using the Downloader app - search for the Stremio APK at stremio.com/downloads"
+            },
+            {
+              "title": "Create Account",
+              "description": "Open Stremio and create a free account with your email. This account syncs your addons, library, and watch progress across all your devices."
+            }
+          ]
+        },
+        {
+          "title": "Install Essential Addons",
+          "steps": [
+            {
+              "title": "Access Addon Catalog",
+              "description": "In Stremio, click the puzzle piece icon or go to the Addons section. Browse the official addon catalog."
+            },
+            {
+              "title": "Install Torrentio (Most Popular)",
+              "description": "Torrentio aggregates torrent streams from multiple sources. Go to torrentio.strem.fun to configure and install. For best results, connect your Real-Debrid account in Torrentio settings before installing."
+            },
+            {
+              "title": "Install CinemaHub",
+              "description": "CinemaHub provides direct links without torrents. Good backup when Torrentio doesn't have sources."
+            },
+            {
+              "title": "Install OpenSubtitles",
+              "description": "For automatic subtitle fetching in your preferred language. Create a free OpenSubtitles.com account for best results."
+            },
+            {
+              "title": "Install Streaming Catalogs",
+              "description": "Add catalog addons like 'Cinemeta' (movie/show info) and 'The Movie Database' for better content discovery."
+            }
+          ]
+        },
+        {
+          "title": "Configure Real-Debrid (Highly Recommended)",
+          "steps": [
+            {
+              "title": "What is Real-Debrid?",
+              "description": "Real-Debrid is a premium link service ($3-4/month) that provides cached, high-quality streams without buffering. It dramatically improves the Stremio experience."
+            },
+            {
+              "title": "Create Real-Debrid Account",
+              "description": "Visit real-debrid.com and create an account. Purchase a subscription (30 days minimum)."
+            },
+            {
+              "title": "Connect to Torrentio",
+              "description": "Go to torrentio.strem.fun, scroll to 'Debrid Provider', select Real-Debrid, and authorize with your account. Then reinstall the Torrentio addon."
+            },
+            {
+              "title": "Verify Connection",
+              "description": "Search for any movie in Stremio. Real-Debrid links show as [RD] with higher quality and faster loading."
+            }
+          ]
+        },
+        {
+          "title": "Optimize Stremio Settings",
+          "steps": [
+            {
+              "title": "Player Settings",
+              "description": "Go to Settings > Player. Enable hardware decoding for better performance. Set default subtitle language."
+            },
+            {
+              "title": "Streaming Settings",
+              "description": "Adjust streaming server settings. If on slower connection, lower quality preferences."
+            },
+            {
+              "title": "Interface",
+              "description": "Customize the home screen layout and enable/disable sections you don't use."
+            }
+          ]
+        },
+        {
+          "title": "Troubleshooting Common Issues",
+          "steps": [
+            {
+              "title": "No Streams Available",
+              "description": "Install more addons (Torrentio, CinemaHub). For new releases, wait a few days for sources to appear. Connect Real-Debrid for more options."
+            },
+            {
+              "title": "Buffering Issues",
+              "description": "Use Real-Debrid for cached streams. Check internet speed. Try different stream sources."
+            },
+            {
+              "title": "Addons Not Loading",
+              "description": "Check internet connection. Some addons may be temporarily down. Clear Stremio cache in app settings."
+            }
+          ]
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Is Stremio legal?",
+        "answer": "Stremio itself is legal - it's just a media player. The legality depends on what content you access and how. Using it with legitimate streaming services is completely legal. Accessing copyrighted content through third-party addons may violate copyright laws in your country."
+      },
+      {
+        "question": "Is Stremio free?",
+        "answer": "Yes, Stremio is completely free with no premium tier or subscription required. Real-Debrid ($3-4/month) is optional but recommended for better streams."
+      },
+      {
+        "question": "What is the best addon for Stremio?",
+        "answer": "Torrentio is the most popular addon, especially when combined with Real-Debrid. CinemaHub is a good secondary addon. For subtitles, use OpenSubtitles."
+      },
+      {
+        "question": "Does Stremio work on Firestick?",
+        "answer": "Yes, but you need to sideload it since it's not in the Amazon App Store. Use the Downloader app to install the APK from stremio.com/downloads."
+      },
+      {
+        "question": "Can I use Stremio without Real-Debrid?",
+        "answer": "Yes, but the experience is worse. Without Real-Debrid, you rely on public torrent sources which are slower and lower quality. Real-Debrid provides cached, instant-loading HD/4K streams."
+      }
+    ],
+    "keywords": ["stremio android", "stremio android setup", "stremio android tv", "install stremio android", "stremio torrentio android", "stremio real debrid android", "stremio addons android"],
+    "lastUpdated": "2025-01-15T00:00:00.000Z",
+    "author": {
+      "name": "IPTV Guide Team",
+      "expertise": "Streaming & Media Center Specialists"
+    },
+    "relatedGuides": ["stremio-ios-complete-guide", "stremio-apple-tv-complete-guide"]
+  },
+  {
+    "slug": "stremio-ios-complete-guide",
+    "title": "Stremio on iPhone & iPad - Complete Setup Guide 2025",
+    "metaTitle": "Stremio iOS Setup 2025 - iPhone & iPad Installation Guide",
+    "description": "Complete guide to setting up Stremio on iPhone and iPad. Learn how to install from App Store, configure addons through the web interface, and optimize for iOS.",
+    "category": "setup",
+    "quickAnswer": {
+      "question": "How Do I Setup Stremio on iPhone/iPad?",
+      "answer": "Download Stremio from the App Store, create an account, then configure addons through the web interface at web.stremio.com (iOS app has limited addon installation). Sign in with the same account and your addons sync automatically. For best results, use Real-Debrid for premium streams.",
+      "highlight": "Configure addons on web.stremio.com first - they sync automatically to your iOS device."
+    },
+    "content": {
+      "intro": "Stremio is available on iOS through the App Store, making it easy to stream movies and TV shows on your iPhone or iPad. While the iOS version has some limitations compared to Android (mainly addon installation), you can configure everything through the web interface and it syncs seamlessly. This guide covers the complete setup process for iOS devices.",
+      "sections": [
+        {
+          "title": "Download Stremio from App Store",
+          "steps": [
+            {
+              "title": "Search App Store",
+              "description": "Open the App Store and search for 'Stremio'. Download the official app (blue icon with play button)."
+            },
+            {
+              "title": "Direct Link",
+              "description": "Or visit apps.apple.com/app/stremio/id1634931252 to download directly."
+            },
+            {
+              "title": "Create/Sign In Account",
+              "description": "Open Stremio and create a free account or sign in if you already have one. Your account syncs addons and watch history across all devices."
+            }
+          ]
+        },
+        {
+          "title": "Configure Addons via Web Interface",
+          "steps": [
+            {
+              "title": "Why Web Interface?",
+              "description": "iOS has restrictions on installing third-party addons directly. The easiest method is configuring addons on web.stremio.com, which then sync to your iOS device."
+            },
+            {
+              "title": "Open Web Stremio",
+              "description": "On any computer or browser, go to web.stremio.com and sign in with the same account you used on iOS."
+            },
+            {
+              "title": "Install Torrentio",
+              "description": "Go to torrentio.strem.fun, configure your preferences (connect Real-Debrid if you have it), and click Install. The addon installs to your Stremio account."
+            },
+            {
+              "title": "Install Other Addons",
+              "description": "Browse the addon catalog at stremio.com/addons. Install CinemaHub, OpenSubtitles, and any other addons you want."
+            },
+            {
+              "title": "Sync to iOS",
+              "description": "Open Stremio on your iPhone/iPad. Your addons should sync automatically within a few seconds. If not, sign out and back in."
+            }
+          ]
+        },
+        {
+          "title": "Best Addons for Stremio iOS",
+          "steps": [
+            {
+              "title": "Torrentio (Essential)",
+              "description": "The most comprehensive addon for movies and TV shows. Configure at torrentio.strem.fun with Real-Debrid for best results."
+            },
+            {
+              "title": "CinemaHub",
+              "description": "Provides direct streaming links. Good backup when Torrentio doesn't have sources for certain content."
+            },
+            {
+              "title": "OpenSubtitles",
+              "description": "Automatic subtitle fetching. Create a free account at opensubtitles.com for unlimited subtitle downloads."
+            },
+            {
+              "title": "Cinemeta",
+              "description": "Provides movie and TV show metadata, posters, and descriptions. Usually pre-installed."
+            }
+          ]
+        },
+        {
+          "title": "AirPlay to Apple TV",
+          "steps": [
+            {
+              "title": "Start Playback",
+              "description": "Play any content in Stremio on your iPhone or iPad."
+            },
+            {
+              "title": "Open Control Center",
+              "description": "Swipe down from top-right corner (iPhone X and later) or up from bottom (older models)."
+            },
+            {
+              "title": "Select AirPlay",
+              "description": "Tap the AirPlay/Screen Mirroring icon and select your Apple TV."
+            },
+            {
+              "title": "Enjoy on Big Screen",
+              "description": "Content plays on your TV while you control from your iPhone. Note: This mirrors, not native playback, so some quality may be lost."
+            }
+          ]
+        },
+        {
+          "title": "iOS-Specific Tips & Limitations",
+          "steps": [
+            {
+              "title": "Background Playback",
+              "description": "Stremio may pause when switching apps. Keep the app in foreground for uninterrupted playback."
+            },
+            {
+              "title": "Picture-in-Picture",
+              "description": "iOS supports PiP - look for the PiP button in the player to watch while using other apps."
+            },
+            {
+              "title": "Storage Management",
+              "description": "Stremio doesn't download content by default, so storage isn't an issue. Clear cache in app settings if needed."
+            },
+            {
+              "title": "Addon Limitations",
+              "description": "Some addon features may work differently on iOS due to Apple's restrictions. Configure advanced options on the web interface."
+            }
+          ]
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Why can't I install addons directly on iOS Stremio?",
+        "answer": "Apple's App Store policies restrict apps from installing third-party plugins directly. However, you can easily configure addons through web.stremio.com and they sync to your iOS device automatically."
+      },
+      {
+        "question": "Is Stremio free on iOS?",
+        "answer": "Yes, Stremio is completely free on iOS with no in-app purchases or subscriptions. Real-Debrid is a separate optional service that costs $3-4/month."
+      },
+      {
+        "question": "Does Stremio work offline on iOS?",
+        "answer": "Stremio is a streaming app and requires an internet connection. It doesn't have offline download functionality."
+      },
+      {
+        "question": "Can I cast Stremio from iPhone to Chromecast?",
+        "answer": "Stremio iOS doesn't have native Chromecast support. You can AirPlay to Apple TV, or use screen mirroring to Chromecast-enabled TVs that support it."
+      },
+      {
+        "question": "Why are some addons not working on iOS?",
+        "answer": "Some addons may have iOS compatibility issues. Try configuring the addon on web.stremio.com and syncing again. If issues persist, try alternative addons for the same content."
+      }
+    ],
+    "keywords": ["stremio ios", "stremio iphone", "stremio ipad", "stremio app store", "install stremio ios", "stremio addons ios", "stremio airplay"],
+    "lastUpdated": "2025-01-15T00:00:00.000Z",
+    "author": {
+      "name": "IPTV Guide Team",
+      "expertise": "Streaming & Media Center Specialists"
+    },
+    "relatedGuides": ["stremio-android-complete-guide", "stremio-apple-tv-complete-guide"]
+  },
+  {
+    "slug": "stremio-apple-tv-complete-guide",
+    "title": "Stremio on Apple TV - Complete Sideloading Guide 2025",
+    "metaTitle": "Stremio Apple TV Sideload 2025 - Installation Tutorial",
+    "description": "Complete guide to installing Stremio on Apple TV through sideloading. Learn how to use Sideloadly, AltStore, or Xcode to get Stremio running on your Apple TV.",
+    "category": "setup",
+    "quickAnswer": {
+      "question": "How Do I Install Stremio on Apple TV?",
+      "answer": "Stremio is NOT on the Apple TV App Store - you must sideload it. The easiest method is using Sideloadly on a Windows/Mac computer: download the Stremio .ipa file, connect your Apple TV via USB-C, and sideload with your Apple ID. Free Apple IDs require re-sideloading every 7 days.",
+      "highlight": "Stremio requires sideloading on Apple TV. With a free Apple ID, you must re-sign the app every 7 days."
+    },
+    "content": {
+      "intro": "Stremio provides an excellent streaming experience on Apple TV, but Apple doesn't allow it in the App Store due to its addon system. This guide covers multiple methods to sideload Stremio onto your Apple TV, including the easiest approach using Sideloadly. While sideloading requires a computer and some setup, the result is worth it.",
+      "sections": [
+        {
+          "title": "Why Sideloading is Required",
+          "content": "Apple's App Store has strict policies about apps that can access external streaming sources or install third-party plugins. Since Stremio's addon system allows access to various streaming sources, Apple doesn't approve it for tvOS. However, you can install any app on your Apple TV by sideloading with your own Apple ID."
+        },
+        {
+          "title": "What You Need",
+          "steps": [
+            {
+              "title": "Windows PC or Mac",
+              "description": "You'll need a computer to run the sideloading software."
+            },
+            {
+              "title": "USB-C Cable",
+              "description": "A USB-C cable to connect your Apple TV to your computer (Apple TV HD uses USB-C, Apple TV 4K uses ethernet or wireless pairing with Xcode)."
+            },
+            {
+              "title": "Apple ID",
+              "description": "Your Apple ID to sign the app. Free Apple IDs work but require re-signing every 7 days. Paid developer accounts ($99/year) sign for 1 year."
+            },
+            {
+              "title": "Stremio IPA File",
+              "description": "Download the tvOS IPA from the Stremio GitHub releases or community sources."
+            }
+          ]
+        },
+        {
+          "title": "Method 1: Sideload with Sideloadly (Recommended)",
+          "steps": [
+            {
+              "title": "Download Sideloadly",
+              "description": "Go to sideloadly.io and download the Windows or Mac version. Install and open it."
+            },
+            {
+              "title": "Download Stremio IPA",
+              "description": "Find the Stremio tvOS .ipa file. Check the Stremio GitHub releases page or search for 'Stremio tvOS IPA'."
+            },
+            {
+              "title": "Connect Apple TV",
+              "description": "Connect your Apple TV to your computer via USB-C cable. Your Apple TV should appear in Sideloadly."
+            },
+            {
+              "title": "Sign In with Apple ID",
+              "description": "Enter your Apple ID email in Sideloadly. You'll be prompted for your password and may need to generate an app-specific password if you have 2FA enabled."
+            },
+            {
+              "title": "Sideload the IPA",
+              "description": "Drag the Stremio .ipa file into Sideloadly and click Start. Wait for the process to complete."
+            },
+            {
+              "title": "Trust the App",
+              "description": "On your Apple TV, go to Settings > General > Device Management and trust your Apple ID profile."
+            },
+            {
+              "title": "Open Stremio",
+              "description": "Stremio should now appear on your Apple TV home screen. Sign in with your Stremio account and your addons will sync."
+            }
+          ]
+        },
+        {
+          "title": "Method 2: Sideload with Xcode (Mac Only)",
+          "steps": [
+            {
+              "title": "Install Xcode",
+              "description": "Download Xcode from the Mac App Store (large download, several GB)."
+            },
+            {
+              "title": "Pair Apple TV",
+              "description": "In Xcode, go to Window > Devices and Simulators. Pair your Apple TV wirelessly by entering the code shown on your TV."
+            },
+            {
+              "title": "Create Project",
+              "description": "Create a new tvOS project with your Apple ID as the signing team."
+            },
+            {
+              "title": "Replace with Stremio",
+              "description": "Use the Stremio IPA to replace the default app, or use app-specific installation methods available in various guides."
+            },
+            {
+              "title": "Deploy to Apple TV",
+              "description": "Build and run to your Apple TV. Trust the profile in Settings."
+            }
+          ]
+        },
+        {
+          "title": "Method 3: AltStore PAL (EU Only)",
+          "steps": [
+            {
+              "title": "EU Requirement",
+              "description": "AltStore PAL is only available in the European Union due to Apple's DMA compliance."
+            },
+            {
+              "title": "Install AltStore",
+              "description": "If you're in the EU, you can install AltStore PAL as an alternative app marketplace."
+            },
+            {
+              "title": "Find Stremio",
+              "description": "Search for Stremio within AltStore and install directly - no 7-day limit."
+            }
+          ]
+        },
+        {
+          "title": "Re-signing Every 7 Days (Free Apple ID)",
+          "steps": [
+            {
+              "title": "Why 7-Day Limit?",
+              "description": "Free Apple Developer accounts can only sign apps for 7 days. After 7 days, the app won't open and you need to re-sideload."
+            },
+            {
+              "title": "Solution 1: Re-sideload Weekly",
+              "description": "Simply repeat the Sideloadly process each week. It takes about 2 minutes once you're familiar with it."
+            },
+            {
+              "title": "Solution 2: Paid Developer Account",
+              "description": "For $99/year, an Apple Developer account signs apps for 1 year. Worth it if you sideload multiple apps regularly."
+            },
+            {
+              "title": "Solution 3: AirPlay from iOS",
+              "description": "As an alternative, use Stremio on iPhone/iPad and AirPlay to Apple TV. No sideloading needed but quality may be slightly lower."
+            }
+          ]
+        },
+        {
+          "title": "Configure Stremio on Apple TV",
+          "steps": [
+            {
+              "title": "Sign In",
+              "description": "Open Stremio and sign in with your Stremio account. Addons you configured on web.stremio.com or other devices sync automatically."
+            },
+            {
+              "title": "Navigation",
+              "description": "Use the Apple TV remote: swipe to navigate, click to select, Menu button to go back."
+            },
+            {
+              "title": "Configure Addons",
+              "description": "If you haven't set up addons, do so on web.stremio.com from any browser - they'll sync to Apple TV."
+            }
+          ]
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Why isn't Stremio on the Apple TV App Store?",
+        "answer": "Apple's App Store policies don't allow apps that can install third-party plugins or access external streaming sources through addons. Since Stremio's core functionality relies on its addon system, Apple won't approve it."
+      },
+      {
+        "question": "Do I need to pay to sideload Stremio?",
+        "answer": "No, sideloading is free using a free Apple ID. However, with a free Apple ID, you need to re-sideload every 7 days. A paid Developer account ($99/year) removes this limitation."
+      },
+      {
+        "question": "Is sideloading safe?",
+        "answer": "Sideloading with your own Apple ID is safe. You're just installing an app Apple hasn't approved, similar to installing non-App Store software on a Mac. Use trusted sources for IPA files."
+      },
+      {
+        "question": "Can I use AirPlay instead of sideloading?",
+        "answer": "Yes, you can use Stremio on iPhone/iPad and AirPlay to your Apple TV. This is simpler but mirrors your phone screen, so quality may be slightly reduced compared to native playback."
+      },
+      {
+        "question": "What if my Apple TV doesn't have USB-C?",
+        "answer": "Apple TV 4K (2021 and later) doesn't have USB-C. Use Xcode's wireless pairing on Mac, or use AirPlay from iOS as an alternative."
+      }
+    ],
+    "keywords": ["stremio apple tv", "sideload stremio apple tv", "stremio tvos", "install stremio apple tv", "stremio apple tv 4k", "stremio sideloadly", "stremio altstore"],
+    "lastUpdated": "2025-01-15T00:00:00.000Z",
+    "author": {
+      "name": "IPTV Guide Team",
+      "expertise": "Streaming & Media Center Specialists"
+    },
+    "relatedGuides": ["stremio-android-complete-guide", "stremio-ios-complete-guide"]
+  },
+  {
+    "slug": "cast-iptv-to-chromecast",
+    "title": "How to Cast IPTV to Chromecast - Complete Guide 2025",
+    "metaTitle": "Cast IPTV to Chromecast 2025 - Casting & Screen Mirror Guide",
+    "description": "Learn how to cast IPTV to your Chromecast or TV. Complete guide covering built-in casting, screen mirroring, and which IPTV players support Chromecast.",
+    "category": "streaming",
+    "quickAnswer": {
+      "question": "How Do I Cast IPTV to Chromecast?",
+      "answer": "Method 1: Use an IPTV player with built-in casting (GSE Smart IPTV, IPTV Smarters, VLC). Method 2: Screen mirror your entire phone to Chromecast. Method 3: Install IPTV apps directly on Chromecast with Google TV. For TiviMate casting, you'll need to screen mirror as it doesn't have native Chromecast support.",
+      "highlight": "Chromecast with Google TV can run IPTV apps directly - no casting needed!"
+    },
+    "content": {
+      "intro": "Casting IPTV to your TV via Chromecast is a popular way to watch on the big screen without buying a dedicated streaming device. This guide covers all methods: using IPTV apps with native casting, screen mirroring, and installing apps directly on Chromecast with Google TV. We'll also explain which popular players support casting and which don't.",
+      "sections": [
+        {
+          "title": "Casting Methods Explained",
+          "content": "There are three main ways to get IPTV on your Chromecast:\n\n1. **Native Casting** - The app sends video directly to Chromecast while your phone acts as a remote. Best quality and battery life.\n\n2. **Screen Mirroring** - Your phone screen is mirrored to the TV. Works with any app but uses more battery and may have slight delay.\n\n3. **Direct Install** - If you have Chromecast with Google TV, you can install IPTV apps directly and don't need to cast at all."
+        },
+        {
+          "title": "IPTV Players with Native Chromecast Support",
+          "steps": [
+            {
+              "title": "GSE Smart IPTV",
+              "description": "Has built-in Chromecast support. Look for the cast icon in the player. Works well for M3U playlists."
+            },
+            {
+              "title": "IPTV Smarters Pro",
+              "description": "Supports Chromecast casting on iOS and Android. Tap the cast icon before or during playback."
+            },
+            {
+              "title": "VLC Media Player",
+              "description": "VLC supports casting on Android. Go to Playback > Renderer and select your Chromecast."
+            },
+            {
+              "title": "Web Players",
+              "description": "Some web-based IPTV players support casting. Open in Chrome browser and use the cast feature."
+            }
+          ]
+        },
+        {
+          "title": "Players WITHOUT Native Casting (Use Screen Mirror)",
+          "steps": [
+            {
+              "title": "TiviMate",
+              "description": "TiviMate does NOT have native Chromecast support. Use screen mirroring or install TiviMate directly on Chromecast with Google TV."
+            },
+            {
+              "title": "Kodi",
+              "description": "Kodi doesn't support Chromecast directly. Use screen mirroring or install Kodi on your Chromecast with Google TV."
+            },
+            {
+              "title": "Perfect Player",
+              "description": "No Chromecast support. Screen mirror or use on Chromecast with Google TV directly."
+            }
+          ]
+        },
+        {
+          "title": "How to Screen Mirror to Chromecast",
+          "steps": [
+            {
+              "title": "Android Screen Mirror",
+              "description": "Open Settings > Connected devices > Connection preferences > Cast. Select your Chromecast. Your entire screen will mirror."
+            },
+            {
+              "title": "iPhone Screen Mirror",
+              "description": "Chromecast doesn't natively support iPhone mirroring. Use a third-party app like 'Replica' or 'Streamer for Chromecast', or use AirPlay to an Apple TV instead."
+            },
+            {
+              "title": "Start Your IPTV App",
+              "description": "Once mirroring is active, open your IPTV app and play content. It will appear on your TV."
+            },
+            {
+              "title": "Note on Quality",
+              "description": "Screen mirroring may have slight compression and latency. Native casting is always better when available."
+            }
+          ]
+        },
+        {
+          "title": "Install IPTV Apps on Chromecast with Google TV",
+          "steps": [
+            {
+              "title": "Check Your Device",
+              "description": "This only works on 'Chromecast with Google TV' (the one with a remote), not older Chromecast dongles that only receive casts."
+            },
+            {
+              "title": "Open Play Store",
+              "description": "On your Chromecast with Google TV, go to Apps > Play Store."
+            },
+            {
+              "title": "Search for IPTV Apps",
+              "description": "Search and install TiviMate, IPTV Smarters, Kodi, Stremio, or any other IPTV player."
+            },
+            {
+              "title": "Use Directly",
+              "description": "No casting needed - the app runs directly on your Chromecast. Best quality and most reliable method."
+            }
+          ]
+        },
+        {
+          "title": "Troubleshooting Casting Issues",
+          "steps": [
+            {
+              "title": "Same Wi-Fi Network",
+              "description": "Ensure your phone and Chromecast are on the same Wi-Fi network. This is the most common issue."
+            },
+            {
+              "title": "Restart Devices",
+              "description": "Restart both your phone and Chromecast if casting isn't working."
+            },
+            {
+              "title": "Update Apps",
+              "description": "Ensure your IPTV app and Google Home app are updated to latest versions."
+            },
+            {
+              "title": "Try Different Stream",
+              "description": "Some streams may have DRM or formats that don't cast well. Try a different channel."
+            }
+          ]
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Can I cast TiviMate to Chromecast?",
+        "answer": "TiviMate doesn't have native Chromecast support. Your options are: 1) Screen mirror from your phone, 2) Install TiviMate directly on Chromecast with Google TV, or 3) Use a different IPTV app with casting support like GSE Smart IPTV."
+      },
+      {
+        "question": "Why does my cast keep disconnecting?",
+        "answer": "Usually caused by Wi-Fi issues or phone going to sleep. Keep your phone awake during casting, ensure strong Wi-Fi signal, and try moving closer to your router."
+      },
+      {
+        "question": "Is screen mirroring quality as good as native casting?",
+        "answer": "No, native casting sends video directly to Chromecast in full quality. Screen mirroring compresses and sends your screen, which can reduce quality and introduce slight delay."
+      },
+      {
+        "question": "Can I cast from iPhone to Chromecast?",
+        "answer": "Chromecast doesn't support native iPhone screen mirroring. Use apps with built-in Chromecast support, or use third-party mirroring apps. For best results with iPhone, consider Apple TV with AirPlay instead."
+      },
+      {
+        "question": "What's the difference between Chromecast and Chromecast with Google TV?",
+        "answer": "Original Chromecast only receives casts from your phone - it can't run apps. Chromecast with Google TV has a full interface and Play Store, so you can install IPTV apps directly without casting."
+      }
+    ],
+    "keywords": ["chromecast iptv", "cast iptv to tv", "iptv with casting", "tivimate chromecast", "chromecast tivimate", "screen mirror iptv", "cast iptv android", "iptv chromecast setup"],
+    "lastUpdated": "2025-01-15T00:00:00.000Z",
+    "author": {
+      "name": "IPTV Guide Team",
+      "expertise": "IPTV & Streaming Specialists"
+    },
+    "relatedGuides": ["fix-iptv-buffering", "setup-vpn-for-iptv"]
+  },
+  {
+    "slug": "iptv-linux-setup",
+    "title": "IPTV on Linux - Complete Setup Guide 2025",
+    "metaTitle": "Linux IPTV Setup 2025 - VLC, Kodi & Stremio Installation",
+    "description": "Complete guide to watching IPTV on Linux. Learn how to setup VLC, Kodi with PVR IPTV Simple Client, Stremio, and Hypnotix on Ubuntu, Debian, Fedora, and other distributions.",
+    "category": "setup",
+    "quickAnswer": {
+      "question": "What is the Best IPTV Player for Linux?",
+      "answer": "For traditional M3U playlists: Kodi with PVR IPTV Simple Client offers the best EPG and TV-like experience. For simple playback: VLC is easy and reliable. For addon-based streaming: Stremio works great on Linux. For beginners on Linux Mint: Hypnotix is pre-installed and simple.",
+      "highlight": "Kodi with PVR IPTV Simple Client is the best full-featured IPTV solution for Linux."
+    },
+    "content": {
+      "intro": "Linux is an excellent platform for IPTV, offering powerful open-source players that often outperform their Windows counterparts. Whether you use Ubuntu, Debian, Fedora, Arch, or Linux Mint, you have great options for IPTV playback. This guide covers the best players and how to set them up on various Linux distributions.",
+      "sections": [
+        {
+          "title": "Best IPTV Players for Linux",
+          "content": "Linux offers several excellent IPTV options:\n\n- **Kodi** - Full-featured media center with EPG, recording, and extensive customization\n- **VLC** - Simple, reliable, plays virtually any format\n- **Stremio** - Modern interface with addon-based streaming\n- **Hypnotix** - Simple IPTV player included with Linux Mint\n- **FreeTuxTV** - Lightweight GTK-based IPTV viewer"
+        },
+        {
+          "title": "Setup VLC for IPTV on Linux",
+          "steps": [
+            {
+              "title": "Install VLC",
+              "description": "Ubuntu/Debian: sudo apt install vlc\nFedora: sudo dnf install vlc\nArch: sudo pacman -S vlc"
+            },
+            {
+              "title": "Open M3U Playlist",
+              "description": "Go to Media > Open Network Stream. Paste your M3U URL and click Play."
+            },
+            {
+              "title": "Save Playlist",
+              "description": "After loading, go to View > Playlist. Right-click and save for quick access later."
+            },
+            {
+              "title": "VLC Limitations",
+              "description": "VLC doesn't support EPG or channel management. It's best for simple, quick playback."
+            }
+          ]
+        },
+        {
+          "title": "Setup Kodi with PVR IPTV Simple Client",
+          "steps": [
+            {
+              "title": "Install Kodi",
+              "description": "Ubuntu/Debian: sudo apt install kodi\nOr add the Team Kodi PPA for latest version:\nsudo add-apt-repository ppa:team-xbmc/ppa\nsudo apt update && sudo apt install kodi"
+            },
+            {
+              "title": "Install PVR IPTV Simple Client",
+              "description": "Open Kodi > Add-ons > Install from repository > PVR clients > PVR IPTV Simple Client > Install"
+            },
+            {
+              "title": "Configure M3U Playlist",
+              "description": "Go to the addon settings > General. Set 'Location' to 'Remote Path (Internet address)' and enter your M3U URL."
+            },
+            {
+              "title": "Configure EPG (Optional)",
+              "description": "In addon settings > EPG Settings. Set location to Remote Path and enter your EPG/XMLTV URL."
+            },
+            {
+              "title": "Enable Addon",
+              "description": "Enable the PVR addon and restart Kodi. Your channels appear in TV > Channels."
+            },
+            {
+              "title": "Enjoy TV Interface",
+              "description": "Browse channels with EPG, set favorites, and enjoy a full TV-like experience."
+            }
+          ]
+        },
+        {
+          "title": "Setup Stremio on Linux",
+          "steps": [
+            {
+              "title": "Download Stremio",
+              "description": "Go to stremio.com/downloads. Download the .deb (Debian/Ubuntu), .rpm (Fedora), or AppImage (universal)."
+            },
+            {
+              "title": "Install Package",
+              "description": "Ubuntu/Debian: sudo dpkg -i stremio*.deb && sudo apt install -f\nFedora: sudo dnf install stremio*.rpm\nAppImage: chmod +x Stremio*.AppImage && ./Stremio*.AppImage"
+            },
+            {
+              "title": "Create Account",
+              "description": "Open Stremio and create a free account to sync your library and addons."
+            },
+            {
+              "title": "Install Addons",
+              "description": "Go to torrentio.strem.fun to install Torrentio (the most popular addon). Connect Real-Debrid for best results."
+            },
+            {
+              "title": "Enjoy Streaming",
+              "description": "Search for movies and TV shows. Stremio aggregates sources from various addons."
+            }
+          ]
+        },
+        {
+          "title": "Hypnotix on Linux Mint",
+          "steps": [
+            {
+              "title": "Already Installed",
+              "description": "Hypnotix comes pre-installed on Linux Mint. Find it in the application menu."
+            },
+            {
+              "title": "Add IPTV Provider",
+              "description": "Click the + button to add a provider. Choose 'M3U URL' and paste your playlist URL."
+            },
+            {
+              "title": "Browse Channels",
+              "description": "Channels appear organized by group. Click to play. Very simple interface."
+            },
+            {
+              "title": "Install on Other Distros",
+              "description": "Hypnotix can be installed on other distros via Flatpak: flatpak install flathub org.x.Hypnotix"
+            }
+          ]
+        },
+        {
+          "title": "Troubleshooting Linux IPTV",
+          "steps": [
+            {
+              "title": "Codec Issues",
+              "description": "Install restricted codecs:\nUbuntu: sudo apt install ubuntu-restricted-extras\nFedora: sudo dnf install gstreamer1-plugins-ugly"
+            },
+            {
+              "title": "Hardware Acceleration",
+              "description": "Enable VA-API or VDPAU in VLC/Kodi settings for smoother playback on older hardware."
+            },
+            {
+              "title": "Firewall Blocking",
+              "description": "If streams don't load, check if your firewall is blocking. Try: sudo ufw allow from any to any"
+            },
+            {
+              "title": "Screen Tearing",
+              "description": "Enable VSync in your display settings or compositor to fix video tearing."
+            }
+          ]
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Is there a TiviMate for Linux?",
+        "answer": "No, TiviMate is Android-only. The best alternatives on Linux are Kodi with PVR IPTV Simple Client (most similar features) or Hypnotix for a simpler experience."
+      },
+      {
+        "question": "Can I record IPTV on Linux?",
+        "answer": "Yes, Kodi supports recording with PVR backends like TVHeadend. VLC can also record streams manually (View > Advanced Controls, then click record). For automated recording, use TVHeadend or similar PVR software."
+      },
+      {
+        "question": "Which Linux distro is best for IPTV?",
+        "answer": "Any modern distro works well. Ubuntu and Linux Mint are beginner-friendly with good codec support. Fedora is great for newer hardware. The player matters more than the distro."
+      },
+      {
+        "question": "Does Stremio work well on Linux?",
+        "answer": "Yes, Stremio has official Linux support and works excellently. It's available as .deb, .rpm, and AppImage formats for maximum compatibility."
+      },
+      {
+        "question": "How do I get EPG working on Linux?",
+        "answer": "Kodi's PVR IPTV Simple Client fully supports EPG. Configure your EPG URL in the addon settings. VLC and basic players don't support EPG. Hypnotix has basic EPG support if your provider includes it."
+      }
+    ],
+    "keywords": ["iptv linux", "linux iptv player", "ubuntu iptv", "kodi linux iptv", "vlc linux iptv", "stremio linux", "hypnotix", "linux mint iptv", "fedora iptv", "debian iptv"],
+    "lastUpdated": "2025-01-15T00:00:00.000Z",
+    "author": {
+      "name": "IPTV Guide Team",
+      "expertise": "IPTV & Streaming Specialists"
+    },
+    "relatedGuides": ["fix-iptv-buffering", "setup-epg-guide"]
   }
 ]

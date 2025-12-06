@@ -7,7 +7,7 @@
     "brand": "Amazon",
     "category": "streaming-stick",
     "os": "Fire OS",
-    "supportedPlayers": ["tivimate", "iptv-smarters", "kodi", "vlc", "perfect-player", "ott-navigator", "iptv-extreme", "lazy-iptv", "televizo", "iptv-pro", "xciptv"],
+    "supportedPlayers": ["tivimate", "iptv-smarters", "kodi", "vlc", "perfect-player", "ott-navigator", "iptv-extreme", "lazy-iptv", "televizo", "iptv-pro", "xciptv", "stremio"],
     "specs": {
       "resolution": "4K Ultra HD",
       "storage": "8GB",
@@ -35,7 +35,7 @@
     "brand": "Amazon",
     "category": "streaming-box",
     "os": "Fire OS",
-    "supportedPlayers": ["tivimate", "iptv-smarters", "kodi", "vlc", "perfect-player", "ott-navigator", "iptv-extreme", "lazy-iptv", "televizo", "iptv-pro", "xciptv"],
+    "supportedPlayers": ["tivimate", "iptv-smarters", "kodi", "vlc", "perfect-player", "ott-navigator", "iptv-extreme", "lazy-iptv", "televizo", "iptv-pro", "xciptv", "stremio"],
     "specs": {
       "resolution": "4K Ultra HD",
       "storage": "16GB",
@@ -119,7 +119,7 @@
     "brand": "Google",
     "category": "streaming-stick",
     "os": "Google TV",
-    "supportedPlayers": ["tivimate", "iptv-smarters", "kodi", "vlc", "perfect-player", "televizo", "iptv-pro"],
+    "supportedPlayers": ["tivimate", "iptv-smarters", "kodi", "vlc", "perfect-player", "televizo", "iptv-pro", "stremio"],
     "specs": {
       "resolution": "4K HDR",
       "storage": "8GB",
@@ -137,6 +137,36 @@
       {"question": "What is the best IPTV app for Chromecast?", "answer": "TiviMate is the best IPTV app for Chromecast with Google TV, offering excellent EPG support and a user-friendly interface."},
       {"question": "Can I cast IPTV to Chromecast?", "answer": "Yes, you can cast IPTV from your phone using apps that support Chromecast, or install IPTV apps directly on Chromecast with Google TV."},
       {"question": "Is Chromecast good for IPTV?", "answer": "Chromecast with Google TV is good for IPTV due to its affordable price and Play Store access, though limited storage may require app management."}
+    ]
+  },
+  {
+    "id": "google-tv",
+    "name": "Google TV",
+    "shortName": "Google TV",
+    "slug": "google-tv",
+    "brand": "Google",
+    "category": "streaming-box",
+    "os": "Google TV",
+    "supportedPlayers": ["tivimate", "iptv-smarters", "kodi", "vlc", "perfect-player", "ott-navigator", "televizo", "iptv-pro", "xciptv", "stremio", "gse-smart-iptv"],
+    "specs": {
+      "resolution": "4K HDR",
+      "storage": "8GB-16GB",
+      "connectivity": ["Wi-Fi", "Ethernet (some models)", "Bluetooth", "HDMI"]
+    },
+    "pricing": "$29.99 - $99.99",
+    "amazonUrl": "https://store.google.com/product/chromecast_google_tv",
+    "pros": ["Full Google Play Store access", "Clean modern interface", "Google Assistant built-in", "Wide device compatibility", "Content discovery features"],
+    "cons": ["Limited storage on base models", "Performance varies by device", "No Ethernet on some models", "Some bloatware"],
+    "description": "Google TV is Google's smart TV operating system built on Android TV, offering a content-first interface with full Play Store access. Available on Chromecast with Google TV, various TCL, Sony, and other TVs. It supports virtually all Android IPTV players and provides excellent app compatibility for streaming.",
+    "shortDescription": "Google's smart TV platform with full Play Store access",
+    "keywords": ["google tv iptv", "google tv streaming", "google tv apps", "iptv on google tv", "google tv tivimate", "google tv kodi"],
+    "faqs": [
+      {"question": "What is the best IPTV player for Google TV?", "answer": "TiviMate is widely considered the best IPTV player for Google TV, offering excellent EPG support, recording, and a user-friendly interface. Other great options include IPTV Smarters, Kodi, and Stremio."},
+      {"question": "Is Google TV the same as Android TV?", "answer": "Google TV is built on Android TV but adds a content-first interface layer. Both run the same apps, but Google TV offers better content discovery and recommendations."},
+      {"question": "Can I install any IPTV app on Google TV?", "answer": "Yes, Google TV has full Play Store access and supports virtually all Android IPTV players including TiviMate, IPTV Smarters, Kodi, VLC, and Stremio."},
+      {"question": "Does Google TV support sideloading?", "answer": "Yes, you can sideload APK files on Google TV using apps like Send Files to TV or by enabling Developer Options and using ADB."},
+      {"question": "What devices run Google TV?", "answer": "Google TV runs on Chromecast with Google TV, many TCL and Sony smart TVs, the Onn streaming boxes from Walmart, and various other Android TV devices."},
+      {"question": "Is Google TV good for IPTV?", "answer": "Yes, Google TV is excellent for IPTV due to its full Play Store access, support for all major IPTV apps, and generally good performance for streaming."}
     ]
   },
   {
@@ -175,7 +205,7 @@
     "brand": "Apple",
     "category": "mobile",
     "os": "iOS/iPadOS",
-    "supportedPlayers": ["jamrun", "vlc", "iptv-smarters", "gse-smart-iptv", "iplaytv", "kodi"],
+    "supportedPlayers": ["jamrun", "vlc", "iptv-smarters", "gse-smart-iptv", "iplaytv", "kodi", "stremio"],
     "specs": {
       "resolution": "Varies by device",
       "storage": "64GB-1TB",
@@ -259,24 +289,28 @@
     "brand": "Various",
     "category": "desktop",
     "os": "Linux",
-    "supportedPlayers": ["vlc", "kodi"],
+    "supportedPlayers": ["vlc", "kodi", "stremio"],
     "specs": {
-      "resolution": "Varies",
+      "resolution": "Up to 8K (depends on hardware)",
       "storage": "Varies",
-      "connectivity": ["Ethernet", "Wi-Fi", "HDMI"]
+      "connectivity": ["Ethernet", "Wi-Fi", "HDMI", "DisplayPort"]
     },
     "pricing": "Free (software)",
     "amazonUrl": null,
-    "pros": ["Free and open source", "Highly customizable", "Can run on old hardware", "Privacy focused"],
-    "cons": ["Technical knowledge required", "Limited app support", "No native IPTV apps"],
-    "description": "Linux users can enjoy IPTV through VLC and Kodi, with the benefit of running on older hardware and having complete system control.",
-    "shortDescription": "Open-source IPTV on Linux systems",
-    "keywords": ["iptv linux", "linux iptv player", "ubuntu iptv", "iptv on linux"],
+    "pros": ["Free and open source", "Highly customizable", "Runs on old hardware", "Privacy focused", "No telemetry", "Stremio and Kodi work great"],
+    "cons": ["Technical knowledge helpful", "Fewer dedicated IPTV apps", "May require terminal for setup"],
+    "description": "Linux offers excellent IPTV playback through VLC, Kodi, and Stremio. With Kodi's PVR IPTV Simple Client for traditional M3U playlists or Stremio's addon ecosystem for streaming content, Linux provides a flexible and privacy-focused IPTV experience. Distributions like Ubuntu, Linux Mint, Fedora, and Debian all support these applications through their package managers or official downloads. Hypnotix, included with Linux Mint, provides an even simpler IPTV experience for beginners.",
+    "shortDescription": "Open-source IPTV with VLC, Kodi, and Stremio",
+    "keywords": ["iptv linux", "linux iptv player", "ubuntu iptv", "iptv on linux", "kodi linux", "stremio linux", "linux mint iptv", "hypnotix", "fedora iptv", "debian iptv"],
     "faqs": [
-      {"question": "What is the best IPTV player for Linux?", "answer": "VLC and Kodi are the best IPTV players for Linux, both being open-source and well-maintained on all major distributions."},
-      {"question": "Can I watch IPTV on Ubuntu?", "answer": "Yes, Ubuntu supports IPTV through VLC (available via apt) and Kodi, both supporting M3U playlists and EPG."},
-      {"question": "How do I play M3U files on Linux?", "answer": "Use VLC Media Player with Media > Open Network Stream or Kodi with IPTV Simple Client addon for M3U playlist playback."},
-      {"question": "Is there a TiviMate for Linux?", "answer": "No, TiviMate is Android-only. Linux users should use Kodi with IPTV Simple Client or Hypnotix for a similar experience."}
+      {"question": "What is the best IPTV player for Linux?", "answer": "Kodi with PVR IPTV Simple Client is the best for traditional M3U playlists and EPG. Stremio is excellent for addon-based streaming. VLC is the simplest option for basic M3U playback."},
+      {"question": "Can I watch IPTV on Ubuntu?", "answer": "Yes, Ubuntu supports IPTV through VLC (sudo apt install vlc), Kodi (available in Ubuntu Software or via PPA), and Stremio (download from stremio.com)."},
+      {"question": "How do I install Kodi on Linux?", "answer": "On Ubuntu/Debian: sudo apt install kodi. Then add the PVR IPTV Simple Client addon from the official Kodi repository for M3U playlist support."},
+      {"question": "Does Stremio work on Linux?", "answer": "Yes, Stremio has official Linux builds available as AppImage, deb, and rpm packages from stremio.com. It works great on Ubuntu, Fedora, and other distributions."},
+      {"question": "Is there a TiviMate for Linux?", "answer": "No, TiviMate is Android-only. The best alternatives on Linux are Kodi with PVR IPTV Simple Client for EPG support, or Hypnotix on Linux Mint."},
+      {"question": "What is Hypnotix?", "answer": "Hypnotix is a simple IPTV player included with Linux Mint. It supports M3U playlists and provides an easy-to-use interface without complex setup."},
+      {"question": "How do I play M3U files on Linux?", "answer": "VLC: Media > Open Network Stream and paste the M3U URL. Kodi: Install PVR IPTV Simple Client, add your M3U URL in settings. Stremio: Use an IPTV addon if available."},
+      {"question": "Can I record IPTV on Linux?", "answer": "Yes, Kodi supports recording with compatible PVR backends. VLC can record streams manually. For automated recording, consider TVHeadend or similar PVR software."}
     ]
   },
   {
