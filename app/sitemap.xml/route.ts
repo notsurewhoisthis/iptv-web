@@ -241,9 +241,10 @@ export async function GET() {
   // Technical guides
   technicalGuides.forEach((guide) => {
     urls.push({
-      url: `/technical/${guide.slug}`,
-      priority: 0.6,
+      url: `/guides/technical/${guide.slug}`,
+      priority: 0.8,
       changefreq: 'monthly',
+      lastmod: guide.lastUpdated,
     });
   });
 
