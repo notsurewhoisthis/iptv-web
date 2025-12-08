@@ -501,3 +501,36 @@ export function ArticleWithAuthorSchema({
     />
   );
 }
+
+// Collection Page Schema for hub/index pages
+export function CollectionPageSchema({
+  name,
+  description,
+  url,
+  numberOfItems,
+}: {
+  name: string;
+  description: string;
+  url: string;
+  numberOfItems: number;
+}) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name,
+    description,
+    url,
+    numberOfItems,
+    publisher: {
+      '@type': 'Organization',
+      name: 'IPTV Guide',
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}

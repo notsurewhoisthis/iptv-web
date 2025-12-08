@@ -39,6 +39,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: device.shortDescription,
       type: 'article',
     },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${device.name} - IPTV Setup Guide`,
+      description: device.shortDescription,
+    },
   };
 }
 

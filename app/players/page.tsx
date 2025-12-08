@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getPlayers } from '@/lib/data-loader';
+import { getPlayers, getBaseUrl } from '@/lib/data-loader';
 import { Star, ArrowRight } from 'lucide-react';
+import { CollectionPageSchema } from '@/components/JsonLd';
 
 export const metadata: Metadata = {
   title: 'IPTV Players - Compare Top Apps for Streaming',
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 
 export default async function PlayersPage() {
   const players = await getPlayers();
+  const baseUrl = getBaseUrl();
 
   // Featured players for alternatives quick links
   const featuredPlayers = ['tivimate', 'vlc', 'kodi', 'iptv-smarters', 'jamrun'];
@@ -18,6 +20,12 @@ export default async function PlayersPage() {
 
   return (
     <div className="min-h-screen py-8">
+      <CollectionPageSchema
+        name="IPTV Players"
+        description="Compare the best IPTV players including TiviMate, Kodi, VLC, and IPTV Smarters. Reviews, features, and setup guides."
+        url={`${baseUrl}/players`}
+        numberOfItems={players.length}
+      />
       <div className="max-w-6xl mx-auto px-4">
         <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">IPTV Players</h1>
         <p className="text-gray-600 dark:text-gray-400 mb-8">

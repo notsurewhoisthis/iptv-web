@@ -5,8 +5,10 @@ import {
   getDeviceComparisons,
   getPlayers,
   getDevices,
+  getBaseUrl,
 } from '@/lib/data-loader';
 import { ArrowLeftRight, Tv, Smartphone, ArrowRight } from 'lucide-react';
+import { CollectionPageSchema } from '@/components/JsonLd';
 
 export const metadata: Metadata = {
   title: 'IPTV Comparisons - Players & Devices Head-to-Head',
@@ -29,9 +31,17 @@ export default async function ComparePage() {
   // Featured players for alternatives
   const featuredAlternatives = ['tivimate', 'vlc', 'kodi', 'iptv-smarters', 'jamrun'];
   const alternativesPlayers = players.filter(p => featuredAlternatives.includes(p.slug));
+  const baseUrl = getBaseUrl();
+  const totalComparisons = playerComparisons.length + deviceComparisons.length;
 
   return (
     <div className="min-h-screen py-8">
+      <CollectionPageSchema
+        name="IPTV Comparisons"
+        description="Compare IPTV players and streaming devices side by side. Find the best option for your needs."
+        url={`${baseUrl}/compare`}
+        numberOfItems={totalComparisons}
+      />
       <div className="max-w-6xl mx-auto px-4">
         <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">IPTV Comparisons</h1>
         <p className="text-gray-600 dark:text-gray-400 mb-8">

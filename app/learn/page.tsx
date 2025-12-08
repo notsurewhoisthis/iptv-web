@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { BookOpen, Clock, BarChart3, ArrowRight } from 'lucide-react';
 import learnArticles from '@/data/learn-articles.json';
 import { MarketStats } from '@/components/MarketStats';
-import { BreadcrumbSchema } from '@/components/JsonLd';
+import { BreadcrumbSchema, CollectionPageSchema } from '@/components/JsonLd';
 import { getBaseUrl } from '@/lib/data-loader';
 
 export const metadata: Metadata = {
@@ -57,6 +57,12 @@ export default function LearnPage() {
           { name: 'Home', url: baseUrl },
           { name: 'Learn', url: `${baseUrl}/learn` },
         ]}
+      />
+      <CollectionPageSchema
+        name="Learn IPTV"
+        description="Free IPTV guides for beginners. Learn what IPTV is, how it works, M3U playlists, EPG setup, and more."
+        url={`${baseUrl}/learn`}
+        numberOfItems={learnArticles.length}
       />
 
       {/* Hero */}

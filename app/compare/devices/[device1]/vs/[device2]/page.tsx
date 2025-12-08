@@ -8,6 +8,7 @@ import {
   getBaseUrl,
 } from '@/lib/data-loader';
 import { ChevronRight, Check, X, Star } from 'lucide-react';
+import { BreadcrumbSchema, ComparisonSchema, FAQSchema } from '@/components/JsonLd';
 
 interface PageProps {
   params: Promise<{ device1: string; device2: string }>;
@@ -38,6 +39,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     alternates: {
       canonical: `${baseUrl}/compare/devices/${device1}/vs/${device2}`,
     },
+    twitter: {
+      card: 'summary_large_image',
+      title: comparison.metaTitle,
+      description: comparison.description,
+    },
   };
 }
 
@@ -62,8 +68,30 @@ export default async function DeviceComparisonPage({ params }: PageProps) {
                      ? comparison.device2ShortName
                      : comparison.device1ShortName;
 
+  const baseUrl = getBaseUrl();
+
   return (
     <div className="min-h-screen">
+      {/* JSON-LD Structured Data */}
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: baseUrl },
+          { name: 'Compare', url: `${baseUrl}/compare` },
+          { name: `${comparison.device1ShortName} vs ${comparison.device2ShortName}`, url: `${baseUrl}/compare/devices/${device1Id}/vs/${device2Id}` },
+        ]}
+      />
+      <ComparisonSchema
+        title={comparison.title}
+        description={comparison.description}
+        item1={{ name: comparison.device1Name }}
+        item2={{ name: comparison.device2Name }}
+        url={`${baseUrl}/compare/devices/${device1Id}/vs/${device2Id}`}
+        dateModified={new Date().toISOString().split('T')[0]}
+      />
+      {comparison.content.faqs && comparison.content.faqs.length > 0 && (
+        <FAQSchema faqs={comparison.content.faqs} />
+      )}
+
       {/* Breadcrumb */}
       <nav className="bg-gray-50 border-b border-gray-200">
         <div className="max-w-4xl mx-auto px-4 py-3">

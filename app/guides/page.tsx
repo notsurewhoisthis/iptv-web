@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getPlayerDeviceGuides, getPlayers, getDevices, getTechnicalGuides } from '@/lib/data-loader';
+import { getPlayerDeviceGuides, getPlayers, getDevices, getTechnicalGuides, getBaseUrl } from '@/lib/data-loader';
 import { BookOpen, Wrench, AlertTriangle, Settings } from 'lucide-react';
+import { CollectionPageSchema } from '@/components/JsonLd';
 
 export const metadata: Metadata = {
   title: 'IPTV Guides - Setup, Troubleshooting & Technical Tutorials',
@@ -27,9 +28,17 @@ export default async function GuidesPage() {
   // Separate technical guides by category
   const troubleshootingGuides = technicalGuides.filter((g) => g.category === 'troubleshooting');
   const setupTechnicalGuides = technicalGuides.filter((g) => g.category === 'setup');
+  const baseUrl = getBaseUrl();
+  const totalGuides = setupGuides.length + technicalGuides.length;
 
   return (
     <div className="min-h-screen py-8">
+      <CollectionPageSchema
+        name="IPTV Guides"
+        description="Complete IPTV guides including setup tutorials, troubleshooting fixes, and technical how-tos."
+        url={`${baseUrl}/guides`}
+        numberOfItems={totalGuides}
+      />
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center gap-3 mb-2">
           <BookOpen className="h-8 w-8 text-blue-500" />

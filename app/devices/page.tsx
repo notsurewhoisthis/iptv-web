@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getDevices } from '@/lib/data-loader';
+import { getDevices, getBaseUrl } from '@/lib/data-loader';
+import { CollectionPageSchema } from '@/components/JsonLd';
 
 export const metadata: Metadata = {
   title: 'Streaming Devices for IPTV - Firestick, Apple TV & More',
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 
 export default async function DevicesPage() {
   const devices = await getDevices();
+  const baseUrl = getBaseUrl();
 
   // Group by category
   const categories = devices.reduce((acc, device) => {
@@ -30,6 +32,12 @@ export default async function DevicesPage() {
 
   return (
     <div className="min-h-screen py-8">
+      <CollectionPageSchema
+        name="Streaming Devices for IPTV"
+        description="Find the best streaming device for IPTV. Setup guides for Firestick, Apple TV, Android TV, NVIDIA Shield, and more."
+        url={`${baseUrl}/devices`}
+        numberOfItems={devices.length}
+      />
       <div className="max-w-6xl mx-auto px-4">
         <h1 className="text-3xl font-bold text-gray-900 mb-2">
           Streaming Devices

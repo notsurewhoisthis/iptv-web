@@ -6,8 +6,10 @@ import {
   getPlayers,
   getDevices,
   getIssues,
+  getBaseUrl,
 } from '@/lib/data-loader';
 import { AlertTriangle, Tv, Smartphone } from 'lucide-react';
+import { CollectionPageSchema } from '@/components/JsonLd';
 
 export const metadata: Metadata = {
   title: 'IPTV Troubleshooting - Fix Common Streaming Issues',
@@ -26,9 +28,17 @@ export default async function TroubleshootingPage() {
 
   // Get top issues
   const topIssues = issues.slice(0, 6);
+  const baseUrl = getBaseUrl();
+  const totalGuides = playerIssues.length + deviceIssues.length;
 
   return (
     <div className="min-h-screen py-8">
+      <CollectionPageSchema
+        name="IPTV Troubleshooting"
+        description="Solve common IPTV problems: buffering, playback errors, EPG issues, audio sync, and more."
+        url={`${baseUrl}/troubleshooting`}
+        numberOfItems={totalGuides}
+      />
       <div className="max-w-6xl mx-auto px-4">
         <h1 className="text-3xl font-bold text-gray-900 mb-2">IPTV Troubleshooting</h1>
         <p className="text-gray-600 mb-8">

@@ -9,6 +9,7 @@ import {
   getTroubleshootingVideo,
 } from '@/lib/data-loader';
 import { VideoEmbed } from '@/components/VideoEmbed';
+import { FAQSchema, BreadcrumbSchema } from '@/components/JsonLd';
 import { ChevronRight, AlertTriangle, Lightbulb } from 'lucide-react';
 
 interface PageProps {
@@ -40,6 +41,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     alternates: {
       canonical: `${baseUrl}/troubleshooting/devices/${device}/${issue}`,
     },
+    twitter: {
+      card: 'summary_large_image',
+      title: guide.metaTitle,
+      description: guide.description,
+    },
   };
 }
 
@@ -56,9 +62,23 @@ export default async function DeviceTroubleshootingPage({ params }: PageProps) {
     getTroubleshootingVideo('devices', deviceId, issueId),
   ]);
   const severity = guide.content.severity;
+  const baseUrl = getBaseUrl();
 
   return (
     <div className="min-h-screen">
+      {/* JSON-LD Structured Data */}
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: baseUrl },
+          { name: 'Troubleshooting', url: `${baseUrl}/troubleshooting` },
+          { name: guide.deviceName, url: `${baseUrl}/devices/${deviceId}` },
+          { name: guide.issueName, url: `${baseUrl}/troubleshooting/devices/${deviceId}/${issueId}` },
+        ]}
+      />
+      {guide.content.faqs && guide.content.faqs.length > 0 && (
+        <FAQSchema faqs={guide.content.faqs} />
+      )}
+
       {/* Breadcrumb */}
       <nav className="bg-gray-50 border-b border-gray-200">
         <div className="max-w-4xl mx-auto px-4 py-3">

@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getBlogPosts } from '@/lib/data-loader';
+import { getBlogPosts, getBaseUrl } from '@/lib/data-loader';
 import { Clock, Calendar } from 'lucide-react';
+import { CollectionPageSchema } from '@/components/JsonLd';
 
 export const metadata: Metadata = {
   title: 'IPTV Blog - News, Guides & Tips',
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 
 export default async function BlogPage() {
   const posts = await getBlogPosts();
+  const baseUrl = getBaseUrl();
 
   if (posts.length === 0) {
     return (
@@ -27,6 +29,12 @@ export default async function BlogPage() {
 
   return (
     <div className="min-h-screen py-8">
+      <CollectionPageSchema
+        name="IPTV Blog"
+        description="Latest IPTV news, streaming guides, player updates, and tips for getting the best streaming experience."
+        url={`${baseUrl}/blog`}
+        numberOfItems={posts.length}
+      />
       <div className="max-w-4xl mx-auto px-4">
         <h1 className="text-3xl font-bold text-gray-900 mb-2">Blog</h1>
         <p className="text-gray-600 mb-8">

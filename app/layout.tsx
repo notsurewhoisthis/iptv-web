@@ -40,6 +40,12 @@ export const metadata: Metadata = {
     locale: 'en_US',
     siteName: 'IPTV Guide',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'IPTV Guide - Setup Guides, Player Reviews & Troubleshooting',
+    description:
+      'Comprehensive IPTV guides for TiviMate, Kodi, VLC, and more. Setup tutorials, player comparisons, troubleshooting tips.',
+  },
   alternates: {
     types: {
       'application/rss+xml': '/feed.xml',
