@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { getDevices, getDevice, getBaseUrl, getPlayerDeviceGuides, getDeviceComparisons, getPlayers } from '@/lib/data-loader';
+import { getDevices, getDevice, getBaseUrl, getPlayerDeviceGuides, getDeviceComparisons, getPlayers, getVideoForPage } from '@/lib/data-loader';
+import { VideoEmbed } from '@/components/VideoEmbed';
 import { ChevronRight, ExternalLink, Check, X, Star } from 'lucide-react';
 import { ProductSchema, BreadcrumbSchema, FAQSchema } from '@/components/JsonLd';
 import { QuickAnswer, AuthorBio, LastUpdated } from '@/components/GeoComponents';
@@ -49,11 +50,12 @@ export default async function DevicePage({ params }: PageProps) {
     notFound();
   }
 
-  const [guides, comparisons, allPlayers, allDevices] = await Promise.all([
+  const [guides, comparisons, allPlayers, allDevices, video] = await Promise.all([
     getPlayerDeviceGuides(),
     getDeviceComparisons(),
     getPlayers(),
     getDevices(),
+    getVideoForPage('devices', slug),
   ]);
   const deviceGuides = guides.filter((g) => g.deviceId === device.id).slice(0, 6);
   const deviceComparisons = comparisons.filter(
@@ -158,6 +160,14 @@ export default async function DevicePage({ params }: PageProps) {
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Overview</h2>
               <p className="text-gray-700 leading-relaxed">{device.description}</p>
             </section>
+
+            {/* Video Guide */}
+            {video && (
+              <section>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">{device.name} IPTV Setup Guide</h2>
+                <VideoEmbed video={video} />
+              </section>
+            )}
 
             {/* Pros and Cons */}
             <section className="grid md:grid-cols-2 gap-6">

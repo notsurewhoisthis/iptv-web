@@ -383,6 +383,27 @@ export interface UseCasePage {
   };
 }
 
+// Video data for YouTube embeds
+export interface VideoData {
+  youtubeId: string;
+  title: string;
+  description: string;
+  thumbnailUrl?: string;
+  uploadDate: string;
+  duration: string;
+  channelName?: string;
+  channelUrl?: string;
+}
+
+export interface VideoMappings {
+  'setup-guides': Record<string, VideoData>;
+  players: Record<string, VideoData>;
+  devices: Record<string, VideoData>;
+  'technical-guides': Record<string, VideoData>;
+  'learn-articles': Record<string, VideoData>;
+  troubleshooting: Record<string, VideoData>;
+}
+
 // Benchmark data for IPTV players
 export interface BenchmarkMetric {
   value: number | null;

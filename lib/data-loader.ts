@@ -18,6 +18,8 @@ import type {
   TechnicalGuide,
   BenchmarkData,
   PlayerBenchmark,
+  VideoData,
+  VideoMappings,
 } from './types';
 
 const DATA_DIR = path.join(process.cwd(), 'data');
@@ -245,6 +247,38 @@ export async function getPlayerBenchmark(playerId: string): Promise<PlayerBenchm
 export async function getPlayerBenchmarks(): Promise<PlayerBenchmark[]> {
   const data = await getBenchmarkData();
   return data.playerBenchmarks;
+}
+
+// Video mappings loaders
+export async function getVideoMappings(): Promise<VideoMappings> {
+  return loadJSON<VideoMappings>('video-mappings.json');
+}
+
+export async function getVideoForPage(
+  pageType: keyof VideoMappings,
+  pageKey: string
+): Promise<VideoData | null> {
+  try {
+    const mappings = await getVideoMappings();
+    return mappings[pageType]?.[pageKey] || null;
+  } catch {
+    return null;
+  }
+}
+
+export async function getSetupGuideVideo(
+  playerId: string,
+  deviceId: string
+): Promise<VideoData | null> {
+  return getVideoForPage('setup-guides', `${playerId}-${deviceId}`);
+}
+
+export async function getTroubleshootingVideo(
+  entityType: 'players' | 'devices',
+  entityId: string,
+  issueId: string
+): Promise<VideoData | null> {
+  return getVideoForPage('troubleshooting', `${entityType}-${entityId}-${issueId}`);
 }
 
 // Utility functions

@@ -6,7 +6,9 @@ import {
   getDeviceTroubleshootingGuide,
   getDevice,
   getBaseUrl,
+  getTroubleshootingVideo,
 } from '@/lib/data-loader';
+import { VideoEmbed } from '@/components/VideoEmbed';
 import { ChevronRight, AlertTriangle, Lightbulb } from 'lucide-react';
 
 interface PageProps {
@@ -49,7 +51,10 @@ export default async function DeviceTroubleshootingPage({ params }: PageProps) {
     notFound();
   }
 
-  const device = await getDevice(deviceId);
+  const [device, video] = await Promise.all([
+    getDevice(deviceId),
+    getTroubleshootingVideo('devices', deviceId, issueId),
+  ]);
   const severity = guide.content.severity;
 
   return (
@@ -117,6 +122,14 @@ export default async function DeviceTroubleshootingPage({ params }: PageProps) {
             ))}
           </ul>
         </section>
+
+        {/* Video Fix Guide */}
+        {video && (
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Video Fix Guide</h2>
+            <VideoEmbed video={video} />
+          </section>
+        )}
 
         {/* Solutions */}
         <section className="mb-8">

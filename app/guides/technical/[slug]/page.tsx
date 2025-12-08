@@ -7,7 +7,9 @@ import {
   getBaseUrl,
   getPlayers,
   getDevices,
+  getVideoForPage,
 } from '@/lib/data-loader';
+import { VideoEmbed } from '@/components/VideoEmbed';
 import { ChevronRight, BookOpen, AlertCircle, CheckCircle } from 'lucide-react';
 import {
   QuickAnswer,
@@ -55,11 +57,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function TechnicalGuidePage({ params }: PageProps) {
   const { slug } = await params;
-  const [guide, allGuides, allPlayers, allDevices] = await Promise.all([
+  const [guide, allGuides, allPlayers, allDevices, video] = await Promise.all([
     getTechnicalGuide(slug),
     getTechnicalGuides(),
     getPlayers(),
     getDevices(),
+    getVideoForPage('technical-guides', slug),
   ]);
   const baseUrl = getBaseUrl();
 
@@ -162,6 +165,14 @@ export default async function TechnicalGuidePage({ params }: PageProps) {
           answer={guide.quickAnswer.answer}
           highlight={guide.quickAnswer.highlight}
         />
+
+        {/* Video Guide */}
+        {video && (
+          <section className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 mb-4">Video Guide</h2>
+            <VideoEmbed video={video} />
+          </section>
+        )}
 
         {/* Introduction */}
         <section className="mb-8">

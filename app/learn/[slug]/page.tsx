@@ -8,7 +8,8 @@ import { RelatedContent, RelatedPlayers, RelatedGuides } from '@/components/Rela
 import { IptvArchitectureDiagram, StreamingFlowDiagram, M3uStructureDiagram } from '@/components/IptvDiagram';
 import { EnhancedAuthorBio, EditorialReviewBadge, LastUpdated } from '@/components/GeoComponents';
 import { TechArticleSchema, BreadcrumbSchema, FAQSchema } from '@/components/JsonLd';
-import { getBaseUrl, getPlayers, getTechnicalGuides } from '@/lib/data-loader';
+import { getBaseUrl, getPlayers, getTechnicalGuides, getVideoForPage } from '@/lib/data-loader';
+import { VideoEmbed } from '@/components/VideoEmbed';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -62,9 +63,10 @@ export default async function LearnArticlePage({ params }: PageProps) {
     notFound();
   }
 
-  const [allPlayers, allGuides] = await Promise.all([
+  const [allPlayers, allGuides, video] = await Promise.all([
     getPlayers(),
     getTechnicalGuides(),
+    getVideoForPage('learn-articles', slug),
   ]);
 
   const baseUrl = getBaseUrl();
@@ -204,6 +206,14 @@ export default async function LearnArticlePage({ params }: PageProps) {
 
         {/* Table of Contents */}
         <TableOfContents items={tocItems} />
+
+        {/* Video Overview */}
+        {video && (
+          <section className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Video Overview</h2>
+            <VideoEmbed video={video} />
+          </section>
+        )}
 
         {/* Diagrams based on article type */}
         {showArchitectureDiagram && <IptvArchitectureDiagram />}

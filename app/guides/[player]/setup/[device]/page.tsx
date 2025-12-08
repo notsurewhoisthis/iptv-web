@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { getPlayerDeviceGuides, getPlayerDeviceGuide, getPlayer, getDevice, getBaseUrl } from '@/lib/data-loader';
+import { getPlayerDeviceGuides, getPlayerDeviceGuide, getPlayer, getDevice, getBaseUrl, getSetupGuideVideo } from '@/lib/data-loader';
+import { VideoEmbed } from '@/components/VideoEmbed';
 import { ChevronRight, Star, Clock, CheckCircle, Calendar } from 'lucide-react';
 import { HowToSchema, FAQSchema, BreadcrumbSchema } from '@/components/JsonLd';
 
@@ -51,8 +52,11 @@ export default async function SetupGuidePage({ params }: PageProps) {
     notFound();
   }
 
-  const playerData = await getPlayer(player);
-  const deviceData = await getDevice(device);
+  const [playerData, deviceData, video] = await Promise.all([
+    getPlayer(player),
+    getDevice(device),
+    getSetupGuideVideo(player, device),
+  ]);
 
   const baseUrl = getBaseUrl();
 
@@ -155,6 +159,16 @@ export default async function SetupGuidePage({ params }: PageProps) {
                 ))}
               </ul>
             </section>
+
+            {/* Video Tutorial */}
+            {video && (
+              <section className="mb-8">
+                <h2 className="text-xl font-bold text-gray-900 mb-4">
+                  Video Tutorial
+                </h2>
+                <VideoEmbed video={video} />
+              </section>
+            )}
 
             {/* Steps */}
             <section className="mb-8">
