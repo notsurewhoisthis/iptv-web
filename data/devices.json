@@ -452,5 +452,439 @@
       {"question": "Is MAG box better than Firestick for IPTV?", "answer": "MAG boxes are simpler for portal-based IPTV but less versatile. Firestick offers more app choices and features but requires more setup."},
       {"question": "What is the latest MAG box model?", "answer": "The MAG 524 and MAG 524w3 are among the latest models, offering 4K support, Linux OS, and improved performance."}
     ]
+  },
+  {
+    "id": "formuler-z11-pro-max",
+    "name": "Formuler Z11 Pro Max",
+    "shortName": "Z11 Pro Max",
+    "slug": "formuler-z11-pro-max",
+    "brand": "Formuler",
+    "category": "iptv-box",
+    "os": "Android 11",
+    "supportedPlayers": ["tivimate", "iptv-smarters", "kodi", "vlc", "perfect-player", "ott-navigator", "televizo"],
+    "specs": {
+      "processor": "Realtek RTD1319C",
+      "ram": "4GB DDR4",
+      "storage": "32GB eMMC",
+      "resolution": "4K 60fps HDR10+",
+      "connectivity": ["Wi-Fi 6 AX 2x2 MIMO", "Gigabit Ethernet", "Bluetooth 5.0", "USB 3.0", "USB 2.0", "HDMI 2.1", "microSD"]
+    },
+    "pricing": "$159 - $189",
+    "amazonUrl": "https://www.amazon.com/s?k=formuler+z11+pro+max",
+    "pros": ["Most powerful Formuler device", "Wi-Fi 6 (AX) support", "32GB storage - most in class", "MYTVOnline2 pre-installed", "HDR10+ and HLG support", "Programmable Bluetooth remote"],
+    "cons": ["Premium price point", "Overkill for basic streaming", "MYTVOnline2 has learning curve"],
+    "description": "The Formuler Z11 Pro Max is widely considered the best dedicated IPTV box on the market. Powered by a Realtek RTD1319C processor with Mali-G57 MC1 GPU, 4GB DDR4 RAM, and 32GB eMMC storage, it delivers exceptional performance for IPTV streaming. The device features Wi-Fi 6 (AX) with 2x2 MIMO technology for superior wireless connectivity, Gigabit Ethernet for wired connections, and Bluetooth 5.0. Running Android 11, it supports all major IPTV players while coming pre-installed with Formuler's acclaimed MYTVOnline2 middleware. The Z11 Pro Max supports 4K at 60fps with advanced video codecs including AV1, H.265, and H.264, along with HDR10+ and HLG for stunning picture quality.",
+    "shortDescription": "Premium IPTV box with Wi-Fi 6 and 32GB storage",
+    "keywords": ["formuler z11 pro max", "formuler z11", "best iptv box", "formuler iptv", "z11 pro max", "formuler android box", "mytvonline2"],
+    "faqs": [
+      {"question": "Is the Formuler Z11 Pro Max the best IPTV box?", "answer": "Yes, the Z11 Pro Max is widely considered the best dedicated IPTV box due to its powerful hardware, Wi-Fi 6 support, 32GB storage, and MYTVOnline2 software."},
+      {"question": "Does Formuler Z11 Pro Max support TiviMate?", "answer": "Yes, the Z11 Pro Max runs Android 11 and supports TiviMate, IPTV Smarters, Kodi, and all other Android IPTV apps alongside the built-in MYTVOnline2."},
+      {"question": "What is MYTVOnline2?", "answer": "MYTVOnline2 is Formuler's proprietary IPTV middleware that comes pre-installed. It supports Xtream Codes, Stalker portals, and M3U playlists with excellent EPG and recording features."},
+      {"question": "Is Formuler Z11 Pro Max worth the price?", "answer": "If you're a serious IPTV user wanting the best experience, yes. The Wi-Fi 6, 32GB storage, and MYTVOnline2 justify the premium over cheaper devices."},
+      {"question": "Does Formuler Z11 Pro Max have Ethernet?", "answer": "Yes, it has a Gigabit Ethernet port for wired connections up to 1000Mbps, ideal for stable IPTV streaming."}
+    ]
+  },
+  {
+    "id": "formuler-z10-pro",
+    "name": "Formuler Z10 Pro",
+    "shortName": "Z10 Pro",
+    "slug": "formuler-z10-pro",
+    "brand": "Formuler",
+    "category": "iptv-box",
+    "os": "Android 10",
+    "supportedPlayers": ["tivimate", "iptv-smarters", "kodi", "vlc", "perfect-player", "ott-navigator", "televizo"],
+    "specs": {
+      "processor": "Quad-core ARM Cortex-A55",
+      "ram": "4GB DDR4",
+      "storage": "32GB eMMC",
+      "resolution": "4K HDR10+",
+      "connectivity": ["Wi-Fi 5 AC 2x2 MIMO", "Gigabit Ethernet", "Bluetooth 5.0", "USB 3.0", "USB 2.0", "HDMI 2.0", "microSD"]
+    },
+    "pricing": "$139 - $165",
+    "amazonUrl": "https://www.amazon.com/s?k=formuler+z10+pro",
+    "pros": ["Excellent value for features", "4GB RAM and 32GB storage", "MYTVOnline2 included", "Dual-band Wi-Fi AC", "Gigabit Ethernet", "HDR10+ support"],
+    "cons": ["No Wi-Fi 6 (use Z11 for that)", "Android 10 (not 11)", "Can run warm under heavy use"],
+    "description": "The Formuler Z10 Pro is a powerful mid-range IPTV box that offers exceptional value with 4GB DDR4 RAM and 32GB storage. It features dual-band Wi-Fi AC with 2x2 MIMO, Gigabit Ethernet, and Bluetooth 5.0 for reliable connectivity. Running Android 10, it supports all major IPTV players while including Formuler's MYTVOnline2 middleware. The Z10 Pro delivers 4K HDR10+ video quality and supports advanced video codecs for smooth IPTV playback. The upgraded user interface offers streamlined navigation with customizable home screen and ad-free experience.",
+    "shortDescription": "Mid-range IPTV box with 4GB RAM and 32GB storage",
+    "keywords": ["formuler z10 pro", "formuler z10", "formuler iptv box", "z10 pro", "mytvonline2 box"],
+    "faqs": [
+      {"question": "What is the difference between Formuler Z10 Pro and Z11 Pro Max?", "answer": "The Z11 Pro Max has Wi-Fi 6 (vs Wi-Fi 5), Android 11 (vs 10), and a faster processor. For most users, the Z10 Pro offers excellent performance at a lower price."},
+      {"question": "Does Formuler Z10 Pro support 4K?", "answer": "Yes, the Z10 Pro supports 4K resolution with HDR10+ for enhanced picture quality on compatible TVs."},
+      {"question": "Can I use TiviMate on Formuler Z10 Pro?", "answer": "Yes, the Z10 Pro runs Android 10 and supports TiviMate, IPTV Smarters, Kodi, and all other Android IPTV apps."},
+      {"question": "Is Formuler Z10 Pro good for IPTV?", "answer": "Yes, with 4GB RAM, 32GB storage, MYTVOnline2, and Gigabit Ethernet, the Z10 Pro is excellent for IPTV streaming."}
+    ]
+  },
+  {
+    "id": "formuler-z8-pro",
+    "name": "Formuler Z8 Pro",
+    "shortName": "Z8 Pro",
+    "slug": "formuler-z8-pro",
+    "brand": "Formuler",
+    "category": "iptv-box",
+    "os": "Android 9",
+    "supportedPlayers": ["tivimate", "iptv-smarters", "kodi", "vlc", "perfect-player", "ott-navigator"],
+    "specs": {
+      "processor": "Quad-core ARM Cortex-A53",
+      "ram": "2GB DDR4",
+      "storage": "16GB eMMC",
+      "resolution": "4K HDR",
+      "connectivity": ["Wi-Fi 5 AC 2x2 MIMO", "Gigabit Ethernet", "Bluetooth 4.2", "USB 2.0", "HDMI 2.0", "microSD"]
+    },
+    "pricing": "$99 - $129",
+    "amazonUrl": "https://www.amazon.com/s?k=formuler+z8+pro",
+    "pros": ["Affordable Formuler option", "MYTVOnline2 included", "Gigabit Ethernet", "4K HDR support", "Proven reliable hardware"],
+    "cons": ["Only 2GB RAM", "16GB storage fills quickly", "Older Android 9", "Bluetooth 4.2 only"],
+    "description": "The Formuler Z8 Pro is the budget-friendly entry point to the Formuler ecosystem. While featuring less RAM (2GB) and storage (16GB) than newer models, it still delivers reliable 4K HDR IPTV performance with Gigabit Ethernet and dual-band Wi-Fi. Running Android 9 with MYTVOnline2 pre-installed, the Z8 Pro provides an excellent cord-cutting experience for users who don't need the premium features of the Z10 or Z11 series.",
+    "shortDescription": "Budget Formuler IPTV box with essential features",
+    "keywords": ["formuler z8 pro", "formuler z8", "cheap formuler", "budget iptv box", "formuler entry level"],
+    "faqs": [
+      {"question": "Is Formuler Z8 Pro still good in 2025?", "answer": "The Z8 Pro remains a solid choice for basic IPTV, but the 2GB RAM and 16GB storage may limit multitasking. Consider the Z10 Pro for better performance."},
+      {"question": "Can Formuler Z8 Pro run TiviMate?", "answer": "Yes, TiviMate runs on the Z8 Pro, though the 2GB RAM means you should avoid running too many apps simultaneously."},
+      {"question": "What is the difference between Z8 Pro and Z10 Pro?", "answer": "The Z10 Pro has double the RAM (4GB vs 2GB), double the storage (32GB vs 16GB), newer Android, and Bluetooth 5.0."}
+    ]
+  },
+  {
+    "id": "buzztv-xrs-4500",
+    "name": "BuzzTV XRS 4500",
+    "shortName": "XRS 4500",
+    "slug": "buzztv-xrs-4500",
+    "brand": "BuzzTV",
+    "category": "iptv-box",
+    "os": "Android 11",
+    "supportedPlayers": ["tivimate", "iptv-smarters", "kodi", "vlc", "perfect-player", "ott-navigator"],
+    "specs": {
+      "processor": "Amlogic S905X4-J",
+      "ram": "4GB DDR4",
+      "storage": "32GB eMMC",
+      "resolution": "4K 60fps HDR",
+      "connectivity": ["Wi-Fi 6 AX", "Gigabit Ethernet", "Bluetooth 5.1", "USB 3.0", "HDMI 2.1", "AV output"]
+    },
+    "pricing": "$149 - $179",
+    "amazonUrl": "https://www.amazon.com/s?k=buzztv+xrs+4500",
+    "pros": ["Wi-Fi 6 support", "4GB RAM and 32GB storage", "Amlogic S905X4-J processor", "Android 11", "Bluetooth 5.1", "AV output for older TVs"],
+    "cons": ["Less known than Formuler", "XRS software learning curve", "Limited official support resources"],
+    "description": "The BuzzTV XRS 4500 is a high-performance IPTV box featuring the powerful Amlogic S905X4-J processor, 4GB DDR4 RAM, and 32GB storage. With Wi-Fi 6 (AX) for faster wireless speeds, Gigabit Ethernet for reliable wired connections, and Android 11 for broad app compatibility, the XRS 4500 competes directly with premium Formuler devices. It comes with BuzzTV's own interface and supports all major IPTV players. The AV output makes it compatible with older TVs that lack HDMI.",
+    "shortDescription": "Premium BuzzTV with Wi-Fi 6 and Android 11",
+    "keywords": ["buzztv xrs 4500", "buzztv iptv", "buzztv android box", "xrs 4500", "buzztv 4k"],
+    "faqs": [
+      {"question": "Is BuzzTV XRS 4500 better than Formuler?", "answer": "The XRS 4500 has similar specs to the Formuler Z11 Pro Max. Choice often comes down to preference for MYTVOnline2 (Formuler) vs BuzzTV's interface."},
+      {"question": "Does BuzzTV XRS 4500 support TiviMate?", "answer": "Yes, running Android 11, the XRS 4500 supports TiviMate, IPTV Smarters, Kodi, and all Android IPTV apps."},
+      {"question": "What processor does BuzzTV XRS 4500 have?", "answer": "It uses the Amlogic S905X4-J quad-core processor with Mali-G31 MP2 GPU, providing excellent 4K IPTV performance."}
+    ]
+  },
+  {
+    "id": "dreamlink-t3",
+    "name": "Dreamlink T3",
+    "shortName": "Dreamlink T3",
+    "slug": "dreamlink-t3",
+    "brand": "Dreamlink",
+    "category": "iptv-box",
+    "os": "Android 9",
+    "supportedPlayers": ["tivimate", "iptv-smarters", "kodi", "vlc", "perfect-player"],
+    "specs": {
+      "processor": "Amlogic S905X3",
+      "ram": "2GB DDR3",
+      "storage": "16GB eMMC",
+      "resolution": "4K HDR",
+      "connectivity": ["Wi-Fi 5 AC", "Gigabit Ethernet", "Bluetooth 4.1", "USB 3.0", "HDMI 2.1"]
+    },
+    "pricing": "$89 - $119",
+    "amazonUrl": "https://www.amazon.com/s?k=dreamlink+t3",
+    "pros": ["Affordable price", "Dreamlink DOL2 software", "4K HDR support", "Gigabit Ethernet", "USB 3.0 port"],
+    "cons": ["Only 2GB RAM", "16GB storage", "Older Android 9", "Less powerful than competitors"],
+    "description": "The Dreamlink T3 is an affordable IPTV box that offers solid performance for budget-conscious users. Powered by the Amlogic S905X3 processor with 2GB RAM and 16GB storage, it delivers 4K HDR content reliably. The T3 comes with Dreamlink's DOL2 (Dreamlink On-Line) software for easy IPTV setup while supporting Android IPTV apps. Gigabit Ethernet and USB 3.0 ensure fast, stable connections.",
+    "shortDescription": "Budget-friendly IPTV box with DOL2 software",
+    "keywords": ["dreamlink t3", "dreamlink iptv", "dreamlink box", "dol2", "dreamlink android"],
+    "faqs": [
+      {"question": "Is Dreamlink T3 good for IPTV?", "answer": "The T3 is good for basic IPTV needs at a budget price. For heavy use or multiple apps, consider devices with more RAM."},
+      {"question": "What is DOL2 on Dreamlink?", "answer": "DOL2 (Dreamlink On-Line 2) is Dreamlink's IPTV interface supporting Stalker portals and Xtream Codes for easy provider setup."},
+      {"question": "Can I install TiviMate on Dreamlink T3?", "answer": "Yes, the T3 runs Android 9 and supports TiviMate and other Android IPTV apps from the Play Store or sideloading."}
+    ]
+  },
+  {
+    "id": "tvip-s-box-v710",
+    "name": "TVIP S-Box v.710",
+    "shortName": "TVIP v.710",
+    "slug": "tvip-s-box-v710",
+    "brand": "TVIP",
+    "category": "iptv-box",
+    "os": "Android 11 / Linux",
+    "supportedPlayers": ["tivimate", "iptv-smarters", "kodi", "vlc"],
+    "specs": {
+      "processor": "Amlogic S905X4",
+      "ram": "2GB DDR4",
+      "storage": "8GB eMMC",
+      "resolution": "4K HDR",
+      "connectivity": ["Wi-Fi 6 AX", "Gigabit Ethernet", "Bluetooth 5.0", "USB 2.0", "HDMI 2.1"]
+    },
+    "pricing": "$119 - $149",
+    "amazonUrl": "https://www.amazon.com/s?k=tvip+s-box",
+    "pros": ["Dual-boot Linux/Android", "Wi-Fi 6 support", "Excellent Stalker support", "TVIP middleware", "Compact design"],
+    "cons": ["Only 2GB RAM", "8GB storage is limited", "Premium price for specs", "Less common in US"],
+    "description": "The TVIP S-Box v.710 offers unique dual-boot capability, running either Linux or Android 11. This flexibility makes it popular with IPTV providers using Stalker middleware while also supporting Android apps. With Wi-Fi 6 and Gigabit Ethernet, connectivity is excellent. TVIP's native middleware provides seamless integration with IPTV providers, while Android mode offers access to TiviMate and other apps.",
+    "shortDescription": "Dual-boot IPTV box with Linux and Android",
+    "keywords": ["tvip s-box", "tvip v710", "tvip iptv", "dual boot iptv", "tvip stalker"],
+    "faqs": [
+      {"question": "What is special about TVIP boxes?", "answer": "TVIP boxes offer dual-boot Linux/Android capability and excellent Stalker middleware support, making them popular with IPTV providers."},
+      {"question": "Can TVIP run TiviMate?", "answer": "Yes, in Android mode the TVIP v.710 can run TiviMate and other Android IPTV apps from the Play Store."},
+      {"question": "Is TVIP better than Formuler?", "answer": "TVIP excels with Stalker-based providers and dual-boot flexibility. Formuler has better specs and MYTVOnline2. Choice depends on your provider."}
+    ]
+  },
+  {
+    "id": "mecool-km2-plus",
+    "name": "Mecool KM2 Plus",
+    "shortName": "KM2 Plus",
+    "slug": "mecool-km2-plus",
+    "brand": "Mecool",
+    "category": "streaming-box",
+    "os": "Android TV 11",
+    "supportedPlayers": ["tivimate", "iptv-smarters", "kodi", "vlc", "perfect-player", "ott-navigator", "televizo", "stremio"],
+    "specs": {
+      "processor": "Amlogic S905X4-B",
+      "ram": "2GB DDR4",
+      "storage": "16GB eMMC",
+      "resolution": "4K HDR",
+      "connectivity": ["Wi-Fi 5 AC", "Ethernet (100Mbps)", "Bluetooth 5.0", "USB 2.0", "HDMI 2.1"]
+    },
+    "pricing": "$59 - $79",
+    "amazonUrl": "https://www.amazon.com/s?k=mecool+km2+plus",
+    "pros": ["Google certified Android TV", "Netflix 4K certified", "Affordable price", "Compact design", "Google Assistant"],
+    "cons": ["Only 2GB RAM", "100Mbps Ethernet (not Gigabit)", "16GB storage", "No USB 3.0"],
+    "description": "The Mecool KM2 Plus is a Google-certified Android TV box offering excellent value for casual IPTV users. With official Netflix 4K certification and Google Play Store access, it provides a legitimate streaming experience. The Amlogic S905X4-B processor handles 4K HDR content smoothly. While the 2GB RAM and 100Mbps Ethernet are limitations, the sub-$80 price makes it attractive for users wanting certified Android TV without spending on premium devices.",
+    "shortDescription": "Budget Google-certified Android TV box",
+    "keywords": ["mecool km2 plus", "mecool android tv", "mecool iptv", "certified android tv box", "mecool km2"],
+    "faqs": [
+      {"question": "Is Mecool KM2 Plus Google certified?", "answer": "Yes, the KM2 Plus is Google-certified with full Play Store access and Netflix 4K certification."},
+      {"question": "Can Mecool KM2 Plus run TiviMate?", "answer": "Yes, running Android TV 11, it supports TiviMate and all Android TV IPTV apps from the Play Store."},
+      {"question": "Is Mecool KM2 Plus good for IPTV?", "answer": "It's good for casual IPTV use. The 2GB RAM and 100Mbps Ethernet may limit heavy users. Consider devices with more RAM for demanding use."}
+    ]
+  },
+  {
+    "id": "xiaomi-mi-box-s",
+    "name": "Xiaomi Mi Box S",
+    "shortName": "Mi Box S",
+    "slug": "xiaomi-mi-box-s",
+    "brand": "Xiaomi",
+    "category": "streaming-box",
+    "os": "Android TV 9",
+    "supportedPlayers": ["tivimate", "iptv-smarters", "kodi", "vlc", "perfect-player", "ott-navigator", "televizo", "stremio"],
+    "specs": {
+      "processor": "Amlogic S905X-H",
+      "ram": "2GB DDR3",
+      "storage": "8GB eMMC",
+      "resolution": "4K HDR",
+      "connectivity": ["Wi-Fi 5 AC", "Bluetooth 4.2", "USB 2.0", "HDMI 2.0a"]
+    },
+    "pricing": "$49 - $69",
+    "amazonUrl": "https://www.amazon.com/s?k=xiaomi+mi+box+s",
+    "pros": ["Google certified", "Very affordable", "Compact and quiet", "Chromecast built-in", "Good remote"],
+    "cons": ["Only 2GB RAM", "8GB storage fills fast", "No Ethernet port", "Older Android TV 9"],
+    "description": "The Xiaomi Mi Box S is one of the most popular budget Android TV boxes, offering Google certification at an unbeatable price. With 4K HDR support, Chromecast built-in, and full Play Store access, it handles basic IPTV needs well. The 2GB RAM and 8GB storage are limitations, but for users wanting a simple, affordable certified device, the Mi Box S delivers solid value. The lack of Ethernet port means reliable Wi-Fi is essential.",
+    "shortDescription": "Affordable Google-certified Android TV box",
+    "keywords": ["xiaomi mi box s", "mi box iptv", "xiaomi android tv", "mi box s 4k", "xiaomi streaming box"],
+    "faqs": [
+      {"question": "Is Xiaomi Mi Box S good for IPTV?", "answer": "The Mi Box S works well for basic IPTV. The 2GB RAM handles most apps, but heavy multitasking may cause slowdowns."},
+      {"question": "Does Mi Box S have Ethernet?", "answer": "No, the Mi Box S only has Wi-Fi. You can add Ethernet via a USB adapter if needed for more stable IPTV streaming."},
+      {"question": "Can I install TiviMate on Mi Box S?", "answer": "Yes, TiviMate and all Android TV IPTV apps are available through the Google Play Store on the Mi Box S."}
+    ]
+  },
+  {
+    "id": "onn-android-tv-box",
+    "name": "Onn Android TV Box",
+    "shortName": "Onn Box",
+    "slug": "onn-android-tv-box",
+    "brand": "Onn (Walmart)",
+    "category": "streaming-box",
+    "os": "Google TV",
+    "supportedPlayers": ["tivimate", "iptv-smarters", "kodi", "vlc", "perfect-player", "ott-navigator", "televizo", "stremio"],
+    "specs": {
+      "processor": "Amlogic S905Y4",
+      "ram": "2GB",
+      "storage": "8GB",
+      "resolution": "4K HDR",
+      "connectivity": ["Wi-Fi 5 AC", "Bluetooth", "USB", "HDMI"]
+    },
+    "pricing": "$19.99 - $29.99",
+    "amazonUrl": "https://www.walmart.com/search?q=onn+android+tv+box",
+    "pros": ["Incredibly affordable ($20)", "Google TV interface", "Google certified", "4K HDR support", "Available at Walmart"],
+    "cons": ["Budget build quality", "Limited RAM and storage", "Performance can lag", "Basic remote"],
+    "description": "The Onn Android TV Box from Walmart is the most affordable Google TV device available, often priced at just $20. Despite its budget price, it's Google-certified with full Play Store access and runs the modern Google TV interface. The 2GB RAM and 8GB storage are standard budget specs, but the device handles basic IPTV streaming adequately. For users wanting to test IPTV on a tight budget, the Onn box is unbeatable value.",
+    "shortDescription": "Ultra-budget Google TV box from Walmart",
+    "keywords": ["onn android tv", "onn google tv", "walmart streaming box", "onn 4k", "cheap android tv box"],
+    "faqs": [
+      {"question": "Is the $20 Onn box good for IPTV?", "answer": "The Onn box works for basic IPTV at an amazing price. Don't expect premium performance, but it handles TiviMate and other apps adequately."},
+      {"question": "Is Onn Android TV box Google certified?", "answer": "Yes, it's fully Google-certified with Play Store access, Google Assistant, and the Google TV interface."},
+      {"question": "Where can I buy the Onn Android TV box?", "answer": "The Onn Android TV box is exclusively sold at Walmart stores and walmart.com."}
+    ]
+  },
+  {
+    "id": "homatics-box-r-4k-plus",
+    "name": "Homatics Box R 4K Plus",
+    "shortName": "Homatics R 4K Plus",
+    "slug": "homatics-box-r-4k-plus",
+    "brand": "Homatics",
+    "category": "streaming-box",
+    "os": "Android TV 11",
+    "supportedPlayers": ["tivimate", "iptv-smarters", "kodi", "vlc", "perfect-player", "ott-navigator", "televizo", "stremio"],
+    "specs": {
+      "processor": "Amlogic S905X4-K",
+      "ram": "4GB DDR4",
+      "storage": "32GB eMMC",
+      "resolution": "4K Dolby Vision",
+      "connectivity": ["Wi-Fi 6 AX", "Gigabit Ethernet", "Bluetooth 5.0", "USB 3.0", "HDMI 2.1", "microSD"]
+    },
+    "pricing": "$99 - $129",
+    "amazonUrl": "https://www.amazon.com/s?k=homatics+box+r+4k+plus",
+    "pros": ["4GB RAM and 32GB storage", "Wi-Fi 6 and Gigabit Ethernet", "Dolby Vision certified", "Netflix 4K certified", "Excellent value"],
+    "cons": ["Less known brand", "Limited availability in some regions", "No built-in IPTV middleware"],
+    "description": "The Homatics Box R 4K Plus is a premium Android TV box offering flagship specs at a mid-range price. With 4GB DDR4 RAM, 32GB storage, Wi-Fi 6, and Gigabit Ethernet, it competes with devices costing significantly more. It's Netflix 4K and Dolby Vision certified for premium streaming quality. Running Android TV 11, it supports all IPTV apps from the Play Store. The Homatics R 4K Plus is an excellent choice for users wanting premium performance without the Formuler price tag.",
+    "shortDescription": "Premium Android TV box with flagship specs",
+    "keywords": ["homatics box r", "homatics 4k plus", "homatics android tv", "homatics iptv", "best value android tv box"],
+    "faqs": [
+      {"question": "Is Homatics Box R 4K Plus good for IPTV?", "answer": "Excellent for IPTV. The 4GB RAM, 32GB storage, Wi-Fi 6, and Gigabit Ethernet provide smooth performance for any IPTV app."},
+      {"question": "How does Homatics compare to NVIDIA Shield?", "answer": "The Shield has more power for gaming, but for IPTV the Homatics offers similar performance at nearly half the price."},
+      {"question": "Is Homatics Google certified?", "answer": "Yes, it's fully Google-certified with Play Store access, Netflix 4K, and Dolby Vision certification."}
+    ]
+  },
+  {
+    "id": "tcl-smart-tv",
+    "name": "TCL Smart TV",
+    "shortName": "TCL TV",
+    "slug": "tcl-smart-tv",
+    "brand": "TCL",
+    "category": "smart-tv",
+    "os": "Google TV / Roku TV",
+    "supportedPlayers": ["tivimate", "iptv-smarters", "kodi", "vlc", "perfect-player", "televizo"],
+    "specs": {
+      "resolution": "4K/8K QLED",
+      "storage": "8-16GB",
+      "connectivity": ["Wi-Fi", "Ethernet", "Bluetooth", "HDMI"]
+    },
+    "pricing": "$200 - $2000",
+    "amazonUrl": "https://www.amazon.com/s?k=tcl+smart+tv",
+    "pros": ["Affordable quality TVs", "Google TV or Roku options", "4K QLED at budget prices", "Good HDR support", "Play Store on Google TV models"],
+    "cons": ["Roku models have no IPTV support", "Google TV models have limited storage", "Quality varies by model tier"],
+    "description": "TCL Smart TVs come in two flavors: Google TV models with full Play Store access for IPTV apps, and Roku TV models with limited IPTV support. The Google TV models (like the S-Class and Q-Class) support TiviMate, IPTV Smarters, and all Android IPTV apps directly on the TV. TCL offers excellent value with 4K QLED panels at competitive prices. For IPTV users, choose TCL models with Google TV rather than Roku TV.",
+    "shortDescription": "Budget-friendly smart TVs with Google TV or Roku",
+    "keywords": ["tcl tv iptv", "tcl smart tv", "tcl google tv", "tcl 4k iptv", "tcl roku iptv"],
+    "faqs": [
+      {"question": "Can I use IPTV on TCL TV?", "answer": "On TCL Google TV models, yes - you can install TiviMate and other IPTV apps. TCL Roku TV models have very limited IPTV support."},
+      {"question": "Does TCL TV have Google TV or Roku?", "answer": "TCL offers both. Check the model specifications - some have Google TV (Play Store access) and others have Roku (limited IPTV)."},
+      {"question": "What is the best TCL TV for IPTV?", "answer": "Choose any TCL with Google TV (not Roku) for IPTV. The Q-Class and S-Class with Google TV support all Android IPTV apps."}
+    ]
+  },
+  {
+    "id": "hisense-smart-tv",
+    "name": "Hisense Smart TV",
+    "shortName": "Hisense TV",
+    "slug": "hisense-smart-tv",
+    "brand": "Hisense",
+    "category": "smart-tv",
+    "os": "Google TV / VIDAA / Roku TV",
+    "supportedPlayers": ["tivimate", "iptv-smarters", "kodi", "vlc", "perfect-player", "televizo"],
+    "specs": {
+      "resolution": "4K ULED",
+      "storage": "8-16GB",
+      "connectivity": ["Wi-Fi", "Ethernet", "Bluetooth", "HDMI"]
+    },
+    "pricing": "$200 - $3000",
+    "amazonUrl": "https://www.amazon.com/s?k=hisense+smart+tv",
+    "pros": ["Budget-friendly prices", "ULED technology", "Google TV models support IPTV apps", "Good value for size", "Dolby Vision support"],
+    "cons": ["VIDAA OS has limited IPTV options", "Roku models don't support IPTV well", "Quality varies significantly"],
+    "description": "Hisense Smart TVs use various operating systems: Google TV (best for IPTV), VIDAA (Hisense proprietary), or Roku TV. For IPTV users, Hisense Google TV models provide full Play Store access for TiviMate and other apps. VIDAA OS has limited IPTV app availability. Hisense offers excellent value with ULED technology delivering bright, vibrant 4K images at competitive prices. Always check the operating system before purchasing for IPTV use.",
+    "shortDescription": "Value smart TVs with multiple OS options",
+    "keywords": ["hisense tv iptv", "hisense smart tv", "hisense google tv", "hisense 4k iptv", "hisense vidaa iptv"],
+    "faqs": [
+      {"question": "Can I install IPTV apps on Hisense TV?", "answer": "On Hisense Google TV models, yes. VIDAA OS has limited IPTV options, and Hisense Roku models don't support mainstream IPTV apps."},
+      {"question": "What OS does Hisense TV use?", "answer": "Hisense TVs come with Google TV, VIDAA (proprietary), or Roku TV depending on the model. Google TV is best for IPTV."},
+      {"question": "Is Hisense TV good for IPTV?", "answer": "Hisense Google TV models are excellent for IPTV with full app support. Avoid VIDAA and Roku models if IPTV is important to you."}
+    ]
+  },
+  {
+    "id": "vizio-smart-tv",
+    "name": "Vizio Smart TV",
+    "shortName": "Vizio TV",
+    "slug": "vizio-smart-tv",
+    "brand": "Vizio",
+    "category": "smart-tv",
+    "os": "SmartCast",
+    "supportedPlayers": [],
+    "specs": {
+      "resolution": "4K",
+      "storage": "Limited",
+      "connectivity": ["Wi-Fi", "Ethernet", "HDMI", "Chromecast Built-in"]
+    },
+    "pricing": "$200 - $2500",
+    "amazonUrl": "https://www.amazon.com/s?k=vizio+smart+tv",
+    "pros": ["Affordable prices", "Chromecast built-in", "Good picture quality", "AirPlay 2 support"],
+    "cons": ["SmartCast has no IPTV apps", "Limited app selection overall", "Must cast from phone or use external device", "No sideloading"],
+    "description": "Vizio Smart TVs run SmartCast OS which has extremely limited app support and no IPTV player apps. However, Vizio TVs have Chromecast built-in, allowing you to cast IPTV from your phone using apps like IPTV Smarters or GSE Smart IPTV. For native IPTV app support, you'll need to use an external device like a Firestick with your Vizio TV. The TVs offer good picture quality at competitive prices.",
+    "shortDescription": "Smart TV with casting, no native IPTV apps",
+    "keywords": ["vizio tv iptv", "vizio smartcast iptv", "vizio chromecast", "vizio smart tv streaming"],
+    "faqs": [
+      {"question": "Can I watch IPTV on Vizio TV?", "answer": "Vizio SmartCast has no IPTV apps. You can cast IPTV from your phone via built-in Chromecast, or use an external device like Firestick."},
+      {"question": "Does Vizio TV have TiviMate?", "answer": "No, TiviMate and other IPTV apps are not available on Vizio SmartCast. Use an external Android device with your Vizio TV."},
+      {"question": "Can I cast IPTV to Vizio TV?", "answer": "Yes, Vizio TVs have Chromecast built-in. You can cast from IPTV apps on your phone that support Chromecast."}
+    ]
+  },
+  {
+    "id": "xbox-series-xs",
+    "name": "Xbox Series X/S",
+    "shortName": "Xbox",
+    "slug": "xbox-series-xs",
+    "brand": "Microsoft",
+    "category": "gaming-console",
+    "os": "Xbox OS",
+    "supportedPlayers": ["kodi"],
+    "specs": {
+      "processor": "AMD Zen 2 (custom)",
+      "ram": "10GB/16GB GDDR6",
+      "storage": "512GB/1TB SSD",
+      "resolution": "4K/8K",
+      "connectivity": ["Wi-Fi 6", "Ethernet", "Bluetooth", "HDMI 2.1", "USB 3.1"]
+    },
+    "pricing": "$299 - $499",
+    "amazonUrl": "https://www.amazon.com/s?k=xbox+series+x",
+    "pros": ["Powerful hardware", "Kodi available in store", "4K/8K capable", "Already own for gaming", "Microsoft Edge browser"],
+    "cons": ["Very limited IPTV options", "No TiviMate or IPTV Smarters", "Kodi requires setup", "Overkill just for IPTV"],
+    "description": "Xbox Series X and S gaming consoles can play IPTV content through limited options. Kodi is available in the Microsoft Store and supports M3U playlists with the PVR IPTV Simple Client addon. The Microsoft Edge browser can access web-based IPTV players. However, popular IPTV apps like TiviMate and IPTV Smarters are not available. If you already own an Xbox for gaming, it can serve as a secondary IPTV device, but dedicated streaming devices offer better IPTV experiences.",
+    "shortDescription": "Gaming console with limited IPTV via Kodi",
+    "keywords": ["xbox iptv", "xbox series x iptv", "kodi xbox", "xbox streaming", "xbox m3u"],
+    "faqs": [
+      {"question": "Can I use IPTV on Xbox?", "answer": "Yes, but options are limited. Install Kodi from the Microsoft Store and add the PVR IPTV Simple Client for M3U playlist support."},
+      {"question": "Is TiviMate available on Xbox?", "answer": "No, TiviMate is Android-only and not available on Xbox. Kodi is the main IPTV option for Xbox."},
+      {"question": "Is Xbox good for IPTV?", "answer": "Xbox works for IPTV in a pinch using Kodi, but dedicated devices like Firestick or NVIDIA Shield offer much better IPTV experiences."},
+      {"question": "How do I watch M3U on Xbox?", "answer": "Install Kodi from the Microsoft Store, then add the PVR IPTV Simple Client addon and configure your M3U playlist URL."}
+    ]
+  },
+  {
+    "id": "playstation-5",
+    "name": "PlayStation 5",
+    "shortName": "PS5",
+    "slug": "playstation-5",
+    "brand": "Sony",
+    "category": "gaming-console",
+    "os": "PlayStation OS",
+    "supportedPlayers": [],
+    "specs": {
+      "processor": "AMD Zen 2 (custom)",
+      "ram": "16GB GDDR6",
+      "storage": "825GB SSD",
+      "resolution": "4K/8K",
+      "connectivity": ["Wi-Fi 6", "Ethernet", "Bluetooth 5.1", "HDMI 2.1", "USB"]
+    },
+    "pricing": "$449 - $499",
+    "amazonUrl": "https://www.amazon.com/s?k=playstation+5",
+    "pros": ["Powerful hardware", "Web browser available", "4K/8K capable", "Already own for gaming"],
+    "cons": ["No IPTV apps available", "No Kodi support", "Browser-only IPTV is limited", "Not designed for IPTV"],
+    "description": "PlayStation 5 has extremely limited IPTV capabilities. Unlike Xbox, there's no Kodi available for PS5. The only option is using the web browser to access browser-based IPTV services, which is cumbersome and unreliable. For IPTV streaming, PS5 owners should use a dedicated device like Firestick, Chromecast, or NVIDIA Shield connected to the same TV. PS5's powerful hardware is wasted on IPTV due to Sony's closed ecosystem.",
+    "shortDescription": "Gaming console with minimal IPTV support",
+    "keywords": ["playstation iptv", "ps5 iptv", "playstation 5 streaming", "ps5 m3u"],
+    "faqs": [
+      {"question": "Can I watch IPTV on PlayStation 5?", "answer": "PS5 has very limited IPTV options. There are no IPTV apps or Kodi available. The only option is browser-based IPTV which is inconvenient."},
+      {"question": "Is there Kodi for PS5?", "answer": "No, Kodi is not available on PlayStation 5 due to Sony's closed ecosystem."},
+      {"question": "What is the best way to watch IPTV with a PS5?", "answer": "Use a separate streaming device (Firestick, Chromecast, etc.) connected to your TV alongside the PS5 for IPTV."},
+      {"question": "Does PS5 have any streaming apps?", "answer": "PS5 has mainstream apps like Netflix and Disney+, but no third-party IPTV players like TiviMate or IPTV Smarters."}
+    ]
   }
 ]

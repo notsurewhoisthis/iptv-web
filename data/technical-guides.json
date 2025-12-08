@@ -2044,5 +2044,418 @@
       "expertise": "IPTV & Streaming Specialists"
     },
     "relatedGuides": ["iptv-linux-setup", "fix-iptv-buffering"]
+  },
+  {
+    "slug": "xtream-codes-complete-guide",
+    "title": "Xtream Codes API Setup - Complete Guide 2025",
+    "metaTitle": "Xtream Codes Setup Guide 2025 - How to Use Xtream API",
+    "description": "Complete guide to setting up Xtream Codes API on any IPTV player. Learn how to enter Xtream credentials, troubleshoot common issues, and get the best streaming experience.",
+    "category": "setup",
+    "quickAnswer": {
+      "question": "What is Xtream Codes and How Do I Use It?",
+      "answer": "Xtream Codes is an IPTV streaming system that provides login credentials (server URL, username, password) instead of M3U playlist files. To use it: 1) Open your IPTV player, 2) Select 'Xtream Codes' or 'Portal' login option, 3) Enter the server URL, username, and password provided by your IPTV service, 4) Click connect to load your channels.",
+      "highlight": "Xtream Codes offers better features than M3U playlists including EPG, VOD, and catchup TV."
+    },
+    "content": {
+      "intro": "Xtream Codes API is the industry standard for IPTV service delivery. Unlike basic M3U playlists, Xtream provides a complete streaming infrastructure with electronic program guides, video on demand libraries, catch-up TV, and advanced parental controls. This guide covers everything you need to know about setting up and using Xtream Codes on any device.",
+      "sections": [
+        {
+          "title": "Understanding Xtream Codes Credentials",
+          "content": "Your IPTV provider will give you three pieces of information: Server URL (the address of the streaming server, usually starting with http:// or https://), Username (your unique login ID), and Password (your account password). Some providers also include a port number in the URL. These credentials are more secure than M3U files because they're tied to your account and can be managed remotely."
+        },
+        {
+          "title": "Setting Up Xtream Codes",
+          "steps": [
+            {
+              "title": "Get Your Credentials",
+              "description": "Contact your IPTV provider for Xtream Codes login details. They should provide: Server URL (e.g., http://provider.com:8080), Username, and Password."
+            },
+            {
+              "title": "Open Your IPTV Player",
+              "description": "Launch your preferred IPTV app (TiviMate, IPTV Smarters, Duplex, etc.). Most modern players have built-in Xtream Codes support."
+            },
+            {
+              "title": "Select Xtream Codes Login",
+              "description": "Look for options labeled 'Xtream Codes API', 'Xtream Login', 'Portal', or 'Server Login'. Avoid the M3U/Playlist option."
+            },
+            {
+              "title": "Enter Your Details",
+              "description": "Input Server URL exactly as provided (including http:// and port). Enter your username and password exactly - they're case-sensitive."
+            }
+          ]
+        },
+        {
+          "title": "Xtream vs M3U Comparison",
+          "content": "Xtream Codes advantages: automatic EPG, built-in VOD libraries, catch-up/timeshift, parental controls, favorites sync. M3U files are static text files requiring separate EPG configuration."
+        }
+      ]
+    },
+    "faqs": [
+      {"question": "What is Xtream Codes API?", "answer": "Xtream Codes API is a standardized system for IPTV streaming using server credentials instead of playlist files."},
+      {"question": "Is Xtream Codes better than M3U?", "answer": "For most users, yes. Xtream Codes offers automatic EPG, VOD, catch-up TV, and easier management."},
+      {"question": "Why won't my Xtream login work?", "answer": "Common issues: typos in credentials (case-sensitive), incorrect URL format, expired subscription, or IP restrictions."},
+      {"question": "Can I convert Xtream to M3U?", "answer": "Yes, add '/get.php?username=USER&password=PASS&type=m3u_plus&output=ts' to your server URL."}
+    ],
+    "keywords": ["xtream codes", "xtream codes api", "xtream codes setup", "how to use xtream codes", "xtream login", "xtream codes 2025"],
+    "lastUpdated": "2025-01-15T00:00:00.000Z",
+    "author": {"name": "IPTV Guide Team", "expertise": "IPTV & Streaming Specialists"},
+    "relatedGuides": ["m3u-playlist-complete-guide", "setup-epg-guide"]
+  },
+  {
+    "slug": "m3u-playlist-complete-guide",
+    "title": "M3U Playlist Setup - Complete Guide 2025",
+    "metaTitle": "M3U Playlist Guide 2025 - How to Use M3U/M3U8 IPTV Files",
+    "description": "Everything you need to know about M3U playlists for IPTV. Learn how to load M3U URLs, fix common problems, and optimize your playlist for the best streaming experience.",
+    "category": "setup",
+    "quickAnswer": {
+      "question": "What is an M3U Playlist and How Do I Use It?",
+      "answer": "An M3U playlist is a text file containing links to streaming channels. To use it: 1) Get your M3U URL from your IPTV provider, 2) Open your IPTV player app, 3) Select 'Add Playlist' or 'M3U URL', 4) Paste your M3U link, 5) Wait for channels to load.",
+      "highlight": "M3U files work with virtually every IPTV player and media app."
+    },
+    "content": {
+      "intro": "M3U playlists are the universal format for IPTV channel lists. Whether you're using VLC, Kodi, or a dedicated IPTV app, M3U files provide a simple way to organize and play streaming content.",
+      "sections": [
+        {
+          "title": "Understanding M3U Playlists",
+          "content": "An M3U file is simply a text file with .m3u or .m3u8 extension containing URLs to streaming content. Each entry includes optional metadata followed by the stream URL."
+        },
+        {
+          "title": "Setting Up M3U Playlists",
+          "steps": [
+            {"title": "Obtain Your M3U Playlist", "description": "Your IPTV provider will give you a URL starting with http://, a downloadable .m3u file, or login credentials."},
+            {"title": "Choose Your Player", "description": "Any IPTV player supporting M3U works: VLC, Kodi, TiviMate, IPTV Smarters, Perfect Player."},
+            {"title": "Add the Playlist", "description": "In your player, look for 'Add Playlist', 'Load M3U', or 'Open Network Stream'. Paste your M3U URL."},
+            {"title": "Configure EPG (Optional)", "description": "M3U playlists don't include TV guide data. Add EPG URL separately if provided."}
+          ]
+        }
+      ]
+    },
+    "faqs": [
+      {"question": "What is an M3U playlist?", "answer": "A text file containing URLs to streaming channels - the universal format for IPTV."},
+      {"question": "What's the difference between M3U and M3U8?", "answer": "M3U8 uses UTF-8 encoding for international characters. Most players treat them identically."},
+      {"question": "Why won't my M3U playlist load?", "answer": "Check for typos, expired subscription, server issues, or firewall blocking."},
+      {"question": "How do I add EPG to M3U?", "answer": "Add EPG URL separately in your player's settings. Match tvg-id tags with EPG source."}
+    ],
+    "keywords": ["m3u playlist", "m3u url", "m3u8", "m3u iptv", "how to use m3u", "m3u setup", "m3u file"],
+    "lastUpdated": "2025-01-15T00:00:00.000Z",
+    "author": {"name": "IPTV Guide Team", "expertise": "IPTV & Streaming Specialists"},
+    "relatedGuides": ["xtream-codes-complete-guide", "setup-epg-guide"]
+  },
+  {
+    "slug": "sideload-apps-firestick",
+    "title": "How to Sideload Apps on Firestick - Complete Guide 2025",
+    "metaTitle": "Sideload Apps on Firestick 2025 - Install APK Files Tutorial",
+    "description": "Learn how to sideload IPTV apps on Amazon Firestick. Step-by-step guide using Downloader app for easy APK installation.",
+    "category": "setup",
+    "quickAnswer": {
+      "question": "How Do I Sideload Apps on Firestick?",
+      "answer": "To sideload apps: 1) Go to Settings > My Fire TV > Developer Options, 2) Enable 'Apps from Unknown Sources', 3) Install 'Downloader' from Amazon App Store, 4) Open Downloader and enter APK URL, 5) Install the downloaded APK.",
+      "highlight": "Sideloading lets you install any Android app not available in Amazon's App Store."
+    },
+    "content": {
+      "intro": "Amazon Firestick runs Fire OS based on Android, meaning you can install Android APK files beyond what's in the Amazon App Store. Many popular IPTV apps like TiviMate require sideloading.",
+      "sections": [
+        {
+          "title": "Enable Developer Options",
+          "steps": [
+            {"title": "Open Settings", "description": "Navigate to Settings (gear icon) in the top menu."},
+            {"title": "Select My Fire TV", "description": "Scroll right and select 'My Fire TV'."},
+            {"title": "Enable Unknown Sources", "description": "Turn ON 'Apps from Unknown Sources' in Developer Options."}
+          ]
+        },
+        {
+          "title": "Install and Use Downloader",
+          "steps": [
+            {"title": "Search for Downloader", "description": "Search and install 'Downloader' by AFTVnews from Amazon App Store."},
+            {"title": "Enter APK URL", "description": "In Downloader, type or paste the APK download URL."},
+            {"title": "Download and Install", "description": "Click Go, then Install when download completes."}
+          ]
+        }
+      ]
+    },
+    "faqs": [
+      {"question": "Is sideloading safe?", "answer": "Sideloading is safe - just install from official sources or trusted repositories."},
+      {"question": "What is Downloader app?", "answer": "A free Firestick app with browser and file downloader for installing APKs."},
+      {"question": "Why can't I find Developer Options?", "answer": "Go to About > click Fire TV Stick name 7 times to enable developer mode."},
+      {"question": "How do I update sideloaded apps?", "answer": "Download and install the new APK version using the same process."}
+    ],
+    "keywords": ["sideload firestick", "firestick apk", "install apk firestick", "downloader firestick", "unknown sources firestick"],
+    "lastUpdated": "2025-01-15T00:00:00.000Z",
+    "author": {"name": "IPTV Guide Team", "expertise": "IPTV & Streaming Specialists"},
+    "relatedGuides": ["best-iptv-player-firestick", "tivimate-setup-guide"]
+  },
+  {
+    "slug": "iptv-samsung-smart-tv",
+    "title": "IPTV on Samsung Smart TV - Complete Setup Guide 2025",
+    "metaTitle": "Samsung TV IPTV Setup 2025 - Best Apps & Installation",
+    "description": "How to watch IPTV on Samsung Smart TV. Best apps for Samsung Tizen TVs and setup instructions for Duplex, Flix, Smart IPTV.",
+    "category": "setup",
+    "quickAnswer": {
+      "question": "How Do I Watch IPTV on Samsung TV?",
+      "answer": "1) Open Samsung App Store, 2) Search for IPTV apps (Duplex IPTV, Flix IPTV, Smart IPTV, OTTPlayer), 3) Install your chosen app, 4) Activate using the app's website with your TV's MAC address, 5) Add your IPTV playlist.",
+      "highlight": "Samsung Tizen TVs have native IPTV apps - no external devices needed."
+    },
+    "content": {
+      "intro": "Samsung Smart TVs running Tizen OS have excellent IPTV support through dedicated apps in the Samsung App Store.",
+      "sections": [
+        {
+          "title": "Best IPTV Apps for Samsung TV",
+          "content": "Duplex IPTV (subscription, best features), Flix IPTV (one-time), Smart IPTV (one-time), SET IPTV, Net IPTV, OTTPlayer (free), SS IPTV (free)."
+        },
+        {
+          "title": "Installing IPTV Apps",
+          "steps": [
+            {"title": "Open Samsung App Store", "description": "Press Home button, navigate to Apps."},
+            {"title": "Search and Install", "description": "Search for your chosen app and click Install."},
+            {"title": "Activate via Website", "description": "Note MAC address, visit app's website to link playlist."}
+          ]
+        }
+      ]
+    },
+    "faqs": [
+      {"question": "Best IPTV app for Samsung TV?", "answer": "Duplex IPTV for features, Flix IPTV for one-time purchase, OTTPlayer for free."},
+      {"question": "Can I sideload apps on Samsung TV?", "answer": "No, Samsung Tizen doesn't support APK sideloading."},
+      {"question": "Why can't I find IPTV apps?", "answer": "Try changing TV region to United States in Settings."}
+    ],
+    "keywords": ["iptv samsung tv", "samsung smart tv iptv", "samsung iptv app", "duplex samsung", "flix iptv samsung"],
+    "lastUpdated": "2025-01-15T00:00:00.000Z",
+    "author": {"name": "IPTV Guide Team", "expertise": "IPTV & Streaming Specialists"},
+    "relatedGuides": ["iptv-lg-smart-tv", "xtream-codes-complete-guide"]
+  },
+  {
+    "slug": "iptv-lg-smart-tv",
+    "title": "IPTV on LG Smart TV - Complete Setup Guide 2025",
+    "metaTitle": "LG TV IPTV Setup 2025 - Best Apps & Installation Guide",
+    "description": "How to watch IPTV on LG Smart TV with webOS. Best apps and step-by-step setup guide.",
+    "category": "setup",
+    "quickAnswer": {
+      "question": "How Do I Watch IPTV on LG TV?",
+      "answer": "1) Open LG Content Store, 2) Search for IPTV apps (Duplex IPTV, Flix IPTV, Smart IPTV), 3) Install app, 4) Note MAC address, 5) Activate through app's website.",
+      "highlight": "LG webOS TVs have native IPTV apps in the LG Content Store."
+    },
+    "content": {
+      "intro": "LG Smart TVs with webOS offer native IPTV support through apps in the LG Content Store.",
+      "sections": [
+        {
+          "title": "Best IPTV Apps for LG TV",
+          "content": "Duplex IPTV (most features), Flix IPTV (one-time), Smart IPTV (established), SET IPTV, Net IPTV, OTTPlayer (free)."
+        },
+        {
+          "title": "Installation Steps",
+          "steps": [
+            {"title": "Open LG Content Store", "description": "Press Home and select LG Content Store or Apps."},
+            {"title": "Search and Install", "description": "Find and install your chosen IPTV app."},
+            {"title": "Activate", "description": "Get MAC address from app, activate on app's website."}
+          ]
+        }
+      ]
+    },
+    "faqs": [
+      {"question": "Best IPTV app for LG TV?", "answer": "Duplex IPTV for features, Flix IPTV for value, OTTPlayer for free."},
+      {"question": "Can I install APK on LG TV?", "answer": "No, LG webOS doesn't support Android APKs."},
+      {"question": "Why aren't apps showing?", "answer": "Change TV location to United States in Settings."}
+    ],
+    "keywords": ["iptv lg tv", "lg smart tv iptv", "lg webos iptv", "duplex lg", "flix iptv lg"],
+    "lastUpdated": "2025-01-15T00:00:00.000Z",
+    "author": {"name": "IPTV Guide Team", "expertise": "IPTV & Streaming Specialists"},
+    "relatedGuides": ["iptv-samsung-smart-tv", "m3u-playlist-complete-guide"]
+  },
+  {
+    "slug": "xtream-codes-errors",
+    "title": "Fix Xtream Codes Errors - Complete Troubleshooting Guide",
+    "metaTitle": "Xtream Codes Not Working 2025 - Fix All Error Codes",
+    "description": "Fix all Xtream Codes errors and connection problems. Solutions for no connection, authentication failed, and more.",
+    "category": "troubleshooting",
+    "quickAnswer": {
+      "question": "Why Is My Xtream Codes Not Working?",
+      "answer": "Common errors: 1) 'No connection' - check server URL format, 2) 'Authentication failed' - verify credentials are exact, 3) 'Account expired' - renew subscription, 4) 'Too many connections' - close app on other devices.",
+      "highlight": "Triple-check your credentials - they're case-sensitive."
+    },
+    "content": {
+      "intro": "Xtream Codes errors are frustrating but usually easy to fix. Most problems stem from incorrectly entered credentials or expired subscriptions.",
+      "sections": [
+        {
+          "title": "Common Error Solutions",
+          "steps": [
+            {"title": "Connection Refused", "description": "Verify URL format includes http:// and port. Try VPN to bypass ISP blocking."},
+            {"title": "Authentication Failed", "description": "Re-enter credentials carefully. They're case-sensitive."},
+            {"title": "Too Many Connections", "description": "Close app on other devices. Wait for sessions to timeout."},
+            {"title": "Error 403/404/500", "description": "403 = IP blocked, 404 = wrong URL, 500 = server issue."}
+          ]
+        }
+      ]
+    },
+    "faqs": [
+      {"question": "Why 'connection failed'?", "answer": "Usually incorrect URL format. Ensure http:// prefix and port number."},
+      {"question": "Why password not working?", "answer": "Credentials are case-sensitive. Re-enter manually."},
+      {"question": "What is 'max connections'?", "answer": "You've exceeded simultaneous device limit."}
+    ],
+    "keywords": ["xtream codes error", "xtream not working", "xtream connection failed", "xtream authentication error"],
+    "lastUpdated": "2025-01-15T00:00:00.000Z",
+    "author": {"name": "IPTV Guide Team", "expertise": "IPTV & Streaming Specialists"},
+    "relatedGuides": ["xtream-codes-complete-guide", "fix-iptv-buffering"]
+  },
+  {
+    "slug": "iptv-no-channels-fix",
+    "title": "Fix IPTV No Channels Loading - Troubleshooting Guide",
+    "metaTitle": "IPTV No Channels 2025 - Fix Playlist Not Loading",
+    "description": "Fix IPTV playlist not loading channels. Solutions for empty channel lists and loading failures.",
+    "category": "troubleshooting",
+    "quickAnswer": {
+      "question": "Why Are No Channels Loading?",
+      "answer": "To fix: 1) Verify playlist URL is correct, 2) Check subscription is active, 3) Ensure internet connection, 4) Clear app cache, 5) Try different player.",
+      "highlight": "80% of issues are from expired subscriptions or incorrect URLs."
+    },
+    "content": {
+      "intro": "An empty channel list is usually easy to diagnose and fix.",
+      "sections": [
+        {
+          "title": "Troubleshooting Steps",
+          "steps": [
+            {"title": "Check Subscription", "description": "Contact provider to verify account status."},
+            {"title": "Verify URL", "description": "Test M3U URL in browser - should show text starting with #EXTM3U."},
+            {"title": "Clear Cache", "description": "Go to Settings > Apps > IPTV App > Clear Cache."},
+            {"title": "Try Different Player", "description": "Test playlist in VLC to rule out app issues."}
+          ]
+        }
+      ]
+    },
+    "faqs": [
+      {"question": "Why 'playlist is empty'?", "answer": "Wrong URL, expired subscription, or server returned empty response."},
+      {"question": "Suddenly no channels?", "answer": "Check subscription expiry, provider may have changed server."},
+      {"question": "How long should loading take?", "answer": "1-5 minutes for large playlists."}
+    ],
+    "keywords": ["iptv no channels", "iptv playlist not loading", "iptv empty playlist", "fix iptv no channels"],
+    "lastUpdated": "2025-01-15T00:00:00.000Z",
+    "author": {"name": "IPTV Guide Team", "expertise": "IPTV & Streaming Specialists"},
+    "relatedGuides": ["m3u-playlist-complete-guide", "xtream-codes-errors"]
+  },
+  {
+    "slug": "record-iptv-guide",
+    "title": "How to Record IPTV - Complete DVR Guide 2025",
+    "metaTitle": "Record IPTV 2025 - DVR Setup for Live TV Recording",
+    "description": "Learn how to record IPTV streams. Complete DVR guide for TiviMate, Kodi, and more.",
+    "category": "advanced",
+    "quickAnswer": {
+      "question": "How Do I Record IPTV?",
+      "answer": "1) Use player with recording (TiviMate Premium, Kodi, OTT Navigator), 2) Configure storage location, 3) Select channel and click Record, 4) Set duration or schedule.",
+      "highlight": "TiviMate Premium and Kodi PVR are the best options for IPTV recording."
+    },
+    "content": {
+      "intro": "Recording IPTV lets you watch live TV on your schedule. Several excellent players support DVR functionality.",
+      "sections": [
+        {
+          "title": "Players with Recording",
+          "content": "TiviMate Premium (best), OTT Navigator, IPTV Extreme Pro, Kodi with PVR, Sparkle TV."
+        },
+        {
+          "title": "TiviMate Recording Setup",
+          "steps": [
+            {"title": "Get Premium", "description": "Recording requires TiviMate Premium ($9.99/year)."},
+            {"title": "Configure Storage", "description": "Settings > Recording > Storage. External USB recommended."},
+            {"title": "Record", "description": "While watching, press Record button or schedule from EPG."}
+          ]
+        },
+        {
+          "title": "Storage Requirements",
+          "content": "SD ~1GB/hour, HD 1080p ~3-4GB/hour, 4K ~10-15GB/hour."
+        }
+      ]
+    },
+    "faqs": [
+      {"question": "Can I record to external drive?", "answer": "Yes, most players support external USB storage formatted as exFAT."},
+      {"question": "Why can't I record?", "answer": "Most free apps don't include recording. Need premium versions."},
+      {"question": "How much storage needed?", "answer": "HD uses ~3-4GB/hour. 128GB+ external drive recommended."}
+    ],
+    "keywords": ["record iptv", "iptv dvr", "iptv recording", "tivimate recording", "how to record iptv"],
+    "lastUpdated": "2025-01-15T00:00:00.000Z",
+    "author": {"name": "IPTV Guide Team", "expertise": "IPTV & Streaming Specialists"},
+    "relatedGuides": ["tivimate-setup-guide", "best-iptv-player-firestick"]
+  },
+  {
+    "slug": "multi-room-iptv-setup",
+    "title": "Multi-Room IPTV Setup - Watch on Multiple TVs 2025",
+    "metaTitle": "Multi-Room IPTV 2025 - Stream to Multiple TVs",
+    "description": "Set up IPTV on multiple TVs. Learn about multi-connection subscriptions and device limits.",
+    "category": "advanced",
+    "quickAnswer": {
+      "question": "How Do I Watch IPTV on Multiple TVs?",
+      "answer": "1) Get subscription with multiple connections (2-5 typically), 2) Install IPTV player on each TV, 3) Use same credentials within connection limit.",
+      "highlight": "Most providers offer multi-connection plans allowing 2-5 simultaneous streams."
+    },
+    "content": {
+      "intro": "Watching IPTV on multiple TVs is straightforward with the right setup.",
+      "sections": [
+        {
+          "title": "Understanding Connection Limits",
+          "content": "IPTV providers sell subscriptions with connection limits (1-5 concurrent streams). Each TV streaming simultaneously uses one connection."
+        },
+        {
+          "title": "Hardware Options",
+          "content": "Amazon Firestick ($50), Fire TV Cube ($140), Nvidia Shield ($150-200), Smart TV apps, Android TV boxes."
+        },
+        {
+          "title": "Network Requirements",
+          "content": "Each HD stream needs 10-15 Mbps, 4K needs 25+ Mbps. Three TVs in HD need 30-45 Mbps minimum."
+        }
+      ]
+    },
+    "faqs": [
+      {"question": "How many TVs at once?", "answer": "Depends on subscription's connection limit, typically 1-5."},
+      {"question": "Need separate subscriptions?", "answer": "No, one subscription with enough connections covers all TVs."},
+      {"question": "What speed needed?", "answer": "10-15 Mbps per HD stream. 3 TVs need 30-45 Mbps minimum."}
+    ],
+    "keywords": ["multi room iptv", "iptv multiple tvs", "iptv multiple devices", "iptv connections"],
+    "lastUpdated": "2025-01-15T00:00:00.000Z",
+    "author": {"name": "IPTV Guide Team", "expertise": "IPTV & Streaming Specialists"},
+    "relatedGuides": ["fix-iptv-buffering", "best-iptv-player-firestick"]
+  },
+  {
+    "slug": "mag-box-setup-guide",
+    "title": "MAG Box Setup - Complete IPTV Guide 2025",
+    "metaTitle": "MAG Box Setup 2025 - Portal Configuration Tutorial",
+    "description": "Complete guide to setting up MAG IPTV boxes. Learn how to configure Stalker portal, add IPTV service, and optimize your MAG device.",
+    "category": "setup",
+    "quickAnswer": {
+      "question": "How Do I Setup a MAG Box for IPTV?",
+      "answer": "1) Connect MAG box to TV and internet, 2) Go to Settings > Servers > Portals, 3) Enter portal URL from your IPTV provider, 4) Save and restart, 5) Your channels will load automatically.",
+      "highlight": "MAG boxes use portal URLs instead of M3U playlists for IPTV."
+    },
+    "content": {
+      "intro": "MAG boxes (Infomir) are dedicated IPTV set-top boxes using Stalker middleware. They're popular for their reliability and simplicity.",
+      "sections": [
+        {
+          "title": "Initial Setup",
+          "steps": [
+            {"title": "Connect Hardware", "description": "Connect HDMI to TV, power adapter, and ethernet cable (recommended over WiFi)."},
+            {"title": "First Boot", "description": "MAG box boots to main menu. Use remote to navigate."},
+            {"title": "Configure Network", "description": "If using WiFi, go to Settings > System Settings > Network to connect."}
+          ]
+        },
+        {
+          "title": "Adding Portal URL",
+          "steps": [
+            {"title": "Access Settings", "description": "Press Setup/Settings on remote."},
+            {"title": "Navigate to Servers", "description": "Go to Servers > Portals."},
+            {"title": "Enter Portal URL", "description": "In Portal 1 URL field, enter the portal address from your IPTV provider."},
+            {"title": "Save and Restart", "description": "Press OK to save, then restart the box."}
+          ]
+        },
+        {
+          "title": "Finding Your MAC Address",
+          "content": "Go to Settings > System Settings > Device Info. Your MAC address is needed to activate service with your IPTV provider."
+        }
+      ]
+    },
+    "faqs": [
+      {"question": "What is a portal URL?", "answer": "A portal URL is the address of your IPTV provider's Stalker middleware server."},
+      {"question": "Why won't my portal connect?", "answer": "Verify URL is correct, check your MAC is registered with provider, ensure internet works."},
+      {"question": "Can MAG box use M3U?", "answer": "Traditional MAG boxes use portals only. Some newer Infomir models support M3U."},
+      {"question": "Best MAG box model?", "answer": "MAG 424 and MAG 524 are current popular models with 4K support."}
+    ],
+    "keywords": ["mag box setup", "mag iptv", "stalker portal setup", "mag 424", "mag 524", "infomir setup", "mag box portal"],
+    "lastUpdated": "2025-01-15T00:00:00.000Z",
+    "author": {"name": "IPTV Guide Team", "expertise": "IPTV & Streaming Specialists"},
+    "relatedGuides": ["xtream-codes-complete-guide", "fix-iptv-buffering"]
   }
 ]
