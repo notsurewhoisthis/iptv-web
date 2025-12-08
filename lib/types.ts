@@ -21,6 +21,9 @@ export interface Player {
   developer: string;
   keywords: string[];
   faqs?: FAQ[];
+  // Relationship fields for internal linking
+  relatedPlayers?: string[];
+  relatedDevices?: string[];
 }
 
 export interface Device {
@@ -45,6 +48,9 @@ export interface Device {
   shortDescription: string;
   keywords: string[];
   faqs?: FAQ[];
+  // Relationship fields for internal linking
+  relatedDevices?: string[];
+  relatedGuides?: string[];
 }
 
 export interface Feature {
@@ -467,4 +473,7 @@ export interface TechnicalGuide {
     expertise: string;
   };
   relatedGuides?: string[];
+  // Relationship fields for internal linking
+  relatedPlayers?: string[];
+  relatedDevices?: string[];
 }

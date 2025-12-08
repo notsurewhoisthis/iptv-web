@@ -5,6 +5,8 @@ import {
   getTechnicalGuides,
   getTechnicalGuide,
   getBaseUrl,
+  getPlayers,
+  getDevices,
 } from '@/lib/data-loader';
 import { ChevronRight, BookOpen, AlertCircle, CheckCircle } from 'lucide-react';
 import {
@@ -13,6 +15,7 @@ import {
   LastUpdated,
 } from '@/components/GeoComponents';
 import { FAQSchema, HowToSchema, ArticleWithAuthorSchema, BreadcrumbSchema } from '@/components/JsonLd';
+import { RelatedPlayers, RelatedDevices } from '@/components/RelatedContent';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -52,8 +55,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function TechnicalGuidePage({ params }: PageProps) {
   const { slug } = await params;
-  const guide = await getTechnicalGuide(slug);
-  const allGuides = await getTechnicalGuides();
+  const [guide, allGuides, allPlayers, allDevices] = await Promise.all([
+    getTechnicalGuide(slug),
+    getTechnicalGuides(),
+    getPlayers(),
+    getDevices(),
+  ]);
   const baseUrl = getBaseUrl();
 
   if (!guide) {
@@ -64,6 +71,10 @@ export default async function TechnicalGuidePage({ params }: PageProps) {
   const relatedGuides = guide.relatedGuides
     ? allGuides.filter((g) => guide.relatedGuides?.includes(g.slug))
     : [];
+
+  // Get related players and devices from JSON data
+  const relatedPlayerIds = guide.relatedPlayers || [];
+  const relatedDeviceIds = guide.relatedDevices || [];
 
   // Build HowTo steps for schema
   const howToSteps = guide.content.sections
@@ -220,6 +231,20 @@ export default async function TechnicalGuidePage({ params }: PageProps) {
             </div>
           </section>
         )}
+
+        {/* Related Players - Works with these apps */}
+        <RelatedPlayers
+          playerIds={relatedPlayerIds}
+          players={allPlayers}
+          title="Works with these apps"
+        />
+
+        {/* Related Devices - Compatible devices */}
+        <RelatedDevices
+          deviceIds={relatedDeviceIds}
+          devices={allDevices}
+          title="Compatible devices"
+        />
 
         {/* Author Bio for E-E-A-T */}
         <AuthorBio name={guide.author.name} expertise={guide.author.expertise} />

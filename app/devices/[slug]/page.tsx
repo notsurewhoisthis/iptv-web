@@ -5,6 +5,7 @@ import { getDevices, getDevice, getBaseUrl, getPlayerDeviceGuides, getDeviceComp
 import { ChevronRight, ExternalLink, Check, X, Star } from 'lucide-react';
 import { ProductSchema, BreadcrumbSchema, FAQSchema } from '@/components/JsonLd';
 import { QuickAnswer, AuthorBio, LastUpdated } from '@/components/GeoComponents';
+import { RelatedDevices, TroubleshootingLinks } from '@/components/RelatedContent';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -48,15 +49,19 @@ export default async function DevicePage({ params }: PageProps) {
     notFound();
   }
 
-  const [guides, comparisons, allPlayers] = await Promise.all([
+  const [guides, comparisons, allPlayers, allDevices] = await Promise.all([
     getPlayerDeviceGuides(),
     getDeviceComparisons(),
     getPlayers(),
+    getDevices(),
   ]);
   const deviceGuides = guides.filter((g) => g.deviceId === device.id).slice(0, 6);
   const deviceComparisons = comparisons.filter(
     (c) => c.device1Id === device.id || c.device2Id === device.id
   ).slice(0, 4);
+
+  // Get related devices from JSON data
+  const relatedDeviceIds = device.relatedDevices || [];
 
   // Get ranked compatible players
   const compatiblePlayers = allPlayers
@@ -284,6 +289,21 @@ export default async function DevicePage({ params }: PageProps) {
                 </Link>
               </section>
             )}
+
+            {/* Related Devices */}
+            <RelatedDevices
+              deviceIds={relatedDeviceIds}
+              devices={allDevices}
+              currentDeviceId={device.id}
+              title={`Similar to ${device.shortName}`}
+            />
+
+            {/* Troubleshooting Links */}
+            <TroubleshootingLinks
+              entityType="devices"
+              entitySlug={device.slug}
+              entityName={device.shortName}
+            />
 
             {/* FAQ Section for GEO */}
             {device.faqs && device.faqs.length > 0 && (

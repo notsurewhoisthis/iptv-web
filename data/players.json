@@ -4,8 +4,22 @@
     "name": "JamRun IPTV",
     "slug": "jamrun",
     "category": "premium",
-    "platforms": ["ios", "apple-tv", "mac", "vision-pro"],
-    "features": ["epg", "favorites", "multi-screen", "subtitle-support", "vod", "catchup", "channel-groups", "hardware-decoding"],
+    "platforms": [
+      "ios",
+      "apple-tv",
+      "mac",
+      "vision-pro"
+    ],
+    "features": [
+      "epg",
+      "favorites",
+      "multi-screen",
+      "subtitle-support",
+      "vod",
+      "catchup",
+      "channel-groups",
+      "hardware-decoding"
+    ],
     "rating": 4.9,
     "pricing": {
       "model": "free",
@@ -13,23 +27,80 @@
     },
     "description": "JamRun IPTV is the premier IPTV player designed exclusively for the Apple ecosystem. Featuring a stunning glass-styled interface that feels native to iOS and tvOS, JamRun delivers a premium streaming experience without the premium price tag. Unlike other IPTV apps that feel like afterthoughts on Apple devices, JamRun was built from the ground up with Apple's design language in mind. The app requires no account creation, collects zero user data, and offers fast, fluid navigation through your IPTV content. With support for M3U/M3U8 playlists, full EPG integration, and smart category organization, JamRun represents a new standard for IPTV on Apple TV, iPhone, and iPad.",
     "shortDescription": "Premium Apple-native IPTV player with stunning glass design",
-    "pros": ["Beautiful glass-styled Apple-native interface", "Completely free with no ads", "Zero data collection - true privacy", "Universal Apple support (iPhone, iPad, Apple TV, Mac, Vision Pro)", "Fast channel browsing with smart categories", "Full EPG and TV guide support", "No account required", "Active development with frequent updates"],
-    "cons": ["Apple devices only", "No Android version", "Newer app with growing feature set"],
+    "pros": [
+      "Beautiful glass-styled Apple-native interface",
+      "Completely free with no ads",
+      "Zero data collection - true privacy",
+      "Universal Apple support (iPhone, iPad, Apple TV, Mac, Vision Pro)",
+      "Fast channel browsing with smart categories",
+      "Full EPG and TV guide support",
+      "No account required",
+      "Active development with frequent updates"
+    ],
+    "cons": [
+      "Apple devices only",
+      "No Android version",
+      "Newer app with growing feature set"
+    ],
     "officialUrl": "https://apps.apple.com/us/app/jamrun-iptv/id6754577839",
     "downloadUrls": [
-      {"platform": "ios", "url": "https://apps.apple.com/us/app/jamrun-iptv/id6754577839"},
-      {"platform": "apple-tv", "url": "https://apps.apple.com/us/app/jamrun-iptv/id6754577839"},
-      {"platform": "mac", "url": "https://apps.apple.com/us/app/jamrun-iptv/id6754577839"}
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/jamrun-iptv/id6754577839"
+      },
+      {
+        "platform": "apple-tv",
+        "url": "https://apps.apple.com/us/app/jamrun-iptv/id6754577839"
+      },
+      {
+        "platform": "mac",
+        "url": "https://apps.apple.com/us/app/jamrun-iptv/id6754577839"
+      }
     ],
     "lastUpdated": "2025-11-27",
     "yearLaunched": 2024,
     "developer": "Heni Hazbay",
-    "keywords": ["jamrun iptv", "jamrun", "best iptv iphone", "best iptv apple tv", "iptv ios", "apple tv iptv player", "iphone iptv app", "ipad iptv", "free iptv apple", "glass design iptv"],
+    "keywords": [
+      "jamrun iptv",
+      "jamrun",
+      "best iptv iphone",
+      "best iptv apple tv",
+      "iptv ios",
+      "apple tv iptv player",
+      "iphone iptv app",
+      "ipad iptv",
+      "free iptv apple",
+      "glass design iptv"
+    ],
     "faqs": [
-      {"question": "Is JamRun IPTV free?", "answer": "Yes, JamRun IPTV is completely free with no ads and no subscription required."},
-      {"question": "Does JamRun support EPG?", "answer": "Yes, JamRun fully supports EPG (Electronic Program Guide) for viewing TV schedules."},
-      {"question": "What devices does JamRun work on?", "answer": "JamRun works on iPhone, iPad, Apple TV, Mac, and Vision Pro - all Apple ecosystem devices."},
-      {"question": "Does JamRun collect user data?", "answer": "No, JamRun has a strict zero data collection policy and requires no account creation."}
+      {
+        "question": "Is JamRun IPTV free?",
+        "answer": "Yes, JamRun IPTV is completely free with no ads and no subscription required."
+      },
+      {
+        "question": "Does JamRun support EPG?",
+        "answer": "Yes, JamRun fully supports EPG (Electronic Program Guide) for viewing TV schedules."
+      },
+      {
+        "question": "What devices does JamRun work on?",
+        "answer": "JamRun works on iPhone, iPad, Apple TV, Mac, and Vision Pro - all Apple ecosystem devices."
+      },
+      {
+        "question": "Does JamRun collect user data?",
+        "answer": "No, JamRun has a strict zero data collection policy and requires no account creation."
+      }
+    ],
+    "relatedPlayers": [
+      "iptv-smarters",
+      "kodi",
+      "nanomid",
+      "stremio",
+      "duplex-iptv"
+    ],
+    "relatedDevices": [
+      "ios",
+      "apple-tv",
+      "mac"
     ]
   },
   {
@@ -37,8 +108,21 @@
     "name": "TiviMate",
     "slug": "tivimate",
     "category": "premium",
-    "platforms": ["android", "firestick", "android-tv", "nvidia-shield"],
-    "features": ["epg", "recording", "multi-screen", "favorites", "catchup", "parental-controls", "external-player"],
+    "platforms": [
+      "android",
+      "firestick",
+      "android-tv",
+      "nvidia-shield"
+    ],
+    "features": [
+      "epg",
+      "recording",
+      "multi-screen",
+      "favorites",
+      "catchup",
+      "parental-controls",
+      "external-player"
+    ],
     "rating": 4.8,
     "pricing": {
       "model": "freemium",
@@ -46,22 +130,68 @@
     },
     "description": "TiviMate is the most popular premium IPTV player for Android devices, known for its sleek interface, reliable EPG support, and extensive customization options. It offers both free and premium versions.",
     "shortDescription": "Premium IPTV player with EPG and recording",
-    "pros": ["Excellent EPG integration", "Multi-playlist support", "Recording functionality", "Beautiful interface", "Regular updates"],
-    "cons": ["Premium features require subscription", "Android only", "No iOS version"],
+    "pros": [
+      "Excellent EPG integration",
+      "Multi-playlist support",
+      "Recording functionality",
+      "Beautiful interface",
+      "Regular updates"
+    ],
+    "cons": [
+      "Premium features require subscription",
+      "Android only",
+      "No iOS version"
+    ],
     "officialUrl": "https://tivimate.com",
     "downloadUrls": [
-      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=ar.tvplayer.tv"},
-      {"platform": "firestick", "url": "https://www.amazon.com/dp/B07J2HHNL2"}
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=ar.tvplayer.tv"
+      },
+      {
+        "platform": "firestick",
+        "url": "https://www.amazon.com/dp/B07J2HHNL2"
+      }
     ],
     "lastUpdated": "2025-01-15",
     "yearLaunched": 2018,
     "developer": "AR Mobile Dev",
-    "keywords": ["tivimate", "tivimate premium", "tivimate iptv", "best iptv player android", "tivimate apk"],
+    "keywords": [
+      "tivimate",
+      "tivimate premium",
+      "tivimate iptv",
+      "best iptv player android",
+      "tivimate apk"
+    ],
     "faqs": [
-      {"question": "Is TiviMate free?", "answer": "TiviMate offers a free version with basic features. Premium features require a subscription at $9.99/year."},
-      {"question": "Does TiviMate support recording?", "answer": "Yes, TiviMate Premium supports DVR recording functionality to save live TV."},
-      {"question": "What devices does TiviMate work on?", "answer": "TiviMate works on Android phones, tablets, Firestick, Fire TV, Android TV, and Nvidia Shield."},
-      {"question": "Does TiviMate have EPG support?", "answer": "Yes, TiviMate has excellent EPG integration with customizable TV guide layouts."}
+      {
+        "question": "Is TiviMate free?",
+        "answer": "TiviMate offers a free version with basic features. Premium features require a subscription at $9.99/year."
+      },
+      {
+        "question": "Does TiviMate support recording?",
+        "answer": "Yes, TiviMate Premium supports DVR recording functionality to save live TV."
+      },
+      {
+        "question": "What devices does TiviMate work on?",
+        "answer": "TiviMate works on Android phones, tablets, Firestick, Fire TV, Android TV, and Nvidia Shield."
+      },
+      {
+        "question": "Does TiviMate have EPG support?",
+        "answer": "Yes, TiviMate has excellent EPG integration with customizable TV guide layouts."
+      }
+    ],
+    "relatedPlayers": [
+      "duplex-iptv",
+      "nanomid",
+      "iptv-smarters",
+      "ott-navigator",
+      "iptv-extreme"
+    ],
+    "relatedDevices": [
+      "android-tv",
+      "firestick",
+      "nvidia-shield"
     ]
   },
   {
@@ -69,8 +199,22 @@
     "name": "IPTV Smarters Pro",
     "slug": "iptv-smarters",
     "category": "premium",
-    "platforms": ["android", "ios", "firestick", "windows", "mac", "smart-tv"],
-    "features": ["epg", "multi-screen", "favorites", "parental-controls", "vod", "catchup"],
+    "platforms": [
+      "android",
+      "ios",
+      "firestick",
+      "windows",
+      "mac",
+      "smart-tv"
+    ],
+    "features": [
+      "epg",
+      "multi-screen",
+      "favorites",
+      "parental-controls",
+      "vod",
+      "catchup"
+    ],
     "rating": 4.5,
     "pricing": {
       "model": "freemium",
@@ -78,22 +222,68 @@
     },
     "description": "IPTV Smarters Pro is a versatile cross-platform IPTV player supporting Xtream Codes API, M3U playlists, and multiple connections. Available on virtually all platforms.",
     "shortDescription": "Cross-platform IPTV player with Xtream support",
-    "pros": ["Cross-platform support", "Xtream Codes integration", "Multiple playlist support", "Affordable one-time purchase"],
-    "cons": ["Interface can be cluttered", "Occasional stability issues", "No recording on all platforms"],
+    "pros": [
+      "Cross-platform support",
+      "Xtream Codes integration",
+      "Multiple playlist support",
+      "Affordable one-time purchase"
+    ],
+    "cons": [
+      "Interface can be cluttered",
+      "Occasional stability issues",
+      "No recording on all platforms"
+    ],
     "officialUrl": "https://www.iptvsmarters.com",
     "downloadUrls": [
-      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=com.nst.iptvsmarterstvbox"},
-      {"platform": "ios", "url": "https://apps.apple.com/app/iptv-smarters-pro/id1383614816"}
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.nst.iptvsmarterstvbox"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/app/iptv-smarters-pro/id1383614816"
+      }
     ],
     "lastUpdated": "2025-01-10",
     "yearLaunched": 2018,
     "developer": "WHMCS Smarters",
-    "keywords": ["iptv smarters", "iptv smarters pro", "smarters iptv", "xtream iptv player"],
+    "keywords": [
+      "iptv smarters",
+      "iptv smarters pro",
+      "smarters iptv",
+      "xtream iptv player"
+    ],
     "faqs": [
-      {"question": "Is IPTV Smarters Pro free?", "answer": "IPTV Smarters Pro offers a free version with ads. The full version costs $5.99 one-time."},
-      {"question": "Does IPTV Smarters support Xtream Codes?", "answer": "Yes, IPTV Smarters has native Xtream Codes API integration for easy provider setup."},
-      {"question": "What devices does IPTV Smarters work on?", "answer": "IPTV Smarters works on Android, iOS, Firestick, Windows, Mac, and Smart TVs."},
-      {"question": "Does IPTV Smarters have parental controls?", "answer": "Yes, IPTV Smarters includes parental control features to restrict content access."}
+      {
+        "question": "Is IPTV Smarters Pro free?",
+        "answer": "IPTV Smarters Pro offers a free version with ads. The full version costs $5.99 one-time."
+      },
+      {
+        "question": "Does IPTV Smarters support Xtream Codes?",
+        "answer": "Yes, IPTV Smarters has native Xtream Codes API integration for easy provider setup."
+      },
+      {
+        "question": "What devices does IPTV Smarters work on?",
+        "answer": "IPTV Smarters works on Android, iOS, Firestick, Windows, Mac, and Smart TVs."
+      },
+      {
+        "question": "Does IPTV Smarters have parental controls?",
+        "answer": "Yes, IPTV Smarters includes parental control features to restrict content access."
+      }
+    ],
+    "relatedPlayers": [
+      "nanomid",
+      "jamrun",
+      "tivimate",
+      "kodi",
+      "stremio"
+    ],
+    "relatedDevices": [
+      "android-tv",
+      "ios",
+      "firestick",
+      "windows",
+      "mac"
     ]
   },
   {
@@ -101,8 +291,24 @@
     "name": "Kodi",
     "slug": "kodi",
     "category": "open-source",
-    "platforms": ["android", "ios", "windows", "mac", "linux", "firestick", "android-tv", "apple-tv"],
-    "features": ["epg", "recording", "external-player", "vod", "subtitle-support", "playlist-management"],
+    "platforms": [
+      "android",
+      "ios",
+      "windows",
+      "mac",
+      "linux",
+      "firestick",
+      "android-tv",
+      "apple-tv"
+    ],
+    "features": [
+      "epg",
+      "recording",
+      "external-player",
+      "vod",
+      "subtitle-support",
+      "playlist-management"
+    ],
     "rating": 4.6,
     "pricing": {
       "model": "free",
@@ -110,22 +316,70 @@
     },
     "description": "Kodi is a powerful open-source media center that can be transformed into an IPTV player using add-ons like PVR IPTV Simple Client. Highly customizable with thousands of skins and add-ons.",
     "shortDescription": "Open-source media center with IPTV add-ons",
-    "pros": ["Completely free", "Highly customizable", "Massive add-on library", "Cross-platform", "Active community"],
-    "cons": ["Steep learning curve", "Requires add-on setup", "Can be complex for beginners"],
+    "pros": [
+      "Completely free",
+      "Highly customizable",
+      "Massive add-on library",
+      "Cross-platform",
+      "Active community"
+    ],
+    "cons": [
+      "Steep learning curve",
+      "Requires add-on setup",
+      "Can be complex for beginners"
+    ],
     "officialUrl": "https://kodi.tv",
     "downloadUrls": [
-      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=org.xbmc.kodi"},
-      {"platform": "windows", "url": "https://kodi.tv/download/windows"}
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.xbmc.kodi"
+      },
+      {
+        "platform": "windows",
+        "url": "https://kodi.tv/download/windows"
+      }
     ],
     "lastUpdated": "2025-01-20",
     "yearLaunched": 2002,
     "developer": "XBMC Foundation",
-    "keywords": ["kodi iptv", "kodi pvr", "kodi m3u", "kodi streaming", "xbmc iptv"],
+    "keywords": [
+      "kodi iptv",
+      "kodi pvr",
+      "kodi m3u",
+      "kodi streaming",
+      "xbmc iptv"
+    ],
     "faqs": [
-      {"question": "Is Kodi free?", "answer": "Yes, Kodi is completely free and open-source software."},
-      {"question": "Does Kodi support IPTV?", "answer": "Yes, Kodi supports IPTV through add-ons like PVR IPTV Simple Client for M3U playlists."},
-      {"question": "What devices does Kodi work on?", "answer": "Kodi works on Android, iOS, Windows, Mac, Linux, Firestick, Apple TV, and more."},
-      {"question": "Is Kodi difficult to set up for IPTV?", "answer": "Kodi requires installing and configuring add-ons for IPTV, which has a learning curve for beginners."}
+      {
+        "question": "Is Kodi free?",
+        "answer": "Yes, Kodi is completely free and open-source software."
+      },
+      {
+        "question": "Does Kodi support IPTV?",
+        "answer": "Yes, Kodi supports IPTV through add-ons like PVR IPTV Simple Client for M3U playlists."
+      },
+      {
+        "question": "What devices does Kodi work on?",
+        "answer": "Kodi works on Android, iOS, Windows, Mac, Linux, Firestick, Apple TV, and more."
+      },
+      {
+        "question": "Is Kodi difficult to set up for IPTV?",
+        "answer": "Kodi requires installing and configuring add-ons for IPTV, which has a learning curve for beginners."
+      }
+    ],
+    "relatedPlayers": [
+      "stremio",
+      "vlc",
+      "iptv-smarters",
+      "gse-smart-iptv",
+      "nanomid"
+    ],
+    "relatedDevices": [
+      "android-tv",
+      "ios",
+      "windows",
+      "mac",
+      "linux"
     ]
   },
   {
@@ -133,8 +387,18 @@
     "name": "VLC Media Player",
     "slug": "vlc",
     "category": "free",
-    "platforms": ["android", "ios", "windows", "mac", "linux"],
-    "features": ["subtitle-support", "external-player", "playlist-management"],
+    "platforms": [
+      "android",
+      "ios",
+      "windows",
+      "mac",
+      "linux"
+    ],
+    "features": [
+      "subtitle-support",
+      "external-player",
+      "playlist-management"
+    ],
     "rating": 4.7,
     "pricing": {
       "model": "free",
@@ -142,22 +406,70 @@
     },
     "description": "VLC is a free, open-source media player that supports IPTV streaming via M3U playlists. Simple to use but lacks advanced IPTV features like EPG.",
     "shortDescription": "Free media player with basic IPTV support",
-    "pros": ["Completely free", "Supports all formats", "Cross-platform", "Lightweight", "No ads"],
-    "cons": ["No EPG support", "Basic IPTV features", "No recording", "No channel management"],
+    "pros": [
+      "Completely free",
+      "Supports all formats",
+      "Cross-platform",
+      "Lightweight",
+      "No ads"
+    ],
+    "cons": [
+      "No EPG support",
+      "Basic IPTV features",
+      "No recording",
+      "No channel management"
+    ],
     "officialUrl": "https://www.videolan.org/vlc/",
     "downloadUrls": [
-      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=org.videolan.vlc"},
-      {"platform": "ios", "url": "https://apps.apple.com/app/vlc-media-player/id650377962"}
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.videolan.vlc"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/app/vlc-media-player/id650377962"
+      }
     ],
     "lastUpdated": "2025-01-18",
     "yearLaunched": 2001,
     "developer": "VideoLAN",
-    "keywords": ["vlc iptv", "vlc m3u", "vlc streaming", "vlc media player iptv"],
+    "keywords": [
+      "vlc iptv",
+      "vlc m3u",
+      "vlc streaming",
+      "vlc media player iptv"
+    ],
     "faqs": [
-      {"question": "Is VLC free for IPTV?", "answer": "Yes, VLC is completely free and open-source with no ads or subscriptions."},
-      {"question": "Does VLC support EPG?", "answer": "No, VLC does not have built-in EPG support. It's designed as a basic media player."},
-      {"question": "What devices does VLC work on?", "answer": "VLC works on Android, iOS, Windows, Mac, and Linux."},
-      {"question": "Can VLC play M3U playlists?", "answer": "Yes, VLC can open and play M3U/M3U8 IPTV playlists directly."}
+      {
+        "question": "Is VLC free for IPTV?",
+        "answer": "Yes, VLC is completely free and open-source with no ads or subscriptions."
+      },
+      {
+        "question": "Does VLC support EPG?",
+        "answer": "No, VLC does not have built-in EPG support. It's designed as a basic media player."
+      },
+      {
+        "question": "What devices does VLC work on?",
+        "answer": "VLC works on Android, iOS, Windows, Mac, and Linux."
+      },
+      {
+        "question": "Can VLC play M3U playlists?",
+        "answer": "Yes, VLC can open and play M3U/M3U8 IPTV playlists directly."
+      }
+    ],
+    "relatedPlayers": [
+      "stremio",
+      "kodi",
+      "ottplayer",
+      "iptvnator",
+      "iptv-smarters"
+    ],
+    "relatedDevices": [
+      "android-tv",
+      "ios",
+      "windows",
+      "mac",
+      "linux"
     ]
   },
   {
@@ -165,8 +477,19 @@
     "name": "GSE Smart IPTV",
     "slug": "gse-smart-iptv",
     "category": "freemium",
-    "platforms": ["android", "ios", "apple-tv", "firestick"],
-    "features": ["epg", "favorites", "parental-controls", "chromecast", "subtitle-support"],
+    "platforms": [
+      "android",
+      "ios",
+      "apple-tv",
+      "firestick"
+    ],
+    "features": [
+      "epg",
+      "favorites",
+      "parental-controls",
+      "chromecast",
+      "subtitle-support"
+    ],
     "rating": 4.3,
     "pricing": {
       "model": "freemium",
@@ -174,22 +497,67 @@
     },
     "description": "GSE Smart IPTV is a feature-rich IPTV player available on iOS and Android with support for Chromecast, EPG, and multiple playlist formats.",
     "shortDescription": "Feature-rich IPTV player with Chromecast support",
-    "pros": ["Chromecast support", "iOS and Android", "EPG integration", "Multiple playlist formats"],
-    "cons": ["Ads in free version", "Occasional crashes", "Interface could be better"],
+    "pros": [
+      "Chromecast support",
+      "iOS and Android",
+      "EPG integration",
+      "Multiple playlist formats"
+    ],
+    "cons": [
+      "Ads in free version",
+      "Occasional crashes",
+      "Interface could be better"
+    ],
     "officialUrl": "https://gsesmartiptv.com",
     "downloadUrls": [
-      {"platform": "ios", "url": "https://apps.apple.com/app/gse-smart-iptv/id1028734023"},
-      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=com.gsetech.smartiptv"}
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/app/gse-smart-iptv/id1028734023"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.gsetech.smartiptv"
+      }
     ],
     "lastUpdated": "2025-01-05",
     "yearLaunched": 2015,
     "developer": "droidvision",
-    "keywords": ["gse smart iptv", "gse iptv", "gse iptv ios", "gse smart iptv chromecast"],
+    "keywords": [
+      "gse smart iptv",
+      "gse iptv",
+      "gse iptv ios",
+      "gse smart iptv chromecast"
+    ],
     "faqs": [
-      {"question": "Is GSE Smart IPTV free?", "answer": "GSE Smart IPTV has a free version with ads. The premium version costs $5.99 one-time."},
-      {"question": "Does GSE Smart IPTV support Chromecast?", "answer": "Yes, GSE Smart IPTV has built-in Chromecast support for casting to your TV."},
-      {"question": "What devices does GSE Smart IPTV work on?", "answer": "GSE Smart IPTV works on Android, iOS, Apple TV, and Firestick."},
-      {"question": "Does GSE Smart IPTV have EPG?", "answer": "Yes, GSE Smart IPTV supports EPG integration for TV guide functionality."}
+      {
+        "question": "Is GSE Smart IPTV free?",
+        "answer": "GSE Smart IPTV has a free version with ads. The premium version costs $5.99 one-time."
+      },
+      {
+        "question": "Does GSE Smart IPTV support Chromecast?",
+        "answer": "Yes, GSE Smart IPTV has built-in Chromecast support for casting to your TV."
+      },
+      {
+        "question": "What devices does GSE Smart IPTV work on?",
+        "answer": "GSE Smart IPTV works on Android, iOS, Apple TV, and Firestick."
+      },
+      {
+        "question": "Does GSE Smart IPTV have EPG?",
+        "answer": "Yes, GSE Smart IPTV supports EPG integration for TV guide functionality."
+      }
+    ],
+    "relatedPlayers": [
+      "kodi",
+      "iptv-extreme",
+      "televizo",
+      "purple-player",
+      "iptv-smarters"
+    ],
+    "relatedDevices": [
+      "android-tv",
+      "ios",
+      "apple-tv",
+      "firestick"
     ]
   },
   {
@@ -197,8 +565,17 @@
     "name": "Perfect Player",
     "slug": "perfect-player",
     "category": "free",
-    "platforms": ["android", "firestick", "android-tv"],
-    "features": ["epg", "favorites", "channel-sorting", "playlist-management"],
+    "platforms": [
+      "android",
+      "firestick",
+      "android-tv"
+    ],
+    "features": [
+      "epg",
+      "favorites",
+      "channel-sorting",
+      "playlist-management"
+    ],
     "rating": 4.4,
     "pricing": {
       "model": "free",
@@ -206,21 +583,62 @@
     },
     "description": "Perfect Player is a set-top box style IPTV player for Android with a clean interface, EPG support, and efficient channel management.",
     "shortDescription": "Set-top box style IPTV player for Android",
-    "pros": ["Clean interface", "Good EPG support", "Free to use", "Channel grouping"],
-    "cons": ["Android only", "Limited customization", "No recording", "Development slowed"],
+    "pros": [
+      "Clean interface",
+      "Good EPG support",
+      "Free to use",
+      "Channel grouping"
+    ],
+    "cons": [
+      "Android only",
+      "Limited customization",
+      "No recording",
+      "Development slowed"
+    ],
     "officialUrl": "https://perfectplayer.iptv.app",
     "downloadUrls": [
-      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=com.niklabs.pp"}
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.niklabs.pp"
+      }
     ],
     "lastUpdated": "2024-12-01",
     "yearLaunched": 2014,
     "developer": "Niklabs",
-    "keywords": ["perfect player", "perfect player iptv", "perfect player apk", "perfect player firestick"],
+    "keywords": [
+      "perfect player",
+      "perfect player iptv",
+      "perfect player apk",
+      "perfect player firestick"
+    ],
     "faqs": [
-      {"question": "Is Perfect Player free?", "answer": "Yes, Perfect Player is completely free with no premium version required."},
-      {"question": "Does Perfect Player have EPG support?", "answer": "Yes, Perfect Player supports EPG for viewing TV program schedules."},
-      {"question": "What devices does Perfect Player work on?", "answer": "Perfect Player works on Android phones, tablets, Firestick, and Android TV."},
-      {"question": "Does Perfect Player support recording?", "answer": "No, Perfect Player does not have built-in recording capabilities."}
+      {
+        "question": "Is Perfect Player free?",
+        "answer": "Yes, Perfect Player is completely free with no premium version required."
+      },
+      {
+        "question": "Does Perfect Player have EPG support?",
+        "answer": "Yes, Perfect Player supports EPG for viewing TV program schedules."
+      },
+      {
+        "question": "What devices does Perfect Player work on?",
+        "answer": "Perfect Player works on Android phones, tablets, Firestick, and Android TV."
+      },
+      {
+        "question": "Does Perfect Player support recording?",
+        "answer": "No, Perfect Player does not have built-in recording capabilities."
+      }
+    ],
+    "relatedPlayers": [
+      "lazy-iptv",
+      "xtream-iptv",
+      "stremio",
+      "televizo",
+      "iptv-pro"
+    ],
+    "relatedDevices": [
+      "android-tv",
+      "firestick"
     ]
   },
   {
@@ -228,8 +646,19 @@
     "name": "OTT Navigator",
     "slug": "ott-navigator",
     "category": "freemium",
-    "platforms": ["android", "firestick", "android-tv"],
-    "features": ["epg", "recording", "multi-screen", "favorites", "catchup", "vod"],
+    "platforms": [
+      "android",
+      "firestick",
+      "android-tv"
+    ],
+    "features": [
+      "epg",
+      "recording",
+      "multi-screen",
+      "favorites",
+      "catchup",
+      "vod"
+    ],
     "rating": 4.6,
     "pricing": {
       "model": "freemium",
@@ -237,21 +666,61 @@
     },
     "description": "OTT Navigator is a powerful IPTV/OTT player with support for Stalker, Xtream, and M3U playlists. Known for its reliability and feature set.",
     "shortDescription": "Powerful IPTV player with Stalker and Xtream support",
-    "pros": ["Stalker portal support", "Reliable performance", "Good EPG", "Recording feature"],
-    "cons": ["Android only", "Can be complex", "Premium for full features"],
+    "pros": [
+      "Stalker portal support",
+      "Reliable performance",
+      "Good EPG",
+      "Recording feature"
+    ],
+    "cons": [
+      "Android only",
+      "Can be complex",
+      "Premium for full features"
+    ],
     "officialUrl": "https://www.ottnavigator.com",
     "downloadUrls": [
-      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=studio.scillarium.ottnavigator"}
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=studio.scillarium.ottnavigator"
+      }
     ],
     "lastUpdated": "2025-01-12",
     "yearLaunched": 2019,
     "developer": "Scillarium Studio",
-    "keywords": ["ott navigator", "ott navigator iptv", "ott navigator stalker", "ott navigator apk"],
+    "keywords": [
+      "ott navigator",
+      "ott navigator iptv",
+      "ott navigator stalker",
+      "ott navigator apk"
+    ],
     "faqs": [
-      {"question": "Is OTT Navigator free?", "answer": "OTT Navigator offers a free version. Premium features cost $4.99/year."},
-      {"question": "Does OTT Navigator support Stalker portal?", "answer": "Yes, OTT Navigator has native Stalker portal support for IPTV providers."},
-      {"question": "Does OTT Navigator have recording?", "answer": "Yes, OTT Navigator supports DVR recording functionality in the premium version."},
-      {"question": "What devices does OTT Navigator work on?", "answer": "OTT Navigator works on Android phones, Firestick, and Android TV devices."}
+      {
+        "question": "Is OTT Navigator free?",
+        "answer": "OTT Navigator offers a free version. Premium features cost $4.99/year."
+      },
+      {
+        "question": "Does OTT Navigator support Stalker portal?",
+        "answer": "Yes, OTT Navigator has native Stalker portal support for IPTV providers."
+      },
+      {
+        "question": "Does OTT Navigator have recording?",
+        "answer": "Yes, OTT Navigator supports DVR recording functionality in the premium version."
+      },
+      {
+        "question": "What devices does OTT Navigator work on?",
+        "answer": "OTT Navigator works on Android phones, Firestick, and Android TV devices."
+      }
+    ],
+    "relatedPlayers": [
+      "purple-player",
+      "iptv-extreme",
+      "televizo",
+      "sparkle-tv",
+      "tivimate"
+    ],
+    "relatedDevices": [
+      "android-tv",
+      "firestick"
     ]
   },
   {
@@ -259,8 +728,18 @@
     "name": "IPTV Extreme",
     "slug": "iptv-extreme",
     "category": "freemium",
-    "platforms": ["android", "firestick", "android-tv"],
-    "features": ["epg", "recording", "favorites", "parental-controls", "auto-update"],
+    "platforms": [
+      "android",
+      "firestick",
+      "android-tv"
+    ],
+    "features": [
+      "epg",
+      "recording",
+      "favorites",
+      "parental-controls",
+      "auto-update"
+    ],
     "rating": 4.2,
     "pricing": {
       "model": "freemium",
@@ -268,21 +747,61 @@
     },
     "description": "IPTV Extreme is an Android IPTV player with recording capabilities, EPG support, and auto-updating playlists.",
     "shortDescription": "Android IPTV player with recording and auto-update",
-    "pros": ["Recording feature", "Auto-update playlists", "EPG support", "Affordable"],
-    "cons": ["Android only", "Ads in free version", "Interface dated"],
+    "pros": [
+      "Recording feature",
+      "Auto-update playlists",
+      "EPG support",
+      "Affordable"
+    ],
+    "cons": [
+      "Android only",
+      "Ads in free version",
+      "Interface dated"
+    ],
     "officialUrl": "https://iptvextreme.app",
     "downloadUrls": [
-      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=com.pecana.iptvextremepro"}
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.pecana.iptvextremepro"
+      }
     ],
     "lastUpdated": "2024-11-20",
     "yearLaunched": 2016,
     "developer": "Paolo Turatti",
-    "keywords": ["iptv extreme", "iptv extreme pro", "iptv extreme apk", "iptv extreme recording"],
+    "keywords": [
+      "iptv extreme",
+      "iptv extreme pro",
+      "iptv extreme apk",
+      "iptv extreme recording"
+    ],
     "faqs": [
-      {"question": "Is IPTV Extreme free?", "answer": "IPTV Extreme has a free version with ads. The pro version costs $4.99 one-time."},
-      {"question": "Does IPTV Extreme support recording?", "answer": "Yes, IPTV Extreme has DVR recording functionality to save live TV."},
-      {"question": "Does IPTV Extreme auto-update playlists?", "answer": "Yes, IPTV Extreme can automatically update your M3U playlists on a schedule."},
-      {"question": "What devices does IPTV Extreme work on?", "answer": "IPTV Extreme works on Android phones, tablets, Firestick, and Android TV."}
+      {
+        "question": "Is IPTV Extreme free?",
+        "answer": "IPTV Extreme has a free version with ads. The pro version costs $4.99 one-time."
+      },
+      {
+        "question": "Does IPTV Extreme support recording?",
+        "answer": "Yes, IPTV Extreme has DVR recording functionality to save live TV."
+      },
+      {
+        "question": "Does IPTV Extreme auto-update playlists?",
+        "answer": "Yes, IPTV Extreme can automatically update your M3U playlists on a schedule."
+      },
+      {
+        "question": "What devices does IPTV Extreme work on?",
+        "answer": "IPTV Extreme works on Android phones, tablets, Firestick, and Android TV."
+      }
+    ],
+    "relatedPlayers": [
+      "ott-navigator",
+      "purple-player",
+      "televizo",
+      "tivimate",
+      "gse-smart-iptv"
+    ],
+    "relatedDevices": [
+      "android-tv",
+      "firestick"
     ]
   },
   {
@@ -290,30 +809,79 @@
     "name": "Lazy IPTV",
     "slug": "lazy-iptv",
     "category": "free",
-    "platforms": ["android", "firestick", "android-tv"],
-    "features": ["favorites", "channel-sorting", "playlist-management"],
-    "rating": 4.0,
+    "platforms": [
+      "android",
+      "firestick",
+      "android-tv"
+    ],
+    "features": [
+      "favorites",
+      "channel-sorting",
+      "playlist-management"
+    ],
+    "rating": 4,
     "pricing": {
       "model": "free",
       "price": "Free"
     },
     "description": "Lazy IPTV is a simple, lightweight IPTV player for Android devices. Basic but reliable for playing M3U playlists.",
     "shortDescription": "Simple and lightweight IPTV player",
-    "pros": ["Lightweight", "Simple to use", "Free", "Quick loading"],
-    "cons": ["No EPG", "Basic features", "No recording", "Limited updates"],
+    "pros": [
+      "Lightweight",
+      "Simple to use",
+      "Free",
+      "Quick loading"
+    ],
+    "cons": [
+      "No EPG",
+      "Basic features",
+      "No recording",
+      "Limited updates"
+    ],
     "officialUrl": "https://lazyiptv.app",
     "downloadUrls": [
-      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=com.lazycoder.lazyiptvdeluxe"}
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.lazycoder.lazyiptvdeluxe"
+      }
     ],
     "lastUpdated": "2024-10-15",
     "yearLaunched": 2017,
     "developer": "LazyCoder",
-    "keywords": ["lazy iptv", "lazy iptv deluxe", "lazy iptv apk", "simple iptv player"],
+    "keywords": [
+      "lazy iptv",
+      "lazy iptv deluxe",
+      "lazy iptv apk",
+      "simple iptv player"
+    ],
     "faqs": [
-      {"question": "Is Lazy IPTV free?", "answer": "Yes, Lazy IPTV is completely free to use."},
-      {"question": "Does Lazy IPTV have EPG?", "answer": "No, Lazy IPTV does not have EPG support - it's designed as a simple, lightweight player."},
-      {"question": "What devices does Lazy IPTV work on?", "answer": "Lazy IPTV works on Android phones, tablets, Firestick, and Android TV."},
-      {"question": "Is Lazy IPTV good for beginners?", "answer": "Yes, Lazy IPTV is very simple and easy to use, making it ideal for beginners."}
+      {
+        "question": "Is Lazy IPTV free?",
+        "answer": "Yes, Lazy IPTV is completely free to use."
+      },
+      {
+        "question": "Does Lazy IPTV have EPG?",
+        "answer": "No, Lazy IPTV does not have EPG support - it's designed as a simple, lightweight player."
+      },
+      {
+        "question": "What devices does Lazy IPTV work on?",
+        "answer": "Lazy IPTV works on Android phones, tablets, Firestick, and Android TV."
+      },
+      {
+        "question": "Is Lazy IPTV good for beginners?",
+        "answer": "Yes, Lazy IPTV is very simple and easy to use, making it ideal for beginners."
+      }
+    ],
+    "relatedPlayers": [
+      "perfect-player",
+      "xtream-iptv",
+      "stremio",
+      "televizo",
+      "iptv-pro"
+    ],
+    "relatedDevices": [
+      "android-tv",
+      "firestick"
     ]
   },
   {
@@ -321,8 +889,15 @@
     "name": "SS IPTV",
     "slug": "ss-iptv",
     "category": "free",
-    "platforms": ["smart-tv", "samsung-tv", "lg-tv"],
-    "features": ["favorites", "playlist-management"],
+    "platforms": [
+      "smart-tv",
+      "samsung-tv",
+      "lg-tv"
+    ],
+    "features": [
+      "favorites",
+      "playlist-management"
+    ],
     "rating": 4.1,
     "pricing": {
       "model": "free",
@@ -330,22 +905,66 @@
     },
     "description": "SS IPTV is an IPTV player designed specifically for Smart TVs, particularly Samsung and LG models. Simple playlist loading via web interface.",
     "shortDescription": "IPTV player for Samsung and LG Smart TVs",
-    "pros": ["Native Smart TV app", "Easy playlist upload", "Free to use", "Simple interface"],
-    "cons": ["Limited features", "No EPG", "Smart TV only", "Requires web upload"],
+    "pros": [
+      "Native Smart TV app",
+      "Easy playlist upload",
+      "Free to use",
+      "Simple interface"
+    ],
+    "cons": [
+      "Limited features",
+      "No EPG",
+      "Smart TV only",
+      "Requires web upload"
+    ],
     "officialUrl": "https://ss-iptv.com",
     "downloadUrls": [
-      {"platform": "samsung-tv", "url": "https://ss-iptv.com/en/users/documents/download"},
-      {"platform": "lg-tv", "url": "https://ss-iptv.com/en/users/documents/download"}
+      {
+        "platform": "samsung-tv",
+        "url": "https://ss-iptv.com/en/users/documents/download"
+      },
+      {
+        "platform": "lg-tv",
+        "url": "https://ss-iptv.com/en/users/documents/download"
+      }
     ],
     "lastUpdated": "2024-09-01",
     "yearLaunched": 2013,
     "developer": "SS-IPTV Team",
-    "keywords": ["ss iptv", "ss iptv samsung", "ss iptv lg", "smart tv iptv player"],
+    "keywords": [
+      "ss iptv",
+      "ss iptv samsung",
+      "ss iptv lg",
+      "smart tv iptv player"
+    ],
     "faqs": [
-      {"question": "Is SS IPTV free?", "answer": "Yes, SS IPTV is completely free to use on Smart TVs."},
-      {"question": "Does SS IPTV work on Samsung TVs?", "answer": "Yes, SS IPTV is available for Samsung Smart TVs through the app store."},
-      {"question": "Does SS IPTV have EPG?", "answer": "No, SS IPTV does not have built-in EPG support."},
-      {"question": "How do I add playlists to SS IPTV?", "answer": "You can upload playlists through the SS IPTV web interface using your TV's unique code."}
+      {
+        "question": "Is SS IPTV free?",
+        "answer": "Yes, SS IPTV is completely free to use on Smart TVs."
+      },
+      {
+        "question": "Does SS IPTV work on Samsung TVs?",
+        "answer": "Yes, SS IPTV is available for Samsung Smart TVs through the app store."
+      },
+      {
+        "question": "Does SS IPTV have EPG?",
+        "answer": "No, SS IPTV does not have built-in EPG support."
+      },
+      {
+        "question": "How do I add playlists to SS IPTV?",
+        "answer": "You can upload playlists through the SS IPTV web interface using your TV's unique code."
+      }
+    ],
+    "relatedPlayers": [
+      "smart-iptv",
+      "ottplayer",
+      "perfect-player",
+      "lazy-iptv",
+      "duplex-iptv"
+    ],
+    "relatedDevices": [
+      "samsung-tv",
+      "lg-tv"
     ]
   },
   {
@@ -353,31 +972,86 @@
     "name": "Smart IPTV",
     "slug": "smart-iptv",
     "category": "paid",
-    "platforms": ["smart-tv", "samsung-tv", "lg-tv", "firestick"],
-    "features": ["favorites", "epg", "playlist-management"],
-    "rating": 4.0,
+    "platforms": [
+      "smart-tv",
+      "samsung-tv",
+      "lg-tv",
+      "firestick"
+    ],
+    "features": [
+      "favorites",
+      "epg",
+      "playlist-management"
+    ],
+    "rating": 4,
     "pricing": {
       "model": "one-time",
       "price": "$5.49 one-time"
     },
     "description": "Smart IPTV (SIPTV) is a popular IPTV app for Smart TVs with EPG support and playlist upload via MAC address.",
     "shortDescription": "Popular IPTV app for Smart TVs",
-    "pros": ["Smart TV native", "EPG support", "MAC-based upload", "Reliable"],
-    "cons": ["Paid only", "Basic interface", "No recording", "Limited platforms"],
+    "pros": [
+      "Smart TV native",
+      "EPG support",
+      "MAC-based upload",
+      "Reliable"
+    ],
+    "cons": [
+      "Paid only",
+      "Basic interface",
+      "No recording",
+      "Limited platforms"
+    ],
     "officialUrl": "https://siptv.app",
     "downloadUrls": [
-      {"platform": "samsung-tv", "url": "https://siptv.app/howto/samsung/"},
-      {"platform": "lg-tv", "url": "https://siptv.app/howto/lg/"}
+      {
+        "platform": "samsung-tv",
+        "url": "https://siptv.app/howto/samsung/"
+      },
+      {
+        "platform": "lg-tv",
+        "url": "https://siptv.app/howto/lg/"
+      }
     ],
     "lastUpdated": "2024-12-10",
     "yearLaunched": 2014,
     "developer": "Smart IPTV",
-    "keywords": ["smart iptv", "siptv", "smart iptv samsung", "smart iptv lg", "siptv app"],
+    "keywords": [
+      "smart iptv",
+      "siptv",
+      "smart iptv samsung",
+      "smart iptv lg",
+      "siptv app"
+    ],
     "faqs": [
-      {"question": "Is Smart IPTV free?", "answer": "No, Smart IPTV costs $5.49 one-time payment after a 7-day trial."},
-      {"question": "Does Smart IPTV have EPG?", "answer": "Yes, Smart IPTV supports EPG when provided with your playlist."},
-      {"question": "What Smart TVs does Smart IPTV work on?", "answer": "Smart IPTV works on Samsung, LG, and other major Smart TV brands."},
-      {"question": "How do I upload playlists to Smart IPTV?", "answer": "Upload playlists via the siptv.app website using your TV's MAC address."}
+      {
+        "question": "Is Smart IPTV free?",
+        "answer": "No, Smart IPTV costs $5.49 one-time payment after a 7-day trial."
+      },
+      {
+        "question": "Does Smart IPTV have EPG?",
+        "answer": "Yes, Smart IPTV supports EPG when provided with your playlist."
+      },
+      {
+        "question": "What Smart TVs does Smart IPTV work on?",
+        "answer": "Smart IPTV works on Samsung, LG, and other major Smart TV brands."
+      },
+      {
+        "question": "How do I upload playlists to Smart IPTV?",
+        "answer": "Upload playlists via the siptv.app website using your TV's MAC address."
+      }
+    ],
+    "relatedPlayers": [
+      "flix-iptv",
+      "set-iptv",
+      "net-iptv",
+      "ss-iptv",
+      "duplex-iptv"
+    ],
+    "relatedDevices": [
+      "samsung-tv",
+      "lg-tv",
+      "firestick"
     ]
   },
   {
@@ -385,8 +1059,18 @@
     "name": "Televizo",
     "slug": "televizo",
     "category": "freemium",
-    "platforms": ["android", "firestick", "android-tv"],
-    "features": ["epg", "favorites", "multi-screen", "channel-sorting", "subtitle-support"],
+    "platforms": [
+      "android",
+      "firestick",
+      "android-tv"
+    ],
+    "features": [
+      "epg",
+      "favorites",
+      "multi-screen",
+      "channel-sorting",
+      "subtitle-support"
+    ],
     "rating": 4.5,
     "pricing": {
       "model": "freemium",
@@ -394,21 +1078,61 @@
     },
     "description": "Televizo is a modern IPTV player for Android with a clean Material Design interface, EPG support, and multi-screen viewing.",
     "shortDescription": "Modern IPTV player with Material Design",
-    "pros": ["Modern interface", "Good EPG", "Multi-screen", "Active development"],
-    "cons": ["Android only", "Some features paid", "Relatively new"],
+    "pros": [
+      "Modern interface",
+      "Good EPG",
+      "Multi-screen",
+      "Active development"
+    ],
+    "cons": [
+      "Android only",
+      "Some features paid",
+      "Relatively new"
+    ],
     "officialUrl": "https://televizo.net",
     "downloadUrls": [
-      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=com.ottplay.ottplay"}
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.ottplay.ottplay"
+      }
     ],
     "lastUpdated": "2025-01-08",
     "yearLaunched": 2020,
     "developer": "Televizo",
-    "keywords": ["televizo", "televizo iptv", "televizo apk", "televizo player"],
+    "keywords": [
+      "televizo",
+      "televizo iptv",
+      "televizo apk",
+      "televizo player"
+    ],
     "faqs": [
-      {"question": "Is Televizo free?", "answer": "Televizo has a free version. Premium features cost $4.99 one-time."},
-      {"question": "Does Televizo have EPG support?", "answer": "Yes, Televizo has excellent EPG support with a modern Material Design interface."},
-      {"question": "Does Televizo support multi-screen?", "answer": "Yes, Televizo supports multi-screen viewing on compatible devices."},
-      {"question": "What devices does Televizo work on?", "answer": "Televizo works on Android phones, tablets, Firestick, and Android TV."}
+      {
+        "question": "Is Televizo free?",
+        "answer": "Televizo has a free version. Premium features cost $4.99 one-time."
+      },
+      {
+        "question": "Does Televizo have EPG support?",
+        "answer": "Yes, Televizo has excellent EPG support with a modern Material Design interface."
+      },
+      {
+        "question": "Does Televizo support multi-screen?",
+        "answer": "Yes, Televizo supports multi-screen viewing on compatible devices."
+      },
+      {
+        "question": "What devices does Televizo work on?",
+        "answer": "Televizo works on Android phones, tablets, Firestick, and Android TV."
+      }
+    ],
+    "relatedPlayers": [
+      "ott-navigator",
+      "iptv-extreme",
+      "purple-player",
+      "gse-smart-iptv",
+      "tivimate"
+    ],
+    "relatedDevices": [
+      "android-tv",
+      "firestick"
     ]
   },
   {
@@ -416,8 +1140,16 @@
     "name": "iPlayTV",
     "slug": "iplaytv",
     "category": "paid",
-    "platforms": ["ios", "apple-tv"],
-    "features": ["epg", "favorites", "airplay", "picture-in-picture"],
+    "platforms": [
+      "ios",
+      "apple-tv"
+    ],
+    "features": [
+      "epg",
+      "favorites",
+      "airplay",
+      "picture-in-picture"
+    ],
     "rating": 4.4,
     "pricing": {
       "model": "one-time",
@@ -425,22 +1157,65 @@
     },
     "description": "iPlayTV is a premium IPTV player designed exclusively for iOS and Apple TV with native AirPlay support and picture-in-picture.",
     "shortDescription": "Premium IPTV player for iOS and Apple TV",
-    "pros": ["Native Apple experience", "AirPlay support", "Picture-in-picture", "Good EPG"],
-    "cons": ["Apple devices only", "Paid only", "No free version"],
+    "pros": [
+      "Native Apple experience",
+      "AirPlay support",
+      "Picture-in-picture",
+      "Good EPG"
+    ],
+    "cons": [
+      "Apple devices only",
+      "Paid only",
+      "No free version"
+    ],
     "officialUrl": "https://iplaytv.app",
     "downloadUrls": [
-      {"platform": "ios", "url": "https://apps.apple.com/app/iplaytv/id1072226801"},
-      {"platform": "apple-tv", "url": "https://apps.apple.com/app/iplaytv/id1072226801"}
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/app/iplaytv/id1072226801"
+      },
+      {
+        "platform": "apple-tv",
+        "url": "https://apps.apple.com/app/iplaytv/id1072226801"
+      }
     ],
     "lastUpdated": "2025-01-03",
     "yearLaunched": 2016,
     "developer": "Flavor",
-    "keywords": ["iplaytv", "iplaytv ios", "iplaytv apple tv", "iptv apple tv"],
+    "keywords": [
+      "iplaytv",
+      "iplaytv ios",
+      "iplaytv apple tv",
+      "iptv apple tv"
+    ],
     "faqs": [
-      {"question": "Is iPlayTV free?", "answer": "No, iPlayTV costs $5.99 one-time with no free version available."},
-      {"question": "Does iPlayTV support AirPlay?", "answer": "Yes, iPlayTV has native AirPlay support for streaming to other Apple devices."},
-      {"question": "Does iPlayTV have picture-in-picture?", "answer": "Yes, iPlayTV supports picture-in-picture mode on compatible devices."},
-      {"question": "What devices does iPlayTV work on?", "answer": "iPlayTV works exclusively on iOS devices and Apple TV."}
+      {
+        "question": "Is iPlayTV free?",
+        "answer": "No, iPlayTV costs $5.99 one-time with no free version available."
+      },
+      {
+        "question": "Does iPlayTV support AirPlay?",
+        "answer": "Yes, iPlayTV has native AirPlay support for streaming to other Apple devices."
+      },
+      {
+        "question": "Does iPlayTV have picture-in-picture?",
+        "answer": "Yes, iPlayTV supports picture-in-picture mode on compatible devices."
+      },
+      {
+        "question": "What devices does iPlayTV work on?",
+        "answer": "iPlayTV works exclusively on iOS devices and Apple TV."
+      }
+    ],
+    "relatedPlayers": [
+      "vu-iptv-player",
+      "flex-iptv",
+      "jamrun",
+      "gse-smart-iptv",
+      "kodi"
+    ],
+    "relatedDevices": [
+      "ios",
+      "apple-tv"
     ]
   },
   {
@@ -448,8 +1223,17 @@
     "name": "IPTV Pro",
     "slug": "iptv-pro",
     "category": "paid",
-    "platforms": ["android", "firestick", "android-tv"],
-    "features": ["epg", "favorites", "auto-update", "channel-sorting"],
+    "platforms": [
+      "android",
+      "firestick",
+      "android-tv"
+    ],
+    "features": [
+      "epg",
+      "favorites",
+      "auto-update",
+      "channel-sorting"
+    ],
     "rating": 4.3,
     "pricing": {
       "model": "one-time",
@@ -457,21 +1241,61 @@
     },
     "description": "IPTV Pro is a simple yet effective IPTV player for Android with EPG support and auto-reconnect features.",
     "shortDescription": "Simple IPTV player with EPG support",
-    "pros": ["Affordable", "Simple interface", "EPG support", "Auto-reconnect"],
-    "cons": ["Basic features", "No recording", "Limited customization"],
+    "pros": [
+      "Affordable",
+      "Simple interface",
+      "EPG support",
+      "Auto-reconnect"
+    ],
+    "cons": [
+      "Basic features",
+      "No recording",
+      "Limited customization"
+    ],
     "officialUrl": "https://iptvpro.app",
     "downloadUrls": [
-      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=ru.iptvremote.android.iptv.pro"}
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=ru.iptvremote.android.iptv.pro"
+      }
     ],
     "lastUpdated": "2024-11-15",
     "yearLaunched": 2015,
     "developer": "Alexander Sofronov",
-    "keywords": ["iptv pro", "iptv pro apk", "iptv pro android", "simple iptv player"],
+    "keywords": [
+      "iptv pro",
+      "iptv pro apk",
+      "iptv pro android",
+      "simple iptv player"
+    ],
     "faqs": [
-      {"question": "Is IPTV Pro free?", "answer": "No, IPTV Pro costs $3.99 one-time with no free version."},
-      {"question": "Does IPTV Pro have EPG?", "answer": "Yes, IPTV Pro supports EPG for viewing TV schedules."},
-      {"question": "Does IPTV Pro have auto-reconnect?", "answer": "Yes, IPTV Pro automatically reconnects if your stream drops."},
-      {"question": "What devices does IPTV Pro work on?", "answer": "IPTV Pro works on Android phones, tablets, Firestick, and Android TV."}
+      {
+        "question": "Is IPTV Pro free?",
+        "answer": "No, IPTV Pro costs $3.99 one-time with no free version."
+      },
+      {
+        "question": "Does IPTV Pro have EPG?",
+        "answer": "Yes, IPTV Pro supports EPG for viewing TV schedules."
+      },
+      {
+        "question": "Does IPTV Pro have auto-reconnect?",
+        "answer": "Yes, IPTV Pro automatically reconnects if your stream drops."
+      },
+      {
+        "question": "What devices does IPTV Pro work on?",
+        "answer": "IPTV Pro works on Android phones, tablets, Firestick, and Android TV."
+      }
+    ],
+    "relatedPlayers": [
+      "flix-iptv",
+      "perfect-player",
+      "iptv-extreme",
+      "televizo",
+      "net-iptv"
+    ],
+    "relatedDevices": [
+      "android-tv",
+      "firestick"
     ]
   },
   {
@@ -479,8 +1303,17 @@
     "name": "Xciptv Player",
     "slug": "xciptv",
     "category": "free",
-    "platforms": ["android", "firestick", "android-tv"],
-    "features": ["epg", "favorites", "vod", "catchup"],
+    "platforms": [
+      "android",
+      "firestick",
+      "android-tv"
+    ],
+    "features": [
+      "epg",
+      "favorites",
+      "vod",
+      "catchup"
+    ],
     "rating": 4.2,
     "pricing": {
       "model": "free",
@@ -488,21 +1321,61 @@
     },
     "description": "Xciptv (formerly Xtream IPTV Player) is a free player specifically designed for Xtream Codes API with EPG, VOD, and catchup support.",
     "shortDescription": "Free Xtream Codes API player",
-    "pros": ["Free", "Xtream Codes native", "VOD support", "Catchup TV"],
-    "cons": ["Xtream only", "No M3U support", "Ads"],
+    "pros": [
+      "Free",
+      "Xtream Codes native",
+      "VOD support",
+      "Catchup TV"
+    ],
+    "cons": [
+      "Xtream only",
+      "No M3U support",
+      "Ads"
+    ],
     "officialUrl": "https://xciptv.net",
     "downloadUrls": [
-      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=com.flavoursoft.xciptv_player"}
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.flavoursoft.xciptv_player"
+      }
     ],
     "lastUpdated": "2024-12-20",
     "yearLaunched": 2019,
     "developer": "Flavour Soft",
-    "keywords": ["xciptv", "xtream iptv player", "xtream codes player", "xciptv player"],
+    "keywords": [
+      "xciptv",
+      "xtream iptv player",
+      "xtream codes player",
+      "xciptv player"
+    ],
     "faqs": [
-      {"question": "Is Xciptv free?", "answer": "Yes, Xciptv is free but contains ads."},
-      {"question": "Does Xciptv support M3U playlists?", "answer": "No, Xciptv only supports Xtream Codes API - not standard M3U playlists."},
-      {"question": "Does Xciptv have VOD support?", "answer": "Yes, Xciptv supports VOD (Video on Demand) content from your provider."},
-      {"question": "What devices does Xciptv work on?", "answer": "Xciptv works on Android phones, tablets, Firestick, and Android TV."}
+      {
+        "question": "Is Xciptv free?",
+        "answer": "Yes, Xciptv is free but contains ads."
+      },
+      {
+        "question": "Does Xciptv support M3U playlists?",
+        "answer": "No, Xciptv only supports Xtream Codes API - not standard M3U playlists."
+      },
+      {
+        "question": "Does Xciptv have VOD support?",
+        "answer": "Yes, Xciptv supports VOD (Video on Demand) content from your provider."
+      },
+      {
+        "question": "What devices does Xciptv work on?",
+        "answer": "Xciptv works on Android phones, tablets, Firestick, and Android TV."
+      }
+    ],
+    "relatedPlayers": [
+      "perfect-player",
+      "stremio",
+      "ott-navigator",
+      "lazy-iptv",
+      "duplex-iptv"
+    ],
+    "relatedDevices": [
+      "android-tv",
+      "firestick"
     ]
   },
   {
@@ -510,8 +1383,23 @@
     "name": "Stremio",
     "slug": "stremio",
     "category": "free",
-    "platforms": ["android", "ios", "windows", "mac", "linux", "firestick", "android-tv"],
-    "features": ["favorites", "subtitle-support", "external-player", "hardware-decoding", "vod", "watchlist"],
+    "platforms": [
+      "android",
+      "ios",
+      "windows",
+      "mac",
+      "linux",
+      "firestick",
+      "android-tv"
+    ],
+    "features": [
+      "favorites",
+      "subtitle-support",
+      "external-player",
+      "hardware-decoding",
+      "vod",
+      "watchlist"
+    ],
     "rating": 4.6,
     "pricing": {
       "model": "free",
@@ -538,25 +1426,90 @@
     ],
     "officialUrl": "https://www.stremio.com",
     "downloadUrls": [
-      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=com.stremio.one"},
-      {"platform": "ios", "url": "https://apps.apple.com/app/stremio/id1634931252"},
-      {"platform": "windows", "url": "https://www.stremio.com/downloads"},
-      {"platform": "mac", "url": "https://www.stremio.com/downloads"},
-      {"platform": "linux", "url": "https://www.stremio.com/downloads"}
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.stremio.one"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/app/stremio/id1634931252"
+      },
+      {
+        "platform": "windows",
+        "url": "https://www.stremio.com/downloads"
+      },
+      {
+        "platform": "mac",
+        "url": "https://www.stremio.com/downloads"
+      },
+      {
+        "platform": "linux",
+        "url": "https://www.stremio.com/downloads"
+      }
     ],
     "lastUpdated": "2025-01-15",
     "yearLaunched": 2015,
     "developer": "Stremio",
-    "keywords": ["stremio", "stremio addons", "torrentio", "stremio android", "stremio ios", "stremio apple tv", "stremio firestick", "real debrid stremio", "stremio streaming", "stremio movies", "stremio tv shows"],
+    "keywords": [
+      "stremio",
+      "stremio addons",
+      "torrentio",
+      "stremio android",
+      "stremio ios",
+      "stremio apple tv",
+      "stremio firestick",
+      "real debrid stremio",
+      "stremio streaming",
+      "stremio movies",
+      "stremio tv shows"
+    ],
     "faqs": [
-      {"question": "Is Stremio legal?", "answer": "Stremio itself is legal. It's a media center that doesn't host content. The legality depends on which addons you install and what content you access through them."},
-      {"question": "Does Stremio work with IPTV M3U playlists?", "answer": "No, Stremio doesn't natively support M3U playlists like traditional IPTV players. Instead, it uses community addons to access streaming content."},
-      {"question": "Is Stremio free?", "answer": "Yes, Stremio is completely free with no premium tier, no ads, and no subscription required."},
-      {"question": "What is Torrentio?", "answer": "Torrentio is a popular Stremio addon that aggregates torrent streams from various sources. When used with Real-Debrid, it provides high-quality cached streams."},
-      {"question": "Does Stremio work on Apple TV?", "answer": "Yes, but the Apple TV version requires sideloading via AltStore, Sideloadly, or Xcode as it's not available on the App Store."},
-      {"question": "What is Real-Debrid and do I need it?", "answer": "Real-Debrid is a premium service that provides faster, more reliable streams. While not required, it significantly improves the Stremio experience with addons like Torrentio."},
-      {"question": "How do I install addons in Stremio?", "answer": "You can install addons directly in the app or through the web interface at stremio.com. Simply click the addon catalog and select which addons to install."},
-      {"question": "Does Stremio sync across devices?", "answer": "Yes, Stremio syncs your library, addons, and watch progress across all devices when you're signed into your account."}
+      {
+        "question": "Is Stremio legal?",
+        "answer": "Stremio itself is legal. It's a media center that doesn't host content. The legality depends on which addons you install and what content you access through them."
+      },
+      {
+        "question": "Does Stremio work with IPTV M3U playlists?",
+        "answer": "No, Stremio doesn't natively support M3U playlists like traditional IPTV players. Instead, it uses community addons to access streaming content."
+      },
+      {
+        "question": "Is Stremio free?",
+        "answer": "Yes, Stremio is completely free with no premium tier, no ads, and no subscription required."
+      },
+      {
+        "question": "What is Torrentio?",
+        "answer": "Torrentio is a popular Stremio addon that aggregates torrent streams from various sources. When used with Real-Debrid, it provides high-quality cached streams."
+      },
+      {
+        "question": "Does Stremio work on Apple TV?",
+        "answer": "Yes, but the Apple TV version requires sideloading via AltStore, Sideloadly, or Xcode as it's not available on the App Store."
+      },
+      {
+        "question": "What is Real-Debrid and do I need it?",
+        "answer": "Real-Debrid is a premium service that provides faster, more reliable streams. While not required, it significantly improves the Stremio experience with addons like Torrentio."
+      },
+      {
+        "question": "How do I install addons in Stremio?",
+        "answer": "You can install addons directly in the app or through the web interface at stremio.com. Simply click the addon catalog and select which addons to install."
+      },
+      {
+        "question": "Does Stremio sync across devices?",
+        "answer": "Yes, Stremio syncs your library, addons, and watch progress across all devices when you're signed into your account."
+      }
+    ],
+    "relatedPlayers": [
+      "kodi",
+      "vlc",
+      "iptv-smarters",
+      "ottplayer",
+      "xtream-iptv"
+    ],
+    "relatedDevices": [
+      "android-tv",
+      "ios",
+      "windows",
+      "mac",
+      "linux"
     ]
   },
   {
@@ -564,8 +1517,22 @@
     "name": "Duplex IPTV",
     "slug": "duplex-iptv",
     "category": "premium",
-    "platforms": ["samsung-tv", "lg-tv", "android-tv", "firestick", "android"],
-    "features": ["epg", "vod", "favorites", "multi-playlist", "parental-controls", "catchup", "channel-groups"],
+    "platforms": [
+      "samsung-tv",
+      "lg-tv",
+      "android-tv",
+      "firestick",
+      "android"
+    ],
+    "features": [
+      "epg",
+      "vod",
+      "favorites",
+      "multi-playlist",
+      "parental-controls",
+      "catchup",
+      "channel-groups"
+    ],
     "rating": 4.4,
     "pricing": {
       "model": "subscription",
@@ -573,24 +1540,81 @@
     },
     "description": "Duplex IPTV is one of the most popular IPTV players for Samsung and LG Smart TVs, offering native apps without sideloading. The player supports both M3U playlists and Xtream Codes API, making it compatible with virtually any IPTV provider. Duplex stands out with its cloud-based playlist management through the XtreamPlayer.com activation portal, allowing easy setup across multiple devices. The interface is clean and TV-optimized with full EPG support, VOD libraries, and catchup TV functionality. While the subscription model requires payment per device, the reliable performance and Smart TV support make it a top choice for users who want IPTV on their television without additional hardware.",
     "shortDescription": "Popular Smart TV IPTV player with cloud management",
-    "pros": ["Native Samsung and LG Smart TV apps", "Cloud playlist management via web portal", "Excellent EPG integration", "Supports M3U and Xtream Codes", "No sideloading required on Smart TVs", "Clean TV-optimized interface"],
-    "cons": ["Subscription per device adds up", "No lifetime purchase option", "Requires activation portal account", "Limited customization options"],
+    "pros": [
+      "Native Samsung and LG Smart TV apps",
+      "Cloud playlist management via web portal",
+      "Excellent EPG integration",
+      "Supports M3U and Xtream Codes",
+      "No sideloading required on Smart TVs",
+      "Clean TV-optimized interface"
+    ],
+    "cons": [
+      "Subscription per device adds up",
+      "No lifetime purchase option",
+      "Requires activation portal account",
+      "Limited customization options"
+    ],
     "officialUrl": "https://duplexplay.com",
     "downloadUrls": [
-      {"platform": "samsung-tv", "url": "https://www.samsung.com/us/appstore/app/G00003594"},
-      {"platform": "lg-tv", "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1138396"},
-      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=com.duplex.iptvsmarters"}
+      {
+        "platform": "samsung-tv",
+        "url": "https://www.samsung.com/us/appstore/app/G00003594"
+      },
+      {
+        "platform": "lg-tv",
+        "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1138396"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.duplex.iptvsmarters"
+      }
     ],
     "lastUpdated": "2025-01-10",
     "yearLaunched": 2019,
     "developer": "Duplex IPTV",
-    "keywords": ["duplex iptv", "duplex iptv samsung", "duplex iptv lg", "duplex player", "duplexplay", "duplex smart tv", "xtreamplayer"],
+    "keywords": [
+      "duplex iptv",
+      "duplex iptv samsung",
+      "duplex iptv lg",
+      "duplex player",
+      "duplexplay",
+      "duplex smart tv",
+      "xtreamplayer"
+    ],
     "faqs": [
-      {"question": "Is Duplex IPTV free?", "answer": "Duplex IPTV offers a free trial period, then requires a subscription of approximately $0.99/month per device. There is no one-time purchase option."},
-      {"question": "Does Duplex IPTV work on Samsung TV?", "answer": "Yes, Duplex IPTV has a native app available in the Samsung App Store, making installation easy without sideloading."},
-      {"question": "Does Duplex IPTV work on LG TV?", "answer": "Yes, Duplex IPTV is available in the LG Content Store for webOS Smart TVs."},
-      {"question": "How do I add playlists to Duplex IPTV?", "answer": "You add playlists through the XtreamPlayer.com web portal using your device's activation code. This allows cloud-based management."},
-      {"question": "Does Duplex IPTV support Xtream Codes?", "answer": "Yes, Duplex IPTV fully supports both M3U playlists and Xtream Codes API for provider integration."}
+      {
+        "question": "Is Duplex IPTV free?",
+        "answer": "Duplex IPTV offers a free trial period, then requires a subscription of approximately $0.99/month per device. There is no one-time purchase option."
+      },
+      {
+        "question": "Does Duplex IPTV work on Samsung TV?",
+        "answer": "Yes, Duplex IPTV has a native app available in the Samsung App Store, making installation easy without sideloading."
+      },
+      {
+        "question": "Does Duplex IPTV work on LG TV?",
+        "answer": "Yes, Duplex IPTV is available in the LG Content Store for webOS Smart TVs."
+      },
+      {
+        "question": "How do I add playlists to Duplex IPTV?",
+        "answer": "You add playlists through the XtreamPlayer.com web portal using your device's activation code. This allows cloud-based management."
+      },
+      {
+        "question": "Does Duplex IPTV support Xtream Codes?",
+        "answer": "Yes, Duplex IPTV fully supports both M3U playlists and Xtream Codes API for provider integration."
+      }
+    ],
+    "relatedPlayers": [
+      "nanomid",
+      "flix-iptv",
+      "tivimate",
+      "iptv-smarters",
+      "net-iptv"
+    ],
+    "relatedDevices": [
+      "samsung-tv",
+      "lg-tv",
+      "android-tv",
+      "firestick"
     ]
   },
   {
@@ -598,8 +1622,22 @@
     "name": "Flix IPTV",
     "slug": "flix-iptv",
     "category": "paid",
-    "platforms": ["samsung-tv", "lg-tv", "android-tv", "firestick", "android"],
-    "features": ["epg", "vod", "favorites", "multi-playlist", "parental-controls", "catchup", "subtitle-support"],
+    "platforms": [
+      "samsung-tv",
+      "lg-tv",
+      "android-tv",
+      "firestick",
+      "android"
+    ],
+    "features": [
+      "epg",
+      "vod",
+      "favorites",
+      "multi-playlist",
+      "parental-controls",
+      "catchup",
+      "subtitle-support"
+    ],
     "rating": 4.3,
     "pricing": {
       "model": "one-time",
@@ -607,24 +1645,79 @@
     },
     "description": "Flix IPTV is a highly-rated IPTV player available natively on Samsung and LG Smart TVs with a one-time payment model that appeals to users who dislike subscriptions. The app supports M3U playlists and Xtream Codes API, with a well-designed TV interface that's easy to navigate with a remote. Playlist management is handled through the flixiptv.eu web portal where you link your MAC address and upload your subscription details. Flix IPTV includes full EPG support, VOD integration, multi-screen layouts, and parental controls. The one-time purchase covers a single device, but compared to subscription-based alternatives, it offers better long-term value.",
     "shortDescription": "One-time purchase Smart TV IPTV player",
-    "pros": ["One-time payment (no subscription)", "Native Samsung and LG apps", "Good EPG support", "M3U and Xtream Codes support", "Web-based playlist management", "Parental controls included"],
-    "cons": ["One-time fee per device", "Interface not as polished as competitors", "Limited advanced features", "Customer support can be slow"],
+    "pros": [
+      "One-time payment (no subscription)",
+      "Native Samsung and LG apps",
+      "Good EPG support",
+      "M3U and Xtream Codes support",
+      "Web-based playlist management",
+      "Parental controls included"
+    ],
+    "cons": [
+      "One-time fee per device",
+      "Interface not as polished as competitors",
+      "Limited advanced features",
+      "Customer support can be slow"
+    ],
     "officialUrl": "https://flixiptv.eu",
     "downloadUrls": [
-      {"platform": "samsung-tv", "url": "https://www.samsung.com/us/appstore/"},
-      {"platform": "lg-tv", "url": "https://us.lgappstv.com/"},
-      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=com.flix.iptv"}
+      {
+        "platform": "samsung-tv",
+        "url": "https://www.samsung.com/us/appstore/"
+      },
+      {
+        "platform": "lg-tv",
+        "url": "https://us.lgappstv.com/"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.flix.iptv"
+      }
     ],
     "lastUpdated": "2025-01-05",
     "yearLaunched": 2020,
     "developer": "Flix IPTV",
-    "keywords": ["flix iptv", "flix iptv samsung", "flix iptv lg", "flix iptv one time", "flixiptv"],
+    "keywords": [
+      "flix iptv",
+      "flix iptv samsung",
+      "flix iptv lg",
+      "flix iptv one time",
+      "flixiptv"
+    ],
     "faqs": [
-      {"question": "Is Flix IPTV a one-time payment?", "answer": "Yes, Flix IPTV costs $7.99 one-time per device with no recurring subscription required."},
-      {"question": "Does Flix IPTV work on Samsung TVs?", "answer": "Yes, Flix IPTV is available as a native app in the Samsung TV App Store."},
-      {"question": "Does Flix IPTV work on LG TVs?", "answer": "Yes, Flix IPTV can be downloaded from the LG Content Store on webOS TVs."},
-      {"question": "How do I add playlists to Flix IPTV?", "answer": "Add playlists through flixiptv.eu website using your TV's MAC address to link your M3U or Xtream credentials."},
-      {"question": "Does Flix IPTV have EPG?", "answer": "Yes, Flix IPTV supports EPG integration for viewing TV program schedules."}
+      {
+        "question": "Is Flix IPTV a one-time payment?",
+        "answer": "Yes, Flix IPTV costs $7.99 one-time per device with no recurring subscription required."
+      },
+      {
+        "question": "Does Flix IPTV work on Samsung TVs?",
+        "answer": "Yes, Flix IPTV is available as a native app in the Samsung TV App Store."
+      },
+      {
+        "question": "Does Flix IPTV work on LG TVs?",
+        "answer": "Yes, Flix IPTV can be downloaded from the LG Content Store on webOS TVs."
+      },
+      {
+        "question": "How do I add playlists to Flix IPTV?",
+        "answer": "Add playlists through flixiptv.eu website using your TV's MAC address to link your M3U or Xtream credentials."
+      },
+      {
+        "question": "Does Flix IPTV have EPG?",
+        "answer": "Yes, Flix IPTV supports EPG integration for viewing TV program schedules."
+      }
+    ],
+    "relatedPlayers": [
+      "duplex-iptv",
+      "nanomid",
+      "net-iptv",
+      "set-iptv",
+      "purple-player"
+    ],
+    "relatedDevices": [
+      "samsung-tv",
+      "lg-tv",
+      "android-tv",
+      "firestick"
     ]
   },
   {
@@ -632,8 +1725,17 @@
     "name": "SET IPTV",
     "slug": "set-iptv",
     "category": "paid",
-    "platforms": ["samsung-tv", "lg-tv"],
-    "features": ["epg", "favorites", "multi-playlist", "parental-controls", "catchup"],
+    "platforms": [
+      "samsung-tv",
+      "lg-tv"
+    ],
+    "features": [
+      "epg",
+      "favorites",
+      "multi-playlist",
+      "parental-controls",
+      "catchup"
+    ],
     "rating": 4.2,
     "pricing": {
       "model": "one-time",
@@ -641,23 +1743,72 @@
     },
     "description": "SET IPTV is a dedicated Smart TV IPTV player focusing exclusively on Samsung and LG televisions. The app provides a straightforward, no-frills approach to IPTV viewing with support for M3U URLs and Xtream Codes. Setup is handled through the set-iptv.com web portal where you enter your TV's MAC address and playlist credentials. SET IPTV offers reliable EPG support, favorites management, and basic parental controls. While it lacks some advanced features found in competitors, its simplicity and one-time payment model make it attractive for users who want basic IPTV functionality without complexity.",
     "shortDescription": "Simple one-time purchase Smart TV IPTV app",
-    "pros": ["One-time purchase", "Native Smart TV apps", "Simple setup process", "Reliable EPG support", "No sideloading needed"],
-    "cons": ["Samsung and LG only", "Basic feature set", "Limited customization", "Fewer updates than competitors"],
+    "pros": [
+      "One-time purchase",
+      "Native Smart TV apps",
+      "Simple setup process",
+      "Reliable EPG support",
+      "No sideloading needed"
+    ],
+    "cons": [
+      "Samsung and LG only",
+      "Basic feature set",
+      "Limited customization",
+      "Fewer updates than competitors"
+    ],
     "officialUrl": "https://set-iptv.com",
     "downloadUrls": [
-      {"platform": "samsung-tv", "url": "https://www.samsung.com/us/appstore/"},
-      {"platform": "lg-tv", "url": "https://us.lgappstv.com/"}
+      {
+        "platform": "samsung-tv",
+        "url": "https://www.samsung.com/us/appstore/"
+      },
+      {
+        "platform": "lg-tv",
+        "url": "https://us.lgappstv.com/"
+      }
     ],
     "lastUpdated": "2024-12-15",
     "yearLaunched": 2019,
     "developer": "SET IPTV",
-    "keywords": ["set iptv", "set iptv samsung", "set iptv lg", "set-iptv", "setiptv"],
+    "keywords": [
+      "set iptv",
+      "set iptv samsung",
+      "set iptv lg",
+      "set-iptv",
+      "setiptv"
+    ],
     "faqs": [
-      {"question": "Is SET IPTV free?", "answer": "SET IPTV offers a 3-day free trial, then requires a one-time payment of $7.49 per device."},
-      {"question": "Does SET IPTV work on Samsung TV?", "answer": "Yes, SET IPTV is available in the Samsung TV app store for Tizen-based Smart TVs."},
-      {"question": "Does SET IPTV work on LG TV?", "answer": "Yes, SET IPTV is available in the LG Content Store for webOS Smart TVs."},
-      {"question": "How do I activate SET IPTV?", "answer": "Activate through set-iptv.com by entering your TV's MAC address and playlist details."},
-      {"question": "Does SET IPTV support Xtream Codes?", "answer": "Yes, SET IPTV supports both M3U playlists and Xtream Codes API."}
+      {
+        "question": "Is SET IPTV free?",
+        "answer": "SET IPTV offers a 3-day free trial, then requires a one-time payment of $7.49 per device."
+      },
+      {
+        "question": "Does SET IPTV work on Samsung TV?",
+        "answer": "Yes, SET IPTV is available in the Samsung TV app store for Tizen-based Smart TVs."
+      },
+      {
+        "question": "Does SET IPTV work on LG TV?",
+        "answer": "Yes, SET IPTV is available in the LG Content Store for webOS Smart TVs."
+      },
+      {
+        "question": "How do I activate SET IPTV?",
+        "answer": "Activate through set-iptv.com by entering your TV's MAC address and playlist details."
+      },
+      {
+        "question": "Does SET IPTV support Xtream Codes?",
+        "answer": "Yes, SET IPTV supports both M3U playlists and Xtream Codes API."
+      }
+    ],
+    "relatedPlayers": [
+      "flix-iptv",
+      "net-iptv",
+      "smart-iptv",
+      "duplex-iptv",
+      "nanomid"
+    ],
+    "relatedDevices": [
+      "samsung-tv",
+      "lg-tv"
     ]
   },
   {
@@ -665,8 +1816,18 @@
     "name": "Net IPTV",
     "slug": "net-iptv",
     "category": "paid",
-    "platforms": ["samsung-tv", "lg-tv", "android", "android-tv"],
-    "features": ["epg", "favorites", "multi-playlist", "parental-controls"],
+    "platforms": [
+      "samsung-tv",
+      "lg-tv",
+      "android",
+      "android-tv"
+    ],
+    "features": [
+      "epg",
+      "favorites",
+      "multi-playlist",
+      "parental-controls"
+    ],
     "rating": 4.1,
     "pricing": {
       "model": "one-time",
@@ -674,24 +1835,77 @@
     },
     "description": "Net IPTV is a lightweight IPTV player primarily designed for Samsung and LG Smart TVs with additional Android support. The app takes a minimalist approach, focusing on core IPTV functionality without bloated features. Playlist management happens through the netiptv.eu web portal using MAC address linking. Net IPTV supports standard M3U playlists and includes basic EPG integration, favorites, and parental controls. The affordable one-time price point makes it budget-friendly, though users seeking advanced features may find it limiting.",
     "shortDescription": "Lightweight budget-friendly Smart TV IPTV player",
-    "pros": ["Affordable one-time price", "Native Smart TV apps", "Lightweight and fast", "Simple interface", "Web portal management"],
-    "cons": ["Basic feature set", "Limited advanced options", "Interface feels dated", "Slower update cycle"],
+    "pros": [
+      "Affordable one-time price",
+      "Native Smart TV apps",
+      "Lightweight and fast",
+      "Simple interface",
+      "Web portal management"
+    ],
+    "cons": [
+      "Basic feature set",
+      "Limited advanced options",
+      "Interface feels dated",
+      "Slower update cycle"
+    ],
     "officialUrl": "https://netiptv.eu",
     "downloadUrls": [
-      {"platform": "samsung-tv", "url": "https://www.samsung.com/us/appstore/"},
-      {"platform": "lg-tv", "url": "https://us.lgappstv.com/"},
-      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=com.netiptv"}
+      {
+        "platform": "samsung-tv",
+        "url": "https://www.samsung.com/us/appstore/"
+      },
+      {
+        "platform": "lg-tv",
+        "url": "https://us.lgappstv.com/"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.netiptv"
+      }
     ],
     "lastUpdated": "2024-11-20",
     "yearLaunched": 2018,
     "developer": "Net IPTV",
-    "keywords": ["net iptv", "net iptv samsung", "net iptv lg", "netiptv", "net iptv app"],
+    "keywords": [
+      "net iptv",
+      "net iptv samsung",
+      "net iptv lg",
+      "netiptv",
+      "net iptv app"
+    ],
     "faqs": [
-      {"question": "Is Net IPTV free?", "answer": "Net IPTV offers a 7-day free trial, then costs $6.59 one-time per device."},
-      {"question": "Does Net IPTV work on Samsung TV?", "answer": "Yes, Net IPTV has a native app in the Samsung App Store."},
-      {"question": "Does Net IPTV work on LG TV?", "answer": "Yes, Net IPTV is available in the LG Content Store."},
-      {"question": "How do I set up Net IPTV?", "answer": "Set up through netiptv.eu by entering your TV's MAC address and M3U playlist URL."},
-      {"question": "Does Net IPTV have EPG?", "answer": "Yes, Net IPTV supports basic EPG functionality when provided with your playlist."}
+      {
+        "question": "Is Net IPTV free?",
+        "answer": "Net IPTV offers a 7-day free trial, then costs $6.59 one-time per device."
+      },
+      {
+        "question": "Does Net IPTV work on Samsung TV?",
+        "answer": "Yes, Net IPTV has a native app in the Samsung App Store."
+      },
+      {
+        "question": "Does Net IPTV work on LG TV?",
+        "answer": "Yes, Net IPTV is available in the LG Content Store."
+      },
+      {
+        "question": "How do I set up Net IPTV?",
+        "answer": "Set up through netiptv.eu by entering your TV's MAC address and M3U playlist URL."
+      },
+      {
+        "question": "Does Net IPTV have EPG?",
+        "answer": "Yes, Net IPTV supports basic EPG functionality when provided with your playlist."
+      }
+    ],
+    "relatedPlayers": [
+      "flix-iptv",
+      "duplex-iptv",
+      "nanomid",
+      "set-iptv",
+      "smart-iptv"
+    ],
+    "relatedDevices": [
+      "samsung-tv",
+      "lg-tv",
+      "android-tv"
     ]
   },
   {
@@ -699,8 +1913,23 @@
     "name": "Nanomid IPTV Player",
     "slug": "nanomid",
     "category": "premium",
-    "platforms": ["samsung-tv", "lg-tv", "android", "ios", "firestick", "android-tv"],
-    "features": ["epg", "vod", "favorites", "multi-playlist", "parental-controls", "catchup", "vpn-integrated"],
+    "platforms": [
+      "samsung-tv",
+      "lg-tv",
+      "android",
+      "ios",
+      "firestick",
+      "android-tv"
+    ],
+    "features": [
+      "epg",
+      "vod",
+      "favorites",
+      "multi-playlist",
+      "parental-controls",
+      "catchup",
+      "vpn-integrated"
+    ],
     "rating": 4.5,
     "pricing": {
       "model": "subscription",
@@ -708,25 +1937,85 @@
     },
     "description": "Nanomid IPTV Player stands out with its integrated VPN functionality, a unique feature that protects your IPTV streaming without needing a separate VPN app. Available across Samsung, LG, Android, iOS, and Fire TV platforms, Nanomid offers a comprehensive streaming solution. The app supports both M3U and Xtream Codes, with excellent EPG integration, VOD support, and multi-playlist management. The cloud sync feature keeps your settings and favorites consistent across all devices. While the subscription model is pricier than alternatives, the built-in VPN and cross-platform sync justify the cost for privacy-conscious users.",
     "shortDescription": "Multi-platform IPTV player with integrated VPN",
-    "pros": ["Built-in VPN protection", "Multi-platform support", "Cloud sync across devices", "Excellent EPG", "M3U and Xtream support", "VOD and catchup"],
-    "cons": ["Higher subscription price", "VPN may slow some connections", "No lifetime option", "Requires account creation"],
+    "pros": [
+      "Built-in VPN protection",
+      "Multi-platform support",
+      "Cloud sync across devices",
+      "Excellent EPG",
+      "M3U and Xtream support",
+      "VOD and catchup"
+    ],
+    "cons": [
+      "Higher subscription price",
+      "VPN may slow some connections",
+      "No lifetime option",
+      "Requires account creation"
+    ],
     "officialUrl": "https://nanomid.com",
     "downloadUrls": [
-      {"platform": "samsung-tv", "url": "https://www.samsung.com/us/appstore/"},
-      {"platform": "lg-tv", "url": "https://us.lgappstv.com/"},
-      {"platform": "ios", "url": "https://apps.apple.com/app/nanomid-iptv/id1534568498"},
-      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=com.nanomidgroup.nanomid"}
+      {
+        "platform": "samsung-tv",
+        "url": "https://www.samsung.com/us/appstore/"
+      },
+      {
+        "platform": "lg-tv",
+        "url": "https://us.lgappstv.com/"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/app/nanomid-iptv/id1534568498"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.nanomidgroup.nanomid"
+      }
     ],
     "lastUpdated": "2025-01-12",
     "yearLaunched": 2020,
     "developer": "Nanomid Group",
-    "keywords": ["nanomid", "nanomid iptv", "nanomid player", "iptv vpn", "nanomid vpn", "iptv with vpn"],
+    "keywords": [
+      "nanomid",
+      "nanomid iptv",
+      "nanomid player",
+      "iptv vpn",
+      "nanomid vpn",
+      "iptv with vpn"
+    ],
     "faqs": [
-      {"question": "Does Nanomid have a built-in VPN?", "answer": "Yes, Nanomid includes an integrated VPN feature to protect your IPTV streaming without needing a separate VPN app."},
-      {"question": "Is Nanomid IPTV free?", "answer": "Nanomid offers a free trial, then requires a subscription of approximately $4.99/month."},
-      {"question": "What devices does Nanomid support?", "answer": "Nanomid works on Samsung TV, LG TV, Android phones/tablets, iOS, Fire TV, and Android TV."},
-      {"question": "Does Nanomid sync across devices?", "answer": "Yes, Nanomid has cloud sync that keeps your playlists, favorites, and settings consistent across all your devices."},
-      {"question": "Does Nanomid support Xtream Codes?", "answer": "Yes, Nanomid supports both M3U playlists and Xtream Codes API."}
+      {
+        "question": "Does Nanomid have a built-in VPN?",
+        "answer": "Yes, Nanomid includes an integrated VPN feature to protect your IPTV streaming without needing a separate VPN app."
+      },
+      {
+        "question": "Is Nanomid IPTV free?",
+        "answer": "Nanomid offers a free trial, then requires a subscription of approximately $4.99/month."
+      },
+      {
+        "question": "What devices does Nanomid support?",
+        "answer": "Nanomid works on Samsung TV, LG TV, Android phones/tablets, iOS, Fire TV, and Android TV."
+      },
+      {
+        "question": "Does Nanomid sync across devices?",
+        "answer": "Yes, Nanomid has cloud sync that keeps your playlists, favorites, and settings consistent across all your devices."
+      },
+      {
+        "question": "Does Nanomid support Xtream Codes?",
+        "answer": "Yes, Nanomid supports both M3U playlists and Xtream Codes API."
+      }
+    ],
+    "relatedPlayers": [
+      "duplex-iptv",
+      "flix-iptv",
+      "iptv-smarters",
+      "tivimate",
+      "net-iptv"
+    ],
+    "relatedDevices": [
+      "samsung-tv",
+      "lg-tv",
+      "android-tv",
+      "ios",
+      "firestick"
     ]
   },
   {
@@ -734,34 +2023,105 @@
     "name": "OTTPlayer",
     "slug": "ottplayer",
     "category": "free",
-    "platforms": ["samsung-tv", "lg-tv", "android", "ios", "windows", "mac"],
-    "features": ["epg", "favorites", "multi-playlist", "cloud-sync", "channel-groups"],
-    "rating": 4.0,
+    "platforms": [
+      "samsung-tv",
+      "lg-tv",
+      "android",
+      "ios",
+      "windows",
+      "mac"
+    ],
+    "features": [
+      "epg",
+      "favorites",
+      "multi-playlist",
+      "cloud-sync",
+      "channel-groups"
+    ],
+    "rating": 4,
     "pricing": {
       "model": "free",
       "price": "Free"
     },
     "description": "OTTPlayer is a completely free IPTV player with native support for Samsung and LG Smart TVs plus desktop and mobile platforms. The app uses cloud-based playlist management through ottplayer.es, allowing you to upload M3U playlists via the web and sync across all your devices. While the interface is more basic than premium alternatives, OTTPlayer delivers reliable playback with EPG support and channel organization. The fact that it's completely free with no trial limitations or premium tiers makes it popular among budget-conscious IPTV users.",
     "shortDescription": "Free cloud-synced IPTV player for Smart TVs",
-    "pros": ["Completely free", "Cloud playlist sync", "Multi-platform support", "Native Smart TV apps", "No registration required for basic use"],
-    "cons": ["Basic interface", "Limited advanced features", "Slower development", "EPG can be unreliable"],
+    "pros": [
+      "Completely free",
+      "Cloud playlist sync",
+      "Multi-platform support",
+      "Native Smart TV apps",
+      "No registration required for basic use"
+    ],
+    "cons": [
+      "Basic interface",
+      "Limited advanced features",
+      "Slower development",
+      "EPG can be unreliable"
+    ],
     "officialUrl": "https://ottplayer.es",
     "downloadUrls": [
-      {"platform": "samsung-tv", "url": "https://www.samsung.com/us/appstore/"},
-      {"platform": "lg-tv", "url": "https://us.lgappstv.com/"},
-      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=com.ottplayer"},
-      {"platform": "ios", "url": "https://apps.apple.com/app/ottplayer/id1aborator"}
+      {
+        "platform": "samsung-tv",
+        "url": "https://www.samsung.com/us/appstore/"
+      },
+      {
+        "platform": "lg-tv",
+        "url": "https://us.lgappstv.com/"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.ottplayer"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/app/ottplayer/id1aborator"
+      }
     ],
     "lastUpdated": "2024-10-01",
     "yearLaunched": 2016,
     "developer": "OTTPlayer",
-    "keywords": ["ottplayer", "ott player", "ottplayer samsung", "ottplayer lg", "free smart tv iptv"],
+    "keywords": [
+      "ottplayer",
+      "ott player",
+      "ottplayer samsung",
+      "ottplayer lg",
+      "free smart tv iptv"
+    ],
     "faqs": [
-      {"question": "Is OTTPlayer completely free?", "answer": "Yes, OTTPlayer is 100% free with no premium tier, subscription, or hidden costs."},
-      {"question": "Does OTTPlayer work on Samsung TV?", "answer": "Yes, OTTPlayer has a native app available in the Samsung App Store."},
-      {"question": "Does OTTPlayer work on LG TV?", "answer": "Yes, OTTPlayer is available in the LG Content Store for webOS TVs."},
-      {"question": "How do I add playlists to OTTPlayer?", "answer": "Upload playlists through the ottplayer.es website, then they sync automatically to your devices."},
-      {"question": "Does OTTPlayer have cloud sync?", "answer": "Yes, OTTPlayer syncs playlists and settings across all your devices through cloud storage."}
+      {
+        "question": "Is OTTPlayer completely free?",
+        "answer": "Yes, OTTPlayer is 100% free with no premium tier, subscription, or hidden costs."
+      },
+      {
+        "question": "Does OTTPlayer work on Samsung TV?",
+        "answer": "Yes, OTTPlayer has a native app available in the Samsung App Store."
+      },
+      {
+        "question": "Does OTTPlayer work on LG TV?",
+        "answer": "Yes, OTTPlayer is available in the LG Content Store for webOS TVs."
+      },
+      {
+        "question": "How do I add playlists to OTTPlayer?",
+        "answer": "Upload playlists through the ottplayer.es website, then they sync automatically to your devices."
+      },
+      {
+        "question": "Does OTTPlayer have cloud sync?",
+        "answer": "Yes, OTTPlayer syncs playlists and settings across all your devices through cloud storage."
+      }
+    ],
+    "relatedPlayers": [
+      "stremio",
+      "vlc",
+      "nanomid",
+      "iptvnator",
+      "iptv-smarters"
+    ],
+    "relatedDevices": [
+      "samsung-tv",
+      "lg-tv",
+      "android-tv",
+      "ios",
+      "windows"
     ]
   },
   {
@@ -769,8 +2129,19 @@
     "name": "IPTVnator",
     "slug": "iptvnator",
     "category": "free",
-    "platforms": ["windows", "mac", "linux"],
-    "features": ["epg", "favorites", "multi-playlist", "channel-groups", "playlist-management", "hardware-decoding"],
+    "platforms": [
+      "windows",
+      "mac",
+      "linux"
+    ],
+    "features": [
+      "epg",
+      "favorites",
+      "multi-playlist",
+      "channel-groups",
+      "playlist-management",
+      "hardware-decoding"
+    ],
     "rating": 4.4,
     "pricing": {
       "model": "free",
@@ -778,24 +2149,79 @@
     },
     "description": "IPTVnator is a free, open-source IPTV player built specifically for desktop platforms using Electron and Angular. Unlike web-based solutions, IPTVnator runs as a native application on Windows, macOS, and Linux with full hardware decoding support. The app features a modern interface, multi-playlist management, EPG integration, and channel grouping. Being open-source means the code is transparent and community-driven, with no ads, tracking, or subscription requirements. IPTVnator is ideal for users who prefer watching IPTV on their computer rather than mobile or TV devices.",
     "shortDescription": "Open-source desktop IPTV player",
-    "pros": ["Completely free and open-source", "Native desktop performance", "Modern clean interface", "No ads or tracking", "Multi-playlist support", "Active development on GitHub"],
-    "cons": ["Desktop only (no mobile/TV)", "Requires download (no web version)", "Some features still in development", "Smaller community than mainstream apps"],
+    "pros": [
+      "Completely free and open-source",
+      "Native desktop performance",
+      "Modern clean interface",
+      "No ads or tracking",
+      "Multi-playlist support",
+      "Active development on GitHub"
+    ],
+    "cons": [
+      "Desktop only (no mobile/TV)",
+      "Requires download (no web version)",
+      "Some features still in development",
+      "Smaller community than mainstream apps"
+    ],
     "officialUrl": "https://github.com/4gray/iptvnator",
     "downloadUrls": [
-      {"platform": "windows", "url": "https://github.com/4gray/iptvnator/releases"},
-      {"platform": "mac", "url": "https://github.com/4gray/iptvnator/releases"},
-      {"platform": "linux", "url": "https://github.com/4gray/iptvnator/releases"}
+      {
+        "platform": "windows",
+        "url": "https://github.com/4gray/iptvnator/releases"
+      },
+      {
+        "platform": "mac",
+        "url": "https://github.com/4gray/iptvnator/releases"
+      },
+      {
+        "platform": "linux",
+        "url": "https://github.com/4gray/iptvnator/releases"
+      }
     ],
     "lastUpdated": "2025-01-08",
     "yearLaunched": 2020,
     "developer": "4gray (GitHub)",
-    "keywords": ["iptvnator", "iptv desktop", "iptv windows", "iptv mac", "iptv linux", "open source iptv player"],
+    "keywords": [
+      "iptvnator",
+      "iptv desktop",
+      "iptv windows",
+      "iptv mac",
+      "iptv linux",
+      "open source iptv player"
+    ],
     "faqs": [
-      {"question": "Is IPTVnator free?", "answer": "Yes, IPTVnator is completely free and open-source with no premium features or subscriptions."},
-      {"question": "Does IPTVnator work on Windows?", "answer": "Yes, IPTVnator has native Windows builds available on GitHub releases."},
-      {"question": "Does IPTVnator work on Mac?", "answer": "Yes, IPTVnator is available for macOS through GitHub releases."},
-      {"question": "Does IPTVnator work on Linux?", "answer": "Yes, IPTVnator supports Linux with AppImage, Snap, and other package formats."},
-      {"question": "Is IPTVnator open-source?", "answer": "Yes, IPTVnator is fully open-source and available on GitHub under MIT license."}
+      {
+        "question": "Is IPTVnator free?",
+        "answer": "Yes, IPTVnator is completely free and open-source with no premium features or subscriptions."
+      },
+      {
+        "question": "Does IPTVnator work on Windows?",
+        "answer": "Yes, IPTVnator has native Windows builds available on GitHub releases."
+      },
+      {
+        "question": "Does IPTVnator work on Mac?",
+        "answer": "Yes, IPTVnator is available for macOS through GitHub releases."
+      },
+      {
+        "question": "Does IPTVnator work on Linux?",
+        "answer": "Yes, IPTVnator supports Linux with AppImage, Snap, and other package formats."
+      },
+      {
+        "question": "Is IPTVnator open-source?",
+        "answer": "Yes, IPTVnator is fully open-source and available on GitHub under MIT license."
+      }
+    ],
+    "relatedPlayers": [
+      "stremio",
+      "ottplayer",
+      "vlc",
+      "myiptv-player",
+      "kodi"
+    ],
+    "relatedDevices": [
+      "windows",
+      "mac",
+      "linux"
     ]
   },
   {
@@ -803,8 +2229,15 @@
     "name": "MyIPTV Player",
     "slug": "myiptv-player",
     "category": "free",
-    "platforms": ["windows"],
-    "features": ["epg", "favorites", "playlist-management", "channel-groups"],
+    "platforms": [
+      "windows"
+    ],
+    "features": [
+      "epg",
+      "favorites",
+      "playlist-management",
+      "channel-groups"
+    ],
     "rating": 4.2,
     "pricing": {
       "model": "free",
@@ -812,22 +2245,67 @@
     },
     "description": "MyIPTV Player is a free IPTV application available exclusively through the Microsoft Store for Windows 10 and 11. The app provides a simple, straightforward way to watch M3U playlists on your Windows PC with EPG support and channel organization. Being a Microsoft Store app means easy installation, automatic updates, and security verification. MyIPTV Player supports local and remote M3U files, external EPG sources, and basic favorites management. While lacking advanced features found in dedicated media centers, its simplicity makes it ideal for Windows users wanting basic IPTV functionality.",
     "shortDescription": "Free Microsoft Store IPTV app for Windows",
-    "pros": ["Free from Microsoft Store", "Simple and easy to use", "Auto-updates through Store", "Windows-native integration", "Supports local and remote playlists"],
-    "cons": ["Windows only", "Basic feature set", "Limited customization", "No recording capability"],
+    "pros": [
+      "Free from Microsoft Store",
+      "Simple and easy to use",
+      "Auto-updates through Store",
+      "Windows-native integration",
+      "Supports local and remote playlists"
+    ],
+    "cons": [
+      "Windows only",
+      "Basic feature set",
+      "Limited customization",
+      "No recording capability"
+    ],
     "officialUrl": "https://www.microsoft.com/store/apps/9P7V7RWM5LBC",
     "downloadUrls": [
-      {"platform": "windows", "url": "https://www.microsoft.com/store/apps/9P7V7RWM5LBC"}
+      {
+        "platform": "windows",
+        "url": "https://www.microsoft.com/store/apps/9P7V7RWM5LBC"
+      }
     ],
     "lastUpdated": "2024-12-01",
     "yearLaunched": 2017,
     "developer": "Damir Porobic",
-    "keywords": ["myiptv player", "myiptv", "iptv windows 10", "iptv windows 11", "microsoft store iptv"],
+    "keywords": [
+      "myiptv player",
+      "myiptv",
+      "iptv windows 10",
+      "iptv windows 11",
+      "microsoft store iptv"
+    ],
     "faqs": [
-      {"question": "Is MyIPTV Player free?", "answer": "Yes, MyIPTV Player is completely free to download and use from the Microsoft Store."},
-      {"question": "Does MyIPTV Player work on Windows 11?", "answer": "Yes, MyIPTV Player is compatible with both Windows 10 and Windows 11."},
-      {"question": "How do I install MyIPTV Player?", "answer": "Install directly from the Microsoft Store by searching for 'MyIPTV Player' or visiting the app page."},
-      {"question": "Does MyIPTV Player have EPG?", "answer": "Yes, MyIPTV Player supports EPG from external XMLTV sources."},
-      {"question": "Can MyIPTV Player use local M3U files?", "answer": "Yes, MyIPTV Player supports both local M3U files and remote URLs."}
+      {
+        "question": "Is MyIPTV Player free?",
+        "answer": "Yes, MyIPTV Player is completely free to download and use from the Microsoft Store."
+      },
+      {
+        "question": "Does MyIPTV Player work on Windows 11?",
+        "answer": "Yes, MyIPTV Player is compatible with both Windows 10 and Windows 11."
+      },
+      {
+        "question": "How do I install MyIPTV Player?",
+        "answer": "Install directly from the Microsoft Store by searching for 'MyIPTV Player' or visiting the app page."
+      },
+      {
+        "question": "Does MyIPTV Player have EPG?",
+        "answer": "Yes, MyIPTV Player supports EPG from external XMLTV sources."
+      },
+      {
+        "question": "Can MyIPTV Player use local M3U files?",
+        "answer": "Yes, MyIPTV Player supports both local M3U files and remote URLs."
+      }
+    ],
+    "relatedPlayers": [
+      "iptvnator",
+      "ottplayer",
+      "vlc",
+      "perfect-player",
+      "stremio"
+    ],
+    "relatedDevices": [
+      "windows"
     ]
   },
   {
@@ -835,8 +2313,20 @@
     "name": "Purple IPTV Player",
     "slug": "purple-player",
     "category": "freemium",
-    "platforms": ["android", "firestick", "android-tv"],
-    "features": ["epg", "vod", "favorites", "multi-playlist", "catchup", "parental-controls", "cloud-sync"],
+    "platforms": [
+      "android",
+      "firestick",
+      "android-tv"
+    ],
+    "features": [
+      "epg",
+      "vod",
+      "favorites",
+      "multi-playlist",
+      "catchup",
+      "parental-controls",
+      "cloud-sync"
+    ],
     "rating": 4.3,
     "pricing": {
       "model": "freemium",
@@ -844,23 +2334,72 @@
     },
     "description": "Purple IPTV Player is a modern Android IPTV application with a focus on clean design and cloud synchronization. The app supports M3U and Xtream Codes playlists with full EPG integration, VOD support, and catchup TV functionality. Purple Player's standout feature is its cloud sync capability, allowing you to maintain consistent settings and favorites across multiple Android devices. The interface is visually appealing with customizable themes and a responsive remote-friendly design for Fire TV. The free version includes basic features with the premium unlock removing ads and enabling advanced functionality.",
     "shortDescription": "Modern Android IPTV player with cloud sync",
-    "pros": ["Cloud sync across devices", "Modern attractive interface", "Customizable themes", "M3U and Xtream support", "Good Fire TV optimization", "VOD and catchup"],
-    "cons": ["Android only", "Premium for full features", "Relatively newer app", "Some features still developing"],
+    "pros": [
+      "Cloud sync across devices",
+      "Modern attractive interface",
+      "Customizable themes",
+      "M3U and Xtream support",
+      "Good Fire TV optimization",
+      "VOD and catchup"
+    ],
+    "cons": [
+      "Android only",
+      "Premium for full features",
+      "Relatively newer app",
+      "Some features still developing"
+    ],
     "officialUrl": "https://purpleiptv.com",
     "downloadUrls": [
-      {"platform": "android", "url": "https://play.google.com/store/apps/details?id=com.purple.iptv.player"},
-      {"platform": "firestick", "url": "https://www.amazon.com/dp/B09XXXXXXXXX"}
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.purple.iptv.player"
+      },
+      {
+        "platform": "firestick",
+        "url": "https://www.amazon.com/dp/B09XXXXXXXXX"
+      }
     ],
     "lastUpdated": "2025-01-05",
     "yearLaunched": 2021,
     "developer": "Purple Apps",
-    "keywords": ["purple iptv", "purple player", "purple iptv player", "purple smart iptv"],
+    "keywords": [
+      "purple iptv",
+      "purple player",
+      "purple iptv player",
+      "purple smart iptv"
+    ],
     "faqs": [
-      {"question": "Is Purple IPTV Player free?", "answer": "Purple IPTV has a free version with ads. Premium costs $4.99 one-time for full features."},
-      {"question": "Does Purple IPTV work on Fire TV?", "answer": "Yes, Purple IPTV Player is optimized for Fire TV and Firestick devices."},
-      {"question": "Does Purple IPTV have cloud sync?", "answer": "Yes, Purple IPTV syncs your playlists, favorites, and settings across all your Android devices."},
-      {"question": "Does Purple IPTV support Xtream Codes?", "answer": "Yes, Purple IPTV Player supports both M3U playlists and Xtream Codes API."},
-      {"question": "Does Purple IPTV have VOD support?", "answer": "Yes, Purple IPTV includes VOD and catchup TV functionality."}
+      {
+        "question": "Is Purple IPTV Player free?",
+        "answer": "Purple IPTV has a free version with ads. Premium costs $4.99 one-time for full features."
+      },
+      {
+        "question": "Does Purple IPTV work on Fire TV?",
+        "answer": "Yes, Purple IPTV Player is optimized for Fire TV and Firestick devices."
+      },
+      {
+        "question": "Does Purple IPTV have cloud sync?",
+        "answer": "Yes, Purple IPTV syncs your playlists, favorites, and settings across all your Android devices."
+      },
+      {
+        "question": "Does Purple IPTV support Xtream Codes?",
+        "answer": "Yes, Purple IPTV Player supports both M3U playlists and Xtream Codes API."
+      },
+      {
+        "question": "Does Purple IPTV have VOD support?",
+        "answer": "Yes, Purple IPTV includes VOD and catchup TV functionality."
+      }
+    ],
+    "relatedPlayers": [
+      "ott-navigator",
+      "iptv-extreme",
+      "duplex-iptv",
+      "flix-iptv",
+      "nanomid"
+    ],
+    "relatedDevices": [
+      "android-tv",
+      "firestick"
     ]
   },
   {
@@ -868,8 +2407,19 @@
     "name": "Sparkle TV",
     "slug": "sparkle-tv",
     "category": "freemium",
-    "platforms": ["android-tv", "firestick"],
-    "features": ["epg", "recording", "vod", "favorites", "catchup", "stalker-portal", "channel-groups"],
+    "platforms": [
+      "android-tv",
+      "firestick"
+    ],
+    "features": [
+      "epg",
+      "recording",
+      "vod",
+      "favorites",
+      "catchup",
+      "stalker-portal",
+      "channel-groups"
+    ],
     "rating": 4.4,
     "pricing": {
       "model": "freemium",
@@ -877,23 +2427,73 @@
     },
     "description": "Sparkle TV is an Android TV and Fire TV focused IPTV player with strong DVR recording capabilities and Stalker portal support. The app is designed specifically for big-screen viewing with a leanback interface optimized for remote control navigation. Sparkle TV supports M3U, Xtream Codes, and Stalker middleware, making it compatible with virtually any IPTV provider. The recording feature allows you to save live TV to external storage, while EPG integration and catchup TV enhance the viewing experience. The premium subscription unlocks advanced features including unlimited recordings and multi-profile support.",
     "shortDescription": "Android TV player with DVR and Stalker support",
-    "pros": ["DVR recording to external storage", "Stalker portal support", "Optimized for TV/remote", "M3U and Xtream support", "Catchup TV", "Multi-profile support"],
-    "cons": ["TV platforms only", "Premium for recordings", "Yearly subscription", "No mobile version"],
+    "pros": [
+      "DVR recording to external storage",
+      "Stalker portal support",
+      "Optimized for TV/remote",
+      "M3U and Xtream support",
+      "Catchup TV",
+      "Multi-profile support"
+    ],
+    "cons": [
+      "TV platforms only",
+      "Premium for recordings",
+      "Yearly subscription",
+      "No mobile version"
+    ],
     "officialUrl": "https://sparkletv.net",
     "downloadUrls": [
-      {"platform": "android-tv", "url": "https://play.google.com/store/apps/details?id=tv.sparkle.player"},
-      {"platform": "firestick", "url": "https://www.amazon.com/dp/B09XXXXXXXXX"}
+      {
+        "platform": "android-tv",
+        "url": "https://play.google.com/store/apps/details?id=tv.sparkle.player"
+      },
+      {
+        "platform": "firestick",
+        "url": "https://www.amazon.com/dp/B09XXXXXXXXX"
+      }
     ],
     "lastUpdated": "2025-01-10",
     "yearLaunched": 2020,
     "developer": "Sparkle TV",
-    "keywords": ["sparkle tv", "sparkle iptv", "sparkle tv player", "iptv dvr", "iptv recording android tv"],
+    "keywords": [
+      "sparkle tv",
+      "sparkle iptv",
+      "sparkle tv player",
+      "iptv dvr",
+      "iptv recording android tv"
+    ],
     "faqs": [
-      {"question": "Does Sparkle TV support recording?", "answer": "Yes, Sparkle TV has DVR functionality to record live TV to external USB storage."},
-      {"question": "Does Sparkle TV support Stalker portal?", "answer": "Yes, Sparkle TV supports Stalker middleware in addition to M3U and Xtream Codes."},
-      {"question": "Does Sparkle TV work on Firestick?", "answer": "Yes, Sparkle TV is available for Firestick and Fire TV devices."},
-      {"question": "Is Sparkle TV free?", "answer": "Sparkle TV has a free version with limited features. Premium is $9.99/year for full functionality."},
-      {"question": "Does Sparkle TV have EPG?", "answer": "Yes, Sparkle TV includes full EPG support for TV guide functionality."}
+      {
+        "question": "Does Sparkle TV support recording?",
+        "answer": "Yes, Sparkle TV has DVR functionality to record live TV to external USB storage."
+      },
+      {
+        "question": "Does Sparkle TV support Stalker portal?",
+        "answer": "Yes, Sparkle TV supports Stalker middleware in addition to M3U and Xtream Codes."
+      },
+      {
+        "question": "Does Sparkle TV work on Firestick?",
+        "answer": "Yes, Sparkle TV is available for Firestick and Fire TV devices."
+      },
+      {
+        "question": "Is Sparkle TV free?",
+        "answer": "Sparkle TV has a free version with limited features. Premium is $9.99/year for full functionality."
+      },
+      {
+        "question": "Does Sparkle TV have EPG?",
+        "answer": "Yes, Sparkle TV includes full EPG support for TV guide functionality."
+      }
+    ],
+    "relatedPlayers": [
+      "ott-navigator",
+      "purple-player",
+      "iptv-extreme",
+      "televizo",
+      "duplex-iptv"
+    ],
+    "relatedDevices": [
+      "android-tv",
+      "firestick"
     ]
   },
   {
@@ -901,8 +2501,19 @@
     "name": "VU IPTV Player",
     "slug": "vu-iptv-player",
     "category": "paid",
-    "platforms": ["ios", "apple-tv"],
-    "features": ["epg", "vod", "favorites", "multi-playlist", "stalker-portal", "airplay", "picture-in-picture"],
+    "platforms": [
+      "ios",
+      "apple-tv"
+    ],
+    "features": [
+      "epg",
+      "vod",
+      "favorites",
+      "multi-playlist",
+      "stalker-portal",
+      "airplay",
+      "picture-in-picture"
+    ],
     "rating": 4.3,
     "pricing": {
       "model": "one-time",
@@ -910,23 +2521,73 @@
     },
     "description": "VU IPTV Player is a premium iOS and Apple TV IPTV application supporting both Xtream Codes and Stalker portal middleware. The app features a native Apple design with AirPlay support, picture-in-picture, and smooth integration with the Apple ecosystem. VU supports M3U playlists, Xtream Codes API, and MAG/Stalker portals, making it versatile for different IPTV provider types. The EPG integration is well-implemented, and VOD content is easily accessible. While the App Store presence limits some features compared to sideloaded alternatives, VU Player offers reliability and easy installation for Apple users.",
     "shortDescription": "Premium iOS IPTV player with Stalker support",
-    "pros": ["Native iOS/Apple TV app", "Stalker portal support", "AirPlay integration", "Picture-in-picture", "Xtream Codes support", "No sideloading needed"],
-    "cons": ["Apple devices only", "Paid with no free version", "Limited compared to sideloaded apps", "No recording"],
+    "pros": [
+      "Native iOS/Apple TV app",
+      "Stalker portal support",
+      "AirPlay integration",
+      "Picture-in-picture",
+      "Xtream Codes support",
+      "No sideloading needed"
+    ],
+    "cons": [
+      "Apple devices only",
+      "Paid with no free version",
+      "Limited compared to sideloaded apps",
+      "No recording"
+    ],
     "officialUrl": "https://apps.apple.com/app/vu-iptv-player/id1522891637",
     "downloadUrls": [
-      {"platform": "ios", "url": "https://apps.apple.com/app/vu-iptv-player/id1522891637"},
-      {"platform": "apple-tv", "url": "https://apps.apple.com/app/vu-iptv-player/id1522891637"}
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/app/vu-iptv-player/id1522891637"
+      },
+      {
+        "platform": "apple-tv",
+        "url": "https://apps.apple.com/app/vu-iptv-player/id1522891637"
+      }
     ],
     "lastUpdated": "2025-01-02",
     "yearLaunched": 2020,
     "developer": "VU Apps",
-    "keywords": ["vu iptv", "vu iptv player", "vu player ios", "iptv stalker ios", "apple tv stalker"],
+    "keywords": [
+      "vu iptv",
+      "vu iptv player",
+      "vu player ios",
+      "iptv stalker ios",
+      "apple tv stalker"
+    ],
     "faqs": [
-      {"question": "Is VU IPTV Player free?", "answer": "No, VU IPTV Player costs $6.99 one-time with no free version available."},
-      {"question": "Does VU IPTV support Stalker portal?", "answer": "Yes, VU IPTV Player supports Stalker/MAG portal middleware in addition to M3U and Xtream."},
-      {"question": "Does VU IPTV work on Apple TV?", "answer": "Yes, VU IPTV Player is available for Apple TV through the App Store."},
-      {"question": "Does VU IPTV support AirPlay?", "answer": "Yes, VU IPTV includes AirPlay support for streaming to other Apple devices."},
-      {"question": "Does VU IPTV have picture-in-picture?", "answer": "Yes, VU IPTV supports picture-in-picture mode on compatible iOS devices."}
+      {
+        "question": "Is VU IPTV Player free?",
+        "answer": "No, VU IPTV Player costs $6.99 one-time with no free version available."
+      },
+      {
+        "question": "Does VU IPTV support Stalker portal?",
+        "answer": "Yes, VU IPTV Player supports Stalker/MAG portal middleware in addition to M3U and Xtream."
+      },
+      {
+        "question": "Does VU IPTV work on Apple TV?",
+        "answer": "Yes, VU IPTV Player is available for Apple TV through the App Store."
+      },
+      {
+        "question": "Does VU IPTV support AirPlay?",
+        "answer": "Yes, VU IPTV includes AirPlay support for streaming to other Apple devices."
+      },
+      {
+        "question": "Does VU IPTV have picture-in-picture?",
+        "answer": "Yes, VU IPTV supports picture-in-picture mode on compatible iOS devices."
+      }
+    ],
+    "relatedPlayers": [
+      "flex-iptv",
+      "iplaytv",
+      "jamrun",
+      "flix-iptv",
+      "kodi"
+    ],
+    "relatedDevices": [
+      "ios",
+      "apple-tv"
     ]
   },
   {
@@ -934,8 +2595,19 @@
     "name": "Flex IPTV",
     "slug": "flex-iptv",
     "category": "paid",
-    "platforms": ["ios", "apple-tv"],
-    "features": ["epg", "vod", "favorites", "multi-playlist", "airplay", "picture-in-picture", "subtitle-support"],
+    "platforms": [
+      "ios",
+      "apple-tv"
+    ],
+    "features": [
+      "epg",
+      "vod",
+      "favorites",
+      "multi-playlist",
+      "airplay",
+      "picture-in-picture",
+      "subtitle-support"
+    ],
     "rating": 4.2,
     "pricing": {
       "model": "one-time",
@@ -943,23 +2615,73 @@
     },
     "description": "Flex IPTV is an affordable iOS and Apple TV IPTV player available directly from the App Store. The app supports M3U playlists and Xtream Codes API with a focus on simplicity and ease of use. Flex IPTV includes EPG support, VOD browsing, favorites management, and AirPlay casting. The interface is clean and Apple-native feeling, with support for picture-in-picture viewing. At $4.99 one-time, it's one of the more affordable options for Apple users seeking a reliable, no-fuss IPTV player without the complexity of sideloading.",
     "shortDescription": "Affordable iOS IPTV player from App Store",
-    "pros": ["Affordable one-time price", "App Store available", "Simple clean interface", "AirPlay support", "Picture-in-picture", "M3U and Xtream support"],
-    "cons": ["Apple devices only", "Basic feature set", "No Stalker support", "Limited customization"],
+    "pros": [
+      "Affordable one-time price",
+      "App Store available",
+      "Simple clean interface",
+      "AirPlay support",
+      "Picture-in-picture",
+      "M3U and Xtream support"
+    ],
+    "cons": [
+      "Apple devices only",
+      "Basic feature set",
+      "No Stalker support",
+      "Limited customization"
+    ],
     "officialUrl": "https://apps.apple.com/app/flex-iptv/id1526099119",
     "downloadUrls": [
-      {"platform": "ios", "url": "https://apps.apple.com/app/flex-iptv/id1526099119"},
-      {"platform": "apple-tv", "url": "https://apps.apple.com/app/flex-iptv/id1526099119"}
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/app/flex-iptv/id1526099119"
+      },
+      {
+        "platform": "apple-tv",
+        "url": "https://apps.apple.com/app/flex-iptv/id1526099119"
+      }
     ],
     "lastUpdated": "2024-12-20",
     "yearLaunched": 2020,
     "developer": "Flex Apps",
-    "keywords": ["flex iptv", "flex iptv ios", "flex player", "iptv app store", "cheap iptv ios"],
+    "keywords": [
+      "flex iptv",
+      "flex iptv ios",
+      "flex player",
+      "iptv app store",
+      "cheap iptv ios"
+    ],
     "faqs": [
-      {"question": "Is Flex IPTV free?", "answer": "No, Flex IPTV costs $4.99 one-time from the App Store."},
-      {"question": "Does Flex IPTV work on Apple TV?", "answer": "Yes, Flex IPTV is available for both iOS and Apple TV through the App Store."},
-      {"question": "Does Flex IPTV support Xtream Codes?", "answer": "Yes, Flex IPTV supports both M3U playlists and Xtream Codes API."},
-      {"question": "Does Flex IPTV have EPG?", "answer": "Yes, Flex IPTV includes EPG support for viewing TV guide information."},
-      {"question": "Does Flex IPTV support AirPlay?", "answer": "Yes, Flex IPTV includes AirPlay support for casting to Apple TV and other devices."}
+      {
+        "question": "Is Flex IPTV free?",
+        "answer": "No, Flex IPTV costs $4.99 one-time from the App Store."
+      },
+      {
+        "question": "Does Flex IPTV work on Apple TV?",
+        "answer": "Yes, Flex IPTV is available for both iOS and Apple TV through the App Store."
+      },
+      {
+        "question": "Does Flex IPTV support Xtream Codes?",
+        "answer": "Yes, Flex IPTV supports both M3U playlists and Xtream Codes API."
+      },
+      {
+        "question": "Does Flex IPTV have EPG?",
+        "answer": "Yes, Flex IPTV includes EPG support for viewing TV guide information."
+      },
+      {
+        "question": "Does Flex IPTV support AirPlay?",
+        "answer": "Yes, Flex IPTV includes AirPlay support for casting to Apple TV and other devices."
+      }
+    ],
+    "relatedPlayers": [
+      "vu-iptv-player",
+      "iplaytv",
+      "jamrun",
+      "flix-iptv",
+      "kodi"
+    ],
+    "relatedDevices": [
+      "ios",
+      "apple-tv"
     ]
   }
 ]

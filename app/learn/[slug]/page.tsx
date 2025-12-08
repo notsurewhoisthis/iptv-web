@@ -4,11 +4,11 @@ import { notFound } from 'next/navigation';
 import { ChevronRight, Clock, BookOpen, ArrowLeft, ArrowRight } from 'lucide-react';
 import learnArticles from '@/data/learn-articles.json';
 import { TableOfContents, TOCItem } from '@/components/TableOfContents';
-import { RelatedContent } from '@/components/RelatedContent';
+import { RelatedContent, RelatedPlayers, RelatedGuides } from '@/components/RelatedContent';
 import { IptvArchitectureDiagram, StreamingFlowDiagram, M3uStructureDiagram } from '@/components/IptvDiagram';
 import { EnhancedAuthorBio, EditorialReviewBadge, LastUpdated } from '@/components/GeoComponents';
 import { TechArticleSchema, BreadcrumbSchema, FAQSchema } from '@/components/JsonLd';
-import { getBaseUrl } from '@/lib/data-loader';
+import { getBaseUrl, getPlayers, getTechnicalGuides } from '@/lib/data-loader';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -62,7 +62,44 @@ export default async function LearnArticlePage({ params }: PageProps) {
     notFound();
   }
 
+  const [allPlayers, allGuides] = await Promise.all([
+    getPlayers(),
+    getTechnicalGuides(),
+  ]);
+
   const baseUrl = getBaseUrl();
+
+  // Map article categories to relevant players and guides
+  const articleToPlayers: Record<string, string[]> = {
+    'what-is-iptv': ['tivimate', 'kodi', 'vlc', 'iptv-smarters'],
+    'm3u-playlists-explained': ['vlc', 'kodi', 'tivimate', 'iptv-smarters'],
+    'xtream-codes-vs-m3u': ['tivimate', 'iptv-smarters', 'ott-navigator'],
+    'epg-guide-explained': ['tivimate', 'perfect-player', 'iptv-smarters'],
+    'how-iptv-works': ['tivimate', 'kodi', 'vlc'],
+    'buffering-solutions': ['tivimate', 'kodi', 'vlc'],
+    'codec-comparison': ['vlc', 'kodi', 'tivimate'],
+    'iptv-vs-cable': ['tivimate', 'kodi', 'jamrun'],
+    'legal-iptv-guide': ['tivimate', 'stremio', 'kodi'],
+    'vpn-for-iptv': ['tivimate', 'kodi', 'iptv-smarters'],
+    'record-iptv-streams': ['tivimate', 'kodi', 'perfect-player'],
+    'multi-room-setup': ['tivimate', 'iptv-smarters', 'ott-navigator'],
+    'choosing-iptv-player': ['tivimate', 'kodi', 'vlc', 'iptv-smarters', 'jamrun'],
+    'iptv-quality-settings': ['tivimate', 'kodi', 'vlc'],
+  };
+
+  const articleToGuides: Record<string, string[]> = {
+    'what-is-iptv': ['m3u-playlist-complete-guide', 'xtream-codes-complete-guide'],
+    'm3u-playlists-explained': ['m3u-playlist-complete-guide', 'setup-epg-guide'],
+    'xtream-codes-vs-m3u': ['xtream-codes-complete-guide', 'm3u-playlist-complete-guide'],
+    'epg-guide-explained': ['setup-epg-guide', 'fix-iptv-buffering'],
+    'buffering-solutions': ['fix-iptv-buffering', 'setup-vpn-for-iptv'],
+    'vpn-for-iptv': ['setup-vpn-for-iptv', 'fix-iptv-buffering'],
+    'record-iptv-streams': ['record-iptv-guide', 'fix-iptv-buffering'],
+    'multi-room-setup': ['multi-room-iptv-setup', 'fix-iptv-buffering'],
+  };
+
+  const relevantPlayerIds = articleToPlayers[slug] || ['tivimate', 'kodi', 'vlc'];
+  const relevantGuideIds = articleToGuides[slug] || [];
 
   // Build TOC from sections
   const tocItems: TOCItem[] = article.sections.map((section) => ({
@@ -302,6 +339,22 @@ export default async function LearnArticlePage({ params }: PageProps) {
           yearsExperience={5}
           articlesWritten={100}
         />
+
+        {/* Try with these players */}
+        <RelatedPlayers
+          playerIds={relevantPlayerIds}
+          players={allPlayers}
+          title="Try with these players"
+        />
+
+        {/* Related setup guides */}
+        {relevantGuideIds.length > 0 && (
+          <RelatedGuides
+            guideIds={relevantGuideIds}
+            guides={allGuides}
+            title="Related setup guides"
+          />
+        )}
 
         {/* Navigation */}
         <nav className="flex justify-between items-center mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">

@@ -5,6 +5,7 @@ import { getPlayers, getPlayer, getBaseUrl, getPlayerDeviceGuides, getPlayerComp
 import { ChevronRight, Star, ExternalLink, Check, X } from 'lucide-react';
 import { SoftwareApplicationSchema, BreadcrumbSchema, FAQSchema } from '@/components/JsonLd';
 import { QuickAnswer, AuthorBio, LastUpdated } from '@/components/GeoComponents';
+import { RelatedPlayers, TroubleshootingLinks } from '@/components/RelatedContent';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -48,14 +49,18 @@ export default async function PlayerPage({ params }: PageProps) {
     notFound();
   }
 
-  const [guides, comparisons] = await Promise.all([
+  const [guides, comparisons, allPlayers] = await Promise.all([
     getPlayerDeviceGuides(),
     getPlayerComparisons(),
+    getPlayers(),
   ]);
   const playerGuides = guides.filter((g) => g.playerId === player.id).slice(0, 6);
   const playerComparisons = comparisons.filter(
     (c) => c.player1Id === player.id || c.player2Id === player.id
   ).slice(0, 4);
+
+  // Get related players from JSON data
+  const relatedPlayerIds = player.relatedPlayers || [];
 
   const baseUrl = getBaseUrl();
 
@@ -251,6 +256,21 @@ export default async function PlayerPage({ params }: PageProps) {
                 </Link>
               </section>
             )}
+
+            {/* Related Players */}
+            <RelatedPlayers
+              playerIds={relatedPlayerIds}
+              players={allPlayers}
+              currentPlayerId={player.id}
+              title={`Similar to ${player.name}`}
+            />
+
+            {/* Troubleshooting Links */}
+            <TroubleshootingLinks
+              entityType="players"
+              entitySlug={player.slug}
+              entityName={player.name}
+            />
 
             {/* FAQ Section for GEO */}
             {player.faqs && player.faqs.length > 0 && (
