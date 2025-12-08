@@ -367,6 +367,7 @@ export function VideoObjectSchema({
   uploadDate,
   duration,
   contentUrl,
+  embedUrl,
 }: {
   name: string;
   description: string;
@@ -374,6 +375,7 @@ export function VideoObjectSchema({
   uploadDate: string;
   duration?: string;
   contentUrl?: string;
+  embedUrl?: string;
 }) {
   const schema = {
     '@context': 'https://schema.org',
@@ -384,6 +386,7 @@ export function VideoObjectSchema({
     uploadDate,
     duration: duration || 'PT5M',
     ...(contentUrl && { contentUrl }),
+    ...(embedUrl && { embedUrl }),
     publisher: {
       '@type': 'Organization',
       name: 'IPTV Guide',

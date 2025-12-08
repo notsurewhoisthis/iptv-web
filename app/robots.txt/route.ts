@@ -14,6 +14,7 @@ Allow: /
 
 # Sitemaps
 Sitemap: ${baseUrl}/sitemap.xml
+Sitemap: ${baseUrl}/video-sitemap.xml
 
 # Allow AI crawlers
 User-agent: GPTBot

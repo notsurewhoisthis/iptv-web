@@ -45,6 +45,7 @@ export function VideoEmbed({ video, className = '', showSchema = true }: VideoEm
           uploadDate={video.uploadDate}
           duration={video.duration}
           contentUrl={`https://www.youtube.com/watch?v=${video.youtubeId}`}
+          embedUrl={`https://www.youtube.com/embed/${video.youtubeId}`}
         />
       )}
 
