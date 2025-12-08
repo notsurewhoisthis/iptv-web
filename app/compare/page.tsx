@@ -83,20 +83,22 @@ export default async function ComparePage() {
             ))}
           </div>
 
-          {/* Build Your Own Comparison */}
-          <div className="bg-gray-50 rounded-lg p-6">
-            <h3 className="font-semibold text-gray-900 mb-3">All Player Comparisons</h3>
+          {/* Browse by Player */}
+          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+            <h3 className="font-semibold text-gray-900 dark:text-white mb-3">Browse Comparisons by Player</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">Click a player to see all comparisons featuring it</p>
             <div className="flex flex-wrap gap-2">
-              {players.slice(0, 10).map((player) => (
-                <span
+              {players.map((player) => (
+                <Link
                   key={player.id}
-                  className="px-3 py-2 bg-white border border-gray-200 rounded-lg text-sm text-gray-700"
+                  href={`/players/${player.slug}`}
+                  className="px-3 py-2 bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg text-sm text-gray-700 dark:text-gray-300 hover:border-blue-400 dark:hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 transition"
                 >
                   {player.name}
-                </span>
+                </Link>
               ))}
             </div>
-            <p className="text-sm text-gray-500 mt-3">
+            <p className="text-sm text-gray-500 dark:text-gray-400 mt-3">
               {playerComparisons.length} total player comparisons available
             </p>
           </div>
@@ -127,20 +129,22 @@ export default async function ComparePage() {
             ))}
           </div>
 
-          {/* All Devices */}
-          <div className="bg-gray-50 rounded-lg p-6">
-            <h3 className="font-semibold text-gray-900 mb-3">All Device Comparisons</h3>
+          {/* Browse by Device */}
+          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+            <h3 className="font-semibold text-gray-900 dark:text-white mb-3">Browse Comparisons by Device</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">Click a device to see all comparisons featuring it</p>
             <div className="flex flex-wrap gap-2">
-              {devices.slice(0, 10).map((device) => (
-                <span
+              {devices.map((device) => (
+                <Link
                   key={device.id}
-                  className="px-3 py-2 bg-white border border-gray-200 rounded-lg text-sm text-gray-700"
+                  href={`/devices/${device.slug}`}
+                  className="px-3 py-2 bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg text-sm text-gray-700 dark:text-gray-300 hover:border-blue-400 dark:hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 transition"
                 >
                   {device.shortName}
-                </span>
+                </Link>
               ))}
             </div>
-            <p className="text-sm text-gray-500 mt-3">
+            <p className="text-sm text-gray-500 dark:text-gray-400 mt-3">
               {deviceComparisons.length} total device comparisons available
             </p>
           </div>

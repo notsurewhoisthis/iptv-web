@@ -24,6 +24,8 @@ const categoryInfo = {
   basics: { label: 'Basics', color: 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400' },
   technical: { label: 'Technical', color: 'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400' },
   troubleshooting: { label: 'Troubleshooting', color: 'bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400' },
+  guides: { label: 'Guides', color: 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400' },
+  comparison: { label: 'Comparison', color: 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-400' },
 };
 
 const difficultyInfo = {
@@ -39,6 +41,8 @@ export default function LearnPage() {
   const basics = learnArticles.filter((a) => a.category === 'basics');
   const technical = learnArticles.filter((a) => a.category === 'technical');
   const troubleshooting = learnArticles.filter((a) => a.category === 'troubleshooting');
+  const guides = learnArticles.filter((a) => a.category === 'guides');
+  const comparison = learnArticles.filter((a) => a.category === 'comparison');
 
   // Featured/recommended order for beginners
   const startHere = ['what-is-iptv', 'm3u-playlists-explained', 'epg-guide-explained'];
@@ -116,7 +120,7 @@ export default function LearnPage() {
         </section>
 
         {/* All Articles by Category */}
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-3 gap-8 mb-8">
           {/* Basics */}
           <section>
             <div className="flex items-center gap-2 mb-4">
@@ -200,6 +204,69 @@ export default function LearnPage() {
               ))}
             </div>
           </section>
+        </div>
+
+        {/* Guides & Comparison Row */}
+        <div className="grid lg:grid-cols-2 gap-8">
+          {/* Guides */}
+          {guides.length > 0 && (
+            <section>
+              <div className="flex items-center gap-2 mb-4">
+                <div className="w-2 h-6 bg-green-500 rounded-full" />
+                <h2 className="text-xl font-bold text-gray-900 dark:text-white">Guides</h2>
+              </div>
+              <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                Practical guides for optimizing your IPTV setup
+              </p>
+              <div className="space-y-3">
+                {guides.map((article) => (
+                  <Link
+                    key={article.slug}
+                    href={`/learn/${article.slug}`}
+                    className="block p-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-green-300 dark:hover:border-green-700 transition group"
+                  >
+                    <h3 className="font-medium text-gray-900 dark:text-white group-hover:text-green-600 dark:group-hover:text-green-400 transition text-sm">
+                      {article.title}
+                    </h3>
+                    <div className="flex items-center gap-2 mt-2 text-xs text-gray-500 dark:text-gray-400">
+                      <Clock className="h-3 w-3" />
+                      {article.readTime}
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Comparison */}
+          {comparison.length > 0 && (
+            <section>
+              <div className="flex items-center gap-2 mb-4">
+                <div className="w-2 h-6 bg-indigo-500 rounded-full" />
+                <h2 className="text-xl font-bold text-gray-900 dark:text-white">Comparisons</h2>
+              </div>
+              <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                Compare different IPTV technologies and options
+              </p>
+              <div className="space-y-3">
+                {comparison.map((article) => (
+                  <Link
+                    key={article.slug}
+                    href={`/learn/${article.slug}`}
+                    className="block p-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-indigo-300 dark:hover:border-indigo-700 transition group"
+                  >
+                    <h3 className="font-medium text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition text-sm">
+                      {article.title}
+                    </h3>
+                    <div className="flex items-center gap-2 mt-2 text-xs text-gray-500 dark:text-gray-400">
+                      <Clock className="h-3 w-3" />
+                      {article.readTime}
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
         </div>
 
         {/* CTA */}
