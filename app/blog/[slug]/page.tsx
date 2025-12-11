@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { getBlogPosts, getBlogPost, getBaseUrl } from '@/lib/data-loader';
 import { parseMarkdown } from '@/lib/markdown';
 import { ChevronRight, Clock, Calendar, User, ArrowLeft, Tag } from 'lucide-react';
@@ -43,13 +44,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       publishedTime: post.publishedAt,
       modifiedTime: post.updatedAt,
       authors: [post.author.name],
-      images: post.featuredImage ? [{ url: post.featuredImage }] : undefined,
+      ...(post.featuredImage && {
+        images: [{ url: post.featuredImage, alt: post.title }],
+      }),
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.description,
-      images: post.featuredImage ? [post.featuredImage] : undefined,
+      ...(post.featuredImage && {
+        images: [post.featuredImage],
+      }),
     },
   };
 }
@@ -169,6 +174,22 @@ export default async function BlogPostPage({ params }: PageProps) {
           </div>
         </div>
       </header>
+
+      {/* Featured Image */}
+      {post.featuredImage && (
+        <div className="max-w-5xl mx-auto px-4 -mt-8 mb-8 relative z-10">
+          <div className="relative w-full aspect-[3/1] rounded-xl overflow-hidden shadow-2xl">
+            <Image
+              src={post.featuredImage}
+              alt={post.title}
+              fill
+              className="object-cover"
+              priority
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1024px"
+            />
+          </div>
+        </div>
+      )}
 
       {/* Main Content */}
       <main className="max-w-5xl mx-auto px-4 py-8 md:py-12">

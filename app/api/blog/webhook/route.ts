@@ -47,6 +47,12 @@ export async function POST(request: NextRequest) {
         readingTime: Math.ceil(body.content.split(/\s+/).length / 225),
         wordCount: body.content.split(/\s+/).length,
       },
+      // Optional featured/hero image URL (used by /blog and /blog/[slug])
+      featuredImage:
+        body.featuredImage ||
+        body.featured_image ||
+        body.post_image ||
+        undefined,
     };
 
     // Write to file

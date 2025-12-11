@@ -140,6 +140,7 @@ export interface BlogPost {
     readingTime: number;
     wordCount: number;
   };
+  featuredImage?: string;
 }
 
 export interface PlayerFeatureGuide {
