@@ -22,6 +22,8 @@ import {
   getBaseUrl,
 } from '@/lib/data-loader';
 import learnArticles from '@/data/learn-articles.json';
+import { getBlogCategories, getBlogTags } from '@/lib/blog-taxonomy';
+import { glossaryTerms } from '@/lib/glossary';
 
 export async function GET() {
   const baseUrl = getBaseUrl();
@@ -68,6 +70,8 @@ export async function GET() {
     { url: '', priority: 1.0, changefreq: 'daily' },
     { url: '/players', priority: 0.9, changefreq: 'weekly' },
     { url: '/devices', priority: 0.9, changefreq: 'weekly' },
+    { url: '/features', priority: 0.85, changefreq: 'weekly' },
+    { url: '/issues', priority: 0.85, changefreq: 'weekly' },
     { url: '/guides', priority: 0.9, changefreq: 'weekly' },
     { url: '/learn', priority: 0.9, changefreq: 'weekly' },
     { url: '/troubleshooting', priority: 0.9, changefreq: 'weekly' },
@@ -102,11 +106,42 @@ export async function GET() {
     });
   });
 
+  // Player platform landing pages
+  Array.from(new Set(players.flatMap((p) => p.platforms || []))).forEach(
+    (platform) => {
+      urls.push({
+        url: `/players/platform/${platform}`,
+        priority: 0.75,
+        changefreq: 'monthly',
+      });
+    }
+  );
+
+  // Player pricing landing pages
+  Array.from(new Set(players.map((p) => p.pricing?.model).filter(Boolean))).forEach(
+    (tier) => {
+      urls.push({
+        url: `/players/pricing/${tier}`,
+        priority: 0.75,
+        changefreq: 'monthly',
+      });
+    }
+  );
+
   // Device pages
   devices.forEach((device) => {
     urls.push({
       url: `/devices/${device.slug}`,
       priority: 0.8,
+      changefreq: 'monthly',
+    });
+  });
+
+  // Device category landing pages
+  Array.from(new Set(devices.map((d) => d.category))).forEach((category) => {
+    urls.push({
+      url: `/devices/category/${category}`,
+      priority: 0.75,
       changefreq: 'monthly',
     });
   });
@@ -201,12 +236,43 @@ export async function GET() {
     });
   });
 
+  // Blog tag pages (only meaningful tags)
+  getBlogTags(posts)
+    .filter((t) => t.count >= 2)
+    .forEach((tag) => {
+      urls.push({
+        url: `/blog/tag/${tag.slug}`,
+        priority: 0.6,
+        changefreq: 'weekly',
+      });
+    });
+
+  // Blog category pages (only meaningful categories)
+  getBlogCategories(posts)
+    .filter((c) => c.count >= 2)
+    .forEach((cat) => {
+      urls.push({
+        url: `/blog/category/${cat.slug}`,
+        priority: 0.6,
+        changefreq: 'weekly',
+      });
+    });
+
   // Feature pages
   features.forEach((feature) => {
     urls.push({
       url: `/features/${feature.slug}`,
       priority: 0.6,
       changefreq: 'monthly',
+    });
+  });
+
+  // Glossary term pages
+  glossaryTerms.forEach((term) => {
+    urls.push({
+      url: `/glossary/${term.slug}`,
+      priority: 0.5,
+      changefreq: 'yearly',
     });
   });
 

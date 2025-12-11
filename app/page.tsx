@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { getPlayers, getDevices, getBaseUrl } from '@/lib/data-loader';
-import { Tv, Smartphone, MonitorPlay, Settings, ArrowRight, Star, BookOpen, MessageCircle } from 'lucide-react';
+import { Tv, Smartphone, MonitorPlay, Settings, ArrowRight, Star, BookOpen, MessageCircle, Sparkles, AlertTriangle, Target, BookText } from 'lucide-react';
 import { WebsiteSchema, OrganizationSchema } from '@/components/JsonLd';
 import { QuickAnswer } from '@/components/GeoComponents';
 import { MarketStats } from '@/components/MarketStats';
@@ -117,6 +117,57 @@ export default async function Home() {
               <div>
                 <div className="font-medium text-gray-900 dark:text-white">Compare</div>
                 <div className="text-sm text-gray-500 dark:text-gray-400">Side by side</div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Explore IPTV Hubs */}
+      <section className="py-10 border-b border-gray-100 dark:border-gray-800">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+            Explore IPTV
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <Link
+              href="/features"
+              className="flex items-center gap-3 p-4 bg-gray-50 dark:bg-gray-900 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+            >
+              <Sparkles className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+              <div>
+                <div className="font-medium text-gray-900 dark:text-white">Features</div>
+                <div className="text-sm text-gray-500 dark:text-gray-400">What matters</div>
+              </div>
+            </Link>
+            <Link
+              href="/issues"
+              className="flex items-center gap-3 p-4 bg-gray-50 dark:bg-gray-900 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+            >
+              <AlertTriangle className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+              <div>
+                <div className="font-medium text-gray-900 dark:text-white">Common Issues</div>
+                <div className="text-sm text-gray-500 dark:text-gray-400">Fix fast</div>
+              </div>
+            </Link>
+            <Link
+              href="/use-cases"
+              className="flex items-center gap-3 p-4 bg-gray-50 dark:bg-gray-900 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+            >
+              <Target className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+              <div>
+                <div className="font-medium text-gray-900 dark:text-white">Use Cases</div>
+                <div className="text-sm text-gray-500 dark:text-gray-400">Best for you</div>
+              </div>
+            </Link>
+            <Link
+              href="/glossary"
+              className="flex items-center gap-3 p-4 bg-gray-50 dark:bg-gray-900 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+            >
+              <BookText className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+              <div>
+                <div className="font-medium text-gray-900 dark:text-white">Glossary</div>
+                <div className="text-sm text-gray-500 dark:text-gray-400">Terms explained</div>
               </div>
             </Link>
           </div>

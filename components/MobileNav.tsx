@@ -8,7 +8,10 @@ import { Menu, X, ChevronRight } from 'lucide-react';
 const navLinks = [
   { href: '/players', label: 'Players' },
   { href: '/devices', label: 'Devices' },
+  { href: '/features', label: 'Features' },
+  { href: '/issues', label: 'Issues' },
   { href: '/guides', label: 'Guides' },
+  { href: '/use-cases', label: 'Use Cases' },
   { href: '/learn', label: 'Learn IPTV' },
   { href: '/troubleshooting', label: 'Troubleshooting' },
   { href: '/compare', label: 'Compare' },

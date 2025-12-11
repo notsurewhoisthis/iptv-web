@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getBlogPosts, getBlogPost, getBaseUrl } from '@/lib/data-loader';
+import { normalizeCategory, normalizeTag } from '@/lib/blog-taxonomy';
 import { parseMarkdown } from '@/lib/markdown';
 import { ChevronRight, Clock, Calendar, User, ArrowLeft, Tag } from 'lucide-react';
 import { ArticleWithAuthorSchema, BreadcrumbSchema } from '@/components/JsonLd';
@@ -84,6 +85,11 @@ export default async function BlogPostPage({ params }: PageProps) {
     day: 'numeric',
   });
 
+  const category = normalizeCategory(post.category);
+  const tagItems = (post.tags || [])
+    .map((t) => normalizeTag(t))
+    .filter(Boolean);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Structured Data for GEO */}
@@ -130,10 +136,13 @@ export default async function BlogPostPage({ params }: PageProps) {
           </nav>
 
           {/* Category Badge */}
-          {post.category && (
-            <span className="inline-block bg-white/20 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              {post.category}
-            </span>
+          {category && (
+            <Link
+              href={`/blog/category/${category.slug}`}
+              className="inline-block bg-white/20 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1 rounded-full mb-4 hover:underline"
+            >
+              {category.label}
+            </Link>
           )}
 
           {/* Featured Image */}
@@ -201,7 +210,7 @@ export default async function BlogPostPage({ params }: PageProps) {
               <QuickAnswer
                 question={`What does this article cover: ${post.title}?`}
                 answer={post.description}
-                highlight={post.category ? `Category: ${post.category}` : undefined}
+                highlight={category ? `Category: ${category.label}` : undefined}
               />
             </div>
 
@@ -229,17 +238,18 @@ export default async function BlogPostPage({ params }: PageProps) {
             />
 
             {/* Tags */}
-            {post.tags.length > 0 && (
+            {tagItems.length > 0 && (
               <div className="mt-10 pt-6 border-t border-gray-200">
                 <div className="flex items-center gap-2 flex-wrap">
                   <Tag className="h-4 w-4 text-gray-400" />
-                  {post.tags.map((tag) => (
-                    <span
-                      key={tag}
+                  {tagItems.map((tag) => (
+                    <Link
+                      key={tag!.slug}
+                      href={`/blog/tag/${tag!.slug}`}
                       className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
                     >
-                      {tag}
-                    </span>
+                      {tag!.label}
+                    </Link>
                   ))}
                 </div>
               </div>

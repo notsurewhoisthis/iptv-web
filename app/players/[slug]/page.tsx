@@ -131,9 +131,13 @@ export default async function PlayerPage({ params }: PageProps) {
               {player.pricing.price}
             </span>
             {player.platforms.slice(0, 4).map((platform) => (
-              <span key={platform} className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">
+              <Link
+                key={platform}
+                href={`/players/platform/${platform}`}
+                className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-blue-50 hover:text-blue-700 transition capitalize"
+              >
                 {platform}
-              </span>
+              </Link>
             ))}
           </div>
 

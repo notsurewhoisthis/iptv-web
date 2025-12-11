@@ -90,10 +90,28 @@ export default function RootLayout({
                   Devices
                 </Link>
                 <Link
+                  href="/features"
+                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
+                >
+                  Features
+                </Link>
+                <Link
+                  href="/issues"
+                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
+                >
+                  Issues
+                </Link>
+                <Link
                   href="/guides"
                   className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
                 >
                   Guides
+                </Link>
+                <Link
+                  href="/use-cases"
+                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
+                >
+                  Use Cases
                 </Link>
                 <Link
                   href="/troubleshooting"
@@ -178,6 +196,15 @@ export default function RootLayout({
                     <Link href="/guides">Setup Guides</Link>
                   </li>
                   <li>
+                    <Link href="/features">Features</Link>
+                  </li>
+                  <li>
+                    <Link href="/issues">Common Issues</Link>
+                  </li>
+                  <li>
+                    <Link href="/use-cases">Use Cases</Link>
+                  </li>
+                  <li>
                     <Link href="/troubleshooting">Troubleshooting</Link>
                   </li>
                   <li>
@@ -185,6 +212,9 @@ export default function RootLayout({
                   </li>
                   <li>
                     <Link href="/blog">Blog</Link>
+                  </li>
+                  <li>
+                    <Link href="/glossary">Glossary</Link>
                   </li>
                 </ul>
               </div>

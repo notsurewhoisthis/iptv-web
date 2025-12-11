@@ -18,6 +18,48 @@ export default async function PlayersPage() {
   const featuredPlayers = ['tivimate', 'vlc', 'kodi', 'iptv-smarters', 'jamrun'];
   const featuredForAlternatives = players.filter(p => featuredPlayers.includes(p.slug));
 
+  const platformsInData = Array.from(new Set(players.flatMap((p) => p.platforms || [])));
+  const platformOrder = [
+    'ios',
+    'apple-tv',
+    'mac',
+    'vision-pro',
+    'android',
+    'android-tv',
+    'firestick',
+    'nvidia-shield',
+    'windows',
+    'linux',
+    'smart-tv',
+    'samsung-tv',
+    'lg-tv',
+  ];
+  const platformLabels: Record<string, string> = {
+    android: 'Android',
+    'android-tv': 'Android TV',
+    'apple-tv': 'Apple TV',
+    firestick: 'Firestick',
+    ios: 'iOS / iPhone',
+    'lg-tv': 'LG TV',
+    linux: 'Linux',
+    mac: 'Mac',
+    'nvidia-shield': 'NVIDIA Shield',
+    'samsung-tv': 'Samsung TV',
+    'smart-tv': 'Smart TV',
+    'vision-pro': 'Vision Pro',
+    windows: 'Windows',
+  };
+
+  const pricingTiers = Array.from(
+    new Set(players.map((p) => p.pricing?.model).filter(Boolean))
+  ) as string[];
+  const pricingLabels: Record<string, string> = {
+    free: 'Free',
+    freemium: 'Freemium',
+    'one-time': 'One‑time purchase',
+    subscription: 'Subscription',
+  };
+
   return (
     <div className="min-h-screen py-8">
       <CollectionPageSchema
@@ -44,6 +86,46 @@ export default async function PlayersPage() {
                 className="inline-flex items-center gap-1 px-4 py-2 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-full text-sm hover:border-blue-300 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition"
               >
                 {player.name} alternatives
+                <ArrowRight className="h-3 w-3" />
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* Browse by Platform */}
+        <div className="bg-gray-50 dark:bg-gray-900 rounded-lg p-6 mb-8">
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+            Browse by Platform
+          </h2>
+          <div className="flex flex-wrap gap-3">
+            {platformOrder
+              .filter((p) => platformsInData.includes(p))
+              .map((platform) => (
+                <Link
+                  key={platform}
+                  href={`/players/platform/${platform}`}
+                  className="inline-flex items-center gap-1 px-4 py-2 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-full text-sm hover:border-blue-300 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition"
+                >
+                  {platformLabels[platform] || platform} players
+                  <ArrowRight className="h-3 w-3" />
+                </Link>
+              ))}
+          </div>
+        </div>
+
+        {/* Browse by Pricing */}
+        <div className="bg-gray-50 dark:bg-gray-900 rounded-lg p-6 mb-8">
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+            Browse by Pricing
+          </h2>
+          <div className="flex flex-wrap gap-3">
+            {pricingTiers.map((tier) => (
+              <Link
+                key={tier}
+                href={`/players/pricing/${tier}`}
+                className="inline-flex items-center gap-1 px-4 py-2 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-full text-sm hover:border-blue-300 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition"
+              >
+                {pricingLabels[tier] || tier} players
                 <ArrowRight className="h-3 w-3" />
               </Link>
             ))}

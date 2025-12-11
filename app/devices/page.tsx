@@ -25,7 +25,9 @@ export default async function DevicesPage() {
     'streaming-stick': 'Streaming Sticks',
     'streaming-box': 'Streaming Boxes',
     'set-top-box': 'Set-Top Boxes',
+    'iptv-box': 'IPTV Boxes',
     'smart-tv': 'Smart TVs',
+    'gaming-console': 'Gaming Consoles',
     mobile: 'Mobile Devices',
     desktop: 'Desktop',
   };
@@ -50,7 +52,12 @@ export default async function DevicesPage() {
         {Object.entries(categories).map(([category, categoryDevices]) => (
           <section key={category} className="mb-10">
             <h2 className="text-xl font-bold text-gray-900 mb-4">
-              {categoryNames[category] || category}
+              <Link
+                href={`/devices/category/${category}`}
+                className="hover:text-blue-600 transition-colors"
+              >
+                {categoryNames[category] || category}
+              </Link>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {categoryDevices.map((device) => (

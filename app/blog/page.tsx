@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getBlogPosts, getBaseUrl } from '@/lib/data-loader';
+import { normalizeCategory, normalizeTag, getBlogTags } from '@/lib/blog-taxonomy';
 import { Clock, Calendar, ImageIcon } from 'lucide-react';
 import { CollectionPageSchema } from '@/components/JsonLd';
 
@@ -27,6 +28,7 @@ export default async function BlogPage({
   const safePage = Math.min(currentPage, totalPages);
   const startIndex = (safePage - 1) * PAGE_SIZE;
   const paginatedPosts = posts.slice(startIndex, startIndex + PAGE_SIZE);
+  const topTags = getBlogTags(posts).slice(0, 8);
 
   if (posts.length === 0) {
     return (
@@ -55,65 +57,95 @@ export default async function BlogPage({
           Latest IPTV news, streaming guides, and tips.
         </p>
 
+        {topTags.length > 0 && (
+          <div className="bg-gray-50 rounded-lg p-5 mb-8">
+            <h2 className="text-lg font-semibold text-gray-900 mb-3">Popular tags</h2>
+            <div className="flex flex-wrap gap-2">
+              {topTags.map((tag) => (
+                <Link
+                  key={tag.slug}
+                  href={`/blog/tag/${tag.slug}`}
+                  className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-white border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition"
+                >
+                  {tag.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+
         <div className="space-y-6">
-          {paginatedPosts.map((post) => (
-            <article
-              key={post.slug}
-              className="border border-gray-200 rounded-lg overflow-hidden hover:border-gray-300 hover:shadow-md transition"
-            >
-              <Link href={`/blog/${post.slug}`} className="block">
-                {/* Featured Image or Placeholder */}
-                <div className="relative w-full aspect-[3/1] bg-gradient-to-br from-blue-600 to-indigo-700">
-                  {post.featuredImage ? (
-                    <Image
-                      src={post.featuredImage}
-                      alt={post.title}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, 800px"
-                    />
-                  ) : (
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <ImageIcon className="h-12 w-12 text-white/30" />
+          {paginatedPosts.map((post) => {
+            const category = normalizeCategory(post.category);
+            const tags = (post.tags || [])
+              .map((t) => normalizeTag(t))
+              .filter(Boolean);
+
+            return (
+              <article
+                key={post.slug}
+                className="border border-gray-200 rounded-lg overflow-hidden hover:border-gray-300 hover:shadow-md transition"
+              >
+                <Link href={`/blog/${post.slug}`} className="block">
+                  {/* Featured Image or Placeholder */}
+                  <div className="relative w-full aspect-[3/1] bg-gradient-to-br from-blue-600 to-indigo-700">
+                    {post.featuredImage ? (
+                      <Image
+                        src={post.featuredImage}
+                        alt={post.title}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 800px"
+                      />
+                    ) : (
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <ImageIcon className="h-12 w-12 text-white/30" />
+                      </div>
+                    )}
+                  </div>
+                </Link>
+                <div className="p-6">
+                  <Link href={`/blog/${post.slug}`}>
+                    <h2 className="text-xl font-semibold text-gray-900 mb-2 hover:text-blue-600 transition-colors">
+                      {post.title}
+                    </h2>
+                  </Link>
+                  <p className="text-gray-600 mb-4 line-clamp-2">{post.description}</p>
+                  <div className="flex items-center gap-4 text-sm text-gray-500">
+                    <span className="flex items-center gap-1">
+                      <Calendar className="h-4 w-4" />
+                      {new Date(post.publishedAt).toLocaleDateString()}
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <Clock className="h-4 w-4" />
+                      {post.metrics.readingTime} min read
+                    </span>
+                    {category && (
+                      <Link
+                        href={`/blog/category/${category.slug}`}
+                        className="bg-gray-100 px-2 py-1 rounded text-xs hover:underline"
+                      >
+                        {category.label}
+                      </Link>
+                    )}
+                  </div>
+                  {tags.length > 0 && (
+                    <div className="flex flex-wrap gap-2 mt-3">
+                      {tags.slice(0, 5).map((tag) => (
+                        <Link
+                          key={tag!.slug}
+                          href={`/blog/tag/${tag!.slug}`}
+                          className="text-xs text-gray-500 bg-gray-50 px-2 py-1 rounded hover:underline"
+                        >
+                          {tag!.label}
+                        </Link>
+                      ))}
                     </div>
                   )}
                 </div>
-              </Link>
-              <div className="p-6">
-                <Link href={`/blog/${post.slug}`}>
-                  <h2 className="text-xl font-semibold text-gray-900 mb-2 hover:text-blue-600 transition-colors">
-                    {post.title}
-                  </h2>
-                </Link>
-                <p className="text-gray-600 mb-4 line-clamp-2">{post.description}</p>
-                <div className="flex items-center gap-4 text-sm text-gray-500">
-                  <span className="flex items-center gap-1">
-                    <Calendar className="h-4 w-4" />
-                    {new Date(post.publishedAt).toLocaleDateString()}
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Clock className="h-4 w-4" />
-                    {post.metrics.readingTime} min read
-                  </span>
-                  <span className="bg-gray-100 px-2 py-1 rounded text-xs">
-                    {post.category}
-                  </span>
-                </div>
-                {post.tags.length > 0 && (
-                  <div className="flex flex-wrap gap-2 mt-3">
-                    {post.tags.slice(0, 5).map((tag) => (
-                      <span
-                        key={tag}
-                        className="text-xs text-gray-500 bg-gray-50 px-2 py-1 rounded"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                )}
-              </div>
-            </article>
-          ))}
+              </article>
+            );
+          })}
         </div>
 
         {/* Pagination */}

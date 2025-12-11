@@ -149,6 +149,8 @@ export interface PlayerFeatureGuide {
   featureId: string;
   playerName: string;
   featureName: string;
+  featureShortName?: string;
+  hasFeature?: boolean;
   title: string;
   metaTitle: string;
   description: string;
@@ -159,8 +161,11 @@ export interface PlayerFeatureGuide {
     tips: string[];
     faqs: FAQ[];
   };
+  relatedGuides?: string[];
+  tags?: string[];
   keywords: string[];
   lastUpdated: string;
+  difficulty?: 'easy' | 'medium' | 'advanced';
 }
 
 export interface DeviceFeatureGuide {
@@ -168,19 +173,28 @@ export interface DeviceFeatureGuide {
   deviceId: string;
   featureId: string;
   deviceName: string;
+  deviceShortName?: string;
   featureName: string;
+  featureShortName?: string;
+  isSupported?: boolean;
   title: string;
   metaTitle: string;
   description: string;
   content: {
     intro: string;
     requirements: string[];
+    recommendedPlayers?: string[];
+    benefits?: string[];
     steps: Step[];
-    tips: string[];
+    tips?: string[];
     faqs: FAQ[];
+    conclusion?: string;
   };
+  relatedGuides?: string[];
+  tags?: string[];
   keywords: string[];
   lastUpdated: string;
+  difficulty?: 'easy' | 'medium' | 'advanced';
 }
 
 export interface PlayerTroubleshootingGuide {
