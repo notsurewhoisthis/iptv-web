@@ -11,9 +11,22 @@ export const metadata: Metadata = {
     'Latest IPTV news, streaming guides, player updates, and tips for getting the best streaming experience.',
 };
 
-export default async function BlogPage() {
+const PAGE_SIZE = 10;
+
+export default async function BlogPage({
+  searchParams,
+}: {
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
+}) {
   const posts = await getBlogPosts();
   const baseUrl = getBaseUrl();
+  const sp = await searchParams;
+  const rawPage = Array.isArray(sp?.page) ? sp?.page[0] : sp?.page;
+  const currentPage = Math.max(1, parseInt(rawPage || '1', 10) || 1);
+  const totalPages = Math.max(1, Math.ceil(posts.length / PAGE_SIZE));
+  const safePage = Math.min(currentPage, totalPages);
+  const startIndex = (safePage - 1) * PAGE_SIZE;
+  const paginatedPosts = posts.slice(startIndex, startIndex + PAGE_SIZE);
 
   if (posts.length === 0) {
     return (
@@ -43,7 +56,7 @@ export default async function BlogPage() {
         </p>
 
         <div className="space-y-6">
-          {posts.map((post) => (
+          {paginatedPosts.map((post) => (
             <article
               key={post.slug}
               className="border border-gray-200 rounded-lg overflow-hidden hover:border-gray-300 hover:shadow-md transition"
@@ -102,6 +115,62 @@ export default async function BlogPage() {
             </article>
           ))}
         </div>
+
+        {/* Pagination */}
+        {totalPages > 1 && (
+          <nav
+            className="flex items-center justify-between mt-10 text-sm"
+            aria-label="Blog pagination"
+          >
+            {safePage > 1 ? (
+              <Link
+                href={`/blog?page=${safePage - 1}`}
+                className="px-4 py-2 rounded-lg border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition"
+              >
+                Previous
+              </Link>
+            ) : (
+              <span />
+            )}
+
+            <div className="flex items-center gap-2 text-gray-600">
+              <span>
+                Page {safePage} of {totalPages}
+              </span>
+              <div className="hidden sm:flex items-center gap-1">
+                {Array.from({ length: totalPages }, (_, i) => i + 1)
+                  .slice(
+                    Math.max(0, safePage - 3),
+                    Math.min(totalPages, safePage + 2)
+                  )
+                  .map((p) => (
+                    <Link
+                      key={p}
+                      href={`/blog?page=${p}`}
+                      className={`w-8 h-8 flex items-center justify-center rounded-md border transition ${
+                        p === safePage
+                          ? 'border-blue-600 bg-blue-600 text-white'
+                          : 'border-gray-200 text-gray-700 hover:border-gray-300 hover:bg-gray-50'
+                      }`}
+                    >
+                      {p}
+                    </Link>
+                  ))}
+              </div>
+            </div>
+
+            {safePage < totalPages ? (
+              <Link
+                href={`/blog?page=${safePage + 1}`}
+                className="px-4 py-2 rounded-lg border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition"
+              >
+                Next
+              </Link>
+            ) : (
+              <span />
+            )}
+          </nav>
+        )}
       </div>
     </div>
   );

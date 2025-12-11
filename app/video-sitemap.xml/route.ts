@@ -24,6 +24,15 @@ function escapeXml(str: string): string {
     .replace(/'/g, '&apos;');
 }
 
+function ensureIsoDateWithTimezone(dateStr: string): string {
+  if (!dateStr) return new Date().toISOString();
+  if (/[zZ]$/.test(dateStr) || /[+-]\d{2}:\d{2}$/.test(dateStr)) return dateStr;
+  if (/^\d{4}-\d{2}-\d{2}$/.test(dateStr)) return `${dateStr}T00:00:00Z`;
+  if (/^\d{4}-\d{2}-\d{2}T/.test(dateStr)) return `${dateStr}Z`;
+  const parsed = new Date(dateStr);
+  return isNaN(parsed.getTime()) ? dateStr : parsed.toISOString();
+}
+
 export async function GET() {
   const baseUrl = getBaseUrl();
   const videoMappings = await getVideoMappings();
@@ -42,7 +51,7 @@ export async function GET() {
       <video:content_loc>https://www.youtube.com/watch?v=${video.youtubeId}</video:content_loc>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/${video.youtubeId}</video:player_loc>
       <video:duration>${durationToSeconds(video.duration)}</video:duration>
-      <video:publication_date>${video.uploadDate}</video:publication_date>
+      <video:publication_date>${ensureIsoDateWithTimezone(video.uploadDate)}</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
       <video:live>no</video:live>
     </video:video>
@@ -61,7 +70,7 @@ export async function GET() {
       <video:content_loc>https://www.youtube.com/watch?v=${video.youtubeId}</video:content_loc>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/${video.youtubeId}</video:player_loc>
       <video:duration>${durationToSeconds(video.duration)}</video:duration>
-      <video:publication_date>${video.uploadDate}</video:publication_date>
+      <video:publication_date>${ensureIsoDateWithTimezone(video.uploadDate)}</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
       <video:live>no</video:live>
     </video:video>
@@ -85,7 +94,7 @@ export async function GET() {
       <video:content_loc>https://www.youtube.com/watch?v=${video.youtubeId}</video:content_loc>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/${video.youtubeId}</video:player_loc>
       <video:duration>${durationToSeconds(video.duration)}</video:duration>
-      <video:publication_date>${video.uploadDate}</video:publication_date>
+      <video:publication_date>${ensureIsoDateWithTimezone(video.uploadDate)}</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
       <video:live>no</video:live>
     </video:video>
@@ -105,7 +114,7 @@ export async function GET() {
       <video:content_loc>https://www.youtube.com/watch?v=${video.youtubeId}</video:content_loc>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/${video.youtubeId}</video:player_loc>
       <video:duration>${durationToSeconds(video.duration)}</video:duration>
-      <video:publication_date>${video.uploadDate}</video:publication_date>
+      <video:publication_date>${ensureIsoDateWithTimezone(video.uploadDate)}</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
       <video:live>no</video:live>
     </video:video>
@@ -124,7 +133,7 @@ export async function GET() {
       <video:content_loc>https://www.youtube.com/watch?v=${video.youtubeId}</video:content_loc>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/${video.youtubeId}</video:player_loc>
       <video:duration>${durationToSeconds(video.duration)}</video:duration>
-      <video:publication_date>${video.uploadDate}</video:publication_date>
+      <video:publication_date>${ensureIsoDateWithTimezone(video.uploadDate)}</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
       <video:live>no</video:live>
     </video:video>
@@ -149,7 +158,7 @@ export async function GET() {
       <video:content_loc>https://www.youtube.com/watch?v=${video.youtubeId}</video:content_loc>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/${video.youtubeId}</video:player_loc>
       <video:duration>${durationToSeconds(video.duration)}</video:duration>
-      <video:publication_date>${video.uploadDate}</video:publication_date>
+      <video:publication_date>${ensureIsoDateWithTimezone(video.uploadDate)}</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
       <video:live>no</video:live>
     </video:video>

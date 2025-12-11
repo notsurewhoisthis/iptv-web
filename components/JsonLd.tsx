@@ -1,5 +1,27 @@
 import { FAQ } from '@/lib/types';
 
+function ensureIsoDateWithTimezone(dateStr: string): string {
+  if (!dateStr) return new Date().toISOString();
+
+  // Already has timezone (Z or +hh:mm / -hh:mm)
+  if (/[zZ]$/.test(dateStr) || /[+-]\d{2}:\d{2}$/.test(dateStr)) {
+    return dateStr;
+  }
+
+  // Date-only (YYYY-MM-DD) -> assume UTC midnight
+  if (/^\d{4}-\d{2}-\d{2}$/.test(dateStr)) {
+    return `${dateStr}T00:00:00Z`;
+  }
+
+  // Datetime without timezone -> assume UTC
+  if (/^\d{4}-\d{2}-\d{2}T/.test(dateStr)) {
+    return `${dateStr}Z`;
+  }
+
+  const parsed = new Date(dateStr);
+  return isNaN(parsed.getTime()) ? dateStr : parsed.toISOString();
+}
+
 // FAQ Schema
 export function FAQSchema({ faqs }: { faqs: FAQ[] }) {
   if (!faqs || faqs.length === 0) return null;
@@ -377,13 +399,14 @@ export function VideoObjectSchema({
   contentUrl?: string;
   embedUrl?: string;
 }) {
+  const normalizedUploadDate = ensureIsoDateWithTimezone(uploadDate);
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
     name,
     description,
     thumbnailUrl: thumbnailUrl || '/og-image.png',
-    uploadDate,
+    uploadDate: normalizedUploadDate,
     duration: duration || 'PT5M',
     ...(contentUrl && { contentUrl }),
     ...(embedUrl && { embedUrl }),
