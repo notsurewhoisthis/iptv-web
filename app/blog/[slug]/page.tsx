@@ -43,11 +43,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       publishedTime: post.publishedAt,
       modifiedTime: post.updatedAt,
       authors: [post.author.name],
+      images: post.featuredImage ? [{ url: post.featuredImage }] : undefined,
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.description,
+      images: post.featuredImage ? [post.featuredImage] : undefined,
     },
   };
 }
@@ -127,6 +129,17 @@ export default async function BlogPostPage({ params }: PageProps) {
             <span className="inline-block bg-white/20 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1 rounded-full mb-4">
               {post.category}
             </span>
+          )}
+
+          {/* Featured Image */}
+          {post.featuredImage && (
+            <div className="mb-6 rounded-xl overflow-hidden shadow-2xl">
+              <img 
+                src={post.featuredImage} 
+                alt={post.title}
+                className="w-full h-64 md:h-80 lg:h-96 object-cover"
+              />
+            </div>
           )}
 
           {/* Title */}
