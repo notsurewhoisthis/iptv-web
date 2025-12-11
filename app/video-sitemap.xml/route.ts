@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { getVideoMappings, getBaseUrl } from '@/lib/data-loader';
+import type { VideoData } from '@/lib/types';
 
 // Force dynamic rendering
 export const dynamic = 'force-dynamic';
@@ -37,13 +38,29 @@ export async function GET() {
   const baseUrl = getBaseUrl();
   const videoMappings = await getVideoMappings();
 
+  // Deduplicate videos by YouTube ID and point each entry
+  // to a dedicated watch page where the video is primary content.
+  const videosById = new Map<string, VideoData>();
+
+  const addVideo = (video: VideoData) => {
+    if (!video?.youtubeId) return;
+    if (videosById.has(video.youtubeId)) return;
+    videosById.set(video.youtubeId, video);
+  };
+
+  Object.values(videoMappings.players || {}).forEach(addVideo);
+  Object.values(videoMappings.devices || {}).forEach(addVideo);
+  Object.values(videoMappings['setup-guides'] || {}).forEach(addVideo);
+  Object.values(videoMappings['technical-guides'] || {}).forEach(addVideo);
+  Object.values(videoMappings['learn-articles'] || {}).forEach(addVideo);
+  Object.values(videoMappings.troubleshooting || {}).forEach(addVideo);
+
   const videoEntries: string[] = [];
 
-  // Player videos
-  Object.entries(videoMappings.players || {}).forEach(([playerId, video]) => {
+  videosById.forEach((video) => {
     videoEntries.push(`
   <url>
-    <loc>${baseUrl}/players/${playerId}</loc>
+    <loc>${baseUrl}/watch/${video.youtubeId}</loc>
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/${video.youtubeId}/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>${escapeXml(video.title)}</video:title>
@@ -56,114 +73,6 @@ export async function GET() {
       <video:live>no</video:live>
     </video:video>
   </url>`);
-  });
-
-  // Device videos
-  Object.entries(videoMappings.devices || {}).forEach(([deviceId, video]) => {
-    videoEntries.push(`
-  <url>
-    <loc>${baseUrl}/devices/${deviceId}</loc>
-    <video:video>
-      <video:thumbnail_loc>https://img.youtube.com/vi/${video.youtubeId}/maxresdefault.jpg</video:thumbnail_loc>
-      <video:title>${escapeXml(video.title)}</video:title>
-      <video:description>${escapeXml(video.description)}</video:description>
-      <video:content_loc>https://www.youtube.com/watch?v=${video.youtubeId}</video:content_loc>
-      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/${video.youtubeId}</video:player_loc>
-      <video:duration>${durationToSeconds(video.duration)}</video:duration>
-      <video:publication_date>${ensureIsoDateWithTimezone(video.uploadDate)}</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-      <video:live>no</video:live>
-    </video:video>
-  </url>`);
-  });
-
-  // Setup guide videos
-  Object.entries(videoMappings['setup-guides'] || {}).forEach(([guideKey, video]) => {
-    // guideKey format: "tivimate-firestick"
-    const parts = guideKey.split('-');
-    if (parts.length >= 2) {
-      const playerId = parts[0];
-      const deviceId = parts.slice(1).join('-');
-      videoEntries.push(`
-  <url>
-    <loc>${baseUrl}/guides/${playerId}/setup/${deviceId}</loc>
-    <video:video>
-      <video:thumbnail_loc>https://img.youtube.com/vi/${video.youtubeId}/maxresdefault.jpg</video:thumbnail_loc>
-      <video:title>${escapeXml(video.title)}</video:title>
-      <video:description>${escapeXml(video.description)}</video:description>
-      <video:content_loc>https://www.youtube.com/watch?v=${video.youtubeId}</video:content_loc>
-      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/${video.youtubeId}</video:player_loc>
-      <video:duration>${durationToSeconds(video.duration)}</video:duration>
-      <video:publication_date>${ensureIsoDateWithTimezone(video.uploadDate)}</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-      <video:live>no</video:live>
-    </video:video>
-  </url>`);
-    }
-  });
-
-  // Technical guide videos
-  Object.entries(videoMappings['technical-guides'] || {}).forEach(([slug, video]) => {
-    videoEntries.push(`
-  <url>
-    <loc>${baseUrl}/guides/technical/${slug}</loc>
-    <video:video>
-      <video:thumbnail_loc>https://img.youtube.com/vi/${video.youtubeId}/maxresdefault.jpg</video:thumbnail_loc>
-      <video:title>${escapeXml(video.title)}</video:title>
-      <video:description>${escapeXml(video.description)}</video:description>
-      <video:content_loc>https://www.youtube.com/watch?v=${video.youtubeId}</video:content_loc>
-      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/${video.youtubeId}</video:player_loc>
-      <video:duration>${durationToSeconds(video.duration)}</video:duration>
-      <video:publication_date>${ensureIsoDateWithTimezone(video.uploadDate)}</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-      <video:live>no</video:live>
-    </video:video>
-  </url>`);
-  });
-
-  // Learn article videos
-  Object.entries(videoMappings['learn-articles'] || {}).forEach(([slug, video]) => {
-    videoEntries.push(`
-  <url>
-    <loc>${baseUrl}/learn/${slug}</loc>
-    <video:video>
-      <video:thumbnail_loc>https://img.youtube.com/vi/${video.youtubeId}/maxresdefault.jpg</video:thumbnail_loc>
-      <video:title>${escapeXml(video.title)}</video:title>
-      <video:description>${escapeXml(video.description)}</video:description>
-      <video:content_loc>https://www.youtube.com/watch?v=${video.youtubeId}</video:content_loc>
-      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/${video.youtubeId}</video:player_loc>
-      <video:duration>${durationToSeconds(video.duration)}</video:duration>
-      <video:publication_date>${ensureIsoDateWithTimezone(video.uploadDate)}</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-      <video:live>no</video:live>
-    </video:video>
-  </url>`);
-  });
-
-  // Troubleshooting videos
-  Object.entries(videoMappings.troubleshooting || {}).forEach(([key, video]) => {
-    // key format: "players-tivimate-buffering" or "devices-firestick-buffering"
-    const parts = key.split('-');
-    if (parts.length >= 3) {
-      const entityType = parts[0]; // "players" or "devices"
-      const entityId = parts[1];
-      const issueId = parts.slice(2).join('-');
-      videoEntries.push(`
-  <url>
-    <loc>${baseUrl}/troubleshooting/${entityType}/${entityId}/${issueId}</loc>
-    <video:video>
-      <video:thumbnail_loc>https://img.youtube.com/vi/${video.youtubeId}/maxresdefault.jpg</video:thumbnail_loc>
-      <video:title>${escapeXml(video.title)}</video:title>
-      <video:description>${escapeXml(video.description)}</video:description>
-      <video:content_loc>https://www.youtube.com/watch?v=${video.youtubeId}</video:content_loc>
-      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/${video.youtubeId}</video:player_loc>
-      <video:duration>${durationToSeconds(video.duration)}</video:duration>
-      <video:publication_date>${ensureIsoDateWithTimezone(video.uploadDate)}</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-      <video:live>no</video:live>
-    </video:video>
-  </url>`);
-    }
   });
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>

@@ -21,7 +21,8 @@ interface VideoEmbedProps {
   showSchema?: boolean;
 }
 
-export function VideoEmbed({ video, className = '', showSchema = true }: VideoEmbedProps) {
+// NOTE: We only emit VideoObject structured data on dedicated watch pages.
+export function VideoEmbed({ video, className = '', showSchema = false }: VideoEmbedProps) {
   const [isLoaded, setIsLoaded] = useState(false);
   const [hasError, setHasError] = useState(false);
 
