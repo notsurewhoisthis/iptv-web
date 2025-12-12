@@ -13,6 +13,8 @@ const navLinks = [
   { href: '/guides', label: 'Guides' },
   { href: '/use-cases', label: 'Use Cases' },
   { href: '/learn', label: 'Learn IPTV' },
+  { href: '/stremio', label: 'Stremio' },
+  { href: '/legal-iptv', label: 'Legal IPTV' },
   { href: '/troubleshooting', label: 'Troubleshooting' },
   { href: '/compare', label: 'Compare' },
   { href: '/best', label: 'Best Picks' },

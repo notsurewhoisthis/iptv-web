@@ -116,9 +116,15 @@ interface VideoGalleryProps {
   videos: VideoData[];
   title?: string;
   className?: string;
+  showSchema?: boolean;
 }
 
-export function VideoGallery({ videos, title, className = '' }: VideoGalleryProps) {
+export function VideoGallery({
+  videos,
+  title,
+  className = '',
+  showSchema = false,
+}: VideoGalleryProps) {
   if (videos.length === 0) return null;
 
   return (
@@ -131,7 +137,7 @@ export function VideoGallery({ videos, title, className = '' }: VideoGalleryProp
           <VideoEmbed
             key={video.youtubeId}
             video={video}
-            showSchema={index === 0} // Only first video gets schema to avoid duplicates
+            showSchema={showSchema && index === 0} // Optional, and only once per page
           />
         ))}
       </div>

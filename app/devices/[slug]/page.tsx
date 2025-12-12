@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getDevices, getDevice, getBaseUrl, getPlayerDeviceGuides, getDeviceComparisons, getPlayers, getVideoForPage } from '@/lib/data-loader';
-import { VideoEmbed } from '@/components/VideoEmbed';
+import { VideoWatchCard } from '@/components/VideoWatchCard';
 import { ChevronRight, ExternalLink, Check, X, Star } from 'lucide-react';
 import { ProductSchema, BreadcrumbSchema, FAQSchema } from '@/components/JsonLd';
 import { QuickAnswer, AuthorBio, LastUpdated } from '@/components/GeoComponents';
@@ -170,7 +170,7 @@ export default async function DevicePage({ params }: PageProps) {
             {video && (
               <section>
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">{device.name} IPTV Setup Guide</h2>
-                <VideoEmbed video={video} />
+                <VideoWatchCard video={video} />
               </section>
             )}
 

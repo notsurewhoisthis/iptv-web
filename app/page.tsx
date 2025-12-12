@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { getPlayers, getDevices, getBaseUrl } from '@/lib/data-loader';
-import { Tv, Smartphone, MonitorPlay, Settings, ArrowRight, Star, BookOpen, MessageCircle, Sparkles, AlertTriangle, Target, BookText } from 'lucide-react';
+import { Tv, Smartphone, MonitorPlay, Settings, ArrowRight, Star, BookOpen, MessageCircle, Sparkles, AlertTriangle, Target, BookText, ShieldCheck } from 'lucide-react';
 import { WebsiteSchema, OrganizationSchema } from '@/components/JsonLd';
 import { QuickAnswer } from '@/components/GeoComponents';
 import { MarketStats } from '@/components/MarketStats';
@@ -168,6 +168,26 @@ export default async function Home() {
               <div>
                 <div className="font-medium text-gray-900 dark:text-white">Glossary</div>
                 <div className="text-sm text-gray-500 dark:text-gray-400">Terms explained</div>
+              </div>
+            </Link>
+            <Link
+              href="/stremio"
+              className="flex items-center gap-3 p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg hover:bg-purple-100 dark:hover:bg-purple-900/30 transition"
+            >
+              <MonitorPlay className="h-6 w-6 text-purple-600 dark:text-purple-400" />
+              <div>
+                <div className="font-medium text-purple-900 dark:text-purple-300">Stremio Hub</div>
+                <div className="text-sm text-purple-600 dark:text-purple-400">Guides & fixes</div>
+              </div>
+            </Link>
+            <Link
+              href="/legal-iptv"
+              className="flex items-center gap-3 p-4 bg-emerald-50 dark:bg-emerald-900/20 rounded-lg hover:bg-emerald-100 dark:hover:bg-emerald-900/30 transition"
+            >
+              <ShieldCheck className="h-6 w-6 text-emerald-600 dark:text-emerald-400" />
+              <div>
+                <div className="font-medium text-emerald-900 dark:text-emerald-300">Legal IPTV</div>
+                <div className="text-sm text-emerald-600 dark:text-emerald-400">Public playlists</div>
               </div>
             </Link>
           </div>

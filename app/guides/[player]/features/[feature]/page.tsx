@@ -11,7 +11,7 @@ import {
   getBaseUrl,
   getVideoForPage,
 } from '@/lib/data-loader';
-import { VideoEmbed } from '@/components/VideoEmbed';
+import { VideoWatchCard } from '@/components/VideoWatchCard';
 import { ChevronRight, BookOpen } from 'lucide-react';
 import { QuickAnswer, EnhancedAuthorBio, LastUpdated } from '@/components/GeoComponents';
 import { FAQSchema, HowToSchema, BreadcrumbSchema, ArticleWithAuthorSchema } from '@/components/JsonLd';
@@ -169,7 +169,7 @@ export default async function FeatureGuidePage({ params }: PageProps) {
         {video && (
           <section className="mb-8">
             <h2 className="text-xl font-bold text-gray-900 mb-4">Video Guide</h2>
-            <VideoEmbed video={video} />
+            <VideoWatchCard video={video} />
           </section>
         )}
 

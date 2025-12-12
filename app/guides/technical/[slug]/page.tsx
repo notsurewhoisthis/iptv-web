@@ -9,7 +9,7 @@ import {
   getDevices,
   getVideoForPage,
 } from '@/lib/data-loader';
-import { VideoEmbed } from '@/components/VideoEmbed';
+import { VideoWatchCard } from '@/components/VideoWatchCard';
 import { ChevronRight, BookOpen, AlertCircle, CheckCircle } from 'lucide-react';
 import {
   QuickAnswer,
@@ -170,7 +170,7 @@ export default async function TechnicalGuidePage({ params }: PageProps) {
         {video && (
           <section className="mb-8">
             <h2 className="text-xl font-bold text-gray-900 mb-4">Video Guide</h2>
-            <VideoEmbed video={video} />
+            <VideoWatchCard video={video} />
           </section>
         )}
 

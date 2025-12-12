@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getPlayers, getPlayer, getBaseUrl, getPlayerDeviceGuides, getPlayerComparisons, getVideoForPage } from '@/lib/data-loader';
-import { VideoEmbed } from '@/components/VideoEmbed';
+import { VideoWatchCard } from '@/components/VideoWatchCard';
 import { ChevronRight, Star, ExternalLink, Check, X } from 'lucide-react';
 import { SoftwareApplicationSchema, BreadcrumbSchema, FAQSchema } from '@/components/JsonLd';
 import { QuickAnswer, AuthorBio, LastUpdated } from '@/components/GeoComponents';
@@ -176,7 +176,7 @@ export default async function PlayerPage({ params }: PageProps) {
             {video && (
               <section>
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">{player.name} Video Review</h2>
-                <VideoEmbed video={video} />
+                <VideoWatchCard video={video} />
               </section>
             )}
 

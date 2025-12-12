@@ -20,6 +20,8 @@ import type {
   PlayerBenchmark,
   VideoData,
   VideoMappings,
+  StremioArticle,
+  LegalIptvData,
 } from './types';
 
 const DATA_DIR = path.join(process.cwd(), 'data');
@@ -199,6 +201,21 @@ export async function getTechnicalGuides(): Promise<TechnicalGuide[]> {
 export async function getTechnicalGuide(slug: string): Promise<TechnicalGuide | null> {
   const guides = await getTechnicalGuides();
   return guides.find((g) => g.slug === slug) || null;
+}
+
+// Stremio knowledge base (programmatic articles)
+export async function getStremioArticles(): Promise<StremioArticle[]> {
+  return loadJSON<StremioArticle[]>('stremio-articles.json');
+}
+
+export async function getStremioArticle(slug: string): Promise<StremioArticle | null> {
+  const articles = await getStremioArticles();
+  return articles.find((a) => a.slug === slug) || null;
+}
+
+// Legal IPTV playlists (iptv-org/iptv derived)
+export async function getLegalIptvData(): Promise<LegalIptvData> {
+  return loadJSON<LegalIptvData>('legal-iptv.json');
 }
 
 // Blog data loaders

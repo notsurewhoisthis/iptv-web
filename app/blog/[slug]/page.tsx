@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import Image from 'next/image';
 import { getBlogPosts, getBlogPost, getBaseUrl } from '@/lib/data-loader';
 import { normalizeCategory, normalizeTag } from '@/lib/blog-taxonomy';
 import { parseMarkdown } from '@/lib/markdown';
@@ -30,6 +29,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const baseUrl = getBaseUrl();
+  const ogImage = post.featuredImage || `${baseUrl}/blog/${slug}/opengraph-image`;
 
   return {
     title: post.title,
@@ -45,17 +45,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       publishedTime: post.publishedAt,
       modifiedTime: post.updatedAt,
       authors: [post.author.name],
-      ...(post.featuredImage && {
-        images: [{ url: post.featuredImage, alt: post.title }],
-      }),
+      images: [{ url: ogImage, alt: post.title }],
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.description,
-      ...(post.featuredImage && {
-        images: [post.featuredImage],
-      }),
+      images: [ogImage],
     },
   };
 }
@@ -64,6 +60,7 @@ export default async function BlogPostPage({ params }: PageProps) {
   const { slug } = await params;
   const post = await getBlogPost(slug);
   const baseUrl = getBaseUrl();
+  const heroImage = post?.featuredImage || `/blog/${slug}/opengraph-image`;
 
   if (!post) {
     notFound();
@@ -146,10 +143,10 @@ export default async function BlogPostPage({ params }: PageProps) {
           )}
 
           {/* Featured Image */}
-          {post.featuredImage && (
+          {heroImage && (
             <div className="mb-6 rounded-xl overflow-hidden shadow-2xl">
               <img 
-                src={post.featuredImage} 
+                src={heroImage} 
                 alt={post.title}
                 className="w-full h-64 md:h-80 lg:h-96 object-cover"
               />
@@ -183,22 +180,6 @@ export default async function BlogPostPage({ params }: PageProps) {
           </div>
         </div>
       </header>
-
-      {/* Featured Image */}
-      {post.featuredImage && (
-        <div className="max-w-5xl mx-auto px-4 -mt-8 mb-8 relative z-10">
-          <div className="relative w-full aspect-[3/1] rounded-xl overflow-hidden shadow-2xl">
-            <Image
-              src={post.featuredImage}
-              alt={post.title}
-              fill
-              className="object-cover"
-              priority
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1024px"
-            />
-          </div>
-        </div>
-      )}
 
       {/* Main Content */}
       <main className="max-w-5xl mx-auto px-4 py-8 md:py-12">

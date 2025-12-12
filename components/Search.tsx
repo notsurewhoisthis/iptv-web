@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { useRouter } from 'next/navigation';
-import { Search as SearchIcon, X, Command, ArrowRight, Tv, Smartphone, BookOpen, FileText } from 'lucide-react';
+import { Search as SearchIcon, X, Command, ArrowRight, Tv, Smartphone, BookOpen, FileText, MonitorPlay, ShieldCheck } from 'lucide-react';
 import Fuse from 'fuse.js';
 
 interface SearchItem {
@@ -10,7 +10,7 @@ interface SearchItem {
   title: string;
   description: string;
   url: string;
-  type: 'player' | 'device' | 'guide' | 'blog';
+  type: 'player' | 'device' | 'guide' | 'blog' | 'stremio' | 'legal';
   keywords?: string[];
 }
 
@@ -23,6 +23,8 @@ const typeConfig = {
   device: { icon: Smartphone, label: 'Device', color: 'text-green-600 bg-green-50' },
   guide: { icon: BookOpen, label: 'Guide', color: 'text-purple-600 bg-purple-50' },
   blog: { icon: FileText, label: 'Blog', color: 'text-orange-600 bg-orange-50' },
+  stremio: { icon: MonitorPlay, label: 'Stremio', color: 'text-violet-700 bg-violet-50' },
+  legal: { icon: ShieldCheck, label: 'Legal IPTV', color: 'text-emerald-700 bg-emerald-50' },
 };
 
 export function Search({ items }: SearchProps) {
@@ -193,7 +195,7 @@ export function Search({ items }: SearchProps) {
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="Search players, devices, guides..."
+                placeholder="Search players, devices, guides, Stremio..."
                 className="flex-1 text-base outline-none placeholder:text-gray-400"
                 aria-label="Search query"
               />

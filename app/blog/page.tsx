@@ -1,4 +1,3 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getBlogPosts, getBaseUrl } from '@/lib/data-loader';
@@ -6,13 +5,31 @@ import { normalizeCategory, normalizeTag, getBlogTags } from '@/lib/blog-taxonom
 import { Clock, Calendar, ImageIcon } from 'lucide-react';
 import { CollectionPageSchema } from '@/components/JsonLd';
 
-export const metadata: Metadata = {
-  title: 'IPTV Blog - News, Guides & Tips',
-  description:
-    'Latest IPTV news, streaming guides, player updates, and tips for getting the best streaming experience.',
-};
-
 const PAGE_SIZE = 10;
+
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
+}) {
+  const baseUrl = getBaseUrl();
+  const posts = await getBlogPosts();
+  const sp = await searchParams;
+  const rawPage = Array.isArray(sp?.page) ? sp?.page[0] : sp?.page;
+  const currentPage = Math.max(1, parseInt(rawPage || '1', 10) || 1);
+  const totalPages = Math.max(1, Math.ceil(posts.length / PAGE_SIZE));
+  const safePage = Math.min(currentPage, totalPages);
+
+  const canonical =
+    safePage > 1 ? `${baseUrl}/blog?page=${safePage}` : `${baseUrl}/blog`;
+
+  return {
+    title: 'IPTV Blog - News, Guides & Tips',
+    description:
+      'Latest IPTV news, streaming guides, player updates, and tips for getting the best streaming experience.',
+    alternates: { canonical },
+  };
+}
 
 export default async function BlogPage({
   searchParams,
@@ -80,6 +97,7 @@ export default async function BlogPage({
             const tags = (post.tags || [])
               .map((t) => normalizeTag(t))
               .filter(Boolean);
+            const cardImage = post.featuredImage || `/blog/${post.slug}/opengraph-image`;
 
             return (
               <article
@@ -89,17 +107,16 @@ export default async function BlogPage({
                 <Link href={`/blog/${post.slug}`} className="block">
                   {/* Featured Image or Placeholder */}
                   <div className="relative w-full aspect-[3/1] bg-gradient-to-br from-blue-600 to-indigo-700">
-                    {post.featuredImage ? (
-                      <Image
-                        src={post.featuredImage}
-                        alt={post.title}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 100vw, 800px"
-                      />
-                    ) : (
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <ImageIcon className="h-12 w-12 text-white/30" />
+                    <Image
+                      src={cardImage}
+                      alt={post.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 800px"
+                    />
+                    {!post.featuredImage && (
+                      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                        <ImageIcon className="h-10 w-10 text-white/25" />
                       </div>
                     )}
                   </div>

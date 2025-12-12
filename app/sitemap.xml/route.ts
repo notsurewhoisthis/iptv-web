@@ -19,6 +19,8 @@ import {
   getDeviceFeatureGuides,
   getUseCases,
   getTechnicalGuides,
+  getStremioArticles,
+  getLegalIptvData,
   getBaseUrl,
 } from '@/lib/data-loader';
 import learnArticles from '@/data/learn-articles.json';
@@ -45,6 +47,8 @@ export async function GET() {
     deviceFeatureGuides,
     useCases,
     technicalGuides,
+    stremioArticles,
+    legalIptvData,
   ] = await Promise.all([
     getPlayers(),
     getDevices(),
@@ -61,6 +65,8 @@ export async function GET() {
     getDeviceFeatureGuides(),
     getUseCases(),
     getTechnicalGuides(),
+    getStremioArticles(),
+    getLegalIptvData(),
   ]);
 
   const urls: { url: string; priority: number; changefreq: string; lastmod?: string }[] = [];
@@ -80,6 +86,18 @@ export async function GET() {
     { url: '/use-cases', priority: 0.8, changefreq: 'weekly' },
     { url: '/blog', priority: 0.85, changefreq: 'daily' },
     { url: '/glossary', priority: 0.8, changefreq: 'monthly' },
+    { url: '/stremio', priority: 0.85, changefreq: 'weekly' },
+    { url: '/stremio/basics', priority: 0.75, changefreq: 'weekly' },
+    { url: '/stremio/setup', priority: 0.75, changefreq: 'weekly' },
+    { url: '/stremio/addons', priority: 0.75, changefreq: 'weekly' },
+    { url: '/stremio/troubleshooting', priority: 0.75, changefreq: 'weekly' },
+    { url: '/stremio/best-practices', priority: 0.7, changefreq: 'monthly' },
+    { url: '/stremio/resources', priority: 0.7, changefreq: 'monthly' },
+    { url: '/legal-iptv', priority: 0.85, changefreq: 'weekly' },
+    { url: '/legal-iptv/fast', priority: 0.75, changefreq: 'monthly' },
+    { url: '/legal-iptv/countries', priority: 0.75, changefreq: 'monthly' },
+    { url: '/legal-iptv/categories', priority: 0.75, changefreq: 'monthly' },
+    { url: '/legal-iptv/languages', priority: 0.75, changefreq: 'monthly' },
     { url: '/about', priority: 0.6, changefreq: 'monthly' },
     { url: '/privacy', priority: 0.3, changefreq: 'yearly' },
     { url: '/terms', priority: 0.3, changefreq: 'yearly' },
@@ -292,6 +310,51 @@ export async function GET() {
       priority: 0.8,
       changefreq: 'monthly',
       lastmod: article.lastUpdated,
+    });
+  });
+
+  // Stremio knowledge base articles
+  stremioArticles.forEach((article) => {
+    urls.push({
+      url: `/stremio/${article.slug}`,
+      priority: 0.7,
+      changefreq: 'monthly',
+      lastmod: article.lastUpdated,
+    });
+  });
+
+  // Legal IPTV detail pages (indexes are in staticPages above)
+  const legalLastMod = legalIptvData.generatedAt;
+  (legalIptvData.categories || []).forEach((c) => {
+    urls.push({
+      url: `/legal-iptv/categories/${c.id}`,
+      priority: 0.6,
+      changefreq: 'monthly',
+      lastmod: legalLastMod,
+    });
+  });
+  (legalIptvData.countries || []).forEach((c) => {
+    urls.push({
+      url: `/legal-iptv/countries/${c.code}`,
+      priority: 0.6,
+      changefreq: 'monthly',
+      lastmod: legalLastMod,
+    });
+  });
+  (legalIptvData.languages || []).forEach((l) => {
+    urls.push({
+      url: `/legal-iptv/languages/${l.code}`,
+      priority: 0.6,
+      changefreq: 'monthly',
+      lastmod: legalLastMod,
+    });
+  });
+  (legalIptvData.fastServices || []).forEach((s) => {
+    urls.push({
+      url: `/legal-iptv/fast/${s.id}`,
+      priority: 0.65,
+      changefreq: 'monthly',
+      lastmod: legalLastMod,
     });
   });
 

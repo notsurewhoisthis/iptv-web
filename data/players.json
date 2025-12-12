@@ -1405,16 +1405,16 @@
       "model": "free",
       "price": "Free"
     },
-    "description": "Stremio is a modern media center that aggregates content from multiple streaming sources through community addons. Unlike traditional IPTV players that use M3U playlists, Stremio uses an addon system to access movies, TV shows, live channels, and more from various sources including Torrentio, CinemaHub, and streaming addons. With Real-Debrid integration, cloud sync across devices, and Trakt.tv support, Stremio provides a polished streaming experience with minimal setup. The app is completely free with no premium tier required.",
+    "description": "Stremio is a modern media center that organizes streaming catalogs and your personal library in one place. Unlike traditional IPTV players that use M3U playlists, Stremio relies on an addon system to add catalogs and features (for example: official streaming services, free-to-watch catalogs, and local media). With account-based sync across devices, subtitle support, and a polished interface, Stremio is a strong choice for users who want a library-style experience. Stremio is free to use; always choose addons and sources that are legal and available in your region.",
     "shortDescription": "Free media center with addon ecosystem for streaming movies, TV shows, and live channels",
     "pros": [
       "Completely free with no premium tier",
-      "Huge addon ecosystem (Torrentio, CinemaHub, etc.)",
+      "Flexible addon ecosystem (official + community)",
       "Cross-platform with cloud sync",
-      "Real-Debrid and AllDebrid support for premium streams",
-      "Trakt.tv integration for tracking watched content",
+      "Trakt.tv support for tracking watched content",
       "Beautiful modern interface",
       "No M3U playlist required - uses addons",
+      "Local files support for personal media",
       "Automatic subtitle fetching from OpenSubtitles"
     ],
     "cons": [
@@ -1453,20 +1453,20 @@
     "keywords": [
       "stremio",
       "stremio addons",
-      "torrentio",
-      "stremio android",
-      "stremio ios",
-      "stremio apple tv",
+      "stremio setup",
+      "stremio account sync",
+      "stremio android tv",
       "stremio firestick",
-      "real debrid stremio",
-      "stremio streaming",
-      "stremio movies",
-      "stremio tv shows"
+      "stremio chromecast",
+      "stremio subtitles",
+      "stremio web",
+      "stremio local files",
+      "stremio troubleshooting"
     ],
     "faqs": [
       {
         "question": "Is Stremio legal?",
-        "answer": "Stremio itself is legal. It's a media center that doesn't host content. The legality depends on which addons you install and what content you access through them."
+        "answer": "Stremio itself is legal. It's a media center that doesn't host content. The legality depends on which addons you install and what sources you access through them—stick to legal services and content available in your region."
       },
       {
         "question": "Does Stremio work with IPTV M3U playlists?",
@@ -1477,24 +1477,24 @@
         "answer": "Yes, Stremio is completely free with no premium tier, no ads, and no subscription required."
       },
       {
-        "question": "What is Torrentio?",
-        "answer": "Torrentio is a popular Stremio addon that aggregates torrent streams from various sources. When used with Real-Debrid, it provides high-quality cached streams."
+        "question": "How do I install addons in Stremio?",
+        "answer": "You can install addons from inside the app. Open the Addons section, select an addon, and install it. Keep your setup minimal and only install addons you trust."
       },
       {
         "question": "Does Stremio work on Apple TV?",
         "answer": "Yes, but the Apple TV version requires sideloading via AltStore, Sideloadly, or Xcode as it's not available on the App Store."
       },
       {
-        "question": "What is Real-Debrid and do I need it?",
-        "answer": "Real-Debrid is a premium service that provides faster, more reliable streams. While not required, it significantly improves the Stremio experience with addons like Torrentio."
-      },
-      {
-        "question": "How do I install addons in Stremio?",
-        "answer": "You can install addons directly in the app or through the web interface at stremio.com. Simply click the addon catalog and select which addons to install."
+        "question": "How do I cast Stremio to Chromecast?",
+        "answer": "Start playback, tap the Cast icon, and select your Chromecast device. Casting works best when both devices are on the same network and you use stable 5GHz Wi‑Fi or Ethernet."
       },
       {
         "question": "Does Stremio sync across devices?",
         "answer": "Yes, Stremio syncs your library, addons, and watch progress across all devices when you're signed into your account."
+      },
+      {
+        "question": "Why does Stremio show “No streams found”?",
+        "answer": "It usually means your current addons can't find a playable source for that title. Review your addons, restart the app, and use only legal sources."
       }
     ],
     "relatedPlayers": [

@@ -6,7 +6,7 @@ import { getBlogPosts, getBaseUrl } from '@/lib/data-loader';
 import { getBlogCategories, normalizeCategory } from '@/lib/blog-taxonomy';
 import { CollectionPageSchema, BreadcrumbSchema } from '@/components/JsonLd';
 import { QuickAnswer, LastUpdated } from '@/components/GeoComponents';
-import { Clock, Calendar, FolderOpen, ArrowRight } from 'lucide-react';
+import { Clock, Calendar, FolderOpen, ArrowRight, ImageIcon } from 'lucide-react';
 
 interface PageProps {
   params: Promise<{ category: string }>;
@@ -22,7 +22,7 @@ export async function generateStaticParams() {
   return categories.map((c) => ({ category: c.slug }));
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({ params, searchParams }: PageProps): Promise<Metadata> {
   const { category } = await params;
   const posts = await getBlogPosts();
   const categories = getBlogCategories(posts);
@@ -38,9 +38,21 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const baseUrl = getBaseUrl();
+  const sp = await searchParams;
+  const rawPage = Array.isArray(sp?.page) ? sp?.page[0] : sp?.page;
+  const currentPage = Math.max(1, parseInt(rawPage || '1', 10) || 1);
+  const totalPages = Math.max(1, Math.ceil(categoryPosts.length / PAGE_SIZE));
+  const safePage = Math.min(currentPage, totalPages);
+  const canonical =
+    safePage > 1
+      ? `${baseUrl}/blog/category/${category}?page=${safePage}`
+      : `${baseUrl}/blog/category/${category}`;
 
   return {
-    title: `${label} IPTV Blog Posts - Guides & News`,
+    title:
+      safePage > 1
+        ? `${label} IPTV Blog Posts - Guides & News (Page ${safePage})`
+        : `${label} IPTV Blog Posts - Guides & News`,
     description: `Browse IPTV articles in the "${label}" category. Practical setup guides, troubleshooting, and player insights.`,
     keywords: [
       `${label.toLowerCase()} iptv`,
@@ -49,7 +61,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       'iptv tips',
     ].join(', '),
     alternates: {
-      canonical: `${baseUrl}/blog/category/${category}`,
+      canonical,
     },
   };
 }
@@ -114,24 +126,29 @@ export default async function BlogCategoryPage({ params, searchParams }: PagePro
         />
 
         <div className="space-y-6 mt-8">
-          {paginatedPosts.map((post) => (
-            <article
-              key={post.slug}
-              className="border border-gray-200 rounded-lg overflow-hidden hover:border-gray-300 hover:shadow-md transition"
-            >
-              <Link href={`/blog/${post.slug}`} className="block">
-                <div className="relative w-full aspect-[3/1] bg-gradient-to-br from-blue-600 to-indigo-700">
-                  {post.featuredImage ? (
+          {paginatedPosts.map((post) => {
+            const cardImage = post.featuredImage || `/blog/${post.slug}/opengraph-image`;
+            return (
+              <article
+                key={post.slug}
+                className="border border-gray-200 rounded-lg overflow-hidden hover:border-gray-300 hover:shadow-md transition"
+              >
+                <Link href={`/blog/${post.slug}`} className="block">
+                  <div className="relative w-full aspect-[3/1] bg-gradient-to-br from-blue-600 to-indigo-700">
                     <Image
-                      src={post.featuredImage}
+                      src={cardImage}
                       alt={post.title}
                       fill
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, 800px"
                     />
-                  ) : null}
-                </div>
-              </Link>
+                    {!post.featuredImage && (
+                      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                        <ImageIcon className="h-10 w-10 text-white/25" />
+                      </div>
+                    )}
+                  </div>
+                </Link>
               <div className="p-6">
                 <Link href={`/blog/${post.slug}`}>
                   <h2 className="text-xl font-semibold text-gray-900 mb-2 hover:text-blue-600 transition-colors">
@@ -159,8 +176,9 @@ export default async function BlogCategoryPage({ params, searchParams }: PagePro
                   </Link>
                 </div>
               </div>
-            </article>
-          ))}
+              </article>
+            );
+          })}
         </div>
 
         {/* Pagination */}
@@ -206,4 +224,3 @@ export default async function BlogCategoryPage({ params, searchParams }: PagePro
     </div>
   );
 }
-

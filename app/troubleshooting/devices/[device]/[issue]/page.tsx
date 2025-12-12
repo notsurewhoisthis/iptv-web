@@ -8,7 +8,7 @@ import {
   getBaseUrl,
   getTroubleshootingVideo,
 } from '@/lib/data-loader';
-import { VideoEmbed } from '@/components/VideoEmbed';
+import { VideoWatchCard } from '@/components/VideoWatchCard';
 import { FAQSchema, BreadcrumbSchema } from '@/components/JsonLd';
 import { ChevronRight, AlertTriangle, Lightbulb } from 'lucide-react';
 
@@ -147,7 +147,7 @@ export default async function DeviceTroubleshootingPage({ params }: PageProps) {
         {video && (
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Video Fix Guide</h2>
-            <VideoEmbed video={video} />
+            <VideoWatchCard video={video} />
           </section>
         )}
 

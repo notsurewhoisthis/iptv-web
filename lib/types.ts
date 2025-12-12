@@ -143,6 +143,63 @@ export interface BlogPost {
   featuredImage?: string;
 }
 
+export interface KnowledgeBaseArticle {
+  slug: string;
+  title: string;
+  metaTitle: string;
+  description: string;
+  category: string;
+  keywords: string[];
+  content: string; // markdown
+  faqs?: FAQ[];
+  lastUpdated: string;
+  relatedSlugs?: string[];
+}
+
+export type StremioArticle = KnowledgeBaseArticle;
+
+export interface LegalIptvListItem {
+  id: string;
+  label: string;
+  url: string;
+}
+
+export interface LegalIptvFastServicePlaylist extends LegalIptvListItem {
+  countryCode?: string;
+  countryLabel?: string;
+}
+
+export interface LegalIptvFastService {
+  id: string;
+  name: string;
+  description: string;
+  officialUrl?: string;
+  playlists: LegalIptvFastServicePlaylist[];
+}
+
+export interface LegalIptvData {
+  generatedAt: string;
+  source: {
+    name: string;
+    repoUrl: string;
+    branch: string;
+    commit?: string;
+    siteUrl: string;
+    license?: string;
+    licenseUrl?: string;
+  };
+  indexes: {
+    all: string;
+    categories: string;
+    countries: string;
+    languages: string;
+  };
+  categories: LegalIptvListItem[];
+  countries: Array<{ code: string; label: string; url: string }>;
+  languages: Array<{ code: string; label: string; url: string }>;
+  fastServices: LegalIptvFastService[];
+}
+
 export interface PlayerFeatureGuide {
   slug: string;
   playerId: string;

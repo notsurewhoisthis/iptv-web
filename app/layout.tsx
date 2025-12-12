@@ -132,6 +132,18 @@ export default function RootLayout({
                   Learn
                 </Link>
                 <Link
+                  href="/stremio"
+                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
+                >
+                  Stremio
+                </Link>
+                <Link
+                  href="/legal-iptv"
+                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
+                >
+                  Legal IPTV
+                </Link>
+                <Link
                   href="/blog"
                   className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
                 >
@@ -209,6 +221,12 @@ export default function RootLayout({
                   </li>
                   <li>
                     <Link href="/compare">Comparisons</Link>
+                  </li>
+                  <li>
+                    <Link href="/stremio">Stremio</Link>
+                  </li>
+                  <li>
+                    <Link href="/legal-iptv">Legal IPTV</Link>
                   </li>
                   <li>
                     <Link href="/blog">Blog</Link>

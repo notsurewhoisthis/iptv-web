@@ -9,7 +9,7 @@ import { IptvArchitectureDiagram, StreamingFlowDiagram, M3uStructureDiagram } fr
 import { EnhancedAuthorBio, EditorialReviewBadge, LastUpdated } from '@/components/GeoComponents';
 import { TechArticleSchema, BreadcrumbSchema, FAQSchema } from '@/components/JsonLd';
 import { getBaseUrl, getPlayers, getTechnicalGuides, getVideoForPage } from '@/lib/data-loader';
-import { VideoEmbed } from '@/components/VideoEmbed';
+import { VideoWatchCard } from '@/components/VideoWatchCard';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -216,7 +216,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
         {video && (
           <section className="mb-8">
             <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Video Overview</h2>
-            <VideoEmbed video={video} />
+            <VideoWatchCard video={video} />
           </section>
         )}
 

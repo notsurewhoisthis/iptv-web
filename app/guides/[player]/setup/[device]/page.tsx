@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getPlayerDeviceGuides, getPlayerDeviceGuide, getPlayer, getDevice, getBaseUrl, getSetupGuideVideo } from '@/lib/data-loader';
-import { VideoEmbed } from '@/components/VideoEmbed';
+import { VideoWatchCard } from '@/components/VideoWatchCard';
 import { ChevronRight, Star, Clock, CheckCircle, Calendar } from 'lucide-react';
 import { HowToSchema, FAQSchema, BreadcrumbSchema } from '@/components/JsonLd';
 
@@ -166,7 +166,7 @@ export default async function SetupGuidePage({ params }: PageProps) {
                 <h2 className="text-xl font-bold text-gray-900 mb-4">
                   Video Tutorial
                 </h2>
-                <VideoEmbed video={video} />
+                <VideoWatchCard video={video} />
               </section>
             )}
 

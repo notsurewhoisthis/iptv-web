@@ -1,0 +1,511 @@
+[
+  {
+    "slug": "what-is-stremio",
+    "title": "What is Stremio? (Beginner Guide)",
+    "metaTitle": "What is Stremio? How It Works + Safe Setup (2025)",
+    "description": "Learn what Stremio is, how it works, what “addons” mean, and how to set it up safely using legal sources on any device.",
+    "category": "basics",
+    "keywords": [
+      "stremio",
+      "whatisstremio",
+      "addons",
+      "setup",
+      "legal sources",
+      "stremio app"
+    ],
+    "content": "## What Stremio is (in one sentence)\nStremio is a media center that organizes movies, series, live channels, and your library in one place using catalogs and addons.\n\n## How Stremio works (simple explanation)\nStremio has three parts:\n1) **The app** (player + library + search)\n2) **Catalogs** (what you can browse)\n3) **Addons** (connect catalogs to sources and features)\n\nStremio itself does not “own” content. What you can watch depends on the addons you choose and the services you’re signed into.\n\n## The safe way to use Stremio\nUse Stremio with:\n- **Official streaming services** you subscribe to (where supported)\n- **Public domain / free-to-watch catalogs**\n- **Your own local files** (personal media library)\n\nAvoid any addon that claims to unlock paid channels/movies for free. If it sounds too good to be true, it usually is.\n\n## Quick setup checklist\n- Create/sign in to your Stremio account\n- Install Stremio on your device(s)\n- Add only addons you trust and understand\n- Test playback with a known-legal title\n- If you hit errors, use the troubleshooting guides on this site\n\n## Helpful next steps on IPTV Guide\n- Stremio player overview: [Stremio review](/players/stremio)\n- Device setup guides: [Stremio setup guides](/guides/stremio/setup/firestick)\n- Troubleshooting hub: [Stremio troubleshooting](/troubleshooting/players/stremio/stremio-internal-server-error)\n",
+    "faqs": [
+      {
+        "question": "Is Stremio legal?",
+        "answer": "Stremio as an app is legal. Legality depends on the sources and addons you use—stick to legal services, public domain content, and your own media."
+      },
+      {
+        "question": "Does Stremio support M3U IPTV playlists?",
+        "answer": "Stremio does not natively support M3U/Xtream playlists like IPTV players do. If you want M3U playlists, use an IPTV player such as VLC or Kodi."
+      },
+      {
+        "question": "Do I need a powerful device for Stremio?",
+        "answer": "For smooth HD/4K playback, a modern streaming device (Android TV box, Fire TV, recent phone/PC) is recommended. Network stability matters as much as hardware."
+      }
+    ],
+    "lastUpdated": "2025-12-12",
+    "relatedSlugs": [
+      "stremio-vs-iptv-player",
+      "stremio-addons-explained",
+      "stremio-buffering-fixes"
+    ]
+  },
+  {
+    "slug": "stremio-vs-iptv-player",
+    "title": "Stremio vs IPTV Players: What’s the Difference?",
+    "metaTitle": "Stremio vs IPTV Player (M3U/Xtream): Which One to Use?",
+    "description": "Stremio is a media center with addons; IPTV players focus on M3U/Xtream playlists. This guide explains what each is best for.",
+    "category": "basics",
+    "keywords": [
+      "stremio",
+      "stremiovsiptvplayer",
+      "m3u",
+      "xtream",
+      "kodi",
+      "vlc"
+    ],
+    "content": "## Quick answer\nUse **Stremio** when you want a modern media library experience with catalogs and addons. Use an **IPTV player** when you have an **M3U** or **Xtream** playlist and want channel-first navigation.\n\n## What IPTV players are best at\nIPTV players are purpose-built for:\n- M3U playlists and Xtream portals\n- Channel lists, EPG (TV guide), catch‑up, and favorites\n- Fast channel switching and buffer controls\n\nTry these on IPTV Guide:\n- [VLC](/players/vlc)\n- [Kodi](/players/kodi)\n- [IPTV Smarters](/players/iptv-smarters)\n\n## What Stremio is best at\nStremio shines for:\n- Browsing a library-style catalog (movies/series)\n- Syncing watch progress across devices\n- A clean, modern interface for media discovery\n\n## Common confusion: “Can I use IPTV with Stremio?”\nStremio isn’t a traditional IPTV app and doesn’t directly take M3U/Xtream. If your goal is IPTV channels + EPG, you’ll have a better experience with a dedicated IPTV player.\n\n## Where “legal IPTV” fits\nIf you’re looking for **free, publicly available playlists**, start here:\n- [Public playlists directory (iptv-org)](/legal-iptv)\n\nThen open the playlist in an IPTV player (VLC/Kodi/TiviMate).\n",
+    "faqs": [
+      {
+        "question": "Can Stremio replace my IPTV app?",
+        "answer": "Usually no. If you rely on M3U/Xtream + EPG, you’ll want a dedicated IPTV player. Stremio is better as a media-center style app."
+      },
+      {
+        "question": "Which is easier for beginners?",
+        "answer": "If you already have an M3U/Xtream playlist, IPTV players are simpler. If you want a library experience, Stremio’s interface is very beginner-friendly."
+      }
+    ],
+    "lastUpdated": "2025-12-12",
+    "relatedSlugs": [
+      "what-is-stremio",
+      "legal-iptv-playlists-how-to-use"
+    ]
+  },
+  {
+    "slug": "stremio-account-sync",
+    "title": "Stremio Account & Sync: How It Works",
+    "metaTitle": "Stremio Account Sync Explained (Library, Addons, Progress)",
+    "description": "Understand what Stremio syncs across devices (library, addons, watch progress), what does not sync, and how to fix sync issues.",
+    "category": "setup",
+    "keywords": [
+      "stremio",
+      "stremioaccountsync",
+      "sync",
+      "library",
+      "watch progress"
+    ],
+    "content": "## What Stremio syncs (and why it matters)\nWhen you sign into Stremio on multiple devices, it can keep your experience consistent:\n- Installed addons (in many cases)\n- Library / watchlist\n- Watch progress (where supported)\n\n## What might not sync perfectly\nSome items are device-specific:\n- Player output settings (audio passthrough, subtitles styling)\n- Casting device pairing\n- OS-level permissions and storage limits\n\n## Step-by-step: get sync working\n1) Confirm you are signed into the **same account** on every device\n2) On each device, restart Stremio after installing or removing addons\n3) If one device lags behind, sign out → sign in again\n4) If a specific addon isn’t appearing, reinstall it and refresh catalogs\n\n## Best practice\nPick a “primary” device to manage addons (desktop is easiest), then let other devices sync.\n\n## Related\n- Learn addon basics: [Stremio addons explained](/stremio/stremio-addons-explained)\n- Troubleshooting playback errors: [Stremio buffering fixes](/stremio/stremio-buffering-fixes)\n",
+    "faqs": [
+      {
+        "question": "Do addons sync across devices?",
+        "answer": "Often yes, but not always instantly. Give it a few minutes, restart the app, and verify you’re logged into the same account."
+      },
+      {
+        "question": "Does Stremio sync subtitle settings?",
+        "answer": "Subtitle appearance and player toggles can be device-specific. Expect to configure subtitle defaults on each device."
+      }
+    ],
+    "lastUpdated": "2025-12-12",
+    "relatedSlugs": [
+      "stremio-addons-explained",
+      "stremio-subtitles-not-working"
+    ]
+  },
+  {
+    "slug": "stremio-addons-explained",
+    "title": "Stremio Addons Explained (Safe + Legal Checklist)",
+    "metaTitle": "Stremio Addons Explained: Safe Setup + Legal Checklist",
+    "description": "Learn what Stremio addons do, how to evaluate them safely, and how to avoid risky addons that may provide unlicensed content.",
+    "category": "addons",
+    "keywords": [
+      "stremio",
+      "stremioaddonsexplained",
+      "safe addons",
+      "legal",
+      "catalogs"
+    ],
+    "content": "## What an addon is\nIn Stremio, an addon is a plugin that can add:\n- A catalog (what you can browse)\n- A provider connection (where content comes from)\n- Metadata (posters, descriptions) and quality filters\n\n## Safe addon checklist (use this every time)\nBefore installing an addon:\n1) **Read what it does** (catalog only vs provider)\n2) Prefer **official** or well-known, transparent addons\n3) Avoid addons promising “premium content for free”\n4) If an addon is vague about sources, skip it\n5) Keep your addon list minimal — fewer moving parts means fewer errors\n\n## Legal note (important)\nStremio is a tool. You’re responsible for using legal sources and respecting content rights in your country.\n\n## Practical setup pattern\nUse this approach:\n- One or two trusted catalogs\n- One player configuration you can reproduce on every device\n- Test playback with a known-legal stream before adding more\n\n## Related guides\n- Improve reliability: [Stremio buffering fixes](/stremio/stremio-buffering-fixes)\n- Casting: [Stremio Chromecast guide](/stremio/stremio-chromecast-guide)\n",
+    "faqs": [
+      {
+        "question": "Are all Stremio addons legal?",
+        "answer": "No. Some addons may point to sources that are not licensed. Only install addons that you understand and that provide legal content."
+      },
+      {
+        "question": "Why do some addons stop working?",
+        "answer": "Addons depend on third-party services and APIs. If a provider changes or goes offline, the addon can break until updated."
+      }
+    ],
+    "lastUpdated": "2025-12-12",
+    "relatedSlugs": [
+      "what-is-stremio",
+      "stremio-buffering-fixes",
+      "stremio-no-streams-found"
+    ]
+  },
+  {
+    "slug": "how-to-install-stremio-addons",
+    "title": "How to Install Stremio Addons (Beginner Steps)",
+    "metaTitle": "How to Install Stremio Addons (Step-by-Step, Safe Setup)",
+    "description": "Step-by-step instructions to install and manage Stremio addons, keep your setup clean, and avoid common beginner mistakes.",
+    "category": "addons",
+    "keywords": [
+      "stremio",
+      "howtoinstallstremioaddons",
+      "install addons",
+      "beginner"
+    ],
+    "content": "## Step-by-step: install an addon\n1) Open Stremio and go to the **Addons** section\n2) Browse or search for an addon\n3) Click **Install**\n4) Return to the home screen and refresh catalogs\n\n## Keep your addon setup clean\n- Remove addons you don’t use\n- Avoid installing multiple addons that do the same job\n- Test after every change so you know what caused a new issue\n\n## Troubleshooting if catalogs don’t update\n1) Restart Stremio\n2) Confirm you’re signed in\n3) Remove and reinstall the addon\n\n## Related\n- What addons are: [Stremio addons explained](/stremio/stremio-addons-explained)\n- When nothing plays: [No streams found fixes](/stremio/stremio-no-streams-found)\n",
+    "faqs": [
+      {
+        "question": "Do I need to install addons on every device?",
+        "answer": "If you use an account, addons often sync. If a device doesn’t show them, restart the app and confirm you’re signed in."
+      }
+    ],
+    "lastUpdated": "2025-12-12",
+    "relatedSlugs": [
+      "stremio-addons-explained",
+      "stremio-account-sync"
+    ]
+  },
+  {
+    "slug": "stremio-web-vs-app",
+    "title": "Stremio Web vs App: Which Should You Use?",
+    "metaTitle": "Stremio Web vs App (Desktop/Mobile): Best Choice in 2025",
+    "description": "Compare Stremio Web and the native app: device compatibility, playback reliability, casting support, and best use cases.",
+    "category": "basics",
+    "keywords": [
+      "stremio",
+      "stremiowebvsapp",
+      "stremio web",
+      "desktop",
+      "mobile"
+    ],
+    "content": "## Quick answer\nUse the **native app** when you want the most reliable playback and device integration. Use **Stremio Web** when you need quick access on a browser-first workflow.\n\n## When Stremio Web is great\n- Browsing your library quickly on desktop\n- Managing catalogs and exploring titles\n- Lightweight access on shared computers\n\n## When the native app is better\n- Casting (Chromecast/AirPlay) workflows\n- Device-level player settings (audio/subtitles)\n- More consistent performance on TVs/streaming devices\n\n## Recommended setup\nUse desktop (web or app) as your “management” device, and a TV device for playback.\n\n## Related\n- Casting: [Stremio Chromecast guide](/stremio/stremio-chromecast-guide)\n- Performance: [Stremio buffering fixes](/stremio/stremio-buffering-fixes)\n",
+    "faqs": [
+      {
+        "question": "Can I cast from Stremio Web?",
+        "answer": "Casting features can vary by browser and platform. If casting is a priority, the native app is usually more consistent."
+      }
+    ],
+    "lastUpdated": "2025-12-12",
+    "relatedSlugs": [
+      "stremio-account-sync",
+      "stremio-chromecast-guide"
+    ]
+  },
+  {
+    "slug": "stremio-chromecast-guide",
+    "title": "Stremio Chromecast Guide (Casting Tips)",
+    "metaTitle": "Stremio Chromecast Guide: How to Cast Smoothly (2025)",
+    "description": "Fix common casting problems: devices not showing, stutter, audio delay, and subtitle issues when casting Stremio to Chromecast.",
+    "category": "best-practices",
+    "keywords": [
+      "stremio",
+      "stremiochromecastguide",
+      "cast",
+      "chromecast",
+      "stutter"
+    ],
+    "content": "## Before you start (most common mistake)\nCasting works best when:\n- Your phone/PC and Chromecast are on the **same Wi‑Fi network**\n- Your Wi‑Fi is stable (5GHz preferred)\n\n## Step-by-step: cast Stremio\n1) Start playing a title\n2) Tap the **Cast** icon\n3) Choose your Chromecast device\n4) Wait for the connection to complete before changing quality/subtitles\n\n## If your Chromecast doesn’t appear\n- Confirm both devices are on the same network\n- Reboot your Chromecast\n- Restart Stremio\n- Disable VPN temporarily (if it breaks local discovery)\n\n## Reduce stutter and buffering while casting\n- Use 5GHz Wi‑Fi or Ethernet (if your Chromecast supports it)\n- Move closer to the router\n- Reduce other heavy network usage while testing\n\n## Related\n- General buffering: [Stremio buffering fixes](/stremio/stremio-buffering-fixes)\n",
+    "faqs": [
+      {
+        "question": "Why does casting buffer more than playing on my phone?",
+        "answer": "Casting adds another hop and can expose Wi‑Fi issues. Improve your network and keep the casting device close to the router."
+      }
+    ],
+    "lastUpdated": "2025-12-12",
+    "relatedSlugs": [
+      "stremio-buffering-fixes"
+    ]
+  },
+  {
+    "slug": "stremio-buffering-fixes",
+    "title": "Stremio Buffering Fixes (10 Practical Steps)",
+    "metaTitle": "Stremio Buffering Fix: 10 Steps for Smooth Playback",
+    "description": "Reduce buffering in Stremio with network checks, device performance tips, and settings that improve playback stability.",
+    "category": "troubleshooting",
+    "keywords": [
+      "stremio",
+      "stremiobufferingfixes",
+      "buffering",
+      "stutter",
+      "slow"
+    ],
+    "content": "## Quick answer\nMost buffering issues come from **network instability**, **device limitations**, or an **overloaded source**. Fix the basics first, then refine.\n\n## 10 steps that solve most buffering\n1) Restart your device and router\n2) Prefer **Ethernet** or **5GHz Wi‑Fi**\n3) Test your speed near the device (not just on your phone)\n4) Close background apps and free device memory\n5) Update Stremio to the latest version\n6) Try a different title to see if it’s source-specific\n7) Reduce casting complexity (test on-device playback first)\n8) Reinstall the addon(s) involved (if playback depends on them)\n9) If subtitles cause stutter, test with subtitles off\n10) If the problem is consistent at a specific time, it may be network congestion\n\n## Pro tip: isolate where the problem is\nIf *everything* buffers, it’s likely your network/device.\nIf *one title* buffers, it’s likely the source.\n\n## Related\n- Subtitles: [Stremio subtitles not working](/stremio/stremio-subtitles-not-working)\n- Casting: [Stremio Chromecast guide](/stremio/stremio-chromecast-guide)\n",
+    "faqs": [
+      {
+        "question": "Does a VPN fix Stremio buffering?",
+        "answer": "Sometimes a VPN can help if your ISP is throttling certain traffic, but it can also add latency. Test with and without to confirm."
+      },
+      {
+        "question": "Why does buffering happen only at night?",
+        "answer": "Evening congestion on your ISP or local Wi‑Fi channel interference can reduce throughput. Try Ethernet or change Wi‑Fi channels."
+      }
+    ],
+    "lastUpdated": "2025-12-12",
+    "relatedSlugs": [
+      "stremio-chromecast-guide",
+      "stremio-subtitles-not-working"
+    ]
+  },
+  {
+    "slug": "stremio-no-streams-found",
+    "title": "Stremio “No Streams Found”: Fixes That Work",
+    "metaTitle": "Fix Stremio “No Streams Found” (Safe Troubleshooting)",
+    "description": "Solve the common “No streams found” message in Stremio by checking addons, account sync, app state, and network issues.",
+    "category": "troubleshooting",
+    "keywords": [
+      "stremio",
+      "stremionostreamsfound",
+      "no streams",
+      "addons"
+    ],
+    "content": "## What “No streams found” usually means\nStremio can’t find a playable source for the title *with your current addon setup*.\n\n## Fix checklist\n1) Confirm you installed at least one addon that provides sources\n2) Restart Stremio\n3) Sign out → sign back in (to refresh sync)\n4) Reinstall the addon(s) you rely on\n5) Try a different title (to confirm it’s not title-specific)\n\n## Keep it safe\nOnly use addons that provide legal sources.\n\n## Related\n- Addons explained: [Stremio addons explained](/stremio/stremio-addons-explained)\n- Sync: [Stremio account sync](/stremio/stremio-account-sync)\n",
+    "faqs": [
+      {
+        "question": "Why do I get “No streams found” on every title?",
+        "answer": "You likely don’t have any source-providing addon installed, or the installed addons are failing. Reinstall addons and confirm account sync."
+      }
+    ],
+    "lastUpdated": "2025-12-12",
+    "relatedSlugs": [
+      "stremio-addons-explained",
+      "stremio-account-sync"
+    ]
+  },
+  {
+    "slug": "stremio-subtitles-not-working",
+    "title": "Stremio Subtitles Not Working (Fix + Best Practices)",
+    "metaTitle": "Stremio Subtitles Not Working? Fixes + Best Practices",
+    "description": "Fix missing subtitles in Stremio: check subtitle settings, language preferences, and platform-specific playback quirks.",
+    "category": "troubleshooting",
+    "keywords": [
+      "stremio",
+      "stremiosubtitlesnotworking",
+      "subtitles",
+      "opensubtitles"
+    ],
+    "content": "## Common causes\n- Subtitles are disabled in the player\n- Wrong subtitle language is selected\n- The title simply has no subtitles available for your chosen language\n\n## Fix checklist\n1) Toggle subtitles off/on while playing\n2) Switch subtitle language (try English as a test)\n3) Restart Stremio and retry playback\n4) If casting, test on-device playback first (casting can behave differently)\n\n## Best practice\nSet a default subtitle language, then only change per-title when needed.\n\n## Related\n- Buffering: [Stremio buffering fixes](/stremio/stremio-buffering-fixes)\n",
+    "faqs": [
+      {
+        "question": "Why do subtitles work on my phone but not my TV?",
+        "answer": "Playback and subtitle rendering can differ by platform and casting mode. Test on-device playback and verify subtitle settings on that device."
+      }
+    ],
+    "lastUpdated": "2025-12-12",
+    "relatedSlugs": [
+      "stremio-buffering-fixes",
+      "stremio-chromecast-guide"
+    ]
+  },
+  {
+    "slug": "stremio-audio-out-of-sync",
+    "title": "Stremio Audio Out of Sync: How to Fix It",
+    "metaTitle": "Stremio Audio Out of Sync? Fix on TV, Phone, and PC",
+    "description": "Fix audio delay and lip-sync issues in Stremio with device checks, casting tips, and practical troubleshooting steps.",
+    "category": "troubleshooting",
+    "keywords": [
+      "stremio",
+      "stremioaudiooutofsync",
+      "audio delay",
+      "lip sync"
+    ],
+    "content": "## Quick answer\nAudio sync problems are usually caused by casting, Bluetooth audio latency, or TV audio processing.\n\n## Fix checklist\n1) If casting, test playback on the device first\n2) Disable Bluetooth audio (as a test) and use TV speakers\n3) Disable heavy TV audio processing (surround enhancements)\n4) Reboot the playback device\n\n## Related\n- Casting tips: [Stremio Chromecast guide](/stremio/stremio-chromecast-guide)\n",
+    "faqs": [
+      {
+        "question": "Why does Bluetooth cause delay?",
+        "answer": "Bluetooth codecs add latency. Some speakers/headphones handle sync better than others, but it’s common to see a small delay."
+      }
+    ],
+    "lastUpdated": "2025-12-12",
+    "relatedSlugs": [
+      "stremio-chromecast-guide",
+      "stremio-buffering-fixes"
+    ]
+  },
+  {
+    "slug": "stremio-on-firestick-setup",
+    "title": "Stremio on Firestick: What to Know (Quick Checklist)",
+    "metaTitle": "Stremio on Firestick: Quick Setup Checklist + Tips",
+    "description": "A quick, safe checklist for using Stremio on Firestick: performance tips, casting basics, and where to find full setup guides.",
+    "category": "setup",
+    "keywords": [
+      "stremio",
+      "stremioonfirestick",
+      "fire tv",
+      "firestick"
+    ],
+    "content": "## Use the full Firestick guide\nThis page is a checklist. For the full step-by-step walkthrough, use:\n- [Stremio Firestick setup guide](/guides/stremio/setup/firestick)\n\n## Firestick checklist (fast)\n- Keep at least 1–2GB free storage\n- Reboot weekly if you stream daily\n- Prefer 5GHz Wi‑Fi (or Ethernet via adapter)\n- Test playback on-device before casting\n\n## Related\n- General buffering: [Stremio buffering fixes](/stremio/stremio-buffering-fixes)\n",
+    "faqs": [
+      {
+        "question": "Does Stremio run well on older Firesticks?",
+        "answer": "Newer Fire TV devices handle HD/4K better. Older models may struggle with heavy playback and multitasking."
+      }
+    ],
+    "lastUpdated": "2025-12-12",
+    "relatedSlugs": [
+      "stremio-buffering-fixes"
+    ]
+  },
+  {
+    "slug": "stremio-on-android-tv-setup",
+    "title": "Stremio on Android TV: Best Settings (2025)",
+    "metaTitle": "Stremio on Android TV: Best Settings + Setup Guide (2025)",
+    "description": "Optimize Stremio on Android TV: stability tips, playback settings, and a simple checklist for smooth performance.",
+    "category": "setup",
+    "keywords": [
+      "stremio",
+      "stremioonandroidtv",
+      "android tv",
+      "settings"
+    ],
+    "content": "## Use the full Android TV guide\n- [Stremio Android TV setup guide](/guides/stremio/setup/android-tv)\n\n## Best settings checklist\n- Keep the OS updated\n- Close background apps\n- Prefer Ethernet if possible\n- Use a stable Wi‑Fi channel (avoid crowded channels)\n\n## Related\n- Troubleshooting: [Stremio buffering fixes](/stremio/stremio-buffering-fixes)\n",
+    "faqs": [
+      {
+        "question": "Is an Android TV box better than built-in Smart TV apps?",
+        "answer": "Often yes. Dedicated Android TV boxes typically have better performance and longer support than many built-in TV operating systems."
+      }
+    ],
+    "lastUpdated": "2025-12-12",
+    "relatedSlugs": [
+      "stremio-buffering-fixes"
+    ]
+  },
+  {
+    "slug": "stremio-external-player",
+    "title": "Stremio External Player: When to Use One",
+    "metaTitle": "Stremio External Player: When It Helps + Setup Tips",
+    "description": "When Stremio playback is unstable, an external player can help. Learn when it matters and what to test first.",
+    "category": "best-practices",
+    "keywords": [
+      "stremio",
+      "stremioexternalplayer",
+      "vlc",
+      "player settings"
+    ],
+    "content": "## When an external player helps\nAn external player can help if you’re dealing with:\n- Codec compatibility problems\n- Subtitle rendering issues\n- Audio passthrough quirks\n\n## What to do first\n1) Update Stremio\n2) Test a different title\n3) Confirm your device network is stable\n\n## IPTV Guide players to consider\n- [VLC](/players/vlc)\n- [Kodi](/players/kodi)\n\n## Related\n- Subtitles: [Stremio subtitles not working](/stremio/stremio-subtitles-not-working)\n",
+    "faqs": [
+      {
+        "question": "Does an external player fix buffering?",
+        "answer": "Sometimes, but buffering is more often network or source related. Use an external player when you suspect codec/subtitle/player issues."
+      }
+    ],
+    "lastUpdated": "2025-12-12",
+    "relatedSlugs": [
+      "stremio-buffering-fixes",
+      "stremio-subtitles-not-working"
+    ]
+  },
+  {
+    "slug": "stremio-local-files",
+    "title": "Stremio Local Files: How to Use Your Personal Library",
+    "metaTitle": "Stremio Local Files: Organize and Play Personal Media",
+    "description": "Use Stremio as a media center for your personal library: local files basics, best folder structure, and playback tips.",
+    "category": "resources",
+    "keywords": [
+      "stremio",
+      "stremiolocalfiles",
+      "personal media",
+      "local library"
+    ],
+    "content": "## What “Local Files” means\nStremio can act as a front-end for media you already own (personal videos, home movies, legally obtained files).\n\n## Best folder structure (simple)\n- Movies/\n  - Movie Title (Year).mp4\n- Series/\n  - Show Name/\n    - Season 01/\n      - S01E01 - Episode Title.mkv\n\n## Playback tips\n- Prefer wired storage or fast local network\n- Keep filenames consistent\n- If subtitles are separate files, keep them next to the video with matching names\n\n## Related\n- Subtitles: [Stremio subtitles not working](/stremio/stremio-subtitles-not-working)\n",
+    "faqs": [
+      {
+        "question": "Can Stremio replace Plex for a local library?",
+        "answer": "It depends on your needs. Plex is a full media server. Stremio is a lighter media center experience and may be enough for simple local playback."
+      }
+    ],
+    "lastUpdated": "2025-12-12",
+    "relatedSlugs": [
+      "stremio-subtitles-not-working"
+    ]
+  },
+  {
+    "slug": "stremio-privacy-and-safety",
+    "title": "Stremio Privacy & Safety Basics",
+    "metaTitle": "Stremio Privacy & Safety: What to Check (2025)",
+    "description": "A practical privacy checklist for Stremio users: account security, addon hygiene, and safe streaming habits.",
+    "category": "best-practices",
+    "keywords": [
+      "stremio",
+      "stremioprivacyandsafety",
+      "privacy",
+      "security",
+      "account"
+    ],
+    "content": "## Security basics\n- Use a strong, unique password\n- Keep your devices updated\n- Install only addons you trust\n\n## Privacy basics\n- Be cautious with third-party addons that request broad permissions\n- Prefer minimal addon setups\n- Avoid sharing account credentials\n\n## Legal reminder\nUse Stremio with legal sources and respect rights in your country.\n\n## Related\n- Addons: [Stremio addons explained](/stremio/stremio-addons-explained)\n",
+    "faqs": [
+      {
+        "question": "Should I use a VPN with Stremio?",
+        "answer": "A VPN can improve privacy in some scenarios, but it can also reduce speed. Test performance and follow local laws and service terms."
+      }
+    ],
+    "lastUpdated": "2025-12-12",
+    "relatedSlugs": [
+      "stremio-addons-explained"
+    ]
+  },
+  {
+    "slug": "stremio-common-errors",
+    "title": "Stremio Common Errors: Quick Fix Index",
+    "metaTitle": "Stremio Common Errors (Fix Index): Buffering, Catalog, Sync",
+    "description": "A quick index of common Stremio problems and the fastest fixes: buffering, “no streams found”, subtitle issues, and casting.",
+    "category": "troubleshooting",
+    "keywords": [
+      "stremio",
+      "stremiocommonerrors",
+      "errors",
+      "fixes"
+    ],
+    "content": "## Quick index\n- Buffering / stutter → [Stremio buffering fixes](/stremio/stremio-buffering-fixes)\n- “No streams found” → [No streams found fixes](/stremio/stremio-no-streams-found)\n- Subtitles missing → [Subtitles not working](/stremio/stremio-subtitles-not-working)\n- Casting issues → [Chromecast guide](/stremio/stremio-chromecast-guide)\n- Account sync weirdness → [Account sync explained](/stremio/stremio-account-sync)\n\n## Need device-specific setup?\nUse the Stremio setup guides:\n- [Stremio setup for Firestick](/guides/stremio/setup/firestick)\n- [Stremio setup for Android TV](/guides/stremio/setup/android-tv)\n",
+    "faqs": [
+      {
+        "question": "Where should I start troubleshooting?",
+        "answer": "Start with network and device basics, then isolate whether the issue is title-specific or affects everything."
+      }
+    ],
+    "lastUpdated": "2025-12-12",
+    "relatedSlugs": [
+      "stremio-buffering-fixes",
+      "stremio-no-streams-found",
+      "stremio-subtitles-not-working"
+    ]
+  },
+  {
+    "slug": "stremio-resources",
+    "title": "Stremio Resources: Official Links + Help",
+    "metaTitle": "Stremio Resources: Official Downloads, Help, and Status",
+    "description": "A curated list of official Stremio resources: downloads, support, and helpful links (plus guides on IPTV Guide).",
+    "category": "resources",
+    "keywords": [
+      "stremio",
+      "stremioresources",
+      "official",
+      "download",
+      "help"
+    ],
+    "content": "## Official Stremio links\n- Official site: https://www.stremio.com\n- Downloads: https://www.stremio.com/downloads\n\n## IPTV Guide shortcuts\n- Player overview: [Stremio review](/players/stremio)\n- Setup guides: [Stremio setup for Firestick](/guides/stremio/setup/firestick)\n- Fixes: [Stremio common errors](/stremio/stremio-common-errors)\n\n## Tip\nBookmark this page and keep your addon list small and intentional.\n",
+    "faqs": [
+      {
+        "question": "Where do I find the safest setup?",
+        "answer": "Use official downloads, keep addons minimal, and stick to legal sources. This site’s guides focus on safe, repeatable setups."
+      }
+    ],
+    "lastUpdated": "2025-12-12",
+    "relatedSlugs": [
+      "what-is-stremio",
+      "stremio-addons-explained"
+    ]
+  },
+  {
+    "slug": "legal-iptv-playlists-how-to-use",
+    "title": "How to Use Public IPTV Playlists (M3U) — Legal Basics",
+    "metaTitle": "How to Use Public IPTV M3U Playlists (Legal Basics + Steps)",
+    "description": "Learn how to open public M3U playlists in VLC/Kodi, what to check for legality, and how to troubleshoot common playback errors.",
+    "category": "resources",
+    "keywords": [
+      "stremio",
+      "howtousepubliciptvplaylists",
+      "m3u",
+      "vlc",
+      "kodi",
+      "legal"
+    ],
+    "content": "## Quick answer\nPublic IPTV playlists are just lists of stream URLs. Some are legal, some aren’t. Always verify rights and prefer well-known free streaming TV services.\n\n## Step-by-step (VLC)\n1) Copy the M3U URL\n2) Open VLC → Media → Open Network Stream\n3) Paste the URL → Play\n\n## Step-by-step (Kodi)\nKodi can use IPTV playlists via PVR addons. Use:\n- [Kodi player overview](/players/kodi)\n\n## Where to find public playlists\nBrowse this directory:\n- [Public playlists (iptv-org)](/legal-iptv)\n\n## Troubleshooting\n- If one channel fails, it may be offline\n- If everything fails, it may be a network/device issue\n",
+    "faqs": [
+      {
+        "question": "Are public IPTV playlists always legal?",
+        "answer": "No. “Public” means accessible, not automatically licensed. Verify rights and use official FAST services where possible."
+      }
+    ],
+    "lastUpdated": "2025-12-12",
+    "relatedSlugs": [
+      "stremio-vs-iptv-player"
+    ]
+  }
+]
