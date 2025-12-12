@@ -77,7 +77,16 @@ export default async function LegalIptvCountryDetailPage({ params }: PageProps) 
           </ol>
           <p className="text-sm text-gray-600 mt-4">
             Recommended players: <Link href="/players/vlc" className="text-blue-600 hover:underline">VLC</Link>,{' '}
-            <Link href="/players/kodi" className="text-blue-600 hover:underline">Kodi</Link>.
+            <Link href="/players/kodi" className="text-blue-600 hover:underline">Kodi</Link>,{' '}
+            <a
+              href="https://apps.apple.com/gb/app/jamrun-iptv/id6754577839"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
+              JamRun (iOS)
+            </a>
+            .
           </p>
         </section>
 
@@ -90,4 +99,3 @@ export default async function LegalIptvCountryDetailPage({ params }: PageProps) 
     </div>
   );
 }
-
