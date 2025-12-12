@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getBaseUrl, getLegalIptvData } from '@/lib/data-loader';
+import { JAMRUN_APPSTORE_URL } from '@/lib/jamrun';
 import { BreadcrumbSchema } from '@/components/JsonLd';
 import { CopyButton } from '@/components/CopyButton';
 import { LastUpdated } from '@/components/GeoComponents';
@@ -136,10 +137,11 @@ export default async function LegalIptvHubPage() {
             </code>
             <CopyButton text={data.indexes.all} label="Copy M3U URL" />
             <a
-              href={data.indexes.all}
+              href={JAMRUN_APPSTORE_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-blue-600 hover:underline"
+              aria-label="Open JamRun on the App Store"
             >
               Open
             </a>

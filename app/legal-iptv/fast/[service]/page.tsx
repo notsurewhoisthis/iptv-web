@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getBaseUrl, getLegalIptvData } from '@/lib/data-loader';
+import { JAMRUN_APPSTORE_URL } from '@/lib/jamrun';
 import { BreadcrumbSchema } from '@/components/JsonLd';
 import { CopyButton } from '@/components/CopyButton';
 import { LastUpdated } from '@/components/GeoComponents';
@@ -74,10 +75,11 @@ export default async function LegalIptvFastServiceDetailPage({ params }: PagePro
               <div className="flex items-center gap-2">
                 <CopyButton text={p.url} label="Copy" />
                 <a
-                  href={p.url}
+                  href={JAMRUN_APPSTORE_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-blue-600 hover:underline"
+                  aria-label="Open JamRun on the App Store"
                 >
                   Open
                 </a>
@@ -97,7 +99,7 @@ export default async function LegalIptvFastServiceDetailPage({ params }: PagePro
             Recommended players: <Link href="/players/vlc" className="text-blue-600 hover:underline">VLC</Link>,{' '}
             <Link href="/players/kodi" className="text-blue-600 hover:underline">Kodi</Link>,{' '}
             <a
-              href="https://apps.apple.com/gb/app/jamrun-iptv/id6754577839"
+              href={JAMRUN_APPSTORE_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 hover:underline"
