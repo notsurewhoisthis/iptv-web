@@ -2,9 +2,14 @@
   "name": "iptv-web",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "22.x",
+    "npm": "11.x"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "heroku-postbuild": "rm -rf .next/cache",
     "start": "next start -p $PORT",
     "lint": "next lint",
     "generate": "node scripts/generate-all.js"
@@ -18,7 +23,7 @@
     "fuse.js": "^7.1.0",
     "lucide-react": "^0.555.0",
     "marked": "^17.0.1",
-    "next": "15.4.5",
+    "next": "15.5.9",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "tailwind-merge": "^3.4.0"
@@ -30,7 +35,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "15.4.5",
+    "eslint-config-next": "15.5.9",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
