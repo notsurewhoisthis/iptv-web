@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "heroku-postbuild": "rm -rf .next/cache",
+    "heroku-postbuild": "npm run build && rm -rf .next/cache",
     "start": "next start -p $PORT",
     "lint": "next lint",
     "generate": "node scripts/generate-all.js"
