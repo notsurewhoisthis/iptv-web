@@ -24,7 +24,7 @@ const typeConfig = {
   guide: { icon: BookOpen, label: 'Guide', color: 'text-purple-600 bg-purple-50' },
   blog: { icon: FileText, label: 'Blog', color: 'text-orange-600 bg-orange-50' },
   stremio: { icon: MonitorPlay, label: 'Stremio', color: 'text-violet-700 bg-violet-50' },
-  legal: { icon: ShieldCheck, label: 'Legal IPTV', color: 'text-emerald-700 bg-emerald-50' },
+  legal: { icon: ShieldCheck, label: 'Public IPTV', color: 'text-emerald-700 bg-emerald-50' },
 };
 
 export function Search({ items }: SearchProps) {

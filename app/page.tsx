@@ -186,7 +186,7 @@ export default async function Home() {
             >
               <ShieldCheck className="h-6 w-6 text-emerald-600 dark:text-emerald-400" />
               <div>
-                <div className="font-medium text-emerald-900 dark:text-emerald-300">Legal IPTV</div>
+                <div className="font-medium text-emerald-900 dark:text-emerald-300">Public IPTV</div>
                 <div className="text-sm text-emerald-600 dark:text-emerald-400">Public playlists</div>
               </div>
             </Link>

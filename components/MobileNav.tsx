@@ -14,7 +14,7 @@ const navLinks = [
   { href: '/use-cases', label: 'Use Cases' },
   { href: '/learn', label: 'Learn IPTV' },
   { href: '/stremio', label: 'Stremio' },
-  { href: '/legal-iptv', label: 'Legal IPTV' },
+  { href: '/legal-iptv', label: 'Public IPTV' },
   { href: '/troubleshooting', label: 'Troubleshooting' },
   { href: '/compare', label: 'Compare' },
   { href: '/best', label: 'Best Picks' },

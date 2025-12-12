@@ -8,7 +8,7 @@ import { MobileNav } from '@/components/MobileNav';
 import { SearchWrapper } from '@/components/SearchWrapper';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { ChatWidget } from '@/components/ChatWidget';
-import { Rss } from 'lucide-react';
+import { ChevronDown, Rss } from 'lucide-react';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -53,11 +53,33 @@ export const metadata: Metadata = {
   },
 };
 
+const PRIMARY_NAV_LINKS = [
+  { href: '/players', label: 'Players' },
+  { href: '/devices', label: 'Devices' },
+  { href: '/guides', label: 'Guides' },
+  { href: '/troubleshooting', label: 'Troubleshooting' },
+  { href: '/stremio', label: 'Stremio' },
+  { href: '/legal-iptv', label: 'Public IPTV' },
+  { href: '/blog', label: 'Blog' },
+] as const;
+
+const MORE_NAV_LINKS = [
+  { href: '/features', label: 'Features' },
+  { href: '/issues', label: 'Issues' },
+  { href: '/use-cases', label: 'Use Cases' },
+  { href: '/compare', label: 'Compare' },
+  { href: '/learn', label: 'Learn' },
+  { href: '/glossary', label: 'Glossary' },
+] as const;
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const navLinkClassName =
+    'flex-shrink-0 whitespace-nowrap rounded-lg px-3 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-100/70 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-800/60 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500/50';
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} font-sans antialiased bg-white dark:bg-gray-950`}>
@@ -70,90 +92,59 @@ export default function RootLayout({
         </a>
 
         {/* Navigation */}
-        <nav className="border-b border-gray-200 dark:border-gray-800" aria-label="Main navigation">
-          <div className="max-w-6xl mx-auto px-4 py-4">
-            <div className="flex items-center justify-between">
-              <Link href="/" className="text-xl font-bold text-gray-900 dark:text-white">
-                IPTV Guide
-              </Link>
-              <div className="hidden md:flex items-center gap-6">
+        <nav
+          className="sticky top-0 z-40 border-b border-gray-200/70 dark:border-gray-800/70 bg-white/80 dark:bg-gray-950/70 backdrop-blur supports-[backdrop-filter]:bg-white/60 supports-[backdrop-filter]:dark:bg-gray-950/60"
+          aria-label="Main navigation"
+        >
+          <div className="max-w-6xl mx-auto px-4">
+            <div className="flex items-center justify-between gap-3 py-3">
+              <div className="flex items-center gap-2 min-w-0">
                 <Link
-                  href="/players"
-                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
+                  href="/"
+                  className="flex-shrink-0 whitespace-nowrap text-lg md:text-xl font-bold tracking-tight text-gray-900 dark:text-white"
                 >
-                  Players
+                  IPTV Guide
                 </Link>
-                <Link
-                  href="/devices"
-                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
+
+                <div className="hidden md:flex items-center gap-1 ml-1">
+                  {PRIMARY_NAV_LINKS.map((link) => (
+                    <Link key={link.href} href={link.href} className={navLinkClassName}>
+                      {link.label}
+                    </Link>
+                  ))}
+
+                  <details className="relative">
+                    <summary
+                      className={`${navLinkClassName} cursor-pointer list-none inline-flex items-center gap-1 [&::-webkit-details-marker]:hidden`}
+                      aria-label="More navigation links"
+                    >
+                      More
+                      <ChevronDown className="h-4 w-4 opacity-70" />
+                    </summary>
+                    <div className="absolute right-0 mt-2 w-56 rounded-xl border border-gray-200/70 dark:border-gray-800 bg-white/95 dark:bg-gray-950/95 backdrop-blur shadow-lg p-1">
+                      {MORE_NAV_LINKS.map((link) => (
+                        <Link
+                          key={link.href}
+                          href={link.href}
+                          className="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800 transition-colors"
+                        >
+                          {link.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </details>
+                </div>
+              </div>
+
+              <div className="hidden md:flex items-center gap-2">
+                <Suspense
+                  fallback={<div className="w-28 h-9 bg-gray-100 dark:bg-gray-800 rounded-lg animate-pulse" />}
                 >
-                  Devices
-                </Link>
-                <Link
-                  href="/features"
-                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
-                >
-                  Features
-                </Link>
-                <Link
-                  href="/issues"
-                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
-                >
-                  Issues
-                </Link>
-                <Link
-                  href="/guides"
-                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
-                >
-                  Guides
-                </Link>
-                <Link
-                  href="/use-cases"
-                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
-                >
-                  Use Cases
-                </Link>
-                <Link
-                  href="/troubleshooting"
-                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
-                >
-                  Troubleshooting
-                </Link>
-                <Link
-                  href="/compare"
-                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
-                >
-                  Compare
-                </Link>
-                <Link
-                  href="/learn"
-                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
-                >
-                  Learn
-                </Link>
-                <Link
-                  href="/stremio"
-                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
-                >
-                  Stremio
-                </Link>
-                <Link
-                  href="/legal-iptv"
-                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
-                >
-                  Legal IPTV
-                </Link>
-                <Link
-                  href="/blog"
-                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
-                >
-                  Blog
-                </Link>
-                <Suspense fallback={<div className="w-24 h-8 bg-gray-100 dark:bg-gray-800 rounded-lg animate-pulse" />}>
                   <SearchWrapper />
                 </Suspense>
                 <ThemeToggle />
               </div>
+
               {/* Mobile Navigation */}
               <MobileNav />
             </div>
@@ -226,7 +217,7 @@ export default function RootLayout({
                     <Link href="/stremio">Stremio</Link>
                   </li>
                   <li>
-                    <Link href="/legal-iptv">Legal IPTV</Link>
+                    <Link href="/legal-iptv">Public IPTV</Link>
                   </li>
                   <li>
                     <Link href="/blog">Blog</Link>

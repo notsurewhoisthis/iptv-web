@@ -69,7 +69,7 @@ export async function SearchWrapper() {
     // Legal IPTV hubs (avoid indexing every country/language for payload size)
     {
       id: 'legal-iptv-hub',
-      title: 'Legal IPTV Playlists',
+      title: 'Public IPTV Playlists',
       description: 'Browse public, legal IPTV playlists by category, country, language, and FAST services.',
       url: '/legal-iptv',
       type: 'legal' as const,
@@ -77,7 +77,7 @@ export async function SearchWrapper() {
     },
     {
       id: 'legal-iptv-categories',
-      title: 'Legal IPTV by Category',
+      title: 'Public IPTV by Category',
       description: 'Find public playlists grouped by content category.',
       url: '/legal-iptv/categories',
       type: 'legal' as const,
@@ -85,7 +85,7 @@ export async function SearchWrapper() {
     },
     {
       id: 'legal-iptv-countries',
-      title: 'Legal IPTV by Country',
+      title: 'Public IPTV by Country',
       description: 'Browse public playlists by country code.',
       url: '/legal-iptv/countries',
       type: 'legal' as const,
@@ -93,7 +93,7 @@ export async function SearchWrapper() {
     },
     {
       id: 'legal-iptv-languages',
-      title: 'Legal IPTV by Language',
+      title: 'Public IPTV by Language',
       description: 'Browse public playlists by language.',
       url: '/legal-iptv/languages',
       type: 'legal' as const,
@@ -101,7 +101,7 @@ export async function SearchWrapper() {
     },
     {
       id: 'legal-iptv-fast',
-      title: 'FAST Services (Legal)',
+      title: 'FAST Services (Public)',
       description: 'Official free ad-supported streaming TV services and their public playlists.',
       url: '/legal-iptv/fast',
       type: 'legal' as const,
@@ -110,7 +110,7 @@ export async function SearchWrapper() {
     // Legal IPTV categories (small list; safe to index)
     ...(legalIptvData.categories || []).map((c) => ({
       id: `legal-cat-${c.id}`,
-      title: `Legal IPTV: ${c.label}`,
+      title: `Public IPTV: ${c.label}`,
       description: `Public playlists for ${c.label} channels (where available).`,
       url: `/legal-iptv/categories/${c.id}`,
       type: 'legal' as const,
