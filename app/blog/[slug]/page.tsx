@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { getBlogPosts, getBlogPost, getBaseUrl } from '@/lib/data-loader';
 import { normalizeCategory, normalizeTag } from '@/lib/blog-taxonomy';
 import { parseMarkdown } from '@/lib/markdown';
@@ -142,13 +143,16 @@ export default async function BlogPostPage({ params }: PageProps) {
             </Link>
           )}
 
-          {/* Featured Image */}
+          {/* Featured Image - Optimized for LCP */}
           {heroImage && (
-            <div className="mb-6 rounded-xl overflow-hidden shadow-2xl">
-              <img 
-                src={heroImage} 
+            <div className="mb-6 rounded-xl overflow-hidden shadow-2xl relative w-full h-64 md:h-80 lg:h-96">
+              <Image
+                src={heroImage}
                 alt={post.title}
-                className="w-full h-64 md:h-80 lg:h-96 object-cover"
+                fill
+                priority
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
               />
             </div>
           )}

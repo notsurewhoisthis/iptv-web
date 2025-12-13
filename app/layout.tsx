@@ -7,8 +7,8 @@ import Link from 'next/link';
 import { MobileNav } from '@/components/MobileNav';
 import { SearchWrapper } from '@/components/SearchWrapper';
 import { ThemeToggle } from '@/components/ThemeToggle';
-import { ChatWidget } from '@/components/ChatWidget';
 import { ChevronDown, Rss } from 'lucide-react';
+import { ChatWidgetWrapper } from '@/components/ChatWidgetWrapper';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -282,8 +282,8 @@ export default function RootLayout({
           </div>
         </footer>
 
-        {/* AI Chat Widget */}
-        <ChatWidget />
+        {/* AI Chat Widget - Lazy loaded to reduce initial bundle */}
+        <ChatWidgetWrapper />
 
         {/* Google Analytics */}
         <Script

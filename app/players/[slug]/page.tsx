@@ -7,6 +7,8 @@ import { ChevronRight, Star, ExternalLink, Check, X } from 'lucide-react';
 import { SoftwareApplicationSchema, BreadcrumbSchema, FAQSchema } from '@/components/JsonLd';
 import { QuickAnswer, AuthorBio, LastUpdated } from '@/components/GeoComponents';
 import { RelatedPlayers, TroubleshootingLinks } from '@/components/RelatedContent';
+import { GlossaryTermLinks } from '@/components/GlossaryTermLinks';
+import { UseCaseBadges } from '@/components/UseCaseBadges';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -171,6 +173,12 @@ export default async function PlayerPage({ params }: PageProps) {
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Overview</h2>
               <p className="text-gray-700 leading-relaxed">{player.description}</p>
             </section>
+
+            {/* Use Case Badges - Where this player excels */}
+            <UseCaseBadges playerId={player.id} />
+
+            {/* Glossary Terms - Related IPTV concepts */}
+            <GlossaryTermLinks text={player.description + ' ' + player.pros.join(' ') + ' ' + player.cons.join(' ')} />
 
             {/* Video Review */}
             {video && (

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { VideoObjectSchema } from './JsonLd';
 import { Play } from 'lucide-react';
 
@@ -57,11 +58,13 @@ export function VideoEmbed({ video, className = '', showSchema = false }: VideoE
             className="w-full h-full group cursor-pointer"
             aria-label={`Play video: ${video.title}`}
           >
-            {/* Thumbnail image with fallback */}
-            <img
+            {/* Thumbnail image with fallback - optimized */}
+            <Image
               src={thumbnail}
               alt={video.title}
-              className="w-full h-full object-cover"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
               onError={() => setHasError(true)}
             />
 

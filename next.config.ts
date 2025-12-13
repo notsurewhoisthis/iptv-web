@@ -14,6 +14,10 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: '*.ibb.co',
       },
+      {
+        protocol: 'https',
+        hostname: 'img.youtube.com',
+      },
     ],
   },
 
@@ -47,6 +51,11 @@ const nextConfig: NextConfig = {
           {
             key: 'Strict-Transport-Security',
             value: 'max-age=63072000; includeSubDomains; preload',
+          },
+          // Preconnect hints for faster resource loading
+          {
+            key: 'Link',
+            value: '<https://i.ibb.co>; rel=preconnect, <https://img.youtube.com>; rel=preconnect, <https://fonts.gstatic.com>; rel=preconnect; crossorigin',
           },
         ],
       },

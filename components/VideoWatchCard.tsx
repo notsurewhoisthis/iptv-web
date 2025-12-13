@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Play, ExternalLink } from 'lucide-react';
 import type { VideoData } from '@/lib/types';
 
@@ -21,11 +22,12 @@ export function VideoWatchCard({
     >
       <Link href={`/watch/${video.youtubeId}`} className="block group">
         <div className="relative aspect-video bg-gray-900">
-          <img
+          <Image
             src={thumbnail}
             alt={video.title}
-            className="w-full h-full object-cover"
-            loading="lazy"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
           <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/40 transition">
             <div className="w-14 h-14 bg-red-600 rounded-full flex items-center justify-center group-hover:scale-110 transition shadow-lg">

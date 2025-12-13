@@ -6,6 +6,8 @@ import { parseMarkdown } from '@/lib/markdown';
 import { ArticleWithAuthorSchema, BreadcrumbSchema, FAQSchema } from '@/components/JsonLd';
 import { LastUpdated } from '@/components/GeoComponents';
 import { categoryLabel } from '@/app/stremio/_category';
+import { StremioIPTVCrossLink } from '@/components/StremioIPTVCrossLink';
+import { GlossaryTermLinks } from '@/components/GlossaryTermLinks';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -227,6 +229,12 @@ export default async function StremioArticlePage({ params }: PageProps) {
                 </ul>
               </div>
             )}
+
+            {/* Cross-link to IPTV content */}
+            <StremioIPTVCrossLink category={article.category} />
+
+            {/* Glossary terms from article content */}
+            <GlossaryTermLinks text={article.description} title="IPTV Terms" />
           </aside>
         </div>
       </main>

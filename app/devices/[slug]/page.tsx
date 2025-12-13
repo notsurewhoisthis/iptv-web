@@ -7,6 +7,7 @@ import { ChevronRight, ExternalLink, Check, X, Star } from 'lucide-react';
 import { ProductSchema, BreadcrumbSchema, FAQSchema } from '@/components/JsonLd';
 import { QuickAnswer, AuthorBio, LastUpdated } from '@/components/GeoComponents';
 import { RelatedDevices, TroubleshootingLinks } from '@/components/RelatedContent';
+import { GlossaryTermLinks } from '@/components/GlossaryTermLinks';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -165,6 +166,9 @@ export default async function DevicePage({ params }: PageProps) {
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Overview</h2>
               <p className="text-gray-700 leading-relaxed">{device.description}</p>
             </section>
+
+            {/* Glossary Terms - Related IPTV concepts */}
+            <GlossaryTermLinks text={device.description + ' ' + device.pros.join(' ') + ' ' + device.cons.join(' ')} />
 
             {/* Video Guide */}
             {video && (
