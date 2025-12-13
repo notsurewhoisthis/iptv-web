@@ -61,6 +61,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const baseUrl = getBaseUrl();
   const label = getPlatformLabel(platform);
 
+  // noindex platforms with fewer than 4 players (thin content)
+  const isThinContent = platformPlayers.length < 4;
+
   return {
     title: `Best IPTV Players for ${label} 2025 - Top Apps Reviewed`,
     description: `Compare ${platformPlayers.length} IPTV players that work on ${label}. Ratings, features, pricing, setup guides, and troubleshooting.`,
@@ -71,6 +74,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       'iptv player reviews',
       'iptv setup guides',
     ].join(', '),
+    // noindex thin platform pages (< 4 players = insufficient content)
+    ...(isThinContent && {
+      robots: {
+        index: false,
+        follow: true,
+      },
+    }),
     alternates: {
       canonical: `${baseUrl}/players/platform/${platform}`,
     },

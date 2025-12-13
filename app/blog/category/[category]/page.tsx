@@ -60,6 +60,11 @@ export async function generateMetadata({ params, searchParams }: PageProps): Pro
       'iptv blog category',
       'iptv tips',
     ].join(', '),
+    // noindex until unique intro content is added (currently just post lists)
+    robots: {
+      index: false,
+      follow: true,
+    },
     alternates: {
       canonical,
     },

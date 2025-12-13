@@ -66,6 +66,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const baseUrl = getBaseUrl();
   const info = getTierInfo(tier);
 
+  // noindex pricing tiers with fewer than 4 players (thin content)
+  const isThinContent = tierPlayers.length < 4;
+
   return {
     title: `Best ${info.label} IPTV Players 2025 - Top Apps Reviewed`,
     description: `Compare ${tierPlayers.length} ${info.label.toLowerCase()} IPTV players. Features, ratings, platform support, and setup help.`,
@@ -76,6 +79,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       'free iptv players',
       'premium iptv apps',
     ].join(', '),
+    // noindex thin pricing tier pages (< 4 players = insufficient content)
+    ...(isThinContent && {
+      robots: {
+        index: false,
+        follow: true,
+      },
+    }),
     alternates: {
       canonical: `${baseUrl}/players/pricing/${tier}`,
     },

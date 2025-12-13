@@ -40,6 +40,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       'iptv glossary',
       'iptv terms',
     ].join(', '),
+    // noindex until content is expanded (thin content - only 80-100 unique words)
+    robots: {
+      index: false,
+      follow: true,
+    },
     alternates: {
       canonical: `${baseUrl}/glossary/${term.slug}`,
     },

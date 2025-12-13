@@ -124,27 +124,39 @@ export async function GET() {
     });
   });
 
-  // Player platform landing pages
-  Array.from(new Set(players.flatMap((p) => p.platforms || []))).forEach(
-    (platform) => {
+  // Player platform landing pages (only include platforms with 4+ players)
+  const platformCounts = new Map<string, number>();
+  players.forEach((p) => {
+    (p.platforms || []).forEach((platform) => {
+      platformCounts.set(platform, (platformCounts.get(platform) || 0) + 1);
+    });
+  });
+  Array.from(platformCounts.entries())
+    .filter(([, count]) => count >= 4) // Only platforms with sufficient content
+    .forEach(([platform]) => {
       urls.push({
         url: `/players/platform/${platform}`,
         priority: 0.75,
         changefreq: 'monthly',
       });
-    }
-  );
+    });
 
-  // Player pricing landing pages
-  Array.from(new Set(players.map((p) => p.pricing?.model).filter(Boolean))).forEach(
-    (tier) => {
+  // Player pricing landing pages (only include tiers with 4+ players)
+  const tierCounts = new Map<string, number>();
+  players.forEach((p) => {
+    if (p.pricing?.model) {
+      tierCounts.set(p.pricing.model, (tierCounts.get(p.pricing.model) || 0) + 1);
+    }
+  });
+  Array.from(tierCounts.entries())
+    .filter(([, count]) => count >= 4) // Only tiers with sufficient content
+    .forEach(([tier]) => {
       urls.push({
         url: `/players/pricing/${tier}`,
         priority: 0.75,
         changefreq: 'monthly',
       });
-    }
-  );
+    });
 
   // Device pages
   devices.forEach((device) => {
@@ -254,27 +266,29 @@ export async function GET() {
     });
   });
 
-  // Blog tag pages (only meaningful tags)
-  getBlogTags(posts)
-    .filter((t) => t.count >= 2)
-    .forEach((tag) => {
-      urls.push({
-        url: `/blog/tag/${tag.slug}`,
-        priority: 0.6,
-        changefreq: 'weekly',
-      });
-    });
+  // Blog tag pages - EXCLUDED (thin content - no unique intro text)
+  // Will be re-added after unique content is added to each tag page
+  // getBlogTags(posts)
+  //   .filter((t) => t.count >= 2)
+  //   .forEach((tag) => {
+  //     urls.push({
+  //       url: `/blog/tag/${tag.slug}`,
+  //       priority: 0.6,
+  //       changefreq: 'weekly',
+  //     });
+  //   });
 
-  // Blog category pages (only meaningful categories)
-  getBlogCategories(posts)
-    .filter((c) => c.count >= 2)
-    .forEach((cat) => {
-      urls.push({
-        url: `/blog/category/${cat.slug}`,
-        priority: 0.6,
-        changefreq: 'weekly',
-      });
-    });
+  // Blog category pages - EXCLUDED (thin content - no unique intro text)
+  // Will be re-added after unique content is added to each category page
+  // getBlogCategories(posts)
+  //   .filter((c) => c.count >= 2)
+  //   .forEach((cat) => {
+  //     urls.push({
+  //       url: `/blog/category/${cat.slug}`,
+  //       priority: 0.6,
+  //       changefreq: 'weekly',
+  //     });
+  //   });
 
   // Feature pages
   features.forEach((feature) => {
@@ -285,14 +299,15 @@ export async function GET() {
     });
   });
 
-  // Glossary term pages
-  glossaryTerms.forEach((term) => {
-    urls.push({
-      url: `/glossary/${term.slug}`,
-      priority: 0.5,
-      changefreq: 'yearly',
-    });
-  });
+  // Glossary term pages - EXCLUDED (thin content - only 80-100 unique words each)
+  // Will be re-added after content is expanded to 300-500 words per term
+  // glossaryTerms.forEach((term) => {
+  //   urls.push({
+  //     url: `/glossary/${term.slug}`,
+  //     priority: 0.5,
+  //     changefreq: 'yearly',
+  //   });
+  // });
 
   // Issue pages
   issues.forEach((issue) => {
