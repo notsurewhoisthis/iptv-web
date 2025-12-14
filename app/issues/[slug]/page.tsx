@@ -11,7 +11,7 @@ import {
   getTechnicalGuides,
   getBaseUrl,
 } from '@/lib/data-loader';
-import { BreadcrumbSchema, ArticleWithAuthorSchema, FAQSchema } from '@/components/JsonLd';
+import { BreadcrumbSchema, ArticleWithAuthorSchema } from '@/components/JsonLd';
 import { QuickAnswer, EnhancedAuthorBio, LastUpdated } from '@/components/GeoComponents';
 import { ChevronRight, AlertTriangle, CheckCircle } from 'lucide-react';
 
@@ -95,7 +95,6 @@ export default async function IssuePage({ params }: PageProps) {
 
   return (
     <div className="min-h-screen">
-      <FAQSchema faqs={[]} />
       <ArticleWithAuthorSchema
         title={issue.name}
         description={issue.description}

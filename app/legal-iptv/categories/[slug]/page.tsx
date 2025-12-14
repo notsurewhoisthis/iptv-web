@@ -19,6 +19,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description:
       'Copy the playlist URL and open it in an IPTV player. Always verify rights and availability in your region.',
     alternates: { canonical: `${baseUrl}/legal-iptv/categories/${slug}` },
+    robots: {
+      index: false,
+      follow: true,
+    },
   };
 }
 

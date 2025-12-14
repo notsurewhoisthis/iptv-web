@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
-// Force dynamic rendering so env vars are read at runtime
-export const dynamic = 'force-dynamic';
+// Regenerate sitemap every hour (ISR) instead of on every request
+export const revalidate = 3600;
 
 import {
   getPlayers,
@@ -20,7 +20,6 @@ import {
   getUseCases,
   getTechnicalGuides,
   getStremioArticles,
-  getLegalIptvData,
   getBaseUrl,
 } from '@/lib/data-loader';
 import learnArticles from '@/data/learn-articles.json';
@@ -48,7 +47,6 @@ export async function GET() {
     useCases,
     technicalGuides,
     stremioArticles,
-    legalIptvData,
   ] = await Promise.all([
     getPlayers(),
     getDevices(),
@@ -66,7 +64,6 @@ export async function GET() {
     getUseCases(),
     getTechnicalGuides(),
     getStremioArticles(),
-    getLegalIptvData(),
   ]);
 
   const urls: { url: string; priority: number; changefreq: string; lastmod?: string }[] = [];
@@ -338,40 +335,9 @@ export async function GET() {
     });
   });
 
-  // Legal IPTV detail pages (indexes are in staticPages above)
-  const legalLastMod = legalIptvData.generatedAt;
-  (legalIptvData.categories || []).forEach((c) => {
-    urls.push({
-      url: `/legal-iptv/categories/${c.id}`,
-      priority: 0.6,
-      changefreq: 'monthly',
-      lastmod: legalLastMod,
-    });
-  });
-  (legalIptvData.countries || []).forEach((c) => {
-    urls.push({
-      url: `/legal-iptv/countries/${c.code}`,
-      priority: 0.6,
-      changefreq: 'monthly',
-      lastmod: legalLastMod,
-    });
-  });
-  (legalIptvData.languages || []).forEach((l) => {
-    urls.push({
-      url: `/legal-iptv/languages/${l.code}`,
-      priority: 0.6,
-      changefreq: 'monthly',
-      lastmod: legalLastMod,
-    });
-  });
-  (legalIptvData.fastServices || []).forEach((s) => {
-    urls.push({
-      url: `/legal-iptv/fast/${s.id}`,
-      priority: 0.65,
-      changefreq: 'monthly',
-      lastmod: legalLastMod,
-    });
-  });
+  // Legal IPTV detail pages - EXCLUDED (doorway pages with noindex)
+  // These 427 pages have identical boilerplate content and are now noindexed
+  // to address Google's spam policy. The index pages remain in staticPages above.
 
   // Use case pages
   useCases.forEach((useCase) => {

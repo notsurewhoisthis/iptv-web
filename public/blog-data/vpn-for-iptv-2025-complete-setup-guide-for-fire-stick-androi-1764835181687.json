@@ -17,10 +17,17 @@
   "publishedAt": "2025-12-04T07:59:41.687Z",
   "updatedAt": "2025-12-04T07:59:41.687Z",
   "author": {
-    "name": "IPTV Guide Team",
-    "bio": "Expert IPTV enthusiasts helping you get the most out of streaming technology",
-    "expertise": "IPTV & Streaming Expert"
+    "id": "hakan",
+    "name": "Hakan Gencebecioglu",
+    "bio": "IPTV enthusiast with over 5 years of experience testing streaming players across 15+ devices. Passionate about helping users find the perfect streaming setup and troubleshoot common issues.",
+    "expertise": "IPTV Streaming Expert & Founder"
   },
+  "sources": [
+    {"title": "NordVPN Official Website", "url": "https://nordvpn.com/"},
+    {"title": "ExpressVPN Official Website", "url": "https://www.expressvpn.com/"},
+    {"title": "Surfshark Official Website", "url": "https://surfshark.com/"},
+    {"title": "WireGuard Protocol Documentation", "url": "https://www.wireguard.com/"}
+  ],
   "metrics": {
     "readingTime": 9,
     "wordCount": 2006

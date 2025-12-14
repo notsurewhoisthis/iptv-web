@@ -17,10 +17,17 @@
   "publishedAt": "2025-12-08T12:42:16.934Z",
   "updatedAt": "2025-12-08T12:42:16.934Z",
   "author": {
-    "name": "IPTV Guide Team",
-    "bio": "Expert IPTV enthusiasts helping you get the most out of streaming technology",
-    "expertise": "IPTV & Streaming Expert"
+    "id": "hakan",
+    "name": "Hakan Gencebecioglu",
+    "bio": "IPTV enthusiast with over 5 years of experience testing streaming players across 15+ devices. Passionate about helping users find the perfect streaming setup and troubleshoot common issues.",
+    "expertise": "IPTV Streaming Expert & Founder"
   },
+  "sources": [
+    {"title": "Apple TV User Guide", "url": "https://support.apple.com/guide/apple-tv/welcome/tvos"},
+    {"title": "iPlayTV on App Store", "url": "https://apps.apple.com/app/iplaytv/id1072226801"},
+    {"title": "IPTV Smarters on App Store", "url": "https://apps.apple.com/app/iptv-smarters-player/id1383614816"},
+    {"title": "GSE Smart IPTV on App Store", "url": "https://apps.apple.com/app/gse-smart-iptv/id1028734023"}
+  ],
   "metrics": {
     "readingTime": 10,
     "wordCount": 2184

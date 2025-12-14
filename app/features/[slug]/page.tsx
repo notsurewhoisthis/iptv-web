@@ -11,7 +11,7 @@ import {
   getDeviceFeatureGuides,
   getBaseUrl,
 } from '@/lib/data-loader';
-import { BreadcrumbSchema, FAQSchema, ArticleWithAuthorSchema } from '@/components/JsonLd';
+import { BreadcrumbSchema, ArticleWithAuthorSchema } from '@/components/JsonLd';
 import { QuickAnswer, EnhancedAuthorBio, LastUpdated } from '@/components/GeoComponents';
 import { ChevronRight, Sparkles, Star } from 'lucide-react';
 
@@ -105,7 +105,6 @@ export default async function FeaturePage({ params }: PageProps) {
 
   return (
     <div className="min-h-screen">
-      <FAQSchema faqs={[]} />
       <ArticleWithAuthorSchema
         title={feature.name}
         description={feature.description}

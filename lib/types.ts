@@ -132,10 +132,15 @@ export interface BlogPost {
   publishedAt: string;
   updatedAt: string;
   author: {
+    id?: string;
     name: string;
     bio: string;
     expertise?: string;
   };
+  sources?: Array<{
+    title: string;
+    url: string;
+  }>;
   metrics: {
     readingTime: number;
     wordCount: number;

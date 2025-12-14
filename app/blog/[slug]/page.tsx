@@ -5,9 +5,10 @@ import Image from 'next/image';
 import { getBlogPosts, getBlogPost, getBaseUrl } from '@/lib/data-loader';
 import { normalizeCategory, normalizeTag } from '@/lib/blog-taxonomy';
 import { parseMarkdown } from '@/lib/markdown';
-import { ChevronRight, Clock, Calendar, User, ArrowLeft, Tag } from 'lucide-react';
+import { ChevronRight, Clock, Calendar, User, ArrowLeft, Tag, ExternalLink } from 'lucide-react';
 import { ArticleWithAuthorSchema, BreadcrumbSchema } from '@/components/JsonLd';
-import { QuickAnswer } from '@/components/GeoComponents';
+import { QuickAnswer, EnhancedAuthorBio } from '@/components/GeoComponents';
+import authorsData from '@/data/authors.json';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -240,28 +241,74 @@ export default async function BlogPostPage({ params }: PageProps) {
               </div>
             )}
 
-            {/* Author Card */}
-            <div className="mt-10 bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 md:p-8 shadow-sm border border-gray-200">
-              <div className="flex items-start gap-4">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center flex-shrink-0 shadow-lg">
-                  <User className="h-8 w-8 text-white" />
-                </div>
-                <div>
-                  <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-1">
-                    Written by
-                  </p>
-                  <h3 className="text-xl font-bold text-gray-900 mb-1">
-                    {post.author.name}
-                  </h3>
-                  <p className="text-sm text-gray-500 mb-3">
-                    {post.author.expertise || 'IPTV & Streaming Expert'}
-                  </p>
-                  <p className="text-gray-600 leading-relaxed">
-                    {post.author.bio}
-                  </p>
-                </div>
+            {/* Sources & References */}
+            {post.sources && post.sources.length > 0 && (
+              <div className="mt-10 pt-6 border-t border-gray-200">
+                <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+                  <ExternalLink className="h-5 w-5 text-blue-600" />
+                  Sources & References
+                </h3>
+                <ul className="space-y-2">
+                  {post.sources.map((source, index) => (
+                    <li key={index}>
+                      <a
+                        href={source.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:text-blue-800 hover:underline text-sm flex items-center gap-1"
+                      >
+                        {source.title}
+                        <ExternalLink className="h-3 w-3" />
+                      </a>
+                    </li>
+                  ))}
+                </ul>
               </div>
-            </div>
+            )}
+
+            {/* Enhanced Author Bio */}
+            {(() => {
+              const authorId = post.author.id || 'hakan';
+              const authorProfile = authorsData[authorId as keyof typeof authorsData];
+              if (authorProfile) {
+                return (
+                  <EnhancedAuthorBio
+                    name={authorProfile.name}
+                    title={authorProfile.title}
+                    bio={authorProfile.bio}
+                    expertise={authorProfile.expertise}
+                    credentials={authorProfile.credentials}
+                    yearsExperience={authorProfile.yearsExperience}
+                    articlesWritten={authorProfile.articlesWritten}
+                    socialLinks={authorProfile.socialLinks}
+                  />
+                );
+              }
+              // Fallback to simple author card if author not in database
+              return (
+                <div className="mt-10 bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 md:p-8 shadow-sm border border-gray-200">
+                  <div className="flex items-start gap-4">
+                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center flex-shrink-0 shadow-lg">
+                      <User className="h-8 w-8 text-white" />
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-1">
+                        Written by
+                      </p>
+                      <h3 className="text-xl font-bold text-gray-900 mb-1">
+                        {post.author.name}
+                      </h3>
+                      <p className="text-sm text-gray-500 mb-3">
+                        {post.author.expertise || 'IPTV & Streaming Expert'}
+                      </p>
+                      <p className="text-gray-600 leading-relaxed">
+                        {post.author.bio}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })()}
           </article>
 
           {/* Sidebar */}

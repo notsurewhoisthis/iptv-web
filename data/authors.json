@@ -1,0 +1,24 @@
+{
+  "hakan": {
+    "id": "hakan",
+    "name": "Hakan Gencebecioglu",
+    "title": "IPTV Streaming Expert & Founder",
+    "bio": "IPTV enthusiast with over 5 years of experience testing streaming players across 15+ devices. Passionate about helping users find the perfect streaming setup and troubleshoot common issues.",
+    "expertise": [
+      "IPTV Player Testing",
+      "Streaming Technology",
+      "Device Compatibility",
+      "Troubleshooting"
+    ],
+    "credentials": [
+      "Tested 50+ IPTV players and apps",
+      "Device compatibility specialist for Firestick, Apple TV, Android TV",
+      "Founded IPTV Guide to help streamers find the best solutions"
+    ],
+    "yearsExperience": 5,
+    "articlesWritten": 100,
+    "socialLinks": [
+      { "platform": "Telegram", "url": "https://t.me/heycheyc" }
+    ]
+  }
+}

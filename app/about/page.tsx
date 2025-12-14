@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Shield, Target, Users, CheckCircle } from 'lucide-react';
+import { Shield, Target, Users, CheckCircle, Award, MessageCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'About IPTV Guide - Our Mission & Methodology',
@@ -78,12 +78,12 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-6">What We Cover</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="text-center p-4">
-              <div className="text-3xl font-bold text-blue-600 mb-2">15+</div>
+              <div className="text-3xl font-bold text-blue-600 mb-2">50+</div>
               <div className="text-sm text-gray-600">IPTV Players Reviewed</div>
             </div>
             <div className="text-center p-4">
               <div className="text-3xl font-bold text-blue-600 mb-2">15+</div>
-              <div className="text-sm text-gray-600">Devices Supported</div>
+              <div className="text-sm text-gray-600">Devices Tested</div>
             </div>
             <div className="text-center p-4">
               <div className="text-3xl font-bold text-blue-600 mb-2">500+</div>
@@ -92,6 +92,73 @@ export default function AboutPage() {
             <div className="text-center p-4">
               <div className="text-3xl font-bold text-blue-600 mb-2">100+</div>
               <div className="text-sm text-gray-600">Troubleshooting Articles</div>
+            </div>
+          </div>
+        </section>
+
+        {/* Meet the Team */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Meet the Founder</h2>
+          <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 md:p-8 border border-gray-200">
+            <div className="flex flex-col md:flex-row items-start gap-6">
+              <div className="w-24 h-24 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white text-2xl font-bold flex-shrink-0 shadow-lg">
+                HG
+              </div>
+              <div className="flex-1">
+                <h3 className="text-xl font-bold text-gray-900">Hakan Gencebecioglu</h3>
+                <p className="text-blue-600 font-medium mb-2">IPTV Streaming Expert & Founder</p>
+                <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
+                  <span>5+ years experience</span>
+                  <span className="text-gray-300">|</span>
+                  <span>100+ articles</span>
+                </div>
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  IPTV enthusiast with over 5 years of experience testing streaming players across 15+ devices.
+                  Passionate about helping users find the perfect streaming setup and troubleshoot common issues.
+                </p>
+                <div className="mb-4">
+                  <p className="text-sm font-medium text-gray-700 mb-2">Areas of Expertise:</p>
+                  <div className="flex flex-wrap gap-2">
+                    {['IPTV Player Testing', 'Streaming Technology', 'Device Compatibility', 'Troubleshooting'].map((exp) => (
+                      <span
+                        key={exp}
+                        className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full"
+                      >
+                        {exp}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+                <div className="mb-4">
+                  <p className="text-sm font-medium text-gray-700 mb-2">Credentials:</p>
+                  <ul className="space-y-1">
+                    <li className="flex items-center gap-2 text-sm text-gray-600">
+                      <Award className="h-4 w-4 text-green-500" />
+                      Tested 50+ IPTV players and apps
+                    </li>
+                    <li className="flex items-center gap-2 text-sm text-gray-600">
+                      <Award className="h-4 w-4 text-green-500" />
+                      Device compatibility specialist for Firestick, Apple TV, Android TV
+                    </li>
+                    <li className="flex items-center gap-2 text-sm text-gray-600">
+                      <Award className="h-4 w-4 text-green-500" />
+                      Founded IPTV Guide to help streamers find the best solutions
+                    </li>
+                  </ul>
+                </div>
+                <div className="flex items-center gap-4 pt-4 border-t border-gray-200">
+                  <span className="text-sm text-gray-500">Connect:</span>
+                  <a
+                    href="https://t.me/heycheyc"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 text-blue-600 hover:text-blue-800 text-sm"
+                  >
+                    <MessageCircle className="h-4 w-4" />
+                    Telegram
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </section>

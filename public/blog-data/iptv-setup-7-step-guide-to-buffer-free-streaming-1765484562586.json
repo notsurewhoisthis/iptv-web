@@ -17,10 +17,17 @@
   "publishedAt": "2025-12-11T20:22:42.586Z",
   "updatedAt": "2025-12-11T20:22:42.586Z",
   "author": {
-    "name": "IPTV Guide Team",
-    "bio": "Expert IPTV enthusiasts helping you get the most out of streaming technology",
-    "expertise": "IPTV & Streaming Expert"
+    "id": "hakan",
+    "name": "Hakan Gencebecioglu",
+    "bio": "IPTV enthusiast with over 5 years of experience testing streaming players across 15+ devices. Passionate about helping users find the perfect streaming setup and troubleshoot common issues.",
+    "expertise": "IPTV Streaming Expert & Founder"
   },
+  "sources": [
+    {"title": "Speedtest by Ookla", "url": "https://www.speedtest.net/"},
+    {"title": "Fast.com by Netflix", "url": "https://fast.com/"},
+    {"title": "VLC Network Stream Guide", "url": "https://wiki.videolan.org/Documentation:Streaming_HowTo/"},
+    {"title": "M3U Format Specification", "url": "https://en.wikipedia.org/wiki/M3U"}
+  ],
   "metrics": {
     "readingTime": 15,
     "wordCount": 3168

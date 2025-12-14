@@ -17,10 +17,17 @@
   "publishedAt": "2025-12-10T08:08:14.630Z",
   "updatedAt": "2025-12-10T08:08:14.631Z",
   "author": {
-    "name": "IPTV Guide Team",
-    "bio": "Expert IPTV enthusiasts helping you get the most out of streaming technology",
-    "expertise": "IPTV & Streaming Expert"
+    "id": "hakan",
+    "name": "Hakan Gencebecioglu",
+    "bio": "IPTV enthusiast with over 5 years of experience testing streaming players across 15+ devices. Passionate about helping users find the perfect streaming setup and troubleshoot common issues.",
+    "expertise": "IPTV Streaming Expert & Founder"
   },
+  "sources": [
+    {"title": "TiviMate Official Website", "url": "https://tivimate.com/"},
+    {"title": "TiviMate Companion on Google Play", "url": "https://play.google.com/store/apps/details?id=ar.tvplayer.companion"},
+    {"title": "Downloader App for Fire TV", "url": "https://www.aftvnews.com/downloader/"},
+    {"title": "Amazon Fire TV Developer Options", "url": "https://developer.amazon.com/docs/fire-tv/fire-tv-developer-options.html"}
+  ],
   "metrics": {
     "readingTime": 12,
     "wordCount": 2698
