@@ -59,7 +59,7 @@ export function MobileNav() {
       {/* Hamburger Button */}
       <button
         onClick={() => setIsOpen(true)}
-        className="p-2 -mr-2 text-gray-600 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-lg"
+        className="p-2 -mr-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-lg"
         aria-label="Open navigation menu"
         aria-expanded={isOpen}
         aria-controls="mobile-menu"
@@ -70,7 +70,7 @@ export function MobileNav() {
       {/* Overlay */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black/50 z-40 transition-opacity"
+          className="fixed inset-0 bg-black/60 z-[100] transition-opacity"
           onClick={() => setIsOpen(false)}
           aria-hidden="true"
         />
@@ -79,7 +79,7 @@ export function MobileNav() {
       {/* Slide-in Menu */}
       <div
         id="mobile-menu"
-        className={`fixed top-0 right-0 h-full w-72 bg-white z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 h-full w-72 bg-white dark:bg-gray-950 z-[101] transform transition-transform duration-300 ease-in-out shadow-2xl ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
         role="dialog"
@@ -87,11 +87,11 @@ export function MobileNav() {
         aria-label="Navigation menu"
       >
         {/* Header */}
-        <div className="flex items-center justify-between p-4 border-b border-gray-200">
-          <span className="text-lg font-semibold text-gray-900">Menu</span>
+        <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-800">
+          <span className="text-lg font-semibold text-gray-900 dark:text-white">Menu</span>
           <button
             onClick={() => setIsOpen(false)}
-            className="p-2 -mr-2 text-gray-600 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-lg"
+            className="p-2 -mr-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-lg"
             aria-label="Close navigation menu"
           >
             <X className="h-6 w-6" />
@@ -109,13 +109,13 @@ export function MobileNav() {
                     href={link.href}
                     className={`flex items-center justify-between px-4 py-3 rounded-lg transition-colors ${
                       isActive
-                        ? 'bg-blue-50 text-blue-700 font-medium'
-                        : 'text-gray-700 hover:bg-gray-100'
+                        ? 'bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 font-medium'
+                        : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
                     }`}
                     aria-current={isActive ? 'page' : undefined}
                   >
                     <span>{link.label}</span>
-                    <ChevronRight className="h-4 w-4 text-gray-400" />
+                    <ChevronRight className="h-4 w-4 text-gray-400 dark:text-gray-500" />
                   </Link>
                 </li>
               );
@@ -124,15 +124,15 @@ export function MobileNav() {
         </nav>
 
         {/* Footer Links */}
-        <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-gray-200 bg-gray-50">
-          <div className="flex gap-4 text-sm text-gray-500">
-            <Link href="/about" className="hover:text-gray-700">
+        <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900">
+          <div className="flex gap-4 text-sm text-gray-500 dark:text-gray-400">
+            <Link href="/about" className="hover:text-gray-700 dark:hover:text-gray-200">
               About
             </Link>
-            <Link href="/privacy" className="hover:text-gray-700">
+            <Link href="/privacy" className="hover:text-gray-700 dark:hover:text-gray-200">
               Privacy
             </Link>
-            <Link href="/terms" className="hover:text-gray-700">
+            <Link href="/terms" className="hover:text-gray-700 dark:hover:text-gray-200">
               Terms
             </Link>
           </div>
