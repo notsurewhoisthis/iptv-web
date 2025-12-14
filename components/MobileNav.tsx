@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, ChevronRight } from 'lucide-react';
@@ -24,7 +25,13 @@ const navLinks = [
 
 export function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
+
+  // Track mount state for portal (SSR safety)
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   // Close menu on route change
   useEffect(() => {
@@ -54,32 +61,22 @@ export function MobileNav() {
     return () => document.removeEventListener('keydown', handleEscape);
   }, []);
 
-  return (
-    <div className="md:hidden">
-      {/* Hamburger Button */}
-      <button
-        onClick={() => setIsOpen(true)}
-        className="p-2 -mr-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-lg"
-        aria-label="Open navigation menu"
-        aria-expanded={isOpen}
-        aria-controls="mobile-menu"
-      >
-        <Menu className="h-6 w-6" />
-      </button>
-
+  // Portal content - renders to document.body to escape nav's stacking context
+  const portalContent = (
+    <>
       {/* Overlay */}
-      {isOpen && (
-        <div
-          className="fixed inset-0 bg-black/60 z-[100] transition-opacity"
-          onClick={() => setIsOpen(false)}
-          aria-hidden="true"
-        />
-      )}
+      <div
+        className={`fixed inset-0 bg-black/60 z-[9998] transition-opacity duration-300 ${
+          isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+        }`}
+        onClick={() => setIsOpen(false)}
+        aria-hidden="true"
+      />
 
       {/* Slide-in Menu */}
       <div
         id="mobile-menu"
-        className={`fixed top-0 right-0 h-full w-72 bg-white dark:bg-gray-950 z-[101] transform transition-transform duration-300 ease-in-out shadow-2xl ${
+        className={`fixed top-0 right-0 h-full w-72 bg-white dark:bg-gray-950 z-[9999] transform transition-transform duration-300 ease-in-out shadow-2xl ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
         role="dialog"
@@ -99,7 +96,7 @@ export function MobileNav() {
         </div>
 
         {/* Navigation Links */}
-        <nav className="p-4">
+        <nav className="p-4 overflow-y-auto max-h-[calc(100vh-140px)]">
           <ul className="space-y-1">
             {navLinks.map((link) => {
               const isActive = pathname === link.href || pathname.startsWith(`${link.href}/`);
@@ -138,6 +135,24 @@ export function MobileNav() {
           </div>
         </div>
       </div>
+    </>
+  );
+
+  return (
+    <div className="md:hidden">
+      {/* Hamburger Button */}
+      <button
+        onClick={() => setIsOpen(true)}
+        className="p-2 -mr-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-lg"
+        aria-label="Open navigation menu"
+        aria-expanded={isOpen}
+        aria-controls="mobile-menu"
+      >
+        <Menu className="h-6 w-6" />
+      </button>
+
+      {/* Portal to document.body - escapes nav's backdrop-blur stacking context */}
+      {mounted && createPortal(portalContent, document.body)}
     </div>
   );
 }
