@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { getBlogPosts, getBaseUrl } from '@/lib/data-loader';
+import { getBlogPosts, getBlogTaxonomyContent, getBaseUrl } from '@/lib/data-loader';
 import { getBlogCategories, normalizeCategory } from '@/lib/blog-taxonomy';
 import { CollectionPageSchema, BreadcrumbSchema } from '@/components/JsonLd';
 import { QuickAnswer, LastUpdated } from '@/components/GeoComponents';
@@ -25,9 +25,11 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params, searchParams }: PageProps): Promise<Metadata> {
   const { category } = await params;
   const posts = await getBlogPosts();
+  const taxonomy = await getBlogTaxonomyContent();
   const categories = getBlogCategories(posts);
   const categoryInfo = categories.find((c) => c.slug === category);
   const label = categoryInfo?.label || category.replace(/-/g, ' ');
+  const categoryContent = taxonomy.categories[category];
 
   const categoryPosts = posts.filter(
     (post) => normalizeCategory(post.category)?.slug === category
@@ -47,22 +49,25 @@ export async function generateMetadata({ params, searchParams }: PageProps): Pro
     safePage > 1
       ? `${baseUrl}/blog/category/${category}?page=${safePage}`
       : `${baseUrl}/blog/category/${category}`;
+  const isThin = categoryPosts.length < 2;
+  const description = categoryContent?.intro
+    ? categoryContent.intro
+    : `Browse IPTV articles in the \"${label}\" category. Practical setup guides, troubleshooting, and player insights.`;
 
   return {
     title:
       safePage > 1
         ? `${label} IPTV Blog Posts - Guides & News (Page ${safePage})`
         : `${label} IPTV Blog Posts - Guides & News`,
-    description: `Browse IPTV articles in the "${label}" category. Practical setup guides, troubleshooting, and player insights.`,
+    description,
     keywords: [
       `${label.toLowerCase()} iptv`,
       `${label.toLowerCase()} guides`,
       'iptv blog category',
       'iptv tips',
     ].join(', '),
-    // noindex until unique intro content is added (currently just post lists)
     robots: {
-      index: false,
+      index: !isThin,
       follow: true,
     },
     alternates: {
@@ -74,9 +79,11 @@ export async function generateMetadata({ params, searchParams }: PageProps): Pro
 export default async function BlogCategoryPage({ params, searchParams }: PageProps) {
   const { category } = await params;
   const posts = await getBlogPosts();
+  const taxonomy = await getBlogTaxonomyContent();
   const categories = getBlogCategories(posts);
   const categoryInfo = categories.find((c) => c.slug === category);
   const label = categoryInfo?.label || category.replace(/-/g, ' ');
+  const categoryContent = taxonomy.categories[category];
 
   const categoryPosts = posts.filter(
     (post) => normalizeCategory(post.category)?.slug === category
@@ -94,6 +101,10 @@ export default async function BlogCategoryPage({ params, searchParams }: PagePro
   const safePage = Math.min(currentPage, totalPages);
   const startIndex = (safePage - 1) * PAGE_SIZE;
   const paginatedPosts = categoryPosts.slice(startIndex, startIndex + PAGE_SIZE);
+  const lastUpdated = categoryPosts
+    .map((post) => post.updatedAt || post.publishedAt)
+    .map((value) => new Date(value))
+    .sort((a, b) => b.getTime() - a.getTime())[0];
 
   return (
     <div className="min-h-screen py-8">
@@ -122,13 +133,31 @@ export default async function BlogCategoryPage({ params, searchParams }: PagePro
           <p className="text-gray-600">
             {categoryPosts.length} posts in the “{label}” category.
           </p>
-          <LastUpdated date={new Date().toISOString()} />
+          {lastUpdated && <LastUpdated date={lastUpdated.toISOString()} />}
         </header>
 
-        <QuickAnswer
-          question={`What will I learn in ${label} posts?`}
-          answer={`These articles focus on ${label.toLowerCase()} topics for IPTV streaming, with step‑by‑step guidance and verified fixes.`}
-        />
+        {categoryContent ? (
+          <>
+            <QuickAnswer
+              question={categoryContent.quickAnswer.question}
+              answer={categoryContent.quickAnswer.answer}
+              highlight={categoryContent.quickAnswer.highlight}
+            />
+            <div className="mt-6 grid md:grid-cols-3 gap-4">
+              {categoryContent.highlights.map((item) => (
+                <div key={item} className="rounded-lg border border-gray-200 p-4 text-sm text-gray-700">
+                  {item}
+                </div>
+              ))}
+            </div>
+            <p className="text-gray-600 mt-6">{categoryContent.intro}</p>
+          </>
+        ) : (
+          <QuickAnswer
+            question={`What will I learn in ${label} posts?`}
+            answer={`These articles focus on ${label.toLowerCase()} topics for IPTV streaming, with step-by-step guidance and verified fixes.`}
+          />
+        )}
 
         <div className="space-y-6 mt-8">
           {paginatedPosts.map((post) => {

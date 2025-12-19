@@ -22,6 +22,8 @@ import type {
   VideoMappings,
   StremioArticle,
   LegalIptvData,
+  GuideTopic,
+  BlogTaxonomyContent,
 } from './types';
 
 const DATA_DIR = path.join(process.cwd(), 'data');
@@ -29,6 +31,7 @@ const BLOG_DIR = path.join(process.cwd(), 'public', 'blog-data');
 
 // Cache for data to avoid repeated file reads
 const cache: Record<string, unknown> = {};
+const metaCache: Record<string, string> = {};
 
 async function loadJSON<T>(filename: string): Promise<T> {
   const cacheKey = filename;
@@ -41,6 +44,18 @@ async function loadJSON<T>(filename: string): Promise<T> {
   const data = JSON.parse(content) as T;
   cache[cacheKey] = data;
   return data;
+}
+
+async function getFileLastUpdated(filename: string): Promise<string> {
+  const cacheKey = `${filename}:mtime`;
+  if (metaCache[cacheKey]) {
+    return metaCache[cacheKey];
+  }
+  const filePath = path.join(DATA_DIR, filename);
+  const stats = await fs.stat(filePath);
+  const iso = stats.mtime.toISOString();
+  metaCache[cacheKey] = iso;
+  return iso;
 }
 
 // Master data loaders
@@ -201,6 +216,31 @@ export async function getTechnicalGuides(): Promise<TechnicalGuide[]> {
 export async function getTechnicalGuide(slug: string): Promise<TechnicalGuide | null> {
   const guides = await getTechnicalGuides();
   return guides.find((g) => g.slug === slug) || null;
+}
+
+export async function getGuideTopics(): Promise<GuideTopic[]> {
+  return loadJSON<GuideTopic[]>('guide-topics.json');
+}
+
+export async function getGuideTopic(slug: string): Promise<GuideTopic | null> {
+  const topics = await getGuideTopics();
+  return topics.find((t) => t.slug === slug) || null;
+}
+
+export async function getBlogTaxonomyContent(): Promise<BlogTaxonomyContent> {
+  return loadJSON<BlogTaxonomyContent>('blog-taxonomy-content.json');
+}
+
+export async function getDevicesLastUpdated(): Promise<string> {
+  return getFileLastUpdated('devices.json');
+}
+
+export async function getFeaturesLastUpdated(): Promise<string> {
+  return getFileLastUpdated('features.json');
+}
+
+export async function getIssuesLastUpdated(): Promise<string> {
+  return getFileLastUpdated('issues.json');
 }
 
 // Stremio knowledge base (programmatic articles)

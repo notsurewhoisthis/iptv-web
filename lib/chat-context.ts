@@ -32,15 +32,6 @@ export async function generateSystemPrompt(): Promise<string> {
     .map((b) => `- ${b.title}: /best/${b.slug}`)
     .join('\n');
 
-  // Device categories for setup guides
-  const deviceCategories = {
-    firestick: devices.filter(d => d.slug.includes('fire') || d.slug === 'firestick'),
-    appleTv: devices.filter(d => d.slug.includes('apple') || d.slug === 'ios' || d.slug === 'mac'),
-    androidTv: devices.filter(d => d.os?.toLowerCase().includes('android') || d.slug.includes('android')),
-    smartTv: devices.filter(d => d.category === 'smart-tv'),
-    iptvBox: devices.filter(d => d.category === 'iptv-box'),
-  };
-
   // Popular troubleshooting issues
   const troubleshootingIssues = [
     'buffering - Stream keeps buffering or freezing',

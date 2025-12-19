@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { getBlogPosts, getBaseUrl } from '@/lib/data-loader';
+import { getBlogPosts, getBlogTaxonomyContent, getBaseUrl } from '@/lib/data-loader';
 import { getBlogTags, normalizeTag } from '@/lib/blog-taxonomy';
 import { CollectionPageSchema, BreadcrumbSchema } from '@/components/JsonLd';
 import { QuickAnswer, LastUpdated } from '@/components/GeoComponents';
@@ -25,9 +25,11 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params, searchParams }: PageProps): Promise<Metadata> {
   const { tag } = await params;
   const posts = await getBlogPosts();
+  const taxonomy = await getBlogTaxonomyContent();
   const tags = getBlogTags(posts);
   const tagInfo = tags.find((t) => t.slug === tag);
   const label = tagInfo?.label || tag.replace(/-/g, ' ');
+  const tagContent = taxonomy.tags[tag];
 
   const tagPosts = posts.filter((post) =>
     (post.tags || []).some((t) => normalizeTag(t)?.slug === tag)
@@ -47,22 +49,25 @@ export async function generateMetadata({ params, searchParams }: PageProps): Pro
     safePage > 1
       ? `${baseUrl}/blog/tag/${tag}?page=${safePage}`
       : `${baseUrl}/blog/tag/${tag}`;
+  const isThin = tagPosts.length < 2;
+  const description = tagContent?.intro
+    ? tagContent.intro
+    : `Browse IPTV articles tagged \"${label}\". Setup guides, troubleshooting, and player insights.`;
 
   return {
     title:
       safePage > 1
         ? `${label} IPTV Blog Posts - Guides & News (Page ${safePage})`
         : `${label} IPTV Blog Posts - Guides & News`,
-    description: `Browse IPTV articles tagged "${label}". Setup guides, troubleshooting, and player insights.`,
+    description,
     keywords: [
       `${label.toLowerCase()} iptv`,
       `${label.toLowerCase()} guides`,
       'iptv blog',
       'iptv tips',
     ].join(', '),
-    // noindex until unique intro content is added (currently just post lists)
     robots: {
-      index: false,
+      index: !isThin,
       follow: true,
     },
     alternates: {
@@ -74,9 +79,11 @@ export async function generateMetadata({ params, searchParams }: PageProps): Pro
 export default async function BlogTagPage({ params, searchParams }: PageProps) {
   const { tag } = await params;
   const posts = await getBlogPosts();
+  const taxonomy = await getBlogTaxonomyContent();
   const tags = getBlogTags(posts);
   const tagInfo = tags.find((t) => t.slug === tag);
   const label = tagInfo?.label || tag.replace(/-/g, ' ');
+  const tagContent = taxonomy.tags[tag];
 
   const tagPosts = posts.filter((post) =>
     (post.tags || []).some((t) => normalizeTag(t)?.slug === tag)
@@ -94,6 +101,10 @@ export default async function BlogTagPage({ params, searchParams }: PageProps) {
   const safePage = Math.min(currentPage, totalPages);
   const startIndex = (safePage - 1) * PAGE_SIZE;
   const paginatedPosts = tagPosts.slice(startIndex, startIndex + PAGE_SIZE);
+  const lastUpdated = tagPosts
+    .map((post) => post.updatedAt || post.publishedAt)
+    .map((value) => new Date(value))
+    .sort((a, b) => b.getTime() - a.getTime())[0];
 
   return (
     <div className="min-h-screen py-8">
@@ -122,13 +133,31 @@ export default async function BlogTagPage({ params, searchParams }: PageProps) {
           <p className="text-gray-600">
             {tagPosts.length} posts tagged “{label}”.
           </p>
-          <LastUpdated date={new Date().toISOString()} />
+          {lastUpdated && <LastUpdated date={lastUpdated.toISOString()} />}
         </header>
 
-        <QuickAnswer
-          question={`What will I learn in ${label} posts?`}
-          answer={`These articles cover ${label.toLowerCase()} topics, including setup steps, common problems, and best‑practice recommendations for IPTV streaming.`}
-        />
+        {tagContent ? (
+          <>
+            <QuickAnswer
+              question={tagContent.quickAnswer.question}
+              answer={tagContent.quickAnswer.answer}
+              highlight={tagContent.quickAnswer.highlight}
+            />
+            <div className="mt-6 grid md:grid-cols-3 gap-4">
+              {tagContent.highlights.map((item) => (
+                <div key={item} className="rounded-lg border border-gray-200 p-4 text-sm text-gray-700">
+                  {item}
+                </div>
+              ))}
+            </div>
+            <p className="text-gray-600 mt-6">{tagContent.intro}</p>
+          </>
+        ) : (
+          <QuickAnswer
+            question={`What will I learn in ${label} posts?`}
+            answer={`These articles cover ${label.toLowerCase()} topics, including setup steps, common problems, and best-practice recommendations for IPTV streaming.`}
+          />
+        )}
 
         <div className="space-y-6 mt-8">
           {paginatedPosts.map((post) => {

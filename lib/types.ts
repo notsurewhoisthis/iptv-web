@@ -148,6 +148,22 @@ export interface BlogPost {
   featuredImage?: string;
 }
 
+export interface BlogTaxonomyContentEntry {
+  title: string;
+  intro: string;
+  highlights: string[];
+  quickAnswer: {
+    question: string;
+    answer: string;
+    highlight?: string;
+  };
+}
+
+export interface BlogTaxonomyContent {
+  tags: Record<string, BlogTaxonomyContentEntry>;
+  categories: Record<string, BlogTaxonomyContentEntry>;
+}
+
 export interface KnowledgeBaseArticle {
   slug: string;
   title: string;
@@ -554,6 +570,7 @@ export interface TechnicalGuide {
   metaTitle: string;
   description: string;
   category: 'troubleshooting' | 'setup' | 'optimization';
+  topic?: string;
   quickAnswer: {
     question: string;
     answer: string;
@@ -574,4 +591,24 @@ export interface TechnicalGuide {
   // Relationship fields for internal linking
   relatedPlayers?: string[];
   relatedDevices?: string[];
+}
+
+export interface GuideTopic {
+  slug: string;
+  title: string;
+  metaTitle: string;
+  description: string;
+  intro: string;
+  quickAnswer: {
+    question: string;
+    answer: string;
+    highlight?: string;
+  };
+  guideSlugs: string[];
+  keywords: string[];
+  lastUpdated: string;
+  author: {
+    name: string;
+    expertise: string;
+  };
 }

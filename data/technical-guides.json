@@ -92,7 +92,7 @@
       "why does iptv buffer",
       "iptv lag fix"
     ],
-    "lastUpdated": "2025-12-01T00:00:00.000Z",
+    "lastUpdated": "2025-12-19",
     "author": {
       "name": "IPTV Guide Team",
       "expertise": "IPTV & Streaming Specialists"
@@ -100,7 +100,10 @@
     "relatedGuides": [
       "m3u-playlist-not-working",
       "xtream-codes-errors",
-      "iptv-no-channels-fix"
+      "iptv-no-channels-fix",
+      "iptv-buffering-wifi-optimization",
+      "iptv-buffering-vpn-throttling",
+      "iptv-buffering-firestick"
     ],
     "relatedPlayers": [
       "tivimate",
@@ -112,7 +115,8 @@
       "firestick",
       "android-tv",
       "samsung-tv"
-    ]
+    ],
+    "topic": "buffering"
   },
   {
     "slug": "setup-epg-guide",
@@ -233,7 +237,7 @@
       "electronic program guide",
       "epg url iptv"
     ],
-    "lastUpdated": "2025-12-01T00:00:00.000Z",
+    "lastUpdated": "2025-12-19",
     "author": {
       "name": "IPTV Guide Team",
       "expertise": "IPTV & Streaming Specialists"
@@ -242,7 +246,10 @@
       "xtream-codes-complete-guide",
       "m3u-playlist-complete-guide",
       "xtream-codes-setup",
-      "setup-vpn-for-iptv"
+      "setup-vpn-for-iptv",
+      "epg-not-loading-fix",
+      "epg-time-offset-fix",
+      "epg-xmltv-setup"
     ],
     "relatedPlayers": [
       "tivimate",
@@ -254,7 +261,8 @@
       "firestick",
       "android-tv",
       "samsung-tv"
-    ]
+    ],
+    "topic": "epg"
   },
   {
     "slug": "m3u-playlist-not-working",
@@ -3002,14 +3010,17 @@
       "tivimate recording",
       "how to record iptv"
     ],
-    "lastUpdated": "2025-01-15T00:00:00.000Z",
+    "lastUpdated": "2025-12-19",
     "author": {
       "name": "IPTV Guide Team",
       "expertise": "IPTV & Streaming Specialists"
     },
     "relatedGuides": [
       "multi-room-iptv-setup",
-      "cast-iptv-to-chromecast"
+      "cast-iptv-to-chromecast",
+      "iptv-catchup-setup",
+      "iptv-timeshift-setup",
+      "catchup-vs-recording"
     ],
     "relatedPlayers": [
       "tivimate",
@@ -3020,7 +3031,8 @@
       "firestick",
       "android-tv",
       "samsung-tv"
-    ]
+    ],
+    "topic": "catchup-timeshift"
   },
   {
     "slug": "multi-room-iptv-setup",
@@ -3194,6 +3206,1126 @@
     ],
     "relatedDevices": [
       "mag-box"
+    ]
+  },
+  {
+    "slug": "epg-not-loading-fix",
+    "title": "EPG Not Loading? Fix Empty IPTV Guide Grids",
+    "metaTitle": "EPG Not Loading - Fix Empty IPTV Guide Grids (2025)",
+    "description": "Fix EPGs that show a blank grid or never load. Verify XMLTV URLs, match tvg-id values, and refresh guide data the right way.",
+    "category": "troubleshooting",
+    "topic": "epg",
+    "quickAnswer": {
+      "question": "Why is my IPTV EPG empty?",
+      "answer": "Most empty EPGs are caused by a bad XMLTV URL or missing tvg-id matches. Confirm the XMLTV file loads, then map channels and force a refresh in your player.",
+      "highlight": "EPG URLs must return XMLTV data and match channel tvg-id values."
+    },
+    "content": {
+      "intro": "An empty EPG usually means the guide data did not load or the channel IDs do not match your playlist. The fixes below help you validate the XMLTV source, align tvg-id values, and rebuild the guide cache in your player.",
+      "sections": [
+        {
+          "title": "Confirm the XMLTV URL loads",
+          "content": "Open the EPG URL in a browser. It should download an XMLTV file or display XML. If it redirects, requires login, or returns an error, your player will show an empty grid. Replace the URL with a working XMLTV source from your provider."
+        },
+        {
+          "title": "Match tvg-id values in the playlist",
+          "content": "EPG data is matched by tvg-id (or sometimes tvg-name). If your M3U has missing or mismatched tvg-id values, the guide will not map. Use a playlist editor to confirm tvg-id values align with your XMLTV file."
+        },
+        {
+          "title": "Clear cache and force a guide refresh",
+          "content": "Most players cache EPG data. Clear the EPG cache, re-add the XMLTV URL, and trigger a full refresh. Use a 12 to 24 hour refresh interval so the guide stays current without overloading the app."
+        },
+        {
+          "title": "Fix timezone and format pitfalls",
+          "content": "If the guide loads but appears blank for current time, check timezone settings. Some providers require a manual offset in the player. Also verify the XMLTV file uses proper encoding (UTF-8) and valid date formats."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How do I test an EPG URL?",
+        "answer": "Paste the XMLTV URL into a browser. If it downloads XML or shows XML content, it is working. If it errors or redirects, the URL is not usable in most IPTV apps."
+      },
+      {
+        "question": "What does tvg-id do?",
+        "answer": "tvg-id links a channel in your M3U playlist to the matching program listings in the XMLTV file. Without matching tvg-id values, EPG data will not appear."
+      },
+      {
+        "question": "Should I use multiple EPG sources?",
+        "answer": "Only if your player supports merging or priority. Too many sources can slow loading. Start with one reliable XMLTV source from your provider."
+      }
+    ],
+    "keywords": [
+      "epg not loading",
+      "iptv epg empty",
+      "xmltv url",
+      "tvg-id mapping",
+      "fix iptv guide"
+    ],
+    "lastUpdated": "2025-12-19",
+    "author": {
+      "name": "IPTV Guide Team",
+      "expertise": "IPTV & Streaming Specialists"
+    },
+    "relatedGuides": [
+      "setup-epg-guide",
+      "epg-time-offset-fix",
+      "epg-xmltv-setup"
+    ],
+    "relatedPlayers": [
+      "tivimate",
+      "iptv-smarters",
+      "perfect-player",
+      "ott-navigator"
+    ],
+    "relatedDevices": [
+      "firestick",
+      "android-tv",
+      "samsung-tv"
+    ]
+  },
+  {
+    "slug": "epg-time-offset-fix",
+    "title": "EPG Time Offset Fix - Correct IPTV Guide Times",
+    "metaTitle": "EPG Time Offset Fix - Correct IPTV Guide Times (2025)",
+    "description": "Fix IPTV EPG schedules that appear hours ahead or behind. Adjust timezone offsets, device clock settings, and provider XMLTV time shifts.",
+    "category": "troubleshooting",
+    "topic": "epg",
+    "quickAnswer": {
+      "question": "How do I fix an IPTV EPG time offset?",
+      "answer": "Set your device timezone correctly, then apply a manual EPG offset in your player if needed. If the provider uses UTC, add the correct shift for your local time.",
+      "highlight": "EPG times are usually UTC. A wrong offset will shift every program."
+    },
+    "content": {
+      "intro": "EPG time offsets happen when your player interprets XMLTV timestamps in the wrong timezone. The fix is usually a simple offset, but you should validate your device time, player settings, and provider format first.",
+      "sections": [
+        {
+          "title": "Verify device timezone and clock",
+          "content": "Ensure your device time and timezone are correct. If the device clock is wrong, the guide will show incorrect times no matter what player setting you change."
+        },
+        {
+          "title": "Apply an EPG offset in the player",
+          "content": "Most players include an EPG time shift option. If the guide is ahead by 2 hours, set -2. If it is behind by 3 hours, set +3. Small changes often fix the entire schedule."
+        },
+        {
+          "title": "Check whether XMLTV uses UTC",
+          "content": "Many providers publish XMLTV timestamps in UTC. If your player assumes local time, you will see a consistent shift. Use the player timezone setting or offset field to correct it."
+        },
+        {
+          "title": "Rebuild the guide cache",
+          "content": "After adjusting offsets, clear the EPG cache and refresh. This forces the app to rebuild the guide using the new timezone settings."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Why is every program 1 or 2 hours off?",
+        "answer": "That usually means the XMLTV timestamps are in UTC while your player expects local time. Apply a manual offset to align the schedule."
+      },
+      {
+        "question": "Do I need to change my device time zone?",
+        "answer": "Yes. Always make sure your device timezone is correct first. Then use the player offset if the guide still shifts."
+      },
+      {
+        "question": "Will changing the offset break recordings?",
+        "answer": "The correct offset improves recordings because schedules align with real time. An incorrect offset will cause recordings to start early or late."
+      }
+    ],
+    "keywords": [
+      "epg time offset",
+      "iptv guide wrong time",
+      "xmltv timezone",
+      "epg shift",
+      "iptv epg schedule"
+    ],
+    "lastUpdated": "2025-12-19",
+    "author": {
+      "name": "IPTV Guide Team",
+      "expertise": "IPTV & Streaming Specialists"
+    },
+    "relatedGuides": [
+      "setup-epg-guide",
+      "epg-not-loading-fix",
+      "epg-refresh-schedule"
+    ],
+    "relatedPlayers": [
+      "tivimate",
+      "iptv-smarters",
+      "perfect-player",
+      "ott-navigator"
+    ],
+    "relatedDevices": [
+      "firestick",
+      "android-tv",
+      "apple-tv"
+    ]
+  },
+  {
+    "slug": "epg-logos-missing",
+    "title": "EPG Logos Missing? Fix IPTV Channel Logos",
+    "metaTitle": "EPG Logos Missing - Fix IPTV Channel Logos (2025)",
+    "description": "Restore missing channel logos in IPTV guides. Confirm tvg-logo tags, logo URLs, and player logo settings.",
+    "category": "troubleshooting",
+    "topic": "epg",
+    "quickAnswer": {
+      "question": "Why are my IPTV channel logos missing?",
+      "answer": "Most missing logos are caused by empty tvg-logo tags or broken image URLs in the M3U. Add valid logo URLs or map logos in your player settings.",
+      "highlight": "Logos come from tvg-logo URLs in the playlist, not the EPG file."
+    },
+    "content": {
+      "intro": "Channel logos are pulled from the tvg-logo field in your M3U or from a player-specific logo mapping. If that URL is missing or blocked, logos will not appear in the guide.",
+      "sections": [
+        {
+          "title": "Check tvg-logo tags in the M3U",
+          "content": "Open your playlist and confirm each channel includes a tvg-logo URL. The link must be publicly accessible and point to a valid image format like PNG or JPG."
+        },
+        {
+          "title": "Validate logo URLs",
+          "content": "Paste a tvg-logo URL into a browser to confirm it loads. If it returns 403 or 404, replace it with a working logo source."
+        },
+        {
+          "title": "Use player logo mapping tools",
+          "content": "Many IPTV apps allow manual logo mapping. If your playlist is missing logos, use the app settings or a playlist editor to apply a logo pack."
+        },
+        {
+          "title": "Clear cache after changes",
+          "content": "Logos are cached aggressively. Clear the app cache or rebuild the channel list after updating logo URLs to see the changes."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does the EPG file contain logos?",
+        "answer": "Usually no. Logos are typically stored in the M3U as tvg-logo URLs. Some providers include logos in separate packs."
+      },
+      {
+        "question": "What image size works best for logos?",
+        "answer": "Square PNGs around 200 to 400 pixels are a safe choice for most players. Large images slow loading."
+      },
+      {
+        "question": "Why do some logos appear and others do not?",
+        "answer": "The missing ones usually have broken tvg-logo URLs. Replace those URLs with working images."
+      }
+    ],
+    "keywords": [
+      "iptv logos missing",
+      "tvg-logo",
+      "epg channel logos",
+      "iptv logo fix",
+      "m3u logos"
+    ],
+    "lastUpdated": "2025-12-19",
+    "author": {
+      "name": "IPTV Guide Team",
+      "expertise": "IPTV & Streaming Specialists"
+    },
+    "relatedGuides": [
+      "setup-epg-guide",
+      "epg-not-loading-fix",
+      "m3u-playlist-not-working"
+    ],
+    "relatedPlayers": [
+      "tivimate",
+      "iptv-smarters",
+      "kodi"
+    ],
+    "relatedDevices": [
+      "firestick",
+      "android-tv",
+      "samsung-tv"
+    ]
+  },
+  {
+    "slug": "epg-refresh-schedule",
+    "title": "Best EPG Refresh Schedule for IPTV",
+    "metaTitle": "Best EPG Refresh Schedule for IPTV (2025)",
+    "description": "Set the right EPG refresh interval to keep guide data accurate without slowing your IPTV app.",
+    "category": "optimization",
+    "topic": "epg",
+    "quickAnswer": {
+      "question": "How often should I refresh my IPTV EPG?",
+      "answer": "Most users should refresh every 12 to 24 hours. Frequent refreshes can slow large playlists without improving accuracy.",
+      "highlight": "A daily refresh balances accuracy and performance."
+    },
+    "content": {
+      "intro": "EPG refresh frequency impacts performance and accuracy. Large playlists can take minutes to refresh, so the goal is to keep data fresh without overwhelming your device or provider.",
+      "sections": [
+        {
+          "title": "Use a 12 to 24 hour refresh window",
+          "content": "Daily refreshes work for most providers. A 12 hour schedule updates more frequently for sports and fast changing guides. Avoid hourly refreshes unless your provider specifically recommends it."
+        },
+        {
+          "title": "Schedule refreshes during off hours",
+          "content": "Some apps allow scheduling. Set refreshes late night or early morning to avoid slowdowns during peak viewing time."
+        },
+        {
+          "title": "Reduce guide scope if it is too slow",
+          "content": "If refreshes take too long, reduce your playlist size or disable unused groups. Smaller lists refresh faster and reduce crashes."
+        },
+        {
+          "title": "Force a manual refresh after changes",
+          "content": "Any time you add a new playlist or fix tvg-id mappings, run a manual refresh to rebuild guide data immediately."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does refreshing too often hurt performance?",
+        "answer": "Yes. Frequent refreshes increase CPU usage and can slow or crash some IPTV players, especially on large playlists."
+      },
+      {
+        "question": "Why does my EPG refresh take so long?",
+        "answer": "Large playlists and slow XMLTV servers both increase refresh time. Remove unused groups and use a reliable XMLTV source."
+      },
+      {
+        "question": "Should I refresh manually?",
+        "answer": "Manual refresh is useful after a playlist change. For regular use, an automatic 12 to 24 hour refresh is usually enough."
+      }
+    ],
+    "keywords": [
+      "epg refresh",
+      "iptv guide refresh",
+      "xmltv refresh schedule",
+      "iptv epg optimization",
+      "epg update interval"
+    ],
+    "lastUpdated": "2025-12-19",
+    "author": {
+      "name": "IPTV Guide Team",
+      "expertise": "IPTV & Streaming Specialists"
+    },
+    "relatedGuides": [
+      "setup-epg-guide",
+      "epg-not-loading-fix",
+      "epg-time-offset-fix"
+    ],
+    "relatedPlayers": [
+      "tivimate",
+      "iptv-smarters",
+      "ott-navigator"
+    ],
+    "relatedDevices": [
+      "firestick",
+      "android-tv",
+      "samsung-tv"
+    ]
+  },
+  {
+    "slug": "epg-xmltv-setup",
+    "title": "How to Add XMLTV EPG to IPTV",
+    "metaTitle": "How to Add XMLTV EPG to IPTV Players (2025)",
+    "description": "Step-by-step XMLTV setup for IPTV players. Add the EPG URL, map channels, and verify the guide loads correctly.",
+    "category": "setup",
+    "topic": "epg",
+    "quickAnswer": {
+      "question": "How do I add XMLTV EPG data to IPTV?",
+      "answer": "Copy your provider's XMLTV URL, paste it into the EPG or guide settings of your player, then refresh and map channels if needed.",
+      "highlight": "XMLTV is separate from your M3U. You need both for a working guide."
+    },
+    "content": {
+      "intro": "XMLTV is the most common format for IPTV EPG data. This guide walks you through adding the XMLTV URL, refreshing the guide, and mapping channels so program data appears correctly.",
+      "sections": [
+        {
+          "title": "Find the correct XMLTV URL",
+          "content": "Most IPTV providers supply an XMLTV URL alongside your playlist. If you have multiple URLs, use the one labeled XMLTV or EPG. Test it in a browser before adding it to your player."
+        },
+        {
+          "title": "Add XMLTV in your player",
+          "content": "Open the player settings, locate the EPG or guide section, and paste the XMLTV URL. Save the settings and trigger an EPG refresh."
+        },
+        {
+          "title": "Map channels and verify data",
+          "content": "If the guide loads but some channels are missing, map tvg-id values manually. Most players include a channel mapping screen for this step."
+        },
+        {
+          "title": "Tune refresh and cache settings",
+          "content": "Set the refresh interval to 12 or 24 hours and clear the EPG cache after changes. This keeps data fresh without slowing your player."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Is XMLTV required for IPTV?",
+        "answer": "It is not required for playback, but it is required for program guides, schedules, and DVR features."
+      },
+      {
+        "question": "Can I use a third party XMLTV source?",
+        "answer": "Yes, but matching tvg-id values can be harder. Provider XMLTV sources are usually the best match for your playlist."
+      },
+      {
+        "question": "Why does XMLTV load but show no programs?",
+        "answer": "The most common cause is missing or mismatched tvg-id values. Align your playlist metadata with the XMLTV file."
+      }
+    ],
+    "keywords": [
+      "xmltv setup",
+      "iptv epg xmltv",
+      "add epg url",
+      "iptv guide setup",
+      "xmltv mapping"
+    ],
+    "lastUpdated": "2025-12-19",
+    "author": {
+      "name": "IPTV Guide Team",
+      "expertise": "IPTV & Streaming Specialists"
+    },
+    "relatedGuides": [
+      "setup-epg-guide",
+      "epg-not-loading-fix",
+      "epg-time-offset-fix"
+    ],
+    "relatedPlayers": [
+      "tivimate",
+      "iptv-smarters",
+      "perfect-player",
+      "ott-navigator"
+    ],
+    "relatedDevices": [
+      "firestick",
+      "android-tv",
+      "samsung-tv"
+    ]
+  },
+  {
+    "slug": "iptv-buffering-firestick",
+    "title": "Fix IPTV Buffering on Firestick",
+    "metaTitle": "Fix IPTV Buffering on Firestick (2025)",
+    "description": "Firestick buffering fixes for IPTV: network tuning, cache cleanup, and player settings that improve stability.",
+    "category": "troubleshooting",
+    "topic": "buffering",
+    "quickAnswer": {
+      "question": "Why does IPTV buffer on Firestick?",
+      "answer": "Firestick buffering is usually caused by Wi-Fi instability, app cache bloat, or aggressive stream quality. Use Ethernet, clear cache, and lower buffer load if needed.",
+      "highlight": "A wired adapter and a clean app cache solve most Firestick buffering cases."
+    },
+    "content": {
+      "intro": "Firestick devices are sensitive to Wi-Fi congestion and background apps. These fixes target the most common causes of IPTV buffering on Fire TV hardware.",
+      "sections": [
+        {
+          "title": "Stabilize your network connection",
+          "content": "Use an Ethernet adapter if possible. If you stay on Wi-Fi, use the 5 GHz band and keep the device close to the router. Avoid crowded channels and restart the router if needed."
+        },
+        {
+          "title": "Clear app cache and background apps",
+          "content": "Go to Settings > Applications > Manage Installed Applications and clear cache for your IPTV app. Close unused apps to free memory before streaming."
+        },
+        {
+          "title": "Tune player buffer and decoder settings",
+          "content": "Lower the default stream quality if available and adjust buffer settings to 3 to 5 seconds. Enable hardware acceleration in your player if supported."
+        },
+        {
+          "title": "Update Fire OS and the player",
+          "content": "Outdated firmware causes playback issues. Update Fire OS and keep your IPTV app at the latest stable version."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Is Firestick powerful enough for IPTV?",
+        "answer": "Yes, but it needs stable Wi-Fi and a well-tuned player. The 4K models handle IPTV better than older models."
+      },
+      {
+        "question": "Should I use an external player?",
+        "answer": "If the built-in player buffers, try an external player like VLC or ExoPlayer when the app supports it."
+      },
+      {
+        "question": "Will a VPN reduce buffering on Firestick?",
+        "answer": "Sometimes. If your ISP throttles IPTV traffic, a VPN can help. Otherwise it may add latency."
+      }
+    ],
+    "keywords": [
+      "firestick iptv buffering",
+      "iptv buffering fire tv",
+      "firestick iptv fix",
+      "iptv firestick lag",
+      "firestick streaming issues"
+    ],
+    "lastUpdated": "2025-12-19",
+    "author": {
+      "name": "IPTV Guide Team",
+      "expertise": "IPTV & Streaming Specialists"
+    },
+    "relatedGuides": [
+      "fix-iptv-buffering",
+      "iptv-buffering-wifi-optimization",
+      "iptv-buffering-vpn-throttling"
+    ],
+    "relatedPlayers": [
+      "tivimate",
+      "iptv-smarters",
+      "kodi"
+    ],
+    "relatedDevices": [
+      "firestick",
+      "fire-tv-cube"
+    ]
+  },
+  {
+    "slug": "iptv-buffering-android-tv",
+    "title": "Fix IPTV Buffering on Android TV",
+    "metaTitle": "Fix IPTV Buffering on Android TV (2025)",
+    "description": "Android TV buffering fixes for IPTV: network tuning, device updates, and player settings that improve playback.",
+    "category": "troubleshooting",
+    "topic": "buffering",
+    "quickAnswer": {
+      "question": "How do I stop IPTV buffering on Android TV?",
+      "answer": "Use Ethernet or strong 5 GHz Wi-Fi, update Android TV firmware, and tune your player buffer settings. Clear cache if the app slows down.",
+      "highlight": "Network stability and updated firmware solve most Android TV buffering issues."
+    },
+    "content": {
+      "intro": "Android TV devices vary in performance, but the fixes below work on most models. Focus on network stability, app updates, and player tuning.",
+      "sections": [
+        {
+          "title": "Use wired or strong Wi-Fi",
+          "content": "Ethernet is the most reliable option. If you use Wi-Fi, move to 5 GHz and keep signal strength high. Avoid heavy downloads during streaming."
+        },
+        {
+          "title": "Update firmware and apps",
+          "content": "Check Settings > About > System Update. Update your IPTV player from Google Play or use a verified APK if needed."
+        },
+        {
+          "title": "Tune buffer and decoder options",
+          "content": "Set buffer size to 3 to 5 seconds. Toggle hardware acceleration if you see stutter or audio sync issues."
+        },
+        {
+          "title": "Reduce background load",
+          "content": "Close unused apps and clear cache periodically. Low memory devices buffer more when other apps are active."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Should I use a TV box or built-in Android TV?",
+        "answer": "Dedicated boxes like NVIDIA Shield often provide smoother IPTV playback than built-in TV hardware."
+      },
+      {
+        "question": "Does a faster internet plan fix buffering?",
+        "answer": "Not always. Stability and latency matter more than raw speed for IPTV."
+      },
+      {
+        "question": "Which player is most stable on Android TV?",
+        "answer": "TiviMate and OTT Navigator are common choices for stability on Android TV, but results vary by device."
+      }
+    ],
+    "keywords": [
+      "android tv iptv buffering",
+      "iptv buffering android tv",
+      "android tv streaming fix",
+      "iptv android tv lag",
+      "android tv iptv setup"
+    ],
+    "lastUpdated": "2025-12-19",
+    "author": {
+      "name": "IPTV Guide Team",
+      "expertise": "IPTV & Streaming Specialists"
+    },
+    "relatedGuides": [
+      "fix-iptv-buffering",
+      "iptv-buffering-wifi-optimization",
+      "iptv-buffering-firestick"
+    ],
+    "relatedPlayers": [
+      "tivimate",
+      "ott-navigator",
+      "iptv-smarters"
+    ],
+    "relatedDevices": [
+      "android-tv",
+      "nvidia-shield"
+    ]
+  },
+  {
+    "slug": "iptv-buffering-apple-tv",
+    "title": "Fix IPTV Buffering on Apple TV",
+    "metaTitle": "Fix IPTV Buffering on Apple TV (2025)",
+    "description": "Apple TV IPTV buffering fixes: network tuning, tvOS updates, and player settings that improve stability.",
+    "category": "troubleshooting",
+    "topic": "buffering",
+    "quickAnswer": {
+      "question": "Why does IPTV buffer on Apple TV?",
+      "answer": "Apple TV buffering usually comes from Wi-Fi congestion, outdated tvOS, or high bitrate streams. Use Ethernet, update tvOS, and reduce stream quality if needed.",
+      "highlight": "Ethernet plus a fresh tvOS update fixes most Apple TV buffering problems."
+    },
+    "content": {
+      "intro": "Apple TV is powerful, but IPTV buffering still happens when Wi-Fi or stream settings are unstable. Use the steps below to stabilize playback.",
+      "sections": [
+        {
+          "title": "Use Ethernet or strong Wi-Fi",
+          "content": "If possible, connect Apple TV via Ethernet. On Wi-Fi, use the 5 GHz band and keep the device within range of the router."
+        },
+        {
+          "title": "Update tvOS and the IPTV app",
+          "content": "Go to Settings > System > Software Updates and install the latest tvOS update. Update your IPTV app from the App Store."
+        },
+        {
+          "title": "Adjust stream quality and buffer",
+          "content": "Some apps allow manual quality or buffer settings. Lower the stream quality if you see repeated buffering on high bitrate channels."
+        },
+        {
+          "title": "Reboot and clear app cache",
+          "content": "Restart the Apple TV and close unused apps. If your IPTV app supports clearing cache or reloading playlists, do it after updates."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does Apple TV support IPTV well?",
+        "answer": "Yes, but player app quality varies. Choose a stable IPTV app and keep tvOS updated."
+      },
+      {
+        "question": "Is Wi-Fi or Ethernet better for Apple TV IPTV?",
+        "answer": "Ethernet is more stable and usually reduces buffering."
+      },
+      {
+        "question": "Can a VPN help on Apple TV?",
+        "answer": "Only if your ISP throttles IPTV traffic. A VPN can also add latency, so test before relying on it."
+      }
+    ],
+    "keywords": [
+      "apple tv iptv buffering",
+      "iptv buffering apple tv",
+      "apple tv streaming fix",
+      "iptv apple tv lag",
+      "tvos iptv issues"
+    ],
+    "lastUpdated": "2025-12-19",
+    "author": {
+      "name": "IPTV Guide Team",
+      "expertise": "IPTV & Streaming Specialists"
+    },
+    "relatedGuides": [
+      "fix-iptv-buffering",
+      "iptv-buffering-wifi-optimization",
+      "iptv-buffering-vpn-throttling"
+    ],
+    "relatedPlayers": [
+      "jamrun",
+      "vlc"
+    ],
+    "relatedDevices": [
+      "apple-tv"
+    ]
+  },
+  {
+    "slug": "iptv-buffering-vpn-throttling",
+    "title": "ISP Throttling? Fix IPTV Buffering with VPNs",
+    "metaTitle": "ISP Throttling IPTV - Use a VPN to Reduce Buffering (2025)",
+    "description": "Learn how to detect ISP throttling and test a VPN to reduce IPTV buffering without sacrificing speed.",
+    "category": "troubleshooting",
+    "topic": "buffering",
+    "quickAnswer": {
+      "question": "Can a VPN reduce IPTV buffering?",
+      "answer": "If your ISP throttles streaming traffic, a VPN can help. Test the same stream with and without a VPN to confirm.",
+      "highlight": "VPNs only help when throttling is the root cause."
+    },
+    "content": {
+      "intro": "Some ISPs throttle IPTV or streaming traffic during peak hours. A VPN can mask the traffic type, but it can also add latency, so you should test before committing.",
+      "sections": [
+        {
+          "title": "Check for throttling symptoms",
+          "content": "If IPTV buffers during peak hours but speed tests look fine, throttling is possible. Compare performance on the same stream at different times of day."
+        },
+        {
+          "title": "Test a VPN properly",
+          "content": "Use a nearby VPN server, then test the same stream and measure buffering. If stability improves, throttling is likely."
+        },
+        {
+          "title": "Choose the right VPN protocol",
+          "content": "WireGuard is usually faster than older protocols. Split tunneling can keep IPTV traffic inside the VPN while leaving other traffic outside."
+        },
+        {
+          "title": "Avoid slow VPN servers",
+          "content": "A slow VPN server will make buffering worse. Pick low-latency servers and retest during peak hours."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How do I know if my ISP is throttling IPTV?",
+        "answer": "If IPTV buffers while other apps are fine, and performance improves on a VPN, throttling is likely."
+      },
+      {
+        "question": "Will any VPN work for IPTV?",
+        "answer": "No. Use a fast VPN with WireGuard or similar protocol and a nearby server. Slow VPNs make buffering worse."
+      },
+      {
+        "question": "Is a VPN always required?",
+        "answer": "No. Only use a VPN when it improves stability or privacy. If it slows streams, it is not worth using."
+      }
+    ],
+    "keywords": [
+      "iptv isp throttling",
+      "vpn for iptv buffering",
+      "iptv throttling fix",
+      "isp streaming throttle",
+      "iptv vpn test"
+    ],
+    "lastUpdated": "2025-12-19",
+    "author": {
+      "name": "IPTV Guide Team",
+      "expertise": "IPTV & Streaming Specialists"
+    },
+    "relatedGuides": [
+      "fix-iptv-buffering",
+      "iptv-buffering-wifi-optimization",
+      "setup-vpn-for-iptv"
+    ],
+    "relatedPlayers": [
+      "tivimate",
+      "iptv-smarters",
+      "kodi"
+    ],
+    "relatedDevices": [
+      "firestick",
+      "android-tv",
+      "apple-tv"
+    ]
+  },
+  {
+    "slug": "iptv-buffering-wifi-optimization",
+    "title": "Optimize Wi-Fi to Stop IPTV Buffering",
+    "metaTitle": "Optimize Wi-Fi for IPTV - Stop Buffering (2025)",
+    "description": "Wi-Fi tuning steps for IPTV stability: 5 GHz setup, channel selection, router placement, and QoS.",
+    "category": "optimization",
+    "topic": "buffering",
+    "quickAnswer": {
+      "question": "What Wi-Fi changes reduce IPTV buffering?",
+      "answer": "Use 5 GHz, move closer to the router, pick a clean channel, and enable QoS for your streaming device.",
+      "highlight": "Weak Wi-Fi is the most common cause of buffering."
+    },
+    "content": {
+      "intro": "Even fast internet can buffer if Wi-Fi is unstable. These steps improve signal strength, reduce interference, and prioritize IPTV traffic on your network.",
+      "sections": [
+        {
+          "title": "Switch to 5 GHz where possible",
+          "content": "5 GHz Wi-Fi is faster and less congested than 2.4 GHz. Use it for streaming devices if signal strength is strong."
+        },
+        {
+          "title": "Choose a clean channel",
+          "content": "Use your router app or a Wi-Fi scanner to find the least crowded channel. Avoid overlapping channels in busy apartment buildings."
+        },
+        {
+          "title": "Improve router placement",
+          "content": "Place your router in an open, central location. Avoid cabinets and large metal objects. Reduce distance between the router and the streaming device."
+        },
+        {
+          "title": "Enable QoS for IPTV devices",
+          "content": "Quality of Service settings prioritize streaming traffic so IPTV stays stable even when other devices are downloading."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Is Ethernet better than Wi-Fi for IPTV?",
+        "answer": "Yes. Ethernet is more stable and usually eliminates Wi-Fi interference issues."
+      },
+      {
+        "question": "Can mesh Wi-Fi help IPTV?",
+        "answer": "Mesh systems can help if your signal is weak, but they must be configured properly and placed well."
+      },
+      {
+        "question": "Should I use 2.4 GHz for IPTV?",
+        "answer": "Only if 5 GHz coverage is too weak. 2.4 GHz is slower and more crowded."
+      }
+    ],
+    "keywords": [
+      "iptv wifi optimization",
+      "stop iptv buffering wifi",
+      "iptv 5ghz",
+      "iptv qos",
+      "streaming wifi fix"
+    ],
+    "lastUpdated": "2025-12-19",
+    "author": {
+      "name": "IPTV Guide Team",
+      "expertise": "IPTV & Streaming Specialists"
+    },
+    "relatedGuides": [
+      "fix-iptv-buffering",
+      "iptv-buffering-firestick",
+      "iptv-buffering-android-tv"
+    ],
+    "relatedPlayers": [
+      "tivimate",
+      "iptv-smarters",
+      "vlc"
+    ],
+    "relatedDevices": [
+      "firestick",
+      "android-tv",
+      "samsung-tv"
+    ]
+  },
+  {
+    "slug": "iptv-catchup-setup",
+    "title": "How to Enable IPTV Catch-Up",
+    "metaTitle": "How to Enable IPTV Catch-Up (2025)",
+    "description": "Enable IPTV catch-up by verifying provider support, playlist tags, and player settings.",
+    "category": "setup",
+    "topic": "catchup-timeshift",
+    "quickAnswer": {
+      "question": "How do I turn on IPTV catch-up?",
+      "answer": "Confirm your provider supports catch-up, then enable it in your player and ensure the playlist includes catch-up tags."
+    },
+    "content": {
+      "intro": "Catch-up lets you watch past programs, but it only works if your provider supports it and your playlist contains the correct tags. Use this guide to enable the feature end-to-end.",
+      "sections": [
+        {
+          "title": "Verify provider catch-up support",
+          "content": "Check your provider documentation or account panel. If catch-up is not included in your plan, the feature will not work even if your player supports it."
+        },
+        {
+          "title": "Confirm playlist catch-up tags",
+          "content": "Look for catch-up tags such as catchup, catchup-days, or timeshift in your M3U. Without these tags, the player cannot show catch-up content."
+        },
+        {
+          "title": "Enable catch-up in your player",
+          "content": "Most players have a catch-up toggle in settings. Turn it on, refresh the EPG, and look for rewind or calendar icons on channels."
+        },
+        {
+          "title": "Test with a known channel",
+          "content": "Choose a channel that supports catch-up and attempt to replay a program from earlier in the day. If it fails, revisit tags and provider support."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is IPTV catch-up?",
+        "answer": "Catch-up lets you watch previously aired programs directly from the provider, usually for a limited number of days."
+      },
+      {
+        "question": "Why do only some channels have catch-up?",
+        "answer": "Catch-up is enabled per channel by the provider. Not all channels include it."
+      },
+      {
+        "question": "Do I need a DVR for catch-up?",
+        "answer": "No. Catch-up uses provider archives, while DVR recordings are saved locally on your device or server."
+      }
+    ],
+    "keywords": [
+      "iptv catchup setup",
+      "enable iptv catchup",
+      "catchup tags",
+      "iptv replay",
+      "iptv catch-up"
+    ],
+    "lastUpdated": "2025-12-19",
+    "author": {
+      "name": "IPTV Guide Team",
+      "expertise": "IPTV & Streaming Specialists"
+    },
+    "relatedGuides": [
+      "record-iptv-guide",
+      "iptv-timeshift-setup",
+      "catchup-not-working"
+    ],
+    "relatedPlayers": [
+      "tivimate",
+      "iptv-smarters",
+      "ott-navigator"
+    ],
+    "relatedDevices": [
+      "firestick",
+      "android-tv",
+      "samsung-tv"
+    ]
+  },
+  {
+    "slug": "iptv-timeshift-setup",
+    "title": "How to Enable IPTV Timeshift",
+    "metaTitle": "How to Enable IPTV Timeshift (2025)",
+    "description": "Set up IPTV timeshift to pause and rewind live TV. Configure buffer storage and player settings for stable playback.",
+    "category": "setup",
+    "topic": "catchup-timeshift",
+    "quickAnswer": {
+      "question": "How do I set up IPTV timeshift?",
+      "answer": "Enable timeshift in your player, choose a storage location, and set a buffer length that matches your device storage and network speed.",
+      "highlight": "Timeshift uses local storage, so free space matters."
+    },
+    "content": {
+      "intro": "Timeshift lets you pause and rewind live TV using a rolling local buffer. It depends on player support, storage space, and stable write speed.",
+      "sections": [
+        {
+          "title": "Enable timeshift in player settings",
+          "content": "Locate the timeshift or live pause feature in your IPTV app settings and enable it. Some apps call this live pause or rewind."
+        },
+        {
+          "title": "Choose a buffer storage location",
+          "content": "Select internal storage or a fast external drive. Avoid slow SD cards for long buffers."
+        },
+        {
+          "title": "Set the buffer length",
+          "content": "A 30 to 90 minute buffer is common. Longer buffers require more storage and can slow older devices."
+        },
+        {
+          "title": "Test playback and rewind",
+          "content": "Play a live channel, pause, and rewind. If the buffer skips or stutters, reduce buffer length or use faster storage."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is the difference between catch-up and timeshift?",
+        "answer": "Catch-up uses provider archives. Timeshift uses local storage to pause and rewind live TV."
+      },
+      {
+        "question": "Does timeshift work on all IPTV apps?",
+        "answer": "No. Only apps with timeshift support and buffering settings can do it."
+      },
+      {
+        "question": "How much storage does timeshift need?",
+        "answer": "It depends on the buffer length and bitrate. Longer buffers require more storage space."
+      }
+    ],
+    "keywords": [
+      "iptv timeshift setup",
+      "enable timeshift iptv",
+      "iptv pause live tv",
+      "timeshift buffer",
+      "iptv live pause"
+    ],
+    "lastUpdated": "2025-12-19",
+    "author": {
+      "name": "IPTV Guide Team",
+      "expertise": "IPTV & Streaming Specialists"
+    },
+    "relatedGuides": [
+      "record-iptv-guide",
+      "iptv-catchup-setup",
+      "timeshift-buffering-fix"
+    ],
+    "relatedPlayers": [
+      "tivimate",
+      "ott-navigator",
+      "perfect-player"
+    ],
+    "relatedDevices": [
+      "android-tv",
+      "firestick"
+    ]
+  },
+  {
+    "slug": "catchup-not-working",
+    "title": "IPTV Catch-Up Not Working? Fix It",
+    "metaTitle": "IPTV Catch-Up Not Working - Fixes (2025)",
+    "description": "Troubleshoot IPTV catch-up issues by checking provider support, playlist tags, EPG data, and player compatibility.",
+    "category": "troubleshooting",
+    "topic": "catchup-timeshift",
+    "quickAnswer": {
+      "question": "Why is IPTV catch-up not working?",
+      "answer": "Catch-up fails when provider support is missing, tags are absent, or the player is not configured correctly. Verify each step and refresh the EPG.",
+      "highlight": "No provider support means catch-up will never work."
+    },
+    "content": {
+      "intro": "Catch-up problems are almost always caused by missing provider support, missing playlist tags, or incorrect player settings. This checklist helps you isolate the cause quickly.",
+      "sections": [
+        {
+          "title": "Confirm provider support",
+          "content": "If your provider does not offer catch-up, the feature will not work no matter which player you use. Verify this first."
+        },
+        {
+          "title": "Check for catch-up tags in the playlist",
+          "content": "Look for catch-up tags like catchup-days or catchup. If they are missing, your playlist does not include the feature."
+        },
+        {
+          "title": "Refresh EPG and channel data",
+          "content": "Catch-up links are tied to EPG data. Refresh the guide and clear cache after enabling catch-up."
+        },
+        {
+          "title": "Verify player compatibility",
+          "content": "Not all IPTV players support catch-up. Use a player known to support it and enable the feature in settings."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Do I need an EPG for catch-up?",
+        "answer": "Yes. Catch-up relies on program schedules. Without EPG data, catch-up will not display properly."
+      },
+      {
+        "question": "Why does catch-up only work for some channels?",
+        "answer": "Catch-up support is channel-specific. Some channels do not include archive data from the provider."
+      },
+      {
+        "question": "Can I enable catch-up in any player?",
+        "answer": "No. You need a player that supports catch-up and the playlist must include catch-up tags."
+      }
+    ],
+    "keywords": [
+      "catchup not working",
+      "iptv catchup fix",
+      "catchup tags",
+      "iptv replay error",
+      "iptv catch-up issue"
+    ],
+    "lastUpdated": "2025-12-19",
+    "author": {
+      "name": "IPTV Guide Team",
+      "expertise": "IPTV & Streaming Specialists"
+    },
+    "relatedGuides": [
+      "iptv-catchup-setup",
+      "record-iptv-guide",
+      "iptv-timeshift-setup"
+    ],
+    "relatedPlayers": [
+      "tivimate",
+      "iptv-smarters",
+      "ott-navigator"
+    ],
+    "relatedDevices": [
+      "firestick",
+      "android-tv",
+      "samsung-tv"
+    ]
+  },
+  {
+    "slug": "timeshift-buffering-fix",
+    "title": "Timeshift Buffering Fix for IPTV",
+    "metaTitle": "Timeshift Buffering Fix for IPTV (2025)",
+    "description": "Fix buffering when using IPTV timeshift. Tune buffer size, storage speed, and network stability.",
+    "category": "troubleshooting",
+    "topic": "catchup-timeshift",
+    "quickAnswer": {
+      "question": "Why does timeshift buffer or skip?",
+      "answer": "Timeshift buffering is often caused by slow storage or oversized buffers. Use fast storage and reduce buffer length if playback stutters.",
+      "highlight": "Timeshift writes to disk constantly. Storage speed matters."
+    },
+    "content": {
+      "intro": "Timeshift depends on continuous writes to storage. If the storage is slow or the buffer is too large, playback stutters or skips. Use the steps below to stabilize it.",
+      "sections": [
+        {
+          "title": "Use faster storage",
+          "content": "Internal storage or a fast USB drive works best. Avoid slow SD cards for long buffers."
+        },
+        {
+          "title": "Reduce buffer length",
+          "content": "Long buffers require more disk writes and can slow low-end devices. Try 30 to 60 minutes first."
+        },
+        {
+          "title": "Stabilize your network",
+          "content": "Timeshift still relies on the live stream. Use Ethernet or strong Wi-Fi to avoid interruptions."
+        },
+        {
+          "title": "Clear cache and restart",
+          "content": "Restart the player and clear cache to reset the timeshift buffer if it becomes corrupted."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does timeshift use internet bandwidth?",
+        "answer": "Yes. Timeshift still streams live data while writing to storage, so network stability is important."
+      },
+      {
+        "question": "Can I use an SD card for timeshift?",
+        "answer": "You can, but slow SD cards often cause buffering. A fast USB drive is more reliable."
+      },
+      {
+        "question": "Is timeshift the same as recording?",
+        "answer": "No. Timeshift is a temporary buffer. Recording saves a file you can watch later."
+      }
+    ],
+    "keywords": [
+      "timeshift buffering",
+      "iptv timeshift fix",
+      "live pause buffering",
+      "timeshift storage",
+      "iptv timeshift lag"
+    ],
+    "lastUpdated": "2025-12-19",
+    "author": {
+      "name": "IPTV Guide Team",
+      "expertise": "IPTV & Streaming Specialists"
+    },
+    "relatedGuides": [
+      "iptv-timeshift-setup",
+      "record-iptv-guide",
+      "fix-iptv-buffering"
+    ],
+    "relatedPlayers": [
+      "tivimate",
+      "ott-navigator",
+      "perfect-player"
+    ],
+    "relatedDevices": [
+      "android-tv",
+      "firestick"
+    ]
+  },
+  {
+    "slug": "catchup-vs-recording",
+    "title": "IPTV Catch-Up vs Recording: Whats the Difference?",
+    "metaTitle": "IPTV Catch-Up vs Recording - Key Differences (2025)",
+    "description": "Compare IPTV catch-up and recording so you know which feature fits your setup, storage, and viewing habits.",
+    "category": "optimization",
+    "topic": "catchup-timeshift",
+    "quickAnswer": {
+      "question": "Is catch-up the same as recording?",
+      "answer": "No. Catch-up streams past programs from the provider. Recording saves your own copy to storage for later playback.",
+      "highlight": "Catch-up depends on provider archives. Recording depends on your storage."
+    },
+    "content": {
+      "intro": "Catch-up and recording both let you watch programs later, but they work differently. Catch-up uses provider archives, while recording stores content locally. Understanding the difference helps you choose the right feature.",
+      "sections": [
+        {
+          "title": "Catch-up: provider-controlled playback",
+          "content": "Catch-up relies on your provider storing past programs for a limited time. You can replay shows without using local storage, but only if the provider supports it."
+        },
+        {
+          "title": "Recording: local DVR control",
+          "content": "Recording saves a file to your device or server. You control retention and quality, but it requires storage space and stable playback during recording."
+        },
+        {
+          "title": "Which is better for you",
+          "content": "Catch-up is easier if your provider offers it. Recording is better if you need long-term storage or custom schedules. Many users use both."
+        },
+        {
+          "title": "Common setup requirements",
+          "content": "Catch-up needs playlist tags and EPG data. Recording needs storage, permissions, and a player that supports DVR features."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does catch-up use storage space?",
+        "answer": "No. Catch-up streams from the provider and does not store files locally."
+      },
+      {
+        "question": "Can I record and use catch-up at the same time?",
+        "answer": "Yes. If your player supports both, you can record some channels and use catch-up for others."
+      },
+      {
+        "question": "Which is more reliable?",
+        "answer": "Recording is more reliable for long-term access because you control the files. Catch-up is limited by provider availability."
+      }
+    ],
+    "keywords": [
+      "catchup vs recording",
+      "iptv catchup",
+      "iptv dvr recording",
+      "timeshift vs catchup",
+      "iptv replay"
+    ],
+    "lastUpdated": "2025-12-19",
+    "author": {
+      "name": "IPTV Guide Team",
+      "expertise": "IPTV & Streaming Specialists"
+    },
+    "relatedGuides": [
+      "record-iptv-guide",
+      "iptv-catchup-setup",
+      "iptv-timeshift-setup"
+    ],
+    "relatedPlayers": [
+      "tivimate",
+      "iptv-smarters",
+      "ott-navigator"
+    ],
+    "relatedDevices": [
+      "firestick",
+      "android-tv",
+      "samsung-tv"
     ]
   }
 ]

@@ -1,0 +1,90 @@
+{
+  "tags": {
+    "iptv-setup": {
+      "title": "IPTV Setup",
+      "intro": "Practical setup guides for IPTV apps, devices, playlists, and EPG. Use these posts when you need a clean, repeatable setup path or want to optimize a fresh install.",
+      "highlights": [
+        "Step-by-step setup checklists",
+        "Playlist + EPG configuration tips",
+        "Device-specific walkthroughs"
+      ],
+      "quickAnswer": {
+        "question": "What is the fastest way to set up IPTV correctly?",
+        "answer": "Pick a compatible player, add your M3U or Xtream login, attach the EPG URL, then tune buffer and playback settings for your device.",
+        "highlight": "Start with the device and player first - most setup issues come from mismatched apps."
+      }
+    },
+    "streaming-guide": {
+      "title": "Streaming Guide",
+      "intro": "Deep streaming guides that explain how IPTV works, how to stabilize playback, and how to choose the right combination of app and device for your setup.",
+      "highlights": [
+        "Network and buffering optimizations",
+        "Player and device selection",
+        "Best-practice workflows"
+      ],
+      "quickAnswer": {
+        "question": "What improves IPTV streaming quality the most?",
+        "answer": "A stable network (preferably wired), realistic bitrate settings, and a player tuned for your device make the biggest difference.",
+        "highlight": "Consistency beats raw speed when it comes to smooth IPTV playback."
+      }
+    },
+    "iptv-tutorial": {
+      "title": "IPTV Tutorial",
+      "intro": "Hands-on tutorials focused on real tasks: configuring apps, fixing errors, and getting features like EPG, catch-up, or DVR working reliably.",
+      "highlights": [
+        "Clear walkthroughs with exact steps",
+        "Common errors and fixes",
+        "Feature setup guides"
+      ],
+      "quickAnswer": {
+        "question": "Which IPTV tutorials should I start with?",
+        "answer": "Start with the setup guide for your device, then follow the playlist + EPG tutorial to unlock the full channel guide experience.",
+        "highlight": "Setup + EPG = the two core tutorials for most IPTV users."
+      }
+    }
+  },
+  "categories": {
+    "setup-guides": {
+      "title": "Setup Guides",
+      "intro": "Step-by-step guides for setting up IPTV apps, playlists, EPG, VPNs, and devices. These are the most actionable posts for getting a working setup fast.",
+      "highlights": [
+        "Full setup walkthroughs",
+        "EPG and playlist configuration",
+        "Device-specific tips"
+      ],
+      "quickAnswer": {
+        "question": "What should I configure first when setting up IPTV?",
+        "answer": "Start with the player app and playlist login, then add EPG, then optimize buffer and playback settings.",
+        "highlight": "Most setup failures come from missing EPG or wrong playlist credentials."
+      }
+    },
+    "player-comparisons": {
+      "title": "Player Comparisons",
+      "intro": "Side-by-side comparisons of popular IPTV players across devices, features, pricing, and real-world performance.",
+      "highlights": [
+        "Feature and pricing breakdowns",
+        "Device-specific recommendations",
+        "Performance notes for real usage"
+      ],
+      "quickAnswer": {
+        "question": "How do I choose the best IPTV player?",
+        "answer": "Match the player to your device, then prioritize EPG support, stability, and the features you actually use.",
+        "highlight": "Compatibility and stability matter more than long feature lists."
+      }
+    },
+    "troubleshooting": {
+      "title": "Troubleshooting",
+      "intro": "Fix common IPTV problems such as login errors, buffering, and playback instability. These guides focus on diagnosing the root cause quickly.",
+      "highlights": [
+        "Error-by-error fixes",
+        "Buffering and stability tips",
+        "Account and playlist diagnostics"
+      ],
+      "quickAnswer": {
+        "question": "What is the fastest way to troubleshoot IPTV errors?",
+        "answer": "Test the stream in another player, verify credentials, then check network stability and buffer settings.",
+        "highlight": "If a stream fails in VLC too, the issue is likely the source or provider."
+      }
+    }
+  }
+}

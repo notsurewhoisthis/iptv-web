@@ -8,9 +8,10 @@ import {
   getPlayers,
   getDevices,
   getVideoForPage,
+  getGuideTopics,
 } from '@/lib/data-loader';
 import { VideoWatchCard } from '@/components/VideoWatchCard';
-import { ChevronRight, BookOpen, AlertCircle, CheckCircle } from 'lucide-react';
+import { ChevronRight, BookOpen } from 'lucide-react';
 import {
   QuickAnswer,
   AuthorBio,
@@ -57,12 +58,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function TechnicalGuidePage({ params }: PageProps) {
   const { slug } = await params;
-  const [guide, allGuides, allPlayers, allDevices, video] = await Promise.all([
+  const [guide, allGuides, allPlayers, allDevices, video, topics] = await Promise.all([
     getTechnicalGuide(slug),
     getTechnicalGuides(),
     getPlayers(),
     getDevices(),
     getVideoForPage('technical-guides', slug),
+    getGuideTopics(),
   ]);
   const baseUrl = getBaseUrl();
 
@@ -78,6 +80,9 @@ export default async function TechnicalGuidePage({ params }: PageProps) {
   // Get related players and devices from JSON data
   const relatedPlayerIds = guide.relatedPlayers || [];
   const relatedDeviceIds = guide.relatedDevices || [];
+  const topic = guide.topic
+    ? topics.find((t) => t.slug === guide.topic)
+    : null;
 
   // Build HowTo steps for schema
   const howToSteps = guide.content.sections
@@ -89,6 +94,18 @@ export default async function TechnicalGuidePage({ params }: PageProps) {
       description: step.description,
     }));
 
+  const contentText = [
+    guide.content.intro,
+    ...guide.content.sections.map((section) => section.content || ''),
+    ...guide.content.sections.flatMap((section) =>
+      section.steps ? section.steps.map((step) => step.description) : []
+    ),
+  ]
+    .join(' ')
+    .trim();
+  const wordCount = contentText ? contentText.split(/\s+/).length : 0;
+  const showSchemas = wordCount >= 300;
+
   // Breadcrumb items
   const breadcrumbItems = [
     { name: 'Home', url: baseUrl },
@@ -99,23 +116,25 @@ export default async function TechnicalGuidePage({ params }: PageProps) {
   return (
     <div className="min-h-screen">
       {/* Structured Data for GEO */}
-      <FAQSchema faqs={guide.faqs} />
-      {howToSteps.length > 0 && (
+      {showSchemas && <FAQSchema faqs={guide.faqs} />}
+      {showSchemas && howToSteps.length > 0 && (
         <HowToSchema
           name={guide.title}
           description={guide.description}
           steps={howToSteps}
         />
       )}
-      <ArticleWithAuthorSchema
-        title={guide.title}
-        description={guide.description}
-        url={`${baseUrl}/guides/technical/${guide.slug}`}
-        datePublished={guide.lastUpdated}
-        dateModified={guide.lastUpdated}
-        authorName={guide.author.name}
-        authorExpertise={guide.author.expertise}
-      />
+      {showSchemas && (
+        <ArticleWithAuthorSchema
+          title={guide.title}
+          description={guide.description}
+          url={`${baseUrl}/guides/technical/${guide.slug}`}
+          datePublished={guide.lastUpdated}
+          dateModified={guide.lastUpdated}
+          authorName={guide.author.name}
+          authorExpertise={guide.author.expertise}
+        />
+      )}
       <BreadcrumbSchema items={breadcrumbItems} />
 
       {/* Breadcrumb */}
@@ -165,6 +184,17 @@ export default async function TechnicalGuidePage({ params }: PageProps) {
           answer={guide.quickAnswer.answer}
           highlight={guide.quickAnswer.highlight}
         />
+
+        {topic && (
+          <div className="mb-6">
+            <Link
+              href={`/guides/topics/${topic.slug}`}
+              className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm text-blue-700 hover:border-blue-300 hover:bg-blue-100 transition"
+            >
+              Part of the {topic.title} hub →
+            </Link>
+          </div>
+        )}
 
         {/* Video Guide */}
         {video && (

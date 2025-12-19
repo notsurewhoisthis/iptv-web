@@ -18,7 +18,7 @@ import {
   TLDRBox,
 } from '@/components/GeoComponents';
 import { FAQSchema, ItemListSchema, ArticleWithAuthorSchema } from '@/components/JsonLd';
-import type { BestForPage, UseCasePage, Player } from '@/lib/types';
+import type { BestForPage, UseCasePage } from '@/lib/types';
 
 interface PageProps {
   params: Promise<{ slug: string }>;

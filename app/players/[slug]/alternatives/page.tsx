@@ -10,14 +10,10 @@ import {
 import {
   ChevronRight,
   Star,
-  Check,
-  X,
   Crown,
   ArrowRight,
   Smartphone,
-  Tv,
   Apple,
-  Monitor,
 } from 'lucide-react';
 import { BreadcrumbSchema, FAQSchema } from '@/components/JsonLd';
 
@@ -366,7 +362,6 @@ export default async function PlayerAlternativesPage({ params }: PageProps) {
             {playerComparisons.slice(0, 12).map((comparison) => {
               const isPlayer1 = comparison.player1Id === player.id;
               const otherPlayerName = isPlayer1 ? comparison.player2Name : comparison.player1Name;
-              const otherPlayerId = isPlayer1 ? comparison.player2Id : comparison.player1Id;
 
               return (
                 <Link

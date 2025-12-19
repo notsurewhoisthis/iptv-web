@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Star, Check, X, Calendar, User } from 'lucide-react';
 
 // QuickAnswer component for GEO optimization - AI extracts this first
@@ -37,10 +38,8 @@ interface RankedPlayer {
 
 export function ComparisonTable({
   players,
-  showProsCons = false,
 }: {
   players: RankedPlayer[];
-  showProsCons?: boolean;
 }) {
   return (
     <div className="overflow-x-auto mb-8">
@@ -178,9 +177,12 @@ export function AuthorBio({
       <div className="flex items-start gap-4">
         <div className="flex-shrink-0">
           {imageUrl ? (
-            <img
+            <Image
               src={imageUrl}
               alt={name}
+              width={48}
+              height={48}
+              sizes="48px"
               className="w-12 h-12 rounded-full object-cover"
             />
           ) : (

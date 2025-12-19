@@ -12,6 +12,7 @@ const navLinks = [
   { href: '/features', label: 'Features' },
   { href: '/issues', label: 'Issues' },
   { href: '/guides', label: 'Guides' },
+  { href: '/guides/topics', label: 'Guide Topics' },
   { href: '/use-cases', label: 'Use Cases' },
   { href: '/learn', label: 'Learn IPTV' },
   { href: '/stremio', label: 'Stremio' },

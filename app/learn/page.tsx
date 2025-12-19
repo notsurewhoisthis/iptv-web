@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { BookOpen, Clock, BarChart3, ArrowRight } from 'lucide-react';
+import { BookOpen, Clock, ArrowRight } from 'lucide-react';
 import learnArticles from '@/data/learn-articles.json';
 import { MarketStats } from '@/components/MarketStats';
 import { BreadcrumbSchema, CollectionPageSchema } from '@/components/JsonLd';
@@ -18,14 +18,6 @@ export const metadata: Metadata = {
     'iptv for beginners',
     'iptv tutorial',
   ],
-};
-
-const categoryInfo = {
-  basics: { label: 'Basics', color: 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400' },
-  technical: { label: 'Technical', color: 'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400' },
-  troubleshooting: { label: 'Troubleshooting', color: 'bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400' },
-  guides: { label: 'Guides', color: 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400' },
-  comparison: { label: 'Comparison', color: 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-400' },
 };
 
 const difficultyInfo = {

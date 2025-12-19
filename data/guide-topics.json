@@ -1,0 +1,98 @@
+[
+  {
+    "slug": "epg",
+    "title": "EPG & TV Guide Setup",
+    "metaTitle": "EPG Setup Guides 2025 - TV Guide Fixes, XMLTV, and Sync",
+    "description": "EPG setup and troubleshooting guides: XMLTV sources, channel mapping, time offset fixes, logos, and refresh optimization.",
+    "intro": "A reliable EPG (Electronic Program Guide) is the backbone of a usable IPTV experience. These guides walk you through sourcing XMLTV data, fixing empty grids, aligning time offsets, and optimizing refresh cycles so your guide stays accurate and fast.",
+    "quickAnswer": {
+      "question": "What’s the fastest way to fix a broken IPTV EPG?",
+      "answer": "Start by confirming your provider’s EPG URL, then verify it loads in a browser, add it to your player’s EPG section, and set a 12–24 hour refresh. If the grid is empty or offset, the fixes below target the most common XMLTV and timezone issues.",
+      "highlight": "Most EPG failures are caused by incorrect XMLTV URLs or time offset settings."
+    },
+    "guideSlugs": [
+      "setup-epg-guide",
+      "epg-not-loading-fix",
+      "epg-time-offset-fix",
+      "epg-logos-missing",
+      "epg-refresh-schedule",
+      "epg-xmltv-setup"
+    ],
+    "keywords": [
+      "iptv epg",
+      "xmltv",
+      "epg not loading",
+      "epg time offset",
+      "iptv tv guide"
+    ],
+    "lastUpdated": "2025-12-19",
+    "author": {
+      "name": "IPTV Guide Team",
+      "expertise": "IPTV & Streaming Specialists"
+    }
+  },
+  {
+    "slug": "buffering",
+    "title": "Buffering & Playback Stability",
+    "metaTitle": "Fix IPTV Buffering 2025 - Firestick, Android TV, Apple TV Solutions",
+    "description": "Deep troubleshooting for IPTV buffering, freezing, and stuttering across devices, networks, and ISP throttling scenarios.",
+    "intro": "Buffering is rarely just “slow internet.” It’s usually a mix of Wi‑Fi congestion, player buffer settings, ISP throttling, or stream mismatches. This cluster gives device‑specific fixes and network tuning steps that stabilize playback.",
+    "quickAnswer": {
+      "question": "What actually stops IPTV buffering?",
+      "answer": "Use wired or 5 GHz Wi‑Fi, reduce stream bitrate to match your real bandwidth, and adjust buffer settings in your player. If issues persist, test with a VPN to rule out ISP throttling.",
+      "highlight": "Stable bitrate + proper buffer settings beats raw speed in most IPTV setups."
+    },
+    "guideSlugs": [
+      "fix-iptv-buffering",
+      "iptv-buffering-firestick",
+      "iptv-buffering-android-tv",
+      "iptv-buffering-apple-tv",
+      "iptv-buffering-vpn-throttling",
+      "iptv-buffering-wifi-optimization"
+    ],
+    "keywords": [
+      "iptv buffering",
+      "iptv freezing",
+      "isp throttling",
+      "iptv stuttering",
+      "iptv playback fixes"
+    ],
+    "lastUpdated": "2025-12-19",
+    "author": {
+      "name": "IPTV Guide Team",
+      "expertise": "IPTV & Streaming Specialists"
+    }
+  },
+  {
+    "slug": "catchup-timeshift",
+    "title": "Catch‑Up & Timeshift",
+    "metaTitle": "IPTV Catch‑Up & Timeshift Guides 2025 - Setup, Fixes, and Best Practices",
+    "description": "Setup and troubleshooting for IPTV catch‑up and timeshift features, plus best‑practice tips for reliable playback.",
+    "intro": "Catch‑up and timeshift let you watch past programs and pause live TV, but they depend on provider support, correct stream tags, and player configuration. Use these guides to enable the feature, fix missing catch‑up, and optimize DVR‑style playback.",
+    "quickAnswer": {
+      "question": "Why doesn’t catch‑up work on my IPTV?",
+      "answer": "Catch‑up only works if your provider enables it and your playlist includes the right tags. You also need a compatible player and correct EPG settings. The guides below show how to verify each link in the chain.",
+      "highlight": "No provider support = no catch‑up, even if your player has the feature."
+    },
+    "guideSlugs": [
+      "record-iptv-guide",
+      "iptv-catchup-setup",
+      "iptv-timeshift-setup",
+      "catchup-not-working",
+      "timeshift-buffering-fix",
+      "catchup-vs-recording"
+    ],
+    "keywords": [
+      "iptv catchup",
+      "iptv timeshift",
+      "iptv dvr",
+      "catchup not working",
+      "timeshift setup"
+    ],
+    "lastUpdated": "2025-12-19",
+    "author": {
+      "name": "IPTV Guide Team",
+      "expertise": "IPTV & Streaming Specialists"
+    }
+  }
+]

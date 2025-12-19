@@ -1,7 +1,7 @@
 'use client';
 
 import { Moon, Sun, Monitor } from 'lucide-react';
-import { useState, useRef, useEffect, createContext, useContext } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 // Safe hook that won't throw during SSR
 function useSafeTheme() {

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { ChevronRight, Clock, BookOpen, ArrowLeft, ArrowRight } from 'lucide-react';
+import { ChevronRight, Clock, ArrowLeft, ArrowRight } from 'lucide-react';
 import learnArticles from '@/data/learn-articles.json';
 import { TableOfContents, TOCItem } from '@/components/TableOfContents';
 import { RelatedContent, RelatedPlayers, RelatedGuides } from '@/components/RelatedContent';

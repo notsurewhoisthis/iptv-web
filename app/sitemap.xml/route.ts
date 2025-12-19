@@ -19,12 +19,13 @@ import {
   getDeviceFeatureGuides,
   getUseCases,
   getTechnicalGuides,
+  getGuideTopics,
   getStremioArticles,
+  getBlogTaxonomyContent,
   getBaseUrl,
 } from '@/lib/data-loader';
 import learnArticles from '@/data/learn-articles.json';
 import { getBlogCategories, getBlogTags } from '@/lib/blog-taxonomy';
-import { glossaryTerms } from '@/lib/glossary';
 
 export async function GET() {
   const baseUrl = getBaseUrl();
@@ -46,7 +47,9 @@ export async function GET() {
     deviceFeatureGuides,
     useCases,
     technicalGuides,
+    guideTopics,
     stremioArticles,
+    blogTaxonomy,
   ] = await Promise.all([
     getPlayers(),
     getDevices(),
@@ -63,7 +66,9 @@ export async function GET() {
     getDeviceFeatureGuides(),
     getUseCases(),
     getTechnicalGuides(),
+    getGuideTopics(),
     getStremioArticles(),
+    getBlogTaxonomyContent(),
   ]);
 
   const urls: { url: string; priority: number; changefreq: string; lastmod?: string }[] = [];
@@ -76,6 +81,7 @@ export async function GET() {
     { url: '/features', priority: 0.85, changefreq: 'weekly' },
     { url: '/issues', priority: 0.85, changefreq: 'weekly' },
     { url: '/guides', priority: 0.9, changefreq: 'weekly' },
+    { url: '/guides/topics', priority: 0.8, changefreq: 'weekly' },
     { url: '/learn', priority: 0.9, changefreq: 'weekly' },
     { url: '/troubleshooting', priority: 0.9, changefreq: 'weekly' },
     { url: '/compare', priority: 0.9, changefreq: 'weekly' },
@@ -259,29 +265,29 @@ export async function GET() {
     });
   });
 
-  // Blog tag pages - EXCLUDED (thin content - no unique intro text)
-  // Will be re-added after unique content is added to each tag page
-  // getBlogTags(posts)
-  //   .filter((t) => t.count >= 2)
-  //   .forEach((tag) => {
-  //     urls.push({
-  //       url: `/blog/tag/${tag.slug}`,
-  //       priority: 0.6,
-  //       changefreq: 'weekly',
-  //     });
-  //   });
+  // Blog tag pages (with taxonomy content)
+  const eligibleTags = getBlogTags(posts).filter(
+    (tag) => tag.count >= 2 && blogTaxonomy.tags?.[tag.slug]
+  );
+  eligibleTags.forEach((tag) => {
+    urls.push({
+      url: `/blog/tag/${tag.slug}`,
+      priority: 0.6,
+      changefreq: 'weekly',
+    });
+  });
 
-  // Blog category pages - EXCLUDED (thin content - no unique intro text)
-  // Will be re-added after unique content is added to each category page
-  // getBlogCategories(posts)
-  //   .filter((c) => c.count >= 2)
-  //   .forEach((cat) => {
-  //     urls.push({
-  //       url: `/blog/category/${cat.slug}`,
-  //       priority: 0.6,
-  //       changefreq: 'weekly',
-  //     });
-  //   });
+  // Blog category pages (with taxonomy content)
+  const eligibleCategories = getBlogCategories(posts).filter(
+    (category) => category.count >= 2 && blogTaxonomy.categories?.[category.slug]
+  );
+  eligibleCategories.forEach((category) => {
+    urls.push({
+      url: `/blog/category/${category.slug}`,
+      priority: 0.6,
+      changefreq: 'weekly',
+    });
+  });
 
   // Feature pages
   features.forEach((feature) => {
@@ -351,6 +357,16 @@ export async function GET() {
       priority: 0.8,
       changefreq: 'monthly',
       lastmod: guide.lastUpdated,
+    });
+  });
+
+  // Guide topic hubs
+  guideTopics.forEach((topic) => {
+    urls.push({
+      url: `/guides/topics/${topic.slug}`,
+      priority: 0.7,
+      changefreq: 'monthly',
+      lastmod: topic.lastUpdated,
     });
   });
 

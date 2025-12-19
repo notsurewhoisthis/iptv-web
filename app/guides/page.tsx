@@ -25,9 +25,6 @@ export default async function GuidesPage() {
     guides: setupGuides.filter((g) => g.playerId === player.id),
   })).filter((group) => group.guides.length > 0);
 
-  // Separate technical guides by category
-  const troubleshootingGuides = technicalGuides.filter((g) => g.category === 'troubleshooting');
-  const setupTechnicalGuides = technicalGuides.filter((g) => g.category === 'setup');
   const baseUrl = getBaseUrl();
   const totalGuides = setupGuides.length + technicalGuides.length;
 
@@ -47,6 +44,24 @@ export default async function GuidesPage() {
         <p className="text-gray-600 mb-8">
           Complete guides for IPTV setup, troubleshooting, and optimization. From fixing buffering to setting up EPG.
         </p>
+
+        <section className="mb-10">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 rounded-xl border border-gray-200 bg-gray-50 p-6">
+            <div>
+              <p className="text-xs uppercase tracking-wide text-blue-600 font-semibold mb-2">Guide Topics</p>
+              <h2 className="text-xl font-bold text-gray-900">Explore topic hubs</h2>
+              <p className="text-sm text-gray-600 mt-2">
+                Browse focused clusters for EPG, buffering, and catch‑up/timeshift guides.
+              </p>
+            </div>
+            <Link
+              href="/guides/topics"
+              className="inline-flex items-center justify-center rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700 transition"
+            >
+              Browse topics →
+            </Link>
+          </div>
+        </section>
 
         {/* Technical Guides - Featured Section */}
         <section className="mb-12">

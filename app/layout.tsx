@@ -66,6 +66,7 @@ const PRIMARY_NAV_LINKS = [
 ] as const;
 
 const MORE_NAV_LINKS = [
+  { href: '/guides/topics', label: 'Guide Topics' },
   { href: '/features', label: 'Features' },
   { href: '/issues', label: 'Issues' },
   { href: '/use-cases', label: 'Use Cases' },
