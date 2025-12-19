@@ -16,6 +16,7 @@ interface PageProps {
 
 // Allow new blog posts created after build (e.g., via n8n) to be rendered on-demand
 export const dynamicParams = true;
+export const dynamic = 'force-dynamic';
 
 export async function generateStaticParams() {
   const posts = await getBlogPosts();
@@ -27,7 +28,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const post = await getBlogPost(slug);
 
   if (!post) {
-    return { title: 'Post Not Found' };
+    notFound();
   }
 
   const baseUrl = getBaseUrl();

@@ -6,17 +6,11 @@ export const revalidate = 3600;
 import {
   getPlayers,
   getDevices,
-  getFeatures,
-  getIssues,
   getPlayerDeviceGuides,
   getBlogPosts,
   getBestPlayerDevice,
-  getPlayerComparisons,
-  getDeviceComparisons,
   getPlayerTroubleshooting,
   getDeviceTroubleshooting,
-  getPlayerFeatureGuides,
-  getDeviceFeatureGuides,
   getUseCases,
   getTechnicalGuides,
   getGuideTopics,
@@ -34,17 +28,11 @@ export async function GET() {
   const [
     players,
     devices,
-    features,
-    issues,
     guides,
     posts,
     bestFor,
-    playerComparisons,
-    deviceComparisons,
     playerTroubleshooting,
     deviceTroubleshooting,
-    playerFeatureGuides,
-    deviceFeatureGuides,
     useCases,
     technicalGuides,
     guideTopics,
@@ -53,17 +41,11 @@ export async function GET() {
   ] = await Promise.all([
     getPlayers(),
     getDevices(),
-    getFeatures(),
-    getIssues(),
     getPlayerDeviceGuides(),
     getBlogPosts(),
     getBestPlayerDevice(),
-    getPlayerComparisons(),
-    getDeviceComparisons(),
     getPlayerTroubleshooting(),
     getDeviceTroubleshooting(),
-    getPlayerFeatureGuides(),
-    getDeviceFeatureGuides(),
     getUseCases(),
     getTechnicalGuides(),
     getGuideTopics(),
@@ -195,26 +177,6 @@ export async function GET() {
     });
   });
 
-  // Player comparisons
-  playerComparisons.forEach((comp) => {
-    urls.push({
-      url: `/compare/players/${comp.player1Id}/vs/${comp.player2Id}`,
-      priority: 0.75,
-      changefreq: 'monthly',
-      lastmod: comp.lastUpdated,
-    });
-  });
-
-  // Device comparisons
-  deviceComparisons.forEach((comp) => {
-    urls.push({
-      url: `/compare/devices/${comp.device1Id}/vs/${comp.device2Id}`,
-      priority: 0.75,
-      changefreq: 'monthly',
-      lastmod: comp.lastUpdated,
-    });
-  });
-
   // Player troubleshooting
   playerTroubleshooting.forEach((guide) => {
     urls.push({
@@ -229,26 +191,6 @@ export async function GET() {
   deviceTroubleshooting.forEach((guide) => {
     urls.push({
       url: `/troubleshooting/devices/${guide.deviceId}/${guide.issueId}`,
-      priority: 0.7,
-      changefreq: 'monthly',
-      lastmod: guide.lastUpdated,
-    });
-  });
-
-  // Player feature guides
-  playerFeatureGuides.forEach((guide) => {
-    urls.push({
-      url: `/guides/${guide.playerId}/features/${guide.featureId}`,
-      priority: 0.7,
-      changefreq: 'monthly',
-      lastmod: guide.lastUpdated,
-    });
-  });
-
-  // Device feature guides
-  deviceFeatureGuides.forEach((guide) => {
-    urls.push({
-      url: `/guides/${guide.deviceId}/features/${guide.featureId}`,
       priority: 0.7,
       changefreq: 'monthly',
       lastmod: guide.lastUpdated,
@@ -289,15 +231,6 @@ export async function GET() {
     });
   });
 
-  // Feature pages
-  features.forEach((feature) => {
-    urls.push({
-      url: `/features/${feature.slug}`,
-      priority: 0.6,
-      changefreq: 'monthly',
-    });
-  });
-
   // Glossary term pages - EXCLUDED (thin content - only 80-100 unique words each)
   // Will be re-added after content is expanded to 300-500 words per term
   // glossaryTerms.forEach((term) => {
@@ -307,15 +240,6 @@ export async function GET() {
   //     changefreq: 'yearly',
   //   });
   // });
-
-  // Issue pages
-  issues.forEach((issue) => {
-    urls.push({
-      url: `/issues/${issue.slug}`,
-      priority: 0.6,
-      changefreq: 'monthly',
-    });
-  });
 
   // Learn articles
   learnArticles.forEach((article) => {

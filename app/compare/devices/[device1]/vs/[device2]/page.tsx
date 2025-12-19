@@ -36,6 +36,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: comparison.metaTitle,
     description: comparison.description,
     keywords: comparison.keywords.join(', '),
+    robots: {
+      index: false,
+      follow: true,
+    },
     alternates: {
       canonical: `${baseUrl}/compare/devices/${device1}/vs/${device2}`,
     },

@@ -37,6 +37,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: `${issue.name} - IPTV Fix Guide`,
     description: issue.description,
     keywords: issue.keywords.join(', '),
+    robots: {
+      index: false,
+      follow: true,
+    },
     alternates: {
       canonical: `${baseUrl}/issues/${slug}`,
     },
@@ -280,4 +284,3 @@ export default async function IssuePage({ params }: PageProps) {
     </div>
   );
 }
-

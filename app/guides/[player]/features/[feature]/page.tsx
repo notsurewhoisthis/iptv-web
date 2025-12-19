@@ -44,6 +44,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: guide.metaTitle,
     description: guide.description,
     keywords: guide.keywords.join(', '),
+    robots: {
+      index: false,
+      follow: true,
+    },
     alternates: {
       canonical: `${baseUrl}/guides/${player}/features/${feature}`,
     },

@@ -37,6 +37,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: `${feature.name} IPTV Feature - What It Does & Best Apps`,
     description: feature.description,
     keywords: feature.keywords.join(', '),
+    robots: {
+      index: false,
+      follow: true,
+    },
     alternates: {
       canonical: `${baseUrl}/features/${slug}`,
     },
@@ -281,4 +285,3 @@ export default async function FeaturePage({ params }: PageProps) {
     </div>
   );
 }
-

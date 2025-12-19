@@ -109,7 +109,7 @@ function getLinksForCategory(category?: string): CrossLink[] {
   if (category === 'troubleshooting') {
     return [
       {
-        href: '/troubleshooting/players/stremio',
+        href: '/troubleshooting/players/stremio/internal-server-error',
         title: 'Stremio Troubleshooting',
         description: 'Fix common Stremio issues',
         icon: FileText,
