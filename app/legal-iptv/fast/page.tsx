@@ -8,6 +8,13 @@ export const metadata: Metadata = {
   title: 'Official Free Live TV (FAST) Playlists',
   description:
     'Browse official ad‑supported live TV (FAST) playlists by provider and country. Availability varies by region.',
+  alternates: {
+    canonical: `${getBaseUrl()}/legal-iptv/fast`,
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default async function LegalIptvFastServicesPage() {
@@ -59,4 +66,3 @@ export default async function LegalIptvFastServicesPage() {
     </div>
   );
 }
-

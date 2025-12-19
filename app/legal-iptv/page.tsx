@@ -11,6 +11,13 @@ export const metadata: Metadata = {
   title: 'Public IPTV Playlists (M3U) — Free & Legal-First Directory',
   description:
     'Browse publicly available IPTV playlists (M3U) by country, category, language, and official FAST services. Always verify rights and availability in your region.',
+  alternates: {
+    canonical: `${getBaseUrl()}/legal-iptv`,
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default async function LegalIptvHubPage() {

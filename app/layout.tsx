@@ -17,7 +17,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_URL || 'https://localhost:3000'),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_URL || process.env.SITE_URL || 'https://localhost:3000'
+  ),
   title: {
     default: 'IPTV Guide - Setup Guides, Player Reviews & Troubleshooting',
     template: '%s | IPTV Guide',

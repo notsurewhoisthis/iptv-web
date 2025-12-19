@@ -8,6 +8,13 @@ export const metadata: Metadata = {
   title: 'Public IPTV Playlists by Language (M3U)',
   description:
     'Browse publicly available IPTV playlists by language code. Copy the M3U URL and open it in an IPTV player.',
+  alternates: {
+    canonical: `${getBaseUrl()}/legal-iptv/languages`,
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default async function LegalIptvLanguagesPage() {
@@ -55,4 +62,3 @@ export default async function LegalIptvLanguagesPage() {
     </div>
   );
 }
-

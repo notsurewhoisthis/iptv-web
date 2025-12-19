@@ -90,11 +90,7 @@ export async function GET() {
     { url: '/stremio/troubleshooting', priority: 0.75, changefreq: 'weekly' },
     { url: '/stremio/best-practices', priority: 0.7, changefreq: 'monthly' },
     { url: '/stremio/resources', priority: 0.7, changefreq: 'monthly' },
-    { url: '/legal-iptv', priority: 0.85, changefreq: 'weekly' },
-    { url: '/legal-iptv/fast', priority: 0.75, changefreq: 'monthly' },
-    { url: '/legal-iptv/countries', priority: 0.75, changefreq: 'monthly' },
-    { url: '/legal-iptv/categories', priority: 0.75, changefreq: 'monthly' },
-    { url: '/legal-iptv/languages', priority: 0.75, changefreq: 'monthly' },
+    // Legal IPTV hub and list pages are noindex; excluded from sitemap.
     { url: '/about', priority: 0.6, changefreq: 'monthly' },
     { url: '/privacy', priority: 0.3, changefreq: 'yearly' },
     { url: '/terms', priority: 0.3, changefreq: 'yearly' },

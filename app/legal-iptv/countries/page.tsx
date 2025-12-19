@@ -8,6 +8,13 @@ export const metadata: Metadata = {
   title: 'Public IPTV Playlists by Country (M3U)',
   description:
     'Browse publicly available IPTV playlists by country code. Copy the M3U URL and open it in an IPTV player.',
+  alternates: {
+    canonical: `${getBaseUrl()}/legal-iptv/countries`,
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default async function LegalIptvCountriesPage() {
@@ -55,4 +62,3 @@ export default async function LegalIptvCountriesPage() {
     </div>
   );
 }
-

@@ -8,6 +8,13 @@ export const metadata: Metadata = {
   title: 'Public IPTV Playlists by Category (M3U)',
   description:
     'Browse publicly available IPTV playlists by category (news, sports, movies, kids, documentaries, and more).',
+  alternates: {
+    canonical: `${getBaseUrl()}/legal-iptv/categories`,
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default async function LegalIptvCategoriesPage() {
@@ -54,4 +61,3 @@ export default async function LegalIptvCategoriesPage() {
     </div>
   );
 }
-
