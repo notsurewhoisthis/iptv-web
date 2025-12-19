@@ -6,6 +6,7 @@ import {
   getDeviceComparison,
   getDevice,
   getBaseUrl,
+  getSeoWhitelist,
 } from '@/lib/data-loader';
 import { ChevronRight, Check, X, Star } from 'lucide-react';
 import { BreadcrumbSchema, ComparisonSchema, FAQSchema } from '@/components/JsonLd';
@@ -31,15 +32,23 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const baseUrl = getBaseUrl();
+  const seoWhitelist = await getSeoWhitelist();
+  const isIndexable = seoWhitelist.comparisons.devices.includes(
+    `${device1}|${device2}`
+  );
 
   return {
     title: comparison.metaTitle,
     description: comparison.description,
     keywords: comparison.keywords.join(', '),
-    robots: {
-      index: false,
-      follow: true,
-    },
+    ...(isIndexable
+      ? {}
+      : {
+          robots: {
+            index: false,
+            follow: true,
+          },
+        }),
     alternates: {
       canonical: `${baseUrl}/compare/devices/${device1}/vs/${device2}`,
     },

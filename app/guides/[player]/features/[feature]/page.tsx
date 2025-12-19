@@ -10,6 +10,7 @@ import {
   getPlayers,
   getBaseUrl,
   getVideoForPage,
+  getSeoWhitelist,
 } from '@/lib/data-loader';
 import { VideoWatchCard } from '@/components/VideoWatchCard';
 import { ChevronRight, BookOpen } from 'lucide-react';
@@ -27,9 +28,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { player, feature } = await params;
   const baseUrl = getBaseUrl();
 
-  const guide =
-    (await getPlayerFeatureGuide(player, feature)) ||
-    (await getDeviceFeatureGuide(player, feature));
+  const [playerGuide, deviceGuide, seoWhitelist] = await Promise.all([
+    getPlayerFeatureGuide(player, feature),
+    getDeviceFeatureGuide(player, feature),
+    getSeoWhitelist(),
+  ]);
+  const guide = playerGuide || deviceGuide;
 
   if (!guide) return { title: 'Guide Not Found' };
 
@@ -44,10 +48,23 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: guide.metaTitle,
     description: guide.description,
     keywords: guide.keywords.join(', '),
-    robots: {
-      index: false,
-      follow: true,
-    },
+    ...(playerGuide
+      ? seoWhitelist.featureGuides.players.includes(`${player}|${feature}`)
+        ? {}
+        : {
+            robots: {
+              index: false,
+              follow: true,
+            },
+          }
+      : seoWhitelist.featureGuides.devices.includes(`${player}|${feature}`)
+      ? {}
+      : {
+          robots: {
+            index: false,
+            follow: true,
+          },
+        }),
     alternates: {
       canonical: `${baseUrl}/guides/${player}/features/${feature}`,
     },

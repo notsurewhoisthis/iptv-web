@@ -24,6 +24,7 @@ import type {
   LegalIptvData,
   GuideTopic,
   BlogTaxonomyContent,
+  SeoWhitelist,
 } from './types';
 
 const DATA_DIR = path.join(process.cwd(), 'data');
@@ -229,6 +230,10 @@ export async function getGuideTopic(slug: string): Promise<GuideTopic | null> {
 
 export async function getBlogTaxonomyContent(): Promise<BlogTaxonomyContent> {
   return loadJSON<BlogTaxonomyContent>('blog-taxonomy-content.json');
+}
+
+export async function getSeoWhitelist(): Promise<SeoWhitelist> {
+  return loadJSON<SeoWhitelist>('seo-whitelist.json');
 }
 
 export async function getDevicesLastUpdated(): Promise<string> {

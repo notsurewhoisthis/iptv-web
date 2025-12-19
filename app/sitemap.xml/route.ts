@@ -6,17 +6,22 @@ export const revalidate = 3600;
 import {
   getPlayers,
   getDevices,
+  getPlayerComparisons,
+  getDeviceComparisons,
   getPlayerDeviceGuides,
   getBlogPosts,
   getBestPlayerDevice,
   getPlayerTroubleshooting,
   getDeviceTroubleshooting,
+  getPlayerFeatureGuides,
+  getDeviceFeatureGuides,
   getUseCases,
   getTechnicalGuides,
   getGuideTopics,
   getStremioArticles,
   getBlogTaxonomyContent,
   getBaseUrl,
+  getSeoWhitelist,
 } from '@/lib/data-loader';
 import learnArticles from '@/data/learn-articles.json';
 import { getBlogCategories, getBlogTags } from '@/lib/blog-taxonomy';
@@ -28,29 +33,39 @@ export async function GET() {
   const [
     players,
     devices,
+    playerComparisons,
+    deviceComparisons,
     guides,
     posts,
     bestFor,
     playerTroubleshooting,
     deviceTroubleshooting,
+    playerFeatureGuides,
+    deviceFeatureGuides,
     useCases,
     technicalGuides,
     guideTopics,
     stremioArticles,
     blogTaxonomy,
+    seoWhitelist,
   ] = await Promise.all([
     getPlayers(),
     getDevices(),
+    getPlayerComparisons(),
+    getDeviceComparisons(),
     getPlayerDeviceGuides(),
     getBlogPosts(),
     getBestPlayerDevice(),
     getPlayerTroubleshooting(),
     getDeviceTroubleshooting(),
+    getPlayerFeatureGuides(),
+    getDeviceFeatureGuides(),
     getUseCases(),
     getTechnicalGuides(),
     getGuideTopics(),
     getStremioArticles(),
     getBlogTaxonomyContent(),
+    getSeoWhitelist(),
   ]);
 
   const urls: { url: string; priority: number; changefreq: string; lastmod?: string }[] = [];
@@ -174,6 +189,56 @@ export async function GET() {
       priority: 0.8,
       changefreq: 'monthly',
       lastmod: page.lastUpdated,
+    });
+  });
+
+  // Comparisons (whitelisted only)
+  const allowedPlayerComparisons = new Set(seoWhitelist.comparisons.players);
+  playerComparisons.forEach((comp) => {
+    const key = `${comp.player1Id}|${comp.player2Id}`;
+    if (!allowedPlayerComparisons.has(key)) return;
+    urls.push({
+      url: `/compare/players/${comp.player1Id}/vs/${comp.player2Id}`,
+      priority: 0.75,
+      changefreq: 'monthly',
+      lastmod: comp.lastUpdated,
+    });
+  });
+
+  const allowedDeviceComparisons = new Set(seoWhitelist.comparisons.devices);
+  deviceComparisons.forEach((comp) => {
+    const key = `${comp.device1Id}|${comp.device2Id}`;
+    if (!allowedDeviceComparisons.has(key)) return;
+    urls.push({
+      url: `/compare/devices/${comp.device1Id}/vs/${comp.device2Id}`,
+      priority: 0.75,
+      changefreq: 'monthly',
+      lastmod: comp.lastUpdated,
+    });
+  });
+
+  // Feature guides (whitelisted only)
+  const allowedPlayerFeatureGuides = new Set(seoWhitelist.featureGuides.players);
+  playerFeatureGuides.forEach((guide) => {
+    const key = `${guide.playerId}|${guide.featureId}`;
+    if (!allowedPlayerFeatureGuides.has(key)) return;
+    urls.push({
+      url: `/guides/${guide.playerId}/features/${guide.featureId}`,
+      priority: 0.7,
+      changefreq: 'monthly',
+      lastmod: guide.lastUpdated,
+    });
+  });
+
+  const allowedDeviceFeatureGuides = new Set(seoWhitelist.featureGuides.devices);
+  deviceFeatureGuides.forEach((guide) => {
+    const key = `${guide.deviceId}|${guide.featureId}`;
+    if (!allowedDeviceFeatureGuides.has(key)) return;
+    urls.push({
+      url: `/guides/${guide.deviceId}/features/${guide.featureId}`,
+      priority: 0.7,
+      changefreq: 'monthly',
+      lastmod: guide.lastUpdated,
     });
   });
 

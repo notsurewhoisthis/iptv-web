@@ -1,0 +1,64 @@
+{
+  "comparisons": {
+    "players": [
+      "jamrun|tivimate",
+      "jamrun|vlc",
+      "jamrun|kodi",
+      "jamrun|ott-navigator",
+      "jamrun|stremio",
+      "tivimate|vlc",
+      "jamrun|iptv-smarters",
+      "jamrun|nanomid",
+      "jamrun|televizo",
+      "tivimate|kodi",
+      "tivimate|ott-navigator",
+      "tivimate|stremio",
+      "jamrun|duplex-iptv"
+    ],
+    "devices": [
+      "android-tv|nvidia-shield",
+      "fire-tv-cube|android-tv",
+      "fire-tv-cube|nvidia-shield",
+      "firestick|android-tv",
+      "firestick|fire-tv-cube",
+      "firestick|nvidia-shield",
+      "android-tv|google-tv",
+      "fire-tv-cube|google-tv",
+      "firestick|google-tv",
+      "google-tv|nvidia-shield",
+      "android-tv|chromecast",
+      "android-tv|homatics-box-r-4k-plus"
+    ]
+  },
+  "featureGuides": {
+    "players": [
+      "jamrun|favorites",
+      "tivimate|favorites",
+      "jamrun|epg",
+      "vlc|favorites",
+      "kodi|favorites",
+      "ott-navigator|favorites",
+      "stremio|favorites",
+      "tivimate|epg",
+      "iptv-smarters|favorites",
+      "nanomid|favorites",
+      "televizo|favorites",
+      "vlc|epg",
+      "duplex-iptv|favorites"
+    ],
+    "devices": [
+      "android-tv|favorites",
+      "fire-tv-cube|favorites",
+      "firestick|favorites",
+      "nvidia-shield|favorites",
+      "android-tv|epg",
+      "fire-tv-cube|epg",
+      "firestick|epg",
+      "google-tv|favorites",
+      "nvidia-shield|epg",
+      "google-tv|epg",
+      "android-tv|playlist-management",
+      "fire-tv-cube|playlist-management"
+    ]
+  }
+}

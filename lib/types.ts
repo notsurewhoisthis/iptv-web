@@ -497,6 +497,17 @@ export interface VideoMappings {
   troubleshooting: Record<string, VideoData>;
 }
 
+export interface SeoWhitelist {
+  comparisons: {
+    players: string[];
+    devices: string[];
+  };
+  featureGuides: {
+    players: string[];
+    devices: string[];
+  };
+}
+
 // Benchmark data for IPTV players
 export interface BenchmarkMetric {
   value: number | null;

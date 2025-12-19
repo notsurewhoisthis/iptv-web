@@ -7,6 +7,7 @@ import {
   getPlayer,
   getBaseUrl,
   getPlayerDeviceGuides,
+  getSeoWhitelist,
 } from '@/lib/data-loader';
 import { ChevronRight, Check, X, Star, Calendar } from 'lucide-react';
 import { BreadcrumbSchema, FAQSchema, ComparisonSchema } from '@/components/JsonLd';
@@ -32,15 +33,23 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const baseUrl = getBaseUrl();
+  const seoWhitelist = await getSeoWhitelist();
+  const isIndexable = seoWhitelist.comparisons.players.includes(
+    `${player1}|${player2}`
+  );
 
   return {
     title: comparison.metaTitle,
     description: comparison.description,
     keywords: comparison.keywords.join(', '),
-    robots: {
-      index: false,
-      follow: true,
-    },
+    ...(isIndexable
+      ? {}
+      : {
+          robots: {
+            index: false,
+            follow: true,
+          },
+        }),
     alternates: {
       canonical: `${baseUrl}/compare/players/${player1}/vs/${player2}`,
     },
