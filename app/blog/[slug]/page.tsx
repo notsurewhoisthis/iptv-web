@@ -14,9 +14,8 @@ interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
-// Allow new blog posts created after build (e.g., via n8n) to be rendered on-demand
-export const dynamicParams = true;
-export const dynamic = 'force-dynamic';
+// Only serve known slugs to prevent soft-404s for removed posts.
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const posts = await getBlogPosts();
