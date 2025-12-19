@@ -1,5 +1,14 @@
 import Link from 'next/link';
 import { Home, Search, BookOpen, Tv, Smartphone, HelpCircle } from 'lucide-react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Page Not Found | IPTV Guide',
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default function NotFound() {
   return (
